@@ -45,3 +45,5 @@ Mmmmm maybe, gonna have a hard time balance it, material conversion, obligatory 
 I do speak and write English, Spanish and Chinese(not traditional, atleast not writing it), the thing is, I never mastered any of those language so typo is expected, and English is not my main language, I am just fortunate to learn it when I was young, and sadly I don't speak Russian, I can't interact with the russian server of HSK due that reason 
 
 Any issue(either balance or bug) or suggestion report it to me please!
+
+Also Sorry this is my first time using GitHub, I really need some advise of how it works

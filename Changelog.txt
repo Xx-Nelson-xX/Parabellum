@@ -1,0 +1,185 @@
+<--------------------------------------- 1.2(Combind with 1.2A) -------------------------------------------->
+1.2A - 2 Turrets, 8 new ammo types, more tweaks and research tree changes
+*1.2 - 5 Grenades, 1 turret, 3 new ammo type, more tweaks, texture improvements, proper research tree and designate bench for all weapons
+
+Turrets:
+*(Nebelwerfer rely a lots of explosive material, such as gunpowders and FSX, since they are not mean to be precision artillery)
+-Nebelwerfer 32cm: 28cm/30cm/32cm Nebelwerfer Rockets, 6 barrel/rail rocket launcher(manned - selective fire), Short Range and low projectile velocity for artillery with massive damage
+-Wurfrahmen: 28cm/30cm/32cm Nebelwerfer Rockets, Single Rail rocket Launcher(Manned - Single Shot), Short Range and low projectile velocity for artillery with massive damage
+-Nebelwerfer 21cm: 21cm/15cm Nebelwerfer Rockets, 5 barrel/rail rocket launcher(manned - selective fire), Medium Range rocket artillery, capable of directfire(with certain ammo type)
+*-120mm Wombat Recoiless Anti-Tank Gun,  Single Shot, Short Range stationary light Anti-Tank Weapon
+
+*Mines/Traps:
+*-S-mine: Anti-Personnel trip mine, explosive charge with lots of fragments
+*-Improvised 4kg Mine: Explosive Trip mine, large explosive radius and decent amount of Fragments.
+
+*Grenades:
+-Model 24 Stielhandgranate, standard High Explosive stick grenade, no fragmentation, increased throwing range, low damage with slightly more blast radius, cheap to mass produce
+-Model 24 with Splitterring, like above, but with splitter frament cover on the warhead, reduced blast radius exchanging fragmentation damage.
+-Model 24 Nebelgranate, use modified warhead to produce smoke screen.
+-Model 24 Bundle Charge, 6 + 1 warhead, 7 times the explosive damage, so for the cost, due the increased weight, the throwing range is reduced drastically.
+-4kg Demolition Charge, a heavy piece of demolition satchel charge, as soon as you throw it, run for your life.
+
+Ammo:
+-28cm High Explosive Nebelwerfer Rocket, large explosive blast radius with lots of fragmentation and blast damage
+-30cm Improved High Explosive Nebelwerfer Rocket, Improved projectile speed, massive explosive blast radius with even more fragmentation and blast damage
+-32cm Incendiary Nebelwefer Rocket, massive explosive blast radius with flame damage, can cover a large zone with fire.
+
+-21cm High Explosive Nebelwerfer Rocket, better projectile speed, due the scale down and modification it weaken the damage effects
+-15cm High Explosive Nebelwerfer Rocket, even better prejectile speed, but it performance is weaker than average 155mm artillery in single shot
+-15cm High Explosive Nebelwerfer Rocket(D), Direct Fire of previous rocket type, reducing the travel time and more accurate with direct targeting, can't aim at targets behind cover though
+-15cm Smoke rocket, produce temporary smoke screen to either disturb enemies accuracy or to push and assault.
+
+*-120mm Canister, equivalent of shotgun buckshot but for 120mm gun, lots of spread
+*-120mm HESH, High-Explosive Squash Head, high explosive damage with penetration effect, but offers less penetration and fragmentation effect
+*-120mm Low Velocity High Explosive, use for indirect fire support, with the same payload as HE shell
+
+Tweaks:
++ Texture Improvements for CGR ammo(no longer small sprites)
++ Updated SK Research Tree adaptation(mostly for turrets, since small fire arms are tied to benches than research trees)
+*+ Texture Improvement for XM-307ACSW(remake the entire weapon texture, mostly the turret base)
+*+ Texture Improvement for Nebelwerfer(15cm/21cm), now have a bit shiny surface
+*- Nerfed Lewis LMG to be more like between the L-15 LMG and Huot AR
+*+Changed Mk.14 Mod.0 to behave more like an Late/Endgame Marksman/Battle Rifle rather than a better version of SCAR-H, now with less spawn chance and it performance should be between AR and SR...
+*+Increase NbW32 blast Radius and damage, but now they are lot less accurate
+
+Note: version 1.2A still in testing phase, so any error or weird stuff you encounter, please report it to me
+
+*Tech Tree inclusion: --format: weapon name -> research name(DefName)-- (the DefName is kind of confuse as fk, so any error I made here, I am truly sorry)
+*Pistols:
+ -Medusa SR -> Pistol I(Gunsmithing)
+ -Sturer SP -> Pistol I(Gunsmithing)
+ 
+*SMG:
+ -M1928A2 Thompson -> SMG I(BlowbackOperation)
+ 
+*Shotgun:
+ -DP-12 -> Shotgun I(GasOperation) LOL
+ -CAWS -> Shotgun II(Shotgun_C2)
+ 
+*Carbine:
+ -De Lisle Commando Carbine -> Rifle I(Rifles_C1)
+ -M4.50Beowulf SC -> Rifle III(Rifles_C3)
+ 
+*Sniper Rifle:
+ -XM-109 AMPR -> Sniper Rifle III(Sniper_Rifles_D1)
+ 
+*LMGs:
+ -Lewis -> Rifle I(Rifles_C1)
+ 
+*Launchers:
+ -Hawk MM-1 -> Grenade launcher II(Grenade_launchers_C2)
+ -RGS -> Grenade launcher I(Grenade_launchers_C1)
+ -Carl Gustav fm/42 Recoiless Anti-Tank Rifle -> Heavy weapons I(HeavyTurrets)
+ -Carl Gustav Recoiless Rifle Model.U -> Rockets II(Rockets_C2)
+ -M202 FLASH -> Rockets II(Rockets_C2)
+ -Panzerfaust 60 -> Gun I(Machining)
+ 
+*Grenades:
+ -Model 24 Stielhandgranate -> Grenades I(Grenade_C1)
+ -M24 Nebelgranate -> Grenades I(Grenade_C1)
+ -M24 with Splitterring -> Grenades I(Grenade_C1)
+ -M24 Bundler Charge -> Grenades II(Grenade_C2)
+ -4kg Demolition Charge -> Grenades II(Grenade_C2)
+ 
+ *Mines/Traps:
+ -S-Mine -> IED I(IED_I)
+ -Improvised 4kg Mine -> IED I(IED_I)
+ 
+*Turrets:
+ -Vickers .303 MMG -> Turrets I(Turrets_31) ???
+ -XM-307 ACSW -> Heavy turrets III(Heavy_turrets_C3)
+ -Wurfrahmen -> Rockets I(Rockets_C1)
+ -Nebelwerfer 28cm/30cm/32cm -> Rockets III(Rockets_D1)
+ -Nebelwerfer(15cm/21cm) -> Rockets III(Rockets_D1)
+ -120mm Wombat RATG -> Artillery I(Mortars)
+
+<--------------------------------------- 1.1 -------------------------------------------->
+1.1 - 7 weapons(5 portable and 2 turret), 10 new ammo type, few tweaks, typo fixes and new mod banner
+
+Pistols:
+-Sturer Survival Pistol: Most Rifle Catridge, single shot
+*Include HMC more content most Rifle Catridge, can be really overwhelming using multiple ammo of the same ammo type(ex. 5,56 FMJ and 7,62 FMJ, when you switch ammo only show FMJ)
+-Medusa Survival Revolver: Most Pistol Catridge, 6 shots double action
+*Include HMC more content Pistol Catridge, can be really overwhelming using multiple ammo of the same ammo type
+
+Carbines:
+-M4.50 Beowulf: .50 Beowulf, automatic
+
+Launchers:
+-Panzerfaust 60: 149mm PzF Warhead, short range single shot
+
+Sniper Rifles:
+-XM109 AMPR: 25x59mm grenades/.50 BMG, semi-automatic, can target anywhere
+
+Turrets:
+-XM-307 ACSW: 25x59mm grenades, automatic(Manned - Autocannon slot), low RoF Late game turret
+-Vickers .303 MMG: .303 British, automatic(Manned - Machinegun Slot), early-mid game turret
+
+Ammo:
+-.50 Beowulf FMJ, Standard ammo type
+-.50 Beowulf HP, Hollow Point for light or non-armored target
+-.50 Beowulf API, Armor Piercing Incendiary, high penetration, low damage and deal burning damage
+-.50 Beowulf EMP, ElectroMagnetic Pulse for machine type target, deal electric burn damage
+
+-25x59mm HEAB, Airburst(sort of), deal explosive and fragmentation damage
+-25x59mm HEDP, Dual Purpose, capable to penetrate armored target while also good counter soft target
+-25x59mm HEI, High Explosive Incendiary, can torch target on fire and deal explosive and fragmentation damage
+-25x59mm HE-EMP, High Explosive ElectroMagnetic Pulse, explosive round with EMP damage and effect
+
+-149mm PzF HEAT, not so High Explosive Anti-Tank, it hit like a truck but the range is really limited and the penetration is weaker than any modern HEAT rocket
+-149mm PzF Frag, Modified Fragmentation warhead, weak explosive but lots of fragments and sharpnels. 
+
+Tweaks:
+>Carl Gustav Recoiless Rifle Mod.U:
+-Reduce most 84mmCG Projectile speed from 150 -> 60
++added SPG-9 to CGRR Mod.U
++further increase Spread for FFV401 ADM shell (42,2 -> 68,2)
+*Flechette speed drop to 110
+*Flechette sharp penetration drop to 12mm RHA(was 14mm), Blunt Penetration increase to 26,5(was 6mm)
+
+Graphics/Texture Improvement: 50% more pixels for:
+-Mk-14 Mod.0
+-Lewis
+-Huot AR
+-RGS
+ 
+<--------------------------------------- 1.0 -------------------------------------------->
+
+
+1.0 - 12 portable weapons and 6 new ammo type
+
+Shotguns:
+-CAWS: 12Gauge,automatic
+-DP-12: 12Gauge, double barrel pump action
+
+SMGs:
+-Thompson M1928A1, .45ACP automatic, 2 handed
+
+Carbines:
+-Delisle, .45ACP, bolt action, with integrated suppressor
+
+Rifle:
+-Huot, .303 British, automatic, magazine fed
+-Mk14, 7,62x51mm NATO, automatic
+
+LMGs:
+-Lewis, .303 British, automatic, pan magazine fed
+
+Launchers:
+-Hawk MM-12, 40x46mm, fast firing, 12 rounds shell by shell reload
+-RGS, 30x29mm, Triple shot grenade launcher
+-M202 FLASH, 66mm rockets/grenade(?), quad barrel rocket launcher
+-CG fm/42 Recoiless Antitank Rifle, 20x102mm, single shot anti-tank
+-CGRR Mod.U, Interchangable(84mmCG,90mm Flak,RPG), single shot anti-tank
+(can be overwhelming when change other ammo type)
+
+Ammo:
+-40x46mm Bean Bags, non-Lethal shell for grenade launchers
+-40x46mm Flechette, 27 Flechettes, very lethal in close range
+
+-84mm FFV551 HEAT, Anti-tank explosive round, weakest HEAT rocket
+-84mm FFV441B HE, Anti-personel round, increased fragments but less blast damage
+-84mm FF401 ADM, Anti-personel round, 1100 Flechettes for Area Defense
+
+-66mm TEA, Rocket Incendiary round, long range flamethrower

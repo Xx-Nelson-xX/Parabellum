@@ -31,8 +31,8 @@ INSTALLATION(Manually):
 5. Boot the Game
 6. Go to the Ingame Mod list
 7. Enable my mod(Parabellum)
-8. Press Auto sort or sort it by your self(I included a mod order for it)
-9. Press Accaept and Wait till the restart
+8. Press "Auto Sort" or sort it by yourselves(I included a mod order for it)
+9. Apply the change and Wait till the game restart
 10. ...
 11. Done
 

@@ -22,6 +22,8 @@ COMPATIBLE OPTIONAL MODS:
 
 1. HMC More Content(Some of my weapons share their catridge) -> https://discord.com/channels/272340793174392832/745746107329413121/823202940910829568(Discord Link)
 
+*If you don't use it delete the "NewAmmoPatches(HMC More Content).xml" file in the mod's Patches folder
+
 INSTALLATION(Manually):
 
 1. Locate your game directory
@@ -47,3 +49,7 @@ I do speak and write English, Spanish and Chinese(not traditional, atleast not w
 Any issue(either balance or bug) or suggestion report it to me please!
 
 Also Sorry this is my first time using GitHub, I really need some advise of how it works
+
+Any support can help me, if you like donation, here is my Ko-fi link: ko-fi.com/xxnelsonxx78863
+
+THANKS FOR USING THE MOD :D

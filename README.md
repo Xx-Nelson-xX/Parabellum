@@ -50,6 +50,6 @@ Any issue(either balance or bug) or suggestion report it to me please!
 
 Also Sorry this is my first time using GitHub, I really need some advise of how it works
 
-Any support can help me, if you like donation, here is my Ko-fi link: ko-fi.com/xxnelsonxx78863
+Any support can help me, if you like donation, here is my Ko-fi link: https://ko-fi.com/xxnelsonxx78863
 
 THANKS FOR USING THE MOD :D

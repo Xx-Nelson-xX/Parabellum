@@ -38,9 +38,21 @@ INSTALLATION(Manually):
 10. ...
 11. Done
 
-EXTRA NOTES:
 
-¿BASE GAME SUPPORT?
+*EXTRA NOTES:
+
+**NOW THE MOD HAS SEPARATED PACKAGE
+
+For Guns and Handheld Weapons -> Parabellum - Earned in Blood
+
+For Defensive turrets and Explosives -> Parabellum - Hold the Line
+
+to get them you need to switch the branch from "main" to any of them, don't use the main mod with them if you don't want duplicated item error in your log
+
+![Captura](https://user-images.githubusercontent.com/40744101/127422742-fa5348ed-a49c-4249-a37b-258fe2287f68.PNG)
+
+
+**¿BASE GAME SUPPORT?
 
 Mmmmm maybe, gonna have a hard time balance it, material conversion, obligatory use CE within the mod, probably change all the stats of all the weapons and turrets since the Base game CE has totally different balance compared to the one in HSK
 
@@ -52,4 +64,5 @@ Also Sorry this is my first time using GitHub, I really need some advise of how 
 
 Any support can help me, if you like donation, here is my Ko-fi link: https://ko-fi.com/xxnelsonxx78863
 
-THANKS FOR USING THE MOD :D
+**THANKS FOR USING THE MOD :D
+

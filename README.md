@@ -38,6 +38,7 @@ INSTALLATION(Manually):
 10. ...
 11. Done
 
+
 EXTRA NOTES:
 
 NOW THE MOD HAS SEPARATED PACKAGE
@@ -47,6 +48,7 @@ For Guns and Handheld Weapons -> Parabellum - Earned in Blood
 For Defensive turrets and Explosives -> Parabellum - Hold the Line
 
 to get them you need to switch the branch from "master" to any of them, don't use the main mod with them if you don't want duplicated item error in your log
+
 
 
 ¿BASE GAME SUPPORT?

@@ -48,6 +48,7 @@ For Guns and Handheld Weapons -> Parabellum - Earned in Blood
 For Defensive turrets and Explosives -> Parabellum - Hold the Line
 
 to get them you need to switch the branch from "main" to any of them, don't use the main mod with them if you don't want duplicated item error in your log
+
 ![Captura](https://user-images.githubusercontent.com/40744101/127422742-fa5348ed-a49c-4249-a37b-258fe2287f68.PNG)
 
 

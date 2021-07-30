@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<!-- ================== Raketenpanzerbüchse 54/1 Multi Anti-Tank Rocket Launcher ================== -->
+
+	<ThingDef ParentName="BaseGun_Turret">
+		<defName>Pa_RPzB6T</defName>
+		<label>RPzB 54/1 x6</label>
+		<graphicData>
+			<texPath>Things/Building/Security/RPzB6_Top</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Artillery_ShellLoaded</soundInteract>
+		<description>6 RPzB attached to a solid Platform.</description>
+		<techLevel>Industrial</techLevel>
+		<statBases>
+			<MarketValue>4200</MarketValue>
+			<SightsEfficiency>1.8</SightsEfficiency>
+			<ShotSpread>0.1</ShotSpread>
+			<SwayFactor>1.2</SwayFactor>
+			<RangedWeapon_Cooldown>2.6</RangedWeapon_Cooldown>
+		</statBases>
+		<verbs>
+			<li Class="CombatExtended.VerbPropertiesCE">
+				<verbClass>CombatExtended.Verb_ShootMortarCE</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_88mmRPzB_HEAT</defaultProjectile>
+				<!--<forcedMissRadius>2</forcedMissRadius>-->
+				<circularError>0.8</circularError>
+				<minRange>6</minRange>
+				<range>52</range>
+				<warmupTime>1.8</warmupTime>
+				<ticksBetweenBurstShots>6</ticksBetweenBurstShots>
+				<burstShotCount>6</burstShotCount>
+				<soundCast>Shot_RPzB</soundCast>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+				<muzzleFlashScale>16</muzzleFlashScale>
+				<indirectFirePenalty>0.2</indirectFirePenalty>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="CombatExtended.CompProperties_AmmoUser">
+				<magazineSize>6</magazineSize>
+                <reloadTime>10.2</reloadTime>
+				<!-- <spawnUnloaded>true</spawnUnloaded> -->
+				<ammoSet>AmmoSet_RPzB</ammoSet>
+			</li>
+			<li Class="CombatExtended.CompProperties_FireModes">
+				<aimedBurstShotCount>3</aimedBurstShotCount>
+                <aiAimMode>AimedShot</aiAimMode>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<!-- ================== 88mm Raketenwerfer ================== -->
+
+	<ThingDef ParentName="BaseGun_Turret">
+		<defName>Pa_RW</defName>
+		<label>88mm Raketenwerfer</label>
+		<graphicData>
+			<texPath>Things/Building/Security/Puppchen_Top</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Artillery_ShellLoaded</soundInteract>
+		<description>Raketenwerfer attached to a solid Platform.</description>
+		<techLevel>Industrial</techLevel>
+		<statBases>
+			<MarketValue>1400</MarketValue>
+			<SightsEfficiency>2.1</SightsEfficiency>
+			<ShotSpread>0.1</ShotSpread>
+			<SwayFactor>1.1</SwayFactor>
+			<RangedWeapon_Cooldown>2.4</RangedWeapon_Cooldown>
+		</statBases>
+		<verbs>
+			<li Class="CombatExtended.VerbPropertiesCE">
+				<verbClass>CombatExtended.Verb_ShootMortarCE</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_88mmRPzB_HEAT</defaultProjectile>
+				<!--<forcedMissRadius>2</forcedMissRadius>-->
+				<circularError>0.8</circularError>
+				<minRange>5</minRange>
+				<range>62</range>
+				<warmupTime>1.2</warmupTime>
+				<soundCast>Shot_RPzB</soundCast>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+				<muzzleFlashScale>16</muzzleFlashScale>
+				<indirectFirePenalty>0.2</indirectFirePenalty>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="CombatExtended.CompProperties_AmmoUser">
+				<magazineSize>1</magazineSize>
+                <reloadTime>3</reloadTime>
+				<!-- <spawnUnloaded>true</spawnUnloaded> -->
+				<ammoSet>AmmoSet_RPzB</ammoSet>
+			</li>
+			<li Class="CombatExtended.CompProperties_FireModes" />
+		</comps>
+	</ThingDef>
+	
+	<!-- ================== Raketen-Vielfachwerfer ================== -->
+
+	<ThingDef ParentName="BaseArtilleryGun">
+		<defName>Pa_RVW</defName>
+		<label>Raketen-Vielfachwerfer</label>
+		<graphicData>
+			<texPath>Things/Building/Security/RVW_Top</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Artillery_ShellLoaded</soundInteract>
+		<description>Raketen-Vielfachwerfer attached to a solid Platform.</description>
+		<techLevel>Spacer</techLevel>
+		<statBases>
+			<MarketValue>9200</MarketValue>
+			<SightsEfficiency>1.6</SightsEfficiency>
+			<ShotSpread>0.18</ShotSpread>
+			<SwayFactor>1.8</SwayFactor>
+			<RangedWeapon_Cooldown>8.2</RangedWeapon_Cooldown>
+		</statBases>
+		<verbs>
+			<li Class="CombatExtended.VerbPropertiesCE">
+				<recoilPattern>Mounted</recoilPattern>
+				<recoilAmount>0.28</recoilAmount>
+				<verbClass>CombatExtended.Verb_ShootMortarCE</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_8cmRVW_HE</defaultProjectile>
+				<!--<forcedMissRadius>2</forcedMissRadius>-->
+				<circularError>0.6</circularError>
+				<minRange>40</minRange>
+				<range>158</range>
+				<warmupTime>4.8</warmupTime>
+				<ticksBetweenBurstShots>16</ticksBetweenBurstShots>
+				<burstShotCount>24</burstShotCount>
+				<soundCast>Shot_RPzB</soundCast>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+				<muzzleFlashScale>15</muzzleFlashScale>
+				<indirectFirePenalty>0.2</indirectFirePenalty>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="CombatExtended.CompProperties_AmmoUser">
+				<magazineSize>48</magazineSize>
+                <reloadTime>2.1</reloadTime>
+				<reloadOneAtATime>true</reloadOneAtATime>
+				<!-- <spawnUnloaded>true</spawnUnloaded> -->
+				<ammoSet>AmmoSet_RVW</ammoSet>
+			</li>
+			<li Class="CombatExtended.CompProperties_FireModes">
+				<aimedBurstShotCount>6</aimedBurstShotCount>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<!--=============== Turret Base(6) ===============-->
+
+	<ThingDef ParentName="TurretMannedBase">
+		<defName>Turret_RPzB6T</defName>
+		<label>RPzB 54/1 MATRL</label>
+		<graphicData>
+			<texPath>Things/Building/Security/P_Base</texPath>
+			<drawSize>(1.6,1.6)</drawSize>
+			<shadowData>
+				<volume>(0.3, 0.6, 0.3)</volume>
+			</shadowData>
+		</graphicData>
+		<uiIconPath>Things/Building/Security/RPzB6_icon</uiIconPath>
+		<hasInteractionCell>True</hasInteractionCell>
+		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		<statBases>
+			<MaxHitPoints>260</MaxHitPoints>
+			<WorkToBuild>1300</WorkToBuild>
+			<Mass>62.5</Mass>
+			<Bulk>53.1</Bulk>
+		</statBases>
+		<techLevel>Industrial</techLevel>
+		<description>Raketenpanzerbüchse 54/1 Multiple Anti-Tank Rocket Launcher, an ancient Last Ditch Effort Improvised weapon, combine 6 RPzB 54/1 to make a turret platform and slap it over a tractor or any platform for anti-tank purpose.</description>
+		<size>(2,2)</size>
+		<stuffCategories>
+			<li>RuggedMetallic</li>
+		</stuffCategories>
+		<costStuffCount>80</costStuffCount>
+		<costList>
+			<Pa_RPzB_Crate>3</Pa_RPzB_Crate>
+		</costList>
+		<specialDisplayRadius>6</specialDisplayRadius>
+		<designationCategory>Security</designationCategory>
+		<building>
+			<turretGunDef>Pa_RPzB6T</turretGunDef>
+			<turretTopDrawSize>1.6</turretTopDrawSize>
+			<buildingTags>
+				<li>Artillery</li>
+				<li>SiegeGun</li>
+			</buildingTags>
+		</building>
+		<minifiedDef>MinifiedTurret_Pa_RPzB6T</minifiedDef>
+		<thingCategories>
+			<li>BuildingsSecurity</li>
+		</thingCategories>
+		<researchPrerequisites>
+			<li>Rockets_C2</li>
+		</researchPrerequisites>
+		<constructionSkillPrerequisite>10</constructionSkillPrerequisite>
+	</ThingDef>
+	
+	<!--=============== Turret Base(1) ===============-->
+
+	<ThingDef ParentName="TurretMannedBase">
+		<defName>Turret_RW</defName>
+		<label>88mm Raketenwerfer</label>
+		<graphicData>
+			<texPath>Things/Building/Security/NbW32_Base</texPath>
+			<drawSize>(1.6,1.6)</drawSize>
+			<shadowData>
+				<volume>(0.3, 0.6, 0.3)</volume>
+			</shadowData>
+		</graphicData>
+		<uiIconPath>Things/Building/Security/Puppchen_icon</uiIconPath>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<WorkToBuild>1000</WorkToBuild>
+			<Mass>143</Mass>
+			<Bulk>123.8</Bulk>
+		</statBases>
+		<techLevel>Industrial</techLevel>
+		<description>Raketenpanzerbüchse 54/1 Multiple Anti-Tank Rocket Launcher, an ancient Last Ditch Effort Improvised weapon, combine 6 RPzB 54/1 to make a turret platform and slap it over a tractor or any platform for anti-tank purpose.</description>
+		<size>(1,1)</size>
+		<stuffCategories>
+			<li>RuggedMetallic</li>
+		</stuffCategories>
+		<costStuffCount>40</costStuffCount>
+		<costList>
+			<Pa_RPzB_Crate>1</Pa_RPzB_Crate>
+		</costList>
+		<specialDisplayRadius>5</specialDisplayRadius>
+		<designationCategory>Security</designationCategory>
+		<building>
+			<turretGunDef>Pa_RW</turretGunDef>
+			<turretTopDrawSize>3</turretTopDrawSize>
+			<buildingTags>
+				<li>Artillery</li>
+				<li>SiegeGun</li>
+			</buildingTags>
+		</building>
+		<minifiedDef>MinifiedTurret_Pa_RW</minifiedDef>
+		<thingCategories>
+			<li>BuildingsSecurity</li>
+		</thingCategories>
+		<researchPrerequisites>
+			<li>Rockets_C1</li>
+		</researchPrerequisites>
+		<constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+	</ThingDef>
+	
+	<!--=============== Turret Base(24) ===============-->
+	
+	<ThingDef ParentName="TurretMannedBase">
+		<defName>Turret_RVW</defName>
+		<label>RVW MRLP</label>
+		<graphicData>
+			<texPath>Things/Building/Security/P_Base</texPath>
+			<drawSize>(2.6,2.6)</drawSize>
+			<shadowData>
+				<volume>(0.3, 0.6, 0.3)</volume>
+			</shadowData>
+		</graphicData>
+		<uiIconPath>Things/Building/Security/RVW_icon</uiIconPath>
+		<hasInteractionCell>True</hasInteractionCell>
+		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		<statBases>
+			<MaxHitPoints>620</MaxHitPoints>
+			<WorkToBuild>10000</WorkToBuild>
+			<Mass>6200</Mass>
+			<Bulk>6200</Bulk>
+		</statBases>
+		<techLevel>Spacer</techLevel>
+		<description>Raketen-Vielfachwerfer, reverse engineering BM-8 to fit 8cm and 88mm rockets, looks simple but is not logistic friendly at all, and it takes time to completely reload it, careful with where you are aiming with it.</description>
+		<size>(2,2)</size>
+		<stuffCategories>
+			<li>RuggedMetallic</li>
+		</stuffCategories>
+		<costStuffCount>120</costStuffCount>
+		<costList>
+			<Pa_RPzB_Crate>14</Pa_RPzB_Crate>
+		</costList>
+		<specialDisplayRadius>40</specialDisplayRadius>
+		<designationCategory>Security</designationCategory>
+		<building>
+			<turretGunDef>Pa_RVW</turretGunDef>
+			<turretTopDrawSize>2.6</turretTopDrawSize>
+			<buildingTags>
+				<li>Artillery</li>
+				<li>Artillery_BaseDestroyer</li>
+				<li>Artillery_MannedMortar</li>
+			</buildingTags>
+		</building>
+		<minifiedDef>MinifiedTurret_Pa_RVW</minifiedDef>
+		<thingCategories>
+			<li>BuildingsSecurity</li>
+		</thingCategories>
+		<researchPrerequisites>
+			<li>Rockets_D2</li>
+		</researchPrerequisites>
+		<constructionSkillPrerequisite>16</constructionSkillPrerequisite>
+	</ThingDef>
+	
+<!--=============== Crate Base ===============-->
+
+	<ThingDef ParentName="CrateBase">
+		<defName>Pa_RPzB_Crate</defName>
+		<label>RPzB crate</label>
+		<description>Use this to build a RPzB related turret.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/WeaponCrate</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Standard_Drop</soundInteract>
+		<soundDrop>Standard_Drop</soundDrop>
+		<tickerType>Normal</tickerType>
+		<stackLimit>24</stackLimit>
+		<techLevel>Industrial</techLevel>
+		<statBases>
+			<MarketValue>700</MarketValue>
+			<MaxHitPoints>40</MaxHitPoints>
+			<Flammability>1</Flammability>
+			<DeteriorationRate>0</DeteriorationRate>
+			<Mass>8</Mass>
+			<Bulk>12.2</Bulk>
+		</statBases>
+		<thingCategories>
+			<li>WeaponCrate</li>
+		</thingCategories>
+		<tradeTags>
+			<li>SimpleCrate</li>
+		</tradeTags>
+	</ThingDef>
+
+	<!-- ================== Craft Crate ================== -->
+
+	<RecipeDef ParentName="cratecraftbase">
+		<defName>BuilRPzB_Crate</defName>
+		<label>Build RPzB crate</label>
+		<description>Use this to build a RPzB related weapon, a type of stationary manned turret. It uses 88mm RPzB Gr. or 8cm modified rocket for ammo.</description>
+		<jobString>Build RPzB crate.</jobString>
+		<workAmount>9800</workAmount>
+		<skillRequirements>
+			<Crafting>8</Crafting>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Weapon_Parts</li>
+					</thingDefs>
+				</filter>
+				<count>6</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Heavy_Component</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+				<categories>
+				<li>Metallic</li>
+                  </categories>
+				</filter>
+				<count>12</count>
+			</li>
+		</ingredients>
+		<products>
+			<Pa_RPzB_Crate>1</Pa_RPzB_Crate>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Weapon_Parts</li>
+				<li>Heavy_Component</li>
+			</thingDefs>
+			<categories>
+				<li>SLDBar</li>
+				<li>USLDBar</li>
+             </categories>
+		</fixedIngredientFilter>
+		<researchPrerequisite>Rockets_C1</researchPrerequisite>
+	</RecipeDef>
+
+	<!-- ================== Minified ================== -->
+	
+	<ThingDef ParentName="MinifiedTurretBase">
+		<defName>MinifiedTurret_Pa_RPzB6T</defName>
+		<label>RPzB 54/1 MRL Platform</label>
+		<statBases>
+			<Mass>48</Mass>
+			<Bulk>42.2</Bulk>
+		</statBases>
+	</ThingDef>
+	
+	<ThingDef ParentName="MinifiedTurretBase">
+		<defName>MinifiedTurret_Pa_RW</defName>
+		<label>88mm Raketenwerfer ATRL</label>
+		<statBases>
+			<Mass>92</Mass>
+			<Bulk>72.6</Bulk>
+		</statBases>
+	</ThingDef>
+	
+	<ThingDef ParentName="MinifiedTurretBase">
+		<defName>MinifiedTurret_Pa_RVW</defName>
+		<label>Raketen-Vielfachwerfer MRLP</label>
+		<statBases>
+			<Mass>4800</Mass>
+			<Bulk>4800</Bulk>
+		</statBases>
+	</ThingDef>
+	
+</Defs>

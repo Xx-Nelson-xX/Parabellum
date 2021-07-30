@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<!-- ================== 120mm Wombat Recoiless Anti-Tank Gun ================== -->
+
+	<ThingDef ParentName="BaseGun_Turret">
+		<defName>Pa_Wombat</defName>
+		<label>120mm Wombat Recoiless Anti-Tank Gun</label>
+		<graphicData>
+			<texPath>Things/Building/Security/Wombat_Top</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Artillery_ShellLoaded</soundInteract>
+		<description>Wombat attached to a towable platform.</description>
+		<techLevel>Industrial</techLevel>
+		<statBases>
+			<MarketValue>2100</MarketValue>
+			<SightsEfficiency>1.6</SightsEfficiency>
+			<ShotSpread>0.18</ShotSpread>
+			<SwayFactor>1.2</SwayFactor>
+			<RangedWeapon_Cooldown>1.9</RangedWeapon_Cooldown>
+		</statBases>
+		<weaponTags>
+			<li>TurretGun</li>
+			<li>Artillery_BaseDestroyer</li>
+		</weaponTags>
+		<verbs>
+			<li Class="CombatExtended.VerbPropertiesCE">
+				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_120mmCannonShell_HEAT</defaultProjectile>
+				<!--<forcedMissRadius>4</forcedMissRadius>-->
+				<circularError>1.4</circularError>
+				<warmupTime>1.9</warmupTime>
+				<minRange>12</minRange>
+				<range>80</range>
+				<soundCast>120mm</soundCast>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>20</muzzleFlashScale>
+				<indirectFirePenalty>0.18</indirectFirePenalty>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="CombatExtended.CompProperties_AmmoUser">
+				<magazineSize>1</magazineSize>
+				<reloadTime>7.1</reloadTime>
+				<!-- <spawnUnloaded>true</spawnUnloaded> -->
+				<ammoSet>AmmoSet_120mmCannonShell</ammoSet>
+			</li>
+			<li Class="CombatExtended.CompProperties_FireModes" />
+		</comps>
+	</ThingDef>
+	
+	<!--=============== Turret Base ===============-->
+
+	<ThingDef ParentName="TurretMannedBase">
+		<defName>Turret_Wombat</defName>
+		<label>120mm Wombat RATG</label>
+		<graphicData>
+			<texPath>Things/Building/Security/Wombat_Base</texPath>
+			<drawSize>(3.2,3.2)</drawSize>
+			<shadowData>
+				<volume>(0.3, 0.6, 0.3)</volume>
+			</shadowData>
+		</graphicData>
+		<uiIconPath>Things/Building/Security/Wombat_icon</uiIconPath>
+		<statBases>
+			<MaxHitPoints>220</MaxHitPoints>
+			<WorkToBuild>1500</WorkToBuild>
+			<Mass>308</Mass>
+			<Bulk>308</Bulk>
+		</statBases>
+		<techLevel>Ultra</techLevel>
+		<description>120mm Wombat Recoiless Anti-Tank Gun, a slightly more maneuverable, smaller, lighter, powerful as a 120mm AT gun but it offers lot less range than a full size AT gun.</description>
+		<size>(1,1)</size>
+		<stuffCategories>
+			<li>RuggedMetallic</li>
+		</stuffCategories>
+		<costStuffCount>110</costStuffCount>
+		<costList>
+			<Pa_Wombat_Crate>1</Pa_Wombat_Crate>
+		</costList>
+		<specialDisplayRadius>12</specialDisplayRadius>
+		<designationCategory>Security</designationCategory>
+		<building>
+			<turretGunDef>Pa_Wombat</turretGunDef>
+			<turretTopDrawSize>3.2</turretTopDrawSize>
+			<buildingTags>
+				<li>Artillery</li>
+				<li>Artillery_BaseDestroyer</li>
+			</buildingTags>
+		</building>
+		<minifiedDef>MinifiedTurret_Wombat</minifiedDef>
+		<thingCategories>
+			<li>BuildingsSecurity</li>
+		</thingCategories>
+		<researchPrerequisites>
+			<li>Mortars</li>
+		</researchPrerequisites>
+		<constructionSkillPrerequisite>12</constructionSkillPrerequisite>
+	</ThingDef>
+	
+
+
+<!--=============== Crate Base ===============-->
+
+	<ThingDef ParentName="CrateBase">
+		<defName>Pa_Wombat_Crate</defName>
+		<label>120mm Wombat turret crate</label>
+		<description>Use this to build a 120mm Wombat turret.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/WeaponCrate</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Standard_Drop</soundInteract>
+		<soundDrop>Standard_Drop</soundDrop>
+		<tickerType>Normal</tickerType>
+		<stackLimit>1</stackLimit>
+		<techLevel>Industrial</techLevel>
+		<statBases>
+			<MarketValue>4000</MarketValue>
+			<MaxHitPoints>220</MaxHitPoints>
+			<Flammability>1</Flammability>
+			<DeteriorationRate>0</DeteriorationRate>
+			<Mass>180</Mass>
+			<Bulk>160</Bulk>
+		</statBases>
+		<thingCategories>
+			<li>WeaponCrate</li>
+		</thingCategories>
+		<tradeTags>
+			<li>NormalCrate</li>
+		</tradeTags>
+	</ThingDef>
+
+	<!-- ================== Craft Crate ================== -->
+
+	<RecipeDef ParentName="cratecraftbase">
+		<defName>BuildWombat_Crate</defName>
+		<label>Build 120mm Wombat Recoiless Anti-Tank Gun crate</label>
+		<description>Use this to build a 120mm Wombat Recoiless Anti-Tank Gun, a type of stationary manned turret. It uses 120mm cannon shell for ammo.</description>
+		<jobString>Build 120mm Wombat Recoiless Anti-Tank Gun crate.</jobString>
+		<workAmount>13200</workAmount>
+		<skillRequirements>
+			<Crafting>12</Crafting>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Weapon_Parts</li>
+					</thingDefs>
+				</filter>
+				<count>12</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Cannon_Component</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+				<categories>
+				<li>Metallic</li>
+                  </categories>
+				</filter>
+				<count>35</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Rubber</li>
+					</thingDefs>
+				</filter>
+				<count>15</count>
+			</li>
+		</ingredients>
+		<products>
+			<Pa_Wombat_Crate>1</Pa_Wombat_Crate>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Weapon_Parts</li>
+				<li>Cannon_Component</li>
+				<li>Rubber</li>
+			</thingDefs>
+			<categories>
+			<li>SLDBar</li>
+			<li>USLDBar</li>
+             </categories>
+		</fixedIngredientFilter>
+		<researchPrerequisite>Mortars</researchPrerequisite>
+	</RecipeDef>
+
+	<!-- ================== Minified ================== -->
+	
+	<ThingDef ParentName="MinifiedTurretBase">
+		<defName>MinifiedTurret_Wombat</defName>
+		<label>120mm Wombat turret</label>
+		<statBases>
+			<Mass>180</Mass>
+			<Bulk>160</Bulk>
+		</statBases>
+	</ThingDef>
+	
+</Defs>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_ParabellumRA</defName>
+		<label>Rocket Artillery(P)</label>
+		<description>Rocket Artillery from Parabellum, *Warning* excessive explosive material consumption.</description>
+		<defNames>
+			<li>Turret_NbW</li>
+			<li>Turret_NbW32cm</li>
+			<li>Turret_NbW21cm</li>
+			<li>Turret_RVW</li>
+			<li>Turret_Type63MRL</li>
+		</defNames>
+		<designationCategory>Security</designationCategory>
+		<debug>false</debug>
+	</ArchitectSense.DesignationSubCategoryDef>
+	
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_ParabellumATG</defName>
+		<label>Anti-Tank Gun(P)</label>
+		<description>Anti-Tank Gun from Parabellum, Ancient but still useful</description>
+		<defNames>
+			<li>Turret_Pak38ATG</li>
+			<li>Turret_RW</li>
+			<li>Turret_RPzB6T</li>
+			<li>Turret_SPG9M</li>
+			<li>Turret_SPG9MD</li>
+			<li>Turret_Wombat</li>
+		</defNames>
+		<designationCategory>Security</designationCategory>
+		<debug>false</debug>
+	</ArchitectSense.DesignationSubCategoryDef>
+</Defs>

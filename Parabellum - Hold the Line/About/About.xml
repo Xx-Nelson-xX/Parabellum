@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>Parabellum - Hold the Line</name>
+	<author>XxNelsonxX</author>
+	<packageId>XxNelsonxX.ParabellumHtL</packageId>
+	<supportedVersions>
+		<li>1.2</li>
+	</supportedVersions>
+	<description>
+Si vis pacem, para bellum - If you want peace, prepare for war
+The purpose of this mod is adding more weapon for the base HSK
+
+This is part of Parabellum mod, the defensive Turrets and Explosives to be exact, stuffs like mines, turrets, cannons, machineguns... There is other package like "Parabellum - Earned in Blood" only have guns/handheld weapons, and "Parabellum" which is the complete package(you better disable any separated package before using the complete one to avoid duplicated items error).
+
+If you experienced any error or issue, report it to me, my testing is only focus on the complete mod "Parabellum" cuz is easier to test that way before passing them to the separated package, and don't expect the mod Work in basegame, cuz I don't mod for the basegame, yet, nor is a good idea since lots of people mod for the basegame and break the balance constantly
+
+Sorry that I don't speak russian, also I am not a native English speaker, so you are free to correct any typo I made and anyone is free to translate my mod to any other language if you want.
+
+The changelog is in separated text file(This is a the complete changelog of Main mod "Parabellum", Fancy Portrait WIP)
+	</description>
+	<modDependencies>
+	</modDependencies>
+		<loadBefore>
+			<li>experimental.optimizations</li>
+			<li>notooshabby.rocketman</li>
+		</loadBefore>
+		<loadAfter>
+			<li>brrainz.harmony</li>
+			<li>Ludeon.RimWorld</li>
+			<li>Ludeon.RimWorld.Royalty</li>
+			<li>UnlimitedHugs.HugsLib</li>
+			<li>CETeam.CombatExtended</li>
+			<li>skyarkhangel.HSK</li>
+			<li>multilangcolorfultraits.pirateby</li>
+			<li>ArpoMo6.HMC.Project</li>
+		</loadAfter>
+	</ModMetaData>

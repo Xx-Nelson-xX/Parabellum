@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<CombatExtended.AmmoCategoryDef>
+    <defName>28cmHE</defName>
+    <label>28cm High Explosive Rocket</label>
+    <labelShort>28cmHE</labelShort>
+    <description>Large size rocket filled with TNT explosive and fragments.</description>
+  </CombatExtended.AmmoCategoryDef>
+  
+  <CombatExtended.AmmoCategoryDef>
+    <defName>30cmHE</defName>
+    <label>30cm High Explosive Rocket</label>
+    <labelShort>30cmHE</labelShort>
+    <description>Large size rocket filled with TNT explosive and fragments.</description>
+  </CombatExtended.AmmoCategoryDef>
+  
+  <CombatExtended.AmmoCategoryDef>
+    <defName>32cmIncendiary</defName>
+    <label>32cm Incendiary Rocket</label>
+    <labelShort>32cmIncendiary</labelShort>
+    <description>Large size rocket filled with fuel.</description>
+  </CombatExtended.AmmoCategoryDef>
+  
+  <CombatExtended.AmmoCategoryDef>
+    <defName>21cmHE</defName>
+    <label>21cm High Explosive Rocket</label>
+    <labelShort>21cmHE</labelShort>
+    <description>Large size rocket filled with TNT explosive and fragments.</description>
+  </CombatExtended.AmmoCategoryDef>
+  
+  <CombatExtended.AmmoCategoryDef>
+    <defName>15cmHE</defName>
+    <label>15cm High Explosive Rocket</label>
+    <labelShort>15cmHE</labelShort>
+    <description>Large size rocket filled with TNT explosive and fragments.</description>
+  </CombatExtended.AmmoCategoryDef>
+  
+  <CombatExtended.AmmoCategoryDef>
+    <defName>15cmDHE</defName>
+    <label>15cm High Explosive Rocket(D)</label>
+    <labelShort>15cmDHE</labelShort>
+    <description>Large size rocket filled with TNT explosive and fragments.</description>
+  </CombatExtended.AmmoCategoryDef>
+  
+  <CombatExtended.AmmoCategoryDef>
+    <defName>15cmS</defName>
+    <label>15cm Smoke Rocket</label>
+    <labelShort>15cmS</labelShort>
+    <description>Large size rocket filled with chemical that produce huge smoke screen.</description>
+  </CombatExtended.AmmoCategoryDef>
+  
+  <CombatExtended.AmmoCategoryDef>
+    <defName>120mmCanister</defName>
+    <label>120mm Canister Shell</label>
+    <labelShort>120mmCanister</labelShort>
+    <description>Equivalent of shotgun's buckshot but for 120mm cannons.</description>
+  </CombatExtended.AmmoCategoryDef>
+  
+  <CombatExtended.AmmoCategoryDef>
+    <defName>120mmHESH</defName>
+    <label>120mm HESH Shell</label>
+    <labelShort>120mmHESH</labelShort>
+    <description>High-Explosive Squash Head ammunition for 120mm cannons.</description>
+  </CombatExtended.AmmoCategoryDef>
+  
+  <CombatExtended.AmmoCategoryDef>
+    <defName>120mmIndirectFire</defName>
+    <label>120mm HE Shell(Indirect)</label>
+    <labelShort>120mmIndirectFire</labelShort>
+    <description>Low velocity High Explosive ammunition for 120mm cannon.</description>
+  </CombatExtended.AmmoCategoryDef>
+  
+  <CombatExtended.AmmoCategoryDef>
+    <defName>50mmAPHE</defName>
+    <label>50mm Pzgr 39(APHE)</label>
+    <labelShort>50mmAPHE</labelShort>
+    <description>Armor Piercing High Explosive ammunition for 50mm cannon, actually more metal slug thank explosive charge so don't expect too much blast radius and fragmentation from it.</description>
+  </CombatExtended.AmmoCategoryDef>
+  
+  <CombatExtended.AmmoCategoryDef>
+    <defName>50mmHE</defName>
+    <label>50mm Sprgr 38(HE)</label>
+    <labelShort>50mmHE</labelShort>
+    <description>High Explosive ammunition for 50mm cannon, not that powerful but it gets the job done.</description>
+  </CombatExtended.AmmoCategoryDef>
+  
+  <CombatExtended.AmmoCategoryDef>
+    <defName>50mmAPCR</defName>
+    <label>50mm Pzgr 40(APCR)</label>
+    <labelShort>50mmAPCR</labelShort>
+    <description>Armor Piercing, Composed Rigid ammunition for 50mm cannon, High velocity solid slug design purely for armor penetration with concentrated kinetic energy through a small impact area.</description>
+  </CombatExtended.AmmoCategoryDef>
+  
+ </Defs>

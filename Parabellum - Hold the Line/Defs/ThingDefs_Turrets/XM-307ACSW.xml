@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<!-- ================== XM-307 Advanced Crew Served Weapon ================== -->
+
+	<ThingDef ParentName="BaseGun_Turret">
+		<defName>Pa_XM307ACSW</defName>
+		<label>XM-307 Advanced Crew Served Weapon</label>
+		<graphicData>
+			<texPath>Things/Building/Security/XM307ACSW_Top</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<description>XM307ACSW attached to a tripod.</description>
+		<techLevel>Ultra</techLevel>
+		<statBases>
+			<MarketValue>3800</MarketValue>
+			<SightsEfficiency>1.4</SightsEfficiency>
+			<ShotSpread>0.1</ShotSpread>
+			<SwayFactor>0.35</SwayFactor>
+			<RangedWeapon_Cooldown>1.45</RangedWeapon_Cooldown>
+		</statBases>
+		<verbs>
+			<li Class="CombatExtended.VerbPropertiesCE">
+				<recoilPattern>Mounted</recoilPattern>
+				<recoilAmount>1.72</recoilAmount>
+				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_25x59mmGrenade_HEAB</defaultProjectile>
+				<warmupTime>1.8</warmupTime>
+				<minRange>5</minRange>
+				<!--<forcedMissRadius>3</forcedMissRadius>-->
+				<circularError>1</circularError>
+				<range>87</range>
+				<ticksBetweenBurstShots>14</ticksBetweenBurstShots>
+				<burstShotCount>6</burstShotCount>
+				<soundCast>AGS</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>14</muzzleFlashScale>
+				<targetParams>
+				  <canTargetLocations>true</canTargetLocations>
+				</targetParams>
+				<ignorePartialLoSBlocker>true</ignorePartialLoSBlocker>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="CombatExtended.CompProperties_AmmoUser">
+				<magazineSize>31</magazineSize>
+				<reloadTime>5.8</reloadTime>
+				<!-- <spawnUnloaded>true</spawnUnloaded> -->
+				<ammoSet>AmmoSet_25x59mmGrenade</ammoSet>
+			</li>
+			<li Class="CombatExtended.CompProperties_FireModes">
+				<aimedBurstShotCount>3</aimedBurstShotCount>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<!--=============== Turret Base ===============-->
+
+	<ThingDef ParentName="TurretMannedBase">
+		<defName>Turret_XM307ACSW</defName>
+		<label>XM-307 ACSW</label>
+		<graphicData>
+			<texPath>Things/Building/Security/XM307ACSW_Base</texPath>
+			<drawSize>(1.5,1.5)</drawSize>
+			<shadowData>
+				<volume>(0.3, 0.6, 0.3)</volume>
+			</shadowData>
+		</graphicData>
+		<uiIconPath>Things/Building/Security/XM307ACSW_icon</uiIconPath>
+		<statBases>
+			<MaxHitPoints>180</MaxHitPoints>
+			<WorkToBuild>1500</WorkToBuild>
+			<Mass>22.7</Mass>
+			<Bulk>18.2</Bulk>
+		</statBases>
+		<techLevel>Ultra</techLevel>
+		<description>Lightweight automatic grenade launcher.</description>
+		<size>(1,1)</size>
+		<stuffCategories>
+			<li>RuggedMetallic</li>
+		</stuffCategories>
+		<costStuffCount>75</costStuffCount>
+		<costList>
+			<Pa_XM307ACSW_Crate>1</Pa_XM307ACSW_Crate>
+		</costList>
+		<specialDisplayRadius>5</specialDisplayRadius>
+		<designationCategory>Security</designationCategory>
+		<building>
+			<turretGunDef>Pa_XM307ACSW</turretGunDef>
+			<turretTopDrawSize>1.5</turretTopDrawSize>
+			<buildingTags>
+				<li>HeavyTurrets</li>
+			</buildingTags>
+		</building>
+		<minifiedDef>MinifiedTurret_XM307ACSW</minifiedDef>
+		<thingCategories>
+			<li>BuildingsSecurity</li>
+		</thingCategories>
+		<researchPrerequisites>
+			<li>Heavy_turrets_C3</li>
+		</researchPrerequisites>
+		<constructionSkillPrerequisite>12</constructionSkillPrerequisite>
+	</ThingDef>
+	
+
+
+<!--=============== Crate Base ===============-->
+
+	<ThingDef ParentName="CrateBase">
+		<defName>Pa_XM307ACSW_Crate</defName>
+		<label>XM-307 ACSW turret crate</label>
+		<description>Use this to build a XM-307 ACSW turret.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/WeaponCrate</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Standard_Drop</soundInteract>
+		<soundDrop>Standard_Drop</soundDrop>
+		<tickerType>Normal</tickerType>
+		<stackLimit>1</stackLimit>
+		<techLevel>Ultra</techLevel>
+		<statBases>
+			<MarketValue>3800</MarketValue>
+			<MaxHitPoints>180</MaxHitPoints>
+			<Flammability>1</Flammability>
+			<DeteriorationRate>0</DeteriorationRate>
+			<Mass>22.7</Mass>
+			<Bulk>18</Bulk>
+		</statBases>
+		<thingCategories>
+			<li>WeaponCrate</li>
+		</thingCategories>
+		<tradeTags>
+			<li>RareCrate</li>
+		</tradeTags>
+	</ThingDef>
+
+	<!-- ================== Craft Crate ================== -->
+
+	<RecipeDef ParentName="cratecraftbase">
+		<defName>BuildXM307ACSW_Crate</defName>
+		<label>Build XM-307 Advanced Crew Served Weapon crate</label>
+		<description>Use this to build a XM-307 ACSW, a type of stationary manned turret. It uses 25x59mm grenades for ammo.</description>
+		<jobString>Build XM-307 Advanced Crew Served Weapon crate.</jobString>
+		<workAmount>12800</workAmount>
+		<skillRequirements>
+			<Crafting>16</Crafting>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Sniper_Component</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Weapon_Parts</li>
+					</thingDefs>
+				</filter>
+				<count>18</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Cannon_Component</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+				<categories>
+				<li>Metallic</li>
+                  </categories>
+				</filter>
+				<count>50</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Rubber</li>
+					</thingDefs>
+				</filter>
+				<count>15</count>
+			</li>
+		</ingredients>
+		<products>
+			<Pa_XM307ACSW_Crate>1</Pa_XM307ACSW_Crate>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Weapon_Parts</li>
+				<li>Sniper_Component</li>
+				<li>Cannon_Component</li>
+				<li>Rubber</li>
+			</thingDefs>
+			<categories>
+			<li>SLDBar</li>
+			<li>USLDBar</li>
+             </categories>
+		</fixedIngredientFilter>
+		<researchPrerequisite>Heavy_turrets_C3</researchPrerequisite>
+	</RecipeDef>
+
+	<!-- ================== Minified ================== -->
+	
+	<ThingDef ParentName="MinifiedTurretBase">
+		<defName>MinifiedTurret_XM307ACSW</defName>
+		<label>XM-307 ACSW turret</label>
+		<statBases>
+			<Mass>22.7</Mass>
+			<Bulk>18.2</Bulk>
+		</statBases>
+	</ThingDef>
+	
+</Defs>

@@ -1,0 +1,384 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<!-- Model 24 Stielhandgranate -->
+	<ThingDef ParentName="SK_BaseGrenadeProjectile">
+		<defName>Proj_GrenadePotatoM</defName>
+		<label>Model 24 Stielhandgranate</label>
+		<graphicData>
+			<texPath>Things/Projectile/Grenades/M24</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<explosionRadius>2.4</explosionRadius>
+			<damageDef>Bomb</damageDef>
+			<damageAmountBase>50</damageAmountBase>
+			<explosionDelay>150</explosionDelay>
+			<soundExplode>Explosion_Bomb</soundExplode>
+		</projectile>
+	</ThingDef>
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="BaseGrenadeEquipment">
+		<defName>Pa_GrenadePotatoM</defName>
+		<equipmentType>Primary</equipmentType>
+		<label>Model 24 Stielhandgranate</label>
+		<description>Cheap mass produced high explosive assault grenades, relatively low damage and has no fragmentation effects, the grenade length and weight improve the range of effectiveness, designed to stun target with blast effect.</description>
+		<graphicData>
+			<texPath>Things/Ammo/HandGrenades/M24</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<soundInteract>Interact_Grenade</soundInteract>
+		<techLevel>Industrial</techLevel>
+		<stackLimit>75</stackLimit>
+		<statBases>
+			<Mass>0.6</Mass>
+			<Bulk>1.6</Bulk>
+			<MarketValue>10</MarketValue>
+			<SightsEfficiency>0.75</SightsEfficiency>
+			<RangedWeapon_Cooldown>0.85</RangedWeapon_Cooldown>
+		</statBases>
+		<generateCommonality>0.7</generateCommonality>
+		<weaponTags>
+			<li>GrenadeDestructive</li>
+			<li>GrenadeTierOne</li>
+			<li>GrenadeTierTwo</li>
+			<li>CE_AI_Grenade</li>
+		</weaponTags>
+		<thingCategories>
+			<li>Grenades</li>
+		</thingCategories>
+		<verbs>
+			<li Class="CombatExtended.VerbPropertiesCE">
+				<label>throw potato masher</label>
+				<verbClass>CombatExtended.Verb_ShootCEOneUse</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<!--<forcedMissRadius>1.2</forcedMissRadius>-->
+				<range>16</range>
+				<warmupTime>1.15</warmupTime>
+				<noiseRadius>4</noiseRadius>
+				<minRange>3</minRange>
+				<ai_AvoidFriendlyFireRadius>3</ai_AvoidFriendlyFireRadius>
+				<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+				<soundCast>ThrowGrenade</soundCast>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+				<defaultProjectile>Proj_GrenadePotatoM</defaultProjectile>
+				<onlyManualCast>true</onlyManualCast>
+				<ignorePartialLoSBlocker>true</ignorePartialLoSBlocker>
+			</li>
+		</verbs>
+		<detonateProjectile>Proj_GrenadePotatoM</detonateProjectile>
+		<smeltProducts>
+			<Powder>1</Powder>
+		</smeltProducts>
+	</ThingDef>
+	
+	<!-- Model 24 Stielhandgranate (Splitter)  -->
+	<ThingDef ParentName="SK_BaseGrenadeProjectile">
+		<defName>Proj_GrenadeM24S</defName>
+		<label>Model 24 Stielhandgranate with Splittlerring</label>
+		<graphicData>
+			<texPath>Things/Projectile/Grenades/M24S</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<explosionRadius>1.85</explosionRadius>
+			<damageDef>Bomb</damageDef>
+			<damageAmountBase>50</damageAmountBase>
+			<explosionDelay>150</explosionDelay>
+			<soundExplode>Explosion_Bomb</soundExplode>
+		</projectile>
+		<comps>
+			<li Class="CombatExtended.CompProperties_Fragments">
+				<fragments>
+					<Fragment_Large>56</Fragment_Large>
+				</fragments>
+			</li>
+		</comps>
+	</ThingDef>
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="BaseGrenadeEquipment">
+		<defName>Pa_GrenadeM24S</defName>
+		<equipmentType>Primary</equipmentType>
+		<label>Model 24 Stielhandgranate with Splittlerring</label>
+		<description>Almost same as the standard M24 Stick grenade but with Splitterring cover around the warhead, increase it fragmentation damage, but reducing the blast with slightly weight increase.</description>
+		<graphicData>
+			<texPath>Things/Ammo/HandGrenades/Splittlerring</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<soundInteract>Interact_Grenade</soundInteract>
+		<techLevel>Industrial</techLevel>
+		<stackLimit>75</stackLimit>
+		<statBases>
+			<Mass>0.7</Mass>
+			<Bulk>1.68</Bulk>
+			<MarketValue>32</MarketValue>
+			<SightsEfficiency>0.75</SightsEfficiency>
+			<RangedWeapon_Cooldown>0.85</RangedWeapon_Cooldown>
+		</statBases>
+		<generateCommonality>0.5</generateCommonality>
+		<weaponTags>
+			<li>GrenadeDestructive</li>
+			<li>GrenadeTierOne</li>
+			<li>GrenadeTierTwo</li>
+			<li>CE_AI_Grenade</li>
+		</weaponTags>
+		<thingCategories>
+			<li>Grenades</li>
+		</thingCategories>
+		<verbs>
+			<li Class="CombatExtended.VerbPropertiesCE">
+				<label>throw M24 with Splittering</label>
+				<verbClass>CombatExtended.Verb_ShootCEOneUse</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<!--<forcedMissRadius>1.2</forcedMissRadius>-->
+				<range>16</range>
+				<warmupTime>1.15</warmupTime>
+				<noiseRadius>4</noiseRadius>
+				<minRange>5</minRange>
+				<ai_AvoidFriendlyFireRadius>5</ai_AvoidFriendlyFireRadius>
+				<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+				<soundCast>ThrowGrenade</soundCast>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+				<defaultProjectile>Proj_GrenadeM24S</defaultProjectile>
+				<onlyManualCast>true</onlyManualCast>
+				<ignorePartialLoSBlocker>true</ignorePartialLoSBlocker>
+			</li>
+		</verbs>
+		<detonateProjectile>Proj_GrenadeM24S</detonateProjectile>
+		<smeltProducts>
+			<Plasteel>2</Plasteel>
+			<FSX>1</FSX>
+			<Powder>2</Powder>
+		</smeltProducts>
+	</ThingDef>
+	
+	<!-- Model 24 Nebelgranate -->
+	<ThingDef ParentName="SK_BaseGrenadeProjectile">
+		<defName>Proj_GrenadeM24Nb</defName>
+		<label>Model 24 Nebelgranate</label>
+		<graphicData>
+			<texPath>Things/Projectile/Grenades/M24Nb</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<explosionRadius>5</explosionRadius>
+			<damageDef>Smoke</damageDef>
+			<explosionDelay>120</explosionDelay>
+			<postExplosionSpawnThingDef>Gas_Smoke</postExplosionSpawnThingDef>
+			<postExplosionSpawnChance>1</postExplosionSpawnChance>
+			<postExplosionSpawnThingCount>1</postExplosionSpawnThingCount>
+			<soundExplode>Explosion_Smoke</soundExplode>
+		</projectile>
+	</ThingDef>
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="BaseGrenadeEquipment">
+		<defName>Pa_GrenadeN24Nb</defName>
+		<equipmentType>Primary</equipmentType>
+		<label>Model 24 Nebelgranate</label>
+		<description>M24 stick grenade with modified smoke warhead.</description>
+		<graphicData>
+			<texPath>Things/Ammo/HandGrenades/Nb</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<soundInteract>Interact_Grenade</soundInteract>
+		<techLevel>Industrial</techLevel>
+		<stackLimit>75</stackLimit>
+		<statBases>
+			<Mass>0.6</Mass>
+			<Bulk>1.6</Bulk>
+			<MarketValue>7.2</MarketValue>
+			<SightsEfficiency>0.75</SightsEfficiency>
+			<RangedWeapon_Cooldown>0.85</RangedWeapon_Cooldown>
+		</statBases>
+		<generateCommonality>0.5</generateCommonality>
+		<weaponTags>
+			<li>CE_GrenadeSmoke</li>
+			<li>CE_AI_Nonlethal</li>
+		</weaponTags>
+		<thingCategories>
+			<li>Grenades</li>
+		</thingCategories>
+		<verbs>
+			<li Class="CombatExtended.VerbPropertiesCE">
+				<label>throw M24 Nebelgranate</label>
+				<verbClass>CombatExtended.Verb_ShootCEOneUse</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<!--<forcedMissRadius>1.2</forcedMissRadius>-->
+				<range>16</range>
+				<warmupTime>1.15</warmupTime>
+				<noiseRadius>4</noiseRadius>
+				<ai_IsBuildingDestroyer>false</ai_IsBuildingDestroyer>
+				<soundCast>ThrowGrenade</soundCast>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+				<defaultProjectile>Proj_GrenadeM24Nb</defaultProjectile>
+				<onlyManualCast>true</onlyManualCast>
+				<ignorePartialLoSBlocker>true</ignorePartialLoSBlocker>
+			</li>
+		</verbs>
+		<detonateProjectile>Proj_GrenadeM24Nb</detonateProjectile>
+		<smeltProducts>
+			<FSX>1</FSX>
+			<Plastic>1</Plastic>
+		</smeltProducts>
+	</ThingDef>
+	
+	<!-- Model 24 Stielhandgranate Bundle -->
+	<ThingDef ParentName="SK_BaseGrenadeProjectile">
+		<defName>Proj_GrenadeM24B</defName>
+		<label>Model 24 Bundler Charge</label>
+		<graphicData>
+			<texPath>Things/Projectile/Grenades/M24B</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<explosionRadius>5.2</explosionRadius>
+			<damageDef>Bomb</damageDef>
+			<damageAmountBase>350</damageAmountBase>
+			<explosionDelay>200</explosionDelay>
+			<soundExplode>Explosion_GiantBomb</soundExplode>
+		</projectile>
+	</ThingDef>
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="BaseGrenadeEquipment">
+		<defName>Pa_GrenadeM24B</defName>
+		<equipmentType>Primary</equipmentType>
+		<label>Model 24 Bundler Charge</label>
+		<description>A robust solution for anti-tank, by wraping 6 explosive warheads of M24 with a single M24 stick grenade, higly increase the damage and blast radius, but also decrease a lot of its effective range due increase weight.</description>
+		<graphicData>
+			<texPath>Things/Ammo/HandGrenades/B</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<soundInteract>Interact_Grenade</soundInteract>
+		<techLevel>Industrial</techLevel>
+		<stackLimit>25</stackLimit>
+		<statBases>
+			<Mass>3.2</Mass>
+			<Bulk>2.9</Bulk>
+			<MarketValue>64</MarketValue>
+			<SightsEfficiency>0.75</SightsEfficiency>
+			<RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
+		</statBases>
+		<generateCommonality>0.5</generateCommonality>
+		<weaponTags>
+			<li>GrenadeDestructive</li>
+			<li>GrenadeTierTwo</li>
+			<li>GrenadeTierThree</li>
+			<li>CE_AI_Grenade</li>
+		</weaponTags>
+		<thingCategories>
+			<li>Grenades</li>
+		</thingCategories>
+		<verbs>
+			<li Class="CombatExtended.VerbPropertiesCE">
+				<label>throw M24 Bundler Charge</label>
+				<verbClass>CombatExtended.Verb_ShootCEOneUse</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<!--<forcedMissRadius>1.2</forcedMissRadius>-->
+				<range>10</range>
+				<warmupTime>1.25</warmupTime>
+				<noiseRadius>14</noiseRadius>
+				<minRange>6</minRange>
+				<ai_AvoidFriendlyFireRadius>6</ai_AvoidFriendlyFireRadius>
+				<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+				<soundCast>ThrowGrenade</soundCast>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+				<defaultProjectile>Proj_GrenadeM24B</defaultProjectile>
+				<onlyManualCast>true</onlyManualCast>
+				<ignorePartialLoSBlocker>true</ignorePartialLoSBlocker>
+			</li>
+		</verbs>
+		<detonateProjectile>Proj_GrenadeM24B</detonateProjectile>
+		<smeltProducts>
+			<Weapon_Parts>1</Weapon_Parts>
+			<Plasteel>1</Plasteel>
+			<Powder>14</Powder>
+		</smeltProducts>
+	</ThingDef>
+	
+	<!-- 4kg Demolition Grenade -->
+	<ThingDef ParentName="SK_BaseGrenadeProjectile">
+		<defName>Proj_Grenade4kg</defName>
+		<label>4kg Demolition Charge</label>
+		<graphicData>
+			<texPath>Things/Projectile/Grenades/4kg</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<explosionRadius>6</explosionRadius>
+			<damageDef>Bomb</damageDef>
+			<damageAmountBase>700</damageAmountBase>
+			<explosionDelay>300</explosionDelay>
+			<soundExplode>Explosion_GiantBomb</soundExplode>
+		</projectile>
+		<comps>
+			<li Class="CombatExtended.CompProperties_Fragments">
+				<fragments>
+					<Fragment_Large>56</Fragment_Large>
+					<Fragment_Small>42</Fragment_Small>
+				</fragments>
+			</li>
+		</comps>
+	</ThingDef>
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="BaseGrenadeEquipment">
+		<defName>Pa_Grenade4kg</defName>
+		<equipmentType>Primary</equipmentType>
+		<label>4kg Demolition Charge</label>
+		<description>An engineer demolition charge, very heavy and powerful enough to demolish fortification.</description>
+		<graphicData>
+			<texPath>Things/Ammo/HandGrenades/4kg</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<soundInteract>Interact_Grenade</soundInteract>
+		<techLevel>Industrial</techLevel>
+		<stackLimit>25</stackLimit>
+		<statBases>
+			<Mass>4.6</Mass>
+			<Bulk>3.4</Bulk>
+			<MarketValue>84</MarketValue>
+			<SightsEfficiency>0.65</SightsEfficiency>
+			<RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
+		</statBases>
+		<generateCommonality>0.4</generateCommonality>
+		<weaponTags>
+			<li>GrenadeDestructive</li>
+			<li>GrenadeTierTwo</li>
+			<li>GrenadeTierThree</li>
+			<li>CE_AI_Grenade</li>
+		</weaponTags>
+		<thingCategories>
+			<li>Grenades</li>
+		</thingCategories>
+		<verbs>
+			<li Class="CombatExtended.VerbPropertiesCE">
+				<label>throw 4kg Demolition Charge</label>
+				<verbClass>CombatExtended.Verb_ShootCEOneUse</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<!--<forcedMissRadius>1.2</forcedMissRadius>-->
+				<range>8</range>
+				<warmupTime>1.3</warmupTime>
+				<noiseRadius>18</noiseRadius>
+				<minRange>2</minRange>
+				<ai_AvoidFriendlyFireRadius>8</ai_AvoidFriendlyFireRadius>
+				<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+				<soundCast>ThrowGrenade</soundCast>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+				<defaultProjectile>Proj_Grenade4kg</defaultProjectile>
+				<onlyManualCast>true</onlyManualCast>
+				<ignorePartialLoSBlocker>true</ignorePartialLoSBlocker>
+			</li>
+		</verbs>
+		<detonateProjectile>Proj_Grenade4kg</detonateProjectile>
+		<smeltProducts>
+			<Weapon_Parts>1</Weapon_Parts>
+			<Plasteel>2</Plasteel>
+			<Powder>20</Powder>
+		</smeltProducts>
+	</ThingDef>
+
+</Defs>

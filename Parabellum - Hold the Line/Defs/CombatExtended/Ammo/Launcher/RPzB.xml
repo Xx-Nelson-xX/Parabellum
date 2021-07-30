@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingCategoryDef>
+		<defName>AmmoRPzBRockets</defName>
+		<label>88mm RPzB Rockets</label>
+		<parent>AmmoRockets</parent>
+		<iconPath>Things/Ammo/RPzB/HEAT/HEAT_c</iconPath>
+	</ThingCategoryDef>
+
+	<!-- ==================== AmmoSet ========================== -->
+
+	<CombatExtended.AmmoSetDef>
+		<defName>AmmoSet_RPzB</defName>
+		<label>88mm RPzB Rockets</label>
+		<ammoTypes>
+			<Ammo_88mmRPzB_HEAT>Bullet_88mmRPzB_HEAT</Ammo_88mmRPzB_HEAT>
+		</ammoTypes>
+	</CombatExtended.AmmoSetDef>
+	
+	<CombatExtended.AmmoSetDef>
+		<defName>AmmoSet_RVW</defName>
+		<label>Raketen-Vielfachwerfer Rockets</label>
+		<ammoTypes>
+			<Ammo_88mmRPzB_HEAT>Bullet_88mmRPzB_HEAT</Ammo_88mmRPzB_HEAT>
+			<Ammo_88mmRPzB_Frag>Bullet_88mmRPzB_Frag</Ammo_88mmRPzB_Frag>
+			<Ammo_8cmRVW_HE>Bullet_8cmRVW_HE</Ammo_8cmRVW_HE>
+		</ammoTypes>
+	</CombatExtended.AmmoSetDef>
+	
+	<!-- ==================== Ammo ========================== -->
+
+	<ThingDef Class="CombatExtended.AmmoDef" Name="88mmRPzBBase" ParentName="AmmoBase" Abstract="True">
+		<description>Small size rockets, relatively simple, cheap and easy to produce rocket ammo.</description>
+		<stackLimit>50</stackLimit>
+		<tradeTags>
+			<li>CE_AutoEnableTrade</li>
+			<li>CE_AutoEnableCrafting_TableMachining</li>
+		</tradeTags>
+		<thingCategories>
+			<li>AmmoRPzBRockets</li>
+		</thingCategories>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+		</statBases>
+		<cookOffSound>MortarBomb_Explode</cookOffSound>
+		<cookOffSpeed>0.5</cookOffSpeed>
+		<cookOffFlashScale>30</cookOffFlashScale>
+		<cookOffTailSound>ShellCookOff_Ambient</cookOffTailSound>
+	</ThingDef>
+
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="88mmRPzBBase">
+		<defName>Ammo_88mmRPzB_HEAT</defName>
+		<label>88mm RPzB GR. 4992(HEAT)</label>
+		<graphicData>
+			<texPath>Things/Ammo/RPzB/HEAT</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<Mass>3.1</Mass>
+			<Bulk>4.1</Bulk>
+			<MarketValue>52</MarketValue>
+		</statBases>
+		<ammoClass>RPzBHEAT</ammoClass>
+		<detonateProjectile>Bullet_88mmRPzB_HEAT</detonateProjectile>
+	</ThingDef>
+	
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="88mmRPzBBase">
+		<defName>Ammo_88mmRPzB_Frag</defName>
+		<label>88mm RPzB GR. 4992(Frag)</label>
+		<graphicData>
+			<texPath>Things/Ammo/RPzB/Frag</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<Mass>3.6</Mass>
+			<Bulk>4.8</Bulk>
+			<MarketValue>67</MarketValue>
+		</statBases>
+		<ammoClass>RPzBFrag</ammoClass>
+		<generateAllowChance>0.35</generateAllowChance>
+		<detonateProjectile>Bullet_88mmRPzB_Frag</detonateProjectile>
+	</ThingDef>
+	
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="88mmRPzBBase">
+		<defName>Ammo_8cmRVW_HE</defName>
+		<label>88mm Raketen Sprgr(HE)</label>
+		<graphicData>
+			<texPath>Things/Ammo/RPzB/8cm</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<Mass>6.9</Mass>
+			<Bulk>7.29</Bulk>
+			<MarketValue>72</MarketValue>
+		</statBases>
+		<ammoClass>8cmRVWHE</ammoClass>
+		<detonateProjectile>Bullet_8cmRVW_HE</detonateProjectile>
+	</ThingDef>
+
+	<!-- ================== Projectiles ================== -->
+
+	<ThingDef Class="CombatExtended.AmmoDef" Name="BaseRPzBRocket" ParentName="BaseRocketLauncher" Abstract="true">
+		<graphicData>
+			<shaderType>TransparentPostLight</shaderType>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<speed>37</speed>
+			<soundAmbient>RocketPropelledLoop_Small</soundAmbient>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="BaseRPzBRocket">
+		<defName>Bullet_88mmRPzB_HEAT</defName>
+		<label>88mm RPzB Gr. 4992(HEAT)</label>
+		<graphicData>
+			<texPath>Things/Projectile/RPzB/HEAT</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>256</damageAmountBase>
+			<armorPenetrationSharp>180</armorPenetrationSharp>
+			<armorPenetrationBlunt>41.075</armorPenetrationBlunt>
+		</projectile>
+		<comps>
+			<li Class="CombatExtended.CompProperties_ExplosiveCE">
+				<damageAmountBase>215</damageAmountBase>
+				<explosiveDamageType>Bomb</explosiveDamageType>
+				<explosiveRadius>1.8</explosiveRadius>
+			</li>
+			<li Class="CombatExtended.CompProperties_Fragments">
+				<fragments>
+					<Fragment_RocketFrag>4</Fragment_RocketFrag>
+					<Fragment_Small>18</Fragment_Small>
+				</fragments>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="BaseRPzBRocket">
+		<defName>Bullet_88mmRPzB_Frag</defName>
+		<label>88mm RPzB Gr. 4992(Frag)</label>
+		<graphicData>
+			<texPath>Things/Projectile/RPzB/Frag</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<flyOverhead>true</flyOverhead>
+			<gravityFactor>9</gravityFactor>
+			<damageDef>Bomb</damageDef>
+			<damageAmountBase>84</damageAmountBase>
+			<explosionRadius>1.1</explosionRadius>
+		</projectile>
+		<comps>
+			<li Class="CombatExtended.CompProperties_Fragments">
+				<fragments>
+					<Fragment_Small>98</Fragment_Small>
+				</fragments>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="BaseRPzBRocket">
+		<defName>Bullet_8cmRVW_HE</defName>
+		<label>8cm Raketen Sprgr(HE)</label>
+		<thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
+		<graphicData>
+			<texPath>Things/Projectile/RPzB/8cm</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<speed>58</speed>
+			<explosionChanceToStartFire>0.24</explosionChanceToStartFire>
+			<flyOverhead>true</flyOverhead>
+			<gravityFactor>9</gravityFactor>
+			<damageDef>Bomb</damageDef>
+			<damageAmountBase>226</damageAmountBase>
+			<explosionRadius>2.8</explosionRadius>
+			<ai_IsIncendiary>true</ai_IsIncendiary>
+		</projectile>
+		<comps>
+			<li Class="CombatExtended.CompProperties_Fragments">
+				<fragments>
+					<Fragment_RocketFrag>12</Fragment_RocketFrag>
+					<Fragment_Small>28</Fragment_Small>
+				</fragments>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<!-- ==================== Recipes ========================== -->
+
+	<RecipeDef ParentName="AmmoRecipeBase">
+		<defName>MakeAmmo_88mmRPzB_HEAT</defName>
+		<label>make RPzB Gr. 4992 HEAT rocket x5</label>
+		<description>Craft RPzB Gr. 4992 HEAT rocket, the standard issued shape charge anti-tank rocket for RPzB 54/1, with nearly no fragments and 180mm armor penetration.</description>
+		<jobString>Making RPzB Gr. 4992 HEAT.</jobString>
+		<workAmount>800</workAmount>
+		<targetCountAdjustment>10</targetCountAdjustment>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>SLDBar</li>
+						<li>USLDBar</li>
+					</categories>
+				</filter>
+				<count>35</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>HeavyBar</li>
+					</categories>
+				</filter>
+				<count>10</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Powder</li>
+						<li>FSX</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>SLDBar</li>
+				<li>USLDBar</li>
+				<li>HeavyBar</li>
+			</categories>
+			<thingDefs>
+				<li>Powder</li>
+				<li>FSX</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Ammo_88mmRPzB_HEAT>5</Ammo_88mmRPzB_HEAT>
+		</products>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="AmmoRecipeBase">
+		<defName>MakeAmmo_88mmRPzB_Frag</defName>
+		<label>make RPzB Gr. 4992 Frag rocket x3</label>
+		<description>Craft RPzB Gr. 4992 Fragmentation rocket, Modified rocket for RPzB 54/1, with improved fragmentation effects but really weak explosive damage.</description>
+		<jobString>Making RPzB Gr. 4992 Frag.</jobString>
+		<workAmount>800</workAmount>
+		<targetCountAdjustment>10</targetCountAdjustment>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>SLDBar</li>
+						<li>USLDBar</li>
+					</categories>
+				</filter>
+				<count>45</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>HeavyBar</li>
+					</categories>
+				</filter>
+				<count>5</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Powder</li>
+						<li>FSX</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>SLDBar</li>
+				<li>USLDBar</li>
+				<li>HeavyBar</li>
+			</categories>
+			<thingDefs>
+				<li>Powder</li>
+				<li>FSX</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Ammo_88mmRPzB_Frag>5</Ammo_88mmRPzB_Frag>
+		</products>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="AmmoRecipeBase">
+		<defName>MakeAmmo_8cmRVW_HE</defName>
+		<label>make 8cm Raketen Sprgr(HE) rocket x3</label>
+		<description>Craft 8cm Raketen Sprpr, modified high explosive rockets for Raketen-Vielfachwerfer, it contain better explosive charge than the standard RPzB rockets.</description>
+		<jobString>Making 8cm Raketen Sprgr(HE) rockets.</jobString>
+		<workAmount>800</workAmount>
+		<targetCountAdjustment>10</targetCountAdjustment>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>SLDBar</li>
+						<li>USLDBar</li>
+					</categories>
+				</filter>
+				<count>35</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>HeavyBar</li>
+					</categories>
+				</filter>
+				<count>10</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Powder</li>
+						<li>FSX</li>
+					</thingDefs>
+				</filter>
+				<count>15</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>SLDBar</li>
+				<li>USLDBar</li>
+				<li>HeavyBar</li>
+			</categories>
+			<thingDefs>
+				<li>Powder</li>
+				<li>FSX</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Ammo_8cmRVW_HE>5</Ammo_8cmRVW_HE>
+		</products>
+	</RecipeDef>
+
+</Defs>

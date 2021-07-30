@@ -1,0 +1,133 @@
+<Defs>
+
+    <!-- M1928A1 Thompson -->
+    <ThingDef ParentName="BaseGun_LongBarreled">
+        <defName>Pa_Tommy</defName>
+        <label>Thompson M1928A1</label>
+        <description>A very expensive submachinegun of its time, also a very heavy and big one, is a fullsize sumbachine gun which require both hands holding it to use it efficiently.</description>
+        <graphicData>
+            <texPath>Things/Weapons/M1928A1</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>Interact_SMG</soundInteract>
+        <statBases>
+            <MarketValue>1600</MarketValue>
+            <SightsEfficiency>0.95</SightsEfficiency>
+            <ShotSpread>0.16</ShotSpread>
+            <SwayFactor>1.15</SwayFactor>
+            <RangedWeapon_Cooldown>0.58</RangedWeapon_Cooldown>
+            <Bulk>11.4</Bulk>
+            <Mass>4.9</Mass>
+        </statBases>
+		<generateCommonality>0.6</generateCommonality>
+        <weaponTags>
+            <li>SMG2</li>
+            <li>Gun</li>
+            <li>TierOneSMG</li>
+			<li>TierTwoSMG</li>
+			<li>CE_SMG</li>
+			<li>CE_AI_AssaultWeapon</li>
+        </weaponTags>
+        <thingCategories>
+            <li>SMGs</li>
+        </thingCategories>
+        <verbs>
+            <li Class="CombatExtended.VerbPropertiesCE">
+                <recoilPattern>Regular</recoilPattern>
+                <recoilAmount>1.5</recoilAmount>
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>Bullet_45ACP_FMJ</defaultProjectile>
+                <burstShotCount>10</burstShotCount>
+                <ticksBetweenBurstShots>4</ticksBetweenBurstShots>
+                <warmupTime>0.58</warmupTime>
+                <range>36</range>
+                <soundCast>ShotUMP45</soundCast>
+                <soundCastTail>GunTail_Light</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+            </li>
+        </verbs>
+        <comps>
+            <li Class="CombatExtended.CompProperties_FireModes">
+                <aiUseBurstMode>FALSE</aiUseBurstMode>
+                <aiAimMode>AimedShot</aiAimMode>
+                <aimedBurstShotCount>5</aimedBurstShotCount>
+            </li>
+            <li Class="CombatExtended.CompProperties_AmmoUser">
+                <magazineSize>50</magazineSize>
+                <reloadTime>3.8</reloadTime>
+                <ammoSet>AmmoSet_45ACP</ammoSet>
+            </li>
+        </comps>
+        <smeltProducts>
+            <SMG_Component>1</SMG_Component>
+            <Weapon_Parts>5</Weapon_Parts>
+        </smeltProducts>
+    </ThingDef>
+	
+	<!-- Suomi KP-31 -->
+    <ThingDef ParentName="BaseGun_LongBarreled">
+        <defName>Pa_Suomi</defName>
+        <label>Suomi KP-31 SMG</label>
+        <description>An ancient world weapon, one of the best of its kind, very effective for suppression fire and perform assault tactics, the downside is, they are bit expensive to produce.</description>
+        <graphicData>
+            <texPath>Things/Weapons/Suomi</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>Interact_SMG</soundInteract>
+        <statBases>
+            <MarketValue>800</MarketValue>
+            <SightsEfficiency>0.95</SightsEfficiency>
+            <ShotSpread>0.14</ShotSpread>
+            <SwayFactor>1.5</SwayFactor>
+            <RangedWeapon_Cooldown>0.52</RangedWeapon_Cooldown>
+            <Bulk>9.5</Bulk>
+            <Mass>4.6</Mass>
+        </statBases>
+		<generateCommonality>0.4</generateCommonality>
+        <weaponTags>
+			<li>SMG2</li>
+            <li>Gun</li>
+            <li>TierOneSMG</li>
+			<li>TierTwoSMG</li>
+			<li>CE_SMG</li>
+			<li>CE_AI_AssaultWeapon</li>
+        </weaponTags>
+        <thingCategories>
+            <li>SMGs</li>
+        </thingCategories>
+        <verbs>
+            <li Class="CombatExtended.VerbPropertiesCE">
+				<recoilPattern>Regular</recoilPattern>
+                <recoilAmount>1.36</recoilAmount>
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>Bullet_9x19mmPara_FMJ</defaultProjectile>
+                <burstShotCount>18</burstShotCount>
+                <ticksBetweenBurstShots>4</ticksBetweenBurstShots>
+                <warmupTime>0.5</warmupTime>
+                <range>32</range>
+                <soundCast>Shot_Suomi</soundCast>
+                <soundCastTail>GunTail_Medium</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+            </li>
+        </verbs>
+        <comps>
+            <li Class="CombatExtended.CompProperties_FireModes">
+                <aiUseBurstMode>true</aiUseBurstMode>
+                <aiAimMode>AimedShot</aiAimMode>
+                <aimedBurstShotCount>6</aimedBurstShotCount>
+            </li>
+            <li Class="CombatExtended.CompProperties_AmmoUser">
+                <magazineSize>71</magazineSize>
+                <reloadTime>4.2</reloadTime>
+                <ammoSet>AmmoSet_9x19mmPara</ammoSet>
+            </li>
+        </comps>
+        <smeltProducts>
+            <SMG_Component>1</SMG_Component>
+            <Weapon_Parts>3</Weapon_Parts>
+        </smeltProducts>
+    </ThingDef>
+	
+</Defs>

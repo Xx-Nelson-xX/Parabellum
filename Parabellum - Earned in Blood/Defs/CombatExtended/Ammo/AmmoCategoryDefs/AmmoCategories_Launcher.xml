@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+   <CombatExtended.AmmoCategoryDef>
+    <defName>CGHE</defName>
+    <label>CG High Explosive</label>
+    <labelShort>CGHE</labelShort>
+    <description>Explosive round Filled with fragments</description>
+  </CombatExtended.AmmoCategoryDef>
+
+   <CombatExtended.AmmoCategoryDef>
+    <defName>CGHEAT</defName>
+    <label>CG High Explosive Anti-Tank</label>
+    <labelShort>CGHEAT</labelShort>
+    <description>Shape charge explosive capable to penetrate armored target.</description>
+  </CombatExtended.AmmoCategoryDef>
+
+   <CombatExtended.AmmoCategoryDef>
+    <defName>CGADM</defName>
+    <label>CG Area Defense Munition</label>
+    <labelShort>CGADM</labelShort>
+    <description>Flechette round for close range defense.</description>
+  </CombatExtended.AmmoCategoryDef>
+  
+  <CombatExtended.AmmoCategoryDef>
+    <defName>GrenadeBB</defName>
+    <label>Bean Bag</label>
+    <labelShort>GrenadeBB</labelShort>
+    <description>Painful but non-lethal round.</description>
+  </CombatExtended.AmmoCategoryDef>
+
+   <CombatExtended.AmmoCategoryDef>
+    <defName>GrenadeF</defName>
+    <label>Flechette</label>
+    <labelShort>GrenadeF</labelShort>
+    <description>Flechette round for close range defense.</description>
+  </CombatExtended.AmmoCategoryDef>
+  
+  <CombatExtended.AmmoCategoryDef>
+    <defName>TEA</defName>
+    <label>66mm Incendiary</label>
+    <labelShort>TEA</labelShort>
+    <description>Incendiary round to scorch an area with flames.</description>
+  </CombatExtended.AmmoCategoryDef>
+  
+  <CombatExtended.AmmoCategoryDef>
+    <defName>PzFHEAT</defName>
+    <label>Panzerfaust HEAT</label>
+    <labelShort>PzFHEAT</labelShort>
+    <description>Mass produced Shape Charge Anti-Tank Warhead, excellent counter armored target.</description>
+  </CombatExtended.AmmoCategoryDef>
+  
+  <CombatExtended.AmmoCategoryDef>
+    <defName>PzFFrag</defName>
+    <label>Panzerfaust Frag</label>
+    <labelShort>PzFFrag</labelShort>
+    <description>Modified warhead, filled with metal fragments and shrapnels.</description>
+  </CombatExtended.AmmoCategoryDef>
+  
+  <CombatExtended.AmmoCategoryDef>
+    <defName>25x59mmHEAB</defName>
+    <label>25x59mm HEAB</label>
+    <labelShort>25x59mmHEAB</labelShort>
+    <description>Tactical anti-personnel explosive munition capable detonate in midair, causing airburst effect fragment damage to an enemy.</description>
+  </CombatExtended.AmmoCategoryDef>
+  
+   <CombatExtended.AmmoCategoryDef>
+    <defName>25x59mmHEDP</defName>
+    <label>25x59mm HEDP</label>
+    <labelShort>25x59mmHEDP</labelShort>
+    <description>Explosive munition capable of penetrating armor while also do fragmentation damage.</description>
+  </CombatExtended.AmmoCategoryDef>
+  
+  <CombatExtended.AmmoCategoryDef>
+    <defName>25x59mmHEI</defName>
+    <label>25x59mm HEI</label>
+    <labelShort>25x59mmHEI</labelShort>
+    <description>Explosive munition with both fragmentation and incendiary damage.</description>
+  </CombatExtended.AmmoCategoryDef>
+  
+  <CombatExtended.AmmoCategoryDef>
+    <defName>25x59mmHEEMP</defName>
+    <label>25x59mm HE-EMP</label>
+    <labelShort>25x59mmHEEMP</labelShort>
+    <description>Explosive munition with both fragmentation and electromagnetic pulse damage.</description>
+  </CombatExtended.AmmoCategoryDef>
+  
+  <CombatExtended.AmmoCategoryDef>
+    <defName>RPzBHEAT</defName>
+    <label>88mm RPzB HEAT</label>
+    <labelShort>RPzBHEAT</labelShort>
+    <description>Mass produced Shape Charge Anti-Tank Rocket, excellent counter armored target, only work with direct hit since it doesn't has enough fragmentation effects for area damage.</description>
+  </CombatExtended.AmmoCategoryDef>
+
+</Defs>

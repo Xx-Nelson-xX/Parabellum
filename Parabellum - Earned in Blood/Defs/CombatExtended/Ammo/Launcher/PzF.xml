@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingCategoryDef>
+		<defName>AmmoPzFGrenades</defName>
+		<label>Panzerfaust 60 Warhead</label>
+		<parent>AmmoGrenades</parent>
+		<iconPath>Things/Ammo/PzF/HEAT/HEAT_c</iconPath>
+	</ThingCategoryDef>
+
+	<!-- ==================== AmmoSet ========================== -->
+
+	<CombatExtended.AmmoSetDef>
+		<defName>AmmoSet_PzF</defName>
+		<label>Panzerfaust 60 Warhead</label>
+		<ammoTypes>
+			<Ammo_PzF_HEAT>Bullet_PzF_HEAT</Ammo_PzF_HEAT>
+			<Ammo_PzF_Frag>Bullet_PzF_Frag</Ammo_PzF_Frag>
+		</ammoTypes>
+	</CombatExtended.AmmoSetDef>
+	
+	<!-- ==================== Ammo ========================== -->
+
+	<ThingDef Class="CombatExtended.AmmoDef" Name="PzFBase" ParentName="AmmoBase" Abstract="True">
+		<description>Low velocity warhead launched from panzerfaust.</description>
+		<statBases>
+			<Mass>6.8</Mass>
+			<Bulk>3.4</Bulk>
+			<MaxHitPoints>80</MaxHitPoints>
+		</statBases>
+		<tradeTags>
+			<li>CE_AutoEnableTrade</li>
+			<li>CE_AutoEnableCrafting</li>
+		</tradeTags>
+		<thingCategories>
+			<li>AmmoPzFGrenades</li>
+		</thingCategories>
+		<stackLimit>25</stackLimit>
+		<cookOffSound>MortarBomb_Explode</cookOffSound>
+		<cookOffSpeed>0.8</cookOffSpeed>
+		<cookOffFlashScale>40</cookOffFlashScale>
+		<cookOffTailSound>ShellCookOff_Ambient</cookOffTailSound>
+	</ThingDef>
+	
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="PzFBase">
+		<defName>Ammo_PzF_HEAT</defName>
+		<label>149mm Panzerfaust HEAT warhead</label>
+		<graphicData>
+			<texPath>Things/Ammo/PzF/HEAT</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>52</MarketValue>
+		</statBases>
+		<ammoClass>PzFHEAT</ammoClass>
+		<detonateProjectile>Bullet_PzF_HEAT</detonateProjectile>
+	</ThingDef>
+
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="PzFBase">
+		<defName>Ammo_PzF_Frag</defName>
+		<label>149mm Panzerfaust Fragmentation warhead</label>
+		<graphicData>
+			<texPath>Things/Ammo/PzF/Frag</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>60</MarketValue>
+		</statBases>
+		<ammoClass>PzFFrag</ammoClass>
+		<generateAllowChance>0.45</generateAllowChance>
+		<detonateProjectile>Bullet_PzF_Frag</detonateProjectile>
+	</ThingDef>
+	
+	<!-- ================== Projectiles ================== -->
+
+	<ThingDef Class="CombatExtended.AmmoDef" Name="BasePzFBullet" ParentName="SK_BaseBullet" Abstract="true">
+		<graphicData>
+			<texPath>Things/Projectile/PzF</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<speed>15</speed>
+			<soundExplode>MortarBomb_Explode</soundExplode>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="BasePzFBullet">
+		<defName>Bullet_PzF_HEAT</defName>
+		<label>149mm Panzerfaust HEAT warhead</label>
+		<graphicData>
+			<texPath>Things/Projectile/PzF/HEAT</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>320</damageAmountBase>
+			<armorPenetrationSharp>180</armorPenetrationSharp>
+			<armorPenetrationBlunt>62.54</armorPenetrationBlunt>
+		</projectile>
+		<comps>
+			<li Class="CombatExtended.CompProperties_ExplosiveCE">
+				<damageAmountBase>280</damageAmountBase>
+				<explosiveDamageType>Bomb</explosiveDamageType>
+				<explosiveRadius>1.9</explosiveRadius>
+			</li>
+			<li Class="CombatExtended.CompProperties_Fragments">
+				<fragments>
+					<Fragment_Large>6</Fragment_Large>
+					<Fragment_Small>24</Fragment_Small>
+				</fragments>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="BasePzFBullet">
+		<defName>Bullet_PzF_Frag</defName>
+		<label>149mm Panzerfaust Fragmentation warhead</label>
+		<graphicData>
+			<texPath>Things/Projectile/PzF/Frag</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageDef>Bomb</damageDef>
+			<damageAmountBase>140</damageAmountBase>
+			<explosionRadius>0.8</explosionRadius>
+		</projectile>
+		<comps>
+			<li Class="CombatExtended.CompProperties_Fragments">
+				<fragments>
+					<Fragment_Large>36</Fragment_Large>
+					<Fragment_Small>88</Fragment_Small>
+				</fragments>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<!-- ==================== Recipes ========================== -->
+
+	<RecipeDef ParentName="AmmoRecipeBase">
+		<defName>MakeAmmo_PzF_HEAT</defName>
+		<label>make 149mm Panzerfaust HEAT warhead x1</label>
+		<description>Craft a 149mm Panzerfaust HEAT warhead.</description>
+		<jobString>Making 149mm Panzerfaust HEAT warhead.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Metallic</li>
+					</categories>
+				</filter>
+				<count>10</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Powder</li>
+						<li>FSX</li>
+					</thingDefs>
+				</filter>
+				<count>4</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>SLDBar</li>
+				<li>USLDBar</li>
+			</categories>
+			<thingDefs>
+				<li>FSX</li>
+				<li>Powder</li>
+				<li>ComponentIndustrial</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Ammo_PzF_HEAT>1</Ammo_PzF_HEAT>
+		</products>
+		<recipeUsers>
+			<li>AmmoBench</li>
+		</recipeUsers>
+	</RecipeDef>
+
+	<RecipeDef ParentName="AmmoRecipeBase">
+		<defName>MakeAmmo_PzF_Frag</defName>
+		<label>make 149mm Panzerfaust Fragmentation warhead x1</label>
+		<description>Craft a 149mm Panzerfaust Fragmentation warhead.</description>
+		<jobString>Making 149mm Panzerfaust Fragmentation warhead.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Metallic</li>
+					</categories>
+				</filter>
+				<count>16</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Powder</li>
+						<li>FSX</li>
+					</thingDefs>
+				</filter>
+				<count>3</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>SLDBar</li>
+				<li>USLDBar</li>
+			</categories>
+			<thingDefs>
+				<li>FSX</li>
+				<li>Powder</li>
+				<li>ComponentIndustrial</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Ammo_PzF_Frag>1</Ammo_PzF_Frag>
+		</products>
+		<recipeUsers>
+			<li>AmmoBench</li>
+		</recipeUsers>
+	</RecipeDef>
+	
+	</Defs>

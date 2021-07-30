@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+	
+    <!-- Barrett XM109 Anti-Materiel Payload Rifle -->
+    <ThingDef ParentName="BaseGun_LongBarreled">
+        <defName>Pa_XM109AMPR</defName>
+        <label>Barrett XM109 AMPR</label>
+        <description>Originally belong to the OSW program, it become AMPR thanks to it role, the XM109 can be reconfigured to use both .50 BMG and 25X59mm high-velocity grenade round for light-medium armored target, unlike the M82/M107 system, the XM109 offers greater range with a shorter weapon length. Very high damage, extremely long range and excellent accuracy.</description>
+        <graphicData>
+            <texPath>Things/Weapons/XM109</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>Interact_Rifle</soundInteract>
+        <statBases>
+            <MarketValue>4000</MarketValue>
+            <SightsEfficiency>1.8</SightsEfficiency>
+            <ShotSpread>0.01</ShotSpread>
+            <SwayFactor>0.7</SwayFactor>
+            <RangedWeapon_Cooldown>2.2</RangedWeapon_Cooldown>
+            <Bulk>12.9</Bulk>
+            <Mass>15.1</Mass>
+        </statBases>
+		<generateCommonality>0.2</generateCommonality>
+        <thingCategories>
+            <li>SRifles</li>
+        </thingCategories>
+        <weaponTags>
+            <li>SNIP4</li>
+            <li>AdvancedGun</li>
+            <li>TierThreeSniper</li>
+            <li>CE_AI_Rifle</li>
+        </weaponTags>
+        <verbs>
+            <li Class="CombatExtended.VerbPropertiesCE">
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>Bullet_25x59mmGrenade_HEDP</defaultProjectile>
+                <warmupTime>3.1</warmupTime>
+                <range>87</range>
+				<targetParams>
+                    <canTargetLocations>true</canTargetLocations>
+                </targetParams>
+                <soundCast>ShotM82</soundCast>
+                <soundCastTail>GunTail_Heavy</soundCastTail>
+                <muzzleFlashScale>14</muzzleFlashScale>
+            </li>
+        </verbs>
+        <comps>
+            <li Class="CombatExtended.CompProperties_FireModes">
+                <aiAimMode>AimedShot</aiAimMode>
+            </li>
+            <li Class="CombatExtended.CompProperties_AmmoUser">
+                <magazineSize>5</magazineSize>
+                <reloadTime>4</reloadTime>
+                <ammoSet>AmmoSet_XM109AMPR</ammoSet>
+            </li>
+        </comps>
+        <smeltProducts>
+            <AdvSniper_Component>1</AdvSniper_Component>
+            <Weapon_Parts>5</Weapon_Parts>
+			<Plastic>10</Plastic>
+        </smeltProducts>
+    </ThingDef>
+	
+</Defs>

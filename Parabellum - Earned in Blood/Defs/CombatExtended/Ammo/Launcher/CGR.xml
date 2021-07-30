@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingCategoryDef>
+		<defName>Ammo84mmCGShells</defName>
+		<label>84mm Carl Gustav Shell</label>
+		<parent>AmmoRockets</parent>
+		<iconPath>Things/Ammo/CGR/HEAT</iconPath>
+	</ThingCategoryDef>
+
+	<!-- ==================== AmmoSet ========================== -->
+
+	<CombatExtended.AmmoSetDef>
+		<defName>AmmoSet_CGR</defName>
+		<label>84mmCG(Carl Gustav Arsenal)</label>
+		<ammoTypes>
+			<Ammo_84mmCGShell_HEAT>Bullet_84mmCGShell_HEAT</Ammo_84mmCGShell_HEAT>
+			<Ammo_84mmCGShell_HE>Bullet_84mmCGShell_HE</Ammo_84mmCGShell_HE>
+			<Ammo_84mmCGShell_ADM>Bullet_84mmCGShell_ADM</Ammo_84mmCGShell_ADM>
+		</ammoTypes>
+	</CombatExtended.AmmoSetDef>
+	
+	<!-- ==================== Ammo ========================== -->
+
+	<ThingDef Class="CombatExtended.AmmoDef" Name="84mmCGBase" ParentName="AmmoBase" Abstract="True">
+		<description>84mm Carl Gustav shell, portable as any rockect ammo.</description>
+		<stackLimit>25</stackLimit>
+		<tradeTags>
+			<li>CE_AutoEnableTrade</li>
+			<li>CE_AutoEnableCrafting_TableMachining</li>
+		</tradeTags>
+		<thingCategories>
+			<li>Ammo84mmCGShells</li>
+		</thingCategories>
+		<statBases>
+			<MaxHitPoints>120</MaxHitPoints>
+		</statBases>
+		<cookOffSound>MortarBomb_Explode</cookOffSound>
+		<cookOffSpeed>0.5</cookOffSpeed>
+		<cookOffFlashScale>30</cookOffFlashScale>
+		<cookOffTailSound>ShellCookOff_Ambient</cookOffTailSound>
+	</ThingDef>
+
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="84mmCGBase">
+		<defName>Ammo_84mmCGShell_HEAT</defName>
+		<label>84mm FFV551 (HEAT)</label>
+		<graphicData>
+			<texPath>Things/Ammo/CGR/HEAT</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<Mass>4</Mass>
+			<Bulk>4.5</Bulk>
+			<MarketValue>86</MarketValue>
+		</statBases>
+		<ammoClass>CGHEAT</ammoClass>
+		<detonateProjectile>Bullet_84mmCGShell_HEAT</detonateProjectile>
+	</ThingDef>
+
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="84mmCGBase">
+		<defName>Ammo_84mmCGShell_HE</defName>
+		<label>84mm FFV441B (HE)</label>
+		<graphicData>
+			<texPath>Things/Ammo/CGR/HE</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<Mass>3.2</Mass>
+			<Bulk>3.4</Bulk>
+			<MarketValue>84.25</MarketValue>
+		</statBases>
+		<ammoClass>CGHE</ammoClass>
+		<generateAllowChance>0.65</generateAllowChance>
+		<detonateProjectile>Bullet_84mmCGShell_HE</detonateProjectile>
+	</ThingDef>
+
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="84mmCGBase">
+		<defName>Ammo_84mmCGShell_ADM</defName>
+		<label>84mm FFV401 (ADM)</label>
+		<graphicData>
+			<texPath>Things/Ammo/CGR/ADM</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<Mass>2.6</Mass>
+			<Bulk>3.5</Bulk>
+			<MarketValue>98.36</MarketValue>
+		</statBases>
+		<ammoClass>CGADM</ammoClass>
+		<generateAllowChance>0.25</generateAllowChance>
+	</ThingDef>
+
+	<!-- ================== Projectiles ================== -->
+
+	<ThingDef Class="CombatExtended.AmmoDef" Name="Base84mmCGShell" ParentName="SK_BaseBullet" Abstract="true">
+		<graphicData>
+			<shaderType>TransparentPostLight</shaderType>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<speed>60</speed>
+			<soundExplode>MortarBomb_Explode</soundExplode>
+			<flyOverhead>false</flyOverhead>
+			<casingMoteDefname>Mote_BigShell</casingMoteDefname>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="Base84mmCGShell">
+		<defName>Bullet_84mmCGShell_HEAT</defName>
+		<label>84mm FFV551 (HEAT)</label>
+		<graphicData>
+			<texPath>Things/Projectile/CGR/HEAT</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>248</damageAmountBase>
+			<armorPenetrationSharp>400</armorPenetrationSharp>
+			<armorPenetrationBlunt>37.075</armorPenetrationBlunt>
+		</projectile>
+		<comps>
+			<li Class="CombatExtended.CompProperties_ExplosiveCE">
+				<damageAmountBase>160</damageAmountBase>
+				<explosiveDamageType>Bomb</explosiveDamageType>
+				<explosiveRadius>2.8</explosiveRadius>
+			</li>
+			<li Class="CombatExtended.CompProperties_Fragments">
+				<fragments>
+					<Fragment_Large>20</Fragment_Large>
+					<Fragment_Small>32</Fragment_Small>
+				</fragments>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="Base84mmCGShell">
+		<defName>Bullet_84mmCGShell_HE</defName>
+		<label>84mm FFV441B (HE)</label>
+		<thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
+		<graphicData>
+			<texPath>Things/Projectile/CGR/HE</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageDef>Bomb</damageDef>
+			<damageAmountBase>180</damageAmountBase>
+			<explosionRadius>3.2</explosionRadius>
+			<ai_IsIncendiary>true</ai_IsIncendiary>
+		</projectile>
+		<comps>
+			<li Class="CombatExtended.CompProperties_Fragments">
+				<fragments>
+					<Fragment_Large>40</Fragment_Large>
+					<Fragment_Small>65</Fragment_Small>
+				</fragments>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="Base84mmCGShell">
+		<defName>Bullet_84mmCGShell_ADM</defName>
+		<label>84mm FFV401 (ADM)</label>
+		<graphicData>
+			<texPath>Things/Projectile/CGR/Dart</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>4</damageAmountBase>
+			<pelletCount>1100</pelletCount>
+			<spreadMult>68.2</spreadMult>
+			<armorPenetrationSharp>12</armorPenetrationSharp>
+			<armorPenetrationBlunt>26,5</armorPenetrationBlunt>
+			<speed>110</speed>
+		</projectile>
+	</ThingDef>
+
+	<!-- ==================== Recipes ========================== -->
+
+	<RecipeDef ParentName="AmmoRecipeBase">
+		<defName>MakeAmmo_84mmCGShell_HEAT</defName>
+		<label>make FFV551 HEAT shells x1</label>
+		<description>Craft FFV551 High Explosive Anti-Tank shells, the standard issued anti-tank ammo, with small fragments and 400mm armor penetration.</description>
+		<jobString>Making FFV551 HEAT shells.</jobString>
+		<workAmount>1100</workAmount>
+		<targetCountAdjustment>10</targetCountAdjustment>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>SLDBar</li>
+						<li>USLDBar</li>
+					</categories>
+				</filter>
+				<count>12</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>HeavyBar</li>
+					</categories>
+				</filter>
+				<count>5</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Powder</li>
+						<li>FSX</li>
+					</thingDefs>
+				</filter>
+				<count>4</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>SLDBar</li>
+				<li>USLDBar</li>
+				<li>HeavyBar</li>
+			</categories>
+			<thingDefs>
+				<li>Powder</li>
+				<li>FSX</li>
+				<li>ComponentIndustrial</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Ammo_84mmCGShell_HEAT>1</Ammo_84mmCGShell_HEAT>
+		</products>
+	</RecipeDef>
+
+	<RecipeDef ParentName="AmmoRecipeBase">
+		<defName>MakeAmmo_84mmCGShell_HE</defName>
+		<label>make FFV441B HE shells x1</label>
+		<description>Craft FFV441B High Explosive shells, impact explosive warhead, packed with lots of fragment for anti-personel at distance.</description>
+		<jobString>Making FFV441B HE shells.</jobString>
+		<workAmount>1100</workAmount>
+		<targetCountAdjustment>10</targetCountAdjustment>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>SLDBar</li>
+						<li>USLDBar</li>
+					</categories>
+				</filter>
+				<count>18</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>HeavyBar</li>
+					</categories>
+				</filter>
+				<count>6</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Powder</li>
+						<li>FSX</li>
+					</thingDefs>
+				</filter>
+				<count>6</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>SLDBar</li>
+				<li>USLDBar</li>
+				<li>HeavyBar</li>
+			</categories>
+			<thingDefs>
+				<li>Powder</li>
+				<li>FSX</li>
+				<li>ComponentIndustrial</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Ammo_84mmCGShell_HE>1</Ammo_84mmCGShell_HE>
+		</products>
+	</RecipeDef>
+
+	<RecipeDef ParentName="AmmoRecipeBase">
+		<defName>MakeAmmo_84mmCGShell_ADM</defName>
+		<label>make FFV401 ADM shells x1</label>
+		<description>Craft FFV401 Area Defense Munition shells, Anti-personel warhead filled with flechette/steel darts for direct fire.</description>
+		<jobString>Making FFV401 ADM shells.</jobString>
+		<workAmount>1100</workAmount>
+		<targetCountAdjustment>10</targetCountAdjustment>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>SLDBar</li>
+						<li>USLDBar</li>
+					</categories>
+				</filter>
+				<count>14</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>HeavyBar</li>
+					</categories>
+				</filter>
+				<count>6</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Powder</li>
+					</thingDefs>
+				</filter>
+				<count>4</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>SLDBar</li>
+				<li>USLDBar</li>
+				<li>HeavyBar</li>
+			</categories>
+			<thingDefs>
+				<li>Powder</li>
+				<li>ComponentIndustrial</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Ammo_84mmCGShell_ADM>1</Ammo_84mmCGShell_ADM>
+		</products>
+	</RecipeDef>
+
+</Defs>

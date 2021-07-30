@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingCategoryDef>
+		<defName>AmmoNbW32Rockets</defName>
+		<label>Nebelwerfer rocket</label>
+		<parent>AmmoRockets</parent>
+		<iconPath>Things/Ammo/NbW/30cm/30cm_c</iconPath>
+	</ThingCategoryDef>
+
+	<!-- ==================== AmmoSet ========================== -->
+
+	<CombatExtended.AmmoSetDef>
+		<defName>AmmoSet_NbW32rockets</defName>
+		<label>Nebelwerfer rocket</label>
+		<ammoTypes>
+			<Ammo_28cmNbWRocket>Bullet_28cmNbWRocket</Ammo_28cmNbWRocket>
+			<Ammo_30cmNbWRocket>Bullet_30cmNbWRocket</Ammo_30cmNbWRocket>
+			<Ammo_32cmNbWRocket>Bullet_32cmNbWRocket</Ammo_32cmNbWRocket>
+		</ammoTypes>
+	</CombatExtended.AmmoSetDef>
+
+	<!-- ==================== Ammo ========================== -->
+
+	<ThingDef Class="CombatExtended.AmmoDef" Name="NbW32RocketBase" ParentName="AmmoBase" Abstract="True">
+		<description>Nebelwerfer rocket.</description>
+		<thingCategories>
+			<li>AmmoNbW32Rockets</li>
+		</thingCategories>
+		<stackLimit>25</stackLimit>
+		<tradeTags>
+			<li>CE_AutoEnableTrade</li>
+			<li>CE_AutoEnableCrafting_TableMachining</li>
+		</tradeTags>
+		<statBases>
+			<MaxHitPoints>200</MaxHitPoints>
+			<Flammability>1</Flammability>
+		</statBases>
+		<cookOffSound>Explosion_GiantBomb</cookOffSound>
+		<cookOffSpeed>0.8</cookOffSpeed>
+		<cookOffFlashScale>50</cookOffFlashScale>
+		<cookOffTailSound>ShellCookOff_Ambient</cookOffTailSound>
+	</ThingDef>
+
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="NbW32RocketBase">
+		<defName>Ammo_28cmNbWRocket</defName>
+		<label>28cm rocket (HE)</label>
+		<description>28cm High Explosive rocket.</description>
+		<graphicData>
+			<texPath>Things/Ammo/NbW/28cm</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>280</MarketValue>
+			<Mass>82</Mass>
+			<Bulk>132.6</Bulk>
+		</statBases>
+		<ammoClass>28cmHE</ammoClass>
+		<generateAllowChance>0.75</generateAllowChance>
+		<cookOffProjectile>Bullet_28cmNbWRocket</cookOffProjectile>
+	</ThingDef>
+	
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="NbW32RocketBase">
+		<defName>Ammo_30cmNbWRocket</defName>
+		<label>30cm rocket (HE)</label>
+		<description>30cm Improved High Explosive rocket.</description>
+		<graphicData>
+			<texPath>Things/Ammo/NbW/30cm</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>340</MarketValue>
+			<Mass>127</Mass>
+			<Bulk>161.4</Bulk>
+		</statBases>
+		<ammoClass>30cmHE</ammoClass>
+		<generateAllowChance>0.45</generateAllowChance>
+		<cookOffProjectile>Bullet_30cmNbWRocket</cookOffProjectile>
+	</ThingDef>
+	
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="NbW32RocketBase">
+		<defName>Ammo_32cmNbWRocket</defName>
+		<label>32cm rocket (I)</label>
+		<description>32cm Incendiary rocket.</description>
+		<graphicData>
+			<texPath>Things/Ammo/NbW/32cm</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>300</MarketValue>
+			<Mass>79</Mass>
+			<Bulk>147.4</Bulk>
+			<Flammability>1.5</Flammability>
+		</statBases>
+		<ammoClass>32cmIncendiary</ammoClass>
+		<cookOffProjectile>Bullet_32cmNbWRocket</cookOffProjectile>
+	</ThingDef>
+	
+	<!-- ================== Projectiles ================== -->
+
+	<ThingDef Class="CombatExtended.AmmoDef" Name="BaseNbW32Rocket" ParentName="BaseRocketLauncher" Abstract="true">
+		<thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
+		<graphicData>
+			<shaderType>TransparentPostLight</shaderType>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<speed>28</speed>
+			<flyOverhead>true</flyOverhead>
+			<gravityFactor>20</gravityFactor>
+			<soundAmbient>RocketPropelledLoop_Small</soundAmbient>
+			<soundImpactAnticipate>MortarRound_PreImpact</soundImpactAnticipate>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="BaseNbW32Rocket">
+		<defName>Bullet_28cmNbWRocket</defName>
+		<label>28cm HE Rocket</label>
+		<thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
+		<graphicData>
+			<texPath>Things/Projectile/NbW/28cm</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageDef>Bomb</damageDef>
+			<damageAmountBase>540</damageAmountBase>
+			<explosionRadius>8</explosionRadius>
+			<explosionChanceToStartFire>0.55</explosionChanceToStartFire>
+			<explosionEffect>GiantExplosion</explosionEffect>
+			<soundExplode>Explosion_GiantBomb</soundExplode>
+			<ai_IsIncendiary>true</ai_IsIncendiary>
+		</projectile>
+		<comps>
+			<li Class="CombatExtended.CompProperties_Fragments">
+				<fragments>
+					<Fragment_RocketFrag>132</Fragment_RocketFrag>
+					<Fragment_Small>115</Fragment_Small>
+				</fragments>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="BaseNbW32Rocket">
+		<defName>Bullet_30cmNbWRocket</defName>
+		<label>30cm HE Rocket</label>
+		<thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
+		<graphicData>
+			<texPath>Things/Projectile/NbW/30cm</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<speed>44</speed>
+			<damageDef>Bomb</damageDef>
+			<damageAmountBase>780</damageAmountBase>
+			<explosionRadius>9</explosionRadius>
+			<explosionChanceToStartFire>0.65</explosionChanceToStartFire>
+			<explosionEffect>GiantExplosion</explosionEffect>
+			<soundExplode>Explosion_GiantBomb</soundExplode>
+			<ai_IsIncendiary>true</ai_IsIncendiary>
+		</projectile>
+		<comps>
+			<li Class="CombatExtended.CompProperties_Fragments">
+				<fragments>
+					<Fragment_RocketFrag>174</Fragment_RocketFrag>
+					<Fragment_Small>152</Fragment_Small>
+				</fragments>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="BaseNbW32Rocket">
+		<defName>Bullet_32cmNbWRocket</defName>
+		<label>32cm Incendiary Rocket</label>
+		<thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
+		<graphicData>
+			<texPath>Things/Projectile/NbW/32cm</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageDef>Flame</damageDef>
+			<damageAmountBase>4</damageAmountBase>
+			<preExplosionSpawnThingDef>FilthPrometheum</preExplosionSpawnThingDef>
+			<preExplosionSpawnChance>0.95</preExplosionSpawnChance>
+			<explosionEffect>GiantExplosion</explosionEffect>
+			<soundExplode>Explosion_GiantBomb</soundExplode>
+			<explosionRadius>10</explosionRadius>
+			<ai_IsIncendiary>true</ai_IsIncendiary>
+		</projectile>
+		<comps>
+			<li Class="CombatExtended.CompProperties_ExplosiveCE">
+				<damageAmountBase>360</damageAmountBase>
+				<explosiveDamageType>Thermobaric</explosiveDamageType>
+				<explosiveRadius>10</explosiveRadius>
+			</li>
+			<li Class="CombatExtended.CompProperties_Fragments">
+				<fragments>
+					<Fragment_RocketFrag>12</Fragment_RocketFrag>
+					<Fragment_Small>60</Fragment_Small>
+				</fragments>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<!-- ==================== Recipes ========================== -->
+
+	<RecipeDef ParentName="AmmoRecipeBase">
+		<defName>MakeAmmo_28cmNbWRocket</defName>
+		<label>make 28cm High Explosive Nebelwerfer Rocket x1</label>
+		<description>Craft 28cm High Explosive Nebelwerfer Rocket.</description>
+		<jobString>Making 28cm High Explosive Nebelwerfer Rocket.</jobString>
+		<workAmount>2000</workAmount>
+		<targetCountAdjustment>10</targetCountAdjustment>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>SLDBar</li>
+						<li>USLDBar</li>
+					</categories>
+				</filter>
+				<count>32</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>HeavyBar</li>
+					</categories>
+				</filter>
+				<count>8</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Powder</li>
+						<li>FSX</li>
+					</thingDefs>
+				</filter>
+				<count>22</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>SLDBar</li>
+				<li>USLDBar</li>
+				<li>HeavyBar</li>
+			</categories>
+			<thingDefs>
+				<li>Powder</li>
+				<li>FSX</li>
+				<li>ComponentIndustrial</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Ammo_28cmNbWRocket>1</Ammo_28cmNbWRocket>
+		</products>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="AmmoRecipeBase">
+		<defName>MakeAmmo_30cmNbWRocket</defName>
+		<label>make 30cm High Explosive Nebelwerfer Rocket x1</label>
+		<description>Craft 30cm High Explosive Nebelwerfer Rocket.</description>
+		<jobString>Making 30cm High Explosive Nebelwerfer Rocket.</jobString>
+		<workAmount>2000</workAmount>
+		<targetCountAdjustment>10</targetCountAdjustment>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>SLDBar</li>
+						<li>USLDBar</li>
+					</categories>
+				</filter>
+				<count>44</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>HeavyBar</li>
+					</categories>
+				</filter>
+				<count>12</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Powder</li>
+						<li>FSX</li>
+					</thingDefs>
+				</filter>
+				<count>30</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>SLDBar</li>
+				<li>USLDBar</li>
+				<li>HeavyBar</li>
+			</categories>
+			<thingDefs>
+				<li>Powder</li>
+				<li>FSX</li>
+				<li>ComponentIndustrial</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Ammo_30cmNbWRocket>1</Ammo_30cmNbWRocket>
+		</products>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="AmmoRecipeBase">
+		<defName>MakeAmmo_32cmNbWRocket</defName>
+		<label>make 32cm Incendiary Nebelwerfer Rocket x1</label>
+		<description>Craft 32cm Incendiary Nebelwerfer Rocket.</description>
+		<jobString>Making 32cm Incendiary Nebelwerfer Rocket.</jobString>
+		<workAmount>2000</workAmount>
+		<targetCountAdjustment>10</targetCountAdjustment>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>SLDBar</li>
+						<li>USLDBar</li>
+					</categories>
+				</filter>
+				<count>20</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>HeavyBar</li>
+					</categories>
+				</filter>
+				<count>6</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Powder</li>
+						<li>FSX</li>
+					</thingDefs>
+				</filter>
+				<count>24</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Chemfuel</li>
+					</thingDefs>
+				</filter>
+				<count>60</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>SLDBar</li>
+				<li>USLDBar</li>
+				<li>HeavyBar</li>
+			</categories>
+			<thingDefs>
+				<li>Chemfuel</li>
+				<li>Powder</li>
+				<li>FSX</li>
+				<li>ComponentIndustrial</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Ammo_32cmNbWRocket>1</Ammo_32cmNbWRocket>
+		</products>
+	</RecipeDef>
+</Defs>

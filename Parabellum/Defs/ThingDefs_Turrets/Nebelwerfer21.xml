@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<!-- ================== Nebelwerfer 28/30/32cm ================== -->
+
+	<ThingDef ParentName="BaseArtilleryGun">
+		<defName>Pa_NbW21cm</defName>
+		<label>Nebelwerfer</label>
+		<graphicData>
+			<texPath>Things/Building/Security/NbW21_Top</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Artillery_ShellLoaded</soundInteract>
+		<description>Nebelwefer attached to a Mobile platform.</description>
+		<techLevel>Spacer</techLevel>
+		<statBases>
+			<MarketValue>5000</MarketValue>
+			<SightsEfficiency>1.4</SightsEfficiency>
+			<ShotSpread>0.28</ShotSpread>
+			<SwayFactor>1.2</SwayFactor>
+			<RangedWeapon_Cooldown>4.6</RangedWeapon_Cooldown>
+		</statBases>
+		<verbs>
+			<li Class="CombatExtended.VerbPropertiesCE">
+				<recoilPattern>Mounted</recoilPattern>
+				<recoilAmount>0.5</recoilAmount>
+				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_21cmNbWRocket</defaultProjectile>
+				<warmupTime>2.8</warmupTime>
+				<minRange>20</minRange>
+				<!--<forcedMissRadius>4</forcedMissRadius>-->
+				<circularError>1.6</circularError>
+				<range>173</range>
+				<ticksBetweenBurstShots>36</ticksBetweenBurstShots>
+				<burstShotCount>5</burstShotCount>
+				<soundCast>Shot_NbW</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>22</muzzleFlashScale>
+				<targetParams>
+				  <canTargetLocations>true</canTargetLocations>
+				</targetParams>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="CombatExtended.CompProperties_AmmoUser">
+				<magazineSize>5</magazineSize>
+                <reloadTime>28</reloadTime>
+				<!-- <spawnUnloaded>true</spawnUnloaded> -->
+				<ammoSet>AmmoSet_NbW21rockets</ammoSet>
+			</li>
+			<li Class="CombatExtended.CompProperties_FireModes">
+				<aimedBurstShotCount>3</aimedBurstShotCount>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<!--=============== Turret Base(NbW 28/30/32cm) ===============-->
+
+	<ThingDef ParentName="TurretMannedBase">
+		<defName>Turret_NbW21cm</defName>
+		<label>Nebelwerfer(15cm/21cm)</label>
+		<graphicData>
+			<texPath>Things/Building/Security/NbW32_Base</texPath>
+			<drawSize>(2,2)</drawSize>
+			<shadowData>
+				<volume>(0.3, 0.6, 0.3)</volume>
+			</shadowData>
+		</graphicData>
+		<uiIconPath>Things/Building/Security/NbW21_icon</uiIconPath>
+		<hasInteractionCell>True</hasInteractionCell>
+		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		<statBases>
+			<MaxHitPoints>160</MaxHitPoints>
+			<WorkToBuild>1500</WorkToBuild>
+			<Mass>550</Mass>
+			<Bulk>550</Bulk>
+		</statBases>
+		<techLevel>Spacer</techLevel>
+		<description>An ancient Multi-barrel Heavy Rocket Launcher, robust and simple, feared by many, one of the few cost-efficient weapon from the Wunderwaffen Project, with improved recket ballistic that increased more than 60% of its range and improved projectile speed, but reduce a lot of it damage effects as trade off.</description>
+		<size>(2,2)</size>
+		<stuffCategories>
+			<li>RuggedMetallic</li>
+		</stuffCategories>
+		<costStuffCount>130</costStuffCount>
+		<costList>
+			<Pa_NbW_Crate>5</Pa_NbW_Crate>
+		</costList>
+		<specialDisplayRadius>18</specialDisplayRadius>
+		<designationCategory>Security</designationCategory>
+		<building>
+			<turretGunDef>Pa_NbW21cm</turretGunDef>
+			<turretTopDrawSize>2</turretTopDrawSize>
+			<buildingTags>
+				<li>Artillery</li>
+				<li>Artillery_BaseDestroyer</li>
+				<li>Artillery_MannedMortar</li>
+			</buildingTags>
+		</building>
+		<minifiedDef>MinifiedTurret_Pa_NbW21cm</minifiedDef>
+		<thingCategories>
+			<li>BuildingsSecurity</li>
+		</thingCategories>
+		<researchPrerequisites>
+			<li>Rockets_D1</li>
+		</researchPrerequisites>
+		<constructionSkillPrerequisite>10</constructionSkillPrerequisite>
+	</ThingDef>
+
+	<!-- ================== Minified ================== -->
+	
+	<ThingDef ParentName="MinifiedTurretBase">
+		<defName>MinifiedTurret_Pa_NbW21cm</defName>
+		<label>Nebelwefer turret</label>
+		<statBases>
+			<Mass>250</Mass>
+			<Bulk>200</Bulk>
+		</statBases>
+	</ThingDef>
+	
+</Defs>

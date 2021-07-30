@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<RecipeDef ParentName="RangedWeaponRecipeBase">
+		<defName>BuildXM109AMPR</defName>
+		<label>Build Barrett XM109 Anti-Materiel Payload Rifle</label>
+		<description>Builds the Barrett XM109 Anti-Materiel Payload Rifle, .\nCaliber: 25x59mm / .50 BMG</description>
+		<jobString>Building Barrett M82A1 SASR.</jobString>
+		<workAmount>24000</workAmount>
+		<skillRequirements>
+			<Crafting>18</Crafting>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>AdvSniper_Component</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Weapon_Parts</li>
+					</thingDefs>
+				</filter>
+				<count>12</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>18</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>Metallic</li>
+					</categories>
+				</filter>
+				<count>55</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Plastic</li>
+					</thingDefs>
+				</filter>
+				<count>50</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>Leathers</li>
+					</categories>
+				</filter>
+				<count>26</count>
+			</li>
+		</ingredients>
+		<products>
+			<Pa_XM109AMPR>1</Pa_XM109AMPR>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>AdvSniper_Component</li>
+				<li>Weapon_Parts</li>
+				<li>ComponentIndustrial</li>
+				<li>Plastic</li>
+			</thingDefs>
+			<categories>
+				<li>SLDBar</li>
+				<li>USLDBar</li>
+				<li>Leathers</li>
+			</categories>
+		</fixedIngredientFilter>
+		<recipeUsers>
+			<li>AdvWeaponCraftingWorkTable</li>
+		</recipeUsers>
+		<researchPrerequisite>Sniper_rifles_D1</researchPrerequisite>
+	</RecipeDef>
+	
+</Defs>

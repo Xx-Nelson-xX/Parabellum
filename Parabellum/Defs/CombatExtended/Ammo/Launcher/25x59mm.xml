@@ -1,0 +1,461 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingCategoryDef>
+		<defName>Ammo25x59mmGrenades</defName>
+		<label>25x59mm Grenade</label>
+		<parent>AmmoGrenades</parent>
+		<iconPath>Things/Ammo/25x59mm/HEAB/HEAB_c</iconPath>
+	</ThingCategoryDef>
+
+	<!-- ==================== AmmoSet ========================== -->
+
+	<CombatExtended.AmmoSetDef>
+		<defName>AmmoSet_25x59mmGrenade</defName>
+		<label>25x59mm Grenades</label>
+		<ammoTypes>
+			<Ammo_25x59mmGrenade_HEAB>Bullet_25x59mmGrenade_HEAB</Ammo_25x59mmGrenade_HEAB>
+			<Ammo_25x59mmGrenade_HEDP>Bullet_25x59mmGrenade_HEDP</Ammo_25x59mmGrenade_HEDP>
+			<Ammo_25x59mmGrenade_HEI>Bullet_25x59mmGrenade_HEI</Ammo_25x59mmGrenade_HEI>
+			<Ammo_25x59mmGrenade_HEEMP>Bullet_25x59mmGrenade_HEEMP</Ammo_25x59mmGrenade_HEEMP>
+		</ammoTypes>
+	</CombatExtended.AmmoSetDef>
+	
+	<!-- ==================== Ammo ========================== -->
+
+	<ThingDef Class="CombatExtended.AmmoDef" Name="25x59mmGrenadeBase" ParentName="AmmoBase" Abstract="True">
+		<description>High velocity grenade fired from OSW/AMPR system.</description>
+		<statBases>
+			<Mass>0.174</Mass>
+			<Bulk>0.24</Bulk>
+		</statBases>
+		<tradeTags>
+			<li>CE_AutoEnableTrade</li>
+			<li>CE_AutoEnableCrafting_TableMachining</li>
+		</tradeTags>
+		<thingCategories>
+			<li>Ammo25x59mmGrenades</li>
+		</thingCategories>
+		<stackLimit>100</stackLimit>
+		<cookOffFlashScale>20</cookOffFlashScale>
+	</ThingDef>
+
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="25x59mmGrenadeBase">
+		<defName>Ammo_25x59mmGrenade_HEAB</defName>
+		<label>25x59mm grenade (HEAB)</label>
+		<graphicData>
+			<texPath>Things/Ammo/25x59mm/HEAB</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>6.4</MarketValue>
+		</statBases>
+		<ammoClass>25x59mmHEAB</ammoClass>
+		<generateAllowChance>0.35</generateAllowChance>
+		<detonateProjectile>Bullet_25x59mmGrenade_HEAB</detonateProjectile>
+	</ThingDef>
+
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="25x59mmGrenadeBase">
+		<defName>Ammo_25x59mmGrenade_HEDP</defName>
+		<label>25x59mm grenade (HEDP)</label>
+		<graphicData>
+			<texPath>Things/Ammo/25x59mm/HEDP</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>5.8</MarketValue>
+		</statBases>
+		<ammoClass>25x59mmHEDP</ammoClass>
+		<detonateProjectile>Bullet_25x59mmGrenade_HEDP</detonateProjectile>
+	</ThingDef>
+	
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="25x59mmGrenadeBase">
+		<defName>Ammo_25x59mmGrenade_HEI</defName>
+		<label>25x59mm grenade (HEI)</label>
+		<graphicData>
+			<texPath>Things/Ammo/25x59mm/HEI</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>5.6</MarketValue>
+		</statBases>
+		<ammoClass>25x59mmHEI</ammoClass>
+		<generateAllowChance>0.5</generateAllowChance>
+		<detonateProjectile>Bullet_25x59mmGrenade_HEI</detonateProjectile>
+	</ThingDef>
+
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="25x59mmGrenadeBase">
+		<defName>Ammo_25x59mmGrenade_HEEMP</defName>
+		<label>25x59mm grenade (HE-EMP)</label>
+		<graphicData>
+			<texPath>Things/Ammo/25x59mm/HEEMP</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>6</MarketValue>
+		</statBases>
+		<ammoClass>25x59mmHEEMP</ammoClass>
+		<generateAllowChance>0.15</generateAllowChance>
+		<detonateProjectile>Bullet_25x59mmGrenade_HEEMP</detonateProjectile>
+	</ThingDef>
+	
+	<!-- ================== Projectiles ================== -->
+
+	<ThingDef Class="CombatExtended.AmmoDef" Name="Base25x59mmGrenadeBullet" ParentName="SK_BaseBullet" Abstract="true">
+		<graphicData>
+			<texPath>Things/Projectile/Bullet_Big</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<speed>85</speed>
+			<soundExplode>35mmExplosion</soundExplode>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="Base25x59mmGrenadeBullet">
+		<defName>Bullet_25x59mmGrenade_HEAB</defName>
+		<label>25x59mm grenade (HEAB)</label>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageDef>Bomb</damageDef>
+			<spreadMult>0.01</spreadMult>
+			<damageAmountBase>38</damageAmountBase>
+			<secondaryDamage>
+				<li>
+					<def>Bomb_Secondary</def>
+					<amount>34</amount>
+				</li>
+			</secondaryDamage>
+		</projectile>
+		<comps>
+			<li Class="CombatExtended.CompProperties_ExplosiveCE">
+				<damageAmountBase>18</damageAmountBase>
+				<explosiveDamageType>Bomb</explosiveDamageType>
+				<explosiveRadius>1.5</explosiveRadius>
+			</li>
+			<li Class="CombatExtended.CompProperties_Fragments">
+				<fragments>
+					<Fragment_GrenadeFrag>15</Fragment_GrenadeFrag>
+					<Fragment_Small>20</Fragment_Small>
+				</fragments>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="Base25x59mmGrenadeBullet">
+		<defName>Bullet_25x59mmGrenade_HEDP</defName>
+		<label>25x59mm grenade (HEDP)</label>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>50</damageAmountBase>
+			<armorPenetrationSharp>52</armorPenetrationSharp>
+			<armorPenetrationBlunt>512.4</armorPenetrationBlunt>
+			<secondaryDamage>
+				<li>
+					<def>Bomb_Secondary</def>
+					<amount>34</amount>
+				</li>
+			</secondaryDamage>
+		</projectile>
+		<comps>
+			<li Class="CombatExtended.CompProperties_ExplosiveCE">
+				<damageAmountBase>18</damageAmountBase>
+				<explosiveDamageType>Bomb</explosiveDamageType>
+				<explosiveRadius>1.5</explosiveRadius>
+			</li>
+			<li Class="CombatExtended.CompProperties_Fragments">
+				<fragments>
+					<Fragment_GrenadeFrag>15</Fragment_GrenadeFrag>
+				</fragments>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="Base25x59mmGrenadeBullet">
+		<defName>Bullet_25x59mmGrenade_HEI</defName>
+		<label>25x59mm grenade (HEI)</label>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageAmountBase>5</damageAmountBase>
+			<damageDef>PrometheumFlame</damageDef>
+			<ai_IsIncendiary>true</ai_IsIncendiary>
+			<secondaryDamage>
+				<li>
+					<def>Flame_Secondary</def>
+					<amount>22</amount>
+				</li>
+				<li>
+					<def>Bomb_Secondary</def>
+					<amount>34</amount>
+				</li>
+			</secondaryDamage>
+		</projectile>
+		<comps>
+			<li Class="CombatExtended.CompProperties_ExplosiveCE">
+				<damageAmountBase>18</damageAmountBase>
+				<explosiveDamageType>Bomb</explosiveDamageType>
+				<explosiveRadius>1.5</explosiveRadius>
+			</li>
+			<li Class="CombatExtended.CompProperties_Fragments">
+				<fragments>
+					<Fragment_GrenadeFrag>15</Fragment_GrenadeFrag>
+				</fragments>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="Base25x59mmGrenadeBullet">
+		<defName>Bullet_25x59mmGrenade_HEEMP</defName>
+		<label>25x59mm Grenade (HE-EMP)</label>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageDef>Bomb</damageDef>
+			<damageAmountBase>38</damageAmountBase>
+			<armorPenetrationSharp>32</armorPenetrationSharp>
+			<armorPenetrationBlunt>438.1</armorPenetrationBlunt>
+			<explosionRadius>1.5</explosionRadius>
+			<soundExplode>Explosion_EMP</soundExplode>
+			<secondaryDamage>
+				<li>
+					<def>EMP</def>
+					<amount>28</amount>
+				</li>
+				<li>
+					<def>Bomb_Secondary</def>
+					<amount>34</amount>
+				</li>
+			</secondaryDamage>
+		</projectile>
+		<comps>
+			<li Class="CombatExtended.CompProperties_ExplosiveCE">
+				<explosiveRadius>2</explosiveRadius>
+				<explosiveDamageType>EMP</explosiveDamageType>
+				<damageAmountBase>22</damageAmountBase>
+			</li>
+			<li Class="CombatExtended.CompProperties_Fragments">
+				<fragments>
+					<Fragment_GrenadeFrag>15</Fragment_GrenadeFrag>
+				</fragments>
+			</li>
+		</comps>
+	</ThingDef>
+	
+		<!-- ==================== Recipes ========================== -->
+	
+	<RecipeDef ParentName="AmmoRecipeBase">
+		<defName>MakeAmmo_25x59mmGrenade_HEAB</defName>
+		<label>make 25x59mm HEAB grenades x50</label>
+		<description>Craft 50 25x59mm HEAB grenades.</description>
+		<jobString>Making 25x59mm HEAB grenades.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Metallic</li>
+					</categories>
+				</filter>
+				<count>50</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Powder</li>
+						<li>FSX</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ElectronicComponents</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>SLDBar</li>
+				<li>USLDBar</li>
+			</categories>
+			<thingDefs>
+				<li>FSX</li>
+				<li>Powder</li>
+				<li>ComponentIndustrial</li>
+				<li>ElectronicComponents</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Ammo_25x59mmGrenade_HEAB>50</Ammo_25x59mmGrenade_HEAB>
+		</products>
+	</RecipeDef>
+
+	<RecipeDef ParentName="AmmoRecipeBase">
+		<defName>MakeAmmo_25x59mmGrenade_HEDP</defName>
+		<label>make 25x59mm HEDP grenades x50</label>
+		<description>Craft 50 25x59mm HEDP grenades.</description>
+		<jobString>Making 25x59mm HEDP grenades.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Metallic</li>
+					</categories>
+				</filter>
+				<count>50</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Powder</li>
+						<li>FSX</li>
+					</thingDefs>
+				</filter>
+				<count>15</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>SLDBar</li>
+				<li>USLDBar</li>
+			</categories>
+			<thingDefs>
+				<li>FSX</li>
+				<li>Powder</li>
+				<li>ComponentIndustrial</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Ammo_25x59mmGrenade_HEDP>50</Ammo_25x59mmGrenade_HEDP>
+		</products>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="AmmoRecipeBase">
+		<defName>MakeAmmo_25x59mmGrenade_HEI</defName>
+		<label>make 25x59mm HEI grenades x50</label>
+		<description>Craft 50 25x59mm HEI grenades.</description>
+		<jobString>Making 25x59mm HEI grenades.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Metallic</li>
+					</categories>
+				</filter>
+				<count>50</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Powder</li>
+						<li>FSX</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Prometheum</li>
+					</thingDefs>
+				</filter>
+				<count>20</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>SLDBar</li>
+				<li>USLDBar</li>
+			</categories>
+			<thingDefs>
+				<li>FSX</li>
+				<li>Powder</li>
+				<li>Prometheum</li>
+				<li>ComponentIndustrial</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Ammo_25x59mmGrenade_HEI>50</Ammo_25x59mmGrenade_HEI>
+		</products>
+	</RecipeDef>
+
+	<RecipeDef ParentName="AmmoRecipeBase">
+		<defName>MakeAmmo_25x59mmGrenade_HEEMP</defName>
+		<label>make 25x59mm HE-EMP grenades x50</label>
+		<description>Craft 50 25x59mm HE-EMP grenades.</description>
+		<jobString>Making 25x59mm HE-EMP grenades.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Metallic</li>
+					</categories>
+				</filter>
+				<count>50</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Powder</li>
+						<li>FSX</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ElectronicComponents</li>
+					</thingDefs>
+				</filter>
+				<count>11</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>SLDBar</li>
+				<li>USLDBar</li>
+			</categories>
+			<thingDefs>
+				<li>Powder</li>
+				<li>FSX</li>
+				<li>ElectronicComponents</li>
+				<li>ComponentIndustrial</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Ammo_25x59mmGrenade_HEEMP>50</Ammo_25x59mmGrenade_HEEMP>
+		</products>
+	</RecipeDef>
+	
+</Defs>

@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<!-- ================== 50mm PaK38/L60 Anti-Tank Gun ================== -->
+
+	<ThingDef ParentName="BaseGun_Turret">
+		<defName>Pa_PaK38ATG</defName>
+		<label>50mm Pak 38/L60 Anti-Tank Gun</label>
+		<graphicData>
+			<texPath>Things/Building/Security/PaK38_Top</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Artillery_ShellLoaded</soundInteract>
+		<description>PaK 38/L60 50mm Anti-Tank Gun.</description>
+		<techLevel>Industrial</techLevel>
+		<statBases>
+			<MarketValue>1400</MarketValue>
+			<SightsEfficiency>1.8</SightsEfficiency>
+			<ShotSpread>0.15</ShotSpread>
+			<SwayFactor>1.2</SwayFactor>
+			<RangedWeapon_Cooldown>1.8</RangedWeapon_Cooldown>
+		</statBases>
+		<verbs>
+			<li Class="CombatExtended.VerbPropertiesCE">
+				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_50mmCannonShell_APHE</defaultProjectile>
+				<warmupTime>1.8</warmupTime>
+				<minRange>8</minRange>
+				<!--<forcedMissRadius>3</forcedMissRadius>-->
+				<range>87</range>
+				<soundCast>Shot_PaK38ATG</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>17</muzzleFlashScale>
+				<targetParams>
+				  <canTargetLocations>true</canTargetLocations>
+				</targetParams>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="CombatExtended.CompProperties_AmmoUser">
+				<magazineSize>1</magazineSize>
+                <reloadTime>3.8</reloadTime>
+				<!-- <spawnUnloaded>true</spawnUnloaded> -->
+				<ammoSet>AmmoSet_50mmCannonShell</ammoSet>
+			</li>
+			<li Class="CombatExtended.CompProperties_FireModes"/>
+		</comps>
+	</ThingDef>
+	
+	<!-- ================== 50mm Flak41/L67 Anti-Area Gun ================== -->
+
+	<ThingDef ParentName="BaseGun_Turret">
+		<defName>Pa_Flak41AA</defName>
+		<label>50mm Flak41/L67 Anti-Aircraft Gun</label>
+		<graphicData>
+			<texPath>Things/Building/Security/Flak41_Top</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Artillery_ShellLoaded</soundInteract>
+		<description>50mm Flak41/L67 Anti-Area Gun.</description>
+		<techLevel>Spacer</techLevel>
+		<statBases>
+			<MarketValue>6000</MarketValue>
+			<SightsEfficiency>1.8</SightsEfficiency>
+			<ShotSpread>0.12</ShotSpread>
+			<SwayFactor>0.85</SwayFactor>
+			<RangedWeapon_Cooldown>2.1</RangedWeapon_Cooldown>
+		</statBases>
+		<verbs>
+			<li Class="CombatExtended.VerbPropertiesCE">
+				<recoilPattern>Mounted</recoilPattern>
+				<recoilAmount>1.24</recoilAmount>
+				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_50mmCannonShell_APHE</defaultProjectile>
+				<warmupTime>1.95</warmupTime>
+				<minRange>8</minRange>
+				<!--<forcedMissRadius>4.8</forcedMissRadius>-->
+				<ticksBetweenBurstShots>20</ticksBetweenBurstShots>
+				<burstShotCount>5</burstShotCount>
+				<range>87</range>
+				<soundCast>Shot_PaK38ATG</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>17</muzzleFlashScale>
+				<targetParams>
+				  <canTargetLocations>true</canTargetLocations>
+				</targetParams>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="CombatExtended.CompProperties_AmmoUser">
+				<magazineSize>10</magazineSize>
+                <reloadTime>10.8</reloadTime>
+				<!-- <spawnUnloaded>true</spawnUnloaded> -->
+				<ammoSet>AmmoSet_50mmCannonShell</ammoSet>
+			</li>
+			<li Class="CombatExtended.CompProperties_FireModes">
+				<aimedBurstShotCount>2</aimedBurstShotCount>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<!--=============== Turret Base(50mm PaK38/L60) ===============-->
+
+	<ThingDef ParentName="TurretMannedBase">
+		<defName>Turret_Pak38ATG</defName>
+		<label>50mm PaK 38 ATG</label>
+		<graphicData>
+			<texPath>Things/Building/Security/NbW32_Base</texPath>
+			<drawSize>(2.2,2.2)</drawSize>
+			<shadowData>
+				<volume>(0.3, 0.6, 0.3)</volume>
+			</shadowData>
+		</graphicData>
+		<uiIconPath>Things/Building/Security/PaK38_icon</uiIconPath>
+		<hasInteractionCell>True</hasInteractionCell>
+		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		<statBases>
+			<MaxHitPoints>220</MaxHitPoints>
+			<WorkToBuild>1200</WorkToBuild>
+			<Mass>1000</Mass>
+			<Bulk>1000</Bulk>
+		</statBases>
+		<techLevel>Industrial</techLevel>
+		<description>PaK 38/L60 50mm Anti-Tank Gun, an ancient Mid War Anti-Tank gun, versatile and fast, kind of obsolete but still usable.</description>
+		<size>(2,2)</size>
+		<stuffCategories>
+			<li>RuggedMetallic</li>
+		</stuffCategories>
+		<costStuffCount>60</costStuffCount>
+		<costList>
+			<Pa_PaK38_Crate>1</Pa_PaK38_Crate>
+		</costList>
+		<specialDisplayRadius>8</specialDisplayRadius>
+		<designationCategory>Security</designationCategory>
+		<building>
+			<turretGunDef>Pa_PaK38ATG</turretGunDef>
+			<turretTopDrawSize>4.4</turretTopDrawSize>
+			<buildingTags>
+				<li>Artillery</li>
+				<li>Artillery_BaseDestroyer</li>
+			</buildingTags>
+		</building>
+		<minifiedDef>MinifiedTurret_Pa_PaK38ATG</minifiedDef>
+		<thingCategories>
+			<li>BuildingsSecurity</li>
+		</thingCategories>
+		<researchPrerequisites>
+			<li>Mortars</li>
+		</researchPrerequisites>
+		<constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+	</ThingDef>
+
+<!--=============== Turret Base(50mm Flak41/L67) ===============-->
+
+	<ThingDef ParentName="TurretMannedBase">
+		<defName>Turret_Flak41AA</defName>
+		<label>50mm Flak 41 AA</label>
+		<graphicData>
+			<texPath>Things/Building/Security/Flak41_Base</texPath>
+			<drawSize>(2.5,2.5)</drawSize>
+			<shadowData>
+				<volume>(0.3, 0.6, 0.3)</volume>
+			</shadowData>
+		</graphicData>
+		<uiIconPath>Things/Building/Security/Flak41_icon</uiIconPath>
+		<hasInteractionCell>True</hasInteractionCell>
+		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		<statBases>
+			<MaxHitPoints>240</MaxHitPoints>
+			<WorkToBuild>3000</WorkToBuild>
+			<Mass>5800</Mass>
+			<Bulk>5800</Bulk>
+		</statBases>
+		<techLevel>Spacer</techLevel>
+		<description>50mm Flak 41/L67 Anti-Aircraft Gun, an ancient Mid War Medium AA gun, the increased gun size improve its explosive payload, but it also increase its weight and complexity, making it way more expensive and hard to produce.</description>
+		<size>(2,2)</size>
+		<stuffCategories>
+			<li>RuggedMetallic</li>
+		</stuffCategories>
+		<costStuffCount>200</costStuffCount>
+		<costList>
+			<Pa_Flak41_Crate>1</Pa_Flak41_Crate>
+		</costList>
+		<specialDisplayRadius>8</specialDisplayRadius>
+		<designationCategory>Security</designationCategory>
+		<building>
+			<turretGunDef>Pa_Flak41AA</turretGunDef>
+			<turretTopDrawSize>2.5</turretTopDrawSize>
+			<buildingTags>
+				<li>SiegeGun</li>
+			</buildingTags>
+		</building>
+		<minifiedDef>MinifiedTurret_Pa_Flak41AA</minifiedDef>
+		<thingCategories>
+			<li>BuildingsSecurity</li>
+		</thingCategories>
+		<researchPrerequisites>
+			<li>Heavy_turrets_C3</li>
+		</researchPrerequisites>
+		<constructionSkillPrerequisite>14</constructionSkillPrerequisite>
+	</ThingDef>
+
+<!--=============== Crate Base(50mm PaK38/L60 ATG) ===============-->
+
+	<ThingDef ParentName="CrateBase">
+		<defName>Pa_PaK38_Crate</defName>
+		<label>PaK 38/L60 50mm ATG crate</label>
+		<description>Use this to build a PaK 38/L60 50mm ATG.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/WeaponCrate</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Standard_Drop</soundInteract>
+		<soundDrop>Standard_Drop</soundDrop>
+		<tickerType>Normal</tickerType>
+		<stackLimit>1</stackLimit>
+		<techLevel>Industrial</techLevel>
+		<statBases>
+			<MarketValue>1200</MarketValue>
+			<MaxHitPoints>220</MaxHitPoints>
+			<Flammability>1</Flammability>
+			<DeteriorationRate>0</DeteriorationRate>
+			<Mass>600</Mass>
+			<Bulk>600</Bulk>
+		</statBases>
+		<thingCategories>
+			<li>WeaponCrate</li>
+		</thingCategories>
+		<tradeTags>
+			<li>SimpleCrate</li>
+		</tradeTags>
+	</ThingDef>
+	
+	<!--=============== Crate Base(50mm Flak41/L67 AA) ===============-->
+
+	<ThingDef ParentName="CrateBase">
+		<defName>Pa_Flak41_Crate</defName>
+		<label>Flak 41/L67 50mm AA crate</label>
+		<description>Use this to build a Flak 41/L67 50mm AA.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/WeaponCrate</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Standard_Drop</soundInteract>
+		<soundDrop>Standard_Drop</soundDrop>
+		<tickerType>Normal</tickerType>
+		<stackLimit>1</stackLimit>
+		<techLevel>Spacer</techLevel>
+		<statBases>
+			<MarketValue>6000</MarketValue>
+			<MaxHitPoints>240</MaxHitPoints>
+			<Flammability>1</Flammability>
+			<DeteriorationRate>0</DeteriorationRate>
+			<Mass>4000</Mass>
+			<Bulk>4000</Bulk>
+		</statBases>
+		<thingCategories>
+			<li>WeaponCrate</li>
+		</thingCategories>
+		<tradeTags>
+			<li>RareCrate</li>
+		</tradeTags>
+	</ThingDef>
+
+	<!-- ================== Craft Crate(50mm PaK38/L60 ATG) ================== -->
+
+	<RecipeDef ParentName="cratecraftbase">
+		<defName>BuildPaK38_Crate</defName>
+		<label>Build Pak 38 ATG crate</label>
+		<description>Use this to build a Pak 38/L60, an Ancient Anti-Tank gun, it use 50mm cannon shells for ammo.</description>
+		<jobString>Building a Pak 38 ATG crate.</jobString>
+		<workAmount>10000</workAmount>
+		<skillRequirements>
+			<Crafting>8</Crafting>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Weapon_Parts</li>
+					</thingDefs>
+				</filter>
+				<count>8</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Heavy_Component</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+				<categories>
+				<li>Metallic</li>
+                  </categories>
+				</filter>
+				<count>40</count>
+			</li>
+		</ingredients>
+		<products>
+			<Pa_PaK38_Crate>1</Pa_PaK38_Crate>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Weapon_Parts</li>
+				<li>Heavy_Component</li>
+			</thingDefs>
+			<categories>
+				<li>SLDBar</li>
+				<li>USLDBar</li>
+             </categories>
+		</fixedIngredientFilter>
+		<researchPrerequisite>Mortars</researchPrerequisite>
+	</RecipeDef>
+	
+	<!-- ================== Craft Crate(50mm FlaK41/L67 AA) ================== -->
+
+	<RecipeDef ParentName="cratecraftbase">
+		<defName>BuildFlak41_Crate</defName>
+		<label>Build Flak 41 AA crate</label>
+		<description>Use this to build a Flak 41/L67, an Ancient Anti-Aircraft gun, it use 50mm cannon shells for ammo.</description>
+		<jobString>Building a Flak41 AA crate.</jobString>
+		<workAmount>24000</workAmount>
+		<skillRequirements>
+			<Crafting>16</Crafting>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Weapon_Parts</li>
+					</thingDefs>
+				</filter>
+				<count>30</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Cannon_Component</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+				<categories>
+				<li>Metallic</li>
+                  </categories>
+				</filter>
+				<count>120</count>
+			</li>
+		</ingredients>
+		<products>
+			<Pa_Flak41_Crate>1</Pa_Flak41_Crate>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Weapon_Parts</li>
+				<li>Cannon_Component</li>
+				<li>Rubber</li>
+			</thingDefs>
+			<categories>
+				<li>SLDBar</li>
+				<li>USLDBar</li>
+            </categories>
+		</fixedIngredientFilter>
+		<researchPrerequisite>Heavy_turrets_C3</researchPrerequisite>
+	</RecipeDef>
+
+	<!-- ================== Minified ================== -->
+	
+	<ThingDef ParentName="MinifiedTurretBase">
+		<defName>MinifiedTurret_Pa_PaK38ATG</defName>
+		<label>PaK 38/L60 50mm ATG</label>
+		<statBases>
+			<Mass>800</Mass>
+			<Bulk>800</Bulk>
+		</statBases>
+	</ThingDef>
+	
+	<ThingDef ParentName="MinifiedTurretBase">
+		<defName>MinifiedTurret_Pa_Flak41AA</defName>
+		<label>FlaK 41/L67 50mm AA</label>
+		<statBases>
+			<Mass>2800</Mass>
+			<Bulk>2800</Bulk>
+		</statBases>
+	</ThingDef>
+	
+</Defs>

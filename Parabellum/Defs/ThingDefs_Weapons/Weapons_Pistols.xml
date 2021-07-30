@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- Sturer Survival Pistol -->
+	<ThingDef ParentName="BaseGun_ShortBarreled">
+		<defName>Pa_SP</defName>
+		<label>Sturer Survival Pistol</label>
+		<description>A very simple single shot pistol, created by combining other pistol parts and a barrel, even though is a pistol, it only use rifle catridge... you must be really desperate to use one of those...</description>
+		<graphicData>
+			<texPath>Things/Weapons/SP</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Interact_Revolver</soundInteract>
+		<statBases>
+			<MarketValue>400</MarketValue>
+			<SightsEfficiency>1.2</SightsEfficiency>
+			<ShotSpread>0.08</ShotSpread>
+			<SwayFactor>1.4</SwayFactor>
+			<RangedWeapon_Cooldown>0.2</RangedWeapon_Cooldown>
+			<Bulk>2.6</Bulk>
+			<Mass>2.25</Mass>
+		</statBases>
+		<generateCommonality>0.8</generateCommonality>
+		<weaponTags>
+			<li>PT1</li>
+			<li>Gun</li>
+			<li>TierOnePistol</li>
+			<li>TierTwoPistol</li>
+			<li>CE_Sidearm</li>
+			<li>CE_AI_Pistol</li>
+			<li>CE_OneHandedWeapon</li>
+		</weaponTags>
+		<thingCategories>
+			<li>Pistols</li>
+		</thingCategories>
+		<verbs>
+			<li Class="CombatExtended.VerbPropertiesCE">
+				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Ammo_556x45mmNATO_FMJ</defaultProjectile>
+				<warmupTime>0.25</warmupTime>
+				<range>32</range>
+				<soundCast>Shot_Beowulf</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>12</muzzleFlashScale>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="CombatExtended.CompProperties_FireModes">
+				<aiAimMode>AimedShot</aiAimMode>
+			</li>
+			<li Class="CombatExtended.CompProperties_AmmoUser">
+				<magazineSize>1</magazineSize>
+				<reloadTime>1.2</reloadTime>
+				<ammoSet>AmmoSet_SP</ammoSet>
+			</li>
+		</comps>
+		<modExtensions>
+		  <li Class="CombatExtended.GunDrawExtension">
+			<DrawSize>0.8</DrawSize>
+		  </li>
+		</modExtensions>
+		<smeltProducts>
+			<Pistol_Component>1</Pistol_Component>
+			<Weapon_Parts>2</Weapon_Parts>
+		</smeltProducts>
+	</ThingDef>
+	
+	<!-- Medusa Survival Revolver -->
+	<ThingDef ParentName="BaseGun_ShortBarreled">
+		<defName>Pa_SR</defName>
+		<label>Medusa Survival Pistol</label>
+		<description>A compact multi-caliber revolver, thanks to its special cylinder, make it capable to chamber most pistol/revolver catridge, is a self defense/survival weapon, not really suitable for combat.</description>
+		<graphicData>
+			<texPath>Things/Weapons/SR</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Interact_Revolver</soundInteract>
+		<statBases>
+			<MarketValue>320</MarketValue>
+			<SightsEfficiency>1.05</SightsEfficiency>
+			<ShotSpread>0.14</ShotSpread>
+			<SwayFactor>1.2</SwayFactor>
+			<RangedWeapon_Cooldown>0.4</RangedWeapon_Cooldown>
+			<Bulk>1.8</Bulk>
+			<Mass>1.3</Mass>
+		</statBases>
+		<generateCommonality>0.9</generateCommonality>
+		<weaponTags>
+			<li>PT1</li>
+			<li>Gun</li>
+			<li>TierOnePistol</li>
+			<li>TierTwoPistol</li>
+			<li>CE_Sidearm</li>
+			<li>CE_AI_Pistol</li>
+			<li>CE_OneHandedWeapon</li>
+		</weaponTags>
+		<thingCategories>
+			<li>Pistols</li>
+		</thingCategories>
+		<verbs>
+			<li Class="CombatExtended.VerbPropertiesCE">
+				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_45ACP_FMJ</defaultProjectile>
+				<warmupTime>0.3</warmupTime>
+				<range>30</range>
+				<soundCast>RF_ShotDeringer</soundCast>
+				<soundCastTail>GunTail_Light</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="CombatExtended.CompProperties_FireModes">
+				<aiAimMode>AimedShot</aiAimMode>
+			</li>
+			<li Class="CombatExtended.CompProperties_AmmoUser">
+				<magazineSize>6</magazineSize>
+				<reloadOneAtATime>true</reloadOneAtATime>
+				<reloadTime>0.5</reloadTime>
+				<ammoSet>AmmoSet_SR</ammoSet>
+			</li>
+		</comps>
+		<modExtensions>
+		  <li Class="CombatExtended.GunDrawExtension">
+			<DrawSize>0.8</DrawSize>
+		  </li>
+		</modExtensions>
+		<smeltProducts>
+			<Pistol_Component>1</Pistol_Component>
+			<Weapon_Parts>1</Weapon_Parts>
+		</smeltProducts>
+	</ThingDef>
+	
+</Defs>

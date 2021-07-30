@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<ThingDef ParentName="TrapIEDBase">
+		<defName>Pa_Trap_SMine</defName>
+		<label>S-Mine Trap</label>
+		<description>A robust ancient anti-personnel mine, simple, small and Lethal, require target step on it to trigger the delay fuse.</description>
+		<graphicData>
+			<texPath>Things/Building/Mines/Smine</texPath>
+		</graphicData>
+		<costList>
+			<Plasteel>20</Plasteel>
+			<Powder>4</Powder>
+			<Weapon_Parts>1</Weapon_Parts>
+		</costList>
+		<comps>
+			<li Class="CompProperties_Explosive">
+				<explosiveRadius>2.2</explosiveRadius>
+				<explosiveDamageType>Bomb</explosiveDamageType>
+				<startWickHitPointsPercent>0.2</startWickHitPointsPercent>
+				<wickTicks>20</wickTicks>
+				<startWickOnDamageTaken>
+					<li>Bullet</li>
+					<li>Arrow</li>
+					<li>ArrowHighVelocity</li>
+				</startWickOnDamageTaken>
+			</li>
+			<li Class="CombatExtended.CompProperties_Fragments">
+				<fragments>
+					<Fragment_Small>360</Fragment_Small>
+				</fragments>
+			</li>
+		</comps>
+		<specialDisplayRadius>2.2</specialDisplayRadius>
+		<researchPrerequisites>
+			<li>IED_C1</li>
+		</researchPrerequisites>
+	</ThingDef>
+	
+	<ThingDef ParentName="TrapIEDBase">
+		<defName>Pa_Trap_4kgMine</defName>
+		<label>Improvised 4kg Mine Trap</label>
+		<description>A improvised High Explosive mine, very Lethal and good counter any ground unit, require target step on it to trigger the delay fuse.</description>
+		<graphicData>
+			<texPath>Things/Building/Mines/4kgmine</texPath>
+		</graphicData>
+		<costList>
+			<Pa_Grenade4kg>1</Pa_Grenade4kg>
+			<Weapon_Parts>1</Weapon_Parts>
+		</costList>
+		<comps>
+			<li Class="CompProperties_Explosive">
+				<explosiveRadius>6</explosiveRadius>
+				<explosiveDamageType>Bomb</explosiveDamageType>
+				<startWickHitPointsPercent>0.6</startWickHitPointsPercent>
+				<wickTicks>30</wickTicks>
+				<startWickOnDamageTaken>
+					<li>Bullet</li>
+					<li>Arrow</li>
+					<li>ArrowHighVelocity</li>
+				</startWickOnDamageTaken>
+			</li>
+			<li Class="CombatExtended.CompProperties_Fragments">
+				<fragments>
+					<Fragment_Large>56</Fragment_Large>
+					<Fragment_Small>42</Fragment_Small>
+				</fragments>
+			</li>
+		</comps>
+		<specialDisplayRadius>6</specialDisplayRadius>
+		<researchPrerequisites>
+			<li>IED_C1</li>
+		</researchPrerequisites>
+	</ThingDef>
+
+</Defs>

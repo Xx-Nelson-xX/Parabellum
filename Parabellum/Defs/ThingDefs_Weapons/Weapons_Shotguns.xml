@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <!-- DP-12 -->
+    <ThingDef ParentName="BaseGun_LongBarreled">
+        <defName>Pa_DP</defName>
+        <label>DP-12 Double-barreled Pumpshotgun</label>
+        <description>The DP-12, a bullpup double-barreled pump action shotgun with double magazine tubes, the bullpup system slightly increase the effective range of the weapon but also decrease its pellets spread, making it less effective dealing with mass in short range but really deadly counter single pawn.</description>
+        <graphicData>
+            <texPath>Things/Weapons/DP12</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>Interact_Shotgun</soundInteract>
+        <statBases>
+            <MarketValue>1300</MarketValue>
+            <SightsEfficiency>0.9</SightsEfficiency>
+            <ShotSpread>0.085</ShotSpread>
+            <SwayFactor>1.7</SwayFactor>
+            <RangedWeapon_Cooldown>0.85</RangedWeapon_Cooldown>
+            <Bulk>10</Bulk>
+            <Mass>4.2</Mass>
+        </statBases>
+		<generateCommonality>0.4</generateCommonality>
+		<tradeTags>
+            <li>Exotic</li>
+        </tradeTags>
+        <weaponTags>
+            <li>ST2</li>
+            <li>Gun</li>
+            <li>TierTwoSMG</li>
+			<li>CE_AI_AssaultWeapon</li>
+        </weaponTags>
+        <thingCategories>
+            <li>Shotguns</li>
+        </thingCategories>
+        <verbs>
+            <li Class="CombatExtended.VerbPropertiesCE">
+				<recoilAmount>1.5</recoilAmount>
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>Bullet_12Gauge_Buck</defaultProjectile>
+				<burstShotCount>2</burstShotCount>
+                <ticksBetweenBurstShots>3</ticksBetweenBurstShots>
+                <warmupTime>0.85</warmupTime>
+                <range>17</range>
+				<targetParams>
+                    <canTargetLocations>true</canTargetLocations>
+                </targetParams>
+                <soundCast>Shot_Shotgun</soundCast>
+                <soundCastTail>GunTail_Heavy</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+            </li>
+        </verbs>
+        <comps>
+            <li Class="CombatExtended.CompProperties_FireModes">
+                <aiUseBurstMode>true</aiUseBurstMode>
+                <aiAimMode>AimedShot</aiAimMode>
+				<noSingleShot>FALSE</noSingleShot>
+            </li>
+            <li Class="CombatExtended.CompProperties_AmmoUser">
+                <magazineSize>16</magazineSize>
+				<reloadOneAtATime>true</reloadOneAtATime>
+                <reloadTime>0.8</reloadTime>
+                <ammoSet>AmmoSet_12Gauge</ammoSet>
+            </li>
+        </comps>
+        <smeltProducts>
+            <Shotgun_Component>1</Shotgun_Component>
+            <Weapon_Parts>8</Weapon_Parts>
+        </smeltProducts>
+    </ThingDef>
+	
+	<!-- HK CAWS -->
+    <ThingDef ParentName="BaseGun_LongBarreled">
+        <defName>Pa_CAWS</defName>
+        <label>HK CAWS</label>
+        <description>The CAWS, as know as Close Assault Weapon System, was a prototype bullpup automatic shotgun from an ancient military project, even though the project and production was cancelled for its time, the new era find it a perfect weapon for assault mission and restarted its production with new modifications: long barrel to increase its effective range and a low power hybrid scope for easy targeting, both modification make the weapon exceptionally accurate, but not so good for mass control.</description>
+        <graphicData>
+            <texPath>Things/Weapons/CAWS</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>Interact_Shotgun</soundInteract>
+        <statBases>
+            <MarketValue>2200</MarketValue>
+            <SightsEfficiency>1.2</SightsEfficiency>
+            <ShotSpread>0.07</ShotSpread>
+            <SwayFactor>1.55</SwayFactor>
+            <RangedWeapon_Cooldown>0.95</RangedWeapon_Cooldown>
+            <Bulk>7.2</Bulk>
+            <Mass>3.7</Mass>
+        </statBases>
+		<generateCommonality>0.2</generateCommonality>
+        <tradeTags>
+            <li>Exotic</li>
+        </tradeTags>
+        <weaponTags>
+            <li>ST3</li>
+            <li>Gun</li>
+            <li>TierTwoSMG</li>
+			<li>CE_AI_AssaultWeapon</li>
+        </weaponTags>
+        <thingCategories>
+            <li>Shotguns</li>
+        </thingCategories>
+        <verbs>
+            <li Class="CombatExtended.VerbPropertiesCE">
+                <recoilAmount>1.55</recoilAmount>
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>Bullet_12Gauge_Buck</defaultProjectile>
+                <burstShotCount>5</burstShotCount>
+                <ticksBetweenBurstShots>12</ticksBetweenBurstShots>
+                <warmupTime>1.2</warmupTime>
+                <range>20</range>
+				<targetParams>
+                    <canTargetLocations>true</canTargetLocations>
+                </targetParams>
+                <soundCast>Shot_CAWS</soundCast>
+                <soundCastTail>GunTail_Heavy</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+            </li>
+        </verbs>
+        <comps>
+            <li Class="CombatExtended.CompProperties_FireModes">
+                <aiUseBurstMode>true</aiUseBurstMode>
+                <aiAimMode>AimedShot</aiAimMode>
+                <aimedBurstShotCount>2</aimedBurstShotCount>
+            </li>
+            <li Class="CombatExtended.CompProperties_AmmoUser">
+                <magazineSize>10</magazineSize>
+                <reloadTime>2.8</reloadTime>
+                <ammoSet>AmmoSet_12Gauge</ammoSet>
+            </li>
+        </comps>
+        <smeltProducts>
+            <Shotgun_Component>1</Shotgun_Component>
+            <Weapon_Parts>12</Weapon_Parts>
+			<Plastic>8</Plastic>
+        </smeltProducts>
+    </ThingDef>
+
+</Defs>
+	

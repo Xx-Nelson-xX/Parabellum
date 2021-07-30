@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<!-- ================== Nebelwerfer 28/30/32cm ================== -->
+
+	<ThingDef ParentName="BaseArtilleryGun">
+		<defName>Pa_NbW32cm</defName>
+		<label>Nebelwerfer</label>
+		<graphicData>
+			<texPath>Things/Building/Security/NbW32_Top</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Artillery_ShellLoaded</soundInteract>
+		<description>Nebelwefer attached to a Mobile platform.</description>
+		<techLevel>Spacer</techLevel>
+		<statBases>
+			<MarketValue>6000</MarketValue>
+			<SightsEfficiency>2.2</SightsEfficiency>
+			<ShotSpread>0.32</ShotSpread>
+			<SwayFactor>1.2</SwayFactor>
+			<RangedWeapon_Cooldown>6.2</RangedWeapon_Cooldown>
+		</statBases>
+		<verbs>
+			<li Class="CombatExtended.VerbPropertiesCE">
+				<recoilPattern>Mounted</recoilPattern>
+				<recoilAmount>0.52</recoilAmount>
+				<verbClass>CombatExtended.Verb_ShootMortarCE</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_28cmNbWRocket</defaultProjectile>
+				<warmupTime>2.8</warmupTime>
+				<minRange>22</minRange>
+				<!--<forcedMissRadius>6</forcedMissRadius>-->
+				<circularError>1.8</circularError>
+				<range>100</range>
+				<ticksBetweenBurstShots>40</ticksBetweenBurstShots>
+				<burstShotCount>6</burstShotCount>
+				<soundCast>Shot_NbW</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>26</muzzleFlashScale>
+				<targetParams>
+				  <canTargetLocations>true</canTargetLocations>
+				</targetParams>
+				<indirectFirePenalty>0.15</indirectFirePenalty>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="CombatExtended.CompProperties_AmmoUser">
+				<magazineSize>6</magazineSize>
+                <reloadTime>42</reloadTime>
+				<!-- <spawnUnloaded>true</spawnUnloaded> -->
+				<ammoSet>AmmoSet_NbW32rockets</ammoSet>
+			</li>
+			<li Class="CombatExtended.CompProperties_FireModes">
+				<aimedBurstShotCount>3</aimedBurstShotCount>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<!-- ================== Wurfrahmen ================== -->
+
+	<ThingDef ParentName="BaseArtilleryGun">
+		<defName>Pa_NbW</defName>
+		<label>Nebelwerfer</label>
+		<graphicData>
+			<texPath>Things/Building/Security/NbW_Top</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Artillery_ShellLoaded</soundInteract>
+		<description>Nebelwefer attached to a Skeleton platform.</description>
+		<techLevel>Industrial</techLevel>
+		<statBases>
+			<MarketValue>1000</MarketValue>
+			<SightsEfficiency>2.2</SightsEfficiency>
+			<ShotSpread>0.16</ShotSpread>
+			<SwayFactor>1.15</SwayFactor>
+			<RangedWeapon_Cooldown>5.8</RangedWeapon_Cooldown>
+		</statBases>
+		<verbs>
+			<li Class="CombatExtended.VerbPropertiesCE">
+				<verbClass>CombatExtended.Verb_ShootMortarCE</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_28cmNbWRocket</defaultProjectile>
+				<warmupTime>2.6</warmupTime>
+				<minRange>18</minRange>
+				<!--<forcedMissRadius>6</forcedMissRadius>-->
+				<circularError>1.5</circularError>
+				<range>100</range>
+				<soundCast>Shot_NbW</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>20</muzzleFlashScale>
+				<targetParams>
+				  <canTargetLocations>true</canTargetLocations>
+				</targetParams>
+				<indirectFirePenalty>0.15</indirectFirePenalty>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="CombatExtended.CompProperties_AmmoUser">
+				<magazineSize>1</magazineSize>
+                <reloadTime>7.6</reloadTime>
+				<!-- <spawnUnloaded>true</spawnUnloaded> -->
+				<ammoSet>AmmoSet_NbW32rockets</ammoSet>
+			</li>
+			<li Class="CombatExtended.CompProperties_FireModes"/>
+		</comps>
+	</ThingDef>
+	
+	<!--=============== Turret Base(NbW 28/30/32cm) ===============-->
+
+	<ThingDef ParentName="TurretMannedBase">
+		<defName>Turret_NbW32cm</defName>
+		<label>Nebelwerfer(28cm/30cm/32cm)</label>
+		<graphicData>
+			<texPath>Things/Building/Security/NbW32_Base</texPath>
+			<drawSize>(2.2,2.2)</drawSize>
+			<shadowData>
+				<volume>(0.3, 0.6, 0.3)</volume>
+			</shadowData>
+		</graphicData>
+		<uiIconPath>Things/Building/Security/NbW32_icon</uiIconPath>
+		<hasInteractionCell>True</hasInteractionCell>
+		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		<statBases>
+			<MaxHitPoints>160</MaxHitPoints>
+			<WorkToBuild>2000</WorkToBuild>
+			<Mass>1130</Mass>
+			<Bulk>1130</Bulk>
+		</statBases>
+		<techLevel>Spacer</techLevel>
+		<description>An ancient Multi-barrel Heavy Rocket Launcher, robust and simple, feared by many, one of the few cost-efficient weapon from the Wunderwaffen Project, but the rocket projectile is too heavy and highly decrease its effective range.</description>
+		<size>(2,2)</size>
+		<stuffCategories>
+			<li>RuggedMetallic</li>
+		</stuffCategories>
+		<costStuffCount>140</costStuffCount>
+		<costList>
+			<Pa_NbW_Crate>6</Pa_NbW_Crate>
+		</costList>
+		<specialDisplayRadius>22</specialDisplayRadius>
+		<designationCategory>Security</designationCategory>
+		<building>
+			<turretGunDef>Pa_NbW32cm</turretGunDef>
+			<turretTopDrawSize>2.2</turretTopDrawSize>
+			<buildingTags>
+				<li>Artillery</li>
+				<li>Artillery_BaseDestroyer</li>
+				<li>Artillery_MannedMortar</li>
+			</buildingTags>
+		</building>
+		<minifiedDef>MinifiedTurret_Pa_NbW32cm</minifiedDef>
+		<thingCategories>
+			<li>BuildingsSecurity</li>
+		</thingCategories>
+		<researchPrerequisites>
+			<li>Rockets_D1</li>
+		</researchPrerequisites>
+		<constructionSkillPrerequisite>10</constructionSkillPrerequisite>
+	</ThingDef>
+	
+	<!--=============== Turret Base(Wurfrahmen) ===============-->
+
+	<ThingDef ParentName="TurretMannedBase">
+		<defName>Turret_NbW</defName>
+		<label>Wurfrahmen</label>
+		<graphicData>
+			<texPath>Things/Building/Security/NbW32_Base</texPath>
+			<drawSize>(1.5,1.5)</drawSize>
+			<shadowData>
+				<volume>(0.3, 0.6, 0.3)</volume>
+			</shadowData>
+		</graphicData>
+		<uiIconPath>Things/Building/Security/NbW_icon</uiIconPath>
+		<statBases>
+			<MaxHitPoints>40</MaxHitPoints>
+			<WorkToBuild>300</WorkToBuild>
+			<Mass>200</Mass>
+			<Bulk>180</Bulk>
+		</statBases>
+		<techLevel>Industrial</techLevel>
+		<description>Single Wurfrahmen launcher frame that can place in any open field with its support/platform.</description>
+		<size>(1,1)</size>
+		<stuffCategories>
+			<li>Woody</li>
+		</stuffCategories>
+		<costStuffCount>30</costStuffCount>
+		<costList>
+			<Pa_NbW_Crate>1</Pa_NbW_Crate>
+		</costList>
+		<specialDisplayRadius>18</specialDisplayRadius>
+		<designationCategory>Security</designationCategory>
+		<building>
+			<turretGunDef>Pa_NbW</turretGunDef>
+			<turretTopDrawSize>1.5</turretTopDrawSize>
+			<buildingTags>
+				<li>Artillery</li>
+				<li>Artillery_BaseDestroyer</li>
+				<li>Artillery_MannedMortar</li>
+			</buildingTags>
+		</building>
+		<minifiedDef>MinifiedTurret_Pa_NbW</minifiedDef>
+		<thingCategories>
+			<li>BuildingsSecurity</li>
+		</thingCategories>
+		<researchPrerequisites>
+			<li>Rockets_C1</li>
+		</researchPrerequisites>
+		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+	</ThingDef>
+
+<!--=============== Crate Base ===============-->
+
+	<ThingDef ParentName="CrateBase">
+		<defName>Pa_NbW_Crate</defName>
+		<label>Nebelwerfer crate</label>
+		<description>Use this to build a Nebelwerfer turret.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/WeaponCrate</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Standard_Drop</soundInteract>
+		<soundDrop>Standard_Drop</soundDrop>
+		<tickerType>Normal</tickerType>
+		<stackLimit>6</stackLimit>
+		<techLevel>Industrial</techLevel>
+		<statBases>
+			<MarketValue>900</MarketValue>
+			<MaxHitPoints>180</MaxHitPoints>
+			<Flammability>1</Flammability>
+			<DeteriorationRate>0</DeteriorationRate>
+			<Mass>165</Mass>
+			<Bulk>165</Bulk>
+		</statBases>
+		<thingCategories>
+			<li>WeaponCrate</li>
+		</thingCategories>
+		<tradeTags>
+			<li>NormalCrate</li>
+		</tradeTags>
+	</ThingDef>
+
+	<!-- ================== Craft Crate ================== -->
+
+	<RecipeDef ParentName="cratecraftbase">
+		<defName>BuildNbW_Crate</defName>
+		<label>Build Nebelwerfer crate</label>
+		<description>Use this to build a Nebelwefer, a type of stationary manned turret, depends the variant, it can uses 15cm, 28cm, 30cm and 32cm rockets for ammo.</description>
+		<jobString>Building a Nebelwerfer crate.</jobString>
+		<workAmount>11000</workAmount>
+		<skillRequirements>
+			<Crafting>8</Crafting>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Weapon_Parts</li>
+					</thingDefs>
+				</filter>
+				<count>16</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Heavy_Component</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+				<categories>
+				<li>Metallic</li>
+                  </categories>
+				</filter>
+				<count>20</count>
+			</li>
+		</ingredients>
+		<products>
+			<Pa_NbW_Crate>1</Pa_NbW_Crate>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Weapon_Parts</li>
+				<li>Heavy_Component</li>
+			</thingDefs>
+			<categories>
+			<li>SLDBar</li>
+			<li>USLDBar</li>
+             </categories>
+		</fixedIngredientFilter>
+		<researchPrerequisite>Rockets_C1</researchPrerequisite>
+	</RecipeDef>
+
+	<!-- ================== Minified ================== -->
+	
+	<ThingDef ParentName="MinifiedTurretBase">
+		<defName>MinifiedTurret_Pa_NbW32cm</defName>
+		<label>Nebelwefer turret</label>
+		<statBases>
+			<Mass>850</Mass>
+			<Bulk>850</Bulk>
+		</statBases>
+	</ThingDef>
+	
+	<ThingDef ParentName="MinifiedTurretBase">
+		<defName>MinifiedTurret_Pa_NbW</defName>
+		<label>Wurfrahmen turret</label>
+		<statBases>
+			<Mass>180</Mass>
+			<Bulk>120</Bulk>
+		</statBases>
+	</ThingDef>
+	
+</Defs>

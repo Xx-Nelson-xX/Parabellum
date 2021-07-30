@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+   <CombatExtended.AmmoCategoryDef>
+    <defName>BeowulFMJ</defName>
+    <label>.50 Beowulf FMJ</label>
+    <labelShort>BFMJ</labelShort>
+    <description>Standard .50 Beowulf Full Metal Jacket, jack in all trade, master of none</description>
+  </CombatExtended.AmmoCategoryDef>
+
+   <CombatExtended.AmmoCategoryDef>
+    <defName>BeowulAPI</defName>
+    <label>.50 Beowulf API</label>
+    <labelShort>BAPI</labelShort>
+    <description>.50 Beowulf Armor Piercing Incendiary ammo, good counter medium armored target</description>
+  </CombatExtended.AmmoCategoryDef>
+  
+  <CombatExtended.AmmoCategoryDef>
+    <defName>BeowulHP</defName>
+    <label>.50 Beowulf HP</label>
+    <labelShort>BHP</labelShort>
+    <description>.50 Beowulf Hollow Point ammo, good counter light or non-armored target</description>
+  </CombatExtended.AmmoCategoryDef>
+  
+ <CombatExtended.AmmoCategoryDef>
+    <defName>BeowulEMP</defName>
+    <label>.50 Beowulf EMP</label>
+    <labelShort>BEMP</labelShort>
+    <description>.50 Beowulf ElectroMagnetic Pulse ammo, can stun/paralize machine and cause electric burn</description>
+  </CombatExtended.AmmoCategoryDef>
+
+</Defs>

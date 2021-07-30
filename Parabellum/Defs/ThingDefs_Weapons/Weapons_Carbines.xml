@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+<ThingDef ParentName="BaseGun_LongBarreled">
+        <defName>Pa_Delisle</defName>
+        <label>De Lisle Commando Carbine</label>
+        <description>An integrated suppressed pistol caliber carbine for ancient special force. Mediocre damage, low fire rate, highly accurate and decent effective range.</description>
+        <graphicData>
+            <texPath>Things/Weapons/Delisle</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>Interact_Rifle</soundInteract>
+        <statBases>
+            <MarketValue>800</MarketValue>
+            <SightsEfficiency>1.15</SightsEfficiency>
+            <ShotSpread>0.02</ShotSpread>
+            <SwayFactor>1</SwayFactor>
+            <RangedWeapon_Cooldown>0.5</RangedWeapon_Cooldown>
+            <Bulk>7.5</Bulk>
+            <Mass>3.74</Mass>
+        </statBases>
+		<generateCommonality>0.7</generateCommonality>
+		<equippedStatOffsets>
+			<HuntingStealth>0.85</HuntingStealth>
+		</equippedStatOffsets>
+        <weaponTags>
+            <li>RF1</li>
+            <li>Gun</li>
+            <li>TierTwoRifle</li>
+            <li>TierOneRifle</li>
+			<li>TierOneSniper</li>
+            <li>CE_AI_Rifle</li>
+        </weaponTags>
+        <thingCategories>
+            <li>Rifles</li>
+        </thingCategories>
+        <verbs>
+            <li Class="CombatExtended.VerbPropertiesCE">
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>Bullet_45ACP_FMJ</defaultProjectile>
+                <ticksBetweenBurstShots>16</ticksBetweenBurstShots>
+                <warmupTime>0.5</warmupTime>
+                <range>42</range>
+                <soundCast>Shot_Delisle</soundCast>
+                <soundCastTail>GunTail_Medium</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+            </li>
+        </verbs>
+        <comps>
+            <li Class="CombatExtended.CompProperties_FireModes">
+                <aiAimMode>AimedShot</aiAimMode>
+            </li>
+            <li Class="CombatExtended.CompProperties_AmmoUser">
+                <magazineSize>7</magazineSize>
+                <reloadTime>2.1</reloadTime>
+                <ammoSet>AmmoSet_45ACP</ammoSet>
+            </li>
+        </comps>
+        <smeltProducts>
+            <Rifle_Component>1</Rifle_Component>
+            <Weapon_Parts>2</Weapon_Parts>
+        </smeltProducts>
+    </ThingDef>
+	
+	<!-- M4.50 Beowulf -->
+    <ThingDef ParentName="BaseGun_LongBarreled">
+        <defName>Pa_M4Beowulf</defName>
+        <label>M4.50 Beowulf SC</label>
+        <description>The M4.50 Beowulf Special Carbine, changing the standard AR barrel to the heavier .50 Beowulf barrel to deal with light armored target and bear size animals. High damage, average range, good rate of fire and accuracy, but not really controllable in burst.</description>
+        <graphicData>
+            <texPath>Things/Weapons/M4Beowulf</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>Interact_Rifle</soundInteract>
+        <statBases>
+            <MarketValue>1700</MarketValue>
+            <SightsEfficiency>1.12</SightsEfficiency>
+            <ShotSpread>0.058</ShotSpread>
+            <SwayFactor>1.08</SwayFactor>
+            <RangedWeapon_Cooldown>0.8</RangedWeapon_Cooldown>
+            <Bulk>9.2</Bulk>
+            <Mass>3.8</Mass>
+        </statBases>
+		<generateCommonality>0.3</generateCommonality>
+        <weaponTags>
+            <li>RF4</li>
+            <li>AdvancedGun</li>
+            <li>TierThreeRifle</li>
+            <li>CE_AI_Rifle</li>
+        </weaponTags>
+        <thingCategories>
+            <li>Rifles</li>
+        </thingCategories>
+        <verbs>
+            <li Class="CombatExtended.VerbPropertiesCE">
+                <recoilAmount>1.68</recoilAmount>
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>Bullet_127x42mmB_FMJ</defaultProjectile>
+                <warmupTime>0.95</warmupTime>
+                <range>42</range>
+                <burstShotCount>4</burstShotCount>
+                <ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+                <soundCast>Shot_Beowulf</soundCast>
+                <soundCastTail>GunTail_Heavy</soundCastTail>
+                <muzzleFlashScale>14</muzzleFlashScale>
+            </li>
+        </verbs>
+        <comps>
+            <li Class="CombatExtended.CompProperties_FireModes">
+                <aiUseBurstMode>true</aiUseBurstMode>
+                <aiAimMode>AimedShot</aiAimMode>
+                <aimedBurstShotCount>2</aimedBurstShotCount>
+            </li>
+            <li Class="CombatExtended.CompProperties_AmmoUser">
+                <magazineSize>12</magazineSize>
+                <reloadTime>1.68</reloadTime>
+                <ammoSet>AmmoSet_127x42mmB</ammoSet>
+            </li>
+        </comps>
+        <smeltProducts>
+            <AdvRifle_Component>1</AdvRifle_Component>
+            <Weapon_Parts>8</Weapon_Parts>
+            <Plastic>10</Plastic>
+        </smeltProducts>
+    </ThingDef>
+
+</Defs>

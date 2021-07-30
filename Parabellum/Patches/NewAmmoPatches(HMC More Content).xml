@@ -1,0 +1,44 @@
+<Patch>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_SP"]/ammoTypes</xpath>
+		<value>
+			<Ammo_127x55mmAR_FMJ>Bullet_127x55mmAR_FMJ</Ammo_127x55mmAR_FMJ>
+			<Ammo_127x55mmAR_API>Bullet_127x55mmAR_API</Ammo_127x55mmAR_API>
+			<Ammo_127x55mmAR_Sabot>Bullet_127x55mmAR_Sabot</Ammo_127x55mmAR_Sabot>
+			<Ammo_127x55mmAR_HE>Bullet_127x55mmAR_HE</Ammo_127x55mmAR_HE>
+			<Ammo_338LM_FMJ>Bullet_338LM_FMJ</Ammo_338LM_FMJ>
+			<Ammo_338LM_AP>Bullet_338LM_AP</Ammo_338LM_AP>
+			<Ammo_338LM_HP>Bullet_338LM_HP</Ammo_338LM_HP>
+			<Ammo_338LM_EMP>Bullet_338LM_EMP</Ammo_338LM_EMP>
+			<Ammo_762x54mmR_FMJ>Bullet_762x54mmR_FMJ</Ammo_762x54mmR_FMJ>
+			<Ammo_762x54mmR_AP>Bullet_762x54mmR_AP</Ammo_762x54mmR_AP>
+			<Ammo_762x54mmR_HP>Bullet_762x54mmR_HP</Ammo_762x54mmR_HP>
+			<Ammo_762x39mmSoviet_FMJ>Bullet_762x39mmSoviet_FMJ</Ammo_762x39mmSoviet_FMJ>
+			<Ammo_762x39mmSoviet_AP>Bullet_762x39mmSoviet_AP</Ammo_762x39mmSoviet_AP>
+			<Ammo_762x39mmSoviet_HP>Bullet_762x39mmSoviet_HP</Ammo_762x39mmSoviet_HP>
+			<Ammo_9x39mmSoviet_FMJ>Bullet_9x39mmSoviet_FMJ</Ammo_9x39mmSoviet_FMJ>
+			<Ammo_9x39mmSoviet_AP>Bullet_9x39mmSoviet_AP</Ammo_9x39mmSoviet_AP>
+			<Ammo_9x39mmSoviet_SH>Bullet_9x39mmSoviet_SH</Ammo_9x39mmSoviet_SH>
+			<Ammo_9x39mmSoviet_EMP>Bullet_9x39mmSoviet_EMP</Ammo_9x39mmSoviet_EMP>
+			<Ammo_545x39mmSoviet_FMJ>Bullet_545x39mmAN94_Abakan_FMJ</Ammo_545x39mmSoviet_FMJ>
+			<Ammo_545x39mmSoviet_AP>Bullet_545x39mmAN94_Abakan_AP</Ammo_545x39mmSoviet_AP>
+			<Ammo_545x39mmSoviet_HP>Bullet_545x39mmAN94_Abakan_HP</Ammo_545x39mmSoviet_HP>
+			<Ammo_545x39mmSoviet_FMJ>Bullet_545x39mmSoviet_FMJ</Ammo_545x39mmSoviet_FMJ>
+			<Ammo_545x39mmSoviet_AP>Bullet_545x39mmSoviet_AP</Ammo_545x39mmSoviet_AP>
+			<Ammo_545x39mmSoviet_HP>Bullet_545x39mmSoviet_HP</Ammo_545x39mmSoviet_HP>
+			<Ammo_556x45mmNATO_HE>Bullet_556x45mmNATO_HE</Ammo_556x45mmNATO_HE>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_SR"]/ammoTypes</xpath>
+		<value>
+			<Ammo_762x25mmTT_FMJ>Bullet_762x25mmTT_FMJ</Ammo_762x25mmTT_FMJ>
+			<Ammo_762x25mmTT_AP>Bullet_762x25mmTT_AP</Ammo_762x25mmTT_AP>
+			<Ammo_762x25mmTT_HP>Bullet_762x25mmTT_HP</Ammo_762x25mmTT_HP>
+			<Ammo_762x25mmTT_API>Bullet_762x25mmTT_API</Ammo_762x25mmTT_API>
+		</value>
+	</Operation>
+
+</Patch>

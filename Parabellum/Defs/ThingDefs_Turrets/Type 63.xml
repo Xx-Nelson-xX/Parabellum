@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<!-- ================== Type 63 Multiple Rocket Launcher Platform ================== -->
+
+	<ThingDef ParentName="BaseArtilleryGun">
+		<defName>Pa_Type63MRL</defName>
+		<label>Type63MRL</label>
+		<graphicData>
+			<texPath>Things/Building/Security/Type63_Top</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Artillery_ShellLoaded</soundInteract>
+		<description>Type 63 Multiple Rocket Launcher attached to a Stationary platform.</description>
+		<techLevel>Ultra</techLevel>
+		<statBases>
+			<MarketValue>8900</MarketValue>
+			<SightsEfficiency>2.2</SightsEfficiency>
+			<ShotSpread>0.22</ShotSpread>
+			<SwayFactor>1.4</SwayFactor>
+			<RangedWeapon_Cooldown>12</RangedWeapon_Cooldown>
+		</statBases>
+		<verbs>
+			<li Class="CombatExtended.VerbPropertiesCE">
+				<recoilPattern>Mounted</recoilPattern>
+				<recoilAmount>0.68</recoilAmount>
+				<verbClass>CombatExtended.Verb_ShootMortarCE</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<forceNormalTimeSpeed>true</forceNormalTimeSpeed>
+				<defaultProjectile>Bullet_130mmRocketMissile</defaultProjectile>
+				<warmupTime>3.8</warmupTime>
+				<minRange>40</minRange>
+				<!--<forcedMissRadius>4</forcedMissRadius>-->
+				<circularError>2</circularError>
+				<range>370</range>
+				<ticksBetweenBurstShots>15</ticksBetweenBurstShots>
+				<burstShotCount>19</burstShotCount>
+				<soundCast>130mmRocket</soundCast>
+				<muzzleFlashScale>16</muzzleFlashScale>
+				<targetParams>
+				  <canTargetLocations>true</canTargetLocations>
+				</targetParams>
+				<indirectFirePenalty>0.15</indirectFirePenalty>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="CombatExtended.CompProperties_AmmoUser">
+				<magazineSize>19</magazineSize>
+                <reloadTime>4</reloadTime>
+				<reloadOneAtATime>true</reloadOneAtATime>
+				<!-- <spawnUnloaded>true</spawnUnloaded> -->
+				<ammoSet>AmmoSet_130mmRocketMissile</ammoSet>
+			</li>
+			<li Class="CombatExtended.CompProperties_FireModes">
+				<aimedBurstShotCount>4</aimedBurstShotCount>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<!--=============== Turret Base ===============-->
+
+	<ThingDef ParentName="TurretMannedBase">
+		<defName>Turret_Type63MRL</defName>
+		<label>Type 63 MRLP</label>
+		<graphicData>
+			<texPath>Things/Building/Security/Type63_Base</texPath>
+			<drawSize>(2.4,2.4)</drawSize>
+			<shadowData>
+				<volume>(0.3, 0.6, 0.3)</volume>
+			</shadowData>
+		</graphicData>
+		<uiIconPath>Things/Building/Security/Type63_icon</uiIconPath>
+		<hasInteractionCell>True</hasInteractionCell>
+		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		<statBases>
+			<MaxHitPoints>460</MaxHitPoints>
+			<WorkToBuild>12000</WorkToBuild>
+			<Mass>6500</Mass>
+			<Bulk>6500</Bulk>
+		</statBases>
+		<techLevel>Ultra</techLevel>
+		<description>Type 63 Multiple Rocket Launcher Platform, a simple and bit modern Multi-barrel Heavy Rocket Launcher, it has 19 rockets tubes, created for people who want artillery supremacy.</description>
+		<size>(2,2)</size>
+		<stuffCategories>
+			<li>RuggedMetallic</li>
+		</stuffCategories>
+		<costStuffCount>130</costStuffCount>
+		<costList>
+			<Pa_Type63_Crate>1</Pa_Type63_Crate>
+		</costList>
+		<specialDisplayRadius>35</specialDisplayRadius>
+		<designationCategory>Security</designationCategory>
+		<building>
+			<turretGunDef>Pa_Type63MRL</turretGunDef>
+			<turretTopDrawSize>2.4</turretTopDrawSize>
+			<buildingTags>
+				<li>Artillery</li>
+				<li>Artillery_BaseDestroyer</li>
+				<li>Artillery_MannedMortar</li>
+			</buildingTags>
+		</building>
+		<minifiedDef>MinifiedTurret_Pa_Type63MRL</minifiedDef>
+		<thingCategories>
+			<li>BuildingsSecurity</li>
+		</thingCategories>
+		<researchPrerequisites>
+			<li>Rockets_D2</li>
+		</researchPrerequisites>
+		<constructionSkillPrerequisite>18</constructionSkillPrerequisite>
+	</ThingDef>
+
+	<!--=============== Crate Base ===============-->
+
+	<ThingDef ParentName="CrateBase">
+		<defName>Pa_Type63_Crate</defName>
+		<label>Type 63 MRL crate</label>
+		<description>Use this to build a Type 63 MRL turret.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/WeaponCrate</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Standard_Drop</soundInteract>
+		<soundDrop>Standard_Drop</soundDrop>
+		<tickerType>Normal</tickerType>
+		<stackLimit>1</stackLimit>
+		<techLevel>Ultra</techLevel>
+		<statBases>
+			<MarketValue>9000</MarketValue>
+			<MaxHitPoints>480</MaxHitPoints>
+			<Flammability>1</Flammability>
+			<DeteriorationRate>0</DeteriorationRate>
+			<Mass>1850</Mass>
+			<Bulk>1850</Bulk>
+		</statBases>
+		<thingCategories>
+			<li>WeaponCrate</li>
+		</thingCategories>
+		<tradeTags>
+			<li>RareCrate</li>
+		</tradeTags>
+	</ThingDef>
+
+	<!-- ================== Craft Crate ================== -->
+
+	<RecipeDef ParentName="cratecraftbase">
+		<defName>BuildType63MRL_Crate</defName>
+		<label>Build Type 63 MRL crate</label>
+		<description>Use this to build a Type 63, a type of stationary manned turret, it can uses 13cm rockets for ammo.</description>
+		<jobString>Building a Type 63 MRL crate.</jobString>
+		<workAmount>20000</workAmount>
+		<skillRequirements>
+			<Crafting>18</Crafting>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Weapon_Parts</li>
+					</thingDefs>
+				</filter>
+				<count>190</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Launcher_Component</li>
+					</thingDefs>
+				</filter>
+				<count>8</count>
+			</li>
+			<li>
+				<filter>
+				<categories>
+				<li>Metallic</li>
+                  </categories>
+				</filter>
+				<count>200</count>
+			</li>
+		</ingredients>
+		<products>
+			<Pa_Type63_Crate>1</Pa_Type63_Crate>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Weapon_Parts</li>
+				<li>Launcher_Component</li>
+			</thingDefs>
+			<categories>
+			<li>SLDBar</li>
+			<li>USLDBar</li>
+             </categories>
+		</fixedIngredientFilter>
+		<researchPrerequisite>Rockets_D2</researchPrerequisite>
+	</RecipeDef>
+
+	<!-- ================== Minified ================== -->
+	
+	<ThingDef ParentName="MinifiedTurretBase">
+		<defName>MinifiedTurret_Pa_Type63MRL</defName>
+		<label>Type 63 MRL turret</label>
+		<statBases>
+			<Mass>2500</Mass>
+			<Bulk>2200</Bulk>
+		</statBases>
+	</ThingDef>
+	
+</Defs>

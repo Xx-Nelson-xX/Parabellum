@@ -1,0 +1,232 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <RecipeDef ParentName="GrenadeRecipeBase">
+    <defName>MakePotatoM</defName>
+    <label>make M24 Stick Grenades x5</label>
+    <description>Craft M24 Stick Grenades.</description>
+    <jobString>Making M24 Stick Grenades.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Metallic</li>
+          </categories>
+        </filter>
+        <count>20</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Powder</li>
+            <li>FSX</li>
+          </thingDefs>
+        </filter>
+        <count>6</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>SLDBar</li>
+        <li>USLDBar</li>
+      </categories>
+      <thingDefs>
+        <li>Powder</li>
+        <li>FSX</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Pa_GrenadePotatoM>5</Pa_GrenadePotatoM>
+    </products>
+	<researchPrerequisite>Grenade_C1</researchPrerequisite>
+  </RecipeDef>
+  
+  <RecipeDef ParentName="GrenadeRecipeBase">
+    <defName>MakeM24wSplitterring</defName>
+    <label>make M24 with Splitterring x5</label>
+    <description>Craft 5 M24 with Splitterring.</description>
+    <jobString>Making M24 with Splitterring.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Metallic</li>
+          </categories>
+        </filter>
+        <count>35</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Powder</li>
+            <li>FSX</li>
+          </thingDefs>
+        </filter>
+        <count>6</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>SLDBar</li>
+        <li>USLDBar</li>
+      </categories>
+      <thingDefs>
+        <li>Powder</li>
+        <li>FSX</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Pa_GrenadeM24S>5</Pa_GrenadeM24S>
+    </products>
+	<researchPrerequisite>Grenade_C1</researchPrerequisite>
+  </RecipeDef>
+  
+  <RecipeDef ParentName="GrenadeRecipeBase">
+    <defName>MakeM24Nb</defName>
+    <label>make M24 Nebelgranate x5</label>
+    <description>Craft 5 M24 Nebelgranate.</description>
+    <jobString>Making M24 Nebelgranate.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Metallic</li>
+          </categories>
+        </filter>
+        <count>20</count>
+      </li>
+	  <li>
+        <filter>
+            <thingDefs>
+              <li>Plastic</li>
+            </thingDefs>
+        </filter>
+        <count>5</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Powder</li>
+            <li>FSX</li>
+          </thingDefs>
+        </filter>
+        <count>6</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>SLDBar</li>
+        <li>USLDBar</li>
+      </categories>
+      <thingDefs>
+        <li>Powder</li>
+        <li>FSX</li>
+		<li>Plastic</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Pa_GrenadeN24Nb>5</Pa_GrenadeN24Nb>
+    </products>
+	<researchPrerequisite>Grenade_C1</researchPrerequisite>
+  </RecipeDef>
+  
+  <RecipeDef ParentName="GrenadeRecipeBase">
+    <defName>MakeM24Bundle</defName>
+    <label>make M24 Bundle x1</label>
+    <description>Craft a M24 Bundle.</description>
+    <jobString>Making M24 Bundle.</jobString>
+    <ingredients>
+	  <li>
+		<filter>
+			<thingDefs>
+				<li>Weapon_Parts</li>
+			</thingDefs>
+		</filter>
+		<count>1</count>
+	  </li>
+      <li>
+        <filter>
+          <categories>
+            <li>Metallic</li>
+          </categories>
+        </filter>
+        <count>24</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Powder</li>
+            <li>FSX</li>
+          </thingDefs>
+        </filter>
+        <count>8</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>SLDBar</li>
+        <li>USLDBar</li>
+      </categories>
+      <thingDefs>
+	    <li>Weapon_Parts</li>
+        <li>Powder</li>
+        <li>FSX</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Pa_GrenadeM24B>1</Pa_GrenadeM24B>
+    </products>
+	<researchPrerequisite>Grenade_C2</researchPrerequisite>
+  </RecipeDef>
+  
+  <RecipeDef ParentName="GrenadeRecipeBase">
+    <defName>Make4kg</defName>
+    <label>make 4kg Demolition Charge x1</label>
+    <description>Craft a 4kg Demolition Charge.</description>
+    <jobString>Making 4kg Demolition Charge.</jobString>
+    <ingredients>
+	  <li>
+		<filter>
+			<thingDefs>
+				<li>Weapon_Parts</li>
+			</thingDefs>
+		</filter>
+		<count>1</count>
+	  </li>
+      <li>
+        <filter>
+          <categories>
+            <li>Metallic</li>
+          </categories>
+        </filter>
+        <count>40</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Powder</li>
+            <li>FSX</li>
+          </thingDefs>
+        </filter>
+        <count>10</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>SLDBar</li>
+        <li>USLDBar</li>
+      </categories>
+      <thingDefs>
+	    <li>Weapon_Parts</li>
+        <li>Powder</li>
+        <li>FSX</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Pa_Grenade4kg>1</Pa_Grenade4kg>
+    </products>
+	<researchPrerequisite>Grenade_C2</researchPrerequisite>
+  </RecipeDef>
+  
+  
+</Defs>

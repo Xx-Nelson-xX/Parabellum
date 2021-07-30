@@ -1,0 +1,26 @@
+<Patch>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ArchitectSense.DesignationSubCategoryDef[defName="SubCategory_Machineguns"]/defNames</xpath>
+		<value>
+			<li>Turret_Vickers</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ArchitectSense.DesignationSubCategoryDef[defName="SubCategory_ACannons"]/defNames</xpath>
+		<value>
+			<li>Turret_XM307ACSW</li>
+			<li>Turret_Flak41AA</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ArchitectSense.DesignationSubCategoryDef[defName="SubCategory_Traps"]/defNames</xpath>
+		<value>
+			<li>Pa_Trap_SMine</li>
+			<li>Pa_Trap_4kgMine</li>
+		</value>
+	</Operation>
+
+</Patch>

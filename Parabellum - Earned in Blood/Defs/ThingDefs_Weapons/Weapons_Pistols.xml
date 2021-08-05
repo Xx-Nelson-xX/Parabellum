@@ -36,7 +36,7 @@
 			<li Class="CombatExtended.VerbPropertiesCE">
 				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>Ammo_556x45mmNATO_FMJ</defaultProjectile>
+				<defaultProjectile>Bullet_556x45mmNATO_FMJ</defaultProjectile>
 				<warmupTime>0.25</warmupTime>
 				<range>32</range>
 				<soundCast>Shot_Beowulf</soundCast>

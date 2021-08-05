@@ -1,8 +1,24 @@
-<Patch>
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
 
-	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_SP"]/ammoTypes</xpath>
-		<value>
+	<CombatExtended.AmmoSetDef>
+		<defName>AmmoSet_SP</defName>
+		<label>Rifle Caliber</label>
+		<ammoTypes>
+			<Ammo_127x42mmB_FMJ>Bullet_127x42mmB_FMJ</Ammo_127x42mmB_FMJ>
+			<Ammo_127x42mmB_HP>Bullet_127x42mmB_HP</Ammo_127x42mmB_HP>
+			<Ammo_127x42mmB_API>Bullet_127x42mmB_API</Ammo_127x42mmB_API>
+			<Ammo_127x42mmB_EMP>Bullet_127x42mmB_EMP</Ammo_127x42mmB_EMP>
+			<Ammo_762x51mmNATO_FMJ>Bullet_762x51mmNATO_FMJ</Ammo_762x51mmNATO_FMJ>
+			<Ammo_762x51mmNATO_AP>Bullet_762x51mmNATO_AP</Ammo_762x51mmNATO_AP>
+			<Ammo_762x51mmNATO_HP>Bullet_762x51mmNATO_HP</Ammo_762x51mmNATO_HP>
+			<Ammo_303British_FMJ>Bullet_303British_FMJ</Ammo_303British_FMJ>
+			<Ammo_303British_AP>Bullet_303British_AP</Ammo_303British_AP>
+			<Ammo_303British_HP>Bullet_303British_HP</Ammo_303British_HP>
+			<Ammo_556x45mmNATO_FMJ>Bullet_556x45mmNATO_FMJ</Ammo_556x45mmNATO_FMJ>
+			<Ammo_556x45mmNATO_AP>Bullet_556x45mmNATO_AP</Ammo_556x45mmNATO_AP>
+			<Ammo_556x45mmNATO_HP>Bullet_556x45mmNATO_HP</Ammo_556x45mmNATO_HP>
+			<Ammo_556x45mmNATO_HE>Bullet_556x45mmNATO_HE</Ammo_556x45mmNATO_HE>
 			<Ammo_127x55mmAR_FMJ>Bullet_127x55mmAR_FMJ</Ammo_127x55mmAR_FMJ>
 			<Ammo_127x55mmAR_API>Bullet_127x55mmAR_API</Ammo_127x55mmAR_API>
 			<Ammo_127x55mmAR_Sabot>Bullet_127x55mmAR_Sabot</Ammo_127x55mmAR_Sabot>
@@ -27,18 +43,24 @@
 			<Ammo_545x39mmSoviet_FMJ>Bullet_545x39mmSoviet_FMJ</Ammo_545x39mmSoviet_FMJ>
 			<Ammo_545x39mmSoviet_AP>Bullet_545x39mmSoviet_AP</Ammo_545x39mmSoviet_AP>
 			<Ammo_545x39mmSoviet_HP>Bullet_545x39mmSoviet_HP</Ammo_545x39mmSoviet_HP>
-			<Ammo_556x45mmNATO_HE>Bullet_556x45mmNATO_HE</Ammo_556x45mmNATO_HE>
-		</value>
-	</Operation>
+		</ammoTypes>
+	</CombatExtended.AmmoSetDef>
 	
-	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_SR"]/ammoTypes</xpath>
-		<value>
+	<CombatExtended.AmmoSetDef>
+		<defName>AmmoSet_SR</defName>
+		<label>Pistol Caliber</label>
+		<ammoTypes>
+			<Ammo_45ACP_FMJ>Bullet_45ACP_FMJ</Ammo_45ACP_FMJ>
+			<Ammo_45ACP_AP>Bullet_45ACP_AP</Ammo_45ACP_AP>
+			<Ammo_45ACP_HP>Bullet_45ACP_HP</Ammo_45ACP_HP>
+			<Ammo_9x19mmPara_FMJ>Bullet_9x19mmPara_FMJ</Ammo_9x19mmPara_FMJ>
+			<Ammo_9x19mmPara_AP>Bullet_9x19mmPara_AP</Ammo_9x19mmPara_AP>
+			<Ammo_9x19mmPara_HP>Bullet_9x19mmPara_HP</Ammo_9x19mmPara_HP>
 			<Ammo_762x25mmTT_FMJ>Bullet_762x25mmTT_FMJ</Ammo_762x25mmTT_FMJ>
 			<Ammo_762x25mmTT_AP>Bullet_762x25mmTT_AP</Ammo_762x25mmTT_AP>
 			<Ammo_762x25mmTT_HP>Bullet_762x25mmTT_HP</Ammo_762x25mmTT_HP>
 			<Ammo_762x25mmTT_API>Bullet_762x25mmTT_API</Ammo_762x25mmTT_API>
-		</value>
-	</Operation>
+		</ammoTypes>
+	</CombatExtended.AmmoSetDef>
 
-</Patch>
+</Defs>

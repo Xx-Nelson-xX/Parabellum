@@ -6,11 +6,11 @@ A HSK Rimworld Add-on Mod
 
   This mod started with the idea to fill HSK CE combat system, mainly to add more weapon variety to the basic ammo type, but the more I play with the combat system, the more fun stuff I found when modding it, so I decided to keep going  with my modding capability and keep expanding the mod.
 
-Link to Hardcore SK: https://github.com/skyarkhangel/Hardcore-SK
+**Link to Hardcore SK: https://github.com/skyarkhangel/Hardcore-SK**
 
 And the Link to their Discord Server: https://discord.gg/FMPRSKr (You can meet me here in the Englis server)
 
-FEATURES:
+*FEATURES:*
 mostly Industrial scale stuff(IRL,Between WWI era and till Nowadays)
 
 1. Guns, lots of guns
@@ -18,7 +18,7 @@ mostly Industrial scale stuff(IRL,Between WWI era and till Nowadays)
 3. Explosives
 4. New Ammo type
 
-COMPATIBLE OPTIONAL MODS:
+*COMPATIBLE OPTIONAL MODS:*
 
 1. HMC More Content(Some of my weapons share their catridge) -> https://discord.com/channels/272340793174392832/745746107329413121/823202940910829568(Discord Link)
 
@@ -26,7 +26,7 @@ COMPATIBLE OPTIONAL MODS:
 
 New Update changed how the patch work and now you don't need to delete anything
 
-INSTALLATION(Manually):
+**INSTALLATION(Manually):**
 
 1. Locate your game directory
 2. Locate the Rimworld "Mod" folder

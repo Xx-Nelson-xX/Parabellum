@@ -23,6 +23,7 @@ COMPATIBLE OPTIONAL MODS:
 1. HMC More Content(Some of my weapons share their catridge) -> https://discord.com/channels/272340793174392832/745746107329413121/823202940910829568(Discord Link)
 
 ~~*If you don't use it delete the "NewAmmoPatches(HMC More Content).xml" file in the mod's Patches folder~~
+
 New Update changed how the patch work and now you don't need to delete anything
 
 INSTALLATION(Manually):
@@ -40,9 +41,9 @@ INSTALLATION(Manually):
 11. Done
 
 
-*EXTRA NOTES:
+*EXTRA NOTES:*
 
-**NOW THE MOD HAS SEPARATED PACKAGE
+**NOW THE MOD HAS SEPARATED PACKAGE**
 
 For Guns and Handheld Weapons -> Parabellum - Earned in Blood
 
@@ -53,7 +54,7 @@ to get them you need to switch the branch from "main" to any of them, don't use 
 ![Captura](https://user-images.githubusercontent.com/40744101/127422742-fa5348ed-a49c-4249-a37b-258fe2287f68.PNG)
 
 
-**¿BASE GAME SUPPORT?
+**¿BASE GAME SUPPORT?**
 
 Mmmmm maybe, gonna have a hard time balance it, material conversion, obligatory use CE within the mod, probably change all the stats of all the weapons and turrets since the Base game CE has totally different balance compared to the one in HSK
 
@@ -65,4 +66,4 @@ Also Sorry this is my first time using GitHub, I really need some advise of how 
 
 Any support can help me, if you like donation, here is my Ko-fi link: https://ko-fi.com/xxnelsonxx78863
 
-**THANKS FOR USING THE MOD :D
+**THANKS FOR USING THE MOD :D**

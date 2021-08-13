@@ -44,7 +44,7 @@
                 <range>36</range>
                 <soundCast>ShotUMP45</soundCast>
                 <soundCastTail>GunTail_Light</soundCastTail>
-                <muzzleFlashScale>9</muzzleFlashScale>
+                <muzzleFlashScale>10</muzzleFlashScale>
             </li>
         </verbs>
         <comps>

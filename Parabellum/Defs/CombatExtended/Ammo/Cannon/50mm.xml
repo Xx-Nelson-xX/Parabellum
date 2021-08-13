@@ -3,7 +3,7 @@
 
 	<ThingCategoryDef>
 		<defName>Ammo50mmCannonShells</defName>
-		<label>50mm Cannon shell</label>
+		<label>5cm Cannon shell</label>
 		<parent>AmmoShells</parent>
 		<iconPath>Things/Ammo/50mm/APHE/APHE_c</iconPath>
 	</ThingCategoryDef>
@@ -12,7 +12,7 @@
 
 	<CombatExtended.AmmoSetDef>
 		<defName>AmmoSet_50mmCannonShell</defName>
-		<label>50mm Cannon shell</label>
+		<label>5cm Cannon shell</label>
 		<ammoTypes>
 			<Ammo_50mmCannonShell_APHE>Bullet_50mmCannonShell_APHE</Ammo_50mmCannonShell_APHE>
 			<Ammo_50mmCannonShell_HE>Bullet_50mmCannonShell_HE</Ammo_50mmCannonShell_HE>
@@ -23,7 +23,7 @@
 	<!-- ==================== Ammo ========================== -->
 
 	<ThingDef Class="CombatExtended.AmmoDef" Name="50mmCannonShellBase" ParentName="AmmoBase" Abstract="True">
-		<description>The 50mm small cannon shell is a specific size of cannon and autocannon ammunition.</description>
+		<description>The 5cm small cannon shell is a specific size of cannon and autocannon ammunition.</description>
 		<statBases>
 			<MaxHitPoints>200</MaxHitPoints>
 		</statBases>
@@ -43,7 +43,7 @@
 
 	<ThingDef Class="CombatExtended.AmmoDef" ParentName="50mmCannonShellBase">
 		<defName>Ammo_50mmCannonShell_APHE</defName>
-		<label>50mm Pzgr 39 (APHE)</label>
+		<label>5cm Pzgr 39 (APHE)</label>
 		<graphicData>
 			<texPath>Things/Ammo/50mm/APHE</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
@@ -59,7 +59,7 @@
 
 	<ThingDef Class="CombatExtended.AmmoDef" ParentName="50mmCannonShellBase">
 		<defName>Ammo_50mmCannonShell_HE</defName>
-		<label>50mm Sprgr 38 (HE)</label>
+		<label>5cm Sprgr 38 (HE)</label>
 		<graphicData>
 			<texPath>Things/Ammo/50mm/HE</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
@@ -76,7 +76,7 @@
 
 	<ThingDef Class="CombatExtended.AmmoDef" ParentName="50mmCannonShellBase">
 		<defName>Ammo_50mmCannonShell_APCR</defName>
-		<label>50mm Pzgr 40 (APCR)</label>
+		<label>5cm Pzgr 40 (APCR)</label>
 		<graphicData>
 			<texPath>Things/Ammo/50mm/APCR</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
@@ -107,7 +107,7 @@
 
 	<ThingDef Class="CombatExtended.AmmoDef" ParentName="Base50mmCannonShell">
 		<defName>Bullet_50mmCannonShell_APHE</defName>
-		<label>50mm Pzgr 39 (APHE)</label>
+		<label>5cm Pzgr 39 (APHE)</label>
 		<graphicData>
 			<texPath>Things/Projectile/50mm/APHE</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -136,7 +136,7 @@
 
 	<ThingDef Class="CombatExtended.AmmoDef" ParentName="Base50mmCannonShell">
 		<defName>Bullet_50mmCannonShell_HE</defName>
-		<label>50mm Sprgr 38 (HE)</label>
+		<label>5cm Sprgr 38 (HE)</label>
 		<thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
 		<graphicData>
 			<texPath>Things/Projectile/50mm/HE</texPath>
@@ -168,7 +168,7 @@
 
 	<ThingDef Class="CombatExtended.AmmoDef" ParentName="Base50mmCannonShell">
 		<defName>Bullet_50mmCannonShell_APCR</defName>
-		<label>50mm Pzgr 40 (APCR)</label>
+		<label>5cm Pzgr 40 (APCR)</label>
 		<graphicData>
 			<texPath>Things/Projectile/50mm/APCR</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -200,9 +200,9 @@
 
 	<RecipeDef ParentName="AmmoRecipeBase">
 		<defName>MakeAmmo_50mmCannonShell_APHE</defName>
-		<label>make 50mm Pzgr 39(APHE) shells x20</label>
-		<description>Craft 20 50mm Pzgr 39(APHE) shells.</description>
-		<jobString>Making 50mm Pzgr 39(APHE) shells.</jobString>
+		<label>make 5cm Pzgr 39(APHE) shells x10</label>
+		<description>Craft 10 5cm Pzgr 39(APHE) shells.</description>
+		<jobString>Making 5cm Pzgr 39(APHE) shells.</jobString>
 		<ingredients>
 			<li>
 				<filter>
@@ -211,7 +211,7 @@
 						<li>USLDBar</li>
 					</categories>
 				</filter>
-				<count>80</count>
+				<count>40</count>
 			</li>
 			<li>
 				<filter>
@@ -219,12 +219,13 @@
 						<li>HeavyBar</li>
 					</categories>
 				</filter>
-				<count>40</count>
+				<count>20</count>
 			</li>
 			<li>
 				<filter>
 					<thingDefs>
 						<li>Powder</li>
+						<li>FSX</li>
 					</thingDefs>
 				</filter>
 				<count>100</count>
@@ -238,24 +239,24 @@
 			</categories>
 			<thingDefs>
 				<li>Powder</li>
+				<li>FSX</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
-			<Ammo_50mmCannonShell_APHE>20</Ammo_50mmCannonShell_APHE>
+			<Ammo_50mmCannonShell_APHE>10</Ammo_50mmCannonShell_APHE>
 		</products>
 		<skillRequirements>
 			<Crafting>8</Crafting>
 		</skillRequirements>
 		<workSkill>Crafting</workSkill>
-		<workSkillLearnFactor>0.8</workSkillLearnFactor>
 		<researchPrerequisite>Mortars</researchPrerequisite>
 	</RecipeDef>
 
 	<RecipeDef ParentName="AmmoRecipeBase">
 		<defName>MakeAmmo_50mmCannonShell_HE</defName>
-		<label>make 50mm Sprgr 38(HE) shells x20</label>
-		<description>Craft 20 50mm Sprgr 38(HE) shells.</description>
-		<jobString>Making 50mm Sprgr 38(HE) shells.</jobString>
+		<label>make 5cm Sprgr 38(HE) shells x10</label>
+		<description>Craft 10 5cm Sprgr 38(HE) shells.</description>
+		<jobString>Making 5cm Sprgr 38(HE) shells.</jobString>
 		<ingredients>
 			<li>
 				<filter>
@@ -264,7 +265,7 @@
 						<li>USLDBar</li>
 					</categories>
 				</filter>
-				<count>70</count>
+				<count>35</count>
 			</li>
 			<li>
 				<filter>
@@ -272,15 +273,16 @@
 						<li>HeavyBar</li>
 					</categories>
 				</filter>
-				<count>32</count>
+				<count>16</count>
 			</li>
 			<li>
 				<filter>
 					<thingDefs>
 						<li>Powder</li>
+						<li>FSX</li>
 					</thingDefs>
 				</filter>
-				<count>120</count>
+				<count>60</count>
 			</li>
 		</ingredients>
 		<fixedIngredientFilter>
@@ -291,24 +293,24 @@
 			</categories>
 			<thingDefs>
 				<li>Powder</li>
+				<li>FSX</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
-			<Ammo_50mmCannonShell_HE>20</Ammo_50mmCannonShell_HE>
+			<Ammo_50mmCannonShell_HE>10</Ammo_50mmCannonShell_HE>
 		</products>
 		<skillRequirements>
 			<Crafting>8</Crafting>
 		</skillRequirements>
 		<workSkill>Crafting</workSkill>
-		<workSkillLearnFactor>0.8</workSkillLearnFactor>
 		<researchPrerequisite>Mortars</researchPrerequisite>
 	</RecipeDef>
 
 	<RecipeDef ParentName="AmmoRecipeBase">
 		<defName>MakeAmmo_50mmCannonShell_APCR</defName>
-		<label>make 50mm Pzgr 40(APCR) shells x20</label>
-		<description>Craft 20 50mm Pzgr 40(APCR) shells.</description>
-		<jobString>Making 50mm Pzgr 40(APCR) shells.</jobString>
+		<label>make 5cm Pzgr 40(APCR) shells x10</label>
+		<description>Craft 10 5cm Pzgr 40(APCR) shells.</description>
+		<jobString>Making 5cm Pzgr 40(APCR) shells.</jobString>
 		<ingredients>
 			<li>
 				<filter>
@@ -317,43 +319,44 @@
 						<li>USLDBar</li>
 					</categories>
 				</filter>
-				<count>80</count>
+				<count>40</count>
 			</li>
 			<li>
 				<filter>
-					<categories>
-						<li>HeavyBar</li>
-					</categories>
+					<thingDefs>
+						<li>Tungsten</li>
+					</thingDefs>
 				</filter>
-				<count>52</count>
+				<count>10</count>
 			</li>
 			<li>
 				<filter>
 					<thingDefs>
 						<li>Powder</li>
+						<li>FSX</li>
 					</thingDefs>
 				</filter>
-				<count>86</count>
+				<count>42</count>
 			</li>
 		</ingredients>
 		<fixedIngredientFilter>
 			<categories>
 				<li>SLDBar</li>
 				<li>USLDBar</li>
-				<li>HeavyBar</li>
 			</categories>
 			<thingDefs>
+				<li>Tungsten</li>
 				<li>Powder</li>
+				<li>FSX</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
-			<Ammo_50mmCannonShell_APCR>20</Ammo_50mmCannonShell_APCR>
+			<Ammo_50mmCannonShell_APCR>10</Ammo_50mmCannonShell_APCR>
 		</products>
 		<skillRequirements>
 			<Crafting>8</Crafting>
 		</skillRequirements>
 		<workSkill>Crafting</workSkill>
-		<workSkillLearnFactor>0.8</workSkillLearnFactor>
 		<researchPrerequisite>Mortars</researchPrerequisite>
 	</RecipeDef>
 

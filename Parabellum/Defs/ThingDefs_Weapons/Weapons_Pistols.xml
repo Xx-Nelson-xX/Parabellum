@@ -56,7 +56,7 @@
 		</comps>
 		<modExtensions>
 		  <li Class="CombatExtended.GunDrawExtension">
-			<DrawSize>0.9</DrawSize>
+			<DrawSize>0.8</DrawSize>
 		  </li>
 		</modExtensions>
 		<smeltProducts>

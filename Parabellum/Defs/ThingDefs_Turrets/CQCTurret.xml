@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- ================== Improvised turret gun ================== -->
+
+	<ThingDef ParentName="BaseAutoTurretGun">
+		<defName>Pa_ShotgunT</defName>
+		<label>Shotgun Sentry</label>
+		<graphicData>
+			<texPath>Things/Building/Security/Sentry/AA12x2_Top</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<description>Jury-rigged automatic AA12 x2 with simple sensor and support strcture attached to a turret.</description>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<techLevel>Industrial</techLevel>
+		<tradeability>None</tradeability>
+		<statBases>
+			<SightsEfficiency>1.1</SightsEfficiency>
+			<ShotSpread>0.26</ShotSpread>
+			<SwayFactor>1.95</SwayFactor>
+			<RangedWeapon_Cooldown>1.35</RangedWeapon_Cooldown>
+			<DeteriorationRate>0</DeteriorationRate>
+		</statBases>
+		<generateCommonality>0</generateCommonality>
+		<verbs>
+			<li Class="CombatExtended.VerbPropertiesCE">
+				<recoilPattern>Mounted</recoilPattern>
+				<recoilAmount>1.52</recoilAmount>
+				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_12Gauge_Buck</defaultProjectile>
+				<warmupTime>0.75</warmupTime>
+				<range>16</range>
+				<ticksBetweenBurstShots>4</ticksBetweenBurstShots>
+				<burstShotCount>4</burstShotCount>
+				<soundCast>RF_ShotAA12</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>12</muzzleFlashScale>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="CombatExtended.CompProperties_AmmoUser">
+				<magazineSize>40</magazineSize>
+				<reloadTime>9.2</reloadTime>
+				<!-- <spawnUnloaded>false</spawnUnloaded> -->
+				<ammoSet>AmmoSet_12Gauge</ammoSet>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<!-- ================== Improvised turret gun ================== -->
+
+	<ThingDef ParentName="BaseAutoTurretGun">
+		<defName>Pa_AntiR</defName>
+		<label>Anti-Riot Sentry</label>
+		<graphicData>
+			<texPath>Things/Building/Security/Sentry/AntiR_Top</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<description>Simple small size autocannon like turret piece, uncapable to fire any standard ammo type.</description>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<techLevel>Spacer</techLevel>
+		<tradeability>None</tradeability>
+		<statBases>
+			<SightsEfficiency>1.56</SightsEfficiency>
+			<ShotSpread>0.1</ShotSpread>
+			<SwayFactor>1.65</SwayFactor>
+			<RangedWeapon_Cooldown>1.35</RangedWeapon_Cooldown>
+			<DeteriorationRate>0</DeteriorationRate>
+		</statBases>
+		<generateCommonality>0</generateCommonality>
+		<verbs>
+			<li Class="CombatExtended.VerbPropertiesCE">
+				<recoilPattern>Mounted</recoilPattern>
+				<recoilAmount>0.8</recoilAmount>
+				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_12Gauge_Buck</defaultProjectile>
+				<warmupTime>0.8</warmupTime>
+				<range>24</range>
+				<ticksBetweenBurstShots>6</ticksBetweenBurstShots>
+				<burstShotCount>3</burstShotCount>
+				<soundCast>AGS</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>14</muzzleFlashScale>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="CombatExtended.CompProperties_AmmoUser">
+				<magazineSize>50</magazineSize>
+				<reloadTime>4.2</reloadTime>
+				<!-- <spawnUnloaded>false</spawnUnloaded> -->
+				<ammoSet>AmmoSet_AntiRiot</ammoSet>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<!-- ================== TurretBase - Improvised Shotgun turrets(AI) ================== -->
+
+	<ThingDef ParentName="TurretBase">
+		<defName>Turret_ShotgunT</defName>
+		<label>IASST</label>
+		<graphicData>
+			<texPath>Things/Building/Security/Base/P_Base</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1.4,1.4)</drawSize>
+			<damageData>
+				<rect>(0.2,0.2,0.6,0.6)</rect>
+			</damageData>
+			<shadowData>
+				<volume>(0.27,0.25,0.27)</volume>
+				<offset>(0,0,0)</offset>
+			</shadowData>
+		</graphicData>
+		<uiIconPath>Things/Building/Security/Sentry/AA12x2_icon</uiIconPath>
+		<statBases>
+			<MaxHitPoints>125</MaxHitPoints>
+			<Flammability>0.8</Flammability>
+			<WorkToBuild>2000</WorkToBuild>
+			<Mass>18</Mass>
+			<Bulk>32.4</Bulk>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>500</basePowerConsumption>
+			</li>
+			<li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_Breakdownable"/>
+		</comps>
+		<description>Improvised Automatic Shotgun Sentry Turret(IASST), An improvised AI-controlled turret with 2 AA-12 that automatically fires at nearby enemies. Requires 500 W to function.\nCaliber: .12 Gauge</description>
+		<stuffCategories>
+			<li>RuggedMetallic</li>
+		</stuffCategories>
+		<costStuffCount>100</costStuffCount>
+		<costList>
+			<ComponentIndustrial>2</ComponentIndustrial>
+			<Mechanism>1</Mechanism>
+			<ElectronicComponents>1</ElectronicComponents>
+			<Glass>2</Glass>
+			<Gun_AssaultShotgun>2</Gun_AssaultShotgun>
+		</costList>
+		<specialDisplayRadius>0.5</specialDisplayRadius>
+		<designationCategory>Security</designationCategory>
+		<building>
+			<ai_combatDangerous>false</ai_combatDangerous>
+			<turretGunDef>Pa_ShotgunT</turretGunDef>
+			<turretTopDrawSize>1.4</turretTopDrawSize>
+		</building>
+		<designationHotKey>Misc1</designationHotKey>
+		<tradeTags>
+			<li>CE_Turret</li>
+		</tradeTags>
+		<minifiedDef>Minified_ShotgunT</minifiedDef>
+		<thingCategories>
+			<li>BuildingsSecurity</li>
+		</thingCategories>
+		<researchPrerequisites>
+			<li>Autoturrets_D2</li>
+		</researchPrerequisites>
+		<constructionSkillPrerequisite>10</constructionSkillPrerequisite>
+	</ThingDef>
+	
+	<!-- ================== TurretBase - Anti-Riot(AI) ================== -->
+
+	<ThingDef ParentName="TurretBase">
+		<defName>Turret_AntiR</defName>
+		<label>Anti-Riot Sentry Turret</label>
+		<graphicData>
+			<texPath>Things/Building/Security/Base/H_Base</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1.1,1.1)</drawSize>
+			<damageData>
+				<rect>(0.2,0.2,0.6,0.6)</rect>
+			</damageData>
+			<shadowData>
+				<volume>(0.27,0.25,0.27)</volume>
+				<offset>(0,0,0)</offset>
+			</shadowData>
+		</graphicData>
+		<uiIconPath>Things/Building/Security/Sentry/AntiR_icon</uiIconPath>
+		<statBases>
+			<MaxHitPoints>160</MaxHitPoints>
+			<Flammability>0.4</Flammability>
+			<WorkToBuild>2200</WorkToBuild>
+			<Mass>22</Mass>
+			<Bulk>32.4</Bulk>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>500</basePowerConsumption>
+			</li>
+			<li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_Breakdownable"/>
+		</comps>
+		<description>An AI-controlled turret with adaptive barrel that fires at peaceful protest mobs, is not a combat turret. Requires 500 W to function.\nCaliber: Any Non-lethal and less lethal ammo</description>
+		<stuffCategories>
+			<li>RuggedMetallic</li>
+		</stuffCategories>
+		<costStuffCount>120</costStuffCount>
+		<costList>
+			<ComponentIndustrial>2</ComponentIndustrial>
+			<Mechanism>2</Mechanism>
+			<ElectronicComponents>1</ElectronicComponents>
+			<Sniper_Component>1</Sniper_Component>
+			<Heavy_Component>1</Heavy_Component>
+		</costList>
+		<specialDisplayRadius>0.5</specialDisplayRadius>
+		<designationCategory>Security</designationCategory>
+		<building>
+			<ai_combatDangerous>false</ai_combatDangerous>
+			<turretGunDef>Pa_AntiR</turretGunDef>
+			<turretTopDrawSize>1.1</turretTopDrawSize>
+		</building>
+		<designationHotKey>Misc1</designationHotKey>
+		<tradeTags>
+			<li>CE_Turret</li>
+		</tradeTags>
+		<minifiedDef>Minified_AntiR</minifiedDef>
+		<thingCategories>
+			<li>BuildingsSecurity</li>
+		</thingCategories>
+		<researchPrerequisites>
+			<li>Autoturrets_D2</li>
+		</researchPrerequisites>
+		<constructionSkillPrerequisite>12</constructionSkillPrerequisite>
+	</ThingDef>
+	
+	<!-- ================== Minified ================== -->
+	
+	<ThingDef ParentName="MinifiedTurretBase">
+		<defName>Minified_ShotgunT</defName>
+		<label>IASST</label>
+		<statBases>
+			<Mass>12</Mass>
+			<Bulk>22</Bulk>
+		</statBases>
+	</ThingDef>
+	
+	<ThingDef ParentName="MinifiedTurretBase">
+		<defName>Minified_AntiR</defName>
+		<label>Anti-Riot Sentry Turret</label>
+		<statBases>
+			<Mass>14</Mass>
+			<Bulk>24</Bulk>
+		</statBases>
+	</ThingDef>
+	
+</Defs>

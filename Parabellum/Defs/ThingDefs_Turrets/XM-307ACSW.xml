@@ -7,7 +7,7 @@
 		<defName>Pa_XM307ACSW</defName>
 		<label>XM-307 Advanced Crew Served Weapon</label>
 		<graphicData>
-			<texPath>Things/Building/Security/XM307ACSW_Top</texPath>
+			<texPath>Things/Building/Security/CMLT/XM307ACSW_Top</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<description>XM307ACSW attached to a tripod.</description>
@@ -19,6 +19,7 @@
 			<SwayFactor>0.35</SwayFactor>
 			<RangedWeapon_Cooldown>1.45</RangedWeapon_Cooldown>
 		</statBases>
+		<generateCommonality>0</generateCommonality>
 		<verbs>
 			<li Class="CombatExtended.VerbPropertiesCE">
 				<recoilPattern>Mounted</recoilPattern>
@@ -61,13 +62,13 @@
 		<defName>Turret_XM307ACSW</defName>
 		<label>XM-307 ACSW</label>
 		<graphicData>
-			<texPath>Things/Building/Security/XM307ACSW_Base</texPath>
+			<texPath>Things/Building/Security/Base/XM307ACSW_Base</texPath>
 			<drawSize>(1.5,1.5)</drawSize>
 			<shadowData>
 				<volume>(0.3, 0.6, 0.3)</volume>
 			</shadowData>
 		</graphicData>
-		<uiIconPath>Things/Building/Security/XM307ACSW_icon</uiIconPath>
+		<uiIconPath>Things/Building/Security/CMLT/XM307ACSW_icon</uiIconPath>
 		<statBases>
 			<MaxHitPoints>180</MaxHitPoints>
 			<WorkToBuild>1500</WorkToBuild>

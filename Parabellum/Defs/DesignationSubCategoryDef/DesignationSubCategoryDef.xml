@@ -26,6 +26,19 @@
 			<li>Turret_SPG9M</li>
 			<li>Turret_SPG9MD</li>
 			<li>Turret_Wombat</li>
+			<li>Turret_PaK44HATGP</li>
+			<li>Turret_FlaK40ZHAAP</li>
+		</defNames>
+		<designationCategory>Security</designationCategory>
+		<debug>false</debug>
+	</ArchitectSense.DesignationSubCategoryDef>
+	
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_ParabellumSP</defName>
+		<label>Special(P)</label>
+		<description>Special building from Parabellum.</description>
+		<defNames>
+			<li>Special_SOFLAM</li>
 		</defNames>
 		<designationCategory>Security</designationCategory>
 		<debug>false</debug>

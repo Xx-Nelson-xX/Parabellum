@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- ================== SOFLAM ================== -->
+
+	<ThingDef ParentName="BaseAutoTurretGun">
+		<defName>Pa_SOFLAM</defName>
+		<label>SOFLAM</label>
+		<graphicData>
+			<texPath>Things/Building/Security/SOFLAM_Top</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<description>Special Operations Forces Lacer Acquisition Marker.</description>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<techLevel>Ultra</techLevel>
+		<tradeability>None</tradeability>
+		<statBases>
+			<SightsEfficiency>2.5</SightsEfficiency>
+			<ShotSpread>0</ShotSpread>
+			<SwayFactor>0</SwayFactor>
+			<RangedWeapon_Cooldown>0.4</RangedWeapon_Cooldown>
+			<DeteriorationRate>0</DeteriorationRate>
+		</statBases>
+		<generateCommonality>0</generateCommonality>
+		<verbs>
+			<li Class="CombatExtended.VerbPropertiesCE">
+				<verbClass>CombatExtended.Verb_MarkForArtillery</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_Dummy</defaultProjectile>
+				<warmupTime>4</warmupTime>
+				<range>350</range>
+				<muzzleFlashScale>0</muzzleFlashScale>
+				<targetParams>
+				  <canTargetLocations>true</canTargetLocations>
+				</targetParams>
+				<ignorePartialLoSBlocker>true</ignorePartialLoSBlocker>
+			</li>
+		</verbs>
+	</ThingDef>
+	
+	<!-- ================== TurretBase ================== -->
+
+	<ThingDef ParentName="TurretBase">
+		<defName>Special_SOFLAM</defName>
+		<label>SOFLAM</label>
+		<graphicData>
+			<texPath>Things/Building/Security/Base/T_Base</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1.6,1.6)</drawSize>
+			<damageData>
+				<rect>(0.2,0.2,0.6,0.6)</rect>
+			</damageData>
+			<shadowData>
+				<volume>(0.27,0.25,0.27)</volume>
+				<offset>(0,0,0)</offset>
+			</shadowData>
+		</graphicData>
+		<uiIconPath>Things/Building/Security/SOFLAM_icon</uiIconPath>
+		<statBases>
+			<MaxHitPoints>125</MaxHitPoints>
+			<Flammability>0.8</Flammability>
+			<WorkToBuild>4000</WorkToBuild>
+			<Mass>5.2</Mass>
+			<Bulk>11</Bulk>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>100</basePowerConsumption>
+			</li>
+			<li Class="CompProperties_Flickable"/>
+		</comps>
+		<description>Special Operations Forces Lacer Acquisition Marker, aka, SOFLAM, a special rangefinding device to designate/locate target using laser guided ordance, included sensor to detect hostile foes automatically.</description>
+		<stuffCategories>
+			<li>RuggedMetallic</li>
+		</stuffCategories>
+		<costStuffCount>40</costStuffCount>
+		<costList>
+			<ComponentIndustrial>6</ComponentIndustrial>
+			<Mechanism>2</Mechanism>
+			<Glass>60</Glass>
+			<Plastic>80</Plastic>
+			<ElectronicComponents>1</ElectronicComponents>
+		</costList>
+		<specialDisplayRadius>0.5</specialDisplayRadius>
+		<designationCategory>Security</designationCategory>
+		<building>
+			<ai_combatDangerous>false</ai_combatDangerous>
+			<turretGunDef>Pa_SOFLAM</turretGunDef>
+			<turretTopDrawSize>0.9</turretTopDrawSize>
+		</building>
+		<designationHotKey>Misc1</designationHotKey>
+		<tradeTags>
+			<li>CE_Turret</li>
+		</tradeTags>
+		<minifiedDef>MinifiedTurret_Pa_SOFLAM</minifiedDef>
+		<thingCategories>
+			<li>BuildingsSecurity</li>
+		</thingCategories>
+		<researchPrerequisites>
+			<li>Telecommunications_C1</li>
+		</researchPrerequisites>
+		<constructionSkillPrerequisite>10</constructionSkillPrerequisite>
+	</ThingDef>
+	
+	<!-- ================== Minified ================== -->
+	
+	<ThingDef ParentName="MinifiedTurretBase">
+		<defName>MinifiedTurret_Pa_SOFLAM</defName>
+		<label>SOFLAM(Minified)</label>
+		<statBases>
+			<Mass>4</Mass>
+			<Bulk>7</Bulk>
+		</statBases>
+	</ThingDef>
+	
+</Defs>

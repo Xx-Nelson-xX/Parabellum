@@ -8,17 +8,20 @@
 		<graphicData>
 			<texPath>Things/Building/Mines/Smine</texPath>
 		</graphicData>
+		<statBases>
+			<Flammability>0.4</Flammability>
+		</statBases>
 		<costList>
 			<Plasteel>20</Plasteel>
-			<Powder>4</Powder>
+			<Powder>2</Powder>
 			<Weapon_Parts>1</Weapon_Parts>
 		</costList>
 		<comps>
 			<li Class="CompProperties_Explosive">
-				<explosiveRadius>2.2</explosiveRadius>
+				<explosiveRadius>1.6</explosiveRadius>
 				<explosiveDamageType>Bomb</explosiveDamageType>
 				<startWickHitPointsPercent>0.2</startWickHitPointsPercent>
-				<wickTicks>20</wickTicks>
+				<wickTicks>25</wickTicks>
 				<startWickOnDamageTaken>
 					<li>Bullet</li>
 					<li>Arrow</li>
@@ -31,7 +34,7 @@
 				</fragments>
 			</li>
 		</comps>
-		<specialDisplayRadius>2.2</specialDisplayRadius>
+		<specialDisplayRadius>1.6</specialDisplayRadius>
 		<researchPrerequisites>
 			<li>IED_C1</li>
 		</researchPrerequisites>
@@ -44,6 +47,9 @@
 		<graphicData>
 			<texPath>Things/Building/Mines/4kgmine</texPath>
 		</graphicData>
+		<statBases>
+			<Flammability>0.6</Flammability>
+		</statBases>
 		<costList>
 			<Pa_Grenade4kg>1</Pa_Grenade4kg>
 			<Weapon_Parts>1</Weapon_Parts>
@@ -53,7 +59,7 @@
 				<explosiveRadius>6</explosiveRadius>
 				<explosiveDamageType>Bomb</explosiveDamageType>
 				<startWickHitPointsPercent>0.6</startWickHitPointsPercent>
-				<wickTicks>30</wickTicks>
+				<wickTicks>50</wickTicks>
 				<startWickOnDamageTaken>
 					<li>Bullet</li>
 					<li>Arrow</li>

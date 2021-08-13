@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<!-- ==================== 50mm Pak38/L60 ========================== -->
+
+	<SoundDef>
+		<defName>Shot_50mm</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<maxSimultaneous>1</maxSimultaneous>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Weapons/50mm</clipPath>
+					</li>
+				</grains>
+				<pitchRange>
+					<min>0.9152174</min>
+					<max>1.042391</max>
+				</pitchRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+	<!-- ==================== Nebelwerfer ========================== -->
+
+	<SoundDef>
+		<defName>Shot_NbW</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<maxSimultaneous>1</maxSimultaneous>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Weapons/NbW</clipPath>
+					</li>
+				</grains>
+				<pitchRange>
+					<min>0.9152174</min>
+					<max>1.042391</max>
+				</pitchRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+	<!-- ==================== 128mm Pak44/L55 ========================== -->
+
+	<SoundDef>
+		<defName>Shot_128mm</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<maxSimultaneous>1</maxSimultaneous>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Weapons/128mm</clipPath>
+					</li>
+				</grains>
+				<pitchRange>
+					<min>0.9152174</min>
+					<max>1.042391</max>
+				</pitchRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+</Defs>

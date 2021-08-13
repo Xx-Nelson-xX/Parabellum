@@ -177,28 +177,6 @@
 		</subSounds>
 	</SoundDef>
 	
-	<!-- ==================== Nebelwerfer ========================== -->
-
-	<SoundDef>
-		<defName>Shot_NbW</defName>
-		<context>MapOnly</context>
-		<eventNames />
-		<maxSimultaneous>1</maxSimultaneous>
-		<subSounds>
-			<li>
-				<grains>
-					<li Class="AudioGrain_Clip">
-						<clipPath>Weapons/NbW</clipPath>
-					</li>
-				</grains>
-				<pitchRange>
-					<min>0.9152174</min>
-					<max>1.042391</max>
-				</pitchRange>
-			</li>
-		</subSounds>
-	</SoundDef>
-	
 	<!-- ==================== Suomi KP-31 ========================== -->
 
 	<SoundDef>

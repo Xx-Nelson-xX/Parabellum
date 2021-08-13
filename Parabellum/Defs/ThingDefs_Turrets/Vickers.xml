@@ -7,7 +7,7 @@
 		<defName>Pa_Vickers</defName>
 		<label>Vickers .303 MMG</label>
 		<graphicData>
-			<texPath>Things/Building/Security/Vickers_Top</texPath>
+			<texPath>Things/Building/Security/CMLT/Vickers_Top</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<description>A Vickers Medium Machinegun attached to a tripod.</description>
@@ -19,6 +19,7 @@
 			<SwayFactor>1.2</SwayFactor>
 			<RangedWeapon_Cooldown>1.2</RangedWeapon_Cooldown>
 		</statBases>
+		<generateCommonality>0</generateCommonality>
 		<verbs>
 			<li Class="CombatExtended.VerbPropertiesCE">
 				<recoilPattern>Mounted</recoilPattern>
@@ -54,13 +55,13 @@
 		<defName>Turret_Vickers</defName>
 		<label>Vickers .303 MMG</label>
 		<graphicData>
-			<texPath>Things/Building/Security/Vickers_Base</texPath>
+			<texPath>Things/Building/Security/Base/Vickers_Base</texPath>
 			<drawSize>(1.5,1.5)</drawSize>
 			<shadowData>
 				<volume>(0.3, 0.6, 0.3)</volume>
 			</shadowData>
 		</graphicData>
-		<uiIconPath>Things/Building/Security/Vickers_icon</uiIconPath>
+		<uiIconPath>Things/Building/Security/CMLT/Vickers_icon</uiIconPath>
 		<statBases>
 			<MaxHitPoints>120</MaxHitPoints>
 			<WorkToBuild>850</WorkToBuild>

@@ -33,5 +33,18 @@
 			<Ammo_50BMG_Incendiary>Bullet_50BMG_Incendiary</Ammo_50BMG_Incendiary>
 		</ammoTypes>
 	</CombatExtended.AmmoSetDef>
+	
+	<CombatExtended.AmmoSetDef>
+		<defName>AmmoSet_AntiRiot</defName>
+		<label> Less Lethal Ammo </label>
+		<ammoTypes>
+			<Ammo_12Gauge_Beanbag>Bullet_12Gauge_Beanbag</Ammo_12Gauge_Beanbag>
+			<Ammo_12Gauge_ElectroSlug>Bullet_12Gauge_ElectroSlug</Ammo_12Gauge_ElectroSlug>
+			<Ammo_40x46mmGrenade_BB>Bullet_40x46mmGrenade_BB</Ammo_40x46mmGrenade_BB>
+			<Ammo_40x46mmGrenade_EMP>Bullet_40x46mmGrenade_EMP</Ammo_40x46mmGrenade_EMP>
+			<Ammo_40x46mmGrenade_Stun>Bullet_40x46mmGrenade_Stun</Ammo_40x46mmGrenade_Stun>
+			<Ammo_40x46mmGrenade_Foam>Bullet_40x46mmGrenade_Foam</Ammo_40x46mmGrenade_Foam>
+		</ammoTypes>
+	</CombatExtended.AmmoSetDef>
 
 </Defs>

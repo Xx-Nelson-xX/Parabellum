@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<!-- ================== Mk.18 Mod.0 Hand Crank Operated Grenade Launcher ================== -->
+
+	<ThingDef ParentName="BaseGun_Turret">
+		<defName>Pa_Mk18GL</defName>
+		<label>Mk.18 Mod.0 Hand Crank Operated Grenade Launcher</label>
+		<graphicData>
+			<texPath>Things/Building/Security/CMLT/Mk18M0_Top</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<description>Mk.18 Mod.0 attached to a tripod.</description>
+		<techLevel>Industrial</techLevel>
+		<statBases>
+			<MarketValue>2600</MarketValue>
+			<SightsEfficiency>1.0</SightsEfficiency>
+			<ShotSpread>0.2</ShotSpread>
+			<SwayFactor>0.72</SwayFactor>
+			<RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
+		</statBases>
+		<generateCommonality>0</generateCommonality>
+		<verbs>
+			<li Class="CombatExtended.VerbPropertiesCE">
+				<recoilPattern>Mounted</recoilPattern>
+				<recoilAmount>1.9</recoilAmount>
+				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_40x46mmGrenade_HE</defaultProjectile>
+				<warmupTime>3.2</warmupTime>
+				<minRange>8</minRange>
+				<!--<forcedMissRadius>6</forcedMissRadius>-->
+				<circularError>1.7</circularError>
+				<range>75</range>
+				<ticksBetweenBurstShots>14</ticksBetweenBurstShots>
+				<burstShotCount>8</burstShotCount>
+				<soundCast>RF_ShotMilkorMGL</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>14</muzzleFlashScale>
+				<targetParams>
+				  <canTargetLocations>true</canTargetLocations>
+				</targetParams>
+				<ignorePartialLoSBlocker>true</ignorePartialLoSBlocker>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="CombatExtended.CompProperties_AmmoUser">
+				<magazineSize>48</magazineSize>
+				<reloadTime>11.2</reloadTime>
+				<!-- <spawnUnloaded>true</spawnUnloaded> -->
+				<ammoSet>AmmoSet_40x46mmGrenade</ammoSet>
+			</li>
+			<li Class="CombatExtended.CompProperties_FireModes">
+				<aimedBurstShotCount>2</aimedBurstShotCount>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<!--=============== Turret Base ===============-->
+
+	<ThingDef ParentName="TurretMannedBase">
+		<defName>Turret_Mk18GL</defName>
+		<label>Mk.18 Mod.0 GLT</label>
+		<graphicData>
+			<texPath>Things/Building/Security/Base/T_Base</texPath>
+			<drawSize>(1.6, 1.6)</drawSize>
+			<shadowData>
+				<volume>(0.3, 0.6, 0.3)</volume>
+			</shadowData>
+		</graphicData>
+		<uiIconPath>Things/Building/Security/CMLT/Mk18M0_icon</uiIconPath>
+		<statBases>
+			<MaxHitPoints>160</MaxHitPoints>
+			<WorkToBuild>1500</WorkToBuild>
+			<Mass>22</Mass>
+			<Bulk>19</Bulk>
+		</statBases>
+		<techLevel>Ultra</techLevel>
+		<description>Lightweight automatic grenade launcher.</description>
+		<size>(1,1)</size>
+		<stuffCategories>
+			<li>RuggedMetallic</li>
+		</stuffCategories>
+		<costStuffCount>75</costStuffCount>
+		<costList>
+			<Pa_Mk18GL_Crate>1</Pa_Mk18GL_Crate>
+		</costList>
+		<specialDisplayRadius>8</specialDisplayRadius>
+		<designationCategory>Security</designationCategory>
+		<building>
+			<turretGunDef>Pa_Mk18GL</turretGunDef>
+			<turretTopDrawSize>0.9</turretTopDrawSize>
+			<buildingTags>
+				<li>SiegeGun</li>
+			</buildingTags>
+		</building>
+		<minifiedDef>MinifiedTurret_Pa_Mk18GL</minifiedDef>
+		<thingCategories>
+			<li>BuildingsSecurity</li>
+		</thingCategories>
+		<researchPrerequisites>
+			<li>Grenade_launchers_C2</li>
+		</researchPrerequisites>
+		<constructionSkillPrerequisite>12</constructionSkillPrerequisite>
+	</ThingDef>
+	
+
+
+<!--=============== Crate Base ===============-->
+
+	<ThingDef ParentName="CrateBase">
+		<defName>Pa_Mk18GL_Crate</defName>
+		<label>Mk.18 Mod.0 GL turret crate</label>
+		<description>Use this to build a Mk.18 Mod.0 GL turret.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/WeaponCrate</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Standard_Drop</soundInteract>
+		<soundDrop>Standard_Drop</soundDrop>
+		<tickerType>Normal</tickerType>
+		<stackLimit>1</stackLimit>
+		<techLevel>Industrial</techLevel>
+		<statBases>
+			<MarketValue>2800</MarketValue>
+			<MaxHitPoints>120</MaxHitPoints>
+			<Flammability>1</Flammability>
+			<DeteriorationRate>0</DeteriorationRate>
+			<Mass>20</Mass>
+			<Bulk>18</Bulk>
+		</statBases>
+		<thingCategories>
+			<li>WeaponCrate</li>
+		</thingCategories>
+		<tradeTags>
+			<li>NormalCrate</li>
+		</tradeTags>
+	</ThingDef>
+
+	<!-- ================== Craft Crate ================== -->
+
+	<RecipeDef ParentName="cratecraftbase">
+		<defName>BuildMk18GL_Crate</defName>
+		<label>Build Mk.18 Mod.0 GL crate</label>
+		<description>Use this to build a Mk.18 Mod.0, a type of stationary manned turret. It uses 40x46mm grenades for ammo.</description>
+		<jobString>Build Mk.18 Mod.0 GL crate.</jobString>
+		<workAmount>15000</workAmount>
+		<skillRequirements>
+			<Crafting>8</Crafting>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Weapon_Parts</li>
+					</thingDefs>
+				</filter>
+				<count>14</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Cannon_Component</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+				<categories>
+				<li>Metallic</li>
+                  </categories>
+				</filter>
+				<count>40</count>
+			</li>
+		</ingredients>
+		<products>
+			<Pa_Mk18GL_Crate>1</Pa_Mk18GL_Crate>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Weapon_Parts</li>
+				<li>Cannon_Component</li>
+			</thingDefs>
+			<categories>
+			<li>SLDBar</li>
+			<li>USLDBar</li>
+             </categories>
+		</fixedIngredientFilter>
+		<researchPrerequisite>Grenade_launchers_C2</researchPrerequisite>
+	</RecipeDef>
+
+	<!-- ================== Minified ================== -->
+	
+	<ThingDef ParentName="MinifiedTurretBase">
+		<defName>MinifiedTurret_Pa_Mk18GL</defName>
+		<label>Mk.18 Mod.0 GL turret</label>
+		<statBases>
+			<Mass>20</Mass>
+			<Bulk>16</Bulk>
+		</statBases>
+	</ThingDef>
+	
+</Defs>

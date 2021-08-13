@@ -7,15 +7,23 @@
 		<li>1.2</li>
 	</supportedVersions>
 	<description>
-Si vis pacem, para bellum - If you want peace, prepare for war
+	Si vis pacem, para bellum - If you want peace, prepare for war
+	
 The purpose of this mod is adding more weapon for the base HSK
-Aside from that, I just feels weid that some ammo type is just available for a single weapon, not so good for production chain and variety, I just want to fill those gaps first before adding anything else.
+Aside from that, I just feels weid that some ammo type is just available for a single weapon, not so good for production chain, variety and logistic, I just want to fill those gaps first before adding anything else.
+
+Updated: Now add custom weapons, explosives and turrets, any suggestion is always welcome!(Also for any feedback and bug report)
 
 Sorry that I don't speak russian, also I am not a native English speaker, so you are free to correct any typo I made and anyone is free to translate my mod to any other language if you want.
 
 Moved the changelog to separated text file
 	</description>
 	<modDependencies>
+		<li>
+			<packageId>skyarkhangel.HSK</packageId>
+			<displayName>Hardcore SK</displayName>
+			<downloadUrl>https://github.com/skyarkhangel/Hardcore-SK</downloadUrl>
+		</li>
 	</modDependencies>
 		<loadBefore>
 			<li>experimental.optimizations</li>
@@ -31,4 +39,8 @@ Moved the changelog to separated text file
 			<li>multilangcolorfultraits.pirateby</li>
 			<li>ArpoMo6.HMC.Project</li>
 		</loadAfter>
+		<incompatibleWith>
+			<li>XxNelsonxX.ParabellumEiB</li>
+			<li>XxNelsonxX.ParabellumHtL</li>
+		</incompatibleWith>
 	</ModMetaData>

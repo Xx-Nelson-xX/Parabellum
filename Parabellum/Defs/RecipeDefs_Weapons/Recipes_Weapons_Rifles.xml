@@ -138,15 +138,7 @@
 						<li>Plastic</li>
 					</thingDefs>
 				</filter>
-				<count>40</count>
-			</li>
-			<li>
-				<filter>
-					<categories>
-						<li>Leathers</li>
-					</categories>
-				</filter>
-				<count>20</count>
+				<count>45</count>
 			</li>
 		</ingredients>
 		<products>
@@ -163,7 +155,6 @@
 			<categories>
 				<li>SLDBar</li>
 				<li>USLDBar</li>
-				<li>Leathers</li>
 			</categories>
 		</fixedIngredientFilter>
 		<recipeUsers>

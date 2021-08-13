@@ -138,6 +138,77 @@
 			<Plastic>8</Plastic>
         </smeltProducts>
     </ThingDef>
+	
+	<!-- Serbu Super Shorty -->
+    <ThingDef ParentName="BaseGun_LongBarreled">
+        <defName>Pa_SSS</defName>
+        <label>Serbu Super Shorty</label>
+        <description>A super compacted pump action shotgun, a perfect weapon for self defense in CQC situation, very concealable and light to carry around.</description>
+        <graphicData>
+            <texPath>Things/Weapons/SSS</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>Interact_Shotgun</soundInteract>
+        <statBases>
+            <MarketValue>300</MarketValue>
+            <SightsEfficiency>0.75</SightsEfficiency>
+            <ShotSpread>0.26</ShotSpread>
+            <SwayFactor>1.7</SwayFactor>
+            <RangedWeapon_Cooldown>0.4</RangedWeapon_Cooldown>
+            <Bulk>3.1</Bulk>
+            <Mass>1.8</Mass>
+        </statBases>
+		<generateCommonality>0.6</generateCommonality>
+		<tradeTags>
+            <li>Exotic</li>
+        </tradeTags>
+        <weaponTags>
+            <li>ST1</li>
+            <li>Gun</li>
+            <li>TierOnePistol</li>
+			<li>CE_AI_AssaultWeapon</li>
+        </weaponTags>
+        <thingCategories>
+            <li>Shotguns</li>
+        </thingCategories>
+        <verbs>
+            <li Class="CombatExtended.VerbPropertiesCE">
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>Bullet_12Gauge_Buck</defaultProjectile>
+                <warmupTime>0.45</warmupTime>
+                <range>11</range>
+				<targetParams>
+                    <canTargetLocations>true</canTargetLocations>
+                </targetParams>
+                <soundCast>Shot_Shotgun</soundCast>
+                <soundCastTail>GunTail_Heavy</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+            </li>
+        </verbs>
+        <comps>
+            <li Class="CombatExtended.CompProperties_FireModes">
+                <aiUseBurstMode>true</aiUseBurstMode>
+                <aiAimMode>AimedShot</aiAimMode>
+            </li>
+            <li Class="CombatExtended.CompProperties_AmmoUser">
+                <magazineSize>3</magazineSize>
+				<reloadOneAtATime>true</reloadOneAtATime>
+                <reloadTime>0.7</reloadTime>
+                <ammoSet>AmmoSet_12Gauge</ammoSet>
+            </li>
+        </comps>
+		<modExtensions>
+		  <li Class="CombatExtended.GunDrawExtension">
+			<DrawSize>0.6</DrawSize>
+		  </li>
+		</modExtensions>
+        <smeltProducts>
+            <Shotgun_Component>1</Shotgun_Component>
+            <Weapon_Parts>1</Weapon_Parts>
+			<Plastic>2</Plastic>
+        </smeltProducts>
+    </ThingDef>
 
 </Defs>
 	

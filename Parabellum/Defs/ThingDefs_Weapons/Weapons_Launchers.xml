@@ -12,7 +12,7 @@
         <soundInteract>Interact_Shotgun</soundInteract>
         <statBases>
             <MarketValue>2600</MarketValue>
-            <SightsEfficiency>1.05</SightsEfficiency>
+            <SightsEfficiency>1.1</SightsEfficiency>
             <ShotSpread>0.16</ShotSpread>
             <SwayFactor>1.8</SwayFactor>
             <RangedWeapon_Cooldown>1.4</RangedWeapon_Cooldown>
@@ -34,6 +34,7 @@
         </thingCategories>
         <verbs>
             <li Class="CombatExtended.VerbPropertiesCE">
+				<recoilAmount>1.36</recoilAmount>
                 <verbClass>CombatExtended.Verb_ShootCE</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
                 <defaultProjectile>Bullet_40x46mmGrenade_HE</defaultProjectile>
@@ -87,7 +88,7 @@
         <soundInteract>Interact_Rifle</soundInteract>
         <statBases>
             <MarketValue>1800</MarketValue>
-            <SightsEfficiency>1.05</SightsEfficiency>
+            <SightsEfficiency>1.1</SightsEfficiency>
             <ShotSpread>0.32</ShotSpread>
             <SwayFactor>1.8</SwayFactor>
             <RangedWeapon_Cooldown>1.9</RangedWeapon_Cooldown>
@@ -109,6 +110,7 @@
 		<generateCommonality>0.6</generateCommonality>
         <verbs>
             <li Class="CombatExtended.VerbPropertiesCE">
+				<recoilAmount>1.68</recoilAmount>
                 <verbClass>CombatExtended.Verb_ShootCE</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
                 <defaultProjectile>Bullet_30x29mmGrenade_HE</defaultProjectile>
@@ -207,6 +209,11 @@
                 <ammoSet>AmmoSet_20x102mm</ammoSet>
             </li>
         </comps>
+		<modExtensions>
+		  <li Class="CombatExtended.GunDrawExtension">
+			<DrawSize>1.1</DrawSize>
+		  </li>
+		</modExtensions>
         <smeltProducts>
             <Heavy_Component>1</Heavy_Component>
             <Weapon_Parts>6</Weapon_Parts>
@@ -359,6 +366,11 @@
                 <ammoSet>AmmoSet_FLASH</ammoSet>
             </li>
         </comps>
+		<modExtensions>
+		  <li Class="CombatExtended.GunDrawExtension">
+			<DrawSize>1.05</DrawSize>
+		  </li>
+		</modExtensions>
         <smeltProducts>
             <Launcher_Component>2</Launcher_Component>
             <Weapon_Parts>6</Weapon_Parts>
@@ -431,6 +443,11 @@
                 <ammoSet>AmmoSet_PzF</ammoSet>
             </li>
         </comps>
+		<modExtensions>
+		  <li Class="CombatExtended.GunDrawExtension">
+			<DrawSize>1.1</DrawSize>
+		  </li>
+		</modExtensions>
         <smeltProducts>
             <Weapon_Parts>2</Weapon_Parts>
         </smeltProducts>
@@ -500,10 +517,88 @@
                 <ammoSet>AmmoSet_RPzB</ammoSet>
             </li>
         </comps>
+		<modExtensions>
+		  <li Class="CombatExtended.GunDrawExtension">
+			<DrawSize>1.1</DrawSize>
+		  </li>
+		</modExtensions>
         <smeltProducts>
 			<Heavy_Component>1</Heavy_Component>
             <Weapon_Parts>4</Weapon_Parts>
 			<Plasteel>5</Plasteel>
+        </smeltProducts>
+    </ThingDef>
+	
+	<!-- M320(K) Grenade Launcher -->
+    <ThingDef ParentName="BaseGun_Heavy">
+        <defName>Pa_M320K</defName>
+        <label>M320(K) Grenade Launcher</label>
+        <description>An ancient compact launcher, safe, light, compact and very easy to use compared to any launcher of its age, it does have a downside, its effective range suffer way more than any conventional grenade launcher.</description>
+        <graphicData>
+            <texPath>Things/Weapons/M320K</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>Interact_Rifle</soundInteract>
+        <statBases>
+            <MarketValue>1500</MarketValue>
+            <SightsEfficiency>1.1</SightsEfficiency>
+            <ShotSpread>0.12</ShotSpread>
+            <SwayFactor>1.8</SwayFactor>
+            <RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
+            <Bulk>3.3</Bulk>
+            <Mass>1.5</Mass>
+        </statBases>
+        <weaponTags>
+            <li>GLT1</li>
+            <li>Glaunchers</li>
+            <li>CE_AI_Rifle</li>
+            <li>CE_AI_Launcher</li>
+			<li>CE_AI_AssaultWeapon</li>
+			<li>CE_OneHandedWeapon</li>
+        </weaponTags>
+		<tradeTags>
+            <li>Exotic</li>
+        </tradeTags>
+        <thingCategories>
+            <li>Glaunchers</li>
+        </thingCategories>
+		<generateCommonality>0.4</generateCommonality>
+        <verbs>
+            <li Class="CombatExtended.VerbPropertiesCE">
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>Bullet_40x46mmGrenade_HE</defaultProjectile>
+				<warmupTime>1.24</warmupTime>
+				<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+                <ai_AvoidFriendlyFireRadius>5</ai_AvoidFriendlyFireRadius>
+				<circularError>0.52</circularError>
+                <range>22</range>
+				<targetParams>
+                    <canTargetLocations>true</canTargetLocations>
+                </targetParams>
+                <soundCast>RF_ShotMilkorMGL</soundCast>
+                <soundCastTail>GunTail_Heavy</soundCastTail>
+                <muzzleFlashScale>14</muzzleFlashScale>
+            </li>
+        </verbs>
+        <comps>
+            <li Class="CombatExtended.CompProperties_FireModes">
+                <aiAimMode>Snapshot</aiAimMode>
+            </li>
+            <li Class="CombatExtended.CompProperties_AmmoUser">
+                <magazineSize>1</magazineSize>
+                <reloadTime>2</reloadTime>
+                <ammoSet>AmmoSet_40x46mmGrenade</ammoSet>
+            </li>
+        </comps>
+		<modExtensions>
+		  <li Class="CombatExtended.GunDrawExtension">
+			<DrawSize>0.6</DrawSize>
+		  </li>
+		</modExtensions>
+        <smeltProducts>
+            <Rifle_Component>1</Rifle_Component>
+            <Weapon_Parts>1</Weapon_Parts>
         </smeltProducts>
     </ThingDef>
 	

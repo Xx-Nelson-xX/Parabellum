@@ -7,7 +7,7 @@
 		<defName>Pa_NbW32cm</defName>
 		<label>Nebelwerfer</label>
 		<graphicData>
-			<texPath>Things/Building/Security/NbW32_Top</texPath>
+			<texPath>Things/Building/Security/Artillery/NbW32_Top</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<soundInteract>Artillery_ShellLoaded</soundInteract>
@@ -20,6 +20,7 @@
 			<SwayFactor>1.2</SwayFactor>
 			<RangedWeapon_Cooldown>6.2</RangedWeapon_Cooldown>
 		</statBases>
+		<generateCommonality>0</generateCommonality>
 		<verbs>
 			<li Class="CombatExtended.VerbPropertiesCE">
 				<recoilPattern>Mounted</recoilPattern>
@@ -62,7 +63,7 @@
 		<defName>Pa_NbW</defName>
 		<label>Nebelwerfer</label>
 		<graphicData>
-			<texPath>Things/Building/Security/NbW_Top</texPath>
+			<texPath>Things/Building/Security/Artillery/NbW_Top</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<soundInteract>Artillery_ShellLoaded</soundInteract>
@@ -75,6 +76,7 @@
 			<SwayFactor>1.15</SwayFactor>
 			<RangedWeapon_Cooldown>5.8</RangedWeapon_Cooldown>
 		</statBases>
+		<generateCommonality>0</generateCommonality>
 		<verbs>
 			<li Class="CombatExtended.VerbPropertiesCE">
 				<verbClass>CombatExtended.Verb_ShootMortarCE</verbClass>
@@ -111,13 +113,13 @@
 		<defName>Turret_NbW32cm</defName>
 		<label>Nebelwerfer(28cm/30cm/32cm)</label>
 		<graphicData>
-			<texPath>Things/Building/Security/NbW32_Base</texPath>
+			<texPath>Things/Building/Security/Base/NbW32_Base</texPath>
 			<drawSize>(2.2,2.2)</drawSize>
 			<shadowData>
 				<volume>(0.3, 0.6, 0.3)</volume>
 			</shadowData>
 		</graphicData>
-		<uiIconPath>Things/Building/Security/NbW32_icon</uiIconPath>
+		<uiIconPath>Things/Building/Security/Artillery/NbW32_icon</uiIconPath>
 		<hasInteractionCell>True</hasInteractionCell>
 		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
 		<statBases>
@@ -163,13 +165,13 @@
 		<defName>Turret_NbW</defName>
 		<label>Wurfrahmen</label>
 		<graphicData>
-			<texPath>Things/Building/Security/NbW32_Base</texPath>
+			<texPath>Things/Building/Security/Base/NbW32_Base</texPath>
 			<drawSize>(1.5,1.5)</drawSize>
 			<shadowData>
 				<volume>(0.3, 0.6, 0.3)</volume>
 			</shadowData>
 		</graphicData>
-		<uiIconPath>Things/Building/Security/NbW_icon</uiIconPath>
+		<uiIconPath>Things/Building/Security/Artillery/NbW_icon</uiIconPath>
 		<statBases>
 			<MaxHitPoints>40</MaxHitPoints>
 			<WorkToBuild>300</WorkToBuild>

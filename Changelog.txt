@@ -1,9 +1,77 @@
 <--------------------------------------- 1.4 -------------------------------------------->
-*Added separated mod package(Parabellum - Earned in Blood & Parabellum - Hold the Line) for who only want handheld weapons or defensive turrets and explosives
-1.4 - deleted Icon texture cuz is pointless to have it, since the ammo icons are replaced by projectile icons to keep the file size small 
+*Added separated mod package(Parabellum - Earned in Blood & Parabellum - Hold the Line) for who only want handheld weapons or defensive turrets and explosives, not both of them
+*Last update for RW 1.2 HSK
+
+1.4 - 3 Weapons, 5 Turrets, 8 new ammo type, Texture improvements and more Tweaks
+
+*Note: delete all 120mm ID ammo in your map to prevent any error, this ammo type no longer exist, deleted due how pointless is using it for the 120mm Cannon
+
+Shotguns:
+-Serbu Super Shorty: .12 Gauge, Pump Action, super compact shotgun, perfect weapon for self defense and CQC
+
+Carabines:
+- M960(M) Calico 9mm Carabine: 9x19mm Parabellum, Automatic, light weight high capacity cylinder magazine, good for supression fire
+
+Launchers:
+- M320(K) Grenade Launcher: 40x46mm grenades, Single Shot, compact multipurpose grenade launcher that only work in close range, something between shotgun and handcannon(capable to shoot in point blank range and will auto target hostile AI within range, so keep an eye when you assign them this weapon with explosive round)
+
+Turrets:
+- Improvised Automatic Shotgun Sentry Turret: Automatic(4 shots each time), short range stationary sentry turret dedicated for pawn control, awkward to reload and rather inaccurate, require 500W power
+- Anti-Riot Sentry Turret: Automatic(3 shots each time), short range less lethal sentry turret dedicated to pawn control, rather precise and easy to use, require 500W power
+- 12,8cm PaK 44/L55 Heavy Anti-Tank Gun Platform: Single Shot, long range stationary heavy anti-tank weapon
+- 12,8cm FlaK 40/L61 Heavy Anti-Aircraft Platform: Automatic(1/2/4), long range stationary heavy AA gun, take time to reload completely(also manning it only load 1 shell till you force them reload manually multiple times, so keep it fully loaded when is not in combat)
+
+Specials:
+- SOFLAM: Special Operations Forces Lacer Acquisition Marker, automatically target any hostile foe withing range, require 100W power to work
+(Experimental stuff, just don't check the dummy ammo, it can spam red errors cuz CE is having a stroke reading their own projectile)
+
+Ammo:
+*Note: "Non-Lethal" and "Less-than-Lethal" ammo still can kill pawns or cause serious damage with excessive usage, keep that in mind
+- 40x46mm Stun Grenade: Stun/Concussion Grenade - Non-lethal round, capable to stun most pawn within the blast radius
+- 40x46mm Foam Grenade: Foam Grenade - Non-Lethal round, capable to extinguish fire, longer range than throwing foam grenades but with less effective radius due the grenade size reduction
+- 12,8cm Pzgr. 39/43 APCBC-HE: Armor Piercing Capped Ballistic Cap - High Explosive, mostly metal slug and some explosive charge, capped with ballistic cap to increase its trajectory stability
+- 12,8cm Pzgr. 40/43 APC: Armor Piercing Capped, solid metal slug with small ballistic cap, same as above but this one has null fragmentation effect, ligher and bit faster projectile speed 
+- 12,8cm Sprgr. L/5: High Explosive, standard ammo type for heavy Flak guns, big enough to damage medium and even heavy armored target with direct hit
+- 12,8cm Pzgr. Ts APCR: Armor Piercing Composite Rigid, compose of a single piece of 88mm slug fixed with 2 rings for stabilization, supercharged by 128mm case, not entirely an APFSDS but close
+- 120mm M337 Stun: Special Less-Than-Lethal Stun, The cartridge creates a flash, bang and blast effect used to deter violence
+- 155mm W48/XM454 AFAP: Artillery Fired Atomic Projectile - low yield nuclear artillery shell created to fit in any 6.1"/155mm Howitzer for tactical nuclear strike, the strike zone will produce temporal EMP effect + relatively long lasting radiation area
+  *it depends Rimatomic stuff, mostly the effects, the cook off shell has more area coverage than direct impact in my latest testing  
 
 Tweaks:
++deleted Icon texture cuz is pointless to have it, since the ammo icons are replaced by projectile icons to keep the file size small
 -Nerfed S-Mine explosive radius(2.2 -> 1.6), making it more anti-personnel focus than explosive one, the trade off is reduce the gunpowder need to build it from 4 -> 2
+-Reduced 120mm Canister Shell spread from 46.2 -> 37.8, to guarantee their effectiveness atleast till 20~40 tiles range, also increase its pellets speed from 155 -> 192 and reduce its usage chance to 40%
++Increase a bit 5cm Flak 41 AA gun top size and reduce the base size a bit
++changed 40mm grenade name(when select ammo type for the weapon), make it less confusing when use with multiple ammo supported weapons
++Due some weird issue happens, AI pawns can spawn with Turret weapon(not just from my mod, it apply for base HSK and other mods that add artillery and turrets), so just in case, I disabled their spawn chance in my mod
++Typo correction(the casual routine)
+-Most modern weapons no longer need Leather to craft them, add few extra piece of plastic and metal as exchange
++Slightly texture change for RPzB 54/1(also resize and display)
++Adjust few weapon display(it only work when equipped by any pawn)
+*Add Recoil for RGS and Hawk MM-1 and increase their sight effectiveness a bit
+*changed PaK38 sound file name to "shot_50mm" and "50mm"
++Added FSX to 50mm ammo crafting recipe(Did I forgot to add it?)
+-APCR ammo now require small amount of Tungsten instead of any metal from heavy category
+-Changed any german gun from "mm" to "cm", cuz german, don't worry, just the description
+*Changed some AmmoCategories shortlabel and label
++Fixed Sturter Survival Pistol bug(due some moronic miss placement)
++Better compatibility with HMC More Content ammo(no longer require to remove any patch)
++Reduced the flammability of the mines, to make them more resistant from getting roasted by lighting(yep, my minefield got hit a lot with pin-point accuraccy by lighting, even with low HP doesn't instantly destroy them, but it ignite fire and damage them slowly, seriously RNG, what in the actual fu...)
+-Increased the delay fuse of mines to maximized the group damage(let enemies horde step further in the lethal zone): S-Mine(20->25) and Improvised 4kg Mine Trap(30->50)
++Readjusted 40mm grenade rounds cost(did I mistake Flechette round with Bean Bag cost?), Flechette round damage(6->8), a little more blunt pen(2->4.2), reduce bit of its spread(42.6 -> 40.5), added different speed(30 from standard 40mm Grenade rounds to 54 of Flechetter convertion)
++Remade 90% of the texture of 40mm Grenade rounds(only the box is almost the same), Flechetter round no longer looks like standard 40mm grenade
+*Experimental: Added shield break chance for EMP ammo but they doesn't really work that well
+-Replaced 120mm ID with 120mm Stun round due how impractical is the ID round is
++Increase the size of 120mm HESH icon, also changed Wombat default projectile to HESH instead of HEAT(since the idea of the projectile comes from that weapon)
+-change the amount of shells you get from crafting 5cm/50mm cannon shell from 20 -> 10 due is not that much of a good idea waiting for 100 gunpowders/FSX for 20 shell and mess with the crafting priority when having other bill that require less resources
++2 New Research Trees(more feature will be available in the future)
+*Reorganized all the texture files(99% of them are turrets textures), now they are separated in 5 different folders:
+ +Artillery - Self Explanatory
+ +Base - Turret Base/Platform
+ +CMHT - Crew Manned Heavy Turret
+ +CMLT - Crew Manned Light Turret
+ +CMMT - Crew Manned Medium Turret
+ +Sentry - Self Explanatory
 
 <--------------------------------------- 1.3 -------------------------------------------->
 1.3 - 2 weapons, 8 Turret, 6 new ammo type, and lots of tweaks

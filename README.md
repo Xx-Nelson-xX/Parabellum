@@ -18,15 +18,15 @@ mostly Industrial scale stuff(IRL,Between WWI era and till Nowadays)
 3. Explosives
 4. New Ammo type
 
-COMPATIBLE OPTIONAL MODS:
+*COMPATIBLE OPTIONAL MODS:*
 
 1. HMC More Content(Some of my weapons share their catridge) -> https://discord.com/channels/272340793174392832/745746107329413121/823202940910829568(Discord Link)
 
-~~*If you don't use it delete the "NewAmmoPatches(HMC More Content).xml" file in the mod's Patches folder
+~~*If you don't use it delete the "NewAmmoPatches(HMC More Content).xml" file in the mod's Patches folder~~
 
-no longer needed to delete anything, since I found a way to make it work when it detect other mods
+no longer needed to delete anything, since I found a way to make it work, it active automatically when it detect other mods
 
-INSTALLATION(Manually):
+**INSTALLATION(Manually):**
 
 1. Locate your game directory
 2. Locate the Rimworld "Mod" folder
@@ -41,9 +41,9 @@ INSTALLATION(Manually):
 11. Done
 
 
-*EXTRA NOTES:
+*EXTRA NOTES:*
 
-**NOW THE MOD HAS SEPARATED PACKAGE
+**NOW THE MOD HAS SEPARATED PACKAGE**
 
 *(only maintained with the latest features, for any old version, pin me in the Discord server for it)
 
@@ -56,7 +56,7 @@ to get them you need to switch the branch from "main" to any of them, don't use 
 ![Captura](https://user-images.githubusercontent.com/40744101/127422742-fa5348ed-a49c-4249-a37b-258fe2287f68.PNG)
 
 
-**¿BASE GAME SUPPORT?
+**¿BASE GAME SUPPORT?**
 
 Mmmmm maybe, gonna have a hard time balance it, material conversion, obligatory use CE within the mod, probably change all the stats of all the weapons and turrets since the Base game CE has totally different balance compared to the one in HSK
 
@@ -68,6 +68,6 @@ Also Sorry this is my first time using GitHub, I really need some advise of how 
 
 Any support can help me, if you like donation, here is my Ko-fi link: https://ko-fi.com/xxnelsonxx78863
 
-Note: any asset from this mod is created by me, some of them use HSK community and recently Dub's Rimatomic effects, stealing and distributing the mod and its asset in other place without permission is forbidden, and a disrespect for the community and people that work for it, **DON'T DO THAT
+Note: any asset from this mod is created by me, some of them use HSK community and recently Dub's Rimatomic effects, stealing and distributing the mod and its asset in other place without permission is forbidden, and a disrespect for the community and people that work for it, **DON'T DO THAT**
 
-**THANKS FOR USING THE MOD :D
+**THANKS FOR USING THE MOD :D**

@@ -22,7 +22,9 @@ COMPATIBLE OPTIONAL MODS:
 
 1. HMC More Content(Some of my weapons share their catridge) -> https://discord.com/channels/272340793174392832/745746107329413121/823202940910829568(Discord Link)
 
-*If you don't use it delete the "NewAmmoPatches(HMC More Content).xml" file in the mod's Patches folder
+~~*If you don't use it delete the "NewAmmoPatches(HMC More Content).xml" file in the mod's Patches folder
+
+no longer needed to delete anything, since I found a way to make it work when it detect other mods
 
 INSTALLATION(Manually):
 
@@ -42,6 +44,8 @@ INSTALLATION(Manually):
 *EXTRA NOTES:
 
 **NOW THE MOD HAS SEPARATED PACKAGE
+
+*(only maintained with the latest features, for any old version, pin me in the Discord server for it)
 
 For Guns and Handheld Weapons -> Parabellum - Earned in Blood
 
@@ -63,5 +67,7 @@ Any issue(either balance or bug) or suggestion report it to me please!
 Also Sorry this is my first time using GitHub, I really need some advise of how it works
 
 Any support can help me, if you like donation, here is my Ko-fi link: https://ko-fi.com/xxnelsonxx78863
+
+Note: any asset from this mod is created by me, some of them use HSK community and recently Dub's Rimatomic effects, stealing and distributing the mod and its asset in other place without permission is forbidden, and a disrespect for the community and people that work for it, **DON'T DO THAT
 
 **THANKS FOR USING THE MOD :D

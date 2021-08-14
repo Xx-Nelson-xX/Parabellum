@@ -3,9 +3,9 @@
 
 	<RecipeDef ParentName="RangedWeaponRecipeBase">
 		<defName>BuildDelisle</defName>
-		<label>Build De Lisle Commando Carbine</label>
-		<description>Build a De lisle Commando Carbine, happy hunting.\nCaliber: .45 ACP</description>
-		<jobString>Building De Lisle Commando Carbine.</jobString>
+		<label>Build De Lisle Commando Carabine</label>
+		<description>Build a De lisle Commando Carabine, happy hunting.\nCaliber: .45 ACP</description>
+		<jobString>Building De Lisle Commando Carabine.</jobString>
 		<workAmount>10200</workAmount>
 		<skillRequirements>
 			<Crafting>4</Crafting>
@@ -138,15 +138,7 @@
 						<li>Plastic</li>
 					</thingDefs>
 				</filter>
-				<count>20</count>
-			</li>
-			<li>
-				<filter>
-					<categories>
-						<li>Leathers</li>
-					</categories>
-				</filter>
-				<count>22</count>
+				<count>25</count>
 			</li>
 		</ingredients>
 		<products>
@@ -163,13 +155,84 @@
 			<categories>
 				<li>SLDBar</li>
 				<li>USLDBar</li>
-				<li>Leathers</li>
 			</categories>
 		</fixedIngredientFilter>
 		<recipeUsers>
 			<li>AdvWeaponCraftingWorkTable</li>
 		</recipeUsers>
 		<researchPrerequisite>Rifles_C3</researchPrerequisite>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="RangedWeaponRecipeBase">
+		<defName>BuildCalico</defName>
+		<label>Build M960(M) Calico Carabine</label>
+		<description>Build the M960 Military Model 9mm Carabine, if you think traditional SMG's banana magazine isn't enough.\nCaliber: 9x19mm Para</description>
+		<jobString>Building M960(M) Calico Carabine.</jobString>
+		<workAmount>14000</workAmount>
+		<skillRequirements>
+			<Crafting>8</Crafting>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Rifle_Component</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Weapon_Parts</li>
+					</thingDefs>
+				</filter>
+				<count>4</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>12</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>Metallic</li>
+					</categories>
+				</filter>
+				<count>50</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Plastic</li>
+					</thingDefs>
+				</filter>
+				<count>30</count>
+			</li>
+		</ingredients>
+		<products>
+			<Pa_Calico>1</Pa_Calico>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Rifle_Component</li>
+				<li>Weapon_Parts</li>
+				<li>ComponentIndustrial</li>
+				<li>Plastic</li>
+			</thingDefs>
+			<categories>
+				<li>SLDBar</li>
+				<li>USLDBar</li>
+			</categories>
+		</fixedIngredientFilter>
+		<recipeUsers>
+			<li>AdvWeaponCraftingWorkTable</li>
+		</recipeUsers>
+		<researchPrerequisite>Range_C2</researchPrerequisite>
 	</RecipeDef>
 	
 	</Defs>

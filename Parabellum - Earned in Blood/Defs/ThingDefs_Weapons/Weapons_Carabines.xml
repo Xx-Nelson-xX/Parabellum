@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-<ThingDef ParentName="BaseGun_LongBarreled">
+	<!-- De Lisle Commando Carbine -->
+	<ThingDef ParentName="BaseGun_LongBarreled">
         <defName>Pa_Delisle</defName>
-        <label>De Lisle Commando Carbine</label>
+        <label>De Lisle Commando Carabine</label>
         <description>An integrated suppressed pistol caliber carbine for ancient special force. Mediocre damage, low fire rate, highly accurate and decent effective range.</description>
         <graphicData>
             <texPath>Things/Weapons/Delisle</texPath>
@@ -67,7 +68,7 @@
     <ThingDef ParentName="BaseGun_LongBarreled">
         <defName>Pa_M4Beowulf</defName>
         <label>M4.50 Beowulf SC</label>
-        <description>The M4.50 Beowulf Special Carbine, changing the standard AR barrel to the heavier .50 Beowulf barrel to deal with light armored target and bear size animals. High damage, average range, good rate of fire and accuracy, but not really controllable in burst.</description>
+        <description>The M4.50 Beowulf Special Carabine, changing the standard AR barrel to the heavier .50 Beowulf barrel to deal with light armored target and bear size animals. High damage, average range, good rate of fire and accuracy, but not really controllable in burst.</description>
         <graphicData>
             <texPath>Things/Weapons/M4Beowulf</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -123,6 +124,73 @@
             <AdvRifle_Component>1</AdvRifle_Component>
             <Weapon_Parts>8</Weapon_Parts>
             <Plastic>10</Plastic>
+        </smeltProducts>
+    </ThingDef>
+	
+	<!-- M960(M) Calico Carbine -->
+    <ThingDef ParentName="BaseGun_LongBarreled">
+        <defName>Pa_Calico</defName>
+        <label>M960(M) Calico Carabine</label>
+        <description>The Calico M960 Military Model 9mm Carbine is a Light Weight Carbine with high capacity, cylindrical, helical-feed magazine in a compact design, designed as backup weapon for vehicle crew.</description>
+        <graphicData>
+            <texPath>Things/Weapons/Calico</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>Interact_Rifle</soundInteract>
+        <statBases>
+            <MarketValue>1200</MarketValue>
+            <SightsEfficiency>1.1</SightsEfficiency>
+            <ShotSpread>0.054</ShotSpread>
+            <SwayFactor>1.05</SwayFactor>
+            <RangedWeapon_Cooldown>0.5</RangedWeapon_Cooldown>
+            <Bulk>7.8</Bulk>
+            <Mass>2.17</Mass>
+        </statBases>
+		<generateCommonality>0.4</generateCommonality>
+        <weaponTags>
+            <li>RF2</li>
+            <li>RF3</li>
+            <li>Gun</li>
+			<li>SMG3</li>
+            <li>TierOneRifle</li>
+			<li>TierTwoRifle</li>
+			<li>AdvancedGun</li>
+            <li>CE_AI_Rifle</li>
+        </weaponTags>
+        <thingCategories>
+            <li>Rifles</li>
+        </thingCategories>
+        <verbs>
+            <li Class="CombatExtended.VerbPropertiesCE">
+                <recoilAmount>1.08</recoilAmount>
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>Bullet_9x19mmPara_FMJ</defaultProjectile>
+                <burstShotCount>25</burstShotCount>
+                <ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+                <warmupTime>0.6</warmupTime>
+                <range>34</range>
+                <soundCast>Shot_MachinePistol</soundCast>
+                <soundCastTail>GunTail_Heavy</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+            </li>
+        </verbs>
+        <comps>
+            <li Class="CombatExtended.CompProperties_FireModes">
+                <aiUseBurstMode>true</aiUseBurstMode>
+                <aiAimMode>AimedShot</aiAimMode>
+                <aimedBurstShotCount>5</aimedBurstShotCount>
+            </li>
+            <li Class="CombatExtended.CompProperties_AmmoUser">
+                <magazineSize>100</magazineSize>
+                <reloadTime>4.1</reloadTime>
+                <ammoSet>AmmoSet_9x19mmPara</ammoSet>
+            </li>
+        </comps>
+        <smeltProducts>
+            <Rifle_Component>1</Rifle_Component>
+            <Weapon_Parts>2</Weapon_Parts>
+            <Plastic>5</Plastic>
         </smeltProducts>
     </ThingDef>
 

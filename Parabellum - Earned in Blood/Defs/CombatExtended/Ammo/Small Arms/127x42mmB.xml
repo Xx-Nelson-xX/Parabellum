@@ -172,6 +172,7 @@
 			<damageAmountBase>14</damageAmountBase>
 			<armorPenetrationSharp>15.6</armorPenetrationSharp>
 			<armorPenetrationBlunt>96</armorPenetrationBlunt>
+			<empShieldBreakChance>0.3</empShieldBreakChance>
 		</projectile>
 	</ThingDef>
 	

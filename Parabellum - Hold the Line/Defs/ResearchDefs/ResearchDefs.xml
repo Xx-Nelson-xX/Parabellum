@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<ResearchProjectDef ParentName="HitechMultiBase">
+		<defName>Parabellum_I</defName>
+		<label>Wunderwaffen I</label>
+		<description>Wonder of over-engineering, just throw away complexity and logistic for a moment, when it works, it works, implovemenst and simplification comes later.</description>
+		<baseCost>2200</baseCost>
+		<techLevel>Spacer</techLevel>
+		<researchViewX>18.00</researchViewX>
+		<researchViewY>38.00</researchViewY>
+		<prerequisites>
+			<li>Rockets_C2</li>
+			<li>Heavy_turrets_C3</li>
+		</prerequisites>
+		<tab>Weapon_SK</tab>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef ParentName="HitechMultiBase">
+		<defName>Parabellum_A</defName>
+		<label>Nuclear Artillery</label>
+		<description>A war to end all war, ended nothing, and the best sequel happened a decade later, and now, the peace maker, weapon of peace, what can go wrong?</description>
+		<baseCost>4000</baseCost>
+		<techLevel>Spacer</techLevel>
+		<researchViewX>18.00</researchViewX>
+		<researchViewY>17.00</researchViewY>
+		<prerequisites>
+			<li>RimatomicsActivate</li>
+			<li>Artillery_C2</li>
+			<li>Components_D1</li>
+		</prerequisites>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<tab>Weapon_SK</tab>
+	</ResearchProjectDef>
+</Defs>

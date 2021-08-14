@@ -1,11 +1,28 @@
 <Patch>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_40x46mmGrenade"]/ammoTypes</xpath>
+		<value>
+			<Ammo_40x46mmGrenade_BB>Bullet_40x46mmGrenade_BB</Ammo_40x46mmGrenade_BB>
+			<Ammo_40x46mmGrenade_F>Bullet_40x46mmGrenade_F</Ammo_40x46mmGrenade_F>
+			<Ammo_40x46mmGrenade_Stun>Bullet_40x46mmGrenade_Stun</Ammo_40x46mmGrenade_Stun>
+			<Ammo_40x46mmGrenade_Foam>Bullet_40x46mmGrenade_Foam</Ammo_40x46mmGrenade_Foam>
+		</value>
+	</Operation>
 	
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_120mmCannonShell"]/ammoTypes</xpath>
 		<value>
 			<Ammo_120mmCannonShell_Canister>Bullet_120mmCannonShell_Canister</Ammo_120mmCannonShell_Canister>
 			<Ammo_120mmCannonShell_HESH>Bullet_120mmCannonShell_HESH</Ammo_120mmCannonShell_HESH>
-			<Ammo_120mmCannonShell_ID>Bullet_120mmCannonShell_ID</Ammo_120mmCannonShell_ID>
+			<Ammo_120mmCannonShell_Stun>Bullet_120mmCannonShell_Stun</Ammo_120mmCannonShell_Stun>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_155mmHowitzerShell"]/ammoTypes</xpath>
+		<value>
+			<Ammo_155mmHowitzerShell_Nuke>Bullet_155mmHowitzerShell_Nuke</Ammo_155mmHowitzerShell_Nuke>
 		</value>
 	</Operation>
 

@@ -1,0 +1,501 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingCategoryDef>
+		<defName>Ammo128mmCannonShells</defName>
+		<label>12,8cm Cannon shell</label>
+		<parent>AmmoShells</parent>
+		<iconPath>Things/Ammo/128mm/APCBCHE</iconPath>
+	</ThingCategoryDef>
+
+	<!-- ==================== AmmoSet ========================== -->
+
+	<CombatExtended.AmmoSetDef>
+		<defName>AmmoSet_128mmCannonShell</defName>
+		<label>12,8cm Cannon shell</label>
+		<ammoTypes>
+			<Ammo_128mmCannonShell_APC>Bullet_128mmCannonShell_APC</Ammo_128mmCannonShell_APC>
+			<Ammo_128mmCannonShell_APCBCHE>Bullet_128mmCannonShell_APCBCHE</Ammo_128mmCannonShell_APCBCHE>
+			<Ammo_128mmCannonShell_HE>Bullet_128mmCannonShell_HE</Ammo_128mmCannonShell_HE>
+			<Ammo_128mmCannonShell_APCR>Bullet_128mmCannonShell_APCR</Ammo_128mmCannonShell_APCR>
+		</ammoTypes>
+	</CombatExtended.AmmoSetDef>
+
+	<!-- ==================== Ammo ========================== -->
+
+	<ThingDef Class="CombatExtended.AmmoDef" Name="128mmCannonShellBase" ParentName="AmmoBase" Abstract="True">
+		<description>The 12,8cm large cannon shell is a specific size of cannon ammunition, used by Heavy Anti-Tank/Aircraft guns.</description>
+		<statBases>
+			<MaxHitPoints>300</MaxHitPoints>
+		</statBases>
+		<tradeTags>
+			<li>CE_AutoEnableTrade</li>
+			<li>CE_AutoEnableCrafting_TableMachining</li>
+		</tradeTags>
+		<thingCategories>
+			<li>Ammo128mmCannonShells</li>
+		</thingCategories>
+		<stackLimit>25</stackLimit>
+		<cookOffSound>MortarBomb_Explode</cookOffSound>
+		<cookOffSpeed>0.2</cookOffSpeed>
+		<cookOffFlashScale>40</cookOffFlashScale>
+		<cookOffTailSound>ShellCookOff_Ambient</cookOffTailSound>
+	</ThingDef>
+
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="128mmCannonShellBase">
+		<defName>Ammo_128mmCannonShell_APC</defName>
+		<label>12,8cm Pzgr. 40/43(APC)</label>
+		<graphicData>
+			<texPath>Things/Ammo/128mm/APC</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>158</MarketValue>
+			<Mass>26.35</Mass>
+			<Bulk>81.2</Bulk>
+		</statBases>
+		<ammoClass>128mmAPC</ammoClass>
+		<generateAllowChance>0.25</generateAllowChance>
+		<cookOffProjectile>Bullet_128mmCannonShell_APC</cookOffProjectile>
+	</ThingDef>
+
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="128mmCannonShellBase">
+		<defName>Ammo_128mmCannonShell_APCBCHE</defName>
+		<label>12,8cm Pzgr. 39/43(APCBC-HE)</label>
+		<graphicData>
+			<texPath>Things/Ammo/128mm/APCBCHE</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>161</MarketValue>
+			<Mass>28.3</Mass>
+			<Bulk>82.6</Bulk>
+		</statBases>
+		<ammoClass>128mmAPCBCHE</ammoClass>
+		<cookOffProjectile>Bullet_128mmCannonShell_APCBCHE</cookOffProjectile>
+	</ThingDef>
+
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="128mmCannonShellBase">
+		<defName>Ammo_128mmCannonShell_HE</defName>
+		<label>12,8cm Sprgr. L/5(HE)</label>
+		<graphicData>
+			<texPath>Things/Ammo/128mm/HE</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>168</MarketValue>
+			<Mass>28</Mass>
+			<Bulk>85.6</Bulk>
+		</statBases>
+		<ammoClass>128mmHE</ammoClass>
+		<generateAllowChance>0.6</generateAllowChance>
+		<cookOffProjectile>Bullet_128mmCannonShell_HE</cookOffProjectile>
+	</ThingDef>
+
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="128mmCannonShellBase">
+		<defName>Ammo_128mmCannonShell_APCR</defName>
+		<label>12,8/8,8cm Pzgr. Ts(APCR)</label>
+		<graphicData>
+			<texPath>Things/Ammo/128mm/APCR</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>172.4</MarketValue>
+			<Mass>9.85</Mass>
+			<Bulk>78.3</Bulk>
+		</statBases>
+		<ammoClass>128mmAPCR</ammoClass>
+		<generateAllowChance>0.15</generateAllowChance>
+		<cookOffProjectile>Bullet_128mmCannonShell_APCR</cookOffProjectile>
+	</ThingDef>
+
+	<!-- ================== Projectiles ================== -->
+
+	<ThingDef Class="CombatExtended.AmmoDef" Name="Base128mmCannonShell" ParentName="SK_BaseBullet" Abstract="true">
+		<graphicData>
+			<shaderType>TransparentPostLight</shaderType>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<soundExplode>MortarBomb_Explode</soundExplode>
+			<flyOverhead>false</flyOverhead>
+			<dropsCasings>true</dropsCasings>
+			<casingMoteDefname>Mote_BigShell</casingMoteDefname>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="Base128mmCannonShell">
+		<defName>Bullet_128mmCannonShell_APC</defName>
+		<label>12,8cm Pzgr. 40/43(APC)</label>
+		<graphicData>
+			<texPath>Things/Projectile/128mm/APC</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<speed>129</speed>
+			<damageDef>Bullet</damageDef>
+			<spreadMult>0.9</spreadMult>
+			<damageAmountBase>500</damageAmountBase>
+			<armorPenetrationSharp>240</armorPenetrationSharp>
+			<armorPenetrationBlunt>12800.24</armorPenetrationBlunt>
+			<secondaryDamage>
+				<li>
+					<def>Blunt</def>
+					<amount>320</amount>
+				</li>
+			</secondaryDamage>
+		</projectile>
+		<comps>
+			<li Class="CombatExtended.CompProperties_ExplosiveCE">
+				<damageAmountBase>64</damageAmountBase>
+				<explosiveDamageType>Bomb</explosiveDamageType>
+				<explosiveRadius>1.1</explosiveRadius>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="Base128mmCannonShell">
+		<defName>Bullet_128mmCannonShell_APCBCHE</defName>
+		<label>12,8cm Pzgr. 39/43(APCBC-HE)</label>
+		<graphicData>
+			<texPath>Things/Projectile/128mm/APCBCHE</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<speed>125</speed>
+			<damageDef>Bullet</damageDef>
+			<spreadMult>0.8</spreadMult>
+			<damageAmountBase>540</damageAmountBase>
+			<armorPenetrationSharp>228</armorPenetrationSharp>
+			<armorPenetrationBlunt>11750.036</armorPenetrationBlunt>
+		</projectile>
+		<comps>
+			<li Class="CombatExtended.CompProperties_ExplosiveCE">
+				<damageAmountBase>140</damageAmountBase>
+				<explosiveDamageType>Bomb</explosiveDamageType>
+				<explosiveRadius>1.4</explosiveRadius>
+			</li>
+			<li Class="CombatExtended.CompProperties_Fragments">
+				<fragments>
+					<Fragment_Large>13</Fragment_Large>
+					<Fragment_Small>31</Fragment_Small>
+				</fragments>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="Base128mmCannonShell">
+		<defName>Bullet_128mmCannonShell_HE</defName>
+		<label>12,8cm Sprgr. L/5 (HE)</label>
+		<thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
+		<graphicData>
+			<texPath>Things/Projectile/128mm/HE</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<speed>120</speed>
+			<damageDef>Bomb</damageDef>
+			<damageAmountBase>320</damageAmountBase>
+			<explosionRadius>4</explosionRadius>
+			<soundExplode>Explosion_GiantBomb</soundExplode>
+			<ai_IsIncendiary>true</ai_IsIncendiary>
+			<secondaryDamage>
+				<li>
+					<def>Bomb_Secondary</def>
+					<amount>272</amount>
+				</li>
+			</secondaryDamage>
+		</projectile>
+		<comps>
+			<li Class="CombatExtended.CompProperties_Fragments">
+				<fragments>
+					<Fragment_Large>64</Fragment_Large>
+					<Fragment_Small>52</Fragment_Small>
+				</fragments>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="Base128mmCannonShell">
+		<defName>Bullet_128mmCannonShell_APCR</defName>
+		<label>12,8/8,8cm Pzgr. Ts(APCR)</label>
+		<graphicData>
+			<texPath>Things/Projectile/128mm/APCR</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<speed>167</speed>
+			<damageDef>Bullet</damageDef>
+			<spreadMult>0.6</spreadMult>
+			<damageAmountBase>620</damageAmountBase>
+			<armorPenetrationSharp>312</armorPenetrationSharp>
+			<armorPenetrationBlunt>10880.16</armorPenetrationBlunt>
+			<secondaryDamage>
+				<li>
+					<def>Blunt</def>
+					<amount>279</amount>
+				</li>
+			</secondaryDamage>
+		</projectile>
+		<comps>
+			<li Class="CombatExtended.CompProperties_ExplosiveCE">
+				<damageAmountBase>64</damageAmountBase>
+				<explosiveDamageType>Bomb</explosiveDamageType>
+				<explosiveRadius>0.9</explosiveRadius>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<!-- ==================== Recipes ========================== -->
+
+	<RecipeDef ParentName="AmmoRecipeBase">
+		<defName>MakeAmmo_128mmCannonShell_APC</defName>
+		<label>make 12,8cm Pzgr 40/43(APC) shell x1</label>
+		<description>Craft a 12,8cm Pzgr 40/43(APC) shell.</description>
+		<jobString>Making 12,8cm Pzgr. 40/43(APC) shell.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>SLDBar</li>
+						<li>USLDBar</li>
+					</categories>
+				</filter>
+				<count>27</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>HeavyBar</li>
+					</categories>
+				</filter>
+				<count>11</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Powder</li>
+						<li>FSX</li>
+					</thingDefs>
+				</filter>
+				<count>8</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>SLDBar</li>
+				<li>USLDBar</li>
+				<li>HeavyBar</li>
+			</categories>
+			<thingDefs>
+				<li>Powder</li>
+				<li>FSX</li>
+				<li>ComponentIndustrial</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Ammo_128mmCannonShell_APC>1</Ammo_128mmCannonShell_APC>
+		</products>
+		<skillRequirements>
+			<Crafting>10</Crafting>
+		</skillRequirements>
+		<workSkill>Crafting</workSkill>
+		<researchPrerequisite>Range_C2</researchPrerequisite>
+	</RecipeDef>
+
+	<RecipeDef ParentName="AmmoRecipeBase">
+		<defName>MakeAmmo_128mmCannonShell_APCBCHE</defName>
+		<label>make 12,8cm Pzgr. 39/43(APCBC-HE) shell x1</label>
+		<description>Craft a 12,8cm Pzgr. 39/43(APCBC-HE) shell.</description>
+		<jobString>Making 12,8cm Pzgr. 39/43(APCBC-HE) shell.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>SLDBar</li>
+						<li>USLDBar</li>
+					</categories>
+				</filter>
+				<count>28</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>HeavyBar</li>
+					</categories>
+				</filter>
+				<count>11</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Powder</li>
+						<li>FSX</li>
+					</thingDefs>
+				</filter>
+				<count>11</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>SLDBar</li>
+				<li>USLDBar</li>
+				<li>HeavyBar</li>
+			</categories>
+			<thingDefs>
+				<li>Powder</li>
+				<li>ComponentIndustrial</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Ammo_128mmCannonShell_APCBCHE>1</Ammo_128mmCannonShell_APCBCHE>
+		</products>
+		<skillRequirements>
+			<Crafting>10</Crafting>
+		</skillRequirements>
+		<workSkill>Crafting</workSkill>
+		<researchPrerequisite>Range_C2</researchPrerequisite>
+	</RecipeDef>
+
+	<RecipeDef ParentName="AmmoRecipeBase">
+		<defName>MakeAmmo_128mmCannonShell_HE</defName>
+		<label>make 12,8cm Sprgr. L/5(HE) shell x1</label>
+		<description>Craft a 12,8cm Sprgr. L/5(HE) shell.</description>
+		<jobString>Making 12,8cm Sprgr. L/5(HE) shell.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>SLDBar</li>
+						<li>USLDBar</li>
+					</categories>
+				</filter>
+				<count>28</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>HeavyBar</li>
+					</categories>
+				</filter>
+				<count>9</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Powder</li>
+						<li>FSX</li>
+					</thingDefs>
+				</filter>
+				<count>12</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>SLDBar</li>
+				<li>USLDBar</li>
+				<li>HeavyBar</li>
+			</categories>
+			<thingDefs>
+				<li>Powder</li>
+				<li>FSX</li>
+				<li>ComponentIndustrial</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Ammo_128mmCannonShell_HE>1</Ammo_128mmCannonShell_HE>
+		</products>
+		<skillRequirements>
+			<Crafting>10</Crafting>
+		</skillRequirements>
+		<workSkill>Crafting</workSkill>
+		<researchPrerequisite>Range_C2</researchPrerequisite>
+	</RecipeDef>
+
+	<RecipeDef ParentName="AmmoRecipeBase">
+		<defName>MakeAmmo_128mmCannonShell_APCR</defName>
+		<label>make 12,8/8,8cm Pzgr. Ts(APCR) shell x1</label>
+		<description>Craft a 12,8/8,8cm Pzgr. Ts(APCR) shell.</description>
+		<jobString>Making 12,8/8,8cm Pzgr. Ts(APCR) shell.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>SLDBar</li>
+						<li>USLDBar</li>
+					</categories>
+				</filter>
+				<count>25</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Tungsten</li>
+					</thingDefs>
+				</filter>
+				<count>8</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Powder</li>
+						<li>FSX</li>
+					</thingDefs>
+				</filter>
+				<count>8</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>SLDBar</li>
+				<li>USLDBar</li>
+			</categories>
+			<thingDefs>
+				<li>Tungsten</li>
+				<li>Powder</li>
+				<li>FSX</li>
+				<li>ComponentIndustrial</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Ammo_128mmCannonShell_APCR>1</Ammo_128mmCannonShell_APCR>
+		</products>
+		<skillRequirements>
+			<Crafting>10</Crafting>
+		</skillRequirements>
+		<workSkill>Crafting</workSkill>
+		<researchPrerequisite>Range_C2</researchPrerequisite>
+	</RecipeDef>
+
+</Defs>

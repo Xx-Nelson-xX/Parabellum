@@ -7,7 +7,7 @@
 		<defName>Pa_Type63MRL</defName>
 		<label>Type63MRL</label>
 		<graphicData>
-			<texPath>Things/Building/Security/Type63_Top</texPath>
+			<texPath>Things/Building/Security/Artillery/Type63_Top</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<soundInteract>Artillery_ShellLoaded</soundInteract>
@@ -20,6 +20,7 @@
 			<SwayFactor>1.4</SwayFactor>
 			<RangedWeapon_Cooldown>12</RangedWeapon_Cooldown>
 		</statBases>
+		<generateCommonality>0</generateCommonality>
 		<verbs>
 			<li Class="CombatExtended.VerbPropertiesCE">
 				<recoilPattern>Mounted</recoilPattern>
@@ -63,13 +64,13 @@
 		<defName>Turret_Type63MRL</defName>
 		<label>Type 63 MRLP</label>
 		<graphicData>
-			<texPath>Things/Building/Security/Type63_Base</texPath>
+			<texPath>Things/Building/Security/Base/Type63_Base</texPath>
 			<drawSize>(2.4,2.4)</drawSize>
 			<shadowData>
 				<volume>(0.3, 0.6, 0.3)</volume>
 			</shadowData>
 		</graphicData>
-		<uiIconPath>Things/Building/Security/Type63_icon</uiIconPath>
+		<uiIconPath>Things/Building/Security/Artillery/Type63_icon</uiIconPath>
 		<hasInteractionCell>True</hasInteractionCell>
 		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
 		<statBases>

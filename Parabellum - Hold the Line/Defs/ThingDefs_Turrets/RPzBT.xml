@@ -7,7 +7,7 @@
 		<defName>Pa_RPzB6T</defName>
 		<label>RPzB 54/1 x6</label>
 		<graphicData>
-			<texPath>Things/Building/Security/RPzB6_Top</texPath>
+			<texPath>Things/Building/Security/CMMT/RPzB6_Top</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<soundInteract>Artillery_ShellLoaded</soundInteract>
@@ -20,6 +20,7 @@
 			<SwayFactor>1.2</SwayFactor>
 			<RangedWeapon_Cooldown>2.6</RangedWeapon_Cooldown>
 		</statBases>
+		<generateCommonality>0</generateCommonality>
 		<verbs>
 			<li Class="CombatExtended.VerbPropertiesCE">
 				<verbClass>CombatExtended.Verb_ShootMortarCE</verbClass>
@@ -60,7 +61,7 @@
 		<defName>Pa_RW</defName>
 		<label>88mm Raketenwerfer</label>
 		<graphicData>
-			<texPath>Things/Building/Security/Puppchen_Top</texPath>
+			<texPath>Things/Building/Security/CMLT/Puppchen_Top</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<soundInteract>Artillery_ShellLoaded</soundInteract>
@@ -73,6 +74,7 @@
 			<SwayFactor>1.1</SwayFactor>
 			<RangedWeapon_Cooldown>2.4</RangedWeapon_Cooldown>
 		</statBases>
+		<generateCommonality>0</generateCommonality>
 		<verbs>
 			<li Class="CombatExtended.VerbPropertiesCE">
 				<verbClass>CombatExtended.Verb_ShootMortarCE</verbClass>
@@ -108,7 +110,7 @@
 		<defName>Pa_RVW</defName>
 		<label>Raketen-Vielfachwerfer</label>
 		<graphicData>
-			<texPath>Things/Building/Security/RVW_Top</texPath>
+			<texPath>Things/Building/Security/Artillery/RVW_Top</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<soundInteract>Artillery_ShellLoaded</soundInteract>
@@ -121,6 +123,7 @@
 			<SwayFactor>1.8</SwayFactor>
 			<RangedWeapon_Cooldown>8.2</RangedWeapon_Cooldown>
 		</statBases>
+		<generateCommonality>0</generateCommonality>
 		<verbs>
 			<li Class="CombatExtended.VerbPropertiesCE">
 				<recoilPattern>Mounted</recoilPattern>
@@ -163,13 +166,13 @@
 		<defName>Turret_RPzB6T</defName>
 		<label>RPzB 54/1 MATRL</label>
 		<graphicData>
-			<texPath>Things/Building/Security/P_Base</texPath>
+			<texPath>Things/Building/Security/Base/P_Base</texPath>
 			<drawSize>(1.6,1.6)</drawSize>
 			<shadowData>
 				<volume>(0.3, 0.6, 0.3)</volume>
 			</shadowData>
 		</graphicData>
-		<uiIconPath>Things/Building/Security/RPzB6_icon</uiIconPath>
+		<uiIconPath>Things/Building/Security/CMMT/RPzB6_icon</uiIconPath>
 		<hasInteractionCell>True</hasInteractionCell>
 		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
 		<statBases>
@@ -214,13 +217,13 @@
 		<defName>Turret_RW</defName>
 		<label>88mm Raketenwerfer</label>
 		<graphicData>
-			<texPath>Things/Building/Security/NbW32_Base</texPath>
+			<texPath>Things/Building/Security/Base/NbW32_Base</texPath>
 			<drawSize>(1.6,1.6)</drawSize>
 			<shadowData>
 				<volume>(0.3, 0.6, 0.3)</volume>
 			</shadowData>
 		</graphicData>
-		<uiIconPath>Things/Building/Security/Puppchen_icon</uiIconPath>
+		<uiIconPath>Things/Building/Security/CMLT/Puppchen_icon</uiIconPath>
 		<statBases>
 			<MaxHitPoints>100</MaxHitPoints>
 			<WorkToBuild>1000</WorkToBuild>
@@ -263,13 +266,13 @@
 		<defName>Turret_RVW</defName>
 		<label>RVW MRLP</label>
 		<graphicData>
-			<texPath>Things/Building/Security/P_Base</texPath>
+			<texPath>Things/Building/Security/Base/P_Base</texPath>
 			<drawSize>(2.6,2.6)</drawSize>
 			<shadowData>
 				<volume>(0.3, 0.6, 0.3)</volume>
 			</shadowData>
 		</graphicData>
-		<uiIconPath>Things/Building/Security/RVW_icon</uiIconPath>
+		<uiIconPath>Things/Building/Security/Artillery/RVW_icon</uiIconPath>
 		<hasInteractionCell>True</hasInteractionCell>
 		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
 		<statBases>

@@ -222,6 +222,7 @@
 					<amount>34</amount>
 				</li>
 			</secondaryDamage>
+			<empShieldBreakChance>0.6</empShieldBreakChance>
 		</projectile>
 		<comps>
 			<li Class="CombatExtended.CompProperties_ExplosiveCE">

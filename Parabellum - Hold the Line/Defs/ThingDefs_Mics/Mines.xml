@@ -8,6 +8,9 @@
 		<graphicData>
 			<texPath>Things/Building/Mines/Smine</texPath>
 		</graphicData>
+		<statBases>
+			<Flammability>0.4</Flammability>
+		</statBases>
 		<costList>
 			<Plasteel>20</Plasteel>
 			<Powder>2</Powder>
@@ -18,7 +21,7 @@
 				<explosiveRadius>1.6</explosiveRadius>
 				<explosiveDamageType>Bomb</explosiveDamageType>
 				<startWickHitPointsPercent>0.2</startWickHitPointsPercent>
-				<wickTicks>20</wickTicks>
+				<wickTicks>25</wickTicks>
 				<startWickOnDamageTaken>
 					<li>Bullet</li>
 					<li>Arrow</li>
@@ -44,6 +47,9 @@
 		<graphicData>
 			<texPath>Things/Building/Mines/4kgmine</texPath>
 		</graphicData>
+		<statBases>
+			<Flammability>0.6</Flammability>
+		</statBases>
 		<costList>
 			<Pa_Grenade4kg>1</Pa_Grenade4kg>
 			<Weapon_Parts>1</Weapon_Parts>
@@ -53,7 +59,7 @@
 				<explosiveRadius>6</explosiveRadius>
 				<explosiveDamageType>Bomb</explosiveDamageType>
 				<startWickHitPointsPercent>0.6</startWickHitPointsPercent>
-				<wickTicks>30</wickTicks>
+				<wickTicks>50</wickTicks>
 				<startWickOnDamageTaken>
 					<li>Bullet</li>
 					<li>Arrow</li>

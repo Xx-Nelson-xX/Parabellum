@@ -7,7 +7,7 @@
 		<defName>Pa_Wombat</defName>
 		<label>120mm Wombat Recoiless Anti-Tank Gun</label>
 		<graphicData>
-			<texPath>Things/Building/Security/Wombat_Top</texPath>
+			<texPath>Things/Building/Security/CMMT/Wombat_Top</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<soundInteract>Artillery_ShellLoaded</soundInteract>
@@ -20,6 +20,7 @@
 			<SwayFactor>1.2</SwayFactor>
 			<RangedWeapon_Cooldown>1.9</RangedWeapon_Cooldown>
 		</statBases>
+		<generateCommonality>0</generateCommonality>
 		<weaponTags>
 			<li>TurretGun</li>
 			<li>Artillery_BaseDestroyer</li>
@@ -28,7 +29,7 @@
 			<li Class="CombatExtended.VerbPropertiesCE">
 				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>Bullet_120mmCannonShell_HEAT</defaultProjectile>
+				<defaultProjectile>Bullet_120mmCannonShell_HESH</defaultProjectile>
 				<!--<forcedMissRadius>4</forcedMissRadius>-->
 				<circularError>1.4</circularError>
 				<warmupTime>1.9</warmupTime>
@@ -60,13 +61,13 @@
 		<defName>Turret_Wombat</defName>
 		<label>120mm Wombat RATG</label>
 		<graphicData>
-			<texPath>Things/Building/Security/Wombat_Base</texPath>
+			<texPath>Things/Building/Security/Base/Wombat_Base</texPath>
 			<drawSize>(3.2,3.2)</drawSize>
 			<shadowData>
 				<volume>(0.3, 0.6, 0.3)</volume>
 			</shadowData>
 		</graphicData>
-		<uiIconPath>Things/Building/Security/Wombat_icon</uiIconPath>
+		<uiIconPath>Things/Building/Security/CMMT/Wombat_icon</uiIconPath>
 		<statBases>
 			<MaxHitPoints>220</MaxHitPoints>
 			<WorkToBuild>1500</WorkToBuild>

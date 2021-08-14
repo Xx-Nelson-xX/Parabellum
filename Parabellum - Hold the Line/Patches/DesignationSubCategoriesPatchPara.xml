@@ -22,5 +22,20 @@
 			<li>Pa_Trap_4kgMine</li>
 		</value>
 	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ArchitectSense.DesignationSubCategoryDef[defName="SubCategory_Mortars"]/defNames</xpath>
+		<value>
+			<li>Turret_Mk18GL</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ArchitectSense.DesignationSubCategoryDef[defName="SubCategory_SentryTurrets"]/defNames</xpath>
+		<value>
+			<li>Turret_ShotgunT</li>
+			<li>Turret_AntiR</li>
+		</value>
+	</Operation>
 
 </Patch>

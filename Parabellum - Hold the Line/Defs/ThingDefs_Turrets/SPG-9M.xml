@@ -7,7 +7,7 @@
 		<defName>Pa_SPG9M</defName>
 		<label>SPG-9M</label>
 		<graphicData>
-			<texPath>Things/Building/Security/SPG9M_Top</texPath>
+			<texPath>Things/Building/Security/CMLT/SPG9M_Top</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<description>SPG-9M attached to a tripod.</description>
@@ -19,6 +19,7 @@
 			<SwayFactor>0.9</SwayFactor>
 			<RangedWeapon_Cooldown>2.6</RangedWeapon_Cooldown>
 		</statBases>
+		<generateCommonality>0</generateCommonality>
 		<weaponTags>
 			<li>Artillery</li>
 			<li>Artillery_BaseDestroyer</li>
@@ -58,7 +59,7 @@
 		<defName>Pa_SPG9MD</defName>
 		<label>SPG-9MD</label>
 		<graphicData>
-			<texPath>Things/Building/Security/SPG9MD_Top</texPath>
+			<texPath>Things/Building/Security/CMLT/SPG9MD_Top</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<description>SPG-9M(D) attached to a tripod.</description>
@@ -70,6 +71,7 @@
 			<SwayFactor>1.1</SwayFactor>
 			<RangedWeapon_Cooldown>2.8</RangedWeapon_Cooldown>
 		</statBases>
+		<generateCommonality>0</generateCommonality>
 		<weaponTags>
 			<li>Artillery</li>
 			<li>Artillery_BaseDestroyer</li>
@@ -115,13 +117,13 @@
 		<defName>Turret_SPG9M</defName>
 		<label>SPG-9M RATG</label>
 		<graphicData>
-			<texPath>Things/Building/Security/SPG9M_Base</texPath>
+			<texPath>Things/Building/Security/Base/SPG9M_Base</texPath>
 			<drawSize>(2,2)</drawSize>
 			<shadowData>
 				<volume>(0.3, 0.6, 0.3)</volume>
 			</shadowData>
 		</graphicData>
-		<uiIconPath>Things/Building/Security/SPG9M_icon</uiIconPath>
+		<uiIconPath>Things/Building/Security/CMLT/SPG9M_icon</uiIconPath>
 		<statBases>
 			<MaxHitPoints>120</MaxHitPoints>
 			<WorkToBuild>1400</WorkToBuild>
@@ -164,13 +166,13 @@
 		<defName>Turret_SPG9MD</defName>
 		<label>SPG-9M RATG(DB)</label>
 		<graphicData>
-			<texPath>Things/Building/Security/SPG9M_Base</texPath>
+			<texPath>Things/Building/Security/Base/SPG9M_Base</texPath>
 			<drawSize>(2,2)</drawSize>
 			<shadowData>
 				<volume>(0.3, 0.6, 0.3)</volume>
 			</shadowData>
 		</graphicData>
-		<uiIconPath>Things/Building/Security/SPG9MD_icon</uiIconPath>
+		<uiIconPath>Things/Building/Security/CMLT/SPG9MD_icon</uiIconPath>
 		<statBases>
 			<MaxHitPoints>200</MaxHitPoints>
 			<WorkToBuild>1400</WorkToBuild>

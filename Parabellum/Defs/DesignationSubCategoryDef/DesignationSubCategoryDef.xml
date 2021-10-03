@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
+
+	<!-- =============== Rocket Artillery(P) =============== -->
 	<ArchitectSense.DesignationSubCategoryDef>
 		<defName>SubCategory_ParabellumRA</defName>
 		<label>Rocket Artillery(P)</label>
@@ -15,16 +17,35 @@
 		<debug>false</debug>
 	</ArchitectSense.DesignationSubCategoryDef>
 	
+	<!-- =============== Machinegun(P) =============== -->
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_ParabellumMG</defName>
+		<label>Machinegun(P)</label>
+		<description>Machine Gun from Parabellum, Ancient but still useful</description>
+		<defNames>
+			<li>Turret_Vickers</li>
+			<li>Turret_MG08MMG</li>
+			<li>Turret_MG18HMG</li>
+			<li>Turret_MG34Z</li>
+			<li>Turret_MG42M</li>
+			<li>Turret_MG45Z</li>
+			<li>Turret_MG131H</li>
+			<li>Turret_MG131Z</li>
+		</defNames>
+		<designationCategory>Security</designationCategory>
+		<debug>false</debug>
+	</ArchitectSense.DesignationSubCategoryDef>
+	
+	<!-- =============== Anti-Tank Gun(P) =============== -->
 	<ArchitectSense.DesignationSubCategoryDef>
 		<defName>SubCategory_ParabellumATG</defName>
 		<label>Anti-Tank Gun(P)</label>
 		<description>Anti-Tank Gun from Parabellum, Ancient but still useful</description>
 		<defNames>
+			<li>Turret_Pak36ATG</li>
 			<li>Turret_Pak38ATG</li>
 			<li>Turret_RW</li>
 			<li>Turret_RPzB6T</li>
-			<li>Turret_SPG9M</li>
-			<li>Turret_SPG9MD</li>
 			<li>Turret_Wombat</li>
 			<li>Turret_PaK44HATGP</li>
 			<li>Turret_FlaK40ZHAAP</li>
@@ -33,6 +54,7 @@
 		<debug>false</debug>
 	</ArchitectSense.DesignationSubCategoryDef>
 	
+	<!-- =============== Special(P) =============== -->
 	<ArchitectSense.DesignationSubCategoryDef>
 		<defName>SubCategory_ParabellumSP</defName>
 		<label>Special(P)</label>
@@ -43,4 +65,5 @@
 		<designationCategory>Security</designationCategory>
 		<debug>false</debug>
 	</ArchitectSense.DesignationSubCategoryDef>
+	
 </Defs>

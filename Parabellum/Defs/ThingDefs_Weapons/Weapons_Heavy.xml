@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+
 <!-- Lewis LMG -->
     <ThingDef ParentName="BaseGun_Heavy">
         <defName>Pa_Lewis</defName>
@@ -12,13 +13,17 @@
         <soundInteract>Interact_Rifle</soundInteract>
         <statBases>
             <MarketValue>1200</MarketValue>
-            <SightsEfficiency>0.85</SightsEfficiency>
-            <ShotSpread>0.15</ShotSpread>
+            <SightsEfficiency>0.8</SightsEfficiency>
+            <ShotSpread>0.16</ShotSpread>
             <SwayFactor>1.8</SwayFactor>
-            <RangedWeapon_Cooldown>0.8</RangedWeapon_Cooldown>
-            <Bulk>16</Bulk>
+            <RangedWeapon_Cooldown>1.2</RangedWeapon_Cooldown>
+            <Bulk>18.2</Bulk>
             <Mass>13</Mass>
         </statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.06</MoveSpeed>
+			<WorkSpeedGlobal>-0.025</WorkSpeedGlobal>
+		</equippedStatOffsets>
 		<generateCommonality>0.4</generateCommonality>
         <weaponTags>
             <li>MG1</li>
@@ -32,7 +37,7 @@
         </thingCategories>
         <verbs>
             <li Class="CombatExtended.VerbPropertiesCE">
-                <recoilAmount>1.8</recoilAmount>
+                <recoilAmount>1.32</recoilAmount>
                 <verbClass>CombatExtended.Verb_ShootCE</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
                 <defaultProjectile>Bullet_303British_FMJ</defaultProjectile>
@@ -58,8 +63,440 @@
             </li>
         </comps>
         <smeltProducts>
-            <Heavy_Component>1</Heavy_Component>
-            <Weapon_Parts>5</Weapon_Parts>
+            <ComponentIndustrial>2</ComponentIndustrial>
+            <Mechanism>1</Mechanism>
         </smeltProducts>
     </ThingDef>
+	
+	<!-- MG 08/15 LMG -->
+    <ThingDef ParentName="BaseGun_Heavy">
+        <defName>Pa_MG0815L</defName>
+        <label>MG 08/15 LMG</label>
+        <description>An ancient light machine gun convertion from MG 08 to a portable handheld machine gun, even lots of engineering, still quite big, heavy and very sturdy, but it can make your pawn a walking tank.</description>
+        <graphicData>
+            <texPath>Things/Weapons/MG0815</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>Interact_Rifle</soundInteract>
+        <statBases>
+            <MarketValue>1500</MarketValue>
+            <SightsEfficiency>0.76</SightsEfficiency>
+            <ShotSpread>0.2</ShotSpread>
+            <SwayFactor>1.6</SwayFactor>
+            <RangedWeapon_Cooldown>1.1</RangedWeapon_Cooldown>
+            <Bulk>23</Bulk>
+            <Mass>18</Mass>
+        </statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.1</MoveSpeed>
+			<WorkSpeedGlobal>-0.05</WorkSpeedGlobal>
+			<Suppressability>-0.75</Suppressability>
+		</equippedStatOffsets>
+		<generateCommonality>0.3</generateCommonality>
+		<equippedAngleOffset>45</equippedAngleOffset>
+        <weaponTags>
+            <li>MG1</li>
+            <li>GunHeavy</li>
+            <li>MachineGun</li>
+			<li>CE_MachineGun</li>
+			<li>CE_AI_Suppressive</li>
+        </weaponTags>
+        <thingCategories>
+            <li>MachineGun</li>
+        </thingCategories>
+        <verbs>
+            <li Class="CombatExtended.VerbPropertiesCE">
+                <recoilAmount>1.56</recoilAmount>
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>Bullet_8mmM_SP</defaultProjectile>
+                <warmupTime>1.3</warmupTime>
+                <range>48</range>
+                <ticksBetweenBurstShots>8</ticksBetweenBurstShots>
+                <burstShotCount>50</burstShotCount>
+                <soundCast>Shot_G88M</soundCast>
+                <soundCastTail>GunTail_Medium</soundCastTail>
+                <muzzleFlashScale>10</muzzleFlashScale>
+            </li>
+        </verbs>
+        <comps>
+            <li Class="CombatExtended.CompProperties_FireModes">
+                <aiUseBurstMode>true</aiUseBurstMode>
+                <aiAimMode>AimedShot</aiAimMode>
+                <aimedBurstShotCount>25</aimedBurstShotCount>
+            </li>
+            <li Class="CombatExtended.CompProperties_AmmoUser">
+                <magazineSize>250</magazineSize>
+                <reloadTime>8.6</reloadTime>
+                <ammoSet>AmmoSet_8mmM</ammoSet>
+            </li>
+        </comps>
+		<modExtensions>
+			 <li Class="CombatExtended.GunDrawExtension">
+				<DrawSize>1.2</DrawSize>
+			 </li>
+		</modExtensions>
+        <smeltProducts>
+            <ComponentIndustrial>6</ComponentIndustrial>
+            <Mechanism>1</Mechanism>
+        </smeltProducts>
+    </ThingDef>
+	
+	<!-- Madsen LMG -->
+    <ThingDef ParentName="BaseGun_Heavy">
+        <defName>Pa_Madsen</defName>
+        <label>Madsen LMG</label>
+        <description>Madsen Machine Gun, it was the world's first true light machine gun produced in quantity, magazine fed, air cooled, quite complex and expensive, a quality machine gun.</description>
+        <graphicData>
+            <texPath>Things/Weapons/Madsen</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>Interact_Rifle</soundInteract>
+        <statBases>
+            <MarketValue>1250</MarketValue>
+            <SightsEfficiency>0.85</SightsEfficiency>
+            <ShotSpread>0.14</ShotSpread>
+            <SwayFactor>1.6</SwayFactor>
+            <RangedWeapon_Cooldown>1.2</RangedWeapon_Cooldown>
+            <Bulk>12.6</Bulk>
+            <Mass>9.07</Mass>
+        </statBases>
+		<generateCommonality>0.4</generateCommonality>
+		<equippedAngleOffset>45</equippedAngleOffset>
+        <weaponTags>
+            <li>MG1</li>
+            <li>GunHeavy</li>
+            <li>MachineGun</li>
+			<li>CE_MachineGun</li>
+			<li>CE_AI_Suppressive</li>
+        </weaponTags>
+        <thingCategories>
+            <li>MachineGun</li>
+        </thingCategories>
+        <verbs>
+            <li Class="CombatExtended.VerbPropertiesCE">
+                <recoilAmount>1.28</recoilAmount>
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>Bullet_8mmM_SP</defaultProjectile>
+                <warmupTime>1.6</warmupTime>
+                <range>50</range>
+                <ticksBetweenBurstShots>8</ticksBetweenBurstShots>
+                <burstShotCount>13</burstShotCount>
+                <soundCast>Shot_Madsen</soundCast>
+                <soundCastTail>GunTail_Medium</soundCastTail>
+                <muzzleFlashScale>10</muzzleFlashScale>
+            </li>
+        </verbs>
+        <comps>
+            <li Class="CombatExtended.CompProperties_FireModes">
+                <aiUseBurstMode>true</aiUseBurstMode>
+                <aiAimMode>AimedShot</aiAimMode>
+                <aimedBurstShotCount>5</aimedBurstShotCount>
+            </li>
+            <li Class="CombatExtended.CompProperties_AmmoUser">
+                <magazineSize>25</magazineSize>
+                <reloadTime>2.8</reloadTime>
+                <ammoSet>AmmoSet_Madsen</ammoSet>
+            </li>
+        </comps>
+		<modExtensions>
+			 <li Class="CombatExtended.GunDrawExtension">
+				<DrawSize>1.1</DrawSize>
+			 </li>
+		</modExtensions>
+        <smeltProducts>
+            <ComponentIndustrial>4</ComponentIndustrial>
+            <Mechanism>1</Mechanism>
+        </smeltProducts>
+    </ThingDef>
+	
+	<!-- MG 30 LMG -->
+    <ThingDef ParentName="BaseGun_Heavy">
+        <defName>Pa_MG30L</defName>
+        <label>MG 30 LMG</label>
+        <description>A modernized light machine gun, when the light machine gun become more and more portable, then the MG 30 was created, even though it failed comparing with the MG15, it was modified to use in aircraft and exported to foreign army, it was one of the design pattern that led to MG34 and MG42.</description>
+        <graphicData>
+            <texPath>Things/Weapons/MG30</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>Interact_Rifle</soundInteract>
+        <statBases>
+            <MarketValue>1500</MarketValue>
+            <SightsEfficiency>0.9</SightsEfficiency>
+            <ShotSpread>0.11</ShotSpread>
+            <SwayFactor>1.5</SwayFactor>
+            <RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
+            <Bulk>10.8</Bulk>
+            <Mass>9.5</Mass>
+        </statBases>
+		<generateCommonality>0.4</generateCommonality>
+		<equippedAngleOffset>45</equippedAngleOffset>
+        <weaponTags>
+            <li>MG1</li>
+			<li>MG2</li>
+            <li>GunHeavy</li>
+            <li>MachineGun</li>
+			<li>CE_MachineGun</li>
+			<li>CE_AI_Suppressive</li>
+        </weaponTags>
+        <thingCategories>
+            <li>MachineGun</li>
+        </thingCategories>
+        <verbs>
+            <li Class="CombatExtended.VerbPropertiesCE">
+                <recoilAmount>1.22</recoilAmount>
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>Bullet_8mmM_SP</defaultProjectile>
+                <warmupTime>1.5</warmupTime>
+                <range>52</range>
+                <ticksBetweenBurstShots>8</ticksBetweenBurstShots>
+                <burstShotCount>10</burstShotCount>
+                <soundCast>Shot_MG34s</soundCast>
+                <soundCastTail>GunTail_Medium</soundCastTail>
+                <muzzleFlashScale>10</muzzleFlashScale>
+            </li>
+        </verbs>
+        <comps>
+            <li Class="CombatExtended.CompProperties_FireModes">
+                <aiUseBurstMode>true</aiUseBurstMode>
+                <aiAimMode>AimedShot</aiAimMode>
+                <aimedBurstShotCount>3</aimedBurstShotCount>
+            </li>
+            <li Class="CombatExtended.CompProperties_AmmoUser">
+                <magazineSize>30</magazineSize>
+                <reloadTime>2.6</reloadTime>
+                <ammoSet>AmmoSet_8mmM</ammoSet>
+            </li>
+        </comps>
+        <smeltProducts>
+            <ComponentIndustrial>6</ComponentIndustrial>
+            <Heavy_Component>1</Heavy_Component>
+        </smeltProducts>
+    </ThingDef>
+	
+	<!-- MG 34 GPMG -->
+    <ThingDef ParentName="BaseGun_Heavy">
+        <defName>Pa_MG34L</defName>
+        <label>MG 34 GPMG</label>
+        <description>Generally considered first General Purpose Machine Gun(GPMG) or Einheitsmaschinengewehr(Universal machine gun), the weapon itself can configurate to LMG, MMG, HMG, AA, Tank MG without redesign to do so, the versatile MG 34 was chambered for the full-power 7.92×57mm Mauser rifle cartridge, and was arguably the most advanced machine gun in the world at the time of its deployment.</description>
+        <graphicData>
+            <texPath>Things/Weapons/MG34</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>Interact_Rifle</soundInteract>
+        <statBases>
+            <MarketValue>2250</MarketValue>
+            <SightsEfficiency>1</SightsEfficiency>
+            <ShotSpread>0.14</ShotSpread>
+            <SwayFactor>1.6</SwayFactor>
+            <RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
+            <Bulk>13.4</Bulk>
+            <Mass>12.1</Mass>
+        </statBases>
+		<generateCommonality>0.6</generateCommonality>
+		<equippedAngleOffset>45</equippedAngleOffset>
+        <weaponTags>
+            <li>MG3</li>
+			<li>MG2</li>
+            <li>GunHeavy</li>
+            <li>MachineGun</li>
+            <li>BrotherhoodHeavy</li>
+            <li>SectarianHeavy</li>
+            <li>SyndicateMachineGun</li>
+            <li>OrionHeavy</li>
+			<li>CE_MachineGun</li>
+			<li>CE_AI_Suppressive</li>
+        </weaponTags>
+        <thingCategories>
+            <li>MachineGun</li>
+        </thingCategories>
+        <verbs>
+            <li Class="CombatExtended.VerbPropertiesCE">
+                <recoilAmount>1.52</recoilAmount>
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>Bullet_8mmM_SP</defaultProjectile>
+                <warmupTime>1.7</warmupTime>
+                <range>56</range>
+                <ticksBetweenBurstShots>4</ticksBetweenBurstShots>
+                <burstShotCount>10</burstShotCount>
+                <soundCast>Shot_MG34s</soundCast>
+                <soundCastTail>GunTail_Medium</soundCastTail>
+                <muzzleFlashScale>10</muzzleFlashScale>
+            </li>
+        </verbs>
+        <comps>
+            <li Class="CombatExtended.CompProperties_FireModes">
+                <aiUseBurstMode>true</aiUseBurstMode>
+                <aiAimMode>AimedShot</aiAimMode>
+                <aimedBurstShotCount>5</aimedBurstShotCount>
+            </li>
+            <li Class="CombatExtended.CompProperties_AmmoUser">
+                <magazineSize>50</magazineSize>
+                <reloadTime>5.8</reloadTime>
+                <ammoSet>AmmoSet_8mmM</ammoSet>
+            </li>
+        </comps>
+		<modExtensions>
+			 <li Class="CombatExtended.GunDrawExtension">
+				<DrawSize>1.1</DrawSize>
+			 </li>
+		</modExtensions>
+        <smeltProducts>
+            <ComponentIndustrial>13</ComponentIndustrial>
+            <Heavy_Component>1</Heavy_Component>
+        </smeltProducts>
+    </ThingDef>
+	
+	<!-- MG 42 GPMG -->
+    <ThingDef ParentName="BaseGun_Heavy">
+        <defName>Pa_MG42L</defName>
+        <label>MG 42 GPMG</label>
+        <description>The Maschinengewehr 42 is the intent to replace the expensive MG34 during mid war, the weapon is less complex, cheaper, more reliable and easier to produce than the MG 34, also increased its RoF up to 1200 rpm making it very effective for suppressive fire, but in the end the intent didn't really achieved due the MG 42 can't fit in the Tank hull or planes like the MG 34 does.</description>
+        <graphicData>
+            <texPath>Things/Weapons/MG42</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>Interact_Rifle</soundInteract>
+        <statBases>
+            <MarketValue>2500</MarketValue>
+            <SightsEfficiency>1</SightsEfficiency>
+            <ShotSpread>0.14</ShotSpread>
+            <SwayFactor>1.4</SwayFactor>
+            <RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
+            <Bulk>14.6</Bulk>
+            <Mass>11.6</Mass>
+        </statBases>
+		<generateCommonality>0.6</generateCommonality>
+		<equippedAngleOffset>45</equippedAngleOffset>
+        <weaponTags>
+            <li>MG3</li>
+			<li>MG2</li>
+            <li>GunHeavy</li>
+            <li>MachineGun</li>
+            <li>BrotherhoodHeavy</li>
+            <li>SectarianHeavy</li>
+            <li>SyndicateMachineGun</li>
+            <li>OrionHeavy</li>
+			<li>CE_MachineGun</li>
+			<li>CE_AI_Suppressive</li>
+        </weaponTags>
+        <thingCategories>
+            <li>MachineGun</li>
+        </thingCategories>
+        <verbs>
+            <li Class="CombatExtended.VerbPropertiesCE">
+                <recoilAmount>1.46</recoilAmount>
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>Bullet_8mmM_SP</defaultProjectile>
+                <warmupTime>1.7</warmupTime>
+                <range>56</range>
+                <ticksBetweenBurstShots>3</ticksBetweenBurstShots>
+                <burstShotCount>19</burstShotCount>
+                <soundCast>Shot_MG42s</soundCast>
+                <soundCastTail>GunTail_Medium</soundCastTail>
+                <muzzleFlashScale>10</muzzleFlashScale>
+            </li>
+        </verbs>
+        <comps>
+            <li Class="CombatExtended.CompProperties_FireModes">
+                <aiUseBurstMode>true</aiUseBurstMode>
+                <aiAimMode>AimedShot</aiAimMode>
+                <aimedBurstShotCount>7</aimedBurstShotCount>
+            </li>
+            <li Class="CombatExtended.CompProperties_AmmoUser">
+                <magazineSize>75</magazineSize>
+                <reloadTime>6.4</reloadTime>
+                <ammoSet>AmmoSet_8mmM</ammoSet>
+            </li>
+        </comps>
+		<modExtensions>
+			 <li Class="CombatExtended.GunDrawExtension">
+				<DrawSize>1.1</DrawSize>
+			 </li>
+		</modExtensions>
+        <smeltProducts>
+            <ComponentIndustrial>10</ComponentIndustrial>
+			<Weapon_Parts>2</Weapon_Parts>
+            <Heavy_Component>1</Heavy_Component>
+        </smeltProducts>
+    </ThingDef>
+	
+	<!-- MG 45/MG 1 Hybrid GPMG -->
+    <ThingDef ParentName="BaseGun_Heavy">
+        <defName>Pa_MG45H</defName>
+        <label>MG 45/1 Hybrid GPMG</label>
+        <description>The Maschinengewehr 45/1 is the intent to further simplify the MG42 during late war, the weapon is way less complex and lighter than any previous MG by removing most none essential and every bit of material it has, the weapon doesn't inherit any of their previous fire mechanism, it use an early concept of roller-delayed blowback action for a GPMG, which further increased its RoF up to 1800 rpm making it burns ammo like no tomorrow, the weapon was a prototype that didn't really get its chances to participate the war but the concept and design was carried and replicated after the war till modern era.</description>
+        <graphicData>
+            <texPath>Things/Weapons/MG45</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>Interact_Rifle</soundInteract>
+        <statBases>
+            <MarketValue>2700</MarketValue>
+            <SightsEfficiency>1.1</SightsEfficiency>
+            <ShotSpread>0.12</ShotSpread>
+            <SwayFactor>1.4</SwayFactor>
+            <RangedWeapon_Cooldown>0.9</RangedWeapon_Cooldown>
+            <Bulk>13.7</Bulk>
+            <Mass>9</Mass>
+        </statBases>
+		<generateCommonality>0.3</generateCommonality>
+		<equippedAngleOffset>45</equippedAngleOffset>
+        <weaponTags>
+            <li>MG3</li>
+            <li>GunHeavy</li>
+            <li>MachineGun</li>
+            <li>BrotherhoodHeavy</li>
+            <li>SectarianHeavy</li>
+            <li>SyndicateMachineGun</li>
+            <li>OrionHeavy</li>
+			<li>CE_MachineGun</li>
+			<li>CE_AI_Suppressive</li>
+        </weaponTags>
+        <thingCategories>
+            <li>MachineGun</li>
+        </thingCategories>
+        <verbs>
+            <li Class="CombatExtended.VerbPropertiesCE">
+                <recoilAmount>1.38</recoilAmount>
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>Bullet_8mmM_SP</defaultProjectile>
+                <warmupTime>1.6</warmupTime>
+                <range>56</range>
+                <ticksBetweenBurstShots>2</ticksBetweenBurstShots>
+                <burstShotCount>24</burstShotCount>
+                <soundCast>Shot_MG42s</soundCast>
+                <soundCastTail>GunTail_Medium</soundCastTail>
+                <muzzleFlashScale>10</muzzleFlashScale>
+            </li>
+        </verbs>
+        <comps>
+            <li Class="CombatExtended.CompProperties_FireModes">
+                <aiUseBurstMode>true</aiUseBurstMode>
+                <aiAimMode>AimedShot</aiAimMode>
+                <aimedBurstShotCount>12</aimedBurstShotCount>
+            </li>
+            <li Class="CombatExtended.CompProperties_AmmoUser">
+                <magazineSize>120</magazineSize>
+                <reloadTime>8.6</reloadTime>
+                <ammoSet>AmmoSet_K98k</ammoSet>
+            </li>
+        </comps>
+		<modExtensions>
+			 <li Class="CombatExtended.GunDrawExtension">
+				<DrawSize>1.1</DrawSize>
+			 </li>
+		</modExtensions>
+        <smeltProducts>
+            <ComponentIndustrial>6</ComponentIndustrial>
+			<Weapon_Parts>2</Weapon_Parts>
+            <Heavy_Component>1</Heavy_Component>
+        </smeltProducts>
+    </ThingDef>
+	
 </Defs>

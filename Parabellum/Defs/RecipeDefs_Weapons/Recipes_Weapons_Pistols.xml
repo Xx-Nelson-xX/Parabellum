@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-
+	
+	<!-- Sturer Survival Pistol -->
 	<RecipeDef ParentName="RangedWeaponRecipeBase">
 		<defName>BuildSP</defName>
 		<label>Build Sturer Survival Pistol</label>
@@ -82,6 +83,8 @@
 		<researchPrerequisite>Gunsmithing</researchPrerequisite>
 	</RecipeDef>
 	
+	
+	<!-- Medusa Survival Revolver -->
 	<RecipeDef ParentName="RangedWeaponRecipeBase">
 		<defName>BuildSR</defName>
 		<label>Build Medusa Survival Revolver</label>
@@ -155,6 +158,124 @@
 				<li>USLDBar</li>
 				<li>Woody</li>
 				<li>Leathers</li>
+			</categories>
+		</fixedIngredientFilter>
+		<recipeUsers>
+			<li>WeaponCraftingWorkTable</li>
+		</recipeUsers>
+		<researchPrerequisite>Gunsmithing</researchPrerequisite>
+	</RecipeDef>
+	
+	<!-- Mauser C96 Semi-Automatic Pistol -->
+	<RecipeDef ParentName="RangedWeaponRecipeBase">
+		<defName>BuildC96M</defName>
+		<label>Build Mauser C96 Pistol</label>
+		<description>Build a Mauser C96 Pistol, a very popular pistol in certain Asian Country.\nCaliber: 7.63x25mm Mauser / 9x19mm Parabellum / .45 ACP.</description>
+		<jobString>Building Mauser C96 Pistol</jobString>
+		<workAmount>7500</workAmount>
+		<skillRequirements>
+			<Crafting>5</Crafting>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>14</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>SLDBar</li>
+					</categories>
+				</filter>
+				<count>24</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>Woody</li>	
+					</categories>
+				</filter>
+				<count>8</count>
+			</li>
+		</ingredients>
+		<products>
+			<Pa_C96M>1</Pa_C96M>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>ComponentIndustrial</li>
+			</thingDefs>
+			<categories>
+				<li>SLDBar</li>
+				<li>Woody</li>
+			</categories>
+		</fixedIngredientFilter>
+		<recipeUsers>
+			<li>FabricationBench</li>
+		</recipeUsers>
+		<researchPrerequisite>Parabellum_Alpha</researchPrerequisite>
+	</RecipeDef>
+	
+	<!-- Mauser C96 Semi-Automatic Pistol -->
+	<RecipeDef ParentName="RangedWeaponRecipeBase">
+		<defName>BuildM712S</defName>
+		<label>Build M712 "Schnellfeuer" Pistol</label>
+		<description>Build a M712 "Schnellfeuer" Pistol, now you can have an automatic "Broomhandle".\nCaliber: 7.63x25mm Mauser / 9x19mm Parabellum / .45 ACP</description>
+		<jobString>Building M712 "Schnellfeuer" Pistol</jobString>
+		<workAmount>8200</workAmount>
+		<skillRequirements>
+			<Crafting>7</Crafting>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Pistol_Component</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>12</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>Metallic</li>
+					</categories>
+				</filter>
+				<count>32</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>Woody</li>	
+					</categories>
+				</filter>
+				<count>8</count>
+			</li>
+		</ingredients>
+		<products>
+			<Pa_M712S>1</Pa_M712S>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Weapon_Parts</li>
+				<li>ComponentIndustrial</li>
+			</thingDefs>
+			<categories>
+				<li>SLDBar</li>
+				<li>USLDBar</li>
+				<li>Woody</li>
 			</categories>
 		</fixedIngredientFilter>
 		<recipeUsers>

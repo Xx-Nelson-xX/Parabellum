@@ -1,9 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
+	<ResearchProjectDef ParentName="MedievalBase">
+		<defName>Parabellum_Alpha</defName>
+		<label>Parebellum</label>
+		<description>Welcome to the gap between Industrial and Pre-Industrial, where the preparation of war is essential, future enemies awaits, and you are about to witness the wonder of humanity achieved by using violence combined with intelligence.</description>
+		<baseCost>400</baseCost>
+		<techLevel>Medieval</techLevel>
+		<researchViewX>7.00</researchViewX>
+		<researchViewY>30.00</researchViewY>
+		<prerequisites>
+			<li>Bow_B2</li>
+		</prerequisites>
+		<tab>Weapon_SK</tab>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef ParentName="MedievalBase">
+		<defName>Parabellum_Beta</defName>
+		<label>Defensive Measure I</label>
+		<description>Early Development of Medium Machine Guns, something to deal with a horde of angry mobs and your not-so-friendly neighbor paying you a surprise visit in considerable large number.</description>
+		<baseCost>400</baseCost>
+		<techLevel>Medieval</techLevel>
+		<researchViewX>9.00</researchViewX>
+		<researchViewY>36.00</researchViewY>
+		<prerequisites>
+			<li>Machining</li>
+			<li>Ballista_B1</li>
+		</prerequisites>
+		<tab>Weapon_SK</tab>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef ParentName="IndustrialBase">
+		<defName>Parabellum_Gamma</defName>
+		<label>Defensive Measure II</label>
+		<description>Early development of Heavy Machine Guns, Anti-Aircraft Guns and Anti-Tank Guns, something to deal with Armored Target and walking/living tanks.</description>
+		<baseCost>600</baseCost>
+		<techLevel>Medieval</techLevel>
+		<researchViewX>13.00</researchViewX>
+		<researchViewY>36.00</researchViewY>
+		<prerequisites>
+			<li>Rifles_C1</li>
+			<li>BlowbackOperation</li>
+			<li>Parabellum_Beta</li>
+		</prerequisites>
+		<tab>Weapon_SK</tab>
+	</ResearchProjectDef>
+	
 	<ResearchProjectDef ParentName="HitechMultiBase">
 		<defName>Parabellum_I</defName>
 		<label>Wunderwaffen I</label>
-		<description>Wonder of over-engineering, just throw away complexity and logistic for a moment, when it works, it works, implovemenst and simplification comes later.</description>
+		<description>Wonder of over-engineering, just throw away complexity and logistic for a moment, when it works, it works, implovemenst and simplification comes later, or when you are in good mood for it.</description>
 		<baseCost>2200</baseCost>
 		<techLevel>Spacer</techLevel>
 		<researchViewX>18.00</researchViewX>

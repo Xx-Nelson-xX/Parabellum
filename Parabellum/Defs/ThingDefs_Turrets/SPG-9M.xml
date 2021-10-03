@@ -12,6 +12,7 @@
 		</graphicData>
 		<description>SPG-9M attached to a tripod.</description>
 		<techLevel>Industrial</techLevel>
+		<tradeability>None</tradeability>
 		<statBases>
 			<MarketValue>2000</MarketValue>
 			<SightsEfficiency>2.5</SightsEfficiency>
@@ -64,6 +65,7 @@
 		</graphicData>
 		<description>SPG-9M(D) attached to a tripod.</description>
 		<techLevel>Industrial</techLevel>
+		<tradeability>None</tradeability>
 		<statBases>
 			<MarketValue>3600</MarketValue>
 			<SightsEfficiency>1.9</SightsEfficiency>

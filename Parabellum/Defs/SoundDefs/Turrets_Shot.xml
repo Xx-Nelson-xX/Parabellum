@@ -1,6 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
+	<!-- ==================== 37mm Pak36/L45 ========================== -->
+
+	<SoundDef>
+		<defName>Shot_37mm</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<maxSimultaneous>1</maxSimultaneous>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Weapons/37mm</clipPath>
+					</li>
+				</grains>
+				<pitchRange>
+					<min>0.9152174</min>
+					<max>1.042391</max>
+				</pitchRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+
 	<!-- ==================== 50mm Pak38/L60 ========================== -->
 
 	<SoundDef>

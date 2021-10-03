@@ -43,6 +43,23 @@
 		<generateAllowChance>0.05</generateAllowChance>
 		<detonateProjectile>Bullet_155mmHowitzerShell_Nuke</detonateProjectile>
 	</ThingDef>
+	
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="155mmHowitzerShellBase">
+		<defName>Ammo_155mmHowitzerShell_ADAM</defName>
+		<label>155mm howitzer shell (ADAM)</label>
+		<description>155 mm (6.1") ADAM, aka. Area Denial Artillery Munition, artillery projectile packed with few dozen of land mines, in this case M67/M72 AP mines, designed for Area Denial, to disrupt sizeable zone by long range rapid land mine deploying.</description>
+		<graphicData>
+			<texPath>Things/Ammo/155mm/ADAM</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>860</MarketValue>
+		</statBases>
+		<ammoClass>155mmADAM</ammoClass>
+		<techLevel>Spacer</techLevel>
+		<generateAllowChance>0</generateAllowChance>
+		<detonateProjectile>Bullet_155mmHowitzerShell_ADAM</detonateProjectile>
+	</ThingDef>
 
 	<!-- ================== Projectiles ================== -->
 
@@ -88,14 +105,40 @@
 			</li>
 		</comps>
 	</ThingDef>
+	
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="Base155mmHowitzerShell">
+		<defName>Bullet_155mmHowitzerShell_ADAM</defName>
+		<label>155mm howitzer shell (ADAM)</label>
+		<graphicData>
+			<texPath>Things/Projectile/155mm/ADAM</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageDef>Bomb</damageDef>
+			<damageAmountBase>80</damageAmountBase>
+			<explosionRadius>1</explosionRadius>
+			<explosionChanceToStartFire>0</explosionChanceToStartFire>
+			<soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
+			<soundExplode>Explosion_Stun</soundExplode>
+			<soundImpactAnticipate>MortarRound_PreImpact</soundImpactAnticipate>
+			<soundAmbient>MortarRound_Ambient</soundAmbient>
+		</projectile>
+		<comps>
+			<li Class="CombatExtended.CompProperties_Fragments">
+				<fragments>
+					<Fragment_Mines>36</Fragment_Mines>
+				</fragments>
+			</li>
+		</comps>
+	</ThingDef>
 
 	<!-- ==================== Recipes ========================== -->
 
 	<RecipeDef ParentName="AmmoRecipeBase">
 		<defName>MakeAmmo_155mmHowitzerShell_Nuke</defName>
 		<label>make 155mm W48 AFAP howitzer shells x1</label>
-		<description>Craft 155mm W48 AFAP howitzer shells.</description>
-		<jobString>Making 155mm W48 AFAP howitzer shells.</jobString>
+		<description>Craft a 155mm W48 AFAP howitzer shell.</description>
+		<jobString>Making a 155mm W48 AFAP howitzer shell.</jobString>
 		<workAmount>16000</workAmount>
 		<targetCountAdjustment>5</targetCountAdjustment>
 		<ingredients>
@@ -167,6 +210,94 @@
         <Crafting>15</Crafting>
       </skillRequirements>
 		<researchPrerequisite>Parabellum_A</researchPrerequisite>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="AmmoRecipeBase">
+		<defName>MakeAmmo_155mmHowitzerShell_ADAM</defName>
+		<label>make 155mm ADAM howitzer shells x1</label>
+		<description>Craft a 155mm ADAM howitzer shell.</description>
+		<jobString>Making a 155mm ADAM howitzer shell.</jobString>
+		<workAmount>2000</workAmount>
+		<targetCountAdjustment>10</targetCountAdjustment>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>SLDBar</li>
+						<li>USLDBar</li>
+					</categories>
+				</filter>
+				<count>475</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>HeavyBar</li>
+					</categories>
+				</filter>
+				<count>10</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Powder</li>
+						<li>FSX</li>
+					</thingDefs>
+				</filter>
+				<count>75</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Plastic</li>
+					</thingDefs>
+				</filter>
+				<count>150</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Wire</li>
+					</thingDefs>
+				</filter>
+				<count>72</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Weapon_Parts</li>
+					</thingDefs>
+				</filter>
+				<count>36</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>3</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>SLDBar</li>
+				<li>USLDBar</li>
+				<li>HeavyBar</li>
+			</categories>
+			<thingDefs>
+				<li>Powder</li>
+				<li>FSX</li>
+				<li>Wire</li>
+				<li>Plastic</li>
+				<li>Weapon_Parts</li>
+				<li>ComponentIndustrial</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Ammo_155mmHowitzerShell_ADAM>1</Ammo_155mmHowitzerShell_ADAM>
+		</products>
+		<researchPrerequisite>Parabellum_I</researchPrerequisite>
 	</RecipeDef>
 
 </Defs>

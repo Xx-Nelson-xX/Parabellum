@@ -13,6 +13,7 @@
 		<soundInteract>Artillery_ShellLoaded</soundInteract>
 		<description>Wombat attached to a towable platform.</description>
 		<techLevel>Industrial</techLevel>
+		<tradeability>None</tradeability>
 		<statBases>
 			<MarketValue>2100</MarketValue>
 			<SightsEfficiency>1.6</SightsEfficiency>
@@ -34,7 +35,7 @@
 				<circularError>1.4</circularError>
 				<warmupTime>1.9</warmupTime>
 				<minRange>12</minRange>
-				<range>80</range>
+				<range>90</range>
 				<soundCast>120mm</soundCast>
 				<targetParams>
 					<canTargetLocations>true</canTargetLocations>
@@ -103,8 +104,6 @@
 		</researchPrerequisites>
 		<constructionSkillPrerequisite>12</constructionSkillPrerequisite>
 	</ThingDef>
-	
-
 
 <!--=============== Crate Base ===============-->
 

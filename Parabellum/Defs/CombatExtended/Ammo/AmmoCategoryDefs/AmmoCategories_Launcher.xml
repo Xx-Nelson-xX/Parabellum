@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-
+	
+	<!-- =============== Carl Gustav Shell =============== -->
    <CombatExtended.AmmoCategoryDef>
     <defName>CGHE</defName>
     <label>CG High Explosive</label>
@@ -22,6 +23,7 @@
     <description>Flechette round for close range defense.</description>
   </CombatExtended.AmmoCategoryDef>
   
+  <!-- =============== 40x29mm Grenades =============== -->
   <CombatExtended.AmmoCategoryDef>
     <defName>GrenadeBB</defName>
     <label>40mm Bean Bag Grenade</label>
@@ -50,6 +52,7 @@
     <description>Non-Lethal Foam Round, capable to extinghish fire.</description>
   </CombatExtended.AmmoCategoryDef>
   
+  <!-- =============== 66mm LAW Rockets =============== -->
   <CombatExtended.AmmoCategoryDef>
     <defName>TEA</defName>
     <label>66mm Incendiary</label>
@@ -57,6 +60,7 @@
     <description>Incendiary round to scorch an area with flames.</description>
   </CombatExtended.AmmoCategoryDef>
   
+  <!-- =============== Panzerfaust Warheads =============== -->
   <CombatExtended.AmmoCategoryDef>
     <defName>PzFHEAT</defName>
     <label>Panzerfaust HEAT</label>
@@ -71,6 +75,7 @@
     <description>Modified warhead, filled with metal fragments and shrapnels.</description>
   </CombatExtended.AmmoCategoryDef>
   
+  <!-- =============== 25x59mm grenades =============== -->
   <CombatExtended.AmmoCategoryDef>
     <defName>25x59mmHEAB</defName>
     <label>25x59mm HEAB</label>
@@ -99,6 +104,7 @@
     <description>Explosive munition with both fragmentation and electromagnetic pulse damage.</description>
   </CombatExtended.AmmoCategoryDef>
   
+  <!-- =============== RPzB Rockets =============== -->
   <CombatExtended.AmmoCategoryDef>
     <defName>RPzBHEAT</defName>
     <label>88mm RPzB HEAT</label>

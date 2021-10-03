@@ -12,7 +12,7 @@
         </graphicData>
         <soundInteract>Interact_Rifle</soundInteract>
         <statBases>
-            <MarketValue>800</MarketValue>
+            <MarketValue>640</MarketValue>
             <SightsEfficiency>1.15</SightsEfficiency>
             <ShotSpread>0.02</ShotSpread>
             <SwayFactor>1</SwayFactor>
@@ -20,16 +20,16 @@
             <Bulk>7.5</Bulk>
             <Mass>3.74</Mass>
         </statBases>
-		<generateCommonality>0.7</generateCommonality>
+		<generateCommonality>0.4</generateCommonality>
 		<equippedStatOffsets>
 			<HuntingStealth>0.85</HuntingStealth>
 		</equippedStatOffsets>
         <weaponTags>
             <li>RF1</li>
             <li>Gun</li>
-            <li>TierTwoRifle</li>
+            <li>SniperRifle</li>
             <li>TierOneRifle</li>
-			<li>TierOneSniper</li>
+            <li>TierOneSniper</li>
             <li>CE_AI_Rifle</li>
         </weaponTags>
         <thingCategories>
@@ -59,8 +59,8 @@
             </li>
         </comps>
         <smeltProducts>
-            <Rifle_Component>1</Rifle_Component>
-            <Weapon_Parts>2</Weapon_Parts>
+            <ComponentIndustrial>1</ComponentIndustrial>
+            <Weapon_Parts>1</Weapon_Parts>
         </smeltProducts>
     </ThingDef>
 	
@@ -191,6 +191,276 @@
             <Rifle_Component>1</Rifle_Component>
             <Weapon_Parts>2</Weapon_Parts>
             <Plastic>5</Plastic>
+        </smeltProducts>
+    </ThingDef>
+	
+	<!-- Karabiner Model 1890 Bolt Action Carabine -->
+    <ThingDef ParentName="BaseGun_LongBarreled">
+        <defName>Pa_K90M</defName>
+        <label>Karabiner Model 1890</label>
+        <description>A shorter version of the Gewehr Model 1888 for Cavary, to improve its mobility, the trade off is reduced effective range and Accuracy.</description>
+        <graphicData>
+            <texPath>Things/Weapons/K90</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>Interact_Rifle</soundInteract>
+        <statBases>
+            <MarketValue>550</MarketValue>
+            <SightsEfficiency>1.05</SightsEfficiency>
+            <ShotSpread>0.3</ShotSpread>
+            <SwayFactor>1.3</SwayFactor>
+            <RangedWeapon_Cooldown>1.2</RangedWeapon_Cooldown>
+            <Bulk>8.36</Bulk>
+            <Mass>3</Mass>
+        </statBases>
+		<generateCommonality>0.4</generateCommonality>
+        <weaponTags>
+            <li>RF1</li>
+            <li>Gun</li>
+            <li>SniperRifle</li>
+            <li>TierOneRifle</li>
+            <li>TierOneSniper</li>
+            <li>CE_AI_Rifle</li>
+        </weaponTags>
+        <thingCategories>
+            <li>Rifles</li>
+        </thingCategories>
+        <verbs>
+            <li Class="CombatExtended.VerbPropertiesCE">
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>Bullet_8mmM_P88M</defaultProjectile>
+                <warmupTime>1</warmupTime>
+                <range>42</range>
+                <soundCast>Shot_G88M</soundCast>
+                <soundCastTail>GunTail_Heavy</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+            </li>
+        </verbs>
+        <comps>
+            <li Class="CombatExtended.CompProperties_FireModes">
+                <aiAimMode>AimedShot</aiAimMode>
+            </li>
+            <li Class="CombatExtended.CompProperties_AmmoUser">
+                <magazineSize>5</magazineSize>
+                <reloadTime>2.2</reloadTime>
+                <ammoSet>AmmoSet_8mmM</ammoSet>
+            </li>
+        </comps>
+		<modExtensions>
+		  <li Class="CombatExtended.GunDrawExtension">
+			<DrawSize>1.3</DrawSize>
+		  </li>
+		</modExtensions>
+        <smeltProducts>
+            <Plasteel>6</Plasteel>
+			<ComponentIndustrial>4</ComponentIndustrial>
+        </smeltProducts>
+    </ThingDef>
+	
+	<!-- Mauser Karabiner 98 Kurz(Replica) -->
+    <ThingDef ParentName="BaseGun_LongBarreled">
+        <defName>Pa_K98k</defName>
+        <label>Mauser Karabiner 98k(R)</label>
+        <description>One of the latest version of Mauser Bolt Action Rifle Family, the culmination of the Mauser family and one of the best old school rifle for its time,the replica made it capable to fit modern rifle rounds.</description>
+        <graphicData>
+            <texPath>Things/Weapons/98k</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>Interact_Rifle</soundInteract>
+        <statBases>
+            <MarketValue>800</MarketValue>
+            <SightsEfficiency>1.25</SightsEfficiency>
+            <ShotSpread>0.02</ShotSpread>
+            <SwayFactor>1.15</SwayFactor>
+            <RangedWeapon_Cooldown>0.9</RangedWeapon_Cooldown>
+            <Bulk>9.6</Bulk>
+            <Mass>3.7</Mass>
+        </statBases>
+		<generateCommonality>0.5</generateCommonality>
+		<equippedAngleOffset>45</equippedAngleOffset>
+        <weaponTags>
+            <li>RF1</li>
+			<li>RF2</li>
+            <li>Gun</li>
+            <li>SniperRifle</li>
+            <li>TierOneRifle</li>
+			<li>TierTwoRifle</li>
+            <li>TierOneSniper</li>
+            <li>CE_AI_Rifle</li>
+        </weaponTags>
+        <thingCategories>
+            <li>Rifles</li>
+        </thingCategories>
+        <verbs>
+            <li Class="CombatExtended.VerbPropertiesCE">
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>Bullet_8mmM_SP</defaultProjectile>
+                <warmupTime>1.6</warmupTime>
+                <range>57</range>
+                <soundCast>Shot_G88M</soundCast>
+                <soundCastTail>GunTail_Heavy</soundCastTail>
+                <muzzleFlashScale>10</muzzleFlashScale>
+            </li>
+        </verbs>
+        <comps>
+            <li Class="CombatExtended.CompProperties_FireModes">
+                <aiAimMode>AimedShot</aiAimMode>
+            </li>
+            <li Class="CombatExtended.CompProperties_AmmoUser">
+                <magazineSize>5</magazineSize>
+                <reloadTime>2</reloadTime>
+                <ammoSet>AmmoSet_K98k</ammoSet>
+            </li>
+        </comps>
+		<modExtensions>
+		  <li Class="CombatExtended.GunDrawExtension">
+			<DrawSize>1.1</DrawSize>
+		  </li>
+		</modExtensions>
+        <smeltProducts>
+			<ComponentIndustrial>4</ComponentIndustrial>
+            <Weapon_Parts>1</Weapon_Parts>
+        </smeltProducts>
+    </ThingDef>
+	
+	<!-- Gewehr 41(Walther) -->
+    <ThingDef ParentName="BaseGun_LongBarreled">
+        <defName>Pa_G41W</defName>
+        <label>Gewehr 41(W)</label>
+        <description>One of the early attemp to create a semi-automatic rifle by Walther, to increase firepower of rifleman squad, the other one was from Mauser, due the weapon complexity and reliability, the project was superseeded by Gewehr 43, but still, Walther achieved better result than Mauser's G41(M) did.</description>
+        <graphicData>
+            <texPath>Things/Weapons/G41W</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>Interact_Rifle</soundInteract>
+        <statBases>
+            <MarketValue>1200</MarketValue>
+            <SightsEfficiency>1.2</SightsEfficiency>
+            <ShotSpread>0.028</ShotSpread>
+            <SwayFactor>1.3</SwayFactor>
+            <RangedWeapon_Cooldown>0.8</RangedWeapon_Cooldown>
+            <Bulk>9.9</Bulk>
+            <Mass>4.9</Mass>
+        </statBases>
+		<generateCommonality>0.4</generateCommonality>
+		<equippedAngleOffset>45</equippedAngleOffset>
+        <weaponTags>
+			<li>RF1</li>
+			<li>RF2</li>
+            <li>Gun</li>
+            <li>SniperRifle</li>
+            <li>TierOneRifle</li>
+			<li>TierTwoRifle</li>
+            <li>TierOneSniper</li>
+            <li>CE_AI_Rifle</li>
+        </weaponTags>
+        <thingCategories>
+            <li>Rifles</li>
+        </thingCategories>
+        <verbs>
+            <li Class="CombatExtended.VerbPropertiesCE">
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>Bullet_8mmM_SP</defaultProjectile>
+                <warmupTime>1.5</warmupTime>
+                <range>52</range>
+                <soundCast>Shot_G43K</soundCast>
+                <soundCastTail>GunTail_Heavy</soundCastTail>
+                <muzzleFlashScale>10</muzzleFlashScale>
+            </li>
+        </verbs>
+        <comps>
+            <li Class="CombatExtended.CompProperties_FireModes">
+                <aiAimMode>AimedShot</aiAimMode>
+            </li>
+            <li Class="CombatExtended.CompProperties_AmmoUser">
+                <magazineSize>10</magazineSize>
+                <reloadOneAtATime>true</reloadOneAtATime>
+                <reloadTime>0.5</reloadTime>
+                <ammoSet>AmmoSet_8mmM</ammoSet>
+            </li>
+        </comps>
+		<modExtensions>
+		  <li Class="CombatExtended.GunDrawExtension">
+			<DrawSize>1.1</DrawSize>
+		  </li>
+		</modExtensions>
+        <smeltProducts>
+			<Rifle_Component>1</Rifle_Component>
+            <Weapon_Parts>1</Weapon_Parts>
+        </smeltProducts>
+    </ThingDef>
+	
+	<!-- Gewehr/Karabiner 43 -->
+    <ThingDef ParentName="BaseGun_LongBarreled">
+        <defName>Pa_G43K</defName>
+        <label>Gewehr 43</label>
+        <description>The succesor of both G41(W) and G41(M), included improved short-stroke piston gas system which solved the reliability issue, and detachable 10 rounds magazine box to speed up its reaload.</description>
+        <graphicData>
+            <texPath>Things/Weapons/G43</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>Interact_Rifle</soundInteract>
+        <statBases>
+            <MarketValue>1300</MarketValue>
+            <SightsEfficiency>1.25</SightsEfficiency>
+            <ShotSpread>0.022</ShotSpread>
+            <SwayFactor>1.2</SwayFactor>
+            <RangedWeapon_Cooldown>0.7</RangedWeapon_Cooldown>
+            <Bulk>9.7</Bulk>
+            <Mass>4.4</Mass>
+        </statBases>
+		<generateCommonality>0.4</generateCommonality>
+		<equippedAngleOffset>45</equippedAngleOffset>
+        <weaponTags>
+			<li>RF2</li>
+			<li>RF3</li>
+            <li>Gun</li>
+            <li>SniperRifle</li>
+			<li>AdvancedGun</li>
+			<li>TierTwoRifle</li>
+            <li>TierOneSniper</li>
+            <li>CE_AI_Rifle</li>
+        </weaponTags>
+        <thingCategories>
+            <li>Rifles</li>
+        </thingCategories>
+        <verbs>
+            <li Class="CombatExtended.VerbPropertiesCE">
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>Bullet_8mmM_SP</defaultProjectile>
+                <warmupTime>1.4</warmupTime>
+				<burstShotCount>3</burstShotCount>
+                <ticksBetweenBurstShots>100</ticksBetweenBurstShots>
+                <range>57</range>
+                <soundCast>Shot_G43K</soundCast>
+                <soundCastTail>GunTail_Heavy</soundCastTail>
+                <muzzleFlashScale>10</muzzleFlashScale>
+            </li>
+        </verbs>
+        <comps>
+            <li Class="CombatExtended.CompProperties_FireModes">
+                <aiUseBurstMode>true</aiUseBurstMode>
+                <aiAimMode>AimedShot</aiAimMode>
+				<aimedBurstShotCount>2</aimedBurstShotCount>
+            </li>
+            <li Class="CombatExtended.CompProperties_AmmoUser">
+                <magazineSize>10</magazineSize>
+                <reloadTime>2.1</reloadTime>
+                <ammoSet>AmmoSet_8mmM</ammoSet>
+            </li>
+        </comps>
+		<modExtensions>
+		  <li Class="CombatExtended.GunDrawExtension">
+			<DrawSize>1.1</DrawSize>
+		  </li>
+		</modExtensions>
+        <smeltProducts>
+			<Rifle_Component>1</Rifle_Component>
+            <Weapon_Parts>1</Weapon_Parts>
         </smeltProducts>
     </ThingDef>
 

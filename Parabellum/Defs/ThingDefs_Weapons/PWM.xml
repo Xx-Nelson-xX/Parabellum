@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- ==================== AmmoSet ========================== -->
+	
+	<!-- ==================== Ammo ========================== -->
+	
+	<!-- ==================== DamageDef ========================== -->
+	
+	<DamageDef ParentName="Bullet">
+		<defName>Warhead</defName>
+		<label>Impact explosive</label>
+		<deathMessage>{0} has died in an explosion.</deathMessage>
+		<hediff>Shredded</hediff>
+		<hediffSolid>Crack</hediffSolid>
+	</DamageDef>
+
+	<!-- ================== Projectiles ================== -->
+
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="SK_BaseBullet" Name="BaseIGProjectile" Abstract="true">
+		<graphicData>
+			<texPath>Things/Projectile/Grenades/PWM</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageDef>Warhead</damageDef>
+			<soundExplode>Explosion_Bomb</soundExplode>
+			<explosionDelay>5</explosionDelay>
+		</projectile>
+		<comps>
+			<li Class="CombatExtended.CompProperties_ExplosiveCE">
+				<damageAmountBase>40</damageAmountBase>
+				<explosiveDamageType>Bomb</explosiveDamageType>
+				<explosiveRadius>1.4</explosiveRadius>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="BaseIGProjectile">
+		<defName>Proj_PWM</defName>
+		<label>PWM ATIG</label>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<speed>38</speed>
+			<damageAmountBase>160</damageAmountBase>
+			<armorPenetrationSharp>150</armorPenetrationSharp>
+			<armorPenetrationBlunt>52.16</armorPenetrationBlunt>
+		</projectile>
+	</ThingDef>
+	
+	<!-- ==================== Recipes ========================== -->
+	
+</Defs>

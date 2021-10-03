@@ -386,7 +386,7 @@
 						<li>Weapon_Parts</li>
 					</thingDefs>
 				</filter>
-				<count>20</count>
+				<count>6</count>
 			</li>
 			<li>
 				<filter>
@@ -402,7 +402,7 @@
 						<li>Metallic</li>
 					</categories>
 				</filter>
-				<count>80</count>
+				<count>60</count>
 			</li>
 		</ingredients>
 		<products>
@@ -448,7 +448,7 @@
 						<li>Weapon_Parts</li>
 					</thingDefs>
 				</filter>
-				<count>10</count>
+				<count>4</count>
 			</li>
 			<li>
 				<filter>
@@ -472,7 +472,7 @@
 						<li>Woody</li>
 					</categories>
 				</filter>
-				<count>10</count>
+				<count>14</count>
 			</li>
 		</ingredients>
 		<products>

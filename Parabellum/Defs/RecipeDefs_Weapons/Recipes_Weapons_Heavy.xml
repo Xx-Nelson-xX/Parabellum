@@ -1,14 +1,272 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-
+	
+	<!-- Lewis LMG -->
 	<RecipeDef ParentName="RangedWeaponRecipeBase">
 		<defName>BuildLewis</defName>
 		<label>Build Lewis LMG</label>
-		<description>Builds the Lewis LMG</description>
+		<description>Builds the Lewis LMG, God bless the Queen.\nCaliber: .303 British</description>
 		<jobString>Building Lewis LMG</jobString>
-		<workAmount>14000</workAmount>
+		<workAmount>12200</workAmount>
 		<skillRequirements>
 			<Crafting>10</Crafting>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Mechanism</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>14</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>Metallic</li>
+					</categories>
+				</filter>
+				<count>47</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>Woody</li>
+					</categories>
+				</filter>
+				<count>42</count>
+			</li>
+		</ingredients>
+		<products>
+			<Pa_Lewis>1</Pa_Lewis>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Mechanism</li>
+				<li>Weapon_Parts</li>
+				<li>ComponentIndustrial</li>
+			</thingDefs>
+			<categories>
+				<li>SLDBar</li>
+				<li>USLDBar</li>
+				<li>Woody</li>
+			</categories>
+		</fixedIngredientFilter>
+		<recipeUsers>
+			<li>WeaponCraftingWorkTable</li>
+		</recipeUsers>
+		<researchPrerequisite>Rifles_C1</researchPrerequisite>
+	</RecipeDef>
+	
+	<!-- MG 08/15 LMG -->
+	<RecipeDef ParentName="RangedWeaponRecipeBase">
+		<defName>BuildMG0815L</defName>
+		<label>Build MG 08/15 LMG</label>
+		<description>Builds the MG 08/15 LMG, all you need to do is pull the trigger and keep advancing, be a walking tank.\nCaliber: 8mm Mauser Rifle Catridge</description>
+		<jobString>Building MG 08/15 LMG</jobString>
+		<workAmount>13200</workAmount>
+		<skillRequirements>
+			<Crafting>10</Crafting>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Mechanism</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>18</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>Metallic</li>
+					</categories>
+				</filter>
+				<count>78</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>Woody</li>
+					</categories>
+				</filter>
+				<count>32</count>
+			</li>
+		</ingredients>
+		<products>
+			<Pa_MG0815L>1</Pa_MG0815L>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Mechanism</li>
+				<li>ComponentIndustrial</li>
+			</thingDefs>
+			<categories>
+				<li>SLDBar</li>
+				<li>USLDBar</li>
+				<li>Woody</li>
+			</categories>
+		</fixedIngredientFilter>
+		<recipeUsers>
+			<li>WeaponCraftingWorkTable</li>
+		</recipeUsers>
+		<researchPrerequisite>Machining</researchPrerequisite>
+	</RecipeDef>
+	
+	<!-- Madsen LMG -->
+	<RecipeDef ParentName="RangedWeaponRecipeBase">
+		<defName>BuildMadsen</defName>
+		<label>Build Madsen LMG</label>
+		<description>Builds the Madsen LMG, is a magazine fed LMG, not any fancy quadstack modern magazine, so gonna reload frequantly if you want to keep shooting.\nCaliber: 7~8mm Rifle Caliber</description>
+		<jobString>Building Madsen LMG</jobString>
+		<workAmount>12200</workAmount>
+		<skillRequirements>
+			<Crafting>12</Crafting>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Mechanism</li>
+					</thingDefs>
+				</filter>
+				<count>4</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>12</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>Metallic</li>
+					</categories>
+				</filter>
+				<count>46</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>Woody</li>
+					</categories>
+				</filter>
+				<count>36</count>
+			</li>
+		</ingredients>
+		<products>
+			<Pa_Madsen>1</Pa_Madsen>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Mechanism</li>
+				<li>ComponentIndustrial</li>
+			</thingDefs>
+			<categories>
+				<li>SLDBar</li>
+				<li>USLDBar</li>
+				<li>Woody</li>
+			</categories>
+		</fixedIngredientFilter>
+		<recipeUsers>
+			<li>WeaponCraftingWorkTable</li>
+		</recipeUsers>
+		<researchPrerequisite>Rifles_C1</researchPrerequisite>
+	</RecipeDef>
+	
+	<!-- MG 30 LMG -->
+	<RecipeDef ParentName="RangedWeaponRecipeBase">
+		<defName>BuildMG30L</defName>
+		<label>Build MG 30 LMG</label>
+		<description>Builds the Maschinengewehr 30 LMG, is a magazine fed LMG, not any fancy quadstack modern magazine, so gonna reload frequantly if you want to keep shooting.\nCaliber: 8mm Mauser Rifle Catridge</description>
+		<jobString>Building MG30 LMG</jobString>
+		<workAmount>12000</workAmount>
+		<skillRequirements>
+			<Crafting>12</Crafting>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Weapon_Parts</li>
+					</thingDefs>
+				</filter>
+				<count>4</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>Metallic</li>
+					</categories>
+				</filter>
+				<count>42</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>Woody</li>
+					</categories>
+				</filter>
+				<count>32</count>
+			</li>
+		</ingredients>
+		<products>
+			<Pa_MG30L>1</Pa_MG30L>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Weapon_Parts</li>
+				<li>ComponentIndustrial</li>
+			</thingDefs>
+			<categories>
+				<li>SLDBar</li>
+				<li>USLDBar</li>
+				<li>Woody</li>
+			</categories>
+		</fixedIngredientFilter>
+		<recipeUsers>
+			<li>AdvWeaponCraftingWorkTable</li>
+		</recipeUsers>
+		<researchPrerequisite>Range_C2</researchPrerequisite>
+	</RecipeDef>
+	
+	<!-- MG 34 GPMG -->
+	<RecipeDef ParentName="RangedWeaponRecipeBase">
+		<defName>BuildMG34L</defName>
+		<label>Build MG 34 GPMG</label>
+		<description>Builds the Maschinengewehr 34 GPMG, use this for any MG role you want.\nCaliber: 8mm Mauser Rifle Catridge</description>
+		<jobString>Building MG 34 GPMG</jobString>
+		<workAmount>12600</workAmount>
+		<skillRequirements>
+			<Crafting>12</Crafting>
 		</skillRequirements>
 		<ingredients>
 			<li>
@@ -25,7 +283,7 @@
 						<li>Weapon_Parts</li>
 					</thingDefs>
 				</filter>
-				<count>8</count>
+				<count>20</count>
 			</li>
 			<li>
 				<filter>
@@ -33,7 +291,7 @@
 						<li>ComponentIndustrial</li>
 					</thingDefs>
 				</filter>
-				<count>6</count>
+				<count>22</count>
 			</li>
 			<li>
 				<filter>
@@ -41,7 +299,7 @@
 						<li>Metallic</li>
 					</categories>
 				</filter>
-				<count>40</count>
+				<count>76</count>
 			</li>
 			<li>
 				<filter>
@@ -49,19 +307,11 @@
 						<li>Woody</li>
 					</categories>
 				</filter>
-				<count>20</count>
-			</li>
-			<li>
-				<filter>
-					<categories>
-						<li>Leathers</li>
-					</categories>
-				</filter>
-				<count>25</count>
+				<count>36</count>
 			</li>
 		</ingredients>
 		<products>
-			<Pa_Lewis>1</Pa_Lewis>
+			<Pa_MG34L>1</Pa_MG34L>
 		</products>
 		<fixedIngredientFilter>
 			<thingDefs>
@@ -73,13 +323,158 @@
 				<li>SLDBar</li>
 				<li>USLDBar</li>
 				<li>Woody</li>
-				<li>Leathers</li>
 			</categories>
 		</fixedIngredientFilter>
 		<recipeUsers>
-			<li>WeaponCraftingWorkTable</li>
+			<li>AdvWeaponCraftingWorkTable</li>
 		</recipeUsers>
-		<researchPrerequisite>Rifles_C1</researchPrerequisite>
+		<researchPrerequisite>HeavyTurrets</researchPrerequisite>
 	</RecipeDef>
 	
-	</Defs>
+	<!-- MG 42 GPMG -->
+	<RecipeDef ParentName="RangedWeaponRecipeBase">
+		<defName>BuildMG42L</defName>
+		<label>Build MG 42 GPMG</label>
+		<description>Builds the Maschinengewehr 42 GPMG, aka. the "Hitler's Buzzsaw".\nCaliber: 8mm Mauser Rifle Catridge</description>
+		<jobString>Building MG 42 GPMG</jobString>
+		<workAmount>11400</workAmount>
+		<skillRequirements>
+			<Crafting>14</Crafting>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Heavy_Component</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Weapon_Parts</li>
+					</thingDefs>
+				</filter>
+				<count>16</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>20</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>Metallic</li>
+					</categories>
+				</filter>
+				<count>70</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>Woody</li>
+					</categories>
+				</filter>
+				<count>36</count>
+			</li>
+		</ingredients>
+		<products>
+			<Pa_MG42L>1</Pa_MG42L>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Heavy_Component</li>
+				<li>Weapon_Parts</li>
+				<li>ComponentIndustrial</li>
+			</thingDefs>
+			<categories>
+				<li>SLDBar</li>
+				<li>USLDBar</li>
+				<li>Woody</li>
+			</categories>
+		</fixedIngredientFilter>
+		<recipeUsers>
+			<li>AdvWeaponCraftingWorkTable</li>
+		</recipeUsers>
+		<researchPrerequisite>MultibarrelWeapons</researchPrerequisite>
+	</RecipeDef>
+	
+	<!-- MG 45/ Mg 1 Hybrid GPMG -->
+	<RecipeDef ParentName="RangedWeaponRecipeBase">
+		<defName>BuildMG45H</defName>
+		<label>Build MG 45/1 Hybrid GPMG</label>
+		<description>Builds the Maschinengewehr 45/1 Hybrid GPMG, Wake the f**k up Samurai, We have ammo to burn.\nCaliber: 8mm Mauser Rifle Catridge / 7.62x51mm NATO</description>
+		<jobString>Building MG 45/1 Hybrid GPMG</jobString>
+		<workAmount>10800</workAmount>
+		<skillRequirements>
+			<Crafting>16</Crafting>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Heavy_Component</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Weapon_Parts</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>14</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>Metallic</li>
+					</categories>
+				</filter>
+				<count>60</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>Woody</li>
+					</categories>
+				</filter>
+				<count>42</count>
+			</li>
+		</ingredients>
+		<products>
+			<Pa_MG45H>1</Pa_MG45H>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Heavy_Component</li>
+				<li>Weapon_Parts</li>
+				<li>ComponentIndustrial</li>
+			</thingDefs>
+			<categories>
+				<li>SLDBar</li>
+				<li>USLDBar</li>
+				<li>Woody</li>
+			</categories>
+		</fixedIngredientFilter>
+		<recipeUsers>
+			<li>AdvWeaponCraftingWorkTable</li>
+		</recipeUsers>
+		<researchPrerequisite>Parabellum_I</researchPrerequisite>
+	</RecipeDef>
+	
+</Defs>

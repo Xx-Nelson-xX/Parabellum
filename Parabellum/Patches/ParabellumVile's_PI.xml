@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+	
+	<Operation Class="PatchOperationFindMod">
+	<mods>
+		<li>HMC Vile's Pre-Industrial Overhaul</li>
+	</mods>
+		<match Class="PatchOperationSequence">
+		<success>Always</success>
+			<operations>
+			
+				<li Class="PatchOperationReplace">	
+					<xpath>Defs/ResearchProjectDef[defName="Parabellum_Alpha"]/prerequisites</xpath> <!-- Gun_I -->
+					<value>
+						<prerequisites>
+							<li>Muskets_B3</li>
+						</prerequisites>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">	
+					<xpath>Defs/ResearchProjectDef[defName="Machining"]/prerequisites</xpath> <!-- industrial guns -->
+					<value>
+						<prerequisites>
+							<li>Metals_C1</li>
+							<li>Parabellum_Alpha</li>
+						</prerequisites>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">	
+					<xpath>Defs/ResearchProjectDef[defName="Parabellum_Beta"]/prerequisites</xpath> <!-- Gun_I -->
+					<value>
+						<prerequisites>
+							<li>Machining</li>
+							<li>Siege_Artillery</li>
+						</prerequisites>
+					</value>
+				</li>
+				
+				<!-- ==================== Recipes(W1887) ========================== -->
+				<li Class="PatchOperationReplace">	
+				<xpath>Defs/RecipeDef[defName="BuildPa_W1887L"]/researchPrerequisite</xpath>
+					<value>
+						  <researchPrerequisite>Muskets_B3</researchPrerequisite>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">	
+				<xpath>Defs/RecipeDef[defName="MakeAmmo_10Gauge_Buck"]/researchPrerequisite</xpath>
+					<value>
+						  <researchPrerequisite>Muskets_B3</researchPrerequisite>
+					</value>
+				</li>
+				
+			</operations>
+		</match>
+    </Operation>
+	
+</Patch>

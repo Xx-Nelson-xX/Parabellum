@@ -389,10 +389,10 @@
         </graphicData>
         <soundInteract>Interact_Rifle</soundInteract>
         <statBases>
-            <MarketValue>1000</MarketValue>
-            <SightsEfficiency>1.65</SightsEfficiency>
-            <ShotSpread>0.08</ShotSpread>
-            <SwayFactor>1.5</SwayFactor>
+            <MarketValue>650</MarketValue>
+            <SightsEfficiency>1.4</SightsEfficiency>
+            <ShotSpread>0.04</ShotSpread>
+            <SwayFactor>1.2</SwayFactor>
             <RangedWeapon_Cooldown>1.2</RangedWeapon_Cooldown>
             <Bulk>5.4</Bulk>
             <Mass>1.9</Mass>
@@ -412,7 +412,7 @@
             <li>Launchers</li>
         </thingCategories>
         <verbs>
-            <li Class="CombatExtended.VerbPropertiesCE">
+            <li Class="CombatExtended.VerbPropertiesCE" Inherit="False">
                 <verbClass>CombatExtended.Verb_ShootCE</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
                 <defaultProjectile>Bullet_PzF_HEAT</defaultProjectile>
@@ -420,8 +420,8 @@
                 <ai_AvoidFriendlyFireRadius>5</ai_AvoidFriendlyFireRadius>
 				<minRange>2</minRange>
                 <warmupTime>1.2</warmupTime>
-				<!--<forcedMissRadius>3</forcedMissRadius>-->
-				<circularError>0.4</circularError>
+				<forcedMissRadius>0</forcedMissRadius>
+				<circularError>0.2</circularError>
                 <range>26</range>
                 <targetParams>
                     <canTargetLocations>true</canTargetLocations>
@@ -439,7 +439,7 @@
             </li>
             <li Class="CombatExtended.CompProperties_AmmoUser">
                 <magazineSize>1</magazineSize>
-                <reloadTime>20</reloadTime>
+                <reloadTime>14</reloadTime>
                 <ammoSet>AmmoSet_PzF</ammoSet>
             </li>
         </comps>
@@ -473,6 +473,7 @@
             <Mass>9.5</Mass>
         </statBases>
 		<generateCommonality>0.8</generateCommonality>
+		<equippedAngleOffset>45</equippedAngleOffset>
         <weaponTags>
             <li>RKT1</li>
 			<li>Launchers</li>
@@ -494,7 +495,7 @@
                 <ai_AvoidFriendlyFireRadius>6</ai_AvoidFriendlyFireRadius>
 				<minRange>5</minRange>
                 <warmupTime>1.6</warmupTime>
-				<!--<forcedMissRadius>3</forcedMissRadius>-->
+				<!-- <forcedMissRadius>1.4</forcedMissRadius> -->
 				<circularError>0.6</circularError>
                 <range>54</range>
                 <targetParams>
@@ -571,7 +572,7 @@
 				<warmupTime>1.24</warmupTime>
 				<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
                 <ai_AvoidFriendlyFireRadius>5</ai_AvoidFriendlyFireRadius>
-				<circularError>0.52</circularError>
+				<circularError>0.48</circularError>
                 <range>22</range>
 				<targetParams>
                     <canTargetLocations>true</canTargetLocations>

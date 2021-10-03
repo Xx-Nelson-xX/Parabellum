@@ -1,6 +1,6 @@
 <Defs>
 
-
+	<!-- =============== Huot Automatic Rifle =============== -->
 	<RecipeDef ParentName="RangedWeaponRecipeBase">
 		<defName>BuildHuot</defName>
 		<label>Build Huot Automatic Rifle</label>
@@ -38,7 +38,8 @@
 			<li>
 				<filter>
 					<categories>
-						<li>Metallic</li>
+						<li>SLDBar</li>
+						<li>USLDBar</li>
 					</categories>
 				</filter>
 				<count>35</count>
@@ -50,14 +51,6 @@
 					</categories>
 				</filter>
 				<count>40</count>
-			</li>
-			<li>
-				<filter>
-					<categories>
-						<li>Leathers</li>
-					</categories>
-				</filter>
-				<count>20</count>
 			</li>
 		</ingredients>
 		<products>
@@ -73,19 +66,19 @@
 				<li>SLDBar</li>
 				<li>USLDBar</li>
 				<li>Woody</li>
-				<li>Leathers</li>
 			</categories>
 		</fixedIngredientFilter>
 		<recipeUsers>
 			<li>WeaponCraftingWorkTable</li>
 		</recipeUsers>
-		<researchPrerequisite>Rifles_C1</researchPrerequisite>
+		<researchPrerequisite>Rifles_C2</researchPrerequisite>
 	</RecipeDef>
 	
+	<!-- =============== Mk.14 Mod.0 Enhanced Marksman Rifle =============== -->
 	<RecipeDef ParentName="RangedWeaponRecipeBase">
 		<defName>BuildMk14</defName>
 		<label>Build Mk.14 Mod.0</label>
-		<description>Build a Modernized Battle Rifle for Marksman Operator, moderate damage, slightly long range, accurate and not really controllable high rate of fire.\nCaliber: 7.62x51mm NATO</description>
+		<description>Build a Modernized Battle Rifle for Marksman Operator, moderate damage, long range, accurate and not really controllable high rate of fire.\nCaliber: 7.62x51mm NATO</description>
 		<jobString>Building Mk.14 Mod.0.</jobString>
 		<workAmount>20000</workAmount>
 		<skillRequirements>
@@ -127,7 +120,8 @@
 			<li>
 				<filter>
 					<categories>
-						<li>Metallic</li>
+						<li>SLDBar</li>
+						<li>USLDBar</li>
 					</categories>
 				</filter>
 				<count>40</count>
@@ -153,6 +147,208 @@
 				<li>Plastic</li>
 			</thingDefs>
 			<categories>
+				<li>SLDBar</li>
+				<li>USLDBar</li>
+			</categories>
+		</fixedIngredientFilter>
+		<recipeUsers>
+			<li>AdvWeaponCraftingWorkTable</li>
+		</recipeUsers>
+		<researchPrerequisite>Rifles_C3</researchPrerequisite>
+	</RecipeDef>
+	
+	<!-- =============== Gewehr Model 1888 Bolt Action Rifle =============== -->
+	<RecipeDef ParentName="RangedWeaponRecipeBase">
+		<defName>BuildG88M</defName>
+		<label>Build a Gewehr Model 1888</label>
+		<description>Build an Ancient Bolt Rifle and use it to fight for the Fatherland.\nCaliber: 8mm Mauser Rifle Catridge</description>
+		<jobString>Building Gewehr Model 1888.</jobString>
+		<workAmount>11000</workAmount>
+		<skillRequirements>
+			<Crafting>3</Crafting>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>22</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>SLDBar</li>
+					</categories>
+				</filter>
+				<count>42</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>Woody</li>
+					</categories>
+				</filter>
+				<count>50</count>
+			</li>
+		</ingredients>
+		<products>
+			<Pa_G88M>1</Pa_G88M>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>ComponentIndustrial</li>
+			</thingDefs>
+			<categories>
+				<li>SLDBar</li>
+				<li>Woody</li>
+			</categories>
+		</fixedIngredientFilter>
+		<recipeUsers>
+			<li>FabricationBench</li>
+		</recipeUsers>
+		<researchPrerequisite>Parabellum_Alpha</researchPrerequisite>
+	</RecipeDef>
+	
+	<!-- Mauser 1918 T-Gewehr Bolt Action Anti-Tank Rifle -->
+	<RecipeDef ParentName="RangedWeaponRecipeBase">
+		<defName>BuildTG</defName>
+		<label>Build Mauser 1918 T-Gewehr AT Rifle</label>
+		<description>Build the Mauser 1918 T-Gewehr AT Rifle, an Bolt Action Anti-Tank Rifle for AT purpose.\nCaliber: 13.2x92mmSR TuF</description>
+		<jobString>Building Mauser 1918 T-Gewehr AT Rifle.</jobString>
+		<workAmount>18500</workAmount>
+		<skillRequirements>
+			<Crafting>10</Crafting>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Rifle_Component</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Weapon_Parts</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>16</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>SLDBar</li>
+						<li>USLDBar</li>
+					</categories>
+				</filter>
+				<count>32</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>Woody</li>
+					</categories>
+				</filter>
+				<count>60</count>
+			</li>
+		</ingredients>
+		<products>
+			<Pa_TG>1</Pa_TG>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Rifle_Component</li>
+				<li>Weapon_Parts</li>
+				<li>ComponentIndustrial</li>
+			</thingDefs>
+			<categories>
+				<li>SLDBar</li>
+				<li>USLDBar</li>
+				<li>Woody</li>
+			</categories>
+		</fixedIngredientFilter>
+		<recipeUsers>
+			<li>WeaponCraftingWorkTable</li>
+		</recipeUsers>
+		<researchPrerequisite>Rifles_C1</researchPrerequisite>
+	</RecipeDef>
+	
+	<!-- =============== FG 42 Type F/II Dual Purpose Automatic Rifle =============== -->
+	<RecipeDef ParentName="RangedWeaponRecipeBase">
+		<defName>BuildFG42F</defName>
+		<label>Build FG 42 Type F(II)</label>
+		<description>Build a Fallschirmjägergewehr 42 Type F(II), Die grünen Teufel von Monte Cassino.\nCaliber: 8mm Mauser Rifle Catridge</description>
+		<jobString>Building FG 42 Type F(II).</jobString>
+		<workAmount>22000</workAmount>
+		<skillRequirements>
+			<Crafting>15</Crafting>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>AdvRifle_Component</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Weapon_Parts</li>
+					</thingDefs>
+				</filter>
+				<count>12</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>14</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>SLDBar</li>
+						<li>USLDBar</li>
+					</categories>
+				</filter>
+				<count>65</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>Woody</li>
+					</categories>
+				</filter>
+				<count>22</count>
+			</li>
+		</ingredients>
+		<products>
+			<Pa_FG42F>1</Pa_FG42F>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>AdvRifle_Component</li>
+				<li>Weapon_Parts</li>
+				<li>ComponentIndustrial</li>
+			</thingDefs>
+			<categories>
+				<li>Woody</li>
 				<li>SLDBar</li>
 				<li>USLDBar</li>
 			</categories>

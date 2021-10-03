@@ -5,6 +5,10 @@
 		<defName>AmmoSet_SP</defName>
 		<label>Rifle Caliber</label>
 		<ammoTypes>
+			<Ammo_8mmM_P88M>Bullet_8mmM_P88M</Ammo_8mmM_P88M>
+			<Ammo_8mmM_SP>Bullet_8mmM_SP</Ammo_8mmM_SP>
+			<Ammo_8mmM_KP>Bullet_8mmM_KP</Ammo_8mmM_KP>
+			<Ammo_8mmM_BP>Bullet_8mmM_BP</Ammo_8mmM_BP>
 			<Ammo_127x42mmB_FMJ>Bullet_127x42mmB_FMJ</Ammo_127x42mmB_FMJ>
 			<Ammo_127x42mmB_HP>Bullet_127x42mmB_HP</Ammo_127x42mmB_HP>
 			<Ammo_127x42mmB_API>Bullet_127x42mmB_API</Ammo_127x42mmB_API>
@@ -25,12 +29,60 @@
 		<defName>AmmoSet_SR</defName>
 		<label>Pistol Caliber</label>
 		<ammoTypes>
+			<Ammo_763x25mmM_FMJ>Bullet_763x25mmM_FMJ</Ammo_763x25mmM_FMJ>
+			<Ammo_763x25mmM_HP>Bullet_763x25mmM_HP</Ammo_763x25mmM_HP>
 			<Ammo_45ACP_FMJ>Bullet_45ACP_FMJ</Ammo_45ACP_FMJ>
 			<Ammo_45ACP_AP>Bullet_45ACP_AP</Ammo_45ACP_AP>
 			<Ammo_45ACP_HP>Bullet_45ACP_HP</Ammo_45ACP_HP>
 			<Ammo_9x19mmPara_FMJ>Bullet_9x19mmPara_FMJ</Ammo_9x19mmPara_FMJ>
 			<Ammo_9x19mmPara_AP>Bullet_9x19mmPara_AP</Ammo_9x19mmPara_AP>
 			<Ammo_9x19mmPara_HP>Bullet_9x19mmPara_HP</Ammo_9x19mmPara_HP>
+		</ammoTypes>
+	</CombatExtended.AmmoSetDef>
+	
+	<CombatExtended.AmmoSetDef>
+		<defName>AmmoSet_K98k</defName>
+		<label>8mm Mauser / 7.62x51mm NATO</label>
+		<ammoTypes>
+			<Ammo_8mmM_P88M>Bullet_8mmM_P88M</Ammo_8mmM_P88M>
+			<Ammo_8mmM_SP>Bullet_8mmM_SP</Ammo_8mmM_SP>
+			<Ammo_8mmM_KP>Bullet_8mmM_KP</Ammo_8mmM_KP>
+			<Ammo_8mmM_BP>Bullet_8mmM_BP</Ammo_8mmM_BP>
+			<Ammo_762x51mmNATO_FMJ>Bullet_762x51mmNATO_FMJ</Ammo_762x51mmNATO_FMJ>
+			<Ammo_762x51mmNATO_AP>Bullet_762x51mmNATO_AP</Ammo_762x51mmNATO_AP>
+			<Ammo_762x51mmNATO_HP>Bullet_762x51mmNATO_HP</Ammo_762x51mmNATO_HP>
+		</ammoTypes>
+	</CombatExtended.AmmoSetDef>
+	
+	<CombatExtended.AmmoSetDef>
+		<defName>AmmoSet_MauserP</defName>
+		<label>7.63x25mm Mauser / 9x19mm Parabellum / .45 ACP</label>
+		<ammoTypes>
+			<Ammo_763x25mmM_FMJ>Bullet_763x25mmM_FMJ</Ammo_763x25mmM_FMJ>
+			<Ammo_763x25mmM_HP>Bullet_763x25mmM_HP</Ammo_763x25mmM_HP>
+			<Ammo_45ACP_FMJ>Bullet_45ACP_FMJ</Ammo_45ACP_FMJ>
+			<Ammo_45ACP_AP>Bullet_45ACP_AP</Ammo_45ACP_AP>
+			<Ammo_45ACP_HP>Bullet_45ACP_HP</Ammo_45ACP_HP>
+			<Ammo_9x19mmPara_FMJ>Bullet_9x19mmPara_FMJ</Ammo_9x19mmPara_FMJ>
+			<Ammo_9x19mmPara_AP>Bullet_9x19mmPara_AP</Ammo_9x19mmPara_AP>
+			<Ammo_9x19mmPara_HP>Bullet_9x19mmPara_HP</Ammo_9x19mmPara_HP>
+		</ammoTypes>
+	</CombatExtended.AmmoSetDef>
+	
+	<CombatExtended.AmmoSetDef>
+		<defName>AmmoSet_Madsen</defName>
+		<label>7~8mm Rifle Caliber</label>
+		<ammoTypes>
+			<Ammo_8mmM_P88M>Bullet_8mmM_P88M</Ammo_8mmM_P88M>
+			<Ammo_8mmM_SP>Bullet_8mmM_SP</Ammo_8mmM_SP>
+			<Ammo_8mmM_KP>Bullet_8mmM_KP</Ammo_8mmM_KP>
+			<Ammo_8mmM_BP>Bullet_8mmM_BP</Ammo_8mmM_BP>
+			<Ammo_762x51mmNATO_FMJ>Bullet_762x51mmNATO_FMJ</Ammo_762x51mmNATO_FMJ>
+			<Ammo_762x51mmNATO_AP>Bullet_762x51mmNATO_AP</Ammo_762x51mmNATO_AP>
+			<Ammo_762x51mmNATO_HP>Bullet_762x51mmNATO_HP</Ammo_762x51mmNATO_HP>
+			<Ammo_303British_FMJ>Bullet_303British_FMJ</Ammo_303British_FMJ>
+			<Ammo_303British_AP>Bullet_303British_AP</Ammo_303British_AP>
+			<Ammo_303British_HP>Bullet_303British_HP</Ammo_303British_HP>
 		</ammoTypes>
 	</CombatExtended.AmmoSetDef>
 

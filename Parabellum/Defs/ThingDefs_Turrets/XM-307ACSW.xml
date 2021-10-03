@@ -12,6 +12,7 @@
 		</graphicData>
 		<description>XM307ACSW attached to a tripod.</description>
 		<techLevel>Ultra</techLevel>
+		<tradeability>None</tradeability>
 		<statBases>
 			<MarketValue>3800</MarketValue>
 			<SightsEfficiency>1.4</SightsEfficiency>

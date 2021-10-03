@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-	<ThingDef ParentName="TrapIEDBase">
+	<ThingDef ParentName="SK_TrapIEDBase">
 		<defName>Pa_Trap_SMine</defName>
 		<label>S-Mine Trap</label>
 		<description>A robust ancient anti-personnel mine, simple, small and Lethal, require target step on it to trigger the delay fuse.</description>
@@ -12,7 +12,7 @@
 			<Flammability>0.4</Flammability>
 		</statBases>
 		<costList>
-			<Plasteel>20</Plasteel>
+			<Plasteel>9</Plasteel>
 			<Powder>2</Powder>
 			<Weapon_Parts>1</Weapon_Parts>
 		</costList>
@@ -40,7 +40,7 @@
 		</researchPrerequisites>
 	</ThingDef>
 	
-	<ThingDef ParentName="TrapIEDBase">
+	<ThingDef ParentName="SK_TrapIEDBase">
 		<defName>Pa_Trap_4kgMine</defName>
 		<label>Improvised 4kg Mine Trap</label>
 		<description>A improvised High Explosive mine, very Lethal and good counter any ground unit, require target step on it to trigger the delay fuse.</description>
@@ -48,6 +48,7 @@
 			<texPath>Things/Building/Mines/4kgmine</texPath>
 		</graphicData>
 		<statBases>
+			<MaxHitPoints>120</MaxHitPoints>
 			<Flammability>0.6</Flammability>
 		</statBases>
 		<costList>
@@ -58,6 +59,7 @@
 			<li Class="CompProperties_Explosive">
 				<explosiveRadius>6</explosiveRadius>
 				<explosiveDamageType>Bomb</explosiveDamageType>
+				<damageAmountBase>700</damageAmountBase>
 				<startWickHitPointsPercent>0.6</startWickHitPointsPercent>
 				<wickTicks>50</wickTicks>
 				<startWickOnDamageTaken>
@@ -76,6 +78,48 @@
 		<specialDisplayRadius>6</specialDisplayRadius>
 		<researchPrerequisites>
 			<li>IED_C1</li>
+		</researchPrerequisites>
+	</ThingDef>
+	
+	<ThingDef ParentName="SK_TrapIEDBase">
+		<defName>Pa_Trap_M67Mine</defName>
+		<label>M67 mine Trap</label>
+		<description>An ancient anti-personnel mine of FASCAM, capable to fit few dozen of it inside an artillery shell such as ADAM for long range rapid placement, simple, small and deadly, require target step on it to trigger the delay fuse.</description>
+		<graphicData>
+			<texPath>Things/Building/Mines/M67m</texPath>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>80</MaxHitPoints>
+			<Flammability>0.2</Flammability>
+		</statBases>
+		<costList>
+			<Plasteel>13</Plasteel>
+			<Powder>2</Powder>
+			<Wire>2</Wire>
+			<Weapon_Parts>1</Weapon_Parts>
+			<Plastic>4</Plastic>
+		</costList>
+		<comps>
+			<li Class="CompProperties_Explosive">
+				<explosiveRadius>1.8</explosiveRadius>
+				<explosiveDamageType>Bomb</explosiveDamageType>
+				<startWickHitPointsPercent>0.2</startWickHitPointsPercent>
+				<wickTicks>30</wickTicks>
+				<startWickOnDamageTaken>
+					<li>Bullet</li>
+					<li>Arrow</li>
+					<li>ArrowHighVelocity</li>
+				</startWickOnDamageTaken>
+			</li>
+			<li Class="CombatExtended.CompProperties_Fragments">
+				<fragments>
+					<Fragment_Small>600</Fragment_Small>
+				</fragments>
+			</li>
+		</comps>
+		<specialDisplayRadius>1.8</specialDisplayRadius>
+		<researchPrerequisites>
+			<li>Parabellum_I</li>
 		</researchPrerequisites>
 	</ThingDef>
 

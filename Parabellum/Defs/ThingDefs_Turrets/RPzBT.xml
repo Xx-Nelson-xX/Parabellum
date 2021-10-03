@@ -13,6 +13,7 @@
 		<soundInteract>Artillery_ShellLoaded</soundInteract>
 		<description>6 RPzB attached to a solid Platform.</description>
 		<techLevel>Industrial</techLevel>
+		<tradeability>None</tradeability>
 		<statBases>
 			<MarketValue>4200</MarketValue>
 			<SightsEfficiency>1.8</SightsEfficiency>
@@ -67,6 +68,7 @@
 		<soundInteract>Artillery_ShellLoaded</soundInteract>
 		<description>Raketenwerfer attached to a solid Platform.</description>
 		<techLevel>Industrial</techLevel>
+		<tradeability>None</tradeability>
 		<statBases>
 			<MarketValue>1400</MarketValue>
 			<SightsEfficiency>2.1</SightsEfficiency>
@@ -116,6 +118,7 @@
 		<soundInteract>Artillery_ShellLoaded</soundInteract>
 		<description>Raketen-Vielfachwerfer attached to a solid Platform.</description>
 		<techLevel>Spacer</techLevel>
+		<tradeability>None</tradeability>
 		<statBases>
 			<MarketValue>9200</MarketValue>
 			<SightsEfficiency>1.6</SightsEfficiency>
@@ -255,7 +258,7 @@
 			<li>BuildingsSecurity</li>
 		</thingCategories>
 		<researchPrerequisites>
-			<li>Rockets_C1</li>
+			<li>Parabellum_Gamma</li>
 		</researchPrerequisites>
 		<constructionSkillPrerequisite>8</constructionSkillPrerequisite>
 	</ThingDef>
@@ -325,7 +328,7 @@
 		<soundInteract>Standard_Drop</soundInteract>
 		<soundDrop>Standard_Drop</soundDrop>
 		<tickerType>Normal</tickerType>
-		<stackLimit>24</stackLimit>
+		<stackLimit>25</stackLimit>
 		<techLevel>Industrial</techLevel>
 		<statBases>
 			<MarketValue>700</MarketValue>
@@ -361,7 +364,7 @@
 						<li>Weapon_Parts</li>
 					</thingDefs>
 				</filter>
-				<count>6</count>
+				<count>4</count>
 			</li>
 			<li>
 				<filter>
@@ -377,7 +380,7 @@
 				<li>Metallic</li>
                   </categories>
 				</filter>
-				<count>12</count>
+				<count>10</count>
 			</li>
 		</ingredients>
 		<products>

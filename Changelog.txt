@@ -1,3 +1,159 @@
+<--------------------------------------- 1.5 -------------------------------------------->
+								*New Update for RW HSK 1.3
+
+Planned features:
+	- early stage modern assault rifle:
+		+MkB 42(H)
+		+StG 44
+		+Gerat 06H/StG 45
+	- weapons for old catridge which I added in previous version:
+		+SR-25 Suppressed(5.56x45mm NATO)
+		+SR-25 .50 Beowulf
+		+???
+	- Turrets:
+		+ M202 FLASH turret somesort(66mm LAW rockets)
+	- New stuff from latest build of CE: planned but didn't really want to implement it yet due it probably make the mod conflict with 1.2
+		+ Night Vision
+		+ Flare
+	- Metalworking for late Industrial satage
+	- New Banner
+	- Ammo and Weapon parts disassembly
+	
+*Note:
+	-5cm PaK 38/L60 and 5cm Flak 41/L67 crates no longer exist in this update, so make sure you delete those crates in your map before installing the mod to prevent missing stuff error, else, save the game then load it, it usually fix the issue
+
+
+The following features need playtesting, since is a Beta launch and there is stuff in WIP, so if you encounter any issue, please report it, thanks
+
+1.5B - 23 Weapons, 6 Turrets, 1 trip mine, 13 new ammo type, 3 new research, new balance, texture improvements, and more tweakings(pretty much the basic routine of each update)
+
+Pistols:
+- Mauser C96 pistol: 7.63x25mm Mauser(9x19mm,.45 ACP), Semi-Automatic, one of the earliest semi-automatic pistol, 10-round internal magazine, decent fire rate and low damage
+- M712 "Schnellfeuer" Pistol: 9x19mm Parabellum(7.63x25mm, .45 ACP), Automatic(1/2/5) automatic convertion of C96, with detachable box magazine, high rate of fire and low damage
+
+Shotguns:
+-Winchester 1887 "Mare's Leg": 10/12 Gauge, Level Action, compact shotgun, a Pop cultural shotgun, you can use it with one hand
+-Winchester 1887: 10/12 Gauge, Level Action, classic level action shotgun, designed to fit the company's title and support the Law Enforcement
+-Winchester 1897 Standard Grade(30 in): .12 Gauge, Pump Action, classic pump action shotgun, with extra large barrel for trap shooting and hunting
+-Winchester 1897 Trench Grade(20 in): .12 Gauge, Pump Action, aka the Trench Gun, with 20 in barrel, heatshield and a bayonet, complete package for Urban/Trench warfare
+
+SMGs:
+- Bergmann MP 18: 9x19mm Parabellum(7.63x25mm, .45 ACP), Automatic(1/4/10), one of the earliest SMG created for trench warfare, very effective in CQC range
+
+Carabines:
+-Karabiner Model 1890: 8mm Mauser, Bolt Action, carabine version of Gewehr Model 1888 for Cavary
+-Mauser Karabiner 98k: 8mm Mauser/7.62x51mm NATO, Bolt Action, one of the latest Mauser Rifle, accurate and somewhat long range
+-G41(W): 8mm Mauser Rifle Catridge, Semi-Automatic, mid war semi-automatic rifle, slow reload due the weapon use large internal magazine
+-G43: 8mm Mauser Rifle Catridge, Semi-Automatic(1/2/3), mid-late war semi-automatic rifle, improved in most aspect and use detachable box magazine 
+
+Rifles:
+- Gewehr Model 1888: 8mm Mauser, Bolt Action, standard Rifle for Ancient Military formation, perfect weapon for Trench Warfare(from a trench shooting to other trench, no so much for assault)
+- Mauser 1918 T-Gewehr: 13.2x92mmSR TuF, Bolt Action, one of the First AT Rifle in combat, can knock out Light armored vehicles of its time without any issue
+- FG 42 Type F/II: 8mm Mauser Rifle Catridge, Automatic(1/3/7), one of the most advanced weapon of its era, it serve 2 purpose, almost accurate and light as the Mauser K98k with close both and capable to achive open bolt automatic fire like the MG 34 does but in a smallet package, while the paratroop can carry them when they paradrop
+
+LMGs:
+- MG 08/15: 8mm Mauser Rifle Catridge, Automatic(1/25/50), LMG convertion of the MG 08 MMG, quite big, heavy and very sturdy
+- Madsen LMG: 7~8mm Rifle Catridge, Automatic(1/5/25), first LMG produce in quantity, magazine fed, decent accuracy but rather expensive
+- MG 30 LMG: 8mm Mauser Rifle Catridge, Automatic(1/3/10), modernized LMG, magazine fed, light weigh and less bulky than most LMGs
+- MG 34 GPMG: 8mm Mauser Rifle Catridge, Automatic(1/5/10), early GPMG, Drum fed(LMG), successor of the previous LMG, carry more ammo and can be used in multiple role
+- MG 42 GPMG: 8mm Mauser Rifle Catridge, Automatic(1/7/19), Mid war GPMG, Drum fed(LMG), simplified version of MG 34 GPMG, carry even more ammo, cheaper, and increased RoF 
+- MG 45/MG 1 Hybrid GPMG: 8mm Mauser Rifle Catridge / 7,62x51mm NATO, Automatic(1/12/24), Box fed(LMG), simplified version of MG 42 GPMG, carry 120 round modern ammo box,  a lot cheaper, lighter, less bulky and further increase the RoF
+
+Mines/Traps:
+- M67 Mine: Anti-Personnel trip mine, explosive charge with large amount of fragments, capable to load inside of an 155mm artillery shell for long range rapid deployment 
+
+Grenades:
+- RGO Impact Grenade: baseball size grenade with impact fuse, specialized for room cleaning and breaching, compared to other grenade type, it's relatively safe to use for the user
+- Panzerwurmine: Anti-Tank Impact Grenade, designed to destroy armored target by converting the PzF warhead to a grenade, due the weight and size of the grenade, is hard to throw it like stick grenades does
+
+Turrets:
+- MG 08 MMG: 8mm Mauser Rifle Catridge, Automatic(1/10/25), early concept of machine gun, quite heavy and bulky, the slow rate of fire make it excellent for prolonged suppressive fire
+- MG 18 TuF HMG: 13.2x92mmSR TuF, Automatic(1/3/10), early concept of heavy machine gun, an upscale MG 08 loaded with 13.2mm TuF for AT and AA purpose
+- MG 34z MMG: 8mm Mauser Rifle Catridge, Automatic(1/10/40), 2 MG 34 GPMG mounted on a tripod, double the RoF for rapid suppression
+- MG 131 HMG: 13mm HMG Catridge, Automatic(1/5/15), a redesigned MG 34 to chamber 13mm rounds, mainly 13x64mmB HE-T rounds to increase is AA capability
+- MG 131z HMG: 13mm HMG Catridge, Automatic(1/10/40), the AA convertion for ground troops and some planes, by combining 2 MG 131s, double the RoF
+- PaK 36/L45 ATG: 3.7cm cannon shell, Single Shot, early war Anti-Tank Gun, aka. the "DoorKnocker" due its versatility and mobility
+- Flak 37/L89 AA: 3.7cm cannon shell, Automatic(1/3/6), early war  AA gun, relatively low rate of fire but very effective counter light armored target
+
+Ammo:
+- 8x57mm Patrone 88(FMJ), first generation smokeless propellant cartridge, not as powerful as modern catridge but is a step up from black gun powder catridge
+- 7.92x57mm S Patrone(FMJ), standard rifle catridge, powerful as modern rifle catridge with better ballistic than previos one
+- 7.92x57mm K Patrone(AP), Armor Piercing catridge, use hardened Tungsten core to increase the bullet penetration
+- 7.92x57mm B Patrone(HE-T), High Explosive - Tracer round or "Observation" round for planes and Sharpshooters to guide their shot or indicate where the bullet landed
+- 7.63x25mm Mauser FMJ, standard high velocity pistol rounds for Mauser pistols, improved penetration and bullet travel speed, but lacks stopping power
+- 13.2x92mmSR TuF(AP), Armor Piercing, a scale up Mauser catridge for AT and AA purpose for early HMGs and AT Rifles
+- 13.2x92mmSR TuF(APHE), Armor Piercing High Explosive, same TuF catridge with modified bullet fill with small amount of explosive
+- 13x64mmB(HE-T), High Explosive-Tracer, commonly used by mid-late war CAS for strafing run and groud AA defense  
+- 10 Gauge Shotgun ammo, Buck shot, less pellets more damage, early shotgun shell(only available for Winchester 1887 for now)
+- 3.7cm Pzgr.Patr.mit Bdz. 5103º(APHE), Armor Piercing High Explosive round, early war small cannon shell, good enough to destroy light armored vehicle, the projectile contain small amount of explosive and fragment
+- 3.7cm Gr.Sprgr 40 mit A.Z.39(HE), High Explosive round, standard AA round, very effective counter light armored/soft target
+- 3.7cm Pzgr 40/37(APCR), Armor Piercing Composite Rigid round, hardened Tungsten core, a solid slug for maximize penetration and projectile travel speed
+- 155mm ADAM: Area Denial Artillery Munition, loaded with 36 M67 Anti-Personnel Mine to perform Area Denial task(make sure you claim them when the spawn, also, try not walking above them)
+
+New Research:
++ Parabellum
+Unlocks: 
+	-Gewehr Model 1888 (Rifle)
+	-Karabiner Model 1890 (Carabine)
+	-Winchester M1887(L) (Shotgun - available in Breechloading if you have Vile's Preindustrial enabled)
+	-Winchester M1887 "Mare's Leg)(Shotgun) 
+	-10 Gauge Buckshot shell(only available for Winchester M1887 for now - available in Breechloading if you have Vile's Preindustrial enabled)
+	-12 Gauge Buckshot shell(for any shotgun)
+	-8x57mm Patronne 88 (Rifle Round)
+*Located next to the Bow II line, if you have Vile's Pre-Industrial it connects with Breachloading research
+
++Defensive Measure I
+Unlocks:
+	-MG 08 MMG (Machinegun Turret)
+	-Vickers .303 British MMG (Machinegun Turret)
+*Located in the Siege Artillery Line (Same research if you have Vile's Pre-Industrial, since he keep the name intact)
+
++Defensive Measure II
+Unlocks:
+	-MG 18 TuF HMG (Heavy Machinegun Turret)
+	-MG 131 HMG/Autocannon (Heavy Machinegun Turret)
+	-MG 131z HMG/Autocannon (Heavy Machinegun Turret)
+	-PaK 36/L45 ATG (Light Anti-Tank Gun)
+	-37mm cannon ammo (APHE, HE and APCR)
+	-Simple Cannon Crate (for cannon of early-mid Industrial stage)
+*Located in the Siege Artillery Line before Turret Research
+
+Tweaks:
+*changed 12,8cm and 120mm cannon shells research from Range_C2 to Artillery_II, when you actually unlock the cannons
+*changed Mine traps ParentName from "TrapIEDBase" to "SK_TrapIEDBase", both of them work just fine, just to make sure to use the SK one to prevent any future issue
++Added explosive damage for 4kg improvised mine(the damage is same as the demolition, since is literally the demolition charge with a trip mine delay fuse), it no longer use the default explosive damage for IED mines
+*Mine cost rebalance: Fragmentation mines now its material calculation is based on the quantity of fragment it produce when explode, then compare it to the shotgun buckshot shell cost(7 steel -> 40 shells * 9 pellets per shell = 360 pellets/fragments) + 2 extra piece of alloy and other stuff for other parts of the mine
++Rebalance all the grenade recipe, now grenades with wooden stick do need an extra piece of wood to craft it, also added how much work they require to craft
+*Increased .50 Beowulf ammo cost about 60% more than originaly it is, now it cost more than 7,62x51mm NATO, also now the EMP ammo cause small amount of damage counter non-conduitive pawn(no bionic, cybernetic part, mechanic lifeform), and moved the ammo to Gun II Research
++Increased Vickers MMG RoF to 500 rpm and moved the weapon building from "Machineguns" to "Machineguns(P)"(New building slot for machineguns)
+*Moved Vickers from "Turret" Research to "Defensive Measure I"(New) Reseach and its recipe is crafteable in the Hand Assembling Bench
+*Changed Vickers crate to "Machinegun Crate" to share it useage with other machineguns turrets, but still, their cost is varied by how complex they are
+*Organized a bit AmmoCategories files by separating them with green text
++Added Vile's Pre-Industrial mod to mod loading order list(Now my mod Load after it when press Auto Sort)
+*Added "<tradeability>None</tradeability>" to every Turret gun, to make sure they don't spawn in the trader list, it doesn't happen during my playtest, just to make sure it never does in the future
+-Moved Huot Automatic Rifle from "Rifle I" Research to "Rifle II" due new balance
+*Inverted Mk.18 Mod.0 GL Warmup time and RangeCooldown
++Added extra ammo patch for HMC More Content ammo, now all weapon that use 7.62x25mmTT can also use 7.63x25mm Mauser
+-Nerfed a bit Lewis LMG to fit more current content's early LMGs(Sight Efficiency 0.95 -> 0.8, Range Cooldown 0.8 -> 1.2, added global work speed and move speed reduction), but now it cost way less than originaly was
+-Moved shotgun shell to new Early tech: Parabellum, right before Gun I
+*Pushed Nebelwerfer 1 tech later due the raid system is too stupid and can't differentiate mediaval and Industrial stage, or stupid tribals and medieval cavary are not suppose to use any Industrial tech
++Rebalanced De Lisle Carbine, now it cost less to either build or buy, unlockable in Gun I
++Rebalanced Panzerfaust 60 and RPzB 54/1, now it cost less to either build or buy, reduced their forced radius to: PzF -> 0.2, RPzB 54/1 -> 0.6
++Texture Improvements for RPzB 54/1
+*Modified the Weapon crafting bench to work without power, but the efficiency drop to 60% when working without power
+*Another buff for the Panzerfaust, increased the weapon accuracy and completely disabled force miss radius(but still the weapon is barely accurate in skilled hand so you need to get close to your target)
++Slightly increase the projectile speed of 25x59mm grenade(85 -> 87, the calculation is done by 425(XM-109)/853(M82A3)*175(ingame .50BMG speed) = 87)
+*Tweaked 50mm cannon shell, speed value using 129(APHE 835m/s) as base speed, HE 86 -> 85, APCR 160 -> 182, reduced the amount of explosives(Gun powder/FSX) need to craft the ammo for the new balance(and some error): APHE 100 -> 25, HE 60 -> 32, APCR 42 -> 18
++buff 5cm cannon, Range: PaK 38/L60 87 -> 92, Flak 41/L67 87 -> 96
+*Moved 5cm Flak 41/L67 from "Autocannon III" Research to "Wunderwaffen I" Research due latest autocannon addition(3.7cm Flak 37/L89)
+*Changed 5cm cannon building recipe, now they no longer use specified crate but a generalized one, now ancient cannon use either "Simple Cannon Crate" and/or "Complex Cannon Crate" to build them, and those crate can stack up to 25 units each
+*Added Heavy component recipe for the Hand Assembling bench, now require Gun I research to unlock
+*Moved 5cm PaK 38/L60 from "Artillery I" Research to "Turrets I" Research, so for its munitions, also reduced its outline after comparing with other turret
++Buff 120mm Wombat RATG range 80 -> 90
++Increase the visual size of the 12.8cm PaK 44/L55 and 5cm Flak 41/L67 it just feels wrong comparing its size with other cannons
+*Increased slightly the explosive radius of 5cm APHE and HE, 120mm HESH and 12.8cm APHE shell, but reduce their damage after comparing them with 30mm, 90mm and 120mm shells
+*Reorganized the build Gizmo/Drop-down menu/Subcategory, now XM-307 ACSW goes in "Mortal", SPG-9 and SPG9M goes in "rocket launchers"
+
 <--------------------------------------- 1.4 -------------------------------------------->
 *Added separated mod package(Parabellum - Earned in Blood & Parabellum - Hold the Line) for who only want handheld weapons or defensive turrets and explosives, not both of them
 *Last update for RW 1.2 HSK
@@ -183,15 +339,15 @@ Note: version 1.2A still in testing phase, so any error or weird stuff you encou
  -Medusa SR -> Pistol I(Gunsmithing)
  -Sturer SP -> Pistol I(Gunsmithing)
  
-*SMG:
+*SMGs:
  -M1928A2 Thompson -> SMG I(BlowbackOperation)
  
-*Shotgun:
+*Shotguns:
  -DP-12 -> Shotgun I(GasOperation) LOL
  -CAWS -> Shotgun II(Shotgun_C2)
  
-*Carbine:
- -De Lisle Commando Carbine -> Rifle I(Rifles_C1)
+*Carabines:
+ -De Lisle Commando Carabine -> Rifle I(Rifles_C1)
  -M4.50Beowulf SC -> Rifle III(Rifles_C3)
  
 *Sniper Rifle:
@@ -236,7 +392,7 @@ Pistols:
 -Medusa Survival Revolver: Most Pistol Catridge, 6 shots double action
 *Include HMC more content Pistol Catridge, can be really overwhelming using multiple ammo of the same ammo type
 
-Carbines:
+Carabines:
 -M4.50 Beowulf: .50 Beowulf, automatic
 
 Launchers:
@@ -287,7 +443,7 @@ Shotguns:
 -DP-12: 12Gauge, double barrel pump action
 
 SMGs:
--Thompson M1928A1, .45ACP automatic, 2 handed
+-Thompson M1928A1, .45ACP, automatic, 2 handed
 
 Carbines:
 -Delisle, .45ACP, bolt action, with integrated suppressor

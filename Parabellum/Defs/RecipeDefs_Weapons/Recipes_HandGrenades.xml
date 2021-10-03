@@ -1,11 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-
+  
+  <!-- Model 24 Stielhandgranate -->
   <RecipeDef ParentName="GrenadeRecipeBase">
     <defName>MakePotatoM</defName>
     <label>make M24 Stick Grenades x5</label>
     <description>Craft M24 Stick Grenades.</description>
     <jobString>Making M24 Stick Grenades.</jobString>
+	<workAmount>2000</workAmount>
+    <soundWorking>Recipe_Machining</soundWorking>
+	<skillRequirements>
+        <Crafting>4</Crafting>
+    </skillRequirements>
     <ingredients>
       <li>
         <filter>
@@ -24,11 +30,20 @@
         </filter>
         <count>6</count>
       </li>
+	  <li>
+		<filter>
+			<categories>
+				<li>Woody</li>
+			</categories>
+		</filter>
+		<count>4</count>
+	  </li>
     </ingredients>
     <fixedIngredientFilter>
       <categories>
         <li>SLDBar</li>
         <li>USLDBar</li>
+		<li>Woody</li>
       </categories>
       <thingDefs>
         <li>Powder</li>
@@ -41,11 +56,17 @@
 	<researchPrerequisite>Grenade_C1</researchPrerequisite>
   </RecipeDef>
   
+  <!-- Model 24 with Splitterring -->
   <RecipeDef ParentName="GrenadeRecipeBase">
     <defName>MakeM24wSplitterring</defName>
     <label>make M24 with Splitterring x5</label>
     <description>Craft 5 M24 with Splitterring.</description>
     <jobString>Making M24 with Splitterring.</jobString>
+	<workAmount>2800</workAmount>
+    <soundWorking>Recipe_Machining</soundWorking>
+	<skillRequirements>
+        <Crafting>5</Crafting>
+    </skillRequirements>
     <ingredients>
       <li>
         <filter>
@@ -53,7 +74,7 @@
             <li>Metallic</li>
           </categories>
         </filter>
-        <count>35</count>
+        <count>30</count>
       </li>
       <li>
         <filter>
@@ -64,11 +85,20 @@
         </filter>
         <count>6</count>
       </li>
+	  <li>
+		<filter>
+			<categories>
+				<li>Woody</li>
+			</categories>
+		</filter>
+		<count>4</count>
+	  </li>
     </ingredients>
     <fixedIngredientFilter>
       <categories>
         <li>SLDBar</li>
         <li>USLDBar</li>
+		<li>Woody</li>
       </categories>
       <thingDefs>
         <li>Powder</li>
@@ -81,11 +111,17 @@
 	<researchPrerequisite>Grenade_C1</researchPrerequisite>
   </RecipeDef>
   
+  <!-- Model 24 Nebelgranate -->
   <RecipeDef ParentName="GrenadeRecipeBase">
     <defName>MakeM24Nb</defName>
     <label>make M24 Nebelgranate x5</label>
     <description>Craft 5 M24 Nebelgranate.</description>
     <jobString>Making M24 Nebelgranate.</jobString>
+	<workAmount>2200</workAmount>
+    <soundWorking>Recipe_Machining</soundWorking>
+	<skillRequirements>
+        <Crafting>4</Crafting>
+    </skillRequirements>
     <ingredients>
       <li>
         <filter>
@@ -93,7 +129,7 @@
             <li>Metallic</li>
           </categories>
         </filter>
-        <count>20</count>
+        <count>16</count>
       </li>
 	  <li>
         <filter>
@@ -112,11 +148,20 @@
         </filter>
         <count>6</count>
       </li>
+	  <li>
+		<filter>
+			<categories>
+				<li>Woody</li>
+			</categories>
+		</filter>
+		<count>4</count>
+	  </li>
     </ingredients>
     <fixedIngredientFilter>
       <categories>
         <li>SLDBar</li>
         <li>USLDBar</li>
+		<li>Woody</li>
       </categories>
       <thingDefs>
         <li>Powder</li>
@@ -130,11 +175,17 @@
 	<researchPrerequisite>Grenade_C1</researchPrerequisite>
   </RecipeDef>
   
+  <!-- M24 Grenade Bundle -->
   <RecipeDef ParentName="GrenadeRecipeBase">
     <defName>MakeM24Bundle</defName>
     <label>make M24 Bundle x1</label>
     <description>Craft a M24 Bundle.</description>
     <jobString>Making M24 Bundle.</jobString>
+	<workAmount>10000</workAmount>
+    <soundWorking>Recipe_Machining</soundWorking>
+	<skillRequirements>
+        <Crafting>4</Crafting>
+    </skillRequirements>
     <ingredients>
 	  <li>
 		<filter>
@@ -150,7 +201,7 @@
             <li>Metallic</li>
           </categories>
         </filter>
-        <count>24</count>
+        <count>26</count>
       </li>
       <li>
         <filter>
@@ -161,11 +212,20 @@
         </filter>
         <count>8</count>
       </li>
+	  <li>
+		<filter>
+			<categories>
+				<li>Woody</li>
+			</categories>
+		</filter>
+		<count>1</count>
+	  </li>
     </ingredients>
     <fixedIngredientFilter>
       <categories>
         <li>SLDBar</li>
         <li>USLDBar</li>
+		<li>Woody</li>
       </categories>
       <thingDefs>
 	    <li>Weapon_Parts</li>
@@ -179,11 +239,17 @@
 	<researchPrerequisite>Grenade_C2</researchPrerequisite>
   </RecipeDef>
   
+  <!-- 4kg Demolition Charge -->
   <RecipeDef ParentName="GrenadeRecipeBase">
     <defName>Make4kg</defName>
     <label>make 4kg Demolition Charge x1</label>
     <description>Craft a 4kg Demolition Charge.</description>
     <jobString>Making 4kg Demolition Charge.</jobString>
+	<workAmount>6000</workAmount>
+    <soundWorking>Recipe_Machining</soundWorking>
+	<skillRequirements>
+        <Crafting>6</Crafting>
+    </skillRequirements>
     <ingredients>
 	  <li>
 		<filter>
@@ -199,7 +265,7 @@
             <li>Metallic</li>
           </categories>
         </filter>
-        <count>40</count>
+        <count>30</count>
       </li>
       <li>
         <filter>
@@ -208,13 +274,22 @@
             <li>FSX</li>
           </thingDefs>
         </filter>
-        <count>10</count>
+        <count>14</count>
       </li>
+	  <li>
+		<filter>
+			<categories>
+				<li>Woody</li>
+			</categories>
+		</filter>
+		<count>1</count>
+	  </li>
     </ingredients>
     <fixedIngredientFilter>
       <categories>
         <li>SLDBar</li>
         <li>USLDBar</li>
+		<li>Woody</li>
       </categories>
       <thingDefs>
 	    <li>Weapon_Parts</li>
@@ -228,5 +303,120 @@
 	<researchPrerequisite>Grenade_C2</researchPrerequisite>
   </RecipeDef>
   
+  <!-- RGO Impact Grenade -->
+  <RecipeDef ParentName="RangedWeaponRecipeBase">
+        <defName>MakeRGO</defName>
+        <label>make RGO Impact Grenades x5</label>
+        <description>Craft 5 RGO Impact Grenades.</description>
+        <jobString>Making RGO Impact Grenades.</jobString>
+        <workAmount>3500</workAmount>
+        <soundWorking>Recipe_Machining</soundWorking>
+        <skillRequirements>
+            <Crafting>8</Crafting>
+        </skillRequirements>
+        <ingredients>
+            <li>
+                <filter>
+                    <categories>
+                        <li>Metallic</li>
+                    </categories>
+                </filter>
+                <count>28</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Powder</li>
+                        <li>FSX</li>
+                    </thingDefs>
+                </filter>
+                <count>5</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Weapon_Parts</li>
+                    </thingDefs>
+                </filter>
+                <count>5</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <categories>
+                <li>SLDBar</li>
+                <li>USLDBar</li>
+            </categories>
+            <thingDefs>
+                <li>Powder</li>
+                <li>FSX</li>
+                <li>Weapon_Parts</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <Pa_RGO>5</Pa_RGO>
+        </products>
+        <recipeUsers>
+            <li>WeaponCraftingWorkTable</li>
+        </recipeUsers>
+        <researchPrerequisite>Grenade_C2</researchPrerequisite>
+    </RecipeDef>
+	
+	<!-- Panzerwurmine Anti-Tank Impact Grenade-->
+    <RecipeDef ParentName="RangedWeaponRecipeBase">
+        <defName>MakePWM</defName>
+        <label>make PWM(K) Anti-Tank Impact Grenades x5</label>
+        <description>Craft 5 PWM(K) Anti-Tank Impact Grenades.</description>
+        <jobString>Making PWM(K) Anti-Tank Impact Grenades.</jobString>
+        <workAmount>3500</workAmount>
+        <soundWorking>Recipe_Machining</soundWorking>
+        <skillRequirements>
+            <Crafting>7</Crafting>
+        </skillRequirements>
+        <ingredients>
+            <li>
+                <filter>
+                    <categories>
+                        <li>Metallic</li>
+                    </categories>
+                </filter>
+                <count>30</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Powder</li>
+                        <li>FSX</li>
+                    </thingDefs>
+                </filter>
+                <count>6</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Weapon_Parts</li>
+                    </thingDefs>
+                </filter>
+                <count>2</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <categories>
+                <li>SLDBar</li>
+                <li>USLDBar</li>
+            </categories>
+            <thingDefs>
+                <li>Powder</li>
+                <li>FSX</li>
+                <li>Weapon_Parts</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <Pa_PWM>5</Pa_PWM>
+        </products>
+        <recipeUsers>
+            <li>WeaponCraftingWorkTable</li>
+        </recipeUsers>
+        <researchPrerequisite>Grenade_C2</researchPrerequisite>
+    </RecipeDef>
   
 </Defs>

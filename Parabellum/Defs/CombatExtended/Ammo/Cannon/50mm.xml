@@ -113,7 +113,7 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
-			<speed>129</speed>
+			<speed>129</speed> <!-- 835m/s -->
 			<damageDef>Bullet</damageDef>
 			<damageAmountBase>118</damageAmountBase>
 			<armorPenetrationSharp>100</armorPenetrationSharp>
@@ -121,9 +121,9 @@
 		</projectile>
 		<comps>
 			<li Class="CombatExtended.CompProperties_ExplosiveCE">
-				<damageAmountBase>98</damageAmountBase>
+				<damageAmountBase>64</damageAmountBase>
 				<explosiveDamageType>Bomb</explosiveDamageType>
-				<explosiveRadius>1.2</explosiveRadius>
+				<explosiveRadius>1.9</explosiveRadius>
 			</li>
 			<li Class="CombatExtended.CompProperties_Fragments">
 				<fragments>
@@ -143,10 +143,10 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
-			<speed>86</speed>
+			<speed>85</speed> <!-- 550m/s -->
 			<damageDef>Bomb</damageDef>
 			<damageAmountBase>88</damageAmountBase>
-			<explosionRadius>1.8</explosionRadius>
+			<explosionRadius>2.4</explosionRadius>
 			<soundExplode>MortarBomb_Explode</soundExplode>
 			<ai_IsIncendiary>true</ai_IsIncendiary>
 			<secondaryDamage>
@@ -174,7 +174,7 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
-			<speed>160</speed>
+			<speed>182</speed> <!-- 1180m/s -->
 			<damageDef>Bullet</damageDef>
 			<spreadMult>0.8</spreadMult>
 			<damageAmountBase>136</damageAmountBase>
@@ -228,7 +228,7 @@
 						<li>FSX</li>
 					</thingDefs>
 				</filter>
-				<count>100</count>
+				<count>25</count>
 			</li>
 		</ingredients>
 		<fixedIngredientFilter>
@@ -249,7 +249,7 @@
 			<Crafting>8</Crafting>
 		</skillRequirements>
 		<workSkill>Crafting</workSkill>
-		<researchPrerequisite>Mortars</researchPrerequisite>
+		<researchPrerequisite>Turrets_31</researchPrerequisite>
 	</RecipeDef>
 
 	<RecipeDef ParentName="AmmoRecipeBase">
@@ -282,7 +282,7 @@
 						<li>FSX</li>
 					</thingDefs>
 				</filter>
-				<count>60</count>
+				<count>32</count>
 			</li>
 		</ingredients>
 		<fixedIngredientFilter>
@@ -303,7 +303,7 @@
 			<Crafting>8</Crafting>
 		</skillRequirements>
 		<workSkill>Crafting</workSkill>
-		<researchPrerequisite>Mortars</researchPrerequisite>
+		<researchPrerequisite>Turrets_31</researchPrerequisite>
 	</RecipeDef>
 
 	<RecipeDef ParentName="AmmoRecipeBase">
@@ -336,7 +336,7 @@
 						<li>FSX</li>
 					</thingDefs>
 				</filter>
-				<count>42</count>
+				<count>18</count>
 			</li>
 		</ingredients>
 		<fixedIngredientFilter>
@@ -357,7 +357,7 @@
 			<Crafting>8</Crafting>
 		</skillRequirements>
 		<workSkill>Crafting</workSkill>
-		<researchPrerequisite>Mortars</researchPrerequisite>
+		<researchPrerequisite>Turrets_31</researchPrerequisite>
 	</RecipeDef>
 
 </Defs>

@@ -131,4 +131,138 @@
 		</smeltProducts>
 	</ThingDef>
 	
+	<!-- Mauser C96 Semi-Automatic Pistol -->
+	<ThingDef ParentName="BaseGun_ShortBarreled">
+		<defName>Pa_C96M</defName>
+		<label>Mauser C96 Pistol</label>
+		<description>One of the earliest Semi-Automatic pistol, with 10-round internal magazine fed by stripper clip, light weigh, cheap to produce and relatively high rate of fire.</description>
+		<graphicData>
+			<texPath>Things/Weapons/C96</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Interact_Revolver</soundInteract>
+		<statBases>
+			<MarketValue>220</MarketValue>
+			<SightsEfficiency>0.92</SightsEfficiency>
+			<ShotSpread>0.32</ShotSpread>
+			<SwayFactor>1.2</SwayFactor>
+			<RangedWeapon_Cooldown>0.36</RangedWeapon_Cooldown>
+			<Bulk>2.1</Bulk>
+			<Mass>1.13</Mass>
+		</statBases>
+		<generateCommonality>0.8</generateCommonality>
+		<weaponTags>
+			<li>PT1</li>
+			<li>Gun</li>
+			<li>TierOnePistol</li>
+			<li>CE_Sidearm</li>
+			<li>CE_AI_Pistol</li>
+			<li>CE_OneHandedWeapon</li>
+		</weaponTags>
+		<thingCategories>
+			<li>Pistols</li>
+		</thingCategories>
+		<verbs>
+			<li Class="CombatExtended.VerbPropertiesCE">
+				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_763x25mmM_FMJ</defaultProjectile>
+				<warmupTime>0.4</warmupTime>
+				<range>25</range>
+				<soundCast>RF_Shot93R</soundCast>
+				<soundCastTail>GunTail_Light</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="CombatExtended.CompProperties_FireModes">
+				<aiAimMode>AimedShot</aiAimMode>
+			</li>
+			<li Class="CombatExtended.CompProperties_AmmoUser">
+				<magazineSize>10</magazineSize>
+				<reloadTime>2.8</reloadTime>
+				<ammoSet>AmmoSet_MauserP</ammoSet>
+			</li>
+		</comps>
+		<modExtensions>
+		  <li Class="CombatExtended.GunDrawExtension">
+			<DrawSize>0.5</DrawSize>
+		  </li>
+		</modExtensions>
+		<smeltProducts>
+			<ComponentIndustrial>1</ComponentIndustrial>
+			<Plasteel>2</Plasteel>
+		</smeltProducts>
+	</ThingDef>
+	
+	<!-- M712 Schnellfeuer Automatic Pistol -->
+	<ThingDef ParentName="BaseGun_ShortBarreled">
+		<defName>Pa_M712S</defName>
+		<label>M712 "Schnellfeuer" Pistol</label>
+		<description>Automatic pistol convertion of the C96, included detachable box magazine and of course, automatic fire in a small package, incase semi-automatic is not enough.</description>
+		<graphicData>
+			<texPath>Things/Weapons/M712</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Interact_SMG</soundInteract>
+		<statBases>
+			<MarketValue>380</MarketValue>
+			<SightsEfficiency>0.8</SightsEfficiency>
+			<ShotSpread>0.28</ShotSpread>
+			<SwayFactor>1.2</SwayFactor>
+			<RangedWeapon_Cooldown>0.3</RangedWeapon_Cooldown>
+			<Bulk>1.85</Bulk>
+			<Mass>1.15</Mass>
+		</statBases>
+		<generateCommonality>0.3</generateCommonality>
+		<weaponTags>
+			<li>PT2</li>
+			<li>PT1</li>
+			<li>Gun</li>
+			<li>TierOnePistol</li>
+			<li>CE_Sidearm</li>
+			<li>CE_AI_Pistol</li>
+			<li>CE_OneHandedWeapon</li>
+		</weaponTags>
+		<thingCategories>
+			<li>Pistols</li>
+		</thingCategories>
+		<verbs>
+			<li Class="CombatExtended.VerbPropertiesCE">
+				<recoilAmount>1.62</recoilAmount>
+				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_9x19mmPara_FMJ</defaultProjectile>
+				<burstShotCount>5</burstShotCount>
+				<ticksBetweenBurstShots>4</ticksBetweenBurstShots>
+				<warmupTime>0.56</warmupTime>
+				<range>28</range>
+				<soundCast>RF_Shot93R</soundCast>
+				<soundCastTail>GunTail_Light</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="CombatExtended.CompProperties_FireModes">
+				<aiUseBurstMode>true</aiUseBurstMode>
+				<aiAimMode>AimedShot</aiAimMode>
+				<aimedBurstShotCount>2</aimedBurstShotCount>
+			</li>
+			<li Class="CombatExtended.CompProperties_AmmoUser">
+				<magazineSize>10</magazineSize>
+				<reloadTime>2</reloadTime>
+				<ammoSet>AmmoSet_MauserP</ammoSet>
+			</li>
+		</comps>
+		<modExtensions>
+		  <li Class="CombatExtended.GunDrawExtension">
+			<DrawSize>0.5</DrawSize>
+		  </li>
+		</modExtensions>
+		<smeltProducts>
+			<ComponentIndustrial>2</ComponentIndustrial>
+			<Plasteel>6</Plasteel>
+		</smeltProducts>
+	</ThingDef>
+	
 </Defs>

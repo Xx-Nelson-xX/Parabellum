@@ -12,7 +12,8 @@
 		</graphicData>
 		<soundInteract>Artillery_ShellLoaded</soundInteract>
 		<description>Nebelwefer attached to a Mobile platform.</description>
-		<techLevel>Spacer</techLevel>
+		<techLevel>Ultra</techLevel>
+		<tradeability>None</tradeability>
 		<statBases>
 			<MarketValue>5000</MarketValue>
 			<SightsEfficiency>1.4</SightsEfficiency>
@@ -77,7 +78,7 @@
 			<Mass>550</Mass>
 			<Bulk>550</Bulk>
 		</statBases>
-		<techLevel>Spacer</techLevel>
+		<techLevel>Ultra</techLevel>
 		<description>An ancient Multi-barrel Heavy Rocket Launcher, robust and simple, feared by many, one of the few cost-efficient weapon from the Wunderwaffen Project, with improved recket ballistic that increased more than 60% of its range and improved projectile speed, but reduce a lot of it damage effects as trade off.</description>
 		<size>(2,2)</size>
 		<stuffCategories>

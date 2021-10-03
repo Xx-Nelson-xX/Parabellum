@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+	<mods>
+		<li>Core SK</li>
+	</mods>
+		<match Class="PatchOperationSequence">
+		<success>Always</success>
+			<operations>
+			
+				<li Class="PatchOperationAdd">	
+					<xpath>Defs/ResearchProjectDef[defName="Machining"]/prerequisites</xpath>
+					<value>
+						<li>Parabellum_Alpha</li>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">	
+					<xpath>Defs/ResearchProjectDef[defName="Machining"]/baseCost</xpath>
+					<value>
+						<baseCost>1200</baseCost>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">	
+					<xpath>Defs/ResearchProjectDef[defName="Turrets_31"]/prerequisites</xpath>
+					<value>
+						<prerequisites>
+							<li>HeavyTurrets</li>
+							<li>Parabellum_Gamma</li>
+						</prerequisites>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">	
+					<xpath>Defs/ResearchProjectDef[defName="Turrets_31"]/baseCost</xpath>
+					<value>
+						<baseCost>800</baseCost>
+					</value>
+				</li>
+				
+				<!-- .12 Gauge -->
+				<li Class="PatchOperationAdd">	
+					<xpath>Defs/RecipeDef[defName="MakeAmmo_12Gauge_Buck"]</xpath>
+					<value>
+						<recipeUsers>
+							<li>FabricationBench</li>
+						</recipeUsers>
+						 <researchPrerequisite>Parabellum_Alpha</researchPrerequisite>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">	
+					<xpath>Defs/RecipeDef[defName="MakeAmmo_12Gauge_Bird"]</xpath>
+					<value>
+						<recipeUsers>
+							<li>FabricationBench</li>
+						</recipeUsers>
+						 <researchPrerequisite>Parabellum_Alpha</researchPrerequisite>
+					</value>
+				</li>
+				
+				<!-- WeaponCraftingBench -->
+				<li Class="PatchOperationAdd">	
+					<xpath>Defs/ThingDef[defName="WeaponCraftingWorkTable"]/building</xpath>
+					<value>
+						<unpoweredWorkTableWorkSpeedFactor>0.6</unpoweredWorkTableWorkSpeedFactor>
+					</value>
+				</li>
+				
+				<!-- Heavy Component -->
+				<li Class="PatchOperationAdd">	
+					<xpath>Defs/RecipeDef[defName="MakeHeavy_Component"]/recipeUsers</xpath>
+					<value>
+						<li>FabricationBench</li>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">	
+					<xpath>Defs/RecipeDef[defName="MakeHeavy_Component"]/researchPrerequisite</xpath>
+					<value>
+						<researchPrerequisite>Machining</researchPrerequisite>
+					</value>
+				</li>
+				
+			</operations>
+		</match>
+    </Operation>
+	
+</Patch>

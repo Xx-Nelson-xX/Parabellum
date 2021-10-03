@@ -12,7 +12,8 @@
 		</graphicData>
 		<soundInteract>Artillery_ShellLoaded</soundInteract>
 		<description>Nebelwefer attached to a Mobile platform.</description>
-		<techLevel>Spacer</techLevel>
+		<techLevel>Ultra</techLevel>
+		<tradeability>None</tradeability>
 		<statBases>
 			<MarketValue>6000</MarketValue>
 			<SightsEfficiency>2.2</SightsEfficiency>
@@ -68,7 +69,8 @@
 		</graphicData>
 		<soundInteract>Artillery_ShellLoaded</soundInteract>
 		<description>Nebelwefer attached to a Skeleton platform.</description>
-		<techLevel>Industrial</techLevel>
+		<techLevel>Spacer</techLevel>
+		<tradeability>None</tradeability>
 		<statBases>
 			<MarketValue>1000</MarketValue>
 			<SightsEfficiency>2.2</SightsEfficiency>
@@ -128,7 +130,7 @@
 			<Mass>1130</Mass>
 			<Bulk>1130</Bulk>
 		</statBases>
-		<techLevel>Spacer</techLevel>
+		<techLevel>Ultra</techLevel>
 		<description>An ancient Multi-barrel Heavy Rocket Launcher, robust and simple, feared by many, one of the few cost-efficient weapon from the Wunderwaffen Project, but the rocket projectile is too heavy and highly decrease its effective range.</description>
 		<size>(2,2)</size>
 		<stuffCategories>
@@ -178,7 +180,7 @@
 			<Mass>200</Mass>
 			<Bulk>180</Bulk>
 		</statBases>
-		<techLevel>Industrial</techLevel>
+		<techLevel>Spacer</techLevel>
 		<description>Single Wurfrahmen launcher frame that can place in any open field with its support/platform.</description>
 		<size>(1,1)</size>
 		<stuffCategories>
@@ -223,7 +225,7 @@
 		<soundDrop>Standard_Drop</soundDrop>
 		<tickerType>Normal</tickerType>
 		<stackLimit>6</stackLimit>
-		<techLevel>Industrial</techLevel>
+		<techLevel>Spacer</techLevel>
 		<statBases>
 			<MarketValue>900</MarketValue>
 			<MaxHitPoints>180</MaxHitPoints>

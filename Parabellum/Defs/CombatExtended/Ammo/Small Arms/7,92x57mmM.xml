@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingCategoryDef>
+		<defName>Ammo8mmM</defName>
+		<label>7.92x57mm Mauser</label>
+		<parent>AmmoRifles</parent>
+		<iconPath>Things/Ammo/Mauser/MR/SP/SP_c</iconPath>
+	</ThingCategoryDef>
+	
+	<!-- ==================== AmmoSet ========================== -->
+
+	<CombatExtended.AmmoSetDef>
+		<defName>AmmoSet_8mmM</defName>
+		<label>8mm Mauser Rifle Ammo(7.92x57mm)</label>
+		<ammoTypes>
+			<Ammo_8mmM_P88M>Bullet_8mmM_P88M</Ammo_8mmM_P88M>
+			<Ammo_8mmM_SP>Bullet_8mmM_SP</Ammo_8mmM_SP>
+			<Ammo_8mmM_KP>Bullet_8mmM_KP</Ammo_8mmM_KP>
+			<Ammo_8mmM_BP>Bullet_8mmM_BP</Ammo_8mmM_BP>
+		</ammoTypes>
+	</CombatExtended.AmmoSetDef>
+	
+	<!-- ==================== Ammo ========================== -->
+
+	<ThingDef Class="CombatExtended.AmmoDef" Name="8mmMBase" ParentName="SmallAmmoBase" Abstract="True">
+		<description>Old School long rifle ammo, heavier, larger and bit more expensive than modern battle rifle ammo, the good thing is, the size is bigger and load 50% more gun powder, which makes them really deadly even in obsoleted weapons.</description>
+		<statBases>
+			<Bulk>0.058</Bulk>
+		</statBases>
+		<tradeTags>
+			<li>CE_AutoEnableTrade</li>
+			<li>CE_AutoEnableCrafting</li>
+		</tradeTags>
+		<thingCategories>
+			<li>Ammo8mmM</li>
+		</thingCategories>
+	</ThingDef>
+	
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="8mmMBase">
+		<defName>Ammo_8mmM_P88M</defName>
+		<label>8x57mm Patrone 88 (FMJ)</label>
+		<graphicData>
+			<texPath>Things/Ammo/Mauser/MR/P88</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<Bulk>0.062</Bulk>
+			<Mass>0.03</Mass>
+			<MarketValue>2.1</MarketValue>
+		</statBases>
+		<ammoClass>8mmP88M</ammoClass>
+		<cookOffProjectile>Bullet_8mmM_P88M</cookOffProjectile>
+	</ThingDef>
+	
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="8mmMBase">
+		<defName>Ammo_8mmM_SP</defName>
+		<label>7.92x57mm S Patrone (FMJ)</label>
+		<graphicData>
+			<texPath>Things/Ammo/Mauser/MR/SP</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<Mass>0.0246</Mass>
+			<MarketValue>2.5</MarketValue>
+		</statBases>
+		<ammoClass>8mmSP</ammoClass>
+		<cookOffProjectile>Bullet_8mmM_SP</cookOffProjectile>
+	</ThingDef>
+	
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="8mmMBase">
+		<defName>Ammo_8mmM_KP</defName>
+		<label>7.92x57mm K Patrone (AP)</label>
+		<graphicData>
+			<texPath>Things/Ammo/Mauser/MR/KP</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<Mass>0.026</Mass>
+			<MarketValue>3.2</MarketValue>
+		</statBases>
+		<ammoClass>8mmKP</ammoClass>
+		<generateAllowChance>0.4</generateAllowChance>
+		<cookOffProjectile>Bullet_8mmM_KP</cookOffProjectile>
+	</ThingDef>
+	
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="8mmMBase">
+		<defName>Ammo_8mmM_BP</defName>
+		<label>7.92x57mm B Patrone (HE-T)</label>
+		<graphicData>
+			<texPath>Things/Ammo/Mauser/MR/BP</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<Mass>0.025</Mass>
+			<MarketValue>3.1</MarketValue>
+		</statBases>
+		<ammoClass>8mmBP</ammoClass>
+		<generateAllowChance>0.1</generateAllowChance>
+		<cookOffProjectile>Bullet_8mmM_BP</cookOffProjectile>
+	</ThingDef>
+	
+	<!-- ================== Projectiles ================== -->
+
+	<ThingDef Class="CombatExtended.AmmoDef" Name="Base8mmMBullet" ParentName="SK_BaseBullet" Abstract="true">
+		<graphicData>
+			<texPath>Things/Projectile/Bullet_Small</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageDef>Bullet</damageDef>
+			<dropsCasings>true</dropsCasings>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="Base8mmMBullet">
+		<defName>Bullet_8mmM_P88M</defName>
+		<label>8mm bullet (FMJ)</label>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<speed>125</speed>
+			<damageAmountBase>20</damageAmountBase>
+			<armorPenetrationSharp>9.2</armorPenetrationSharp>
+			<armorPenetrationBlunt>74.6</armorPenetrationBlunt>
+		</projectile>
+	</ThingDef>
+	
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="Base8mmMBullet">
+		<defName>Bullet_8mmM_SP</defName>
+		<label>7.92x57mm bullet (FMJ)</label>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<speed>168</speed>
+			<spreadMult>0.94</spreadMult>
+			<damageAmountBase>24</damageAmountBase>
+			<armorPenetrationSharp>11.2</armorPenetrationSharp>
+			<armorPenetrationBlunt>72.5</armorPenetrationBlunt>
+		</projectile>
+	</ThingDef>
+	
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="Base8mmMBullet">
+		<defName>Bullet_8mmM_KP</defName>
+		<label>7.92x57mm bullet (AP)</label>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<speed>177</speed>
+			<spreadMult>0.9</spreadMult>
+			<damageAmountBase>27</damageAmountBase>
+			<armorPenetrationSharp>15.2</armorPenetrationSharp>
+			<armorPenetrationBlunt>69.4</armorPenetrationBlunt>
+		</projectile>
+	</ThingDef>
+	
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="Base8mmMBullet">
+		<defName>Bullet_8mmM_BP</defName>
+		<label>7.92x57mm bullet (HE-T)</label>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<speed>162</speed>
+			<spreadMult>0.9</spreadMult>
+			<damageAmountBase>25</damageAmountBase>
+			<armorPenetrationSharp>10.8</armorPenetrationSharp>
+			<armorPenetrationBlunt>82.6</armorPenetrationBlunt>
+			<secondaryDamage>
+				<li>
+					<def>Bomb_Secondary</def>
+					<amount>9</amount>
+				</li>
+			</secondaryDamage>
+		</projectile>
+		<comps>
+			<li Class="CombatExtended.CompProperties_ExplosiveCE">
+				<damageAmountBase>4</damageAmountBase>
+				<explosiveDamageType>Stun</explosiveDamageType>
+				<explosiveRadius>0.2</explosiveRadius>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<!-- ==================== Recipes ========================== -->
+
+	<RecipeDef ParentName="AmmoRecipeRifle">
+		<defName>MakeAmmo_8mmM_P88M</defName>
+		<label>make 8x57mm Patrone 88 (FMJ) cartridge x50</label>
+		<description>Craft 50 8x57mm Patrone 88 (FMJ) cartridge.</description>
+		<jobString>Making 8x57mm Patrone 88 (FMJ) cartridge.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>SLDBar</li>
+						<li>USLDBar</li>
+					</categories>
+				</filter>
+				<count>20</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Powder</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>SLDBar</li>
+				<li>USLDBar</li>
+			</categories>
+			<thingDefs>
+				<li>Powder</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Ammo_8mmM_P88M>50</Ammo_8mmM_P88M>
+		</products>
+		<skillRequirements>
+			<Crafting>4</Crafting>
+		</skillRequirements>
+		<workSkill>Crafting</workSkill>
+		<workSkillLearnFactor>0.8</workSkillLearnFactor>
+		<recipeUsers>
+			<li>FabricationBench</li>
+		</recipeUsers>
+		<researchPrerequisite>Parabellum_Alpha</researchPrerequisite>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="AmmoRecipeRifle">
+		<defName>MakeAmmo_8mmM_SP</defName>
+		<label>make 7.92x57mm S Patrone (FMJ) cartridge x75</label>
+		<description>Craft 75 7.92x57mm S Patrone(FMJ) cartridge.</description>
+		<jobString>Making 7.92x57mm S Patrone (FMJ) cartridge.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>SLDBar</li>
+						<li>USLDBar</li>
+					</categories>
+				</filter>
+				<count>20</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>HeavyBar</li>
+					</categories>
+				</filter>
+				<count>4</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Powder</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>SLDBar</li>
+				<li>USLDBar</li>
+				<li>HeavyBar</li>
+			</categories>
+			<thingDefs>
+				<li>Powder</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Ammo_8mmM_SP>75</Ammo_8mmM_SP>
+		</products>
+		<skillRequirements>
+			<Crafting>5</Crafting>
+		</skillRequirements>
+		<workSkill>Crafting</workSkill>
+		<workSkillLearnFactor>0.8</workSkillLearnFactor>
+		<researchPrerequisite>Machining</researchPrerequisite>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="AmmoRecipeRifle">
+		<defName>MakeAmmo_8mmM_KP</defName>
+		<label>make 7.92x57mm K Patrone (AP) cartridge x75</label>
+		<description>Craft 75 7.92x57mm K Patrone (AP) cartridge.</description>
+		<jobString>Making 7.92x57mm K Patrone (AP) cartridge.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>SLDBar</li>
+						<li>USLDBar</li>
+					</categories>
+				</filter>
+				<count>12</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Tungsten</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>HeavyBar</li>
+					</categories>
+				</filter>
+				<count>4</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Powder</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>SLDBar</li>
+				<li>USLDBar</li>
+				<li>HeavyBar</li>
+			</categories>
+			<thingDefs>
+				<li>Tungsten</li>
+				<li>Powder</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Ammo_8mmM_KP>75</Ammo_8mmM_KP>
+		</products>
+		<skillRequirements>
+			<Crafting>6</Crafting>
+		</skillRequirements>
+		<workSkill>Crafting</workSkill>
+		<workSkillLearnFactor>0.8</workSkillLearnFactor>
+		<researchPrerequisite>Machining</researchPrerequisite>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="AmmoRecipeRifle">
+		<defName>MakeAmmo_8mmM_BP</defName>
+		<label>make 7.92x57mm B Patrone (HE-T) cartridge x75</label>
+		<description>Craft 75 7.92x57mm B Patrone(HE-T) cartridge.</description>
+		<jobString>Making 7.92x57mm B Patrone (HE-T) cartridge.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>SLDBar</li>
+						<li>USLDBar</li>
+					</categories>
+				</filter>
+				<count>18</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>HeavyBar</li>
+					</categories>
+				</filter>
+				<count>4</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Powder</li>
+						<li>FSX</li>
+					</thingDefs>
+				</filter>
+				<count>8</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>SLDBar</li>
+				<li>USLDBar</li>
+				<li>HeavyBar</li>
+			</categories>
+			<thingDefs>
+				<li>Powder</li>
+				<li>FSX</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Ammo_8mmM_BP>75</Ammo_8mmM_BP>
+		</products>
+		<skillRequirements>
+			<Crafting>5</Crafting>
+		</skillRequirements>
+		<workSkill>Crafting</workSkill>
+		<workSkillLearnFactor>0.8</workSkillLearnFactor>
+		<researchPrerequisite>Rifles_C2</researchPrerequisite>
+	</RecipeDef>
+	
+</Defs>

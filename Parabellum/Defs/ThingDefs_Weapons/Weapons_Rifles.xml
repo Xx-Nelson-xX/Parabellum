@@ -130,4 +130,213 @@
         </smeltProducts>
     </ThingDef>
 	
+	<!-- Gewehr Model 1888 Bolt Action Rifle -->
+    <ThingDef ParentName="BaseGun_LongBarreled">
+        <defName>Pa_G88M</defName>
+        <label>Gewehr Model 1888</label>
+        <description>An ancient Bolt Action Rifle, very robust, quite heavy and large, perfectly fit for trench warfare and sharpshooting.</description>
+        <graphicData>
+            <texPath>Things/Weapons/G88</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>Interact_Rifle</soundInteract>
+        <statBases>
+            <MarketValue>700</MarketValue>
+            <SightsEfficiency>1.1</SightsEfficiency>
+            <ShotSpread>0.08</ShotSpread>
+            <SwayFactor>1.25</SwayFactor>
+            <RangedWeapon_Cooldown>1.8</RangedWeapon_Cooldown>
+            <Bulk>10.8</Bulk>
+            <Mass>3.9</Mass>
+        </statBases>
+		<generateCommonality>0.7</generateCommonality>
+		<equippedAngleOffset>45</equippedAngleOffset>
+        <weaponTags>
+            <li>RF1</li>
+            <li>Gun</li>
+            <li>SniperRifle</li>
+            <li>TierOneRifle</li>
+            <li>TierOneSniper</li>
+            <li>CE_AI_Rifle</li>
+        </weaponTags>
+        <thingCategories>
+            <li>Rifles</li>
+        </thingCategories>
+        <verbs>
+            <li Class="CombatExtended.VerbPropertiesCE">
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>Bullet_8mmM_P88M</defaultProjectile>
+                <warmupTime>1</warmupTime>
+                <range>50</range>
+                <soundCast>Shot_G88M</soundCast>
+                <soundCastTail>GunTail_Heavy</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+            </li>
+        </verbs>
+        <comps>
+            <li Class="CombatExtended.CompProperties_FireModes">
+                <aiAimMode>AimedShot</aiAimMode>
+            </li>
+            <li Class="CombatExtended.CompProperties_AmmoUser">
+                <magazineSize>5</magazineSize>
+				<reloadOneAtATime>true</reloadOneAtATime>
+                <reloadTime>0.7</reloadTime>
+                <ammoSet>AmmoSet_8mmM</ammoSet>
+            </li>
+        </comps>
+		<modExtensions>
+		  <li Class="CombatExtended.GunDrawExtension">
+			<DrawSize>1.4</DrawSize>
+		  </li>
+		</modExtensions>
+        <smeltProducts>
+            <Plasteel>6</Plasteel>
+			<ComponentIndustrial>4</ComponentIndustrial>
+        </smeltProducts>
+    </ThingDef>
+	
+	<!-- Mauser 1918 T-Gewehr Bolt Action Anti-Tank Rifle -->
+    <ThingDef ParentName="BaseGun_LongBarreled">
+        <defName>Pa_TG</defName>
+        <label>Mauser 1918 T-Gewehr Bolt Action Anti-Tank Rifle</label>
+        <description>One of the first Bolt Action Anti-Tank Rifle, a scale up Mauser Rifle to fit the 13.2 TuF round for anti-tank purpose, very robust, bulky and heavy, but still portable and capable to take out light armored target.</description>
+        <graphicData>
+            <texPath>Things/Weapons/TG18</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>Interact_Rifle</soundInteract>
+        <statBases>
+            <MarketValue>2700</MarketValue>
+            <SightsEfficiency>1.15</SightsEfficiency>
+            <ShotSpread>0.03</ShotSpread>
+            <SwayFactor>0.8</SwayFactor>
+            <RangedWeapon_Cooldown>1.8</RangedWeapon_Cooldown>
+            <Bulk>16.8</Bulk>
+            <Mass>15.9</Mass>
+        </statBases>
+		<generateCommonality>0.3</generateCommonality>
+		<equippedAngleOffset>45</equippedAngleOffset>
+        <weaponTags>
+            <li>SNIP2</li>
+			<li>SNIP3</li>
+            <li>AdvancedGun</li>
+            <li>SniperRifle</li>
+            <li>TierTwoSniper</li>
+            <li>CE_AI_Rifle</li>
+        </weaponTags>
+        <thingCategories>
+            <li>Rifles</li>
+        </thingCategories>
+        <verbs>
+            <li Class="CombatExtended.VerbPropertiesCE">
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>Bullet_TuF_AP</defaultProjectile>
+                <warmupTime>2.1</warmupTime>
+                <range>62</range>
+                <soundCast>Shot_CG42R</soundCast>
+                <soundCastTail>GunTail_Heavy</soundCastTail>
+                <muzzleFlashScale>11</muzzleFlashScale>
+            </li>
+        </verbs>
+        <comps>
+            <li Class="CombatExtended.CompProperties_FireModes">
+                <aiAimMode>AimedShot</aiAimMode>
+            </li>
+            <li Class="CombatExtended.CompProperties_AmmoUser">
+                <magazineSize>1</magazineSize>
+                <reloadTime>1.1</reloadTime>
+                <ammoSet>AmmoSet_132TuF</ammoSet>
+            </li>
+        </comps>
+		<modExtensions>
+		  <li Class="CombatExtended.GunDrawExtension">
+			<DrawSize>1.5</DrawSize>
+		  </li>
+		</modExtensions>
+        <smeltProducts>
+			<Rifle_Component>1</Rifle_Component>
+            <Weapon_Parts>4</Weapon_Parts>
+            <Plasteel>10</Plasteel>
+			<ComponentIndustrial>2</ComponentIndustrial>
+        </smeltProducts>
+    </ThingDef>
+	
+	<!-- FG 42 Type F/II Dual Purpose Automatic Rifle -->
+    <ThingDef ParentName="BaseGun_LongBarreled">
+        <defName>Pa_FG42F</defName>
+        <label>FG 42 Type F(II)</label>
+        <description>The Fallschirmjägergewehr 42 aka. FG 42, model Type F(II). It combined the characteristics and firepower of a light machine gun in a lightweight form slightly shorter (but considerably bulkier and heavier) than the standard-issue Karabiner 98k bolt-action infantry rifle. Considered one of the most advanced weapon designs of World War II, even the weapon is chambered full lenght powerful 7.92x57mm Mauser catridge, the weapon design and the muzzle brake reduce the recoil enought to make it controllable for automatic fire, if it's not enough, it also include a build-in bipod to further improve the controllability, the weapon also included a build-in Bayonet and capable to mount telescopic sight, with all that features while keep it light weight and compact enough for paratroopers, the downside is, the weapon is very expensive to produce compared to any other small arms of its time.</description>
+        <graphicData>
+            <texPath>Things/Weapons/FG42</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>Interact_Rifle</soundInteract>
+        <statBases>
+            <MarketValue>2500</MarketValue>
+            <SightsEfficiency>1.2</SightsEfficiency>
+            <ShotSpread>0.04</ShotSpread>
+            <SwayFactor>1.2</SwayFactor>
+            <RangedWeapon_Cooldown>0.8</RangedWeapon_Cooldown>
+            <Bulk>11</Bulk>
+            <Mass>4.2</Mass>
+        </statBases>
+		<generateCommonality>0.1</generateCommonality>
+		<equippedAngleOffset>45</equippedAngleOffset>
+        <weaponTags>
+			<li>RF4</li>
+            <li>AdvancedGun</li>
+			<li>IndustrialGunAdvanced</li>
+            <li>TierThreeRifle</li>
+            <li>CE_AI_Rifle</li>
+            <li>MG3</li>
+            <li>GunHeavy</li>
+            <li>MachineGun</li>
+            <li>BrotherhoodHeavy</li>
+            <li>SectarianHeavy</li>
+            <li>SyndicateMachineGun</li>
+            <li>OrionHeavy</li>
+			<li>CE_MachineGun</li>
+			<li>CE_AI_Suppressive</li>
+        </weaponTags>
+		<tradeTags>
+            <li>Exotic</li>
+        </tradeTags>
+        <thingCategories>
+            <li>Rifles</li>
+        </thingCategories>
+        <verbs>
+            <li Class="CombatExtended.VerbPropertiesCE">
+                <recoilAmount>1.31</recoilAmount>
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>Bullet_8mmM_SP</defaultProjectile>
+                <warmupTime>1.2</warmupTime>
+                <range>57</range>
+                <ticksBetweenBurstShots>4</ticksBetweenBurstShots>
+                <burstShotCount>7</burstShotCount>
+                <soundCast>Shot_FG42F</soundCast>
+                <soundCastTail>GunTail_Medium</soundCastTail>
+                <muzzleFlashScale>10</muzzleFlashScale>
+            </li>
+        </verbs>
+        <comps>
+            <li Class="CombatExtended.CompProperties_FireModes">
+                <aiUseBurstMode>true</aiUseBurstMode>
+                <aiAimMode>AimedShot</aiAimMode>
+                <aimedBurstShotCount>3</aimedBurstShotCount>
+            </li>
+            <li Class="CombatExtended.CompProperties_AmmoUser">
+                <magazineSize>20</magazineSize>
+                <reloadTime>2.2</reloadTime>
+                <ammoSet>AmmoSet_8mmM</ammoSet>
+            </li>
+        </comps>
+        <smeltProducts>
+            <AdvRifle_Component>1</AdvRifle_Component>
+            <Weapon_Parts>8</Weapon_Parts>
+        </smeltProducts>
+    </ThingDef>
+	
 </Defs>

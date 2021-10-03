@@ -12,12 +12,13 @@
 		</graphicData>
 		<description>Mk.18 Mod.0 attached to a tripod.</description>
 		<techLevel>Industrial</techLevel>
+		<tradeability>None</tradeability>
 		<statBases>
 			<MarketValue>2600</MarketValue>
 			<SightsEfficiency>1.0</SightsEfficiency>
 			<ShotSpread>0.2</ShotSpread>
 			<SwayFactor>0.72</SwayFactor>
-			<RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
+			<RangedWeapon_Cooldown>3.4</RangedWeapon_Cooldown>
 		</statBases>
 		<generateCommonality>0</generateCommonality>
 		<verbs>
@@ -27,7 +28,7 @@
 				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Bullet_40x46mmGrenade_HE</defaultProjectile>
-				<warmupTime>3.2</warmupTime>
+				<warmupTime>1.2</warmupTime>
 				<minRange>8</minRange>
 				<!--<forcedMissRadius>6</forcedMissRadius>-->
 				<circularError>1.7</circularError>

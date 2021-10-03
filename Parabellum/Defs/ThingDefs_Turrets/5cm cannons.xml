@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
 
-	<!-- ================== 50mm PaK38/L60 Anti-Tank Gun ================== -->
+	<!-- ================== 5cm PaK38/L60 Anti-Tank Gun ================== -->
 
 	<ThingDef ParentName="BaseGun_Turret">
 		<defName>Pa_PaK38ATG</defName>
@@ -13,6 +13,7 @@
 		<soundInteract>Artillery_ShellLoaded</soundInteract>
 		<description>PaK 38/L60 5cm Anti-Tank Gun.</description>
 		<techLevel>Industrial</techLevel>
+		<tradeability>None</tradeability>
 		<statBases>
 			<MarketValue>1400</MarketValue>
 			<SightsEfficiency>1.8</SightsEfficiency>
@@ -22,14 +23,14 @@
 		</statBases>
 		<generateCommonality>0</generateCommonality>
 		<verbs>
-			<li Class="CombatExtended.VerbPropertiesCE">
+			<li Class="CombatExtended.VerbPropertiesCE" Inherit="False">
 				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Bullet_50mmCannonShell_APHE</defaultProjectile>
 				<warmupTime>1.8</warmupTime>
 				<minRange>8</minRange>
-				<!--<forcedMissRadius>3</forcedMissRadius>-->
-				<range>87</range>
+				<!-- <forcedMissRadius>2</forcedMissRadius> -->
+				<range>92</range>
 				<soundCast>Shot_50mm</soundCast>
 				<soundCastTail>GunTail_Heavy</soundCastTail>
 				<muzzleFlashScale>17</muzzleFlashScale>
@@ -49,7 +50,7 @@
 		</comps>
 	</ThingDef>
 	
-	<!-- ================== 50mm Flak41/L67 Anti-Area Gun ================== -->
+	<!-- ================== 5cm Flak41/L67 Anti-Aircraft Gun ================== -->
 
 	<ThingDef ParentName="BaseGun_Turret">
 		<defName>Pa_Flak41AA</defName>
@@ -61,6 +62,7 @@
 		<soundInteract>Artillery_ShellLoaded</soundInteract>
 		<description>5cm Flak41/L67 Anti-Area Gun.</description>
 		<techLevel>Spacer</techLevel>
+		<tradeability>None</tradeability>
 		<statBases>
 			<MarketValue>6000</MarketValue>
 			<SightsEfficiency>1.8</SightsEfficiency>
@@ -78,10 +80,10 @@
 				<defaultProjectile>Bullet_50mmCannonShell_APHE</defaultProjectile>
 				<warmupTime>1.95</warmupTime>
 				<minRange>8</minRange>
-				<!--<forcedMissRadius>4.8</forcedMissRadius>-->
+				<!-- <forcedMissRadius>2.4</forcedMissRadius> -->
 				<ticksBetweenBurstShots>20</ticksBetweenBurstShots>
 				<burstShotCount>5</burstShotCount>
-				<range>87</range>
+				<range>96</range>
 				<soundCast>Shot_50mm</soundCast>
 				<soundCastTail>GunTail_Heavy</soundCastTail>
 				<muzzleFlashScale>17</muzzleFlashScale>
@@ -103,7 +105,7 @@
 		</comps>
 	</ThingDef>
 	
-	<!--=============== Turret Base(50mm PaK38/L60) ===============-->
+	<!--=============== Turret Base(5cm PaK38/L60) ===============-->
 
 	<ThingDef ParentName="TurretMannedBase">
 		<defName>Turret_Pak38ATG</defName>
@@ -120,7 +122,7 @@
 		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
 		<statBases>
 			<MaxHitPoints>220</MaxHitPoints>
-			<WorkToBuild>1200</WorkToBuild>
+			<WorkToBuild>1600</WorkToBuild>
 			<Mass>1000</Mass>
 			<Bulk>1000</Bulk>
 		</statBases>
@@ -132,7 +134,7 @@
 		</stuffCategories>
 		<costStuffCount>60</costStuffCount>
 		<costList>
-			<Pa_PaK38_Crate>1</Pa_PaK38_Crate>
+			<Pa_SimpleCannon_Crate>2</Pa_SimpleCannon_Crate>
 		</costList>
 		<specialDisplayRadius>8</specialDisplayRadius>
 		<designationCategory>Security</designationCategory>
@@ -149,12 +151,12 @@
 			<li>BuildingsSecurity</li>
 		</thingCategories>
 		<researchPrerequisites>
-			<li>Mortars</li>
+			<li>Turrets_31</li>
 		</researchPrerequisites>
 		<constructionSkillPrerequisite>8</constructionSkillPrerequisite>
 	</ThingDef>
 
-<!--=============== Turret Base(50mm Flak41/L67) ===============-->
+<!--=============== Turret Base(5cm Flak41/L67) ===============-->
 
 	<ThingDef ParentName="TurretMannedBase">
 		<defName>Turret_Flak41AA</defName>
@@ -183,13 +185,14 @@
 		</stuffCategories>
 		<costStuffCount>200</costStuffCount>
 		<costList>
-			<Pa_Flak41_Crate>1</Pa_Flak41_Crate>
+			<Pa_SimpleCannon_Crate>2</Pa_SimpleCannon_Crate>
+			<Pa_complexcannon_Crate>1</Pa_complexcannon_Crate>
 		</costList>
 		<specialDisplayRadius>8</specialDisplayRadius>
 		<designationCategory>Security</designationCategory>
 		<building>
 			<turretGunDef>Pa_Flak41AA</turretGunDef>
-			<turretTopDrawSize>2.6</turretTopDrawSize>
+			<turretTopDrawSize>3.6</turretTopDrawSize>
 			<buildingTags>
 				<li>SiegeGun</li>
 			</buildingTags>
@@ -199,179 +202,10 @@
 			<li>BuildingsSecurity</li>
 		</thingCategories>
 		<researchPrerequisites>
-			<li>Heavy_turrets_C3</li>
+			<li>Parabellum_I</li>
 		</researchPrerequisites>
 		<constructionSkillPrerequisite>14</constructionSkillPrerequisite>
 	</ThingDef>
-
-<!--=============== Crate Base(50mm PaK38/L60 ATG) ===============-->
-
-	<ThingDef ParentName="CrateBase">
-		<defName>Pa_PaK38_Crate</defName>
-		<label>PaK 38/L60 5cm ATG crate</label>
-		<description>Use this to build a PaK 38/L60 5cm ATG.</description>
-		<graphicData>
-			<texPath>Things/Item/Resource/WeaponCrate</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-		</graphicData>
-		<soundInteract>Standard_Drop</soundInteract>
-		<soundDrop>Standard_Drop</soundDrop>
-		<tickerType>Normal</tickerType>
-		<stackLimit>1</stackLimit>
-		<techLevel>Industrial</techLevel>
-		<statBases>
-			<MarketValue>1200</MarketValue>
-			<MaxHitPoints>220</MaxHitPoints>
-			<Flammability>1</Flammability>
-			<DeteriorationRate>0</DeteriorationRate>
-			<Mass>600</Mass>
-			<Bulk>600</Bulk>
-		</statBases>
-		<thingCategories>
-			<li>WeaponCrate</li>
-		</thingCategories>
-		<tradeTags>
-			<li>SimpleCrate</li>
-		</tradeTags>
-	</ThingDef>
-	
-	<!--=============== Crate Base(50mm Flak41/L67 AA) ===============-->
-
-	<ThingDef ParentName="CrateBase">
-		<defName>Pa_Flak41_Crate</defName>
-		<label>Flak 41/L67 5cm AA crate</label>
-		<description>Use this to build a Flak 41/L67 5cm AA.</description>
-		<graphicData>
-			<texPath>Things/Item/Resource/WeaponCrate</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-		</graphicData>
-		<soundInteract>Standard_Drop</soundInteract>
-		<soundDrop>Standard_Drop</soundDrop>
-		<tickerType>Normal</tickerType>
-		<stackLimit>1</stackLimit>
-		<techLevel>Spacer</techLevel>
-		<statBases>
-			<MarketValue>6000</MarketValue>
-			<MaxHitPoints>240</MaxHitPoints>
-			<Flammability>1</Flammability>
-			<DeteriorationRate>0</DeteriorationRate>
-			<Mass>4000</Mass>
-			<Bulk>4000</Bulk>
-		</statBases>
-		<thingCategories>
-			<li>WeaponCrate</li>
-		</thingCategories>
-		<tradeTags>
-			<li>RareCrate</li>
-		</tradeTags>
-	</ThingDef>
-
-	<!-- ================== Craft Crate(50mm PaK38/L60 ATG) ================== -->
-
-	<RecipeDef ParentName="cratecraftbase">
-		<defName>BuildPaK38_Crate</defName>
-		<label>Build Pak 38 ATG crate</label>
-		<description>Use this to build a 5cm Pak 38/L60, an Ancient Anti-Tank gun, it use 5cm cannon shells for ammo.</description>
-		<jobString>Building a Pak 38 ATG crate.</jobString>
-		<workAmount>10000</workAmount>
-		<skillRequirements>
-			<Crafting>8</Crafting>
-		</skillRequirements>
-		<ingredients>
-			<li>
-				<filter>
-					<thingDefs>
-						<li>Weapon_Parts</li>
-					</thingDefs>
-				</filter>
-				<count>8</count>
-			</li>
-			<li>
-				<filter>
-					<thingDefs>
-						<li>Heavy_Component</li>
-					</thingDefs>
-				</filter>
-				<count>1</count>
-			</li>
-			<li>
-				<filter>
-				<categories>
-				<li>Metallic</li>
-                  </categories>
-				</filter>
-				<count>40</count>
-			</li>
-		</ingredients>
-		<products>
-			<Pa_PaK38_Crate>1</Pa_PaK38_Crate>
-		</products>
-		<fixedIngredientFilter>
-			<thingDefs>
-				<li>Weapon_Parts</li>
-				<li>Heavy_Component</li>
-			</thingDefs>
-			<categories>
-				<li>SLDBar</li>
-				<li>USLDBar</li>
-             </categories>
-		</fixedIngredientFilter>
-		<researchPrerequisite>Mortars</researchPrerequisite>
-	</RecipeDef>
-	
-	<!-- ================== Craft Crate(50mm FlaK41/L67 AA) ================== -->
-
-	<RecipeDef ParentName="cratecraftbase">
-		<defName>BuildFlak41_Crate</defName>
-		<label>Build Flak 41 AA crate</label>
-		<description>Use this to build a 5cm Flak 41/L67, an Ancient Anti-Aircraft gun, it use 5cm cannon shells for ammo.</description>
-		<jobString>Building a Flak41 AA crate.</jobString>
-		<workAmount>24000</workAmount>
-		<skillRequirements>
-			<Crafting>16</Crafting>
-		</skillRequirements>
-		<ingredients>
-			<li>
-				<filter>
-					<thingDefs>
-						<li>Weapon_Parts</li>
-					</thingDefs>
-				</filter>
-				<count>30</count>
-			</li>
-			<li>
-				<filter>
-					<thingDefs>
-						<li>Cannon_Component</li>
-					</thingDefs>
-				</filter>
-				<count>1</count>
-			</li>
-			<li>
-				<filter>
-				<categories>
-				<li>Metallic</li>
-                  </categories>
-				</filter>
-				<count>120</count>
-			</li>
-		</ingredients>
-		<products>
-			<Pa_Flak41_Crate>1</Pa_Flak41_Crate>
-		</products>
-		<fixedIngredientFilter>
-			<thingDefs>
-				<li>Weapon_Parts</li>
-				<li>Cannon_Component</li>
-				<li>Rubber</li>
-			</thingDefs>
-			<categories>
-				<li>SLDBar</li>
-				<li>USLDBar</li>
-            </categories>
-		</fixedIngredientFilter>
-		<researchPrerequisite>Heavy_turrets_C3</researchPrerequisite>
-	</RecipeDef>
 
 	<!-- ================== Minified ================== -->
 	

@@ -237,6 +237,9 @@
 				<li>FSX</li>
 			</thingDefs>
 		</fixedIngredientFilter>
+		<recipeUsers>
+			<li>AmmoBench</li>
+		</recipeUsers>
 		<products>
 			<Ammo_88mmRPzB_HEAT>5</Ammo_88mmRPzB_HEAT>
 		</products>

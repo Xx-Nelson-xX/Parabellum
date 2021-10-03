@@ -13,6 +13,7 @@
 		<soundInteract>Artillery_ShellLoaded</soundInteract>
 		<description>Type 63 Multiple Rocket Launcher attached to a Stationary platform.</description>
 		<techLevel>Ultra</techLevel>
+		<tradeability>None</tradeability>
 		<statBases>
 			<MarketValue>8900</MarketValue>
 			<SightsEfficiency>2.2</SightsEfficiency>

@@ -1,0 +1,538 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+	
+	<!-- ================== Maschinengewehr 34 Zilling MMG ================== -->
+
+	<ThingDef ParentName="BaseGun_Turret">
+		<defName>Pa_MG34Z</defName>
+		<label>MG 34Z MMG</label>
+		<graphicData>
+			<texPath>Things/Building/Security/CMLT/MG34Z_Top</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<description>MG 34 x2 Medium Machinegun attached to a tripod.</description>
+		<techLevel>Industrial</techLevel>
+		<tradeability>None</tradeability>
+		<statBases>
+			<MarketValue>760</MarketValue>
+			<SightsEfficiency>1.34</SightsEfficiency>
+			<ShotSpread>0.18</ShotSpread>
+			<SwayFactor>1.14</SwayFactor>
+			<RangedWeapon_Cooldown>1.2</RangedWeapon_Cooldown>
+		</statBases>
+		<generateCommonality>0</generateCommonality>
+		<verbs>
+			<li Class="CombatExtended.VerbPropertiesCE">
+				<recoilPattern>Mounted</recoilPattern>
+				<recoilAmount>0.78</recoilAmount>
+				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_8mmM_SP</defaultProjectile>
+				<warmupTime>0.9</warmupTime>
+				<range>56</range>
+				<ticksBetweenBurstShots>2</ticksBetweenBurstShots>
+				<burstShotCount>40</burstShotCount>
+				<soundCast>Shot_MG34s</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
+				<muzzleFlashScale>10</muzzleFlashScale>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="CombatExtended.CompProperties_AmmoUser">
+				<magazineSize>200</magazineSize>
+				<reloadTime>6.1</reloadTime>
+				<!-- <spawnUnloaded>true</spawnUnloaded> -->
+				<ammoSet>AmmoSet_8mmM</ammoSet>
+			</li>
+			<li Class="CombatExtended.CompProperties_FireModes">
+				<aimedBurstShotCount>10</aimedBurstShotCount>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<!-- ================== Maschinengewehr 42 Lafette MMG ================== -->
+
+	<ThingDef ParentName="BaseGun_Turret">
+		<defName>Pa_MG42M</defName>
+		<label>MG 42 MMG</label>
+		<graphicData>
+			<texPath>Things/Building/Security/CMLT/MG42M_Top</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<description>MG 42 Medium Machinegun with telescopic sight attached to a tripod.</description>
+		<techLevel>Industrial</techLevel>
+		<tradeability>None</tradeability>
+		<statBases>
+			<MarketValue>420</MarketValue>
+			<SightsEfficiency>1.6</SightsEfficiency>
+			<ShotSpread>0.04</ShotSpread>
+			<SwayFactor>0.7</SwayFactor>
+			<RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
+		</statBases>
+		<generateCommonality>0</generateCommonality>
+		<verbs>
+			<li Class="CombatExtended.VerbPropertiesCE">
+				<recoilPattern>Mounted</recoilPattern>
+				<recoilAmount>0.66</recoilAmount>
+				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_8mmM_SP</defaultProjectile>
+				<warmupTime>1</warmupTime>
+				<range>60</range>
+				<ticksBetweenBurstShots>3</ticksBetweenBurstShots>
+				<burstShotCount>25</burstShotCount>
+				<soundCast>Shot_MG42s</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
+				<muzzleFlashScale>10</muzzleFlashScale>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="CombatExtended.CompProperties_AmmoUser">
+				<magazineSize>250</magazineSize>
+				<reloadTime>5.4</reloadTime>
+				<!-- <spawnUnloaded>true</spawnUnloaded> -->
+				<ammoSet>AmmoSet_8mmM</ammoSet>
+			</li>
+			<li Class="CombatExtended.CompProperties_FireModes">
+				<aimedBurstShotCount>5</aimedBurstShotCount>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<!-- ================== Maschinengewehr 14/45z Lafette MMG ================== -->
+
+	<ThingDef ParentName="BaseGun_Turret">
+		<defName>Pa_MG45Z</defName>
+		<label>MG 14/45z MMG</label>
+		<graphicData>
+			<texPath>Things/Building/Security/CMLT/MG45Z_Top</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<description>MG 45 x2 Medium Machinegun with telescopic sight attached to a tripod.</description>
+		<techLevel>Spacer</techLevel>
+		<tradeability>None</tradeability>
+		<statBases>
+			<MarketValue>2400</MarketValue>
+			<SightsEfficiency>1.6</SightsEfficiency>
+			<ShotSpread>0.09</ShotSpread>
+			<SwayFactor>0.78</SwayFactor>
+			<RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
+		</statBases>
+		<generateCommonality>0</generateCommonality>
+		<verbs>
+			<li Class="CombatExtended.VerbPropertiesCE">
+				<recoilPattern>Mounted</recoilPattern>
+				<recoilAmount>0.62</recoilAmount>
+				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_8mmM_SP</defaultProjectile>
+				<warmupTime>1.2</warmupTime>
+				<range>60</range>
+				<ticksBetweenBurstShots>1</ticksBetweenBurstShots>
+				<burstShotCount>50</burstShotCount>
+				<soundCast>Shot_MG42s</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
+				<muzzleFlashScale>10</muzzleFlashScale>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="CombatExtended.CompProperties_AmmoUser">
+				<magazineSize>500</magazineSize>
+				<reloadTime>7.6</reloadTime>
+				<!-- <spawnUnloaded>true</spawnUnloaded> -->
+				<ammoSet>AmmoSet_K98k</ammoSet>
+			</li>
+			<li Class="CombatExtended.CompProperties_FireModes">
+				<aimedBurstShotCount>14</aimedBurstShotCount>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<!-- ================== Maschinengewehr 131 HMG/Autocannon ================== -->
+
+	<ThingDef ParentName="BaseGun_Turret">
+		<defName>Pa_MG131H</defName>
+		<label>MG 131 HMG</label>
+		<graphicData>
+			<texPath>Things/Building/Security/CMMT/MG131_Top</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<description>MG 131 Heavy Machinegun attached to a solid platform.</description>
+		<techLevel>Industrial</techLevel>
+		<tradeability>None</tradeability>
+		<statBases>
+			<MarketValue>2700</MarketValue>
+			<SightsEfficiency>1.6</SightsEfficiency>
+			<ShotSpread>0.06</ShotSpread>
+			<SwayFactor>0.7</SwayFactor>
+			<RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
+		</statBases>
+		<generateCommonality>0</generateCommonality>
+		<verbs>
+			<li Class="CombatExtended.VerbPropertiesCE">
+				<recoilPattern>Mounted</recoilPattern>
+				<recoilAmount>0.86</recoilAmount>
+				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_MG131_HET</defaultProjectile>
+				<warmupTime>1.2</warmupTime>
+				<range>62</range>
+				<ticksBetweenBurstShots>4</ticksBetweenBurstShots>
+				<burstShotCount>15</burstShotCount>
+				<soundCast>35mm_shot</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>11</muzzleFlashScale>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="CombatExtended.CompProperties_AmmoUser">
+				<magazineSize>200</magazineSize>
+				<reloadTime>8.2</reloadTime>
+				<!-- <spawnUnloaded>true</spawnUnloaded> -->
+				<ammoSet>AmmoSet_MG131HMG</ammoSet>
+			</li>
+			<li Class="CombatExtended.CompProperties_FireModes">
+				<aimedBurstShotCount>5</aimedBurstShotCount>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<!-- ================== Maschinengewehr 131 HMG/Autocannon ================== -->
+
+	<ThingDef ParentName="BaseGun_Turret">
+		<defName>Pa_MG131Z</defName>
+		<label>MG 131z HMG</label>
+		<graphicData>
+			<texPath>Things/Building/Security/CMMT/MG131Z_Top</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<description>MG 131 x2 Heavy Machineguns attached to a solid platform.</description>
+		<techLevel>Spacer</techLevel>
+		<tradeability>None</tradeability>
+		<statBases>
+			<MarketValue>4200</MarketValue>
+			<SightsEfficiency>1.6</SightsEfficiency>
+			<ShotSpread>0.072</ShotSpread>
+			<SwayFactor>0.65</SwayFactor>
+			<RangedWeapon_Cooldown>1.8</RangedWeapon_Cooldown>
+		</statBases>
+		<generateCommonality>0</generateCommonality>
+		<verbs>
+			<li Class="CombatExtended.VerbPropertiesCE">
+				<recoilPattern>Mounted</recoilPattern>
+				<recoilAmount>0.8</recoilAmount>
+				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_MG131_HET</defaultProjectile>
+				<warmupTime>1.4</warmupTime>
+				<range>62</range>
+				<ticksBetweenBurstShots>2</ticksBetweenBurstShots>
+				<burstShotCount>40</burstShotCount>
+				<soundCast>35mm_shot</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>11</muzzleFlashScale>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="CombatExtended.CompProperties_AmmoUser">
+				<magazineSize>400</magazineSize>
+				<reloadTime>13.8</reloadTime>
+				<!-- <spawnUnloaded>true</spawnUnloaded> -->
+				<ammoSet>AmmoSet_MG131HMG</ammoSet>
+			</li>
+			<li Class="CombatExtended.CompProperties_FireModes">
+				<aimedBurstShotCount>10</aimedBurstShotCount>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<!-- =============== Turret Base(MG34Z) =============== -->
+
+	<ThingDef ParentName="TurretMannedBase">
+		<defName>Turret_MG34Z</defName>
+		<label>MG 34z MMG</label>
+		<graphicData>
+			<texPath>Things/Building/Security/Base/Rafette_Base</texPath>
+			<drawSize>(1.6,1.6)</drawSize>
+			<shadowData>
+				<volume>(0.3, 0.6, 0.3)</volume>
+			</shadowData>
+		</graphicData>
+		<uiIconPath>Things/Building/Security/CMLT/MG34Z_icon</uiIconPath>
+		<statBases>
+			<MaxHitPoints>200</MaxHitPoints>
+			<WorkToBuild>1100</WorkToBuild>
+			<Mass>34</Mass>
+			<Bulk>42</Bulk>
+		</statBases>
+		<techLevel>Industrial</techLevel>
+		<description>Maschinengewehr 34 Zwilling(Twin) Medium Machineguns mounted on a Lafette tripod, double the RoF for rapid suppression.</description>
+		<size>(1,1)</size>
+		<stuffCategories>
+			<li>RuggedMetallic</li>
+		</stuffCategories>
+		<costStuffCount>60</costStuffCount>
+		<costList>
+			<Pa_Machinegun_Crate>1</Pa_Machinegun_Crate>
+			<Pa_MG34L>2</Pa_MG34L>
+		</costList>
+		<designationCategory>Security</designationCategory>
+		<building>
+			<turretGunDef>Pa_MG34Z</turretGunDef>
+			<turretTopDrawSize>1.6</turretTopDrawSize>
+			<buildingTags>
+				<li>MachineGun</li>
+			</buildingTags>
+		</building>
+		<minifiedDef>MinifiedTurret_MG34Z</minifiedDef>
+		<thingCategories>
+			<li>BuildingsSecurity</li>
+		</thingCategories>
+		<researchPrerequisites>
+			<li>HeavyTurrets</li>
+		</researchPrerequisites>
+		<constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+	</ThingDef>
+	
+	<!-- =============== Turret Base(MG42M) =============== -->
+
+	<ThingDef ParentName="TurretMannedBase">
+		<defName>Turret_MG42M</defName>
+		<label>MG 42 Lafette MMG</label>
+		<graphicData>
+			<texPath>Things/Building/Security/Base/Rafette_Base</texPath>
+			<drawSize>(1.6,1.6)</drawSize>
+			<shadowData>
+				<volume>(0.3, 0.6, 0.3)</volume>
+			</shadowData>
+		</graphicData>
+		<uiIconPath>Things/Building/Security/CMLT/MG42M_icon</uiIconPath>
+		<statBases>
+			<MaxHitPoints>150</MaxHitPoints>
+			<WorkToBuild>900</WorkToBuild>
+			<Mass>18</Mass>
+			<Bulk>32</Bulk>
+		</statBases>
+		<techLevel>Industrial</techLevel>
+		<description>Maschinengewehr 42 Medium Machinegun mounted on a Lafette tripod, added a telescopic scope to increase its accuracy and effective range.</description>
+		<size>(1,1)</size>
+		<stuffCategories>
+			<li>RuggedMetallic</li>
+		</stuffCategories>
+		<costStuffCount>60</costStuffCount>
+		<costList>
+			<Pa_Machinegun_Crate>1</Pa_Machinegun_Crate>
+			<Pa_MG42L>1</Pa_MG42L>
+			<Sniper_Component>1</Sniper_Component>
+		</costList>
+		<designationCategory>Security</designationCategory>
+		<building>
+			<turretGunDef>Pa_MG42M</turretGunDef>
+			<turretTopDrawSize>1.6</turretTopDrawSize>
+			<buildingTags>
+				<li>MachineGun</li>
+			</buildingTags>
+		</building>
+		<minifiedDef>MinifiedTurret_MG42M</minifiedDef>
+		<thingCategories>
+			<li>BuildingsSecurity</li>
+		</thingCategories>
+		<researchPrerequisites>
+			<li>MultibarrelWeapons</li>
+		</researchPrerequisites>
+		<constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+	</ThingDef>
+	
+	<!-- =============== Turret Base(MG14/45z) =============== -->
+
+	<ThingDef ParentName="TurretMannedBase">
+		<defName>Turret_MG45Z</defName>
+		<label>MG 14/45z Lafette MMG</label>
+		<graphicData>
+			<texPath>Things/Building/Security/Base/Rafette_Base</texPath>
+			<drawSize>(1.6,1.6)</drawSize>
+			<shadowData>
+				<volume>(0.3, 0.6, 0.3)</volume>
+			</shadowData>
+		</graphicData>
+		<uiIconPath>Things/Building/Security/CMLT/MG45Z_icon</uiIconPath>
+		<statBases>
+			<MaxHitPoints>300</MaxHitPoints>
+			<WorkToBuild>2700</WorkToBuild>
+			<Mass>28</Mass>
+			<Bulk>40</Bulk>
+		</statBases>
+		<techLevel>Industrial</techLevel>
+		<description>Maschinengewehr 14/45 Zwilling(Twin) Medium Machineguns mounted on a Lafette tripod, added a low power scope to increase its accuracy and effective range, consider it a more accurate Minigun turret.</description>
+		<size>(1,1)</size>
+		<stuffCategories>
+			<li>RuggedMetallic</li>
+		</stuffCategories>
+		<costStuffCount>60</costStuffCount>
+		<costList>
+			<Pa_Machinegun_Crate>1</Pa_Machinegun_Crate>
+			<Pa_MG45H>2</Pa_MG45H>
+			<Sniper_Component>1</Sniper_Component>
+		</costList>
+		<designationCategory>Security</designationCategory>
+		<building>
+			<turretGunDef>Pa_MG45Z</turretGunDef>
+			<turretTopDrawSize>1.6</turretTopDrawSize>
+			<buildingTags>
+				<li>MachineGun</li>
+			</buildingTags>
+		</building>
+		<minifiedDef>MinifiedTurret_MG45Z</minifiedDef>
+		<thingCategories>
+			<li>BuildingsSecurity</li>
+		</thingCategories>
+		<researchPrerequisites>
+			<li>Parabellum_I</li>
+		</researchPrerequisites>
+		<constructionSkillPrerequisite>10</constructionSkillPrerequisite>
+	</ThingDef>
+	
+	<!-- =============== Turret Base(MG131H) =============== -->
+
+	<ThingDef ParentName="TurretMannedBase">
+		<defName>Turret_MG131H</defName>
+		<label>MG 131 HMG/Autocannon</label>
+		<graphicData>
+			<texPath>Things/Building/Security/Base/P_Base</texPath>
+			<drawSize>(1.6,1.6)</drawSize>
+			<shadowData>
+				<volume>(0.3, 0.6, 0.3)</volume>
+			</shadowData>
+		</graphicData>
+		<uiIconPath>Things/Building/Security/CMMT/MG131_icon</uiIconPath>
+		<statBases>
+			<MaxHitPoints>160</MaxHitPoints>
+			<WorkToBuild>1200</WorkToBuild>
+			<Mass>22</Mass>
+			<Bulk>34</Bulk>
+		</statBases>
+		<techLevel>Industrial</techLevel>
+		<description>Maschinengewehr 131 Heavy Machinegun/Autocannon, one of the lighest smallest HMG/Autocannon of its time, designed to either mount of Airplanes or AA defensive platform, capable to chamber explosive rounds to maximize its damage counter any light armored target, very devastating counter soft target.</description>
+		<size>(1,1)</size>
+		<stuffCategories>
+			<li>RuggedMetallic</li>
+		</stuffCategories>
+		<costStuffCount>40</costStuffCount>
+		<costList>
+			<Pa_Machinegun_Crate>3</Pa_Machinegun_Crate>
+			<ReinforcedConcrete>20</ReinforcedConcrete>
+		</costList>
+		<designationCategory>Security</designationCategory>
+		<building>
+			<turretGunDef>Pa_MG131H</turretGunDef>
+			<turretTopDrawSize>1.6</turretTopDrawSize>
+			<buildingTags>
+				<li>MachineGun</li>
+			</buildingTags>
+		</building>
+		<minifiedDef>MinifiedTurret_MG131H</minifiedDef>
+		<thingCategories>
+			<li>BuildingsSecurity</li>
+		</thingCategories>
+		<researchPrerequisites>
+			<li>SniperTurret</li>
+		</researchPrerequisites>
+		<constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+	</ThingDef>
+	
+	<!-- =============== Turret Base(MG131Z) =============== -->
+	
+	<ThingDef ParentName="TurretMannedBase">
+		<defName>Turret_MG131Z</defName>
+		<label>MG 131z HMG/Autocannon</label>
+		<graphicData>
+			<texPath>Things/Building/Security/Base/P_Base</texPath>
+			<drawSize>(1.6,1.6)</drawSize>
+			<shadowData>
+				<volume>(0.3, 0.6, 0.3)</volume>
+			</shadowData>
+		</graphicData>
+		<uiIconPath>Things/Building/Security/CMMT/MG131Z_icon</uiIconPath>
+		<statBases>
+			<MaxHitPoints>350</MaxHitPoints>
+			<WorkToBuild>2000</WorkToBuild>
+			<Mass>40</Mass>
+			<Bulk>52</Bulk>
+		</statBases>
+		<techLevel>Industrial</techLevel>
+		<description>Maschinengewehr 131 Zwilling(Twin) Heavy Machinegun/Autocannon, due the progress of war demand more firepower for the fighter planes, the usage of autocannon become more and more important, so to increase its RoF and AA efficiency, they double the armament.</description>
+		<size>(1,1)</size>
+		<stuffCategories>
+			<li>RuggedMetallic</li>
+		</stuffCategories>
+		<costStuffCount>50</costStuffCount>
+		<costList>
+			<Pa_Machinegun_Crate>6</Pa_Machinegun_Crate>
+			<ReinforcedConcrete>20</ReinforcedConcrete>
+		</costList>
+		<designationCategory>Security</designationCategory>
+		<building>
+			<turretGunDef>Pa_MG131Z</turretGunDef>
+			<turretTopDrawSize>1.6</turretTopDrawSize>
+			<buildingTags>
+				<li>MachineGun</li>
+			</buildingTags>
+		</building>
+		<minifiedDef>MinifiedTurret_MG131Z</minifiedDef>
+		<thingCategories>
+			<li>BuildingsSecurity</li>
+		</thingCategories>
+		<researchPrerequisites>
+			<li>Heavy_turrets_C2</li>
+		</researchPrerequisites>
+		<constructionSkillPrerequisite>10</constructionSkillPrerequisite>
+	</ThingDef>
+	
+	<!-- ================== Minified ================== -->
+	
+	<ThingDef ParentName="MinifiedTurretBase">
+		<defName>MinifiedTurret_MG34Z</defName>
+		<label>MG 34Z MMG turret</label>
+		<statBases>
+			<Mass>21</Mass>
+			<Bulk>23</Bulk>
+		</statBases>
+	</ThingDef>
+	
+	<ThingDef ParentName="MinifiedTurretBase">
+		<defName>MinifiedTurret_MG42M</defName>
+		<label>MG 42 Lafette MMG turret</label>
+		<statBases>
+			<Mass>10</Mass>
+			<Bulk>14</Bulk>
+		</statBases>
+	</ThingDef>
+	
+	<ThingDef ParentName="MinifiedTurretBase">
+		<defName>MinifiedTurret_MG45Z</defName>
+		<label>MG 14/45z Lafette MMG turret</label>
+		<statBases>
+			<Mass>18</Mass>
+			<Bulk>22</Bulk>
+		</statBases>
+	</ThingDef>
+	
+	<ThingDef ParentName="MinifiedTurretBase">
+		<defName>MinifiedTurret_MG131H</defName>
+		<label>MG 131 HMG/Autocannon turret</label>
+		<statBases>
+			<Mass>14</Mass>
+			<Bulk>24</Bulk>
+		</statBases>
+	</ThingDef>
+	
+	<ThingDef ParentName="MinifiedTurretBase">
+		<defName>MinifiedTurret_MG131Z</defName>
+		<label>MG 131z HMG/Autocannon turret</label>
+		<statBases>
+			<Mass>22</Mass>
+			<Bulk>36</Bulk>
+		</statBases>
+	</ThingDef>
+	
+</Defs>

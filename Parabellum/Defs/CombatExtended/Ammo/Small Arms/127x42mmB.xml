@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+
 	<ThingCategoryDef>
 		<defName>Ammo127x42mmB</defName>
 		<label>.50 Beowulf(12,7x42mm)</label>
@@ -35,18 +36,6 @@
 		<thingCategories>
 			<li>Ammo127x42mmB</li>
 		</thingCategories>
-		<comps>
-			<li Class="CompProperties_Explosive">
-				<explosiveRadius>0.8</explosiveRadius>
-				<explosiveDamageType>Flame</explosiveDamageType>
-				<explosiveExpandPerStackcount>0.01</explosiveExpandPerStackcount>
-				<startWickHitPointsPercent>0.333</startWickHitPointsPercent>
-				<wickTicks>
-					<min>5</min>
-					<max>10</max>
-				</wickTicks>
-			</li>
-		</comps>
 	</ThingDef>
 
 	<ThingDef Class="CombatExtended.AmmoDef" ParentName="127x42mmBase">
@@ -57,7 +46,7 @@
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<statBases>
-			<MarketValue>2.2</MarketValue>
+			<MarketValue>3.2</MarketValue>
 		</statBases>
 		<ammoClass>BeowulFMJ</ammoClass>
 		<cookOffProjectile>Bullet_127x42mmB_FMJ</cookOffProjectile>
@@ -71,7 +60,7 @@
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<statBases>
-			<MarketValue>2.6</MarketValue>
+			<MarketValue>3.6</MarketValue>
 		</statBases>
 		<ammoClass>BeowulAPI</ammoClass>
 		<generateAllowChance>0.5</generateAllowChance>
@@ -86,7 +75,7 @@
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<statBases>
-			<MarketValue>2.24</MarketValue>
+			<MarketValue>3.4</MarketValue>
 		</statBases>
 		<ammoClass>BeowulHP</ammoClass>
 		<generateAllowChance>0.35</generateAllowChance>
@@ -101,7 +90,7 @@
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<statBases>
-			<MarketValue>2.3</MarketValue>
+			<MarketValue>4.3</MarketValue>
 		</statBases>
 		<ammoClass>BeowulEMP</ammoClass>
 		<generateAllowChance>0.2</generateAllowChance>
@@ -172,7 +161,13 @@
 			<damageAmountBase>14</damageAmountBase>
 			<armorPenetrationSharp>15.6</armorPenetrationSharp>
 			<armorPenetrationBlunt>96</armorPenetrationBlunt>
-			<empShieldBreakChance>0.3</empShieldBreakChance>
+			<empShieldBreakChance>0.4</empShieldBreakChance>
+			<secondaryDamage>
+				<li>
+					<def>Bullet</def>
+					<amount>10</amount>
+				</li>
+			</secondaryDamage>
 		</projectile>
 	</ThingDef>
 	
@@ -228,6 +223,7 @@
 		</skillRequirements>
 		<workSkill>Crafting</workSkill>
 		<workSkillLearnFactor>0.8</workSkillLearnFactor>
+		<researchPrerequisite>Range_C2</researchPrerequisite>
 	</RecipeDef>
 
 	<RecipeDef ParentName="AmmoRecipeHighCaliber">
@@ -289,6 +285,7 @@
 		</skillRequirements>
 		<workSkill>Crafting</workSkill>
 		<workSkillLearnFactor>0.8</workSkillLearnFactor>
+		<researchPrerequisite>Range_C2</researchPrerequisite>
 	</RecipeDef>
 
 	<RecipeDef ParentName="AmmoRecipeHighCaliber">
@@ -341,6 +338,7 @@
 		</skillRequirements>
 		<workSkill>Crafting</workSkill>
 		<workSkillLearnFactor>0.8</workSkillLearnFactor>
+		<researchPrerequisite>Range_C2</researchPrerequisite>
 	</RecipeDef>
 
 	<RecipeDef ParentName="AmmoRecipeHighCaliber">
@@ -402,6 +400,7 @@
 		</skillRequirements>
 		<workSkill>Crafting</workSkill>
 		<workSkillLearnFactor>0.8</workSkillLearnFactor>
+		<researchPrerequisite>Range_C2</researchPrerequisite>
 	</RecipeDef>
 	
 </Defs>

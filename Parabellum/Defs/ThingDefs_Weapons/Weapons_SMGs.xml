@@ -130,4 +130,68 @@
         </smeltProducts>
     </ThingDef>
 	
+	<!-- Bergmann Maschinenpistole 18 -->
+    <ThingDef ParentName="BaseGun_LongBarreled">
+        <defName>Pa_MP18B</defName>
+        <label>MP 18 SMG</label>
+        <description>An ancient world weapon, one of the earliest SMG created for trench warfare, very effective in CQC range, for urban combat and perform assault tactics.</description>
+        <graphicData>
+            <texPath>Things/Weapons/MP18</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>Interact_SMG</soundInteract>
+        <statBases>
+            <MarketValue>400</MarketValue>
+            <SightsEfficiency>0.8</SightsEfficiency>
+            <ShotSpread>0.15</ShotSpread>
+            <SwayFactor>1.5</SwayFactor>
+            <RangedWeapon_Cooldown>0.4</RangedWeapon_Cooldown>
+            <Bulk>7.56</Bulk>
+            <Mass>4.18</Mass>
+        </statBases>
+		<generateCommonality>0.4</generateCommonality>
+        <weaponTags>
+			<li>SMG1</li>
+            <li>Gun</li>
+            <li>TierOneSMG</li>
+			<li>CE_SMG</li>
+			<li>CE_AI_AssaultWeapon</li>
+        </weaponTags>
+        <thingCategories>
+            <li>SMGs</li>
+        </thingCategories>
+        <verbs>
+            <li Class="CombatExtended.VerbPropertiesCE">
+				<recoilPattern>Regular</recoilPattern>
+                <recoilAmount>1.4</recoilAmount>
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>Bullet_9x19mmPara_FMJ</defaultProjectile>
+                <burstShotCount>10</burstShotCount>
+                <ticksBetweenBurstShots>7</ticksBetweenBurstShots>
+                <warmupTime>0.5</warmupTime>
+                <range>30</range>
+                <soundCast>Shot_Suomi</soundCast>
+                <soundCastTail>GunTail_Medium</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+            </li>
+        </verbs>
+        <comps>
+            <li Class="CombatExtended.CompProperties_FireModes">
+                <aiUseBurstMode>true</aiUseBurstMode>
+                <aiAimMode>AimedShot</aiAimMode>
+                <aimedBurstShotCount>4</aimedBurstShotCount>
+            </li>
+            <li Class="CombatExtended.CompProperties_AmmoUser">
+                <magazineSize>20</magazineSize>
+                <reloadTime>2.2</reloadTime>
+                <ammoSet>AmmoSet_MauserP</ammoSet>
+            </li>
+        </comps>
+        <smeltProducts>
+            <ComponentIndustrial>2</ComponentIndustrial>
+            <Weapon_Parts>1</Weapon_Parts>
+        </smeltProducts>
+    </ThingDef>
+	
 </Defs>

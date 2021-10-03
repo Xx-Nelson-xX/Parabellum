@@ -13,6 +13,7 @@
 		<soundInteract>Artillery_ShellLoaded</soundInteract>
 		<description>PaK 44/L55 128mm Anti-Tank Gun.</description>
 		<techLevel>Industrial</techLevel>
+		<tradeability>None</tradeability>
 		<statBases>
 			<MarketValue>4800</MarketValue>
 			<SightsEfficiency>2.2</SightsEfficiency>
@@ -67,6 +68,7 @@
 		<soundInteract>Artillery_ShellLoaded</soundInteract>
 		<description>Dual 12,8cm FlaK 40/L61 Heavy Anti-Aircraft Gun.</description>
 		<techLevel>Ultra</techLevel>
+		<tradeability>None</tradeability>
 		<statBases>
 			<MarketValue>13600</MarketValue>
 			<SightsEfficiency>2.6</SightsEfficiency>
@@ -123,7 +125,7 @@
 		<label>12,8cm PaK 44 HATGP</label>
 		<graphicData>
 			<texPath>Things/Building/Security/Base/Flak41_Base</texPath>
-			<drawSize>(2.2,2.2)</drawSize>
+			<drawSize>(2.4,2.4)</drawSize>
 			<shadowData>
 				<volume>(0.3, 0.6, 0.3)</volume>
 			</shadowData>
@@ -133,7 +135,7 @@
 		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
 		<statBases>
 			<MaxHitPoints>420</MaxHitPoints>
-			<WorkToBuild>2400</WorkToBuild>
+			<WorkToBuild>3200</WorkToBuild>
 			<Mass>10160</Mass>
 			<Bulk>10160</Bulk>
 		</statBases>
@@ -146,13 +148,13 @@
 		<costStuffCount>200</costStuffCount>
 		<costList>
 			<ReinforcedConcrete>20</ReinforcedConcrete>
-			<Pa_heavycannon_Crate>1</Pa_heavycannon_Crate>
+			<Pa_complexcannon_Crate>2</Pa_complexcannon_Crate>
 		</costList>
 		<specialDisplayRadius>16</specialDisplayRadius>
 		<designationCategory>Security</designationCategory>
 		<building>
 			<turretGunDef>Pa_PaK44ATG</turretGunDef>
-			<turretTopDrawSize>5</turretTopDrawSize>
+			<turretTopDrawSize>6</turretTopDrawSize>
 			<buildingTags>
 				<li>Artillery</li>
 				<li>Artillery_BaseDestroyer</li>
@@ -195,10 +197,10 @@
 		<stuffCategories>
 			<li>RuggedMetallic</li>
 		</stuffCategories>
-		<costStuffCount>380</costStuffCount>
+		<costStuffCount>360</costStuffCount>
 		<costList>
 			<ReinforcedConcrete>150</ReinforcedConcrete>
-			<Pa_heavycannon_Crate>2</Pa_heavycannon_Crate>
+			<Pa_complexcannon_Crate>4</Pa_complexcannon_Crate>
 		</costList>
 		<specialDisplayRadius>16</specialDisplayRadius>
 		<designationCategory>Security</designationCategory>
@@ -210,10 +212,6 @@
 				<li>Artillery_BaseDestroyer</li>
 			</buildingTags>
 		</building>
-		<placeWorkers>
-		  <li>PlaceWorker_TurretTop</li>
-		  <li>PlaceWorker_ShowTurretRadius</li>
-		</placeWorkers>
 		<minifiedDef>MinifiedTurret_Pa_FlaK40ZAA</minifiedDef>
 		<thingCategories>
 			<li>BuildingsSecurity</li>
@@ -227,9 +225,9 @@
 		<!--=============== Crate Base(Heavy Cannons AA) ===============-->
 
 	<ThingDef ParentName="CrateBase">
-		<defName>Pa_heavycannon_Crate</defName>
-		<label>Heavy cannon crate</label>
-		<description>Use this to build high caliber cannons.</description>
+		<defName>Pa_complexcannon_Crate</defName>
+		<label>Complex Cannon Crate</label>
+		<description>Use this to build complex cannon piece, depends the complexity, it might use multiple crates.</description>
 		<graphicData>
 			<texPath>Things/Item/Resource/WeaponCrate</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -237,10 +235,10 @@
 		<soundInteract>Standard_Drop</soundInteract>
 		<soundDrop>Standard_Drop</soundDrop>
 		<tickerType>Normal</tickerType>
-		<stackLimit>4</stackLimit>
+		<stackLimit>25</stackLimit>
 		<techLevel>Spacer</techLevel>
 		<statBases>
-			<MarketValue>4600</MarketValue>
+			<MarketValue>3200</MarketValue>
 			<MaxHitPoints>400</MaxHitPoints>
 			<Flammability>1</Flammability>
 			<DeteriorationRate>0</DeteriorationRate>
@@ -273,7 +271,7 @@
 						<li>Weapon_Parts</li>
 					</thingDefs>
 				</filter>
-				<count>24</count>
+				<count>18</count>
 			</li>
 			<li>
 				<filter>
@@ -297,11 +295,11 @@
 				<li>Metallic</li>
                   </categories>
 				</filter>
-				<count>95</count>
+				<count>55</count>
 			</li>
 		</ingredients>
 		<products>
-			<Pa_heavycannon_Crate>1</Pa_heavycannon_Crate>
+			<Pa_complexcannon_Crate>1</Pa_complexcannon_Crate>
 		</products>
 		<fixedIngredientFilter>
 			<thingDefs>

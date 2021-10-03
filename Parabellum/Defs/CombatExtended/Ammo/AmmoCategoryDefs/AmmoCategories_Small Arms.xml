@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
+   <!-- ==================== .50 Beowulf ========================== -->
    <CombatExtended.AmmoCategoryDef>
     <defName>BeowulFMJ</defName>
     <label>.50 Beowulf FMJ</label>
@@ -27,6 +28,80 @@
     <label>.50 Beowulf EMP</label>
     <labelShort>B EMP</labelShort>
     <description>.50 Beowulf ElectroMagnetic Pulse ammo, can stun/paralize machine and cause electric burn</description>
+  </CombatExtended.AmmoCategoryDef>
+  
+  <!-- ==================== 8mm Mauser Rifle Catridge ========================== -->
+  <CombatExtended.AmmoCategoryDef>
+    <defName>8mmP88M</defName>
+    <label>8x57mm Patrone 88 (FMJ)</label>
+    <labelShort>8mm P88 FMJ</labelShort>
+    <description>First generation smokeless propellant cartridge, doesn't has the best ballistic compared to modern catridge, but is lot better than slow speed catridge made with black gun powder.</description>
+  </CombatExtended.AmmoCategoryDef>
+  
+  <CombatExtended.AmmoCategoryDef>
+    <defName>8mmSP</defName>
+    <label>7.92x57mm S Patrone (FMJ)</label>
+    <labelShort>7.92mm SP FMJ</labelShort>
+    <description>Improve version of the Patrone 88 and the catridge became the official adoption to the army, improved in ballistic, weight, stopping power, accuracy and effective range, basically everything.</description>
+  </CombatExtended.AmmoCategoryDef>
+  
+  <CombatExtended.AmmoCategoryDef>
+    <defName>8mmKP</defName>
+    <label>7.92x57mm K Patrone (AP)</label>
+    <labelShort>7.92mm KP AP</labelShort>
+    <description>Aka. S.m.K.H.(Spitzgeschoss mit Kern, Hart), Spitzer bullet/Heavy pointed with hardened core, it use Tungsten to increase its effectiveness as penetration projectile.</description>
+  </CombatExtended.AmmoCategoryDef>
+  
+  <CombatExtended.AmmoCategoryDef>
+    <defName>8mmBP</defName>
+    <label>7.92x57mm B Patrone (HE-T)</label>
+    <labelShort>7.92mm BP HE-T</labelShort>
+    <description>B(Beobachtung)/High Explosive - Tracer, an "Observation" bullet for Luftwaffen and sharpshooters, the bullet explode after impact to indicate where it landed for the shooter, can cause temporal concussion and blast damage when hit at soft target.</description>
+  </CombatExtended.AmmoCategoryDef>
+  
+  <!-- ==================== 8mm Mauser Pistol Catridge ========================== -->
+  <CombatExtended.AmmoCategoryDef>
+    <defName>763mmMFMJ</defName>
+    <label>7.63x25mm Mauser (FMJ)</label>
+    <labelShort>7.63mm Mauser FMJ</labelShort>
+    <description>Full Metal Jacket, high velocity bullet, doesn't have as much stopping power as most of the pistol caliber but thanks to its projectile velocity, it has better penetration than most pistol's FMJ round.</description>
+  </CombatExtended.AmmoCategoryDef>
+  
+  <CombatExtended.AmmoCategoryDef>
+    <defName>763mmMHP</defName>
+    <label>7.63x25mm Mauser (HP)</label>
+    <labelShort>7.63mm Mauser HP</labelShort>
+    <description>Hollow Point, custom bullet, increased stopping power the trade off is reducing the penetration and slightly the projectile velocity.</description>
+  </CombatExtended.AmmoCategoryDef>
+  
+  <!-- ==================== 13,2x92mmSR Anti-Tank Catridge ========================== -->
+  <CombatExtended.AmmoCategoryDef>
+    <defName>TuFAP</defName>
+    <label>13.2x92mm SR TuF (AP)</label>
+    <labelShort>13.2mm TuF AP</labelShort>
+    <description>The Mauser 13.2mm TuF (German: Tank und Flieger; lit. "tank and aircraft", known also as 13.2×92mmSR) cartridge, was a major step in the development of anti-tank cartridges, being the first one designed for the sole purpose of destroying armored targets.</description>
+  </CombatExtended.AmmoCategoryDef>
+  
+  <CombatExtended.AmmoCategoryDef>
+    <defName>TuFAPHE</defName>
+    <label>13.2x92mm SR TuF (APHE)</label>
+    <labelShort>13.2mm TuF APHE</labelShort>
+    <description>Due the catridge became obsolete after the war, the surplus ammo are filled with small amount explosive payload to increase its damage counter light armored vehicle and soft target, the modification reduce its penetration capability quite bit.</description>
+  </CombatExtended.AmmoCategoryDef>
+  
+  <CombatExtended.AmmoCategoryDef>
+    <defName>13mmHET</defName>
+    <label>13x64mmB (HE-T)</label>
+    <labelShort>13x64mmB (HE-T)</labelShort>
+    <description>High Explosive - Tracer round, generally used for AA purpose, due its increased explosive payload for the bullets, is very effective counter light armored and soft target, but it reduce a lots of its penetration for exchange.</description>
+  </CombatExtended.AmmoCategoryDef>
+  
+  <!-- ==================== .10 Gauge BuckShot ========================== -->
+  <CombatExtended.AmmoCategoryDef>
+    <defName>10GBS</defName>
+    <label>10 Gauge Buckshot</label>
+    <labelShort>10 Gauge BS</labelShort>
+    <description>Filled with several buckshot pellets which spread in a tight pattern, bigger pellets than 12 Gauges Buckshot, but with less pellets due increase pellet size.</description>
   </CombatExtended.AmmoCategoryDef>
 
 </Defs>

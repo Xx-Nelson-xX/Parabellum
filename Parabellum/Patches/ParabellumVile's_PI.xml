@@ -6,7 +6,6 @@
 		<li>HMC Vile's Pre-Industrial Overhaul</li>
 	</mods>
 		<match Class="PatchOperationSequence">
-		<success>Always</success>
 			<operations>
 			
 				<li Class="PatchOperationReplace">	
@@ -49,6 +48,14 @@
 				<xpath>Defs/RecipeDef[defName="MakeAmmo_10Gauge_Buck"]/researchPrerequisite</xpath>
 					<value>
 						  <researchPrerequisite>Muskets_B3</researchPrerequisite>
+					</value>
+				</li>
+				
+				<!-- ==================== .44 Rimfire ========================== -->
+				<li Class="PatchOperationAdd">	
+				<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_SR"]/ammoTypes</xpath>
+					<value>
+						<Ammo_44Rimfire>Bullet_44Rimfire</Ammo_44Rimfire>
 					</value>
 				</li>
 				

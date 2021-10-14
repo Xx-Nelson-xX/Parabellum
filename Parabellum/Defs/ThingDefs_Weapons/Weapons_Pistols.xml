@@ -11,7 +11,7 @@
 		</graphicData>
 		<soundInteract>Interact_Revolver</soundInteract>
 		<statBases>
-			<MarketValue>400</MarketValue>
+			<MarketValue>200</MarketValue>
 			<SightsEfficiency>1.2</SightsEfficiency>
 			<ShotSpread>0.08</ShotSpread>
 			<SwayFactor>1.4</SwayFactor>
@@ -76,7 +76,7 @@
 		</graphicData>
 		<soundInteract>Interact_Revolver</soundInteract>
 		<statBases>
-			<MarketValue>320</MarketValue>
+			<MarketValue>220</MarketValue>
 			<SightsEfficiency>1.05</SightsEfficiency>
 			<ShotSpread>0.14</ShotSpread>
 			<SwayFactor>1.2</SwayFactor>

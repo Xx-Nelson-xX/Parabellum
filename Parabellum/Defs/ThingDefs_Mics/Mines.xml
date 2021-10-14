@@ -11,8 +11,11 @@
 		<statBases>
 			<Flammability>0.4</Flammability>
 		</statBases>
+		<stuffCategories>
+			<li>RuggedMetallic</li>
+		</stuffCategories>
+		<costStuffCount>9</costStuffCount>
 		<costList>
-			<Plasteel>9</Plasteel>
 			<Powder>2</Powder>
 			<Weapon_Parts>1</Weapon_Parts>
 		</costList>
@@ -92,8 +95,11 @@
 			<MaxHitPoints>80</MaxHitPoints>
 			<Flammability>0.2</Flammability>
 		</statBases>
+		<stuffCategories>
+			<li>RuggedMetallic</li>
+		</stuffCategories>
+		<costStuffCount>13</costStuffCount>
 		<costList>
-			<Plasteel>13</Plasteel>
 			<Powder>2</Powder>
 			<Wire>2</Wire>
 			<Weapon_Parts>1</Weapon_Parts>

@@ -71,7 +71,7 @@
 		<recipeUsers>
 			<li>WeaponCraftingWorkTable</li>
 		</recipeUsers>
-		<researchPrerequisite>Rifles_C2</researchPrerequisite>
+		<researchPrerequisite>Range_C2</researchPrerequisite>
 	</RecipeDef>
 	
 	<!-- =============== Mk.14 Mod.0 Enhanced Marksman Rifle =============== -->
@@ -357,6 +357,228 @@
 			<li>AdvWeaponCraftingWorkTable</li>
 		</recipeUsers>
 		<researchPrerequisite>Rifles_C3</researchPrerequisite>
+	</RecipeDef>
+	
+	<!-- =============== MKb 42 (H) =============== -->
+	<RecipeDef ParentName="RangedWeaponRecipeBase">
+		<defName>BuildMKb42H</defName>
+		<label>Build MKb 42 (H)</label>
+		<description>Build a MaschinenKarabiner 42 (Haenel), an early concept Modern Assault Rifle.\nCaliber: 7.92x33mm Kurz</description>
+		<jobString>Building the MKb 42 (H).</jobString>
+		<workAmount>18500</workAmount>
+		<skillRequirements>
+			<Crafting>8</Crafting>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Rifle_Component</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Weapon_Parts</li>
+					</thingDefs>
+				</filter>
+				<count>16</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>18</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>SLDBar</li>
+						<li>USLDBar</li>
+					</categories>
+				</filter>
+				<count>42</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>Woody</li>
+					</categories>
+				</filter>
+				<count>26</count>
+			</li>
+		</ingredients>
+		<products>
+			<Pa_MKb42H>1</Pa_MKb42H>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Rifle_Component</li>
+				<li>Weapon_Parts</li>
+				<li>ComponentIndustrial</li>
+			</thingDefs>
+			<categories>
+				<li>SLDBar</li>
+				<li>USLDBar</li>
+				<li>Woody</li>
+			</categories>
+		</fixedIngredientFilter>
+		<recipeUsers>
+			<li>WeaponCraftingWorkTable</li>
+		</recipeUsers>
+		<researchPrerequisite>SMG_C2</researchPrerequisite>
+	</RecipeDef>
+	
+	<!-- =============== StG 44/MP 44 =============== -->
+	<RecipeDef ParentName="RangedWeaponRecipeBase">
+		<defName>BuildStG44AR</defName>
+		<label>Build StG 44/MP 44</label>
+		<description>Build a Sturmgewehr 44, WE SHOULD ALL HAVE A STURMGEWEHR! \nCaliber: 7.92x33mm Kurz</description>
+		<jobString>Building the StG 44.</jobString>
+		<workAmount>16000</workAmount>
+		<skillRequirements>
+			<Crafting>10</Crafting>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Rifle_Component</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Weapon_Parts</li>
+					</thingDefs>
+				</filter>
+				<count>14</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>15</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>SLDBar</li>
+						<li>USLDBar</li>
+					</categories>
+				</filter>
+				<count>38</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>Woody</li>
+					</categories>
+				</filter>
+				<count>22</count>
+			</li>
+		</ingredients>
+		<products>
+			<Pa_StG44AR>1</Pa_StG44AR>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Rifle_Component</li>
+				<li>Weapon_Parts</li>
+				<li>ComponentIndustrial</li>
+			</thingDefs>
+			<categories>
+				<li>SLDBar</li>
+				<li>USLDBar</li>
+				<li>Woody</li>
+			</categories>
+		</fixedIngredientFilter>
+		<recipeUsers>
+			<li>AdvWeaponCraftingWorkTable</li>
+		</recipeUsers>
+		<researchPrerequisite>Range_C2</researchPrerequisite>
+	</RecipeDef>
+	
+	<!-- StG 45/MP 45(M)/Gerät 06H -->
+	<RecipeDef ParentName="RangedWeaponRecipeBase">
+		<defName>BuildStG45M</defName>
+		<label>Build StG 45/MP 45(M)/Gerät 06H</label>
+		<description>Build a Sturmgewehr 45, Nothing like a trip through the countryside... just wish it wasn't this COUNTRY. \nCaliber: 7.92x33mm Kurz</description>
+		<jobString>Building the StG 45(M).</jobString>
+		<workAmount>10000</workAmount>
+		<skillRequirements>
+			<Crafting>10</Crafting>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Rifle_Component</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Weapon_Parts</li>
+					</thingDefs>
+				</filter>
+				<count>8</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>8</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>SLDBar</li>
+						<li>USLDBar</li>
+					</categories>
+				</filter>
+				<count>20</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>Woody</li>
+					</categories>
+				</filter>
+				<count>12</count>
+			</li>
+		</ingredients>
+		<products>
+			<Pa_StG45M>1</Pa_StG45M>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Rifle_Component</li>
+				<li>Weapon_Parts</li>
+				<li>ComponentIndustrial</li>
+			</thingDefs>
+			<categories>
+				<li>SLDBar</li>
+				<li>USLDBar</li>
+				<li>Woody</li>
+			</categories>
+		</fixedIngredientFilter>
+		<recipeUsers>
+			<li>AdvWeaponCraftingWorkTable</li>
+		</recipeUsers>
+		<researchPrerequisite>Rifles_C2</researchPrerequisite>
 	</RecipeDef>
 
 </Defs>

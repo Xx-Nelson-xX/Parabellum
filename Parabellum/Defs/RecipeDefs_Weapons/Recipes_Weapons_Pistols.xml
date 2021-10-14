@@ -23,14 +23,6 @@
 			<li>
 				<filter>
 					<thingDefs>
-						<li>Weapon_Parts</li>
-					</thingDefs>
-				</filter>
-				<count>2</count>
-			</li>
-			<li>
-				<filter>
-					<thingDefs>
 						<li>ComponentIndustrial</li>
 					</thingDefs>
 				</filter>
@@ -52,14 +44,6 @@
 				</filter>
 				<count>10</count>
 			</li>
-			<li>
-				<filter>
-					<categories>
-						<li>Leathers</li>
-					</categories>
-				</filter>
-				<count>10</count>
-			</li>
 		</ingredients>
 		<products>
 			<Pa_SP>1</Pa_SP>
@@ -67,20 +51,18 @@
 		<fixedIngredientFilter>
 			<thingDefs>
 				<li>Pistol_Component</li>
-				<li>Weapon_Parts</li>
 				<li>ComponentIndustrial</li>
 			</thingDefs>
 			<categories>
 				<li>SLDBar</li>
 				<li>USLDBar</li>
 				<li>Woody</li>
-				<li>Leathers</li>
 			</categories>
 		</fixedIngredientFilter>
 		<recipeUsers>
 			<li>WeaponCraftingWorkTable</li>
 		</recipeUsers>
-		<researchPrerequisite>Gunsmithing</researchPrerequisite>
+		<researchPrerequisite>Machining</researchPrerequisite>
 	</RecipeDef>
 	
 	
@@ -90,7 +72,7 @@
 		<label>Build Medusa Survival Revolver</label>
 		<description>Build a Medusa Survival Revolver, make every shot count!\nCaliber: Most Pistol Caliber</description>
 		<jobString>Building Medusa Survival Revolver.</jobString>
-		<workAmount>7200</workAmount>
+		<workAmount>6600</workAmount>
 		<skillRequirements>
 			<Crafting>3</Crafting>
 		</skillRequirements>
@@ -102,14 +84,6 @@
 					</thingDefs>
 				</filter>
 				<count>1</count>
-			</li>
-			<li>
-				<filter>
-					<thingDefs>
-						<li>Weapon_Parts</li>
-					</thingDefs>
-				</filter>
-				<count>2</count>
 			</li>
 			<li>
 				<filter>
@@ -135,14 +109,6 @@
 				</filter>
 				<count>6</count>
 			</li>
-			<li>
-				<filter>
-					<categories>
-						<li>Leathers</li>
-					</categories>
-				</filter>
-				<count>10</count>
-			</li>
 		</ingredients>
 		<products>
 			<Pa_SR>1</Pa_SR>
@@ -150,20 +116,18 @@
 		<fixedIngredientFilter>
 			<thingDefs>
 				<li>Pistol_Component</li>
-				<li>Weapon_Parts</li>
 				<li>ComponentIndustrial</li>
 			</thingDefs>
 			<categories>
 				<li>SLDBar</li>
 				<li>USLDBar</li>
 				<li>Woody</li>
-				<li>Leathers</li>
 			</categories>
 		</fixedIngredientFilter>
 		<recipeUsers>
 			<li>WeaponCraftingWorkTable</li>
 		</recipeUsers>
-		<researchPrerequisite>Gunsmithing</researchPrerequisite>
+		<researchPrerequisite>Machining</researchPrerequisite>
 	</RecipeDef>
 	
 	<!-- Mauser C96 Semi-Automatic Pistol -->

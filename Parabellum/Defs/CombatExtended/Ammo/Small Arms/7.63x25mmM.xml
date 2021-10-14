@@ -61,6 +61,7 @@
 			<MarketValue>0.6</MarketValue>
 		</statBases>
 		<ammoClass>763mmMHP</ammoClass>
+		<generateAllowChance>0.4</generateAllowChance>
 		<cookOffProjectile>Bullet_763x25mmM_HP</cookOffProjectile>
 	</ThingDef>
 	

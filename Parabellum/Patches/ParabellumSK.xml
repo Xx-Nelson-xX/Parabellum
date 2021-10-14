@@ -6,7 +6,6 @@
 		<li>Core SK</li>
 	</mods>
 		<match Class="PatchOperationSequence">
-		<success>Always</success>
 			<operations>
 			
 				<li Class="PatchOperationAdd">	
@@ -66,7 +65,7 @@
 					</value>
 				</li>
 				
-				<!-- Heavy Component -->
+				<!-- Component -->
 				<li Class="PatchOperationAdd">	
 					<xpath>Defs/RecipeDef[defName="MakeHeavy_Component"]/recipeUsers</xpath>
 					<value>
@@ -75,6 +74,12 @@
 				</li>
 				<li Class="PatchOperationReplace">	
 					<xpath>Defs/RecipeDef[defName="MakeHeavy_Component"]/researchPrerequisite</xpath>
+					<value>
+						<researchPrerequisite>Machining</researchPrerequisite>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">	
+					<xpath>Defs/RecipeDef[defName="MakePistol_Component"]/researchPrerequisite</xpath>
 					<value>
 						<researchPrerequisite>Machining</researchPrerequisite>
 					</value>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<SoundDef>
+		<defName>Interact_StG44</defName>  
+		<context>MapOnly</context>  
+		<maxSimultaneous>1</maxSimultaneous>  
+		<subSounds>
+		  <li>
+			<grains>
+			  <li Class="AudioGrain_Clip">
+				<clipPath>Interact/Int_StG44</clipPath>
+			  </li>
+			</grains>      
+			<volumeRange>25~25</volumeRange>
+		  </li>
+		</subSounds>
+	  </SoundDef>
+  
+ </Defs>

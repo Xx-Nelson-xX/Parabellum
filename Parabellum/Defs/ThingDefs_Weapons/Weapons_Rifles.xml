@@ -21,8 +21,9 @@
         </statBases>
 		<generateCommonality>0.3</generateCommonality>
         <weaponTags>
-            <li>RF2</li>
-            <li>Gun</li>
+			<li>RF2</li>
+			<li>RF3</li>
+			<li>IndustrialGunAdvanced</li>
             <li>TierTwoRifle</li>
             <li>CE_AI_Rifle</li>
         </weaponTags>
@@ -141,7 +142,7 @@
         </graphicData>
         <soundInteract>Interact_Rifle</soundInteract>
         <statBases>
-            <MarketValue>700</MarketValue>
+            <MarketValue>600</MarketValue>
             <SightsEfficiency>1.1</SightsEfficiency>
             <ShotSpread>0.08</ShotSpread>
             <SwayFactor>1.25</SwayFactor>
@@ -339,4 +340,239 @@
         </smeltProducts>
     </ThingDef>
 	
+	<!-- MKb 42 (H) -->
+    <ThingDef ParentName="BaseGun_LongBarreled">
+        <defName>Pa_MKb42H</defName>
+        <label>MKb 42(H)</label>
+        <description>MaschinenKarabiner 42 (Haenel),early concept of Modern Assault Rifle, at least the only one officially entered production and participated in combat during mid-war, even the design proved superior to Walther's MKb 42(W), it still need improvements and reduce production cost to be mass produced.</description>
+        <graphicData>
+            <texPath>Things/Weapons/MKb42H</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>Interact_StG44</soundInteract>
+        <statBases>
+            <MarketValue>1200</MarketValue>
+            <SightsEfficiency>1.0</SightsEfficiency>
+            <ShotSpread>0.085</ShotSpread>
+            <SwayFactor>1.4</SwayFactor>
+            <RangedWeapon_Cooldown>0.64</RangedWeapon_Cooldown>
+            <Bulk>12.8</Bulk>
+            <Mass>5.49</Mass>
+        </statBases>
+		<generateCommonality>0.3</generateCommonality>
+		<equippedAngleOffset>45</equippedAngleOffset>
+        <weaponTags>
+			<li>RF2</li>
+			<li>RF3</li>
+			<li>IndustrialGunAdvanced</li>
+            <li>TierOneRifle</li>
+            <li>CE_AI_Rifle</li>
+        </weaponTags>
+        <thingCategories>
+            <li>Rifles</li>
+        </thingCategories>
+        <verbs>
+            <li Class="CombatExtended.VerbPropertiesCE">
+				<recoilAmount>1.36</recoilAmount>
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>Bullet_792x33mmK_FMJ</defaultProjectile>
+                <warmupTime>0.8</warmupTime>
+				<burstShotCount>6</burstShotCount>
+                <ticksBetweenBurstShots>7</ticksBetweenBurstShots>
+                <range>43</range>
+                <soundCast>Shot_StG</soundCast>
+                <soundCastTail>GunTail_Heavy</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+            </li>
+        </verbs>
+        <comps>
+            <li Class="CombatExtended.CompProperties_FireModes">
+                <aiUseBurstMode>true</aiUseBurstMode>
+                <aiAimMode>AimedShot</aiAimMode>
+				<aimedBurstShotCount>3</aimedBurstShotCount>
+            </li>
+            <li Class="CombatExtended.CompProperties_AmmoUser">
+                <magazineSize>30</magazineSize>
+                <reloadTime>2.4</reloadTime>
+                <ammoSet>AmmoSet_792x33mmK</ammoSet>
+            </li>
+        </comps>
+		<tools>
+			<li Class="CombatExtended.ToolCE">
+				<label>bayonet</label>
+				<capacities>
+					<li>Stab</li>
+				</capacities>
+				<power>13</power>
+				<cooldownTime>1.26</cooldownTime>
+				<chanceFactor>1.5</chanceFactor>
+				<armorPenetrationSharp>6.5</armorPenetrationSharp>
+				<armorPenetrationBlunt>3.5</armorPenetrationBlunt>
+				<linkedBodyPartsGroup>Muzzle</linkedBodyPartsGroup>
+			</li>
+			<li Class="CombatExtended.ToolCE">
+				<label>blade</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>8</power>
+				<cooldownTime>1.04</cooldownTime>
+				<chanceFactor>1.2</chanceFactor>
+				<armorPenetrationBlunt>4</armorPenetrationBlunt>
+				<armorPenetrationSharp>3</armorPenetrationSharp>
+				<linkedBodyPartsGroup>Blade</linkedBodyPartsGroup>
+			</li>
+			<li Class="CombatExtended.ToolCE">
+				<label>stock</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>10</power>
+				<cooldownTime>1.4</cooldownTime>
+				<chanceFactor>1.1</chanceFactor>
+				<armorPenetrationBlunt>8</armorPenetrationBlunt>
+				<linkedBodyPartsGroup>Stock</linkedBodyPartsGroup>
+			</li>
+		</tools>
+		<modExtensions>
+		  <li Class="CombatExtended.GunDrawExtension">
+			<DrawSize>1.1</DrawSize>
+		  </li>
+		</modExtensions>
+        <smeltProducts>
+			<Rifle_Component>1</Rifle_Component>
+            <Weapon_Parts>2</Weapon_Parts>
+        </smeltProducts>
+    </ThingDef>
+	
+	<!-- StG 44/MP 44 -->
+    <ThingDef ParentName="BaseGun_LongBarreled">
+        <defName>Pa_StG44AR</defName>
+        <label>StG 44/MP 44</label>
+        <description>Sturmgewehr 44, aka. the "MaschinenPistole 44" to make it possible to get in the production line by bypass its doctrine restriction like how they did with certain treaty, considered one of the earliest mass produced Modern Assault Rifle, participated in combat since the late-war, slightly simplified design with most of the parts stamped to reduce production cost.</description>
+        <graphicData>
+            <texPath>Things/Weapons/StG44</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>Interact_StG44</soundInteract>
+        <statBases>
+            <MarketValue>1340</MarketValue>
+            <SightsEfficiency>1.05</SightsEfficiency>
+            <ShotSpread>0.07</ShotSpread>
+            <SwayFactor>1.24</SwayFactor>
+            <RangedWeapon_Cooldown>0.6</RangedWeapon_Cooldown>
+            <Bulk>11.2</Bulk>
+            <Mass>4.6</Mass>
+        </statBases>
+		<generateCommonality>0.5</generateCommonality>
+		<equippedAngleOffset>45</equippedAngleOffset>
+        <weaponTags>
+			<li>RF3</li>
+            <li>AdvancedGun</li>
+            <li>IndustrialGunAdvanced</li>
+            <li>TierTwoRifle</li>
+            <li>TierOneRifle</li>
+            <li>CE_AI_Rifle</li>
+        </weaponTags>
+        <thingCategories>
+            <li>Rifles</li>
+        </thingCategories>
+        <verbs>
+            <li Class="CombatExtended.VerbPropertiesCE">
+				<recoilAmount>1.32</recoilAmount>
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>Bullet_792x33mmK_FMJ</defaultProjectile>
+                <warmupTime>0.72</warmupTime>
+				<burstShotCount>8</burstShotCount>
+                <ticksBetweenBurstShots>6</ticksBetweenBurstShots>
+                <range>45</range>
+                <soundCast>Shot_StG</soundCast>
+                <soundCastTail>GunTail_Heavy</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+            </li>
+        </verbs>
+		<comps>
+            <li Class="CombatExtended.CompProperties_FireModes">
+                <aiUseBurstMode>true</aiUseBurstMode>
+                <aiAimMode>AimedShot</aiAimMode>
+				<aimedBurstShotCount>3</aimedBurstShotCount>
+            </li>
+            <li Class="CombatExtended.CompProperties_AmmoUser">
+                <magazineSize>30</magazineSize>
+                <reloadTime>2.3</reloadTime>
+                <ammoSet>AmmoSet_792x33mmK</ammoSet>
+            </li>
+        </comps>
+        <smeltProducts>
+			<Rifle_Component>1</Rifle_Component>
+            <Weapon_Parts>3</Weapon_Parts>
+        </smeltProducts>
+    </ThingDef>
+	
+	<!-- StG 45/MP 45(M)/Gerät 06H -->
+    <ThingDef ParentName="BaseGun_LongBarreled">
+        <defName>Pa_StG45M</defName>
+        <label>StG 45(M)</label>
+        <description>Sturmgewehr 45(Mauser), aka. MaschinenPistole 45 or Gerät 06H, after the fiasco of G41(M), Mauser changed their development team to develop a weapon to compete with their new opponent: the StG 44, the idea was creating a cheaper version of it to keep with the army demand and improve the production, more or less a last ditch weapon, surprisingly, after few failure and rejections, the result was approved considering the 40% cost reduction and material consumption to build it, but they ran out of time and the war already ended, the concept was picked up by CEAM and CETME, in the end the licence got purchased by HK and it became the template of the G3 family.</description>
+        <graphicData>
+            <texPath>Things/Weapons/StG45</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>Interact_StG44</soundInteract>
+        <statBases>
+            <MarketValue>1280</MarketValue>
+            <SightsEfficiency>1.05</SightsEfficiency>
+            <ShotSpread>0.062</ShotSpread>
+            <SwayFactor>1.18</SwayFactor>
+            <RangedWeapon_Cooldown>0.6</RangedWeapon_Cooldown>
+            <Bulk>9.8</Bulk>
+            <Mass>4</Mass>
+        </statBases>
+		<generateCommonality>0.5</generateCommonality>
+		<equippedAngleOffset>45</equippedAngleOffset>
+        <weaponTags>
+			<li>RF3</li>
+            <li>AdvancedGun</li>
+            <li>IndustrialGunAdvanced</li>
+            <li>TierTwoRifle</li>
+            <li>TierOneRifle</li>
+            <li>CE_AI_Rifle</li>
+        </weaponTags>
+        <thingCategories>
+            <li>Rifles</li>
+        </thingCategories>
+        <verbs>
+            <li Class="CombatExtended.VerbPropertiesCE">
+				<recoilAmount>1.18</recoilAmount>
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>Bullet_792x33mmK_J</defaultProjectile>
+                <warmupTime>0.64</warmupTime>
+				<burstShotCount>5</burstShotCount>
+                <ticksBetweenBurstShots>8</ticksBetweenBurstShots>
+                <range>45</range>
+                <soundCast>Shot_StG</soundCast>
+                <soundCastTail>GunTail_Heavy</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+            </li>
+        </verbs>
+		<comps>
+            <li Class="CombatExtended.CompProperties_FireModes">
+                <aiUseBurstMode>true</aiUseBurstMode>
+                <aiAimMode>AimedShot</aiAimMode>
+				<aimedBurstShotCount>3</aimedBurstShotCount>
+            </li>
+            <li Class="CombatExtended.CompProperties_AmmoUser">
+                <magazineSize>30</magazineSize>
+                <reloadTime>2.3</reloadTime>
+                <ammoSet>AmmoSet_792x33mmK</ammoSet>
+            </li>
+        </comps>
+        <smeltProducts>
+			<Rifle_Component>1</Rifle_Component>
+        </smeltProducts>
+    </ThingDef>
+
 </Defs>

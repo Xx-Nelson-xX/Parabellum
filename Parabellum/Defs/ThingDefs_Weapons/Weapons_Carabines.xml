@@ -205,7 +205,7 @@
         </graphicData>
         <soundInteract>Interact_Rifle</soundInteract>
         <statBases>
-            <MarketValue>550</MarketValue>
+            <MarketValue>450</MarketValue>
             <SightsEfficiency>1.05</SightsEfficiency>
             <ShotSpread>0.3</ShotSpread>
             <SwayFactor>1.3</SwayFactor>
@@ -336,11 +336,11 @@
         </graphicData>
         <soundInteract>Interact_Rifle</soundInteract>
         <statBases>
-            <MarketValue>1200</MarketValue>
+            <MarketValue>900</MarketValue>
             <SightsEfficiency>1.2</SightsEfficiency>
             <ShotSpread>0.028</ShotSpread>
             <SwayFactor>1.3</SwayFactor>
-            <RangedWeapon_Cooldown>0.8</RangedWeapon_Cooldown>
+            <RangedWeapon_Cooldown>0.7</RangedWeapon_Cooldown>
             <Bulk>9.9</Bulk>
             <Mass>4.9</Mass>
         </statBases>
@@ -404,11 +404,11 @@
         </graphicData>
         <soundInteract>Interact_Rifle</soundInteract>
         <statBases>
-            <MarketValue>1300</MarketValue>
+            <MarketValue>1000</MarketValue>
             <SightsEfficiency>1.25</SightsEfficiency>
             <ShotSpread>0.022</ShotSpread>
             <SwayFactor>1.2</SwayFactor>
-            <RangedWeapon_Cooldown>0.7</RangedWeapon_Cooldown>
+            <RangedWeapon_Cooldown>0.65</RangedWeapon_Cooldown>
             <Bulk>9.7</Bulk>
             <Mass>4.4</Mass>
         </statBases>
@@ -434,7 +434,7 @@
                 <defaultProjectile>Bullet_8mmM_SP</defaultProjectile>
                 <warmupTime>1.4</warmupTime>
 				<burstShotCount>3</burstShotCount>
-                <ticksBetweenBurstShots>100</ticksBetweenBurstShots>
+                <ticksBetweenBurstShots>80</ticksBetweenBurstShots>
                 <range>57</range>
                 <soundCast>Shot_G43K</soundCast>
                 <soundCastTail>GunTail_Heavy</soundCastTail>
@@ -463,5 +463,64 @@
             <Weapon_Parts>1</Weapon_Parts>
         </smeltProducts>
     </ThingDef>
-
+	
+	<!-- Gustloff Volkssturmgewehr VG 1-5 -->
+    <ThingDef ParentName="BaseGun_LongBarreled">
+        <defName>Pa_VG</defName>
+        <label>Gustloff VG 1-5</label>
+        <description>Gustloff Volkssturmgewehr VG 1-5, the "People's Assault Rifle", the last effort to increase weapon production almost in the end of the war, a very robust and cheap semi-automatic carabine, generally used by Volkssturm, to fight for the fatherland counter the inevitable for one last time.</description>
+        <graphicData>
+            <texPath>Things/Weapons/VG</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>Interact_Rifle</soundInteract>
+        <statBases>
+            <MarketValue>800</MarketValue>
+            <SightsEfficiency>1.05</SightsEfficiency>
+            <ShotSpread>0.04</ShotSpread>
+            <SwayFactor>1.25</SwayFactor>
+            <RangedWeapon_Cooldown>0.5</RangedWeapon_Cooldown>
+            <Bulk>9.4</Bulk>
+            <Mass>4.6</Mass>
+        </statBases>
+		<generateCommonality>0.7</generateCommonality>
+		<equippedAngleOffset>45</equippedAngleOffset>
+        <weaponTags>
+			<li>RF1</li>
+			<li>RF2</li>
+            <li>Gun</li>
+            <li>TierOneRifle</li>
+			<li>TierTwoRifle</li>
+            <li>CE_AI_Rifle</li>
+        </weaponTags>
+        <thingCategories>
+            <li>Rifles</li>
+        </thingCategories>
+        <verbs>
+            <li Class="CombatExtended.VerbPropertiesCE">
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>Bullet_792x33mmK_FMJ</defaultProjectile>
+                <warmupTime>0.7</warmupTime>
+                <range>40</range>
+                <soundCast>Shot_Madsen</soundCast>
+                <soundCastTail>GunTail_Heavy</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+            </li>
+        </verbs>
+		<comps>
+            <li Class="CombatExtended.CompProperties_FireModes">
+                <aiAimMode>AimedShot</aiAimMode>
+            </li>
+            <li Class="CombatExtended.CompProperties_AmmoUser">
+                <magazineSize>30</magazineSize>
+                <reloadTime>2.4</reloadTime>
+                <ammoSet>AmmoSet_792x33mmK</ammoSet>
+            </li>
+        </comps>
+        <smeltProducts>
+			<Weapon_Parts>2</Weapon_Parts>
+        </smeltProducts>
+    </ThingDef>
+	
 </Defs>

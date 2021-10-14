@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingCategoryDef>
+		<defName>Ammo792x33mmK</defName>
+		<label>7.92x33mm Kurz</label>
+		<parent>AmmoRifles</parent>
+		<iconPath>Things/Ammo/Mauser/K/FMJ/FMJ_c</iconPath>
+	</ThingCategoryDef>
+	
+	<!-- ==================== AmmoSet ========================== -->
+
+	<CombatExtended.AmmoSetDef>
+		<defName>AmmoSet_792x33mmK</defName>
+		<label>7.92mm Kurzpatrone 43(7.92x33mm Kurz)</label>
+		<ammoTypes>
+			<Ammo_792x33mmK_FMJ>Bullet_792x33mmK_FMJ</Ammo_792x33mmK_FMJ>
+			<Ammo_792x33mmK_AP>Bullet_792x33mmK_AP</Ammo_792x33mmK_AP>
+			<Ammo_792x33mmK_J>Bullet_792x33mmK_J</Ammo_792x33mmK_J>
+		</ammoTypes>
+	</CombatExtended.AmmoSetDef>
+	
+	<!-- ==================== Ammo ========================== -->
+
+	<ThingDef Class="CombatExtended.AmmoDef" Name="792x33mmKBase" ParentName="SmallAmmoBase" Abstract="True">
+		<description>Early mass produced intermediate catridge, a catridge to fit between 9x19mm Parabellum and 7.92x57mm Mauser, powerful and controllable enough for modern assault rifles.</description>
+		<statBases>
+			<Bulk>0.0339</Bulk>
+		</statBases>
+		<tradeTags>
+			<li>CE_AutoEnableTrade</li>
+			<li>CE_AutoEnableCrafting</li>
+		</tradeTags>
+		<thingCategories>
+			<li>Ammo792x33mmK</li>
+		</thingCategories>
+	</ThingDef>
+	
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="792x33mmKBase">
+		<defName>Ammo_792x33mmK_FMJ</defName>
+		<label>7.92x33mm Kurzpatrone 43(FMJ)</label>
+		<graphicData>
+			<texPath>Things/Ammo/Mauser/K/FMJ</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<Mass>0.0144</Mass>
+			<MarketValue>1.4</MarketValue>
+		</statBases>
+		<ammoClass>792mmKFMJ</ammoClass>
+		<cookOffProjectile>Bullet_792x33mmK_FMJ</cookOffProjectile>
+	</ThingDef>
+	
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="792x33mmKBase">
+		<defName>Ammo_792x33mmK_AP</defName>
+		<label>7.92x33mm Kurzpatrone 43 Hart(AP)</label>
+		<graphicData>
+			<texPath>Things/Ammo/Mauser/K/AP</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<Mass>0.016</Mass>
+			<MarketValue>1.8</MarketValue>
+		</statBases>
+		<ammoClass>792mmKAP</ammoClass>
+		<generateAllowChance>0.6</generateAllowChance>
+		<cookOffProjectile>Bullet_792x33mmK_AP</cookOffProjectile>
+	</ThingDef>
+	
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="792x33mmKBase">
+		<defName>Ammo_792x33mmK_J</defName>
+		<label>7.92x33mm Jaggerpatrone 43(J)</label>
+		<graphicData>
+			<texPath>Things/Ammo/Mauser/K/J</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<Mass>0.0152</Mass>
+			<MarketValue>1.8</MarketValue>
+		</statBases>
+		<ammoClass>792mmKJ</ammoClass>
+		<generateAllowChance>0.2</generateAllowChance>
+		<cookOffProjectile>Bullet_792x33mmK_J</cookOffProjectile>
+	</ThingDef>
+	
+	<!-- ================== Projectiles ================== -->
+
+	<ThingDef Class="CombatExtended.AmmoDef" Name="Base792x33mmKBullet" ParentName="SK_BaseBullet" Abstract="true">
+		<graphicData>
+			<texPath>Things/Projectile/Bullet_Small</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageDef>Bullet</damageDef>
+			<dropsCasings>true</dropsCasings>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="Base792x33mmKBullet">
+		<defName>Bullet_792x33mmK_FMJ</defName>
+		<label>7.92x33mm K bullet (FMJ)</label>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<speed>146</speed>
+			<damageAmountBase>17</damageAmountBase>
+			<armorPenetrationSharp>8.4</armorPenetrationSharp>
+			<armorPenetrationBlunt>50.6</armorPenetrationBlunt>
+		</projectile>
+	</ThingDef>
+	
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="Base792x33mmKBullet">
+		<defName>Bullet_792x33mmK_AP</defName>
+		<label>7.92x33mm K bullet (AP)</label>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<speed>152</speed>
+			<damageAmountBase>18</damageAmountBase>
+			<armorPenetrationSharp>13.4</armorPenetrationSharp>
+			<armorPenetrationBlunt>41.5</armorPenetrationBlunt>
+		</projectile>
+	</ThingDef>
+	
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="Base792x33mmKBullet">
+		<defName>Bullet_792x33mmK_J</defName>
+		<label>7.92x33mm K bullet (J)</label>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<speed>160</speed>
+			<spreadMult>0.85</spreadMult>
+			<damageAmountBase>21</damageAmountBase>
+			<armorPenetrationSharp>11.8</armorPenetrationSharp>
+			<armorPenetrationBlunt>56.3</armorPenetrationBlunt>
+		</projectile>
+	</ThingDef>
+	
+	<!-- ==================== Recipes ========================== -->
+
+	<RecipeDef ParentName="AmmoRecipeRifle">
+		<defName>MakeAmmo_792x33mmK_FMJ</defName>
+		<label>make 7.92x33mm K(FMJ) cartridge x100</label>
+		<description>Craft 100 7.92x33mm K(FMJ) cartridges.</description>
+		<jobString>Making 7.92x33mm K(FMJ) cartridges.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>SLDBar</li>
+						<li>USLDBar</li>
+					</categories>
+				</filter>
+				<count>11</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>HeavyBar</li>
+					</categories>
+				</filter>
+				<count>3</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Powder</li>
+						<li>FSX</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>SLDBar</li>
+				<li>USLDBar</li>
+				<li>HeavyBar</li>
+			</categories>
+			<thingDefs>
+				<li>Powder</li>
+				<li>FSX</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Ammo_792x33mmK_FMJ>100</Ammo_792x33mmK_FMJ>
+		</products>
+		<skillRequirements>
+			<Crafting>3</Crafting>
+		</skillRequirements>
+		<workSkill>Crafting</workSkill>
+		<workSkillLearnFactor>0.8</workSkillLearnFactor>
+		<researchPrerequisite>Rifles_C1</researchPrerequisite>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="AmmoRecipeRifle">
+		<defName>MakeAmmo_792x33mmK_AP</defName>
+		<label>make 7.92x33mm K(AP) cartridge x100</label>
+		<description>Craft 100 7.92x33mm K(AP) cartridges.</description>
+		<jobString>Making 7.92x33mm K(AP) cartridges.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>SLDBar</li>
+						<li>USLDBar</li>
+					</categories>
+				</filter>
+				<count>8</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Tungsten</li>
+					</thingDefs>
+				</filter>
+				<count>3</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>HeavyBar</li>
+					</categories>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Powder</li>
+						<li>FSX</li>
+					</thingDefs>
+				</filter>
+				<count>3</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>SLDBar</li>
+				<li>USLDBar</li>
+				<li>HeavyBar</li>
+			</categories>
+			<thingDefs>
+				<li>Tungsten</li>
+				<li>Powder</li>
+				<li>FSX</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Ammo_792x33mmK_AP>100</Ammo_792x33mmK_AP>
+		</products>
+		<skillRequirements>
+			<Crafting>5</Crafting>
+		</skillRequirements>
+		<workSkill>Crafting</workSkill>
+		<workSkillLearnFactor>0.8</workSkillLearnFactor>
+		<researchPrerequisite>Rifles_C1</researchPrerequisite>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="AmmoRecipeRifle">
+		<defName>MakeAmmo_792x33mmK_J</defName>
+		<label>make 7.92x33mm K(J) cartridge x100</label>
+		<description>Craft 100 7.92x33mm K(J) cartridges.</description>
+		<jobString>Making 7.92x33mm K(J) cartridges.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>SLDBar</li>
+						<li>USLDBar</li>
+					</categories>
+				</filter>
+				<count>10</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>HeavyBar</li>
+					</categories>
+				</filter>
+				<count>4</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Powder</li>
+						<li>FSX</li>
+					</thingDefs>
+				</filter>
+				<count>4</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>SLDBar</li>
+				<li>USLDBar</li>
+				<li>HeavyBar</li>
+			</categories>
+			<thingDefs>
+				<li>Powder</li>
+				<li>FSX</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Ammo_792x33mmK_J>100</Ammo_792x33mmK_J>
+		</products>
+		<skillRequirements>
+			<Crafting>6</Crafting>
+		</skillRequirements>
+		<workSkill>Crafting</workSkill>
+		<workSkillLearnFactor>0.8</workSkillLearnFactor>
+		<researchPrerequisite>Range_C2</researchPrerequisite>
+	</RecipeDef>
+	
+</Defs>
+	

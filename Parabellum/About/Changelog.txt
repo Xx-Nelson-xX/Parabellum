@@ -3,7 +3,7 @@
 
 Planned features:
 	- early stage modern assault rifle:
-		+MkB 42(H)
+		+MkB 42(H) - Done
 		+StG 44
 		+Gerat 06H/StG 45
 	- weapons for old catridge which I added in previous version:
@@ -12,10 +12,11 @@ Planned features:
 		+???
 	- Turrets:
 		+ M202 FLASH turret somesort(66mm LAW rockets)
-	- New stuff from latest build of CE: planned but didn't really want to implement it yet due it probably make the mod conglict with 1.2
+	- New stuff from latest build of CE: planned but didn't really want to implement it yet due it probably make the mod conflict with 1.2
 		+ Night Vision
 		+ Flare
 	- Metalworking for late Industrial satage
+	- New Banner
 	- Ammo and Weapon parts disassembly
 	
 *Note:
@@ -24,31 +25,35 @@ Planned features:
 
 The following features need playtesting, since is a Beta launch and there is stuff in WIP, so if you encounter any issue, please report it, thanks
 
-1.5B - 23 Weapons, 6 Turrets, 1 trip mine, 13 new ammo type, 3 new research, new balance, texture improvements, and more tweakings(pretty much the basic routine of each update)
+1.5 - 24 Weapons, 6 Turrets, 1 trip mine, 17 new ammo type, 3 new research, new balance, texture improvements, and more tweakings(pretty much the basic routine of each update)
 
 Pistols:
 - Mauser C96 pistol: 7.63x25mm Mauser(9x19mm,.45 ACP), Semi-Automatic, one of the earliest semi-automatic pistol, 10-round internal magazine, decent fire rate and low damage
 - M712 "Schnellfeuer" Pistol: 9x19mm Parabellum(7.63x25mm, .45 ACP), Automatic(1/2/5) automatic convertion of C96, with detachable box magazine, high rate of fire and low damage
 
 Shotguns:
--Winchester 1887 "Mare's Leg": 10/12 Gauge, Level Action, compact shotgun, a Pop cultural shotgun, you can use it with one hand
--Winchester 1887: 10/12 Gauge, Level Action, classic level action shotgun, designed to fit the company's title and support the Law Enforcement
--Winchester 1897 Standard Grade(30 in): .12 Gauge, Pump Action, classic pump action shotgun, with extra large barrel for trap shooting and hunting
--Winchester 1897 Trench Grade(20 in): .12 Gauge, Pump Action, aka the Trench Gun, with 20 in barrel, heatshield and a bayonet, complete package for Urban/Trench warfare
+- Winchester 1887 "Mare's Leg": 10/12 Gauge, Level Action, compact shotgun, a Pop cultural shotgun, you can use it with one hand
+- Winchester 1887: 10/12 Gauge, Level Action, classic level action shotgun, designed to fit the company's title and support the Law Enforcement
+- Winchester 1897 Standard Grade(30 in): .12 Gauge, Pump Action, classic pump action shotgun, with extra large barrel for trap shooting and hunting
+- Winchester 1897 Trench Grade(20 in): .12 Gauge, Pump Action, aka the Trench Gun, with 20 in barrel, heatshield and a bayonet, complete package for Urban/Trench warfare
 
 SMGs:
 - Bergmann MP 18: 9x19mm Parabellum(7.63x25mm, .45 ACP), Automatic(1/4/10), one of the earliest SMG created for trench warfare, very effective in CQC range
 
 Carabines:
--Karabiner Model 1890: 8mm Mauser, Bolt Action, carabine version of Gewehr Model 1888 for Cavary
--Mauser Karabiner 98k: 8mm Mauser/7.62x51mm NATO, Bolt Action, one of the latest Mauser Rifle, accurate and somewhat long range
--G41(W): 8mm Mauser Rifle Catridge, Semi-Automatic, mid war semi-automatic rifle, slow reload due the weapon use large internal magazine
--G43: 8mm Mauser Rifle Catridge, Semi-Automatic(1/2/3), mid-late war semi-automatic rifle, improved in most aspect and use detachable box magazine 
+- Karabiner Model 1890: 8mm Mauser, Bolt Action, carabine version of Gewehr Model 1888 for Cavary
+- Mauser Karabiner 98k: 8mm Mauser/7.62x51mm NATO, Bolt Action, one of the latest Mauser Rifle, accurate and somewhat long range
+- G41(W): 8mm Mauser Rifle Catridge, Semi-Automatic, mid war semi-automatic rifle, slow reload due the weapon use large internal magazine
+- G43: 8mm Mauser Rifle Catridge, Semi-Automatic(1/2/3), mid-late war semi-automatic rifle, improved in most aspect and use detachable box magazine
+- Gustloff VG 1-5: 7.92x33mm K, Semi-Automatic, late/post-war last-ditch carabine, very robust and cheap to produce
 
 Rifles:
 - Gewehr Model 1888: 8mm Mauser, Bolt Action, standard Rifle for Ancient Military formation, perfect weapon for Trench Warfare(from a trench shooting to other trench, no so much for assault)
 - Mauser 1918 T-Gewehr: 13.2x92mmSR TuF, Bolt Action, one of the First AT Rifle in combat, can knock out Light armored vehicles of its time without any issue
 - FG 42 Type F/II: 8mm Mauser Rifle Catridge, Automatic(1/3/7), one of the most advanced weapon of its era, it serve 2 purpose, almost accurate and light as the Mauser K98k with close both and capable to achive open bolt automatic fire like the MG 34 does but in a smallet package, while the paratroop can carry them when they paradrop
+- MkB 42(H): 7.92x33mm K, Automatic(1/3/6), early modern assault rifle concept, included a bayoned lung to attach bayonet for assault role
+- StG 44/MP 44: 7.92x33mm K, Automatic(1/3/8), late-war modern assault rifle, simplefied and reduced production cost
+- StG 45/MP 45(M): 7.92x33mm K, Automatic(1/3/5), late/post-war modern assault rifle, further simplefied and reduced production cost
 
 LMGs:
 - MG 08/15: 8mm Mauser Rifle Catridge, Automatic(1/25/50), LMG convertion of the MG 08 MMG, quite big, heavy and very sturdy
@@ -67,6 +72,7 @@ Grenades:
 
 Turrets:
 - MG 08 MMG: 8mm Mauser Rifle Catridge, Automatic(1/10/25), early concept of machine gun, quite heavy and bulky, the slow rate of fire make it excellent for prolonged suppressive fire
+- Maxim Quad AA gun: 7.92x57mm Mauser/7.62x54mmR/.303 British, Automatic(12/44), Quad AA Machinegun, by combine 4 Maxim MMG with a AA platform
 - MG 18 TuF HMG: 13.2x92mmSR TuF, Automatic(1/3/10), early concept of heavy machine gun, an upscale MG 08 loaded with 13.2mm TuF for AT and AA purpose
 - MG 34z MMG: 8mm Mauser Rifle Catridge, Automatic(1/10/40), 2 MG 34 GPMG mounted on a tripod, double the RoF for rapid suppression
 - MG 131 HMG: 13mm HMG Catridge, Automatic(1/5/15), a redesigned MG 34 to chamber 13mm rounds, mainly 13x64mmB HE-T rounds to increase is AA capability
@@ -79,7 +85,11 @@ Ammo:
 - 7.92x57mm S Patrone(FMJ), standard rifle catridge, powerful as modern rifle catridge with better ballistic than previos one
 - 7.92x57mm K Patrone(AP), Armor Piercing catridge, use hardened Tungsten core to increase the bullet penetration
 - 7.92x57mm B Patrone(HE-T), High Explosive - Tracer round or "Observation" round for planes and Sharpshooters to guide their shot or indicate where the bullet landed
-- 7.63x25mm Mauser FMJ, standard high velocity pistol rounds for Mauser pistols, improved penetration and bullet travel speed, but lacks stopping power
+- 7.63x25mm Mauser(FMJ), standard high velocity pistol rounds for Mauser pistols, improved penetration and bullet travel speed, but lacks stopping power
+- 7.63x25mm Mauser(HP), modified Hollow Point round of 7.63x25mm Mauser, increase stopping power but reduce the projectile speed and penetration
+- 7.92x33mm K(FMJ), standard intermediate catridge for early modern Assault Rifle, stronger than pistol ammo but weaker than Rifle ammo
+- 7.92x33mm K(AP), Armor Piercing round, use hardened Tungsten core bullet and increased projectile speed to increase its armor penetration
+- 7.92x33mm K(J), Jaggerpatrone, overcharge sharpshooter round, increase its overall performance
 - 13.2x92mmSR TuF(AP), Armor Piercing, a scale up Mauser catridge for AT and AA purpose for early HMGs and AT Rifles
 - 13.2x92mmSR TuF(APHE), Armor Piercing High Explosive, same TuF catridge with modified bullet fill with small amount of explosive
 - 13x64mmB(HE-T), High Explosive-Tracer, commonly used by mid-late war CAS for strafing run and groud AA defense  
@@ -130,7 +140,7 @@ Tweaks:
 *Organized a bit AmmoCategories files by separating them with green text
 +Added Vile's Pre-Industrial mod to mod loading order list(Now my mod Load after it when press Auto Sort)
 *Added "<tradeability>None</tradeability>" to every Turret gun, to make sure they don't spawn in the trader list, it doesn't happen during my playtest, just to make sure it never does in the future
--Moved Huot Automatic Rifle from "Rifle I" Research to "Rifle II" due new balance
+-Moved Huot Automatic Rifle from "Rifle I" Research to "Gun II" due new balance, available for tier "RF2" too
 *Inverted Mk.18 Mod.0 GL Warmup time and RangeCooldown
 +Added extra ammo patch for HMC More Content ammo, now all weapon that use 7.62x25mmTT can also use 7.63x25mm Mauser
 -Nerfed a bit Lewis LMG to fit more current content's early LMGs(Sight Efficiency 0.95 -> 0.8, Range Cooldown 0.8 -> 1.2, added global work speed and move speed reduction), but now it cost way less than originaly was
@@ -152,6 +162,16 @@ Tweaks:
 +Increase the visual size of the 12.8cm PaK 44/L55 and 5cm Flak 41/L67 it just feels wrong comparing its size with other cannons
 *Increased slightly the explosive radius of 5cm APHE and HE, 120mm HESH and 12.8cm APHE shell, but reduce their damage after comparing them with 30mm, 90mm and 120mm shells
 *Reorganized the build Gizmo/Drop-down menu/Subcategory, now XM-307 ACSW goes in "Mortal", SPG-9 and SPG9M goes in "rocket launchers"
+*Now you can use any metallic to build S-mines and M67 Mines instead of steel alloy only
+-Reduced 7.63x25mm Mauser HP spawn chance to 40%
+*Replaced LMGs Mechanism cost with weapon parts
+*Reduced the cost of Gewehr 1888, Karabiner 1890, Mauser K98k(R), G41(W), G43
+*Increased Winchester 1887 "Mare's Leg" texture outline
+*Vicker MMG texture Improvement
++Increased G43K RoF(36 -> 45) RC 0.7 -> 0.65, G41(W) RC 0.8 -> 0.7
++Added a patch to add .44 Rimfire(Vile's Pre-Industrial) to Medusa Survival Revolver
+*Rebalanced both survival pistols, they no longer require weapon part and leather to craft and pistol component is craftable when unlock "Gun_I" Research
+*Experimental: Added Interaction sound for StGs
 
 <--------------------------------------- 1.4 -------------------------------------------->
 *Added separated mod package(Parabellum - Earned in Blood & Parabellum - Hold the Line) for who only want handheld weapons or defensive turrets and explosives, not both of them

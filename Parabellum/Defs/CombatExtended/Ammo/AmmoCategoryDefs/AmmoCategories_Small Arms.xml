@@ -59,6 +59,28 @@
     <description>B(Beobachtung)/High Explosive - Tracer, an "Observation" bullet for Luftwaffen and sharpshooters, the bullet explode after impact to indicate where it landed for the shooter, can cause temporal concussion and blast damage when hit at soft target.</description>
   </CombatExtended.AmmoCategoryDef>
   
+  <!-- ==================== 7.92x33mm Kurz Intermediate Catridge ========================== -->
+  <CombatExtended.AmmoCategoryDef>
+    <defName>792mmKFMJ</defName>
+    <label>7.92x33mm K (FMJ)</label>
+    <labelShort>7.92K FMJ</labelShort>
+    <description>Full Metal Jacket, more powerful than pistol round but weaker than rifle round, relatively cheap to produce.</description>
+  </CombatExtended.AmmoCategoryDef>
+  
+  <CombatExtended.AmmoCategoryDef>
+    <defName>792mmKAP</defName>
+    <label>7.92x33mm K (AP)</label>
+    <labelShort>7.92K AP</labelShort>
+    <description>Armor Piercing round, use hardened Tungsten core bullet and increased projectile speed to increase its armor penetration.</description>
+  </CombatExtended.AmmoCategoryDef>
+  
+  <CombatExtended.AmmoCategoryDef>
+    <defName>792mmKJ</defName>
+    <label>7.92x33mm K (J)</label>
+    <labelShort>7.92K J</labelShort>
+    <description>Jaggerpatrone 43, overcharge sharpshooter round, increase its overall performance.</description>
+  </CombatExtended.AmmoCategoryDef>
+  
   <!-- ==================== 8mm Mauser Pistol Catridge ========================== -->
   <CombatExtended.AmmoCategoryDef>
     <defName>763mmMFMJ</defName>

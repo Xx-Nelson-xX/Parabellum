@@ -19,6 +19,9 @@
 			<Ammo_303British_FMJ>Bullet_303British_FMJ</Ammo_303British_FMJ>
 			<Ammo_303British_AP>Bullet_303British_AP</Ammo_303British_AP>
 			<Ammo_303British_HP>Bullet_303British_HP</Ammo_303British_HP>
+			<Ammo_792x33mmK_FMJ>Bullet_792x33mmK_FMJ</Ammo_792x33mmK_FMJ>
+			<Ammo_792x33mmK_AP>Bullet_792x33mmK_AP</Ammo_792x33mmK_AP>
+			<Ammo_792x33mmK_J>Bullet_792x33mmK_J</Ammo_792x33mmK_J>
 			<Ammo_556x45mmNATO_FMJ>Bullet_556x45mmNATO_FMJ</Ammo_556x45mmNATO_FMJ>
 			<Ammo_556x45mmNATO_AP>Bullet_556x45mmNATO_AP</Ammo_556x45mmNATO_AP>
 			<Ammo_556x45mmNATO_HP>Bullet_556x45mmNATO_HP</Ammo_556x45mmNATO_HP>
@@ -80,6 +83,20 @@
 			<Ammo_762x51mmNATO_FMJ>Bullet_762x51mmNATO_FMJ</Ammo_762x51mmNATO_FMJ>
 			<Ammo_762x51mmNATO_AP>Bullet_762x51mmNATO_AP</Ammo_762x51mmNATO_AP>
 			<Ammo_762x51mmNATO_HP>Bullet_762x51mmNATO_HP</Ammo_762x51mmNATO_HP>
+			<Ammo_303British_FMJ>Bullet_303British_FMJ</Ammo_303British_FMJ>
+			<Ammo_303British_AP>Bullet_303British_AP</Ammo_303British_AP>
+			<Ammo_303British_HP>Bullet_303British_HP</Ammo_303British_HP>
+		</ammoTypes>
+	</CombatExtended.AmmoSetDef>
+	
+	<CombatExtended.AmmoSetDef>
+		<defName>AmmoSet_Mx4AA</defName>
+		<label>7.92x57mm Mauser / 7.62x54mmR / .303 British</label>
+		<ammoTypes>
+			<Ammo_8mmM_P88M>Bullet_8mmM_P88M</Ammo_8mmM_P88M>
+			<Ammo_8mmM_SP>Bullet_8mmM_SP</Ammo_8mmM_SP>
+			<Ammo_8mmM_KP>Bullet_8mmM_KP</Ammo_8mmM_KP>
+			<Ammo_8mmM_BP>Bullet_8mmM_BP</Ammo_8mmM_BP>
 			<Ammo_303British_FMJ>Bullet_303British_FMJ</Ammo_303British_FMJ>
 			<Ammo_303British_AP>Bullet_303British_AP</Ammo_303British_AP>
 			<Ammo_303British_HP>Bullet_303British_HP</Ammo_303British_HP>

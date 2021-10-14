@@ -15,10 +15,10 @@
 			<li>
 				<filter>
 					<thingDefs>
-						<li>Mechanism</li>
+						<li>Weapon_Parts</li>
 					</thingDefs>
 				</filter>
-				<count>1</count>
+				<count>3</count>
 			</li>
 			<li>
 				<filter>
@@ -50,7 +50,6 @@
 		</products>
 		<fixedIngredientFilter>
 			<thingDefs>
-				<li>Mechanism</li>
 				<li>Weapon_Parts</li>
 				<li>ComponentIndustrial</li>
 			</thingDefs>
@@ -80,7 +79,7 @@
 			<li>
 				<filter>
 					<thingDefs>
-						<li>Mechanism</li>
+						<li>Weapon_Parts</li>
 					</thingDefs>
 				</filter>
 				<count>2</count>
@@ -115,7 +114,7 @@
 		</products>
 		<fixedIngredientFilter>
 			<thingDefs>
-				<li>Mechanism</li>
+				<li>Weapon_Parts</li>
 				<li>ComponentIndustrial</li>
 			</thingDefs>
 			<categories>
@@ -144,10 +143,10 @@
 			<li>
 				<filter>
 					<thingDefs>
-						<li>Mechanism</li>
+						<li>Weapon_Parts</li>
 					</thingDefs>
 				</filter>
-				<count>4</count>
+				<count>3</count>
 			</li>
 			<li>
 				<filter>
@@ -179,7 +178,7 @@
 		</products>
 		<fixedIngredientFilter>
 			<thingDefs>
-				<li>Mechanism</li>
+				<li>Weapon_Parts</li>
 				<li>ComponentIndustrial</li>
 			</thingDefs>
 			<categories>
@@ -216,6 +215,14 @@
 			<li>
 				<filter>
 					<thingDefs>
+						<li>Mechanism</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
 						<li>ComponentIndustrial</li>
 					</thingDefs>
 				</filter>
@@ -244,6 +251,7 @@
 		<fixedIngredientFilter>
 			<thingDefs>
 				<li>Weapon_Parts</li>
+				<li>Mechanism</li>
 				<li>ComponentIndustrial</li>
 			</thingDefs>
 			<categories>

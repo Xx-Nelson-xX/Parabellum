@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- DP-12 Double-barreled Pumpshotgun -->
+
+  <BuildDP12.label>Собрать Двуствольный дробовик DP-12</BuildDP12.label>
+  <BuildDP12.description>Собирает двуствольный дробовик DP-12, чтобы получить двойное удовольствие ... и удвоить его стоимость. \ Калибр: калибр 12</BuildDP12.description>
+  <BuildDP12.jobString>Собран DP-12.</BuildDP12.jobString>
+
+
+  <!-- HK CAWS -->
+
+  <BuildCAWS.label>Собрать CAWS</BuildCAWS.label>
+  <BuildCAWS.description>Собирает CAWS, больше не прототип. \ Калибр: 12 калибр.</BuildCAWS.description>
+  <BuildCAWS.jobString>Собран CAWS.</BuildCAWS.jobString>
+
+
+  <!-- Serbu Super Shorty -->
+
+  <BuildSSS.label>Собрать Сербу супер коротышка</BuildSSS.label>
+  <BuildSSS.description>Собирает Сербу супер коротышка, нечто среднее между обычным пистолетом и карманной пушкой. \ NCaliber: 12 Gauge</BuildSSS.description>
+  <BuildSSS.jobString>Собран Сербу супер коротышка.</BuildSSS.jobString>
+
+
+  <!-- Winchester Model 1887 -->
+
+  <BuildPa_W1887L.label>Собрать Винчестер Модель 1887</BuildPa_W1887L.label>
+  <BuildPa_W1887L.description>Собирает дробовик Винчестер Модель 1887 с рычажным механизмом, воплотите в жизнь свою мечту о ковбойской стрельбе. \ NКалибр: калибр 12</BuildPa_W1887L.description>
+  <BuildPa_W1887L.jobString>Собран Винчестер Модель 1887.</BuildPa_W1887L.jobString>
+
+
+  <!-- Winchester Model 1887 "Mare's Leg" -->
+
+  <BuildPa_W1887S.label>Собрать Винчестер Модель 1887 "Удар Копытом"</BuildPa_W1887S.label>
+  <BuildPa_W1887S.description>Собирает ружье с рычажным механизмом Винчестер Модель 1887 "Удар Копытом Коня", "Пока, детка". \ Калибр: калибр 12</BuildPa_W1887S.description>
+  <BuildPa_W1887S.jobString>Собран Винчестер Модель 1887 "Удар Копытом".</BuildPa_W1887S.jobString>
+
+
+  <!-- Winchester Model 1897/Trench Gun -->
+
+  <BuildPa_W1897T.label>Собрать Винчестер Модель 1897(T)</BuildPa_W1897T.label>
+  <BuildPa_W1897T.description>Собирает Винчестер Модель  1897, Помповое ружье "Траншейная Метла", в то время использование этого оружия считалось военным преступлением. \ Калибр: калибр 12</BuildPa_W1897T.description>
+  <BuildPa_W1897T.jobString>Собран Винчестер Модель 1897(T).</BuildPa_W1897T.jobString>
+
+  <BuildPa_W1897L.label>Собрать Винчестер Модель 1897(L)</BuildPa_W1897L.label>
+  <BuildPa_W1897L.description>Собирает Винчестер Модель 1897, помповое ружье стандартного класса с 30-дюймовым стволом, идеальное оружие для засад и охотников. \ Калибр: калибр 12</BuildPa_W1897L.description>
+  <BuildPa_W1897L.jobString>Собран Винчестер Модель 1897(L).</BuildPa_W1897L.jobString>
+
+
+</LanguageData>

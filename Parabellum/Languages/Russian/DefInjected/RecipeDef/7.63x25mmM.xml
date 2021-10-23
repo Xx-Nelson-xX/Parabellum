@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Recipes -->
+
+  <MakeAmmo_763x25mmM_FMJ.label>Сделать 7.63x25mm Mauser (FMJ) картридж x100</MakeAmmo_763x25mmM_FMJ.label>
+  <MakeAmmo_763x25mmM_FMJ.description>Делает 100 7.63x25mm Mauser (FMJ) картридж.</MakeAmmo_763x25mmM_FMJ.description>
+  <MakeAmmo_763x25mmM_FMJ.jobString>Сделано 7.63x25mm Mauser (FMJ) картридж.</MakeAmmo_763x25mmM_FMJ.jobString>
+
+  <MakeAmmo_763x25mmM_HP.label>Сделать 7.63x25mm Mauser (HP) картридж x100</MakeAmmo_763x25mmM_HP.label>
+  <MakeAmmo_763x25mmM_HP.description>Делает 100 7.63x25mm Mauser (HP) картридж.</MakeAmmo_763x25mmM_HP.description>
+  <MakeAmmo_763x25mmM_HP.jobString>Сделано 7.63x25mm Mauser (HP) картридж.</MakeAmmo_763x25mmM_HP.jobString>
+
+
+</LanguageData>

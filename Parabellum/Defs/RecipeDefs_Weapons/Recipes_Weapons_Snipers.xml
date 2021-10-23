@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-<RecipeDef ParentName="RangedWeaponRecipeBase">
+	<!-- XM-109 Anti-Materiel Payload Rifle -->
+	<RecipeDef ParentName="RangedWeaponRecipeBase">
 		<defName>BuildXM109AMPR</defName>
-		<label>Build Barrett XM109 Anti-Materiel Payload Rifle</label>
-		<description>Builds the Barrett XM109 Anti-Materiel Payload Rifle, .\nCaliber: 25x59mm / .50 BMG</description>
-		<jobString>Building Barrett M82A1 SASR.</jobString>
+		<label>Build Barrett XM-109 Anti-Materiel Payload Rifle</label>
+		<description>Builds the Barrett XM-109 Anti-Materiel Payload Rifle, when the usual high caliber isn't enough to impress your high tech enemies.\nCaliber: 25x59mm / .50 BMG</description>
+		<jobString>Building XM-109 Anti-Materiel Payload Rifle.</jobString>
 		<workAmount>24000</workAmount>
 		<skillRequirements>
 			<Crafting>18</Crafting>
@@ -71,6 +72,152 @@
 			<li>AdvWeaponCraftingWorkTable</li>
 		</recipeUsers>
 		<researchPrerequisite>Sniper_rifles_D1</researchPrerequisite>
+	</RecipeDef>
+	
+	<!-- Mk.12 SPR -->
+	<RecipeDef ParentName="RangedWeaponRecipeBase">
+		<defName>BuildMk12SPR</defName>
+		<label>Build Mk.12 SPR</label>
+		<description>Builds a Mk.12 Special Purpose Rifle, if you expect more kitting than one shot one kill, the weapon is perfect for that.\nCaliber: 5.56x45mm NATO</description>
+		<jobString>Building Mk.12 SPR.</jobString>
+		<workAmount>12000</workAmount>
+		<skillRequirements>
+			<Crafting>10</Crafting>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Sniper_Component</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Weapon_Parts</li>
+					</thingDefs>
+				</filter>
+				<count>4</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>4</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>Metallic</li>
+					</categories>
+				</filter>
+				<count>40</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Plastic</li>
+					</thingDefs>
+				</filter>
+				<count>35</count>
+			</li>
+		</ingredients>
+		<products>
+			<Pa_Mk12SPR>1</Pa_Mk12SPR>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Sniper_Component</li>
+				<li>Weapon_Parts</li>
+				<li>ComponentIndustrial</li>
+				<li>Plastic</li>
+			</thingDefs>
+			<categories>
+				<li>SLDBar</li>
+				<li>USLDBar</li>
+			</categories>
+		</fixedIngredientFilter>
+		<recipeUsers>
+			<li>WeaponCraftingWorkTable</li>
+		</recipeUsers>
+	    <researchPrerequisite>Sniper_rifles_C1</researchPrerequisite>
+	</RecipeDef>
+	
+	<!-- Mk.12 SPR -->
+	<RecipeDef ParentName="RangedWeaponRecipeBase">
+		<defName>BuildMk1250SPR</defName>
+		<label>Build Mk.12 SPR(B)</label>
+		<description>Builds a Mk.12 Special Purpose Rifle(Beowulf), now it smack people harder with twice the bullet size.\nCaliber: .50 Beowulf(12,7x42mm)</description>
+		<jobString>Building Mk.12 SPR(B).</jobString>
+		<workAmount>14000</workAmount>
+		<skillRequirements>
+			<Crafting>12</Crafting>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>AdvSniper_Component</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Weapon_Parts</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>4</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>Metallic</li>
+					</categories>
+				</filter>
+				<count>30</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Plastic</li>
+					</thingDefs>
+				</filter>
+				<count>35</count>
+			</li>
+		</ingredients>
+		<products>
+			<Pa_Mk1250SPR>1</Pa_Mk1250SPR>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Sniper_Component</li>
+				<li>Weapon_Parts</li>
+				<li>ComponentIndustrial</li>
+				<li>Plastic</li>
+			</thingDefs>
+			<categories>
+				<li>SLDBar</li>
+				<li>USLDBar</li>
+			</categories>
+		</fixedIngredientFilter>
+		<recipeUsers>
+			<li>AdvWeaponCraftingWorkTable</li>
+		</recipeUsers>
+	    <researchPrerequisite>PrecisionRifling</researchPrerequisite>
 	</RecipeDef>
 	
 </Defs>

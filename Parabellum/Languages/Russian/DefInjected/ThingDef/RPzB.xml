@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Ammo -->
+
+  <Ammo_88mmRPzB_HEAT.label>88mm RPzB GR. 4992(HEAT)</Ammo_88mmRPzB_HEAT.label>
+  <Ammo_88mmRPzB_HEAT.description>Ракеты небольшого размера, относительно простые, дешевые и легкие в производстве ракетных боеприпасов.</Ammo_88mmRPzB_HEAT.description>
+
+  <Ammo_88mmRPzB_Frag.label>88mm RPzB GR. 4992(Осколки)</Ammo_88mmRPzB_Frag.label>
+  <Ammo_88mmRPzB_Frag.description>Ракеты небольшого размера, относительно простые, дешевые и легкие в производстве ракетных боеприпасов.</Ammo_88mmRPzB_Frag.description>
+
+  <Ammo_8cmRVW_HE.label>88mm Raketen Sprgr(HE)</Ammo_8cmRVW_HE.label>
+  <Ammo_8cmRVW_HE.description>Ракеты небольшого размера, относительно простые, дешевые и легкие в производстве ракетных боеприпасов</Ammo_8cmRVW_HE.description>
+
+
+  <!-- Projectiles -->
+
+  <Bullet_88mmRPzB_HEAT.label>88mm RPzB Gr. 4992(HEAT)</Bullet_88mmRPzB_HEAT.label>
+  <Bullet_88mmRPzB_Frag.label>88mm RPzB Gr. 4992(Осколки)</Bullet_88mmRPzB_Frag.label>
+  <Bullet_8cmRVW_HE.label>8cm Raketen Sprgr(HE)</Bullet_8cmRVW_HE.label>
+
+
+</LanguageData>

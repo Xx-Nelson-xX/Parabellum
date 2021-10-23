@@ -22,7 +22,7 @@
         </statBases>
 		<generateCommonality>0.4</generateCommonality>
 		<equippedStatOffsets>
-			<HuntingStealth>0.85</HuntingStealth>
+			<HuntingStealth>0.95</HuntingStealth>
 		</equippedStatOffsets>
         <weaponTags>
             <li>RF1</li>
@@ -44,8 +44,8 @@
                 <warmupTime>0.5</warmupTime>
                 <range>42</range>
                 <soundCast>Shot_Delisle</soundCast>
-                <soundCastTail>GunTail_Medium</soundCastTail>
-                <muzzleFlashScale>9</muzzleFlashScale>
+                <soundCastTail>GunTail_Light</soundCastTail>
+                <muzzleFlashScale>1</muzzleFlashScale>
             </li>
         </verbs>
         <comps>
@@ -171,7 +171,7 @@
                 <warmupTime>0.6</warmupTime>
                 <range>34</range>
                 <soundCast>Shot_MachinePistol</soundCast>
-                <soundCastTail>GunTail_Heavy</soundCastTail>
+                <soundCastTail>GunTail_Light</soundCastTail>
                 <muzzleFlashScale>9</muzzleFlashScale>
             </li>
         </verbs>
@@ -233,7 +233,7 @@
                 <warmupTime>1</warmupTime>
                 <range>42</range>
                 <soundCast>Shot_G88M</soundCast>
-                <soundCastTail>GunTail_Heavy</soundCastTail>
+                <soundCastTail>GunTail_Medium</soundCastTail>
                 <muzzleFlashScale>9</muzzleFlashScale>
             </li>
         </verbs>
@@ -273,7 +273,7 @@
             <SightsEfficiency>1.25</SightsEfficiency>
             <ShotSpread>0.02</ShotSpread>
             <SwayFactor>1.15</SwayFactor>
-            <RangedWeapon_Cooldown>0.9</RangedWeapon_Cooldown>
+            <RangedWeapon_Cooldown>1.6</RangedWeapon_Cooldown>
             <Bulk>9.6</Bulk>
             <Mass>3.7</Mass>
         </statBases>
@@ -297,10 +297,10 @@
                 <verbClass>CombatExtended.Verb_ShootCE</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
                 <defaultProjectile>Bullet_8mmM_SP</defaultProjectile>
-                <warmupTime>1.6</warmupTime>
+                <warmupTime>0.9</warmupTime>
                 <range>57</range>
                 <soundCast>Shot_G88M</soundCast>
-                <soundCastTail>GunTail_Heavy</soundCastTail>
+                <soundCastTail>GunTail_Medium</soundCastTail>
                 <muzzleFlashScale>10</muzzleFlashScale>
             </li>
         </verbs>
@@ -340,7 +340,7 @@
             <SightsEfficiency>1.2</SightsEfficiency>
             <ShotSpread>0.028</ShotSpread>
             <SwayFactor>1.3</SwayFactor>
-            <RangedWeapon_Cooldown>0.7</RangedWeapon_Cooldown>
+            <RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
             <Bulk>9.9</Bulk>
             <Mass>4.9</Mass>
         </statBases>
@@ -364,10 +364,10 @@
                 <verbClass>CombatExtended.Verb_ShootCE</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
                 <defaultProjectile>Bullet_8mmM_SP</defaultProjectile>
-                <warmupTime>1.5</warmupTime>
+                <warmupTime>0.62</warmupTime>
                 <range>52</range>
                 <soundCast>Shot_G43K</soundCast>
-                <soundCastTail>GunTail_Heavy</soundCastTail>
+                <soundCastTail>GunTail_Medium</soundCastTail>
                 <muzzleFlashScale>10</muzzleFlashScale>
             </li>
         </verbs>
@@ -408,7 +408,7 @@
             <SightsEfficiency>1.25</SightsEfficiency>
             <ShotSpread>0.022</ShotSpread>
             <SwayFactor>1.2</SwayFactor>
-            <RangedWeapon_Cooldown>0.65</RangedWeapon_Cooldown>
+            <RangedWeapon_Cooldown>1.4</RangedWeapon_Cooldown>
             <Bulk>9.7</Bulk>
             <Mass>4.4</Mass>
         </statBases>
@@ -429,15 +429,16 @@
         </thingCategories>
         <verbs>
             <li Class="CombatExtended.VerbPropertiesCE">
+				<recoilAmount>1.15</recoilAmount>
                 <verbClass>CombatExtended.Verb_ShootCE</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
                 <defaultProjectile>Bullet_8mmM_SP</defaultProjectile>
-                <warmupTime>1.4</warmupTime>
+                <warmupTime>0.54</warmupTime>
 				<burstShotCount>3</burstShotCount>
                 <ticksBetweenBurstShots>80</ticksBetweenBurstShots>
                 <range>57</range>
                 <soundCast>Shot_G43K</soundCast>
-                <soundCastTail>GunTail_Heavy</soundCastTail>
+                <soundCastTail>GunTail_Medium</soundCastTail>
                 <muzzleFlashScale>10</muzzleFlashScale>
             </li>
         </verbs>
@@ -479,7 +480,7 @@
             <SightsEfficiency>1.05</SightsEfficiency>
             <ShotSpread>0.04</ShotSpread>
             <SwayFactor>1.25</SwayFactor>
-            <RangedWeapon_Cooldown>0.5</RangedWeapon_Cooldown>
+            <RangedWeapon_Cooldown>0.7</RangedWeapon_Cooldown>
             <Bulk>9.4</Bulk>
             <Mass>4.6</Mass>
         </statBases>
@@ -501,10 +502,10 @@
                 <verbClass>CombatExtended.Verb_ShootCE</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
                 <defaultProjectile>Bullet_792x33mmK_FMJ</defaultProjectile>
-                <warmupTime>0.7</warmupTime>
+                <warmupTime>0.42</warmupTime>
                 <range>40</range>
                 <soundCast>Shot_Madsen</soundCast>
-                <soundCastTail>GunTail_Heavy</soundCastTail>
+                <soundCastTail>GunTail_Medium</soundCastTail>
                 <muzzleFlashScale>9</muzzleFlashScale>
             </li>
         </verbs>

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Craft Crate -->
+
+  <BuilRPzB_Crate.label>Build RPzB crate</BuilRPzB_Crate.label>
+  <BuilRPzB_Crate.description>Use this to build a RPzB related weapon, a type of stationary manned turret. It uses 88mm RPzB Gr. or 8cm modified rocket for ammo.</BuilRPzB_Crate.description>
+  <BuilRPzB_Crate.jobString>Build RPzB crate.</BuilRPzB_Crate.jobString>
+
+
+</LanguageData>

@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- .50 Beowulf -->
+
+  <BeowulFMJ.label>.50 Beowulf FMJ</BeowulFMJ.label>
+  <BeowulFMJ.labelShort>B FMJ</BeowulFMJ.labelShort>
+  <BeowulFMJ.description>Стандартный .50 Беовульф полностью металлический кожух, домкрат на все случаи жизни, без мастера</BeowulFMJ.description>
+
+  <BeowulAPI.label>.50 Beowulf API</BeowulAPI.label>
+  <BeowulAPI.labelShort>B API</BeowulAPI.labelShort>
+  <BeowulAPI.description>.50 Beowulf Armor Piercing Зажигательные боеприпасы, хорошее противодействие средней бронированной цели</BeowulAPI.description>
+
+  <BeowulHP.label>.50 Beowulf HP</BeowulHP.label>
+  <BeowulHP.labelShort>B HP</BeowulHP.labelShort>
+  <BeowulHP.description>.50 Боеприпасы Beowulf Hollow Point, хорошая контрлегкая или небронированная цель</BeowulHP.description>
+
+  <BeowulEMP.label>.50 Beowulf EMP</BeowulEMP.label>
+  <BeowulEMP.labelShort>B EMP</BeowulEMP.labelShort>
+  <BeowulEMP.description>Боеприпасы .50 Беовульф Электромагнитный Импульс, могут оглушить / парализовать машину и вызвать электрический ожог.</BeowulEMP.description>
+
+
+  <!-- 13,2x92mmSR Anti-Tank Catridge -->
+
+  <TuFAP.label>13.2x92mm SR TuF (AP)</TuFAP.label>
+  <TuFAP.labelShort>13.2mm TuF AP</TuFAP.labelShort>
+  <TuFAP.description>Патрон Mauser 13,2 мм TuF (нем. Tank und Flieger; букв. «Танк и самолет», также известный как 13,2 × 92 ммSR) патрон, был важным шагом в разработке противотанковых патронов, будучи первым, предназначенным для единственного цель поражения бронированных целей.</TuFAP.description>
+
+  <TuFAPHE.label>13.2x92mm SR TuF (APHE)</TuFAPHE.label>
+  <TuFAPHE.labelShort>13.2mm TuF APHE</TuFAPHE.labelShort>
+  <TuFAPHE.description>В связи с тем, что катридж устарел после войны, излишки боеприпасов заполнены небольшим количеством взрывчатых веществ, чтобы увеличить его противодействие легкому бронетранспортеру и мягкой цели, модификация несколько снизила его пробиваемость.</TuFAPHE.description>
+
+
+</LanguageData>

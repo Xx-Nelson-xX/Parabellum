@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Model 24 Stielhandgranate -->
+
+  <MakePotatoM.label>make M24 Stick Grenades x5</MakePotatoM.label>
+  <MakePotatoM.description>Craft M24 Stick Grenades.</MakePotatoM.description>
+  <MakePotatoM.jobString>Making M24 Stick Grenades.</MakePotatoM.jobString>
+
+
+  <!-- Model 24 with Splitterring -->
+
+  <MakeM24wSplitterring.label>make M24 with Splitterring x5</MakeM24wSplitterring.label>
+  <MakeM24wSplitterring.description>Craft 5 M24 with Splitterring.</MakeM24wSplitterring.description>
+  <MakeM24wSplitterring.jobString>Making M24 with Splitterring.</MakeM24wSplitterring.jobString>
+
+
+  <!-- Model 24 Nebelgranate -->
+
+  <MakeM24Nb.label>make M24 Nebelgranate x5</MakeM24Nb.label>
+  <MakeM24Nb.description>Craft 5 M24 Nebelgranate.</MakeM24Nb.description>
+  <MakeM24Nb.jobString>Making M24 Nebelgranate.</MakeM24Nb.jobString>
+
+
+  <!-- M24 Grenade Bundle -->
+
+  <MakeM24Bundle.label>make M24 Bundle x1</MakeM24Bundle.label>
+  <MakeM24Bundle.description>Craft a M24 Bundle.</MakeM24Bundle.description>
+  <MakeM24Bundle.jobString>Making M24 Bundle.</MakeM24Bundle.jobString>
+
+
+  <!-- 4kg Demolition Charge -->
+
+  <Make4kg.label>make 4kg Demolition Charge x1</Make4kg.label>
+  <Make4kg.description>Craft a 4kg Demolition Charge.</Make4kg.description>
+  <Make4kg.jobString>Making 4kg Demolition Charge.</Make4kg.jobString>
+
+
+  <!-- RGO Impact Grenade -->
+
+  <MakeRGO.label>make RGO Impact Grenades x5</MakeRGO.label>
+  <MakeRGO.description>Craft 5 RGO Impact Grenades.</MakeRGO.description>
+  <MakeRGO.jobString>Making RGO Impact Grenades.</MakeRGO.jobString>
+
+
+  <!-- Panzerwurmine Anti-Tank Impact Grenade -->
+
+  <MakePWM.label>make PWM(K) Anti-Tank Impact Grenades x5</MakePWM.label>
+  <MakePWM.description>Craft 5 PWM(K) Anti-Tank Impact Grenades.</MakePWM.description>
+  <MakePWM.jobString>Making PWM(K) Anti-Tank Impact Grenades.</MakePWM.jobString>
+
+
+</LanguageData>

@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <AmmoSet_SP.label>Rifle Caliber</AmmoSet_SP.label>
+  <AmmoSet_SR.label>Pistol Caliber</AmmoSet_SR.label>
+  <AmmoSet_K98k.label>8mm Mauser / 7.62x51mm NATO</AmmoSet_K98k.label>
+  <AmmoSet_MauserP.label>7.63x25mm Mauser / 9x19mm Parabellum / .45 ACP</AmmoSet_MauserP.label>
+  <AmmoSet_Madsen.label>7~8mm Rifle Caliber</AmmoSet_Madsen.label>
+  <AmmoSet_Mx4AA.label>7.92x57mm Mauser / 7.62x54mmR / .303 British</AmmoSet_Mx4AA.label>
+
+
+</LanguageData>

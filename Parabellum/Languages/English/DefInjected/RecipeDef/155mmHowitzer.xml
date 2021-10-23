@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Recipes -->
+
+  <MakeAmmo_155mmHowitzerShell_Nuke.label>make 155mm W48 AFAP howitzer shells x1</MakeAmmo_155mmHowitzerShell_Nuke.label>
+  <MakeAmmo_155mmHowitzerShell_Nuke.description>Craft a 155mm W48 AFAP howitzer shell.</MakeAmmo_155mmHowitzerShell_Nuke.description>
+  <MakeAmmo_155mmHowitzerShell_Nuke.jobString>Making a 155mm W48 AFAP howitzer shell.</MakeAmmo_155mmHowitzerShell_Nuke.jobString>
+
+  <MakeAmmo_155mmHowitzerShell_ADAM.label>make 155mm ADAM howitzer shells x1</MakeAmmo_155mmHowitzerShell_ADAM.label>
+  <MakeAmmo_155mmHowitzerShell_ADAM.description>Craft a 155mm ADAM howitzer shell.</MakeAmmo_155mmHowitzerShell_ADAM.description>
+  <MakeAmmo_155mmHowitzerShell_ADAM.jobString>Making a 155mm ADAM howitzer shell.</MakeAmmo_155mmHowitzerShell_ADAM.jobString>
+
+
+</LanguageData>

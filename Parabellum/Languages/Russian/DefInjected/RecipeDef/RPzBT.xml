@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Craft Crate -->
+
+  <BuilRPzB_Crate.label>Сделать ящик RPzB</BuilRPzB_Crate.label>
+  <BuilRPzB_Crate.description>Используйте это, чтобы построить связанное с RPzB оружие, тип стационарной пилотируемой турели. Он использует 88mm RPzB Gr. или модифицированная 8см ракета для боеприпасов.</BuilRPzB_Crate.description>
+  <BuilRPzB_Crate.jobString>Построить ящик RPzB.</BuilRPzB_Crate.jobString>
+
+
+</LanguageData>

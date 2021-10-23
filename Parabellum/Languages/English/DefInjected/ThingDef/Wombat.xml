@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- 120mm Wombat Recoiless Anti-Tank Gun -->
+
+  <Pa_Wombat.label>120mm Wombat Recoiless Anti-Tank Gun</Pa_Wombat.label>
+  <Pa_Wombat.description>Wombat attached to a towable platform.</Pa_Wombat.description>
+
+
+  <!-- Turret Base -->
+
+  <Turret_Wombat.label>120mm Wombat RATG</Turret_Wombat.label>
+  <Turret_Wombat.description>120mm Wombat Recoiless Anti-Tank Gun, a slightly more maneuverable, smaller, lighter, powerful as a 120mm AT gun but it offers lot less range than a full size AT gun.</Turret_Wombat.description>
+
+
+  <!-- Crate Base -->
+
+  <Pa_Wombat_Crate.label>120mm Wombat turret crate</Pa_Wombat_Crate.label>
+  <Pa_Wombat_Crate.description>Use this to build a 120mm Wombat turret.</Pa_Wombat_Crate.description>
+
+
+  <!-- Minified -->
+
+  <MinifiedTurret_Wombat.label>120mm Wombat turret</MinifiedTurret_Wombat.label>
+
+
+</LanguageData>

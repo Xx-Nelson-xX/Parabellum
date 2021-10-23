@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Ammo -->
+
+  <Ammo_127x42mmB_FMJ.label>.50 Beowulf (FMJ)</Ammo_127x42mmB_FMJ.label>
+  <Ammo_127x42mmB_FMJ.description>Специализированная пуля большого калибра, предназначенная для значительного улучшения останавливающего действия на коротких и средних дистанциях по сравнению со стандартным патроном НАТО 5,56 × 45 мм.</Ammo_127x42mmB_FMJ.description>
+
+  <Ammo_127x42mmB_API.label>.50 Beowulf (AP-I)</Ammo_127x42mmB_API.label>
+  <Ammo_127x42mmB_API.description>Специализированная пуля большого калибра, предназначенная для значительного улучшения останавливающего действия на коротких и средних дистанциях по сравнению со стандартным патроном НАТО 5,56 × 45 мм.</Ammo_127x42mmB_API.description>
+
+  <Ammo_127x42mmB_HP.label>.50 Beowulf (HP)</Ammo_127x42mmB_HP.label>
+  <Ammo_127x42mmB_HP.description>Специализированная пуля большого калибра, предназначенная для значительного улучшения останавливающего действия на коротких и средних дистанциях по сравнению со стандартным патроном НАТО 5,56 × 45 мм.</Ammo_127x42mmB_HP.description>
+
+  <Ammo_127x42mmB_EMP.label>.50 Beowulf (EMP)</Ammo_127x42mmB_EMP.label>
+  <Ammo_127x42mmB_EMP.description>Специализированная пуля большого калибра, предназначенная для значительного улучшения останавливающего действия на коротких и средних дистанциях по сравнению со стандартным патроном НАТО 5,56 × 45 мм.</Ammo_127x42mmB_EMP.description>
+
+
+  <!-- Projectiles -->
+
+  <Bullet_127x42mmB_FMJ.label>.50 Beowulf пуля (FMJ)</Bullet_127x42mmB_FMJ.label>
+  <Bullet_127x42mmB_API.label>.50 Beowulf пуля (AP-I)</Bullet_127x42mmB_API.label>
+  <Bullet_127x42mmB_HP.label>.50 Beowulf пуля (HP)</Bullet_127x42mmB_HP.label>
+  <Bullet_127x42mmB_EMP.label>.50 Beowulf пуля (EMP)</Bullet_127x42mmB_EMP.label>
+
+
+</LanguageData>

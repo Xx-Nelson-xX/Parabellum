@@ -68,7 +68,7 @@
 	<!-- Medusa Survival Revolver -->
 	<ThingDef ParentName="BaseGun_ShortBarreled">
 		<defName>Pa_SR</defName>
-		<label>Medusa Survival Pistol</label>
+		<label>Medusa Survival Revolver</label>
 		<description>A compact multi-caliber revolver, thanks to its special cylinder, make it capable to chamber most pistol/revolver catridge, is a self defense/survival weapon, not really suitable for combat.</description>
 		<graphicData>
 			<texPath>Things/Weapons/SR</texPath>
@@ -80,7 +80,7 @@
 			<SightsEfficiency>1.05</SightsEfficiency>
 			<ShotSpread>0.14</ShotSpread>
 			<SwayFactor>1.2</SwayFactor>
-			<RangedWeapon_Cooldown>0.4</RangedWeapon_Cooldown>
+			<RangedWeapon_Cooldown>0.34</RangedWeapon_Cooldown>
 			<Bulk>1.8</Bulk>
 			<Mass>1.3</Mass>
 		</statBases>

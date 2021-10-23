@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Craft Crate(50mm PaK38/L60 ATG) -->
+
+  <Buildheavycannon_Crate.label>Сделать ящик с тяжелой пушкой</Buildheavycannon_Crate.label>
+  <Buildheavycannon_Crate.description>Используйте это, чтобы построить крупнокалиберную пушку для танков или стационарных турелей.</Buildheavycannon_Crate.description>
+  <Buildheavycannon_Crate.jobString>Строительство тяжелого орудийного ящика.</Buildheavycannon_Crate.jobString>
+
+
+</LanguageData>

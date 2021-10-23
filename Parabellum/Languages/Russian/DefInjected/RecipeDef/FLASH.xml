@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Recipes -->
+
+  <MakeAmmo_FLASH.label>Сделать M202 FLASH триэтилалюминий (TEA) Ракета x1</MakeAmmo_FLASH.label>
+  <MakeAmmo_FLASH.description>Делает M202 FLASH TEA.</MakeAmmo_FLASH.description>
+  <MakeAmmo_FLASH.jobString>Сделано M202 FLASH TEA.</MakeAmmo_FLASH.jobString>
+
+
+</LanguageData>

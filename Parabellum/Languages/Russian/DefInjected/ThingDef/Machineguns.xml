@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Vickers MMG -->
+
+  <Pa_Vickers.label>Виккерс .303 MMG</Pa_Vickers.label>
+  <Pa_Vickers.description>Средний пулемет Виккерс, прикрепленный к треноге.</Pa_Vickers.description>
+
+
+  <!-- Maschinengewehr Model 1908 MMG -->
+
+  <Pa_MG08MMG.label>MG08 MMG</Pa_MG08MMG.label>
+  <Pa_MG08MMG.description>Средний пулемет MG08, прикрепленный к треноге.</Pa_MG08MMG.description>
+
+
+  <!-- Maschinengewehr Model 1918 HMG -->
+
+  <Pa_MG18HMG.label>MG18 TuF HMG</Pa_MG18HMG.label>
+  <Pa_MG18HMG.description>Тяжелый пулемет MG18 Tuf закреплен на прочной платформе.</Pa_MG18HMG.description>
+
+
+  <!-- Maxim Quad AA gun -->
+
+  <Pa_Mx4AA.label>Максим x4</Pa_Mx4AA.label>
+  <Pa_Mx4AA.description>Maxim MMG x4 прикреплен к прочной платформе</Pa_Mx4AA.description>
+
+
+  <!-- Turret Base(Vickers) -->
+
+  <Turret_Vickers.label>Виккерс .303 MMG</Turret_Vickers.label>
+  <Turret_Vickers.description>Пулемет Виккерс установлен на треноге.</Turret_Vickers.description>
+
+
+  <!-- Turret Base(MG08) -->
+
+  <Turret_MG08MMG.label>MG08 MMG</Turret_MG08MMG.label>
+  <Turret_MG08MMG.description>Maschinengewehr 08 Средний пулемет на треноге.</Turret_MG08MMG.description>
+
+
+  <!-- Turret Base(MG18 TuF) -->
+
+  <Turret_MG18HMG.label>MG18 TuF HMG</Turret_MG18HMG.label>
+  <Turret_MG18HMG.description>Тяжелый пулемет Maschinengewehr 18 TuF установлен на прочной платформе.</Turret_MG18HMG.description>
+
+
+  <!-- Turret Base(Maxim Quad AA gun) -->
+
+  <Turret_Mx4AA.label>Счетверенная зенитная пушка Максим</Turret_Mx4AA.label>
+  <Turret_Mx4AA.description>Спареный Максим x4 установлен на прочной зенитной платформе.</Turret_Mx4AA.description>
+
+
+  <!-- Crate Base -->
+
+  <Pa_Machinegun_Crate.label>Ящик для пулемета</Pa_Machinegun_Crate.label>
+  <Pa_Machinegun_Crate.description>В этом ящике есть вещи, необходимые для создания большинства древних пулеметов, для некоторых может потребоваться дополнительный ящик.</Pa_Machinegun_Crate.description>
+
+
+  <!-- Minified -->
+
+  <MinifiedTurret_Vickers.label>Виккерс .303 MMG Турель</MinifiedTurret_Vickers.label>
+  <MinifiedTurret_MG08MMG.label>MG 08 MMG Турель</MinifiedTurret_MG08MMG.label>
+  <MinifiedTurret_MG18HMG.label>MG 18 TuF HMG Турель</MinifiedTurret_MG18HMG.label>
+  <MinifiedTurret_Mx4AA.label>Максим x4 AA Турель</MinifiedTurret_Mx4AA.label>
+
+
+</LanguageData>

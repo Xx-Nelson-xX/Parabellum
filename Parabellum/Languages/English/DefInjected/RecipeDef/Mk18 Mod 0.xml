@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Craft Crate -->
+
+  <BuildMk18GL_Crate.label>Build Mk.18 Mod.0 GL crate</BuildMk18GL_Crate.label>
+  <BuildMk18GL_Crate.description>Use this to build a Mk.18 Mod.0, a type of stationary manned turret. It uses 40x46mm grenades for ammo.</BuildMk18GL_Crate.description>
+  <BuildMk18GL_Crate.jobString>Build Mk.18 Mod.0 GL crate.</BuildMk18GL_Crate.jobString>
+
+
+</LanguageData>

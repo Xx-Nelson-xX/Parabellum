@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<!-- ================== 8cm Granatwefer 34  ================== -->
+	
+	<ThingDef ParentName="BaseGun_Turret">
+		<defName>Pa_8cmGrW</defName>
+		<label>8cm GrW 34</label>
+		<description>A muzzle fed infantry weapon for indirect fire support.</description>
+		<graphicData>
+			<texPath>Things/Building/Security/CMLT/GrW34_Top</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Artillery_ShellLoaded</soundInteract>
+		<techLevel>Industrial</techLevel>
+		<statBases>
+			<MarketValue>1000</MarketValue>
+			<SightsEfficiency>0.8</SightsEfficiency>
+			<ShotSpread>0.1</ShotSpread>
+			<SwayFactor>1.15</SwayFactor>
+			<RangedWeapon_Cooldown>8</RangedWeapon_Cooldown>
+		</statBases>
+		<weaponTags>
+			<li>Artillery</li>
+			<li>Artillery_BaseDestroyer</li>
+		</weaponTags>
+		<verbs>
+			<li Class="CombatExtended.VerbPropertiesCE">
+				<verbClass>CombatExtended.Verb_ShootMortarCE</verbClass>
+				<forceNormalTimeSpeed>false</forceNormalTimeSpeed>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_81mmMortarShell_HE</defaultProjectile>
+				<warmupTime>2</warmupTime>
+				<minRange>18</minRange>
+				<range>180</range>
+				<!--<forcedMissRadius>4</forcedMissRadius>-->
+				<circularError>1</circularError>
+				<soundCast>Mortar_LaunchA</soundCast>
+				<muzzleFlashScale>16</muzzleFlashScale>
+				<requireLineOfSight>false</requireLineOfSight>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+				<indirectFirePenalty>0.1</indirectFirePenalty>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="CombatExtended.CompProperties_AmmoUser">
+				<magazineSize>1</magazineSize>
+				<reloadTime>2</reloadTime>
+				<!-- <spawnUnloaded>true</spawnUnloaded> -->
+				<ammoSet>AmmoSet_81mmMortarShell</ammoSet>
+			</li>
+			<li Class="CombatExtended.CompProperties_FireModes"/>
+		</comps>
+	</ThingDef>
+	
+	<!-- ================== 8cm Granatwefer 34  ================== -->
+	
+	<ThingDef ParentName="BaseGun_Turret">
+		<defName>Pa_Kz8cmGrW</defName>
+		<label>Kz 8cm GrW 42</label>
+		<description>A muzzle fed infantry weapon for indirect fire support, the shortened version of 8cm GrW 34.</description>
+		<graphicData>
+			<texPath>Things/Building/Security/CMLT/GrW42k_Top</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Artillery_ShellLoaded</soundInteract>
+		<techLevel>Industrial</techLevel>
+		<statBases>
+			<MarketValue>750</MarketValue>
+			<SightsEfficiency>0.85</SightsEfficiency>
+			<ShotSpread>0.12</ShotSpread>
+			<SwayFactor>1.2</SwayFactor>
+			<RangedWeapon_Cooldown>4</RangedWeapon_Cooldown>
+		</statBases>
+		<weaponTags>
+			<li>Artillery</li>
+			<li>Artillery_BaseDestroyer</li>
+		</weaponTags>
+		<verbs>
+			<li Class="CombatExtended.VerbPropertiesCE">
+				<verbClass>CombatExtended.Verb_ShootMortarCE</verbClass>
+				<forceNormalTimeSpeed>false</forceNormalTimeSpeed>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_81mmMortarShell_HE</defaultProjectile>
+				<warmupTime>1</warmupTime>
+				<minRange>12</minRange>
+				<range>100</range>
+				<!--<forcedMissRadius>4</forcedMissRadius>-->
+				<circularError>1</circularError>
+				<soundCast>Mortar_LaunchA</soundCast>
+				<muzzleFlashScale>16</muzzleFlashScale>
+				<requireLineOfSight>false</requireLineOfSight>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+				<indirectFirePenalty>0.1</indirectFirePenalty>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="CombatExtended.CompProperties_AmmoUser">
+				<magazineSize>1</magazineSize>
+				<reloadTime>1.4</reloadTime>
+				<!-- <spawnUnloaded>true</spawnUnloaded> -->
+				<ammoSet>AmmoSet_81mmMortarShell</ammoSet>
+			</li>
+			<li Class="CombatExtended.CompProperties_FireModes"/>
+		</comps>
+	</ThingDef>
+	
+	<!--=============== Turret Base(GrW 34) ===============-->
+
+	<ThingDef ParentName="TurretMannedBase">
+		<defName>Turret_8cmGrW</defName>
+		<label>8cm GrW 34 MIM</label>
+		<graphicData>
+			<texPath>Things/Building/Security/Base/NbW32_Base</texPath>
+			<drawSize>(1.8,1.8)</drawSize>
+			<shadowData>
+				<volume>(0.3, 0.6, 0.3)</volume>
+			</shadowData>
+		</graphicData>
+		<uiIconPath>Things/Building/Security/CMLT/GrW34_icon</uiIconPath>
+		<hasInteractionCell>True</hasInteractionCell>
+		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		<statBases>
+			<MaxHitPoints>160</MaxHitPoints>
+			<WorkToBuild>750</WorkToBuild>
+			<Mass>62</Mass>
+			<Bulk>58</Bulk>
+		</statBases>
+		<techLevel>Industrial</techLevel>
+		<description>8cm Granatwefer 34 Medium Infantry Mortar, light weight portable artillery for medium range indirect fire.</description>
+		<size>(2,2)</size>
+		<stuffCategories>
+			<li>RuggedMetallic</li>
+		</stuffCategories>
+		<costStuffCount>80</costStuffCount>
+		<costList>
+			<Pa_SimpleCannon_Crate>1</Pa_SimpleCannon_Crate>
+		</costList>
+		<specialDisplayRadius>18</specialDisplayRadius>
+		<designationCategory>Security</designationCategory>
+		<building>
+			<turretGunDef>Pa_8cmGrW</turretGunDef>
+			<turretTopDrawSize>1.4</turretTopDrawSize>
+			<buildingTags>
+				<li>Artillery</li>
+				<li>Artillery_BaseDestroyer</li>
+			</buildingTags>
+		</building>
+		<minifiedDef>MinifiedTurret_Pa_8cmGrW</minifiedDef>
+		<thingCategories>
+			<li>BuildingsSecurity</li>
+		</thingCategories>
+		<researchPrerequisites>
+			<li>Parabellum_Beta</li>
+		</researchPrerequisites>
+		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+	</ThingDef>
+	
+	<!--=============== Turret Base(Kz GrW 42) ===============-->
+
+	<ThingDef ParentName="TurretMannedBase">
+		<defName>Turret_Kz8cmGrW</defName>
+		<label>Kz 8cm GrW 42 LIM</label>
+		<graphicData>
+			<texPath>Things/Building/Security/Base/NbW32_Base</texPath>
+			<drawSize>(1.4,1.4)</drawSize>
+			<shadowData>
+				<volume>(0.3, 0.6, 0.3)</volume>
+			</shadowData>
+		</graphicData>
+		<uiIconPath>Things/Building/Security/CMLT/GrW42k_icon</uiIconPath>
+		<hasInteractionCell>True</hasInteractionCell>
+		<statBases>
+			<MaxHitPoints>120</MaxHitPoints>
+			<WorkToBuild>400</WorkToBuild>
+			<Mass>26.5</Mass>
+			<Bulk>31</Bulk>
+		</statBases>
+		<techLevel>Industrial</techLevel>
+		<description>Kurzer 8cm Granatwefer 42, a Light Infantry Mortar, lightened version of the standard 8cm GrW 34 infantry mortar for indirect fire, something less portable than grenade launcher but capable to throw bigger projectile in a smaller package.</description>
+		<size>(1,1)</size>
+		<stuffCategories>
+			<li>RuggedMetallic</li>
+		</stuffCategories>
+		<costStuffCount>30</costStuffCount>
+		<costList>
+			<Pa_SimpleCannon_Crate>1</Pa_SimpleCannon_Crate>
+		</costList>
+		<specialDisplayRadius>12</specialDisplayRadius>
+		<designationCategory>Security</designationCategory>
+		<building>
+			<turretGunDef>Pa_Kz8cmGrW</turretGunDef>
+			<turretTopDrawSize>1.4</turretTopDrawSize>
+			<buildingTags>
+				<li>Artillery</li>
+				<li>Artillery_BaseDestroyer</li>
+			</buildingTags>
+		</building>
+		<minifiedDef>MinifiedTurret_Pa_Kz8cmGrW</minifiedDef>
+		<thingCategories>
+			<li>BuildingsSecurity</li>
+		</thingCategories>
+		<researchPrerequisites>
+			<li>Parabellum_Gamma</li>
+		</researchPrerequisites>
+		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+	</ThingDef>
+	
+	<!-- ================== Minified ================== -->
+	
+	<ThingDef ParentName="MinifiedTurretBase">
+		<defName>MinifiedTurret_Pa_8cmGrW</defName>
+		<label>Undeployed 8cm Granatwefer 34</label>
+		<statBases>
+			<Mass>40</Mass>
+			<Bulk>36</Bulk>
+		</statBases>
+	</ThingDef>
+	
+	<ThingDef ParentName="MinifiedTurretBase">
+		<defName>MinifiedTurret_Pa_Kz8cmGrW</defName>
+		<label>Undeployed Kurzer 8cm Granatwefer 42</label>
+		<statBases>
+			<Mass>14</Mass>
+			<Bulk>10</Bulk>
+		</statBases>
+	</ThingDef>
+	
+</Defs>

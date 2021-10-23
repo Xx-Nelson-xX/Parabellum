@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Rocket Artillery(P) -->
+
+  <SubCategory_ParabellumRA.label>Ракетная артиллерия (P)</SubCategory_ParabellumRA.label>
+  <SubCategory_ParabellumRA.description>Ракетная артиллерия от Parabellum, * Предупреждение * чрезмерный расход взрывчатого материала.</SubCategory_ParabellumRA.description>
+
+
+  <!-- Machinegun(P) -->
+
+  <SubCategory_ParabellumMG.label>Пулемет (P)</SubCategory_ParabellumMG.label>
+  <SubCategory_ParabellumMG.description>Пулемет из Парабеллума, древний, но все еще полезный</SubCategory_ParabellumMG.description>
+
+
+  <!-- Anti-Tank Gun(P) -->
+
+  <SubCategory_ParabellumATG.label>Противотанковая пушка (P)</SubCategory_ParabellumATG.label>
+  <SubCategory_ParabellumATG.description>Противотанковая пушка из Парабеллума, древняя, но все же полезная</SubCategory_ParabellumATG.description>
+
+
+  <!-- Special(P) -->
+
+  <SubCategory_ParabellumSP.label>Специальный (P)</SubCategory_ParabellumSP.label>
+  <SubCategory_ParabellumSP.description>Особое здание из Парабеллума.</SubCategory_ParabellumSP.description>
+
+
+</LanguageData>

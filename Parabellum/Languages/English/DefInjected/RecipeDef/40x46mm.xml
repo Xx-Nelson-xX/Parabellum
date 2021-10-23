@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Recipes -->
+
+  <MakeAmmo_40x46mmGrenade_BB.label>make 40x46mm Bean Bag grenades x20</MakeAmmo_40x46mmGrenade_BB.label>
+  <MakeAmmo_40x46mmGrenade_BB.description>Craft 20 40x46mm BB grenades.</MakeAmmo_40x46mmGrenade_BB.description>
+  <MakeAmmo_40x46mmGrenade_BB.jobString>Making 40x46mm BB grenades.</MakeAmmo_40x46mmGrenade_BB.jobString>
+
+  <MakeAmmo_40x46mmGrenade_F.label>make 40x46mm Flechette grenades x20</MakeAmmo_40x46mmGrenade_F.label>
+  <MakeAmmo_40x46mmGrenade_F.description>Craft 20 40x46mm Flechette grenades.</MakeAmmo_40x46mmGrenade_F.description>
+  <MakeAmmo_40x46mmGrenade_F.jobString>Making 40x46mm Flechette grenades.</MakeAmmo_40x46mmGrenade_F.jobString>
+
+  <MakeAmmo_40x46mmGrenade_Stun.label>make 40x46mm Stun grenades x20</MakeAmmo_40x46mmGrenade_Stun.label>
+  <MakeAmmo_40x46mmGrenade_Stun.description>Craft 20 40x46mm Stun grenades.</MakeAmmo_40x46mmGrenade_Stun.description>
+  <MakeAmmo_40x46mmGrenade_Stun.jobString>Making 40x46mm Stun grenades.</MakeAmmo_40x46mmGrenade_Stun.jobString>
+
+  <MakeAmmo_40x46mmGrenade_Foam.label>make 40x46mm Foam grenades x20</MakeAmmo_40x46mmGrenade_Foam.label>
+  <MakeAmmo_40x46mmGrenade_Foam.description>Craft 20 40x46mm Foam grenades.</MakeAmmo_40x46mmGrenade_Foam.description>
+  <MakeAmmo_40x46mmGrenade_Foam.jobString>Making 40x46mm Foam grenades.</MakeAmmo_40x46mmGrenade_Foam.jobString>
+
+
+</LanguageData>

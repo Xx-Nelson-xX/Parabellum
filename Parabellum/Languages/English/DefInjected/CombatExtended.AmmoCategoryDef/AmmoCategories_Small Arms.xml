@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- .50 Beowulf -->
+
+  <BeowulFMJ.label>.50 Beowulf FMJ</BeowulFMJ.label>
+  <BeowulFMJ.labelShort>B FMJ</BeowulFMJ.labelShort>
+  <BeowulFMJ.description>Standard .50 Beowulf Full Metal Jacket, jack in all trade, master of none</BeowulFMJ.description>
+
+  <BeowulAPI.label>.50 Beowulf API</BeowulAPI.label>
+  <BeowulAPI.labelShort>B API</BeowulAPI.labelShort>
+  <BeowulAPI.description>.50 Beowulf Armor Piercing Incendiary ammo, good counter medium armored target</BeowulAPI.description>
+
+  <BeowulHP.label>.50 Beowulf HP</BeowulHP.label>
+  <BeowulHP.labelShort>B HP</BeowulHP.labelShort>
+  <BeowulHP.description>.50 Beowulf Hollow Point ammo, good counter light or non-armored target</BeowulHP.description>
+
+  <BeowulEMP.label>.50 Beowulf EMP</BeowulEMP.label>
+  <BeowulEMP.labelShort>B EMP</BeowulEMP.labelShort>
+  <BeowulEMP.description>.50 Beowulf ElectroMagnetic Pulse ammo, can stun/paralize machine and cause electric burn</BeowulEMP.description>
+
+
+  <!-- 13,2x92mmSR Anti-Tank Catridge -->
+
+  <TuFAP.label>13.2x92mm SR TuF (AP)</TuFAP.label>
+  <TuFAP.labelShort>13.2mm TuF AP</TuFAP.labelShort>
+  <TuFAP.description>The Mauser 13.2mm TuF (German: Tank und Flieger; lit. "tank and aircraft", known also as 13.2×92mmSR) cartridge, was a major step in the development of anti-tank cartridges, being the first one designed for the sole purpose of destroying armored targets.</TuFAP.description>
+
+  <TuFAPHE.label>13.2x92mm SR TuF (APHE)</TuFAPHE.label>
+  <TuFAPHE.labelShort>13.2mm TuF APHE</TuFAPHE.labelShort>
+  <TuFAPHE.description>Due the catridge became obsolete after the war, the surplus ammo are filled with small amount explosive payload to increase its damage counter light armored vehicle and soft target, the modification reduce its penetration capability quite bit.</TuFAPHE.description>
+
+
+</LanguageData>

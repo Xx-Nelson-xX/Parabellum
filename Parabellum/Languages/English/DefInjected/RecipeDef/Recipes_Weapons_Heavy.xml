@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Lewis LMG -->
+
+  <BuildLewis.label>Build Lewis LMG</BuildLewis.label>
+  <BuildLewis.description>Builds the Lewis LMG, God bless the Queen.\nCaliber: .303 British</BuildLewis.description>
+  <BuildLewis.jobString>Building Lewis LMG</BuildLewis.jobString>
+
+
+  <!-- MG 08/15 LMG -->
+
+  <BuildMG0815L.label>Build MG 08/15 LMG</BuildMG0815L.label>
+  <BuildMG0815L.description>Builds the MG 08/15 LMG, all you need to do is pull the trigger and keep advancing, be a walking tank.\nCaliber: 8mm Mauser Rifle Catridge</BuildMG0815L.description>
+  <BuildMG0815L.jobString>Building MG 08/15 LMG</BuildMG0815L.jobString>
+
+
+  <!-- Madsen LMG -->
+
+  <BuildMadsen.label>Build Madsen LMG</BuildMadsen.label>
+  <BuildMadsen.description>Builds the Madsen LMG, is a magazine fed LMG, not any fancy quadstack modern magazine, so gonna reload frequantly if you want to keep shooting.\nCaliber: 7~8mm Rifle Caliber</BuildMadsen.description>
+  <BuildMadsen.jobString>Building Madsen LMG</BuildMadsen.jobString>
+
+
+  <!-- MG 30 LMG -->
+
+  <BuildMG30L.label>Build MG 30 LMG</BuildMG30L.label>
+  <BuildMG30L.description>Builds the Maschinengewehr 30 LMG, is a magazine fed LMG, not any fancy quadstack modern magazine, so gonna reload frequantly if you want to keep shooting.\nCaliber: 8mm Mauser Rifle Catridge</BuildMG30L.description>
+  <BuildMG30L.jobString>Building MG30 LMG</BuildMG30L.jobString>
+
+
+  <!-- MG 34 GPMG -->
+
+  <BuildMG34L.label>Build MG 34 GPMG</BuildMG34L.label>
+  <BuildMG34L.description>Builds the Maschinengewehr 34 GPMG, use this for any MG role you want.\nCaliber: 8mm Mauser Rifle Catridge</BuildMG34L.description>
+  <BuildMG34L.jobString>Building MG 34 GPMG</BuildMG34L.jobString>
+
+
+  <!-- MG 42 GPMG -->
+
+  <BuildMG42L.label>Build MG 42 GPMG</BuildMG42L.label>
+  <BuildMG42L.description>Builds the Maschinengewehr 42 GPMG, aka. the "Hitler's Buzzsaw".\nCaliber: 8mm Mauser Rifle Catridge</BuildMG42L.description>
+  <BuildMG42L.jobString>Building MG 42 GPMG</BuildMG42L.jobString>
+
+
+  <!-- MG 45/ Mg 1 Hybrid GPMG -->
+
+  <BuildMG45H.label>Build MG 45/1 Hybrid GPMG</BuildMG45H.label>
+  <BuildMG45H.description>Builds the Maschinengewehr 45/1 Hybrid GPMG, Wake the f**k up Samurai, We have ammo to burn.\nCaliber: 8mm Mauser Rifle Catridge / 7.62x51mm NATO</BuildMG45H.description>
+  <BuildMG45H.jobString>Building MG 45/1 Hybrid GPMG</BuildMG45H.jobString>
+
+
+</LanguageData>

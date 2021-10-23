@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <Build_Hawk_MM1.label>Собрать Ястреб MM-1</Build_Hawk_MM1.label>
+  <Build_Hawk_MM1.description>Собирает гранатомет Hawk MM-1, крупногабаритный револьверный гранатомет, 12 выстрелов с длительной перезарядкой. \ NКалибр: 40x46мм граната</Build_Hawk_MM1.description>
+  <Build_Hawk_MM1.jobString>Собран Ястреб MM-1.</Build_Hawk_MM1.jobString>
+
+  <Build_RGS.label>Собрать RGS</Build_RGS.label>
+  <Build_RGS.description>Собирает гранатомет РГО, расход боеприпасов в 3 раза больше. \ NКалибр: 30x29мм граната</Build_RGS.description>
+  <Build_RGS.jobString>Собран RGS.</Build_RGS.jobString>
+
+  <Build_CG42R.label>Собрать Carl Gustav fm/42 Безоткатное противотанковое ружье</Build_CG42R.label>
+  <Build_CG42R.description>Собирает Carl Gustav fm / 42 Безоткатное противотанковое ружье, не такое эффективное, как ракетная установка, но все же может легко пробить любую броню. \ NКалибр: 20-мм снаряд.</Build_CG42R.description>
+  <Build_CG42R.jobString>Building Carl Gustav fm/42 Recoiless anti-tank Rifle.</Build_CG42R.jobString>
+
+  <Build_CGR.label>Собрать Безоткатную пушку Карла Густава Mod.U</Build_CGR.label>
+  <Build_CGR.description>Собирает безоткатное ружье Карла Густава Mod.U. \ Калибр: ракета СПГ-9 / 84мм ЦТ / 90мм снаряд / РПГ</Build_CGR.description>
+  <Build_CGR.jobString>Собран Carl Gustav Recoiless Rifle Mod.U.</Build_CGR.jobString>
+
+  <BuildFLASH.label>Собрать M202 FLASH</BuildFLASH.label>
+  <BuildFLASH.description>Собирает M202 FLASH, замену огнемету, все еще может использовать обычную 66-мм ракету LAW. \ Калибр: M72 LAW / 66-мм ракета</BuildFLASH.description>
+  <BuildFLASH.jobString>Собран M72 LAW.</BuildFLASH.jobString>
+
+  <BuildPzF.label>Собрать Panzerfaust 60</BuildPzF.label>
+  <BuildPzF.description>Собирает Panzerfaust 60, что-то лучше, чем бросать взрывчатку руками. \ Калибр: 149-мм боеголовка Panzerfaust</BuildPzF.description>
+  <BuildPzF.jobString>Собран Panzerfaust.</BuildPzF.jobString>
+
+  <BuildRPzB.label>Собрать Raketenpanzerbüchse 54/1</BuildRPzB.label>
+  <BuildRPzB.description>Собирает Raketenpanzerbüchse 54/1, компромисс, тяжелее и слабее, но он имеет большую дальность и легко перезаряжается. \ Калибр: 88 мм RPzB HEAT Rocket</BuildRPzB.description>
+  <BuildRPzB.jobString>Собрана RPzB 54/1.</BuildRPzB.jobString>
+
+  <Build_M320K.label>Собрать Гранатомет M320(K)</Build_M320K.label>
+  <Build_M320K.description>Собирает гранатомет M320 (K), хорош для CQC, держитесь на безопасном расстоянии, вам не понравится 40-мм граната, разорвавшая ваше лицо. \ Калибр: 40x46 мм граната</Build_M320K.description>
+  <Build_M320K.jobString>Собран M320(K) GL.</Build_M320K.jobString>
+
+
+</LanguageData>

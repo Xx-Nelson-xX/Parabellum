@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Ammo -->
+
+  <Ammo_84mmCGShell_HEAT.label>84mm FFV551 (HEAT)</Ammo_84mmCGShell_HEAT.label>
+  <Ammo_84mmCGShell_HEAT.description>84mm Снаряд Карла Густава, переносной, как любой ракетный боеприпас.</Ammo_84mmCGShell_HEAT.description>
+
+  <Ammo_84mmCGShell_HE.label>84mm FFV441B (HE)</Ammo_84mmCGShell_HE.label>
+  <Ammo_84mmCGShell_HE.description>84mm Снаряд Карла Густава, переносной, как любой ракетный боеприпас.</Ammo_84mmCGShell_HE.description>
+
+  <Ammo_84mmCGShell_ADM.label>84mm FFV401 (ADM)</Ammo_84mmCGShell_ADM.label>
+  <Ammo_84mmCGShell_ADM.description>84mm Снаряд Карла Густава, переносной, как любой ракетный боеприпас.</Ammo_84mmCGShell_ADM.description>
+
+
+  <!-- Projectiles -->
+
+  <Bullet_84mmCGShell_HEAT.label>84mm FFV551 (HEAT)</Bullet_84mmCGShell_HEAT.label>
+  <Bullet_84mmCGShell_HE.label>84mm FFV441B (HE)</Bullet_84mmCGShell_HE.label>
+  <Bullet_84mmCGShell_ADM.label>84mm FFV401 (ADM)</Bullet_84mmCGShell_ADM.label>
+
+
+</LanguageData>

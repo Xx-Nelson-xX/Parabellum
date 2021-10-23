@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Recipes -->
+
+  <MakeAmmo_50mmCannonShell_APHE.label>make 5cm Pzgr 39(APHE) shells x10</MakeAmmo_50mmCannonShell_APHE.label>
+  <MakeAmmo_50mmCannonShell_APHE.description>Craft 10 5cm Pzgr 39(APHE) shells.</MakeAmmo_50mmCannonShell_APHE.description>
+  <MakeAmmo_50mmCannonShell_APHE.jobString>Making 5cm Pzgr 39(APHE) shells.</MakeAmmo_50mmCannonShell_APHE.jobString>
+
+  <MakeAmmo_50mmCannonShell_HE.label>make 5cm Sprgr 38(HE) shells x10</MakeAmmo_50mmCannonShell_HE.label>
+  <MakeAmmo_50mmCannonShell_HE.description>Craft 10 5cm Sprgr 38(HE) shells.</MakeAmmo_50mmCannonShell_HE.description>
+  <MakeAmmo_50mmCannonShell_HE.jobString>Making 5cm Sprgr 38(HE) shells.</MakeAmmo_50mmCannonShell_HE.jobString>
+
+  <MakeAmmo_50mmCannonShell_APCR.label>make 5cm Pzgr 40(APCR) shells x10</MakeAmmo_50mmCannonShell_APCR.label>
+  <MakeAmmo_50mmCannonShell_APCR.description>Craft 10 5cm Pzgr 40(APCR) shells.</MakeAmmo_50mmCannonShell_APCR.description>
+  <MakeAmmo_50mmCannonShell_APCR.jobString>Making 5cm Pzgr 40(APCR) shells.</MakeAmmo_50mmCannonShell_APCR.jobString>
+
+
+</LanguageData>

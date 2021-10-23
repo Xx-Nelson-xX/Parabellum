@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- M1928A1 Thompson -->
+
+  <Pa_Tommy.label>Thompson M1928A1</Pa_Tommy.label>
+  <Pa_Tommy.description>A very expensive submachinegun of its time, also a very heavy and big one, is a fullsize sumbachine gun which require both hands holding it to use it efficiently.</Pa_Tommy.description>
+
+
+  <!-- Suomi KP-31 -->
+
+  <Pa_Suomi.label>Suomi KP-31 SMG</Pa_Suomi.label>
+  <Pa_Suomi.description>An ancient world weapon, one of the best of its kind, very effective for suppression fire and perform assault tactics, the downside is, they are bit expensive to produce.</Pa_Suomi.description>
+
+
+  <!-- Bergmann Maschinenpistole 18 -->
+
+  <Pa_MP18B.label>MP 18 SMG</Pa_MP18B.label>
+  <Pa_MP18B.description>An ancient world weapon, one of the earliest SMG created for trench warfare, very effective in CQC range, for urban combat and perform assault tactics.</Pa_MP18B.description>
+
+
+</LanguageData>

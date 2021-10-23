@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Recipes -->
+
+  <MakeAmmo_10Gauge_Buck.label>Сделать Патрон 10 калибра (Buck) x40</MakeAmmo_10Gauge_Buck.label>
+  <MakeAmmo_10Gauge_Buck.description>Делает 40шт 10 калибра (Buck).</MakeAmmo_10Gauge_Buck.description>
+  <MakeAmmo_10Gauge_Buck.jobString>Сделано 10 калибра (Buck).</MakeAmmo_10Gauge_Buck.jobString>
+
+
+</LanguageData>

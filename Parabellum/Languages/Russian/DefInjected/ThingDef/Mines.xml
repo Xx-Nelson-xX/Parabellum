@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <Pa_Trap_SMine.label>S-Mина</Pa_Trap_SMine.label>
+  <Pa_Trap_SMine.description>Надежная древняя противопехотная мина, простая, маленькая и смертоносная, требует наступления на нее цели для срабатывания взрывателя.</Pa_Trap_SMine.description>
+
+  <Pa_Trap_4kgMine.label>Самодельная 4 кг Мина</Pa_Trap_4kgMine.label>
+  <Pa_Trap_4kgMine.description>Самодельная фугасная мина, очень смертоносная и эффективная для борьбы с любым наземным юнитом, требует наступления на цель для срабатывания взрывателя.</Pa_Trap_4kgMine.description>
+
+  <Pa_Trap_M67Mine.label>M67 Мина</Pa_Trap_M67Mine.label>
+  <Pa_Trap_M67Mine.description>Древняя противопехотная мина FASCAM, способная разместить несколько десятков ее внутри артиллерийского снаряда, такого как ADAM, для быстрого размещения на большом расстоянии, простая, маленькая и смертоносная, требует наступления цели для срабатывания взрывателя.</Pa_Trap_M67Mine.description>
+
+
+</LanguageData>

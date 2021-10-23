@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- SPG-9 Recoiless Anti-Tank Gun -->
+
+  <Pa_SPG9M.label>SPG-9M</Pa_SPG9M.label>
+  <Pa_SPG9M.description>SPG-9M attached to a tripod.</Pa_SPG9M.description>
+
+
+  <!-- SPG-9 Recoiless Anti-Tank Gun (Double Barrel) -->
+
+  <Pa_SPG9MD.label>SPG-9MD</Pa_SPG9MD.label>
+  <Pa_SPG9MD.description>SPG-9M(D) attached to a tripod.</Pa_SPG9MD.description>
+
+
+  <!-- Turret Base(1) -->
+
+  <Turret_SPG9M.label>SPG-9M RATG</Turret_SPG9M.label>
+  <Turret_SPG9M.description>SPG-9M Recoiless Anti-Tank Gun, an ancient lightweight Recoiless Anti-Tank Gun(RATG), used to be really popular in small country, most of them mount it over a vehicle to provide extra mobility.</Turret_SPG9M.description>
+
+
+  <!-- Turret Base(2) -->
+
+  <Turret_SPG9MD.label>SPG-9M RATG(DB)</Turret_SPG9MD.label>
+  <Turret_SPG9MD.description>improvised double barrel SPG-9M RATG, an ancient lightweight Recoiless Anti-Tank Gun, now with double barrel, double the fun(and double the cost).</Turret_SPG9MD.description>
+
+
+  <!-- Crate Base -->
+
+  <Pa_SPG9M_Crate.label>SPG-9M turret crate</Pa_SPG9M_Crate.label>
+  <Pa_SPG9M_Crate.description>Use this to build a SPG-9M RATG.</Pa_SPG9M_Crate.description>
+
+
+  <!-- Minified -->
+
+  <MinifiedTurret_Pa_SPG9M.label>SPG-9M RATG turret</MinifiedTurret_Pa_SPG9M.label>
+  <MinifiedTurret_Pa_SPG9MD.label>SPG-9M RATG(D) turret</MinifiedTurret_Pa_SPG9MD.label>
+
+
+</LanguageData>

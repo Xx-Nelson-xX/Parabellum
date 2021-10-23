@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Sturer Survival Pistol -->
+
+  <Pa_SP.label>Sturer Survival Pistol</Pa_SP.label>
+  <Pa_SP.description>A very simple single shot pistol, created by combining other pistol parts and a barrel, even though is a pistol, it only use rifle catridge... you must be really desperate to use one of those...</Pa_SP.description>
+
+
+  <!-- Medusa Survival Revolver -->
+
+  <Pa_SR.label>Medusa Survival Pistol</Pa_SR.label>
+  <Pa_SR.description>A compact multi-caliber revolver, thanks to its special cylinder, make it capable to chamber most pistol/revolver catridge, is a self defense/survival weapon, not really suitable for combat.</Pa_SR.description>
+
+
+  <!-- Mauser C96 Semi-Automatic Pistol -->
+
+  <Pa_C96M.label>Mauser C96 Pistol</Pa_C96M.label>
+  <Pa_C96M.description>One of the earliest Semi-Automatic pistol, with 10-round internal magazine fed by stripper clip, light weigh, cheap to produce and relatively high rate of fire.</Pa_C96M.description>
+
+
+  <!-- M712 Schnellfeuer Automatic Pistol -->
+
+  <Pa_M712S.label>M712 "Schnellfeuer" Pistol</Pa_M712S.label>
+  <Pa_M712S.description>Automatic pistol convertion of the C96, included detachable box magazine and of course, automatic fire in a small package, incase semi-automatic is not enough.</Pa_M712S.description>
+
+
+</LanguageData>

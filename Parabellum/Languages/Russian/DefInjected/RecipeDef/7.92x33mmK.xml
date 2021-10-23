@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Recipes -->
+
+  <MakeAmmo_792x33mmK_FMJ.label>Сделать 7.92x33mm K(FMJ) картридж x100</MakeAmmo_792x33mmK_FMJ.label>
+  <MakeAmmo_792x33mmK_FMJ.description>Делает 100 7.92x33mm K(FMJ) картридж.</MakeAmmo_792x33mmK_FMJ.description>
+  <MakeAmmo_792x33mmK_FMJ.jobString>Сделано 7.92x33mm K(FMJ) картридж.</MakeAmmo_792x33mmK_FMJ.jobString>
+
+  <MakeAmmo_792x33mmK_AP.label>Сделать 7.92x33mm K(AP) картридж x100</MakeAmmo_792x33mmK_AP.label>
+  <MakeAmmo_792x33mmK_AP.description>Делает 100 7.92x33mm K(AP) картридж.</MakeAmmo_792x33mmK_AP.description>
+  <MakeAmmo_792x33mmK_AP.jobString>Сделано 7.92x33mm K(AP) картридж.</MakeAmmo_792x33mmK_AP.jobString>
+
+  <MakeAmmo_792x33mmK_J.label>Сделать 7.92x33mm K(J) картридж x100</MakeAmmo_792x33mmK_J.label>
+  <MakeAmmo_792x33mmK_J.description>Делает 100 7.92x33mm K(J) картридж.</MakeAmmo_792x33mmK_J.description>
+  <MakeAmmo_792x33mmK_J.jobString>Сделано 7.92x33mm K(J) картридж.</MakeAmmo_792x33mmK_J.jobString>
+
+
+</LanguageData>

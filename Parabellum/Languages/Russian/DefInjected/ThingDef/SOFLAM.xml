@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- SOFLAM -->
+
+  <Pa_SOFLAM.label>SOFLAM</Pa_SOFLAM.label>
+  <Pa_SOFLAM.description>Маркер захвата сил специальных операций Ласер.</Pa_SOFLAM.description>
+
+
+  <!-- TurretBase -->
+
+  <Special_SOFLAM.label>SOFLAM</Special_SOFLAM.label>
+  <Special_SOFLAM.description>Маркер обнаружения Ласера ​​Сил специальных операций, также известный как SOFLAM, специальное дальномерное устройство для определения / определения местоположения цели с помощью лазерного наведения, включая датчик для автоматического обнаружения враждебных противников.</Special_SOFLAM.description>
+
+
+  <!-- Minified -->
+
+  <MinifiedTurret_Pa_SOFLAM.label>SOFLAM (уменьшенный)</MinifiedTurret_Pa_SOFLAM.label>
+
+
+</LanguageData>

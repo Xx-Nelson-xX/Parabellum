@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Ammo -->
+
+  <Ammo_40x46mmGrenade_BB.label>40x46mm граната (Фасоль)</Ammo_40x46mmGrenade_BB.label>
+  <Ammo_40x46mmGrenade_F.label>40x46mm граната (Флешшета)</Ammo_40x46mmGrenade_F.label>
+  <Ammo_40x46mmGrenade_Stun.label>40x46mm граната (Stun)</Ammo_40x46mmGrenade_Stun.label>
+  <Ammo_40x46mmGrenade_Foam.label>40x46mm граната (Пена)</Ammo_40x46mmGrenade_Foam.label>
+
+
+  <!-- Projectiles -->
+
+  <Bullet_40x46mmGrenade_BB.label>40x46mm граната (Фасоль)</Bullet_40x46mmGrenade_BB.label>
+  <Bullet_40x46mmGrenade_F.label>40x46mm XM576E2 граната (Флешшета)</Bullet_40x46mmGrenade_F.label>
+  <Bullet_40x46mmGrenade_Stun.label>40x46mm граната (Stun)</Bullet_40x46mmGrenade_Stun.label>
+  <Bullet_40x46mmGrenade_Foam.label>40x46mm граната (Пена)</Bullet_40x46mmGrenade_Foam.label>
+
+
+</LanguageData>

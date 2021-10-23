@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Maschinengewehr 34 Zilling MMG -->
+
+  <Pa_MG34Z.label>MG 34Z MMG</Pa_MG34Z.label>
+  <Pa_MG34Z.description>Средний пулемет MG 34 x2, закрепленный на треноге.</Pa_MG34Z.description>
+
+
+  <!-- Maschinengewehr 42 Lafette MMG -->
+
+  <Pa_MG42M.label>MG 42 MMG</Pa_MG42M.label>
+  <Pa_MG42M.description>Средний пулемет MG 42 с оптическим прицелом на треноге.</Pa_MG42M.description>
+
+
+  <!-- Maschinengewehr 14/45z Lafette MMG -->
+
+  <Pa_MG45Z.label>MG 14/45z MMG</Pa_MG45Z.label>
+  <Pa_MG45Z.description>MG 45x2 Medium Machinegun с оптическим прицелом на треноге.</Pa_MG45Z.description>
+
+
+  <!-- Maschinengewehr 131 HMG/Autocannon -->
+
+  <Pa_MG131H.label>MG 131 HMG</Pa_MG131H.label>
+  <Pa_MG131H.description>Тяжелый пулемет MG 131 закреплен на прочной платформе.</Pa_MG131H.description>
+
+  <Pa_MG131Z.label>MG 131z HMG</Pa_MG131Z.label>
+  <Pa_MG131Z.description>Тяжелые пулеметы MG 131 x2 закреплены на прочной платформе.</Pa_MG131Z.description>
+
+
+  <!-- Turret Base(MG34Z) -->
+
+  <Turret_MG34Z.label>MG 34z MMG</Turret_MG34Z.label>
+  <Turret_MG34Z.description>Maschinengewehr 34 Zwilling (Twin) Medium Machineguns, установленные на штативе, удваивают RoF для быстрого подавления противника.</Turret_MG34Z.description>
+
+
+  <!-- Turret Base(MG42M) -->
+
+  <Turret_MG42M.label>MG 42 Lafette MMG</Turret_MG42M.label>
+  <Turret_MG42M.description>Для среднего пулемета Maschinengewehr 42, установленного на штативе Lafette, был добавлен телескопический прицел для увеличения точности и дальности стрельбы.</Turret_MG42M.description>
+
+
+  <!-- Turret Base(MG14/45z) -->
+
+  <Turret_MG45Z.label>MG 14/45z Lafette MMG</Turret_MG45Z.label>
+  <Turret_MG45Z.description>Средние пулеметы Maschinengewehr 14/45 Zwilling (Twin), установленные на штативе Lafette, добавили маломощный прицел для увеличения точности и дальности стрельбы, считая его более точной турелью для минигана.</Turret_MG45Z.description>
+
+
+  <!-- Turret Base(MG131H) -->
+
+  <Turret_MG131H.label>MG 131 HMG/Автопушка</Turret_MG131H.label>
+  <Turret_MG131H.description>Maschinengewehr 131 Тяжелый пулемет / Автопушка, один из самых маленьких HMG / Автопушек своего времени, предназначенный либо для установки на самолетах, либо на оборонительной платформе ПВО, способный стрелять взрывными снарядами, чтобы максимизировать свой урон, противодействовать любой легкобронированной цели, очень разрушительно противостоять мягкой цели .</Turret_MG131H.description>
+
+
+  <!-- Turret Base(MG131Z) -->
+
+  <Turret_MG131Z.label>MG 131z HMG/Автопушка</Turret_MG131Z.label>
+  <Turret_MG131Z.description>Maschinengewehr 131 Zwilling (Twin) Тяжелый пулемет / Автопушка, из-за того, что прогресс войны требует большей огневой мощи для истребителей, использование автопушек становится все более и более важным, поэтому для повышения их дальности полета и эффективности ПВО они вдвое увеличивают вооружение.</Turret_MG131Z.description>
+
+
+  <!-- Minified -->
+
+  <MinifiedTurret_MG34Z.label>MG 34Z MMG турель</MinifiedTurret_MG34Z.label>
+  <MinifiedTurret_MG42M.label>MG 42 Lafette MMG турель</MinifiedTurret_MG42M.label>
+  <MinifiedTurret_MG45Z.label>MG 14/45z Lafette MMG турель</MinifiedTurret_MG45Z.label>
+  <MinifiedTurret_MG131H.label>MG 131 HMG/Автопушка турель</MinifiedTurret_MG131H.label>
+  <MinifiedTurret_MG131Z.label>MG 131z HMG/Автопушка турель</MinifiedTurret_MG131Z.label>
+
+
+</LanguageData>

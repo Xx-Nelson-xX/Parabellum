@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- M1928A1 Thompson -->
+
+  <BuildM1928A1.label>Собрать Томсон M1928A1</BuildM1928A1.label>
+  <BuildM1928A1.description>Томсон M1928A1 - полноразмерный пистолет-пулемет, любимец полицейских и гагстеров. \ Калибр: .45 ACP.</BuildM1928A1.description>
+  <BuildM1928A1.jobString>Собран Томсон M1928A1.</BuildM1928A1.jobString>
+
+
+  <!-- Suomi KP-31 -->
+
+  <BuildSuomi.label>Собрать Suomi KP-31 SMG</BuildSuomi.label>
+  <BuildSuomi.description>Собирает пистолет-пулемет Suomi KP-31, бережно расходуя боеприпасы. \ Калибр: 9x19 мм Para</BuildSuomi.description>
+  <BuildSuomi.jobString>Собран Suomi KP-31.</BuildSuomi.jobString>
+
+
+  <!-- Bergmann Maschinenpistole 18 -->
+
+  <BuildMP18B.label>Собрать MP 18 SMG</BuildMP18B.label>
+  <BuildMP18B.description>Собирает пистолет-пулемет MP 18, родоначальник большинства пистолетов-пулеметов. \ Калибр: 7,63x25 мм Mauser / 9x19 мм Parabellum / .45 ACP.</BuildMP18B.description>
+  <BuildMP18B.jobString>Собран MP 18.</BuildMP18B.jobString>
+
+
+</LanguageData>

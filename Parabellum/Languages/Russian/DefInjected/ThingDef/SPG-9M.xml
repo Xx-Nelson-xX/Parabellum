@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- SPG-9 Recoiless Anti-Tank Gun -->
+
+  <Pa_SPG9M.label>SPG-9M</Pa_SPG9M.label>
+  <Pa_SPG9M.description>СПГ-9М закреплен на треноге.</Pa_SPG9M.description>
+
+
+  <!-- SPG-9 Recoiless Anti-Tank Gun (Double Barrel) -->
+
+  <Pa_SPG9MD.label>SPG-9MD</Pa_SPG9MD.label>
+  <Pa_SPG9MD.description>SPG-9MD закреплен на треноге.</Pa_SPG9MD.description>
+
+
+  <!-- Turret Base(1) -->
+
+  <Turret_SPG9M.label>SPG-9M RATG</Turret_SPG9M.label>
+  <Turret_SPG9M.description>Безоткатное противотанковое ружье SPG-9M, древнее легкое безоткатное противотанковое ружье (RATG), когда-то было очень популярно в небольших странах, большинство из них устанавливают его на транспортном средстве, чтобы обеспечить дополнительную мобильность.</Turret_SPG9M.description>
+
+
+  <!-- Turret Base(2) -->
+
+  <Turret_SPG9MD.label>SPG-9M RATG(DB)</Turret_SPG9MD.label>
+  <Turret_SPG9MD.description>импровизированное двухствольное ружье SPG-9M RATG, древнее легкое противотанковое ружье, теперь с двойным стволом, вдвое больше удовольствия (и вдвое дороже).</Turret_SPG9MD.description>
+
+
+  <!-- Crate Base -->
+
+  <Pa_SPG9M_Crate.label>SPG-9M Ящик</Pa_SPG9M_Crate.label>
+  <Pa_SPG9M_Crate.description>Используйте это, чтобы построить SPG-9M RATG.</Pa_SPG9M_Crate.description>
+
+
+  <!-- Minified -->
+
+  <MinifiedTurret_Pa_SPG9M.label>SPG-9M RATG турель</MinifiedTurret_Pa_SPG9M.label>
+  <MinifiedTurret_Pa_SPG9MD.label>SPG-9M RATG(D) турель</MinifiedTurret_Pa_SPG9MD.label>
+
+
+</LanguageData>

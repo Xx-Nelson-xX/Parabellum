@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Craft Crate -->
+
+  <BuildWombat_Crate.label>Build 120mm Wombat Recoiless Anti-Tank Gun crate</BuildWombat_Crate.label>
+  <BuildWombat_Crate.description>Use this to build a 120mm Wombat Recoiless Anti-Tank Gun, a type of stationary manned turret. It uses 120mm cannon shell for ammo.</BuildWombat_Crate.description>
+  <BuildWombat_Crate.jobString>Build 120mm Wombat Recoiless Anti-Tank Gun crate.</BuildWombat_Crate.jobString>
+
+
+</LanguageData>

@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- De Lisle Commando Carabine -->
+
+  <BuildDelisle.label>Собрать Карабин Де Лиль Коммандос</BuildDelisle.label>
+  <BuildDelisle.description>Собирает Карабин Де Лиль Коммандос, удачной охоты. \ NКалибр: .45 ACP</BuildDelisle.description>
+  <BuildDelisle.jobString>Собран Карабин Де Лиль Коммандос.</BuildDelisle.jobString>
+
+
+  <!-- M4.50 Beowulf Special Carabine -->
+
+  <BuildM4Beowulf.label>Сбрать M4.50 Beowulf SC</BuildM4Beowulf.label>
+  <BuildM4Beowulf.description>Собирает M4.50 Beowulf SC,замена стандартного ствола AR на более тяжелый ствол .50 Beowulf для борьбы с легкой бронированной целью и животными размером с медведя. Высокий урон, средняя дальность, хорошая скорострельность и точность, но не очень управляема очередью. \ Калибр: .50 Beowulf (12,7x42 мм)</BuildM4Beowulf.description>
+  <BuildM4Beowulf.jobString>Собран M4.50 Beowulf SC.</BuildM4Beowulf.jobString>
+
+
+  <!-- M960(M) Calico Carabine -->
+
+  <BuildCalico.label>Сбрать M960(M) Карабин Calico </BuildCalico.label>
+  <BuildCalico.description>Собирает M960 Военная модель 9mm карабина, если вы думаете, что бананового магазина традиционного SMG недостаточно. \ Калибр: 9x19 мм Para</BuildCalico.description>
+  <BuildCalico.jobString>Собран M960(M) Карабин Calico.</BuildCalico.jobString>
+
+
+  <!-- Karabiner M1890 -->
+
+  <BuildK90M.label>Сбрать Kaрабин M1890</BuildK90M.label>
+  <BuildK90M.description>Собирает Kaрабин M1890, древний карабин с продольно-скользящим затвором для кавалерии, сражайтесь за Отечество. \ Калибр: 8mm патрон для винтовки Mauser</BuildK90M.description>
+  <BuildK90M.jobString>Собран Kaрабин M1890.</BuildK90M.jobString>
+
+
+  <!-- Mauser Karabiner 98 Kurz -->
+
+  <BuildK98k.label>Сбрать Kaрабин Mauser 98k</BuildK98k.label>
+  <BuildK98k.description>Собирает Kaрабин Mauser 98k, древний карабин с болтовым затвором. \ Калибр: 8mm патрон для винтовки Mauser / 7,62x51 мм НАТО</BuildK98k.description>
+  <BuildK98k.jobString>Собран Kaрабин Mauser 98k.</BuildK98k.jobString>
+
+
+  <!-- Gewehr 41(Walther) -->
+
+  <BuildG41W.label>Сбрать Gewehr 41(W)</BuildG41W.label>
+  <BuildG41W.description>Собирает Gewehr 41(Walther), старинная полуавтоматическая винтовка / карабин (?), нет, сэр, в нем еще не используется съемный коробчатый магазин. \ nКалибр: 8мм патрон для винтовки Маузера</BuildG41W.description>
+  <BuildG41W.jobString>Собран Gewehr 41(W).</BuildG41W.jobString>
+
+
+  <!-- Gewehr/Karabiner 43 -->
+
+  <BuildG43K.label>Сбрать Gewehr 43</BuildG43K.label>
+  <BuildG43K.description>Собирает a Gewehr 43, старинная полуавтоматическая винтовка / карабин (?), да, теперь в нем используется отъемный коробчатый магазин. \ nКалибр: 8мм патрон для винтовки Маузера</BuildG43K.description>
+  <BuildG43K.jobString>Собран Gewehr 43.</BuildG43K.jobString>
+
+
+  <!-- Gustloff Volkssturmgewehr VG 1-5 -->
+
+  <BuildVG.label>Собрать Gustloff VG 1-5</BuildVG.label>
+  <BuildVG.description>Собирает Gustloff Volkssturmgewehr VG 1-5, еще есть время, чтобы заработать последний Железный крест ... \ Калибр: 7,92x33 мм Kurz</BuildVG.description>
+  <BuildVG.jobString>Собран Gustloff VG 1-5.</BuildVG.jobString>
+
+
+</LanguageData>

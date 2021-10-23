@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Ammo -->
+
+  <Ammo_TuF_AP.label>13.2x92mm SR TuF (Sabot)</Ammo_TuF_AP.label>
+  <Ammo_TuF_AP.description>Mauser Пуля большого калибра, используемая в древних крупнокалиберных пулеметах и ​​противотанковых ружьях, практически усовершенствованная S Patrone.</Ammo_TuF_AP.description>
+
+  <Ammo_TuF_APHE.label>13.2x92mm SR TuF (APHE)</Ammo_TuF_APHE.label>
+  <Ammo_TuF_APHE.description>Mauser Пуля большого калибра, используемая в древних крупнокалиберных пулеметах и ​​противотанковых ружьях, практически усовершенствованная S Patrone.</Ammo_TuF_APHE.description>
+
+  <Ammo_MG131_HET.label>13x64mmB (HE-T)</Ammo_MG131_HET.label>
+  <Ammo_MG131_HET.description>Mauser Пуля большого калибра, используемая в древних крупнокалиберных пулеметах и ​​противотанковых ружьях, практически усовершенствованная S Patrone.</Ammo_MG131_HET.description>
+
+
+  <!-- Projectiles -->
+
+  <Bullet_TuF_AP.label>13.2mm пуля (AP)</Bullet_TuF_AP.label>
+  <Bullet_TuF_APHE.label>13.2mm пуля (APHE)</Bullet_TuF_APHE.label>
+  <Bullet_MG131_HET.label>13x64mmB пуля (HE-T)</Bullet_MG131_HET.label>
+
+
+</LanguageData>

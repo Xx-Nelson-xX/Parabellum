@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Craft Crate -->
+
+  <BuildNbW_Crate.label>Build Nebelwerfer crate</BuildNbW_Crate.label>
+  <BuildNbW_Crate.description>Use this to build a Nebelwefer, a type of stationary manned turret, depends the variant, it can uses 15cm, 28cm, 30cm and 32cm rockets for ammo.</BuildNbW_Crate.description>
+  <BuildNbW_Crate.jobString>Building a Nebelwerfer crate.</BuildNbW_Crate.jobString>
+
+
+</LanguageData>

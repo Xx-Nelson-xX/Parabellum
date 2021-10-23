@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Recipes -->
+
+  <MakeAmmo_792x33mmK_FMJ.label>make 7.92x33mm K(FMJ) cartridge x100</MakeAmmo_792x33mmK_FMJ.label>
+  <MakeAmmo_792x33mmK_FMJ.description>Craft 100 7.92x33mm K(FMJ) cartridges.</MakeAmmo_792x33mmK_FMJ.description>
+  <MakeAmmo_792x33mmK_FMJ.jobString>Making 7.92x33mm K(FMJ) cartridges.</MakeAmmo_792x33mmK_FMJ.jobString>
+
+  <MakeAmmo_792x33mmK_AP.label>make 7.92x33mm K(AP) cartridge x100</MakeAmmo_792x33mmK_AP.label>
+  <MakeAmmo_792x33mmK_AP.description>Craft 100 7.92x33mm K(AP) cartridges.</MakeAmmo_792x33mmK_AP.description>
+  <MakeAmmo_792x33mmK_AP.jobString>Making 7.92x33mm K(AP) cartridges.</MakeAmmo_792x33mmK_AP.jobString>
+
+  <MakeAmmo_792x33mmK_J.label>make 7.92x33mm K(J) cartridge x100</MakeAmmo_792x33mmK_J.label>
+  <MakeAmmo_792x33mmK_J.description>Craft 100 7.92x33mm K(J) cartridges.</MakeAmmo_792x33mmK_J.description>
+  <MakeAmmo_792x33mmK_J.jobString>Making 7.92x33mm K(J) cartridges.</MakeAmmo_792x33mmK_J.jobString>
+
+
+</LanguageData>

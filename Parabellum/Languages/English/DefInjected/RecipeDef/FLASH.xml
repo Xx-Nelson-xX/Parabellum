@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Recipes -->
+
+  <MakeAmmo_FLASH.label>make M202 FLASH triethylaluminum (TEA) Rocket x1</MakeAmmo_FLASH.label>
+  <MakeAmmo_FLASH.description>Craft M202 FLASH TEA.</MakeAmmo_FLASH.description>
+  <MakeAmmo_FLASH.jobString>Making M202 FLASH TEA.</MakeAmmo_FLASH.jobString>
+
+
+</LanguageData>

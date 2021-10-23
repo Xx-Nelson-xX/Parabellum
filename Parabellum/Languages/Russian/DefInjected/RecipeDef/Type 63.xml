@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Craft Crate -->
+
+  <BuildType63MRL_Crate.label>Собрать ящик Тип 63 MRL</BuildType63MRL_Crate.label>
+  <BuildType63MRL_Crate.description>Используйте это, чтобы построить Тип 63, тип стационарной пилотируемой турели, он может использовать 13-сантиметровые ракеты для боеприпасов.</BuildType63MRL_Crate.description>
+  <BuildType63MRL_Crate.jobString>Сборка ящика РСЗО Тип 63.</BuildType63MRL_Crate.jobString>
+
+
+</LanguageData>

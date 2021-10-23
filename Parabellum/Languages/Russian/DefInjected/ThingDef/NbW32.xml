@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Ammo -->
+
+  <Ammo_28cmNbWRocket.label>28cm ракета (HE)</Ammo_28cmNbWRocket.label>
+  <Ammo_28cmNbWRocket.description>28cm Осколочно-фугасная ракета.</Ammo_28cmNbWRocket.description>
+
+  <Ammo_30cmNbWRocket.label>30cm ракета (HE)</Ammo_30cmNbWRocket.label>
+  <Ammo_30cmNbWRocket.description>30cm Улучшенная осколочно-фугасная ракета.</Ammo_30cmNbWRocket.description>
+
+  <Ammo_32cmNbWRocket.label>32cm ракета (I)</Ammo_32cmNbWRocket.label>
+  <Ammo_32cmNbWRocket.description>32cm Зажигательная ракета.</Ammo_32cmNbWRocket.description>
+
+
+  <!-- Projectiles -->
+
+  <Bullet_28cmNbWRocket.label>28cm HE Ракета</Bullet_28cmNbWRocket.label>
+  <Bullet_30cmNbWRocket.label>30cm HE Ракета</Bullet_30cmNbWRocket.label>
+  <Bullet_32cmNbWRocket.label>32cm Зажигательная ракета.</Bullet_32cmNbWRocket.label>
+
+
+</LanguageData>

@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Ammo -->
+
+  <Ammo_50mmCannonShell_APHE.label>5cm Pzgr 39 (APHE)</Ammo_50mmCannonShell_APHE.label>
+  <Ammo_50mmCannonShell_APHE.description>The 5cm small cannon shell is a specific size of cannon and autocannon ammunition.</Ammo_50mmCannonShell_APHE.description>
+
+  <Ammo_50mmCannonShell_HE.label>5cm Sprgr 38 (HE)</Ammo_50mmCannonShell_HE.label>
+  <Ammo_50mmCannonShell_HE.description>The 5cm small cannon shell is a specific size of cannon and autocannon ammunition.</Ammo_50mmCannonShell_HE.description>
+
+  <Ammo_50mmCannonShell_APCR.label>5cm Pzgr 40 (APCR)</Ammo_50mmCannonShell_APCR.label>
+  <Ammo_50mmCannonShell_APCR.description>The 5cm small cannon shell is a specific size of cannon and autocannon ammunition.</Ammo_50mmCannonShell_APCR.description>
+
+
+  <!-- Projectiles -->
+
+  <Bullet_50mmCannonShell_APHE.label>5cm Pzgr 39 (APHE)</Bullet_50mmCannonShell_APHE.label>
+  <Bullet_50mmCannonShell_HE.label>5cm Sprgr 38 (HE)</Bullet_50mmCannonShell_HE.label>
+  <Bullet_50mmCannonShell_APCR.label>5cm Pzgr 40 (APCR)</Bullet_50mmCannonShell_APCR.label>
+
+
+</LanguageData>

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Craft Crate -->
+
+  <BuilSPG9M_Crate.label>Build SPG-9M RATG crate</BuilSPG9M_Crate.label>
+  <BuilSPG9M_Crate.description>Use this to build a SPG-9M RATG, a type of stationary manned turret. It uses SPG-9 grenades for ammo.</BuilSPG9M_Crate.description>
+  <BuilSPG9M_Crate.jobString>Build SPG-9M RATG crate.</BuilSPG9M_Crate.jobString>
+
+
+</LanguageData>

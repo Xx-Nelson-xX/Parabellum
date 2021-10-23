@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- De Lisle Commando Carbine -->
+
+  <Pa_Delisle.label>De Lisle Commando Carabine</Pa_Delisle.label>
+  <Pa_Delisle.description>An integrated suppressed pistol caliber carbine for ancient special force. Mediocre damage, low fire rate, highly accurate and decent effective range.</Pa_Delisle.description>
+
+
+  <!-- M4.50 Beowulf -->
+
+  <Pa_M4Beowulf.label>M4.50 Beowulf SC</Pa_M4Beowulf.label>
+  <Pa_M4Beowulf.description>The M4.50 Beowulf Special Carabine, changing the standard AR barrel to the heavier .50 Beowulf barrel to deal with light armored target and bear size animals. High damage, average range, good rate of fire and accuracy, but not really controllable in burst.</Pa_M4Beowulf.description>
+
+
+  <!-- M960(M) Calico Carbine -->
+
+  <Pa_Calico.label>M960(M) Calico Carabine</Pa_Calico.label>
+  <Pa_Calico.description>The Calico M960 Military Model 9mm Carbine is a Light Weight Carbine with high capacity, cylindrical, helical-feed magazine in a compact design, designed as backup weapon for vehicle crew.</Pa_Calico.description>
+
+
+  <!-- Karabiner Model 1890 Bolt Action Carabine -->
+
+  <Pa_K90M.label>Karabiner Model 1890</Pa_K90M.label>
+  <Pa_K90M.description>A shorter version of the Gewehr Model 1888 for Cavary, to improve its mobility, the trade off is reduced effective range and Accuracy.</Pa_K90M.description>
+
+
+  <!-- Mauser Karabiner 98 Kurz(Replica) -->
+
+  <Pa_K98k.label>Mauser Karabiner 98k(R)</Pa_K98k.label>
+  <Pa_K98k.description>One of the latest version of Mauser Bolt Action Rifle Family, the culmination of the Mauser family and one of the best old school rifle for its time,the replica made it capable to fit modern rifle rounds.</Pa_K98k.description>
+
+
+  <!-- Gewehr 41(Walther) -->
+
+  <Pa_G41W.label>Gewehr 41(W)</Pa_G41W.label>
+  <Pa_G41W.description>One of the early attemp to create a semi-automatic rifle by Walther, to increase firepower of rifleman squad, the other one was from Mauser, due the weapon complexity and reliability, the project was superseeded by Gewehr 43, but still, Walther achieved better result than Mauser's G41(M) did.</Pa_G41W.description>
+
+
+  <!-- Gewehr/Karabiner 43 -->
+
+  <Pa_G43K.label>Gewehr 43</Pa_G43K.label>
+  <Pa_G43K.description>The succesor of both G41(W) and G41(M), included improved short-stroke piston gas system which solved the reliability issue, and detachable 10 rounds magazine box to speed up its reaload.</Pa_G43K.description>
+
+
+  <!-- Gustloff Volkssturmgewehr VG 1-5 -->
+
+  <Pa_VG.label>Gustloff VG 1-5</Pa_VG.label>
+  <Pa_VG.description>Gustloff Volkssturmgewehr VG 1-5, the "People's Assault Rifle", the last effort to increase weapon production almost in the end of the war, a very robust and cheap semi-automatic carabine, generally used by Volkssturm, to fight for the fatherland counter the inevitable for one last time.</Pa_VG.description>
+
+
+</LanguageData>

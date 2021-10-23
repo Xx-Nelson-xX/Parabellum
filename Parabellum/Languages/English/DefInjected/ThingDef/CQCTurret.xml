@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Improvised turret gun -->
+
+  <Pa_ShotgunT.label>Shotgun Sentry</Pa_ShotgunT.label>
+  <Pa_ShotgunT.description>Jury-rigged automatic AA12 x2 with simple sensor and support strcture attached to a turret.</Pa_ShotgunT.description>
+
+  <Pa_AntiR.label>Anti-Riot Sentry</Pa_AntiR.label>
+  <Pa_AntiR.description>Simple small size autocannon like turret piece, uncapable to fire any standard ammo type.</Pa_AntiR.description>
+
+
+  <!-- TurretBase - Improvised Shotgun turrets(AI) -->
+
+  <Turret_ShotgunT.label>IASST</Turret_ShotgunT.label>
+  <Turret_ShotgunT.description>Improvised Automatic Shotgun Sentry Turret(IASST), An improvised AI-controlled turret with 2 AA-12 that automatically fires at nearby enemies. Requires 500 W to function.\nCaliber: .12 Gauge</Turret_ShotgunT.description>
+
+
+  <!-- TurretBase - Anti-Riot(AI) -->
+
+  <Turret_AntiR.label>Anti-Riot Sentry Turret</Turret_AntiR.label>
+  <Turret_AntiR.description>An AI-controlled turret with adaptive barrel that fires at peaceful protest mobs, is not a combat turret. Requires 500 W to function.\nCaliber: Any Non-lethal and less lethal ammo</Turret_AntiR.description>
+
+
+  <!-- Minified -->
+
+  <Minified_ShotgunT.label>IASST</Minified_ShotgunT.label>
+  <Minified_AntiR.label>Anti-Riot Sentry Turret</Minified_AntiR.label>
+
+
+</LanguageData>

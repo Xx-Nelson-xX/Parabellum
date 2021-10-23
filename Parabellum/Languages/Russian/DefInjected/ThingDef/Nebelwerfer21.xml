@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Nebelwerfer 28/30/32cm -->
+
+  <Pa_NbW21cm.label>Nebelwerfer</Pa_NbW21cm.label>
+  <Pa_NbW21cm.description>Nebelwefer прикреплен к мобильной платформе.</Pa_NbW21cm.description>
+
+
+  <!-- Turret Base(NbW 28/30/32cm) -->
+
+  <Turret_NbW21cm.label>Nebelwerfer(15cm/21cm)</Turret_NbW21cm.label>
+  <Turret_NbW21cm.description>Древняя многоствольная тяжелая ракетная установка, прочная и простая, которую многие опасаются, одно из немногих экономичных орудий проекта Вундерваффен, с улучшенной баллистической ракетой, которая увеличила дальность стрельбы более чем на 60% и скорость снаряда уменьшилась. многие из них наносят урон как компромисс.</Turret_NbW21cm.description>
+
+
+  <!-- Minified -->
+
+  <MinifiedTurret_Pa_NbW21cm.label>Nebelwefer турель</MinifiedTurret_Pa_NbW21cm.label>
+
+
+</LanguageData>

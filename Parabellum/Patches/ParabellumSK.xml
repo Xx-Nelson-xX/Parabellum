@@ -57,6 +57,32 @@
 					</value>
 				</li>
 				
+				<!-- 81mm Mortar Shells -->
+				<li Class="PatchOperationAdd">	
+					<xpath>Defs/RecipeDef[defName="MakeShell_HighExplosive"]</xpath>
+					<value>
+						<recipeUsers>
+							<li>FabricationBench</li>
+						</recipeUsers>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">	
+					<xpath>Defs/RecipeDef[defName="MakeShell_HighExplosive"]/researchPrerequisite</xpath>
+					<value>
+						 <researchPrerequisite>Parabellum_Beta</researchPrerequisite>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">	
+					<xpath>Defs/RecipeDef[defName="MakeShell_Smoke"]</xpath>
+					<value>
+						<recipeUsers>
+							<li>FabricationBench</li>
+						</recipeUsers>
+						<researchPrerequisite>Parabellum_Beta</researchPrerequisite>
+					</value>
+				</li>
+				
 				<!-- WeaponCraftingBench -->
 				<li Class="PatchOperationAdd">	
 					<xpath>Defs/ThingDef[defName="WeaponCraftingWorkTable"]/building</xpath>

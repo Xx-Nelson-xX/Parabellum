@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Mk.18 Mod.0 Hand Crank Operated Grenade Launcher -->
+
+  <Pa_Mk18GL.label>Mk.18 Mod.0 Hand Crank Operated Grenade Launcher</Pa_Mk18GL.label>
+  <Pa_Mk18GL.description>Mk.18 Mod.0 attached to a tripod.</Pa_Mk18GL.description>
+
+
+  <!-- Turret Base -->
+
+  <Turret_Mk18GL.label>Mk.18 Mod.0 GLT</Turret_Mk18GL.label>
+  <Turret_Mk18GL.description>Lightweight automatic grenade launcher.</Turret_Mk18GL.description>
+
+
+  <!-- Crate Base -->
+
+  <Pa_Mk18GL_Crate.label>Mk.18 Mod.0 GL turret crate</Pa_Mk18GL_Crate.label>
+  <Pa_Mk18GL_Crate.description>Use this to build a Mk.18 Mod.0 GL turret.</Pa_Mk18GL_Crate.description>
+
+
+  <!-- Minified -->
+
+  <MinifiedTurret_Pa_Mk18GL.label>Mk.18 Mod.0 GL turret</MinifiedTurret_Pa_Mk18GL.label>
+
+
+</LanguageData>

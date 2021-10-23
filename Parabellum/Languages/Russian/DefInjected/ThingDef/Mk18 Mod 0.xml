@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Mk.18 Mod.0 Hand Crank Operated Grenade Launcher -->
+
+  <Pa_Mk18GL.label>Mk.18 Mod.0 Ручной гранатомет</Pa_Mk18GL.label>
+  <Pa_Mk18GL.description>Mk.18 Mod.0 прикреплен к штативу.</Pa_Mk18GL.description>
+
+
+  <!-- Turret Base -->
+
+  <Turret_Mk18GL.label>Mk.18 Mod.0 GLT</Turret_Mk18GL.label>
+  <Turret_Mk18GL.description>Легкий автоматический гранатомет.</Turret_Mk18GL.description>
+
+
+  <!-- Crate Base -->
+
+  <Pa_Mk18GL_Crate.label>Mk.18 Mod.0 GL ящик для турели</Pa_Mk18GL_Crate.label>
+  <Pa_Mk18GL_Crate.description>Используйте это, чтобы построить турель Mk.18 Mod.0 GL.</Pa_Mk18GL_Crate.description>
+
+
+  <!-- Minified -->
+
+  <MinifiedTurret_Pa_Mk18GL.label>Mk.18 Mod.0 GL турель</MinifiedTurret_Pa_Mk18GL.label>
+
+
+</LanguageData>

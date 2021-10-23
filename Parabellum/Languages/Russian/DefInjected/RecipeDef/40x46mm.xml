@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Recipes -->
+
+  <MakeAmmo_40x46mmGrenade_BB.label>Сделать 40x46mm Фасоль гранаты x20</MakeAmmo_40x46mmGrenade_BB.label>
+  <MakeAmmo_40x46mmGrenade_BB.description>Делает 20 40x46mm BB гранаты.</MakeAmmo_40x46mmGrenade_BB.description>
+  <MakeAmmo_40x46mmGrenade_BB.jobString>Сделано 40x46mm BB гранаты.</MakeAmmo_40x46mmGrenade_BB.jobString>
+
+  <MakeAmmo_40x46mmGrenade_F.label>Сделать 40x46mm Флешшета гранаты x20</MakeAmmo_40x46mmGrenade_F.label>
+  <MakeAmmo_40x46mmGrenade_F.description>Делает 20 40x46mm Флешшета гранаты.</MakeAmmo_40x46mmGrenade_F.description>
+  <MakeAmmo_40x46mmGrenade_F.jobString>Сделано 40x46mm Флешшета гранаты.</MakeAmmo_40x46mmGrenade_F.jobString>
+
+  <MakeAmmo_40x46mmGrenade_Stun.label>Сделать 40x46mm Stun гранаты x20</MakeAmmo_40x46mmGrenade_Stun.label>
+  <MakeAmmo_40x46mmGrenade_Stun.description>Делает 20 40x46mm Stun гранаты.</MakeAmmo_40x46mmGrenade_Stun.description>
+  <MakeAmmo_40x46mmGrenade_Stun.jobString>Сделано 40x46mm Stun гранаты.</MakeAmmo_40x46mmGrenade_Stun.jobString>
+
+  <MakeAmmo_40x46mmGrenade_Foam.label>Сделать 40x46mm Пенные гранаты x20</MakeAmmo_40x46mmGrenade_Foam.label>
+  <MakeAmmo_40x46mmGrenade_Foam.description>Делает 20 40x46mm Пенные гранаты.</MakeAmmo_40x46mmGrenade_Foam.description>
+  <MakeAmmo_40x46mmGrenade_Foam.jobString>Сделано 40x46mm Пенные гранаты.</MakeAmmo_40x46mmGrenade_Foam.jobString>
+
+
+</LanguageData>

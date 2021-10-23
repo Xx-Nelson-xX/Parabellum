@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Recipes -->
+
+  <MakeAmmo_128mmCannonShell_APC.label>make 12.8cm Pzgr 40/43(APC) shell x1</MakeAmmo_128mmCannonShell_APC.label>
+  <MakeAmmo_128mmCannonShell_APC.description>Craft a 12.8cm Pzgr 40/43(APC) shell.</MakeAmmo_128mmCannonShell_APC.description>
+  <MakeAmmo_128mmCannonShell_APC.jobString>Making 12.8cm Pzgr. 40/43(APC) shell.</MakeAmmo_128mmCannonShell_APC.jobString>
+
+  <MakeAmmo_128mmCannonShell_APCBCHE.label>make 12.8cm Pzgr. 39/43(APCBC-HE) shell x1</MakeAmmo_128mmCannonShell_APCBCHE.label>
+  <MakeAmmo_128mmCannonShell_APCBCHE.description>Craft a 12.8cm Pzgr. 39/43(APCBC-HE) shell.</MakeAmmo_128mmCannonShell_APCBCHE.description>
+  <MakeAmmo_128mmCannonShell_APCBCHE.jobString>Making 12.8cm Pzgr. 39/43(APCBC-HE) shell.</MakeAmmo_128mmCannonShell_APCBCHE.jobString>
+
+  <MakeAmmo_128mmCannonShell_HE.label>make 12.8cm Sprgr. L/5(HE) shell x1</MakeAmmo_128mmCannonShell_HE.label>
+  <MakeAmmo_128mmCannonShell_HE.description>Craft a 12.8cm Sprgr. L/5(HE) shell.</MakeAmmo_128mmCannonShell_HE.description>
+  <MakeAmmo_128mmCannonShell_HE.jobString>Making 12.8cm Sprgr. L/5(HE) shell.</MakeAmmo_128mmCannonShell_HE.jobString>
+
+  <MakeAmmo_128mmCannonShell_APCR.label>make 12.8/8.8cm Pzgr. Ts(APCR) shell x1</MakeAmmo_128mmCannonShell_APCR.label>
+  <MakeAmmo_128mmCannonShell_APCR.description>Craft a 12.8/8.8cm Pzgr. Ts(APCR) shell.</MakeAmmo_128mmCannonShell_APCR.description>
+  <MakeAmmo_128mmCannonShell_APCR.jobString>Making 12.8/8.8cm Pzgr. Ts(APCR) shell.</MakeAmmo_128mmCannonShell_APCR.jobString>
+
+
+</LanguageData>

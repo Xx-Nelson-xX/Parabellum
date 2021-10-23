@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Craft Crate(Simple Cannon Crate) -->
+
+  <Buildsimplecannon_Crate.label>Build simple cannon Crate</Buildsimplecannon_Crate.label>
+  <Buildsimplecannon_Crate.description>The crate contain parts to build any ancient light and medium cannon/gun, depend how complex is the cannon/gun, might require multiple crates.</Buildsimplecannon_Crate.description>
+  <Buildsimplecannon_Crate.jobString>Building a simple cannon crate.</Buildsimplecannon_Crate.jobString>
+
+
+</LanguageData>

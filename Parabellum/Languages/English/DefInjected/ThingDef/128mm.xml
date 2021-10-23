@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Ammo -->
+
+  <Ammo_128mmCannonShell_APC.label>12.8cm Pzgr. 40/43(APC)</Ammo_128mmCannonShell_APC.label>
+  <Ammo_128mmCannonShell_APC.description>The 12.8cm large cannon shell is a specific size of cannon ammunition, used by Heavy Anti-Tank/Aircraft guns.</Ammo_128mmCannonShell_APC.description>
+
+  <Ammo_128mmCannonShell_APCBCHE.label>12.8cm Pzgr. 39/43(APCBC-HE)</Ammo_128mmCannonShell_APCBCHE.label>
+  <Ammo_128mmCannonShell_APCBCHE.description>The 12.8cm large cannon shell is a specific size of cannon ammunition, used by Heavy Anti-Tank/Aircraft guns.</Ammo_128mmCannonShell_APCBCHE.description>
+
+  <Ammo_128mmCannonShell_HE.label>12.8cm Sprgr. L/5(HE)</Ammo_128mmCannonShell_HE.label>
+  <Ammo_128mmCannonShell_HE.description>The 12.8cm large cannon shell is a specific size of cannon ammunition, used by Heavy Anti-Tank/Aircraft guns.</Ammo_128mmCannonShell_HE.description>
+
+  <Ammo_128mmCannonShell_APCR.label>12.8/8.8cm Pzgr. Ts(APCR)</Ammo_128mmCannonShell_APCR.label>
+  <Ammo_128mmCannonShell_APCR.description>The 12.8cm large cannon shell is a specific size of cannon ammunition, used by Heavy Anti-Tank/Aircraft guns.</Ammo_128mmCannonShell_APCR.description>
+
+
+  <!-- Projectiles -->
+
+  <Bullet_128mmCannonShell_APC.label>12.8cm Pzgr. 40/43(APC)</Bullet_128mmCannonShell_APC.label>
+  <Bullet_128mmCannonShell_APCBCHE.label>12.8cm Pzgr. 39/43(APCBC-HE)</Bullet_128mmCannonShell_APCBCHE.label>
+  <Bullet_128mmCannonShell_HE.label>12.8cm Sprgr. L/5 (HE)</Bullet_128mmCannonShell_HE.label>
+  <Bullet_128mmCannonShell_APCR.label>12.8/8.8cm Pzgr. Ts(APCR)</Bullet_128mmCannonShell_APCR.label>
+
+
+</LanguageData>

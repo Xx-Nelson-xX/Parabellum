@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Recipes -->
+
+  <MakeAmmo_21cmNbWRocket.label>Сделать 21cm Nebelwerfer Фугасная ракета x1</MakeAmmo_21cmNbWRocket.label>
+  <MakeAmmo_21cmNbWRocket.description>Делает 21cm Nebelwerfer Фугасная ракета.</MakeAmmo_21cmNbWRocket.description>
+  <MakeAmmo_21cmNbWRocket.jobString>Сделано 21cm Nebelwerfer Фугасная ракета.</MakeAmmo_21cmNbWRocket.jobString>
+
+  <MakeAmmo_15cmNbWRocket.label>Сделать 15cm Nebelwerfer Фугасная ракета x1</MakeAmmo_15cmNbWRocket.label>
+  <MakeAmmo_15cmNbWRocket.description>Делает 15cm Nebelwerfer Фугасная ракета.</MakeAmmo_15cmNbWRocket.description>
+  <MakeAmmo_15cmNbWRocket.jobString>Сделано 15cm Nebelwerfer Фугасная ракета.</MakeAmmo_15cmNbWRocket.jobString>
+
+  <MakeAmmo_15cmDNbWRocket.label>Сделать 15cm Nebelwerfer Фугасная ракета(D) x1</MakeAmmo_15cmDNbWRocket.label>
+  <MakeAmmo_15cmDNbWRocket.description>Делает 15cm Nebelwerfer Фугасная ракета(D).</MakeAmmo_15cmDNbWRocket.description>
+  <MakeAmmo_15cmDNbWRocket.jobString>Сделано 15cm Nebelwerfer Фугасная ракета(D).</MakeAmmo_15cmDNbWRocket.jobString>
+
+  <MakeAmmo_15cmSNbWRocket.label>Сделать 15cm Nebelwerfer Дымовая ракета(D) x1</MakeAmmo_15cmSNbWRocket.label>
+  <MakeAmmo_15cmSNbWRocket.description>Делает 15cm Nebelwerfer Дымовая ракета(D).</MakeAmmo_15cmSNbWRocket.description>
+  <MakeAmmo_15cmSNbWRocket.jobString>Сделано 15cm Nebelwerfer Дымовая ракета(D).</MakeAmmo_15cmSNbWRocket.jobString>
+
+
+</LanguageData>

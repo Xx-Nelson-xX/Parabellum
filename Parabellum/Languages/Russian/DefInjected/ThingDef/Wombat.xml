@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- 120mm Wombat Recoiless Anti-Tank Gun -->
+
+  <Pa_Wombat.label>120mm безоткатное противотанковое орудие Wombat</Pa_Wombat.label>
+  <Pa_Wombat.description>Wombat прикреплен к буксируемой платформе.</Pa_Wombat.description>
+
+
+  <!-- Turret Base -->
+
+  <Turret_Wombat.label>120mm Wombat RATG</Turret_Wombat.label>
+  <Turret_Wombat.description>120mm Безоткатное противотанковое ружье Wombat, немного более маневренное, меньшее, легкое, мощное, как 120-мм противотанковое орудие, но оно предлагает гораздо меньшую дальность действия, чем полноразмерное противотанковое ружье.</Turret_Wombat.description>
+
+
+  <!-- Crate Base -->
+
+  <Pa_Wombat_Crate.label>120mm Ящик для турели Wombat</Pa_Wombat_Crate.label>
+  <Pa_Wombat_Crate.description>Используйте это, чтобы построить 120mm турель Wombat.</Pa_Wombat_Crate.description>
+
+
+  <!-- Minified -->
+
+  <MinifiedTurret_Wombat.label>120mm турель Wombat</MinifiedTurret_Wombat.label>
+
+
+</LanguageData>

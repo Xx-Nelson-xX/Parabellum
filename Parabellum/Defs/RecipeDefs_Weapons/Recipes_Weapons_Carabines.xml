@@ -489,7 +489,7 @@
 		<defName>BuildVG</defName>
 		<label>Build a Gustloff VG 1-5</label>
 		<description>Build a Gustloff Volkssturmgewehr VG 1-5, still have enough time to earn your last Iron Cross...\nCaliber: 7.92x33mm Kurz</description>
-		<jobString>Building Mauser Karabiner 98k.</jobString>
+		<jobString>Building Gustloff VG 1-5.</jobString>
 		<workAmount>8500</workAmount>
 		<skillRequirements>
 			<Crafting>5</Crafting>

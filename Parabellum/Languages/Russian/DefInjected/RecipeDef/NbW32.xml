@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Recipes -->
+
+  <MakeAmmo_28cmNbWRocket.label>Сделать 28cm Nebelwerfer Фугасная ракета x1</MakeAmmo_28cmNbWRocket.label>
+  <MakeAmmo_28cmNbWRocket.description>Делает 28cm Nebelwerfer Фугасная ракета.</MakeAmmo_28cmNbWRocket.description>
+  <MakeAmmo_28cmNbWRocket.jobString>Сделано 28cm Nebelwerfer Фугасная ракета.</MakeAmmo_28cmNbWRocket.jobString>
+
+  <MakeAmmo_30cmNbWRocket.label>Сделать 30cm Nebelwerfer Фугасная ракета x1</MakeAmmo_30cmNbWRocket.label>
+  <MakeAmmo_30cmNbWRocket.description>Делает 30cm Nebelwerfer Фугасная ракета.</MakeAmmo_30cmNbWRocket.description>
+  <MakeAmmo_30cmNbWRocket.jobString>Сделано 30cm Nebelwerfer Фугасная ракета.</MakeAmmo_30cmNbWRocket.jobString>
+
+  <MakeAmmo_32cmNbWRocket.label>Сделать 32cm Nebelwerfer Зажигательная ракета x1</MakeAmmo_32cmNbWRocket.label>
+  <MakeAmmo_32cmNbWRocket.description>Делает 32cm Nebelwerfer Зажигательная ракета.</MakeAmmo_32cmNbWRocket.description>
+  <MakeAmmo_32cmNbWRocket.jobString>Сделано 32cm Nebelwerfer Зажигательная ракета.</MakeAmmo_32cmNbWRocket.jobString>
+
+
+</LanguageData>

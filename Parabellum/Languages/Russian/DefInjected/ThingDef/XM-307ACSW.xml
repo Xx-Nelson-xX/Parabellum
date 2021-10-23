@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- XM-307 Advanced Crew Served Weapon -->
+
+  <Pa_XM307ACSW.label>XM-307 Продвинутое вооружение колонии</Pa_XM307ACSW.label>
+  <Pa_XM307ACSW.description>XM307ACSW прикреплен к штативу.</Pa_XM307ACSW.description>
+
+
+  <!-- Turret Base -->
+
+  <Turret_XM307ACSW.label>XM-307 ACSW</Turret_XM307ACSW.label>
+  <Turret_XM307ACSW.description>Легкий автоматический гранатомет.</Turret_XM307ACSW.description>
+
+
+  <!-- Crate Base -->
+
+  <Pa_XM307ACSW_Crate.label>Ящик турели XM-307 ACSW</Pa_XM307ACSW_Crate.label>
+  <Pa_XM307ACSW_Crate.description>Используйте это, чтобы построить турель XM-307 ACSW.</Pa_XM307ACSW_Crate.description>
+
+
+  <!-- Minified -->
+
+  <MinifiedTurret_XM307ACSW.label>XM-307 ACSW турель</MinifiedTurret_XM307ACSW.label>
+
+
+</LanguageData>

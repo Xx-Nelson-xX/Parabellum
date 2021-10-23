@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Model 24 Stielhandgranate -->
+
+  <Proj_GrenadePotatoM.label>Модель 24 Стальная ручная граната</Proj_GrenadePotatoM.label>
+
+  <Pa_GrenadePotatoM.label>Модель 24 Стальная ручная граната</Pa_GrenadePotatoM.label>
+  <Pa_GrenadePotatoM.description>Дешевые серийно выпускаемые осколочно-фугасные гранаты, относительно низкий урон и отсутствие осколочных эффектов, длина и вес гранаты улучшают диапазон эффективности, предназначены для оглушения цели взрывным эффектом.</Pa_GrenadePotatoM.description>
+  <Pa_GrenadePotatoM.verbs.0.label>бросить картофельную машину</Pa_GrenadePotatoM.verbs.0.label>
+
+
+  <!-- Model 24 Stielhandgranate (Splitter) -->
+
+  <Proj_GrenadeM24S.label>Модель 24 ручная граната с кожухом</Proj_GrenadeM24S.label>
+
+  <Pa_GrenadeM24S.label>Модель 24 Стальная ручная граната с кожухом</Pa_GrenadeM24S.label>
+  <Pa_GrenadeM24S.description>Почти такая же, как у стандартной гранаты M24 Stick, но с покрытием Splitterring вокруг боеголовки, увеличивающим урон осколками, но уменьшающим взрыв с небольшим увеличением веса.</Pa_GrenadeM24S.description>
+  <Pa_GrenadeM24S.verbs.0.label>бросить M24 с кожухом</Pa_GrenadeM24S.verbs.0.label>
+
+
+  <!-- Model 24 Nebelgranate -->
+
+  <Proj_GrenadeM24Nb.label>Moдель 24 Туман граната</Proj_GrenadeM24Nb.label>
+
+  <Pa_GrenadeN24Nb.label>Moдель 24 Туман граната</Pa_GrenadeN24Nb.label>
+  <Pa_GrenadeN24Nb.description>M24 Гранатомет с модифицированной дымовой боевой частью.</Pa_GrenadeN24Nb.description>
+  <Pa_GrenadeN24Nb.verbs.0.label>бросить M24 Туман граната</Pa_GrenadeN24Nb.verbs.0.label>
+
+
+  <!-- Model 24 Stielhandgranate Bundle -->
+
+  <Proj_GrenadeM24B.label>Moдель 24 Связка гранат</Proj_GrenadeM24B.label>
+
+  <Pa_GrenadeM24B.label>Moдель 24 Связка гранат</Pa_GrenadeM24B.label>
+  <Pa_GrenadeM24B.description>Надежное решение для противотанкового оружия, за счет обертывания 6 взрывоопасных боеголовок M24 одной гранатой M24, значительно увеличивают урон и радиус взрыва, но также значительно сокращают его эффективную дальность из-за увеличения веса.</Pa_GrenadeM24B.description>
+  <Pa_GrenadeM24B.verbs.0.label>бросать M24 Связку гранат</Pa_GrenadeM24B.verbs.0.label>
+
+
+  <!-- 4kg Demolition Grenade -->
+
+  <Proj_Grenade4kg.label>4kg Заряд для сноса</Proj_Grenade4kg.label>
+
+  <Pa_Grenade4kg.label>4kg Заряд для сноса</Pa_Grenade4kg.label>
+  <Pa_Grenade4kg.description>Инженерный подрывной заряд, очень тяжелый и достаточно мощный, чтобы разрушить укрепления.</Pa_Grenade4kg.description>
+  <Pa_Grenade4kg.verbs.0.label>бросить 4kg подрывного заряда</Pa_Grenade4kg.verbs.0.label>
+
+
+  <!-- RGO Impact Grenade -->
+
+  <Proj_RGO.label>Ударная граната RGO</Proj_RGO.label>
+
+  <Pa_RGO.label>Ударная граната RGO</Pa_RGO.label>
+  <Pa_RGO.description>Специальная штурмовая граната с ударным взрывателем для зачистки и взлома помещений.</Pa_RGO.description>
+
+
+  <!-- Panzerwurmine Anti-Tank Impact Grenade -->
+
+  <Pa_PWM.label>PWM(K)</Pa_PWM.label>
+  <Pa_PWM.description>Panzerwurmine (Kurz), противотанковая ударная граната Shape Charge, эффективная противодействие большинству бронетранспортеров своей эпохи, не очень эффективная борьба с пехотой, если вы не поразите их напрямую.</Pa_PWM.description>
+
+
+</LanguageData>

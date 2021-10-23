@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Recipes -->
+
+  <MakeAmmo_84mmCGShell_HEAT.label>make FFV551 HEAT shells x1</MakeAmmo_84mmCGShell_HEAT.label>
+  <MakeAmmo_84mmCGShell_HEAT.description>Craft FFV551 High Explosive Anti-Tank shells, the standard issued anti-tank ammo, with small fragments and 400mm armor penetration.</MakeAmmo_84mmCGShell_HEAT.description>
+  <MakeAmmo_84mmCGShell_HEAT.jobString>Making FFV551 HEAT shells.</MakeAmmo_84mmCGShell_HEAT.jobString>
+
+  <MakeAmmo_84mmCGShell_HE.label>make FFV441B HE shells x1</MakeAmmo_84mmCGShell_HE.label>
+  <MakeAmmo_84mmCGShell_HE.description>Craft FFV441B High Explosive shells, impact explosive warhead, packed with lots of fragment for anti-personel at distance.</MakeAmmo_84mmCGShell_HE.description>
+  <MakeAmmo_84mmCGShell_HE.jobString>Making FFV441B HE shells.</MakeAmmo_84mmCGShell_HE.jobString>
+
+  <MakeAmmo_84mmCGShell_ADM.label>make FFV401 ADM shells x1</MakeAmmo_84mmCGShell_ADM.label>
+  <MakeAmmo_84mmCGShell_ADM.description>Craft FFV401 Area Defense Munition shells, Anti-personel warhead filled with flechette/steel darts for direct fire.</MakeAmmo_84mmCGShell_ADM.description>
+  <MakeAmmo_84mmCGShell_ADM.jobString>Making FFV401 ADM shells.</MakeAmmo_84mmCGShell_ADM.jobString>
+
+
+</LanguageData>

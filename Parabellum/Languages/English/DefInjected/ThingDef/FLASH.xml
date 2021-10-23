@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Ammo -->
+
+  <Ammo_FLASH.label>M202 FLASH Triethylaluminum Rocket</Ammo_FLASH.label>
+  <Ammo_FLASH.description>TEA Rockets, Incendiary rocket filled with flammable chemical sustance, it burns hotter than napalm in short period.</Ammo_FLASH.description>
+
+
+  <!-- Projectiles -->
+
+  <Bullet_FLASH.label>M202 FLASH Triethylaluminum Rocket (TEA)</Bullet_FLASH.label>
+
+
+</LanguageData>

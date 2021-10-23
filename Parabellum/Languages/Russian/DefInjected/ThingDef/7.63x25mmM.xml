@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Ammo -->
+
+  <Ammo_763x25mmM_FMJ.label>7.63x25mm Mauser (FMJ)</Ammo_763x25mmM_FMJ.label>
+  <Ammo_763x25mmM_FMJ.description>Боеприпасы для пистолета Old School Mauser, высокоскоростная пуля, но не имеет такой останавливающей силы, как у большинства пистолетов калибра.</Ammo_763x25mmM_FMJ.description>
+
+  <Ammo_763x25mmM_HP.label>7.63x25mm Mauser (HP)</Ammo_763x25mmM_HP.label>
+  <Ammo_763x25mmM_HP.description>Боеприпасы для пистолета Old School Mauser, высокоскоростная пуля, но не имеет такой останавливающей силы, как у большинства пистолетов калибра.</Ammo_763x25mmM_HP.description>
+
+
+  <!-- Projectiles -->
+
+  <Bullet_763x25mmM_FMJ.label>7.63mm пуля (FMJ)</Bullet_763x25mmM_FMJ.label>
+  <Bullet_763x25mmM_HP.label>7.63mm пуля (HP)</Bullet_763x25mmM_HP.label>
+
+
+</LanguageData>

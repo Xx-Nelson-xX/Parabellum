@@ -41,7 +41,7 @@
                 <burstShotCount>5</burstShotCount>
                 <ticksBetweenBurstShots>8</ticksBetweenBurstShots>
                 <soundCast>Shot_BoltActionRifle</soundCast>
-                <soundCastTail>GunTail_Heavy</soundCastTail>
+                <soundCastTail>GunTail_Medium</soundCastTail>
                 <muzzleFlashScale>9</muzzleFlashScale>
             </li>
         </verbs>
@@ -146,7 +146,7 @@
             <SightsEfficiency>1.1</SightsEfficiency>
             <ShotSpread>0.08</ShotSpread>
             <SwayFactor>1.25</SwayFactor>
-            <RangedWeapon_Cooldown>1.8</RangedWeapon_Cooldown>
+            <RangedWeapon_Cooldown>1.6</RangedWeapon_Cooldown>
             <Bulk>10.8</Bulk>
             <Mass>3.9</Mass>
         </statBases>
@@ -168,10 +168,10 @@
                 <verbClass>CombatExtended.Verb_ShootCE</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
                 <defaultProjectile>Bullet_8mmM_P88M</defaultProjectile>
-                <warmupTime>1</warmupTime>
+                <warmupTime>1.2</warmupTime>
                 <range>50</range>
                 <soundCast>Shot_G88M</soundCast>
-                <soundCastTail>GunTail_Heavy</soundCastTail>
+                <soundCastTail>GunTail_Medium</soundCastTail>
                 <muzzleFlashScale>9</muzzleFlashScale>
             </li>
         </verbs>
@@ -382,7 +382,7 @@
                 <ticksBetweenBurstShots>7</ticksBetweenBurstShots>
                 <range>43</range>
                 <soundCast>Shot_StG</soundCast>
-                <soundCastTail>GunTail_Heavy</soundCastTail>
+                <soundCastTail>GunTail_Medium</soundCastTail>
                 <muzzleFlashScale>9</muzzleFlashScale>
             </li>
         </verbs>
@@ -489,7 +489,7 @@
                 <ticksBetweenBurstShots>6</ticksBetweenBurstShots>
                 <range>45</range>
                 <soundCast>Shot_StG</soundCast>
-                <soundCastTail>GunTail_Heavy</soundCastTail>
+                <soundCastTail>GunTail_Medium</soundCastTail>
                 <muzzleFlashScale>9</muzzleFlashScale>
             </li>
         </verbs>
@@ -554,7 +554,7 @@
                 <ticksBetweenBurstShots>8</ticksBetweenBurstShots>
                 <range>45</range>
                 <soundCast>Shot_StG</soundCast>
-                <soundCastTail>GunTail_Heavy</soundCastTail>
+                <soundCastTail>GunTail_Medium</soundCastTail>
                 <muzzleFlashScale>9</muzzleFlashScale>
             </li>
         </verbs>

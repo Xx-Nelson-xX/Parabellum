@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Recipes -->
+
+  <MakeAmmo_28cmNbWRocket.label>make 28cm High Explosive Nebelwerfer Rocket x1</MakeAmmo_28cmNbWRocket.label>
+  <MakeAmmo_28cmNbWRocket.description>Craft 28cm High Explosive Nebelwerfer Rocket.</MakeAmmo_28cmNbWRocket.description>
+  <MakeAmmo_28cmNbWRocket.jobString>Making 28cm High Explosive Nebelwerfer Rocket.</MakeAmmo_28cmNbWRocket.jobString>
+
+  <MakeAmmo_30cmNbWRocket.label>make 30cm High Explosive Nebelwerfer Rocket x1</MakeAmmo_30cmNbWRocket.label>
+  <MakeAmmo_30cmNbWRocket.description>Craft 30cm High Explosive Nebelwerfer Rocket.</MakeAmmo_30cmNbWRocket.description>
+  <MakeAmmo_30cmNbWRocket.jobString>Making 30cm High Explosive Nebelwerfer Rocket.</MakeAmmo_30cmNbWRocket.jobString>
+
+  <MakeAmmo_32cmNbWRocket.label>make 32cm Incendiary Nebelwerfer Rocket x1</MakeAmmo_32cmNbWRocket.label>
+  <MakeAmmo_32cmNbWRocket.description>Craft 32cm Incendiary Nebelwerfer Rocket.</MakeAmmo_32cmNbWRocket.description>
+  <MakeAmmo_32cmNbWRocket.jobString>Making 32cm Incendiary Nebelwerfer Rocket.</MakeAmmo_32cmNbWRocket.jobString>
+
+
+</LanguageData>

@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Recipes -->
+
+  <MakeAmmo_84mmCGShell_HEAT.label>Сделать FFV551 HEAT снаряд x1</MakeAmmo_84mmCGShell_HEAT.label>
+  <MakeAmmo_84mmCGShell_HEAT.description>Делает осколочно-фугасные противотанковые снаряд FFV551, стандартные противотанковые боеприпасы, с небольшими осколками и бронепробиваемостью 400 мм.</MakeAmmo_84mmCGShell_HEAT.description>
+  <MakeAmmo_84mmCGShell_HEAT.jobString>Сделано FFV551 HEAT снаряд.</MakeAmmo_84mmCGShell_HEAT.jobString>
+
+  <MakeAmmo_84mmCGShell_HE.label>Сделать FFV441B HE снаряд x1</MakeAmmo_84mmCGShell_HE.label>
+  <MakeAmmo_84mmCGShell_HE.description>Делает осколочно-фугасные снаряды FFV441B, ударно-фугасную боевую часть, набитую множеством осколков для защиты от личного состава на расстоянии.</MakeAmmo_84mmCGShell_HE.description>
+  <MakeAmmo_84mmCGShell_HE.jobString>Сделано FFV441B HE снаряд.</MakeAmmo_84mmCGShell_HE.jobString>
+
+  <MakeAmmo_84mmCGShell_ADM.label>Сделать FFV401 ADM снаряд x1</MakeAmmo_84mmCGShell_ADM.label>
+  <MakeAmmo_84mmCGShell_ADM.description>Делает снаряд для FFV401 Area Defense, противопехотную боеголовку, снаряженную флешетом / стальными дротиками для стрельбы прямой наводкой.</MakeAmmo_84mmCGShell_ADM.description>
+  <MakeAmmo_84mmCGShell_ADM.jobString>Сделано FFV401 ADM снаряд.</MakeAmmo_84mmCGShell_ADM.jobString>
+
+
+</LanguageData>

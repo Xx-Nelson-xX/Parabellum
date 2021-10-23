@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Model 24 Stielhandgranate -->
+
+  <MakePotatoM.label>Сделать Ручные гранаты M24 x5</MakePotatoM.label>
+  <MakePotatoM.description>Делает Ручные гранаты M24.</MakePotatoM.description>
+  <MakePotatoM.jobString>Сделано Ручные гранаты M24.</MakePotatoM.jobString>
+
+
+  <!-- Model 24 with Splitterring -->
+
+  <MakeM24wSplitterring.label>Сделать M24 с осколочным кожухом x5</MakeM24wSplitterring.label>
+  <MakeM24wSplitterring.description>Делает 5 M24 с осколочным кожухом.</MakeM24wSplitterring.description>
+  <MakeM24wSplitterring.jobString>Сделано M24 с осколочным кожухом.</MakeM24wSplitterring.jobString>
+
+
+  <!-- Model 24 Nebelgranate -->
+
+  <MakeM24Nb.label>Сделать Дымовые гранаты M24 x5</MakeM24Nb.label>
+  <MakeM24Nb.description>Делает 5шт Дымовые гранаты M24.</MakeM24Nb.description>
+  <MakeM24Nb.jobString>Сделано Дымовые гранаты M24.</MakeM24Nb.jobString>
+
+
+  <!-- M24 Grenade Bundle -->
+
+  <MakeM24Bundle.label>Сделать M24 Связка x1</MakeM24Bundle.label>
+  <MakeM24Bundle.description>Делает M24 Связка.</MakeM24Bundle.description>
+  <MakeM24Bundle.jobString>Сделано M24 Связка.</MakeM24Bundle.jobString>
+
+
+  <!-- 4kg Demolition Charge -->
+
+  <Make4kg.label>Сделать 4kg Заряд для сноса x1</Make4kg.label>
+  <Make4kg.description>Делает 4kg Заряд для сноса.</Make4kg.description>
+  <Make4kg.jobString>Сделано 4kg Заряд для сноса.</Make4kg.jobString>
+
+
+  <!-- RGO Impact Grenade -->
+
+  <MakeRGO.label>Сделать Ударные гранаты RGO x5</MakeRGO.label>
+  <MakeRGO.description>Делает 5шт Ударные гранаты RGO.</MakeRGO.description>
+  <MakeRGO.jobString>Сделано Ударные гранаты RGO.</MakeRGO.jobString>
+
+
+  <!-- Panzerwurmine Anti-Tank Impact Grenade -->
+
+  <MakePWM.label>Сделать Противотанковые ударные гранаты PWM(K) x5</MakePWM.label>
+  <MakePWM.description>Делает 5шт Противотанковые ударные гранаты PWM(K).</MakePWM.description>
+  <MakePWM.jobString>Сделано Противотанковые ударные гранаты PWM(K).</MakePWM.jobString>
+
+
+</LanguageData>

@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- DamageDef -->
+
+  <Warhead.label>Ударно-взрывное</Warhead.label>
+  <Warhead.deathMessage>{0} погиб в результате взрыва.</Warhead.deathMessage>
+
+
+</LanguageData>

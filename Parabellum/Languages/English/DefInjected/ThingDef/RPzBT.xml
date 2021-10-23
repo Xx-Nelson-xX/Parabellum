@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Raketenpanzerbüchse 54/1 Multi Anti-Tank Rocket Launcher -->
+
+  <Pa_RPzB6T.label>RPzB 54/1 x6</Pa_RPzB6T.label>
+  <Pa_RPzB6T.description>6 RPzB attached to a solid Platform.</Pa_RPzB6T.description>
+
+
+  <!-- 88mm Raketenwerfer -->
+
+  <Pa_RW.label>88mm Raketenwerfer</Pa_RW.label>
+  <Pa_RW.description>Raketenwerfer attached to a solid Platform.</Pa_RW.description>
+
+
+  <!-- Raketen-Vielfachwerfer -->
+
+  <Pa_RVW.label>Raketen-Vielfachwerfer</Pa_RVW.label>
+  <Pa_RVW.description>Raketen-Vielfachwerfer attached to a solid Platform.</Pa_RVW.description>
+
+
+  <!-- Turret Base(6) -->
+
+  <Turret_RPzB6T.label>RPzB 54/1 MATRL</Turret_RPzB6T.label>
+  <Turret_RPzB6T.description>Raketenpanzerbüchse 54/1 Multiple Anti-Tank Rocket Launcher, an ancient Last Ditch Effort Improvised weapon, combine 6 RPzB 54/1 to make a turret platform and slap it over a tractor or any platform for anti-tank purpose.</Turret_RPzB6T.description>
+
+
+  <!-- Turret Base(1) -->
+
+  <Turret_RW.label>88mm Raketenwerfer</Turret_RW.label>
+  <Turret_RW.description>Raketenpanzerbüchse 54/1 Multiple Anti-Tank Rocket Launcher, an ancient Last Ditch Effort Improvised weapon, combine 6 RPzB 54/1 to make a turret platform and slap it over a tractor or any platform for anti-tank purpose.</Turret_RW.description>
+
+
+  <!-- Turret Base(24) -->
+
+  <Turret_RVW.label>RVW MRLP</Turret_RVW.label>
+  <Turret_RVW.description>Raketen-Vielfachwerfer, reverse engineering BM-8 to fit 8cm and 88mm rockets, looks simple but is not logistic friendly at all, and it takes time to completely reload it, careful with where you are aiming with it.</Turret_RVW.description>
+
+
+  <!-- Crate Base -->
+
+  <Pa_RPzB_Crate.label>RPzB crate</Pa_RPzB_Crate.label>
+  <Pa_RPzB_Crate.description>Use this to build a RPzB related turret.</Pa_RPzB_Crate.description>
+
+
+  <!-- Minified -->
+
+  <MinifiedTurret_Pa_RPzB6T.label>RPzB 54/1 MRL Platform</MinifiedTurret_Pa_RPzB6T.label>
+  <MinifiedTurret_Pa_RW.label>88mm Raketenwerfer ATRL</MinifiedTurret_Pa_RW.label>
+  <MinifiedTurret_Pa_RVW.label>Raketen-Vielfachwerfer MRLP</MinifiedTurret_Pa_RVW.label>
+
+
+</LanguageData>

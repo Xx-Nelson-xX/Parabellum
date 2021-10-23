@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Huot Automatic Rifle -->
+
+  <BuildHuot.label>Build Huot Automatic Rifle</BuildHuot.label>
+  <BuildHuot.description>Build an ancient Automatic Rifle, really complex for its time but no longer an issue for now.\nCaliber: .303 British</BuildHuot.description>
+  <BuildHuot.jobString>Building the Huot Automatic Rifle.</BuildHuot.jobString>
+
+
+  <!-- Mk.14 Mod.0 Enhanced Marksman Rifle -->
+
+  <BuildMk14.label>Build Mk.14 Mod.0</BuildMk14.label>
+  <BuildMk14.description>Build a Modernized Battle Rifle for Marksman Operator, moderate damage, long range, accurate and not really controllable high rate of fire.\nCaliber: 7.62x51mm NATO</BuildMk14.description>
+  <BuildMk14.jobString>Building Mk.14 Mod.0.</BuildMk14.jobString>
+
+
+  <!-- Gewehr Model 1888 Bolt Action Rifle -->
+
+  <BuildG88M.label>Build a Gewehr Model 1888</BuildG88M.label>
+  <BuildG88M.description>Build an Ancient Bolt Rifle and use it to fight for the Fatherland.\nCaliber: 8mm Mauser Rifle Catridge</BuildG88M.description>
+  <BuildG88M.jobString>Building Gewehr Model 1888.</BuildG88M.jobString>
+
+
+  <!-- Mauser 1918 T-Gewehr Bolt Action Anti-Tank Rifle -->
+
+  <BuildTG.label>Build Mauser 1918 T-Gewehr AT Rifle</BuildTG.label>
+  <BuildTG.description>Build the Mauser 1918 T-Gewehr AT Rifle, an Bolt Action Anti-Tank Rifle for AT purpose.\nCaliber: 13.2x92mmSR TuF</BuildTG.description>
+  <BuildTG.jobString>Building Mauser 1918 T-Gewehr AT Rifle.</BuildTG.jobString>
+
+
+  <!-- FG 42 Type F/II Dual Purpose Automatic Rifle -->
+
+  <BuildFG42F.label>Build FG 42 Type F(II)</BuildFG42F.label>
+  <BuildFG42F.description>Build a Fallschirmjägergewehr 42 Type F(II), Die grünen Teufel von Monte Cassino.\nCaliber: 8mm Mauser Rifle Catridge</BuildFG42F.description>
+  <BuildFG42F.jobString>Building FG 42 Type F(II).</BuildFG42F.jobString>
+
+
+  <!-- MKb 42 (H) -->
+
+  <BuildMKb42H.label>Build MKb 42 (H)</BuildMKb42H.label>
+  <BuildMKb42H.description>Build a MaschinenKarabiner 42 (Haenel), an early concept Modern Assault Rifle.\nCaliber: 7.92x33mm Kurz</BuildMKb42H.description>
+  <BuildMKb42H.jobString>Building the MKb 42 (H).</BuildMKb42H.jobString>
+
+
+  <!-- StG 44/MP 44 -->
+
+  <BuildStG44AR.label>Build StG 44/MP 44</BuildStG44AR.label>
+  <BuildStG44AR.description>Build a Sturmgewehr 44, WE SHOULD ALL HAVE A STURMGEWEHR! \nCaliber: 7.92x33mm Kurz</BuildStG44AR.description>
+  <BuildStG44AR.jobString>Building the StG 44.</BuildStG44AR.jobString>
+
+
+  <!-- StG 45/MP 45(M)/Gerät 06H -->
+
+  <BuildStG45M.label>Build StG 45/MP 45(M)/Gerät 06H</BuildStG45M.label>
+  <BuildStG45M.description>Build a Sturmgewehr 45, Nothing like a trip through the countryside... just wish it wasn't this COUNTRY. \nCaliber: 7.92x33mm Kurz</BuildStG45M.description>
+  <BuildStG45M.jobString>Building the StG 45(M).</BuildStG45M.jobString>
+
+
+</LanguageData>

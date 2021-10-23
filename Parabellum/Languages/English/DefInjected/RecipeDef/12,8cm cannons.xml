@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Craft Crate(50mm PaK38/L60 ATG) -->
+
+  <Buildheavycannon_Crate.label>Build heavy cannon crate</Buildheavycannon_Crate.label>
+  <Buildheavycannon_Crate.description>Use this to build a high caliber cannon, either for tanks or stationary turrets.</Buildheavycannon_Crate.description>
+  <Buildheavycannon_Crate.jobString>Building a heavy cannon crate.</Buildheavycannon_Crate.jobString>
+
+
+</LanguageData>

@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Recipes -->
+
+  <MakeAmmo_88mmRPzB_HEAT.label>make RPzB Gr. 4992 HEAT rocket x5</MakeAmmo_88mmRPzB_HEAT.label>
+  <MakeAmmo_88mmRPzB_HEAT.description>Craft RPzB Gr. 4992 HEAT rocket, the standard issued shape charge anti-tank rocket for RPzB 54/1, with nearly no fragments and 180mm armor penetration.</MakeAmmo_88mmRPzB_HEAT.description>
+  <MakeAmmo_88mmRPzB_HEAT.jobString>Making RPzB Gr. 4992 HEAT.</MakeAmmo_88mmRPzB_HEAT.jobString>
+
+  <MakeAmmo_88mmRPzB_Frag.label>make RPzB Gr. 4992 Frag rocket x3</MakeAmmo_88mmRPzB_Frag.label>
+  <MakeAmmo_88mmRPzB_Frag.description>Craft RPzB Gr. 4992 Fragmentation rocket, Modified rocket for RPzB 54/1, with improved fragmentation effects but really weak explosive damage.</MakeAmmo_88mmRPzB_Frag.description>
+  <MakeAmmo_88mmRPzB_Frag.jobString>Making RPzB Gr. 4992 Frag.</MakeAmmo_88mmRPzB_Frag.jobString>
+
+  <MakeAmmo_8cmRVW_HE.label>make 8cm Raketen Sprgr(HE) rocket x3</MakeAmmo_8cmRVW_HE.label>
+  <MakeAmmo_8cmRVW_HE.description>Craft 8cm Raketen Sprpr, modified high explosive rockets for Raketen-Vielfachwerfer, it contain better explosive charge than the standard RPzB rockets.</MakeAmmo_8cmRVW_HE.description>
+  <MakeAmmo_8cmRVW_HE.jobString>Making 8cm Raketen Sprgr(HE) rockets.</MakeAmmo_8cmRVW_HE.jobString>
+
+
+</LanguageData>

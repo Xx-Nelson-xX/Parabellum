@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Huot Automatic Rifle -->
+
+  <Pa_Huot.label>Huot Automatic Rifle</Pa_Huot.label>
+  <Pa_Huot.description>Ancient Automatic Rifle, really complex for its time but no longer an issue for now.</Pa_Huot.description>
+
+
+  <!-- Mk.14 Mod.0 -->
+
+  <Pa_Mk14M.label>Mk.14 Mod.0</Pa_Mk14M.label>
+  <Pa_Mk14M.description>Modernized Battle Rifle for Marksman, moderate damage, slightly long range, accurate and not really controllable high rate of fire.</Pa_Mk14M.description>
+
+
+  <!-- Gewehr Model 1888 Bolt Action Rifle -->
+
+  <Pa_G88M.label>Gewehr Model 1888</Pa_G88M.label>
+  <Pa_G88M.description>An ancient Bolt Action Rifle, very robust, quite heavy and large, perfectly fit for trench warfare and sharpshooting.</Pa_G88M.description>
+
+
+  <!-- Mauser 1918 T-Gewehr Bolt Action Anti-Tank Rifle -->
+
+  <Pa_TG.label>Mauser 1918 T-Gewehr Bolt Action Anti-Tank Rifle</Pa_TG.label>
+  <Pa_TG.description>One of the first Bolt Action Anti-Tank Rifle, a scale up Mauser Rifle to fit the 13.2 TuF round for anti-tank purpose, very robust, bulky and heavy, but still portable and capable to take out light armored target.</Pa_TG.description>
+
+
+  <!-- FG 42 Type F/II Dual Purpose Automatic Rifle -->
+
+  <Pa_FG42F.label>FG 42 Type F(II)</Pa_FG42F.label>
+  <Pa_FG42F.description>The Fallschirmjägergewehr 42 aka. FG 42, model Type F(II). It combined the characteristics and firepower of a light machine gun in a lightweight form slightly shorter (but considerably bulkier and heavier) than the standard-issue Karabiner 98k bolt-action infantry rifle. Considered one of the most advanced weapon designs of World War II, even the weapon is chambered full lenght powerful 7.92x57mm Mauser catridge, the weapon design and the muzzle brake reduce the recoil enought to make it controllable for automatic fire, if it's not enough, it also include a build-in bipod to further improve the controllability, the weapon also included a build-in Bayonet and capable to mount telescopic sight, with all that features while keep it light weight and compact enough for paratroopers, the downside is, the weapon is very expensive to produce compared to any other small arms of its time.</Pa_FG42F.description>
+
+
+  <!-- MKb 42 (H) -->
+
+  <Pa_MKb42H.label>MKb 42(H)</Pa_MKb42H.label>
+  <Pa_MKb42H.description>MaschinenKarabiner 42 (Haenel),early concept of Modern Assault Rifle, at least the only one officially entered production and participated in combat during mid-war, even the design proved superior to Walther's MKb 42(W), it still need improvements and reduce production cost to be mass produced.</Pa_MKb42H.description>
+  <Pa_MKb42H.tools.0.label>bayonet</Pa_MKb42H.tools.0.label>
+  <Pa_MKb42H.tools.1.label>blade</Pa_MKb42H.tools.1.label>
+  <Pa_MKb42H.tools.2.label>stock</Pa_MKb42H.tools.2.label>
+
+
+  <!-- StG 44/MP 44 -->
+
+  <Pa_StG44AR.label>StG 44/MP 44</Pa_StG44AR.label>
+  <Pa_StG44AR.description>Sturmgewehr 44, aka. the "MaschinenPistole 44" to make it possible to get in the production line by bypass its doctrine restriction like how they did with certain treaty, considered one of the earliest mass produced Modern Assault Rifle, participated in combat since the late-war, slightly simplified design with most of the parts stamped to reduce production cost.</Pa_StG44AR.description>
+
+
+  <!-- StG 45/MP 45(M)/Gerät 06H -->
+
+  <Pa_StG45M.label>StG 45(M)</Pa_StG45M.label>
+  <Pa_StG45M.description>Sturmgewehr 45(Mauser), aka. MaschinenPistole 45 or Gerät 06H, after the fiasco of G41(M), Mauser changed their development team to develop a weapon to compete with their new opponent: the StG 44, the idea was creating a cheaper version of it to keep with the army demand and improve the production, more or less a last ditch weapon, surprisingly, after few failure and rejections, the result was approved considering the 40% cost reduction and material consumption to build it, but they ran out of time and the war already ended, the concept was picked up by CEAM and CETME, in the end the licence got purchased by HK and it became the template of the G3 family.</Pa_StG45M.description>
+
+
+</LanguageData>

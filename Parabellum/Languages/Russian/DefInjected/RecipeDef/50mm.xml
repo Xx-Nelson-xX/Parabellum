@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Recipes -->
+
+  <MakeAmmo_50mmCannonShell_APHE.label>Сделать 5cm Pzgr 39(APHE) снаряды x10</MakeAmmo_50mmCannonShell_APHE.label>
+  <MakeAmmo_50mmCannonShell_APHE.description>Делает 10 5cm Pzgr 39(APHE) снаряды.</MakeAmmo_50mmCannonShell_APHE.description>
+  <MakeAmmo_50mmCannonShell_APHE.jobString>Сделано 5cm Pzgr 39(APHE) снаряды.</MakeAmmo_50mmCannonShell_APHE.jobString>
+
+  <MakeAmmo_50mmCannonShell_HE.label>Сделать 5cm Sprgr 38(HE) снаряды x10</MakeAmmo_50mmCannonShell_HE.label>
+  <MakeAmmo_50mmCannonShell_HE.description>Делает 10 5cm Sprgr 38(HE) снаряды.</MakeAmmo_50mmCannonShell_HE.description>
+  <MakeAmmo_50mmCannonShell_HE.jobString>Сделано 5cm Sprgr 38(HE) снаряды.</MakeAmmo_50mmCannonShell_HE.jobString>
+
+  <MakeAmmo_50mmCannonShell_APCR.label>Сделать 5cm Pzgr 40(APCR) снаряды x10</MakeAmmo_50mmCannonShell_APCR.label>
+  <MakeAmmo_50mmCannonShell_APCR.description>Делает 10 5cm Pzgr 40(APCR) снаряды.</MakeAmmo_50mmCannonShell_APCR.description>
+  <MakeAmmo_50mmCannonShell_APCR.jobString>Сделано 5cm Pzgr 40(APCR) снаряды.</MakeAmmo_50mmCannonShell_APCR.jobString>
+
+
+</LanguageData>

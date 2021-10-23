@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Ammo -->
+
+  <Ammo_10Gauge_Buck.label>10 gauge shell (Buck)</Ammo_10Gauge_Buck.label>
+
+
+  <!-- Projectiles -->
+
+  <Bullet_10Gauge_Buck.label>buckshot pellet</Bullet_10Gauge_Buck.label>
+
+
+</LanguageData>

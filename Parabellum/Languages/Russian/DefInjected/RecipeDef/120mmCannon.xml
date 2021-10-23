@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Recipes -->
+
+  <MakeAmmo_120mmCannonShell_Canister.label>Сделать 120mm M1028 Оскочный пушечный снаряд x1</MakeAmmo_120mmCannonShell_Canister.label>
+  <MakeAmmo_120mmCannonShell_Canister.description>Делает 120mm M1028 Оскочный пушечный снаряд.</MakeAmmo_120mmCannonShell_Canister.description>
+  <MakeAmmo_120mmCannonShell_Canister.jobString>Сделано 120mm M1028 Оскочный пушечный снаряд.</MakeAmmo_120mmCannonShell_Canister.jobString>
+
+  <MakeAmmo_120mmCannonShell_HESH.label>Сделать 120mm HESH пушечный снаряд x1</MakeAmmo_120mmCannonShell_HESH.label>
+  <MakeAmmo_120mmCannonShell_HESH.description>Делает 120mm HESH пушечный снаряд.</MakeAmmo_120mmCannonShell_HESH.description>
+  <MakeAmmo_120mmCannonShell_HESH.jobString>Making 120mm HESH пушечный снаряд.</MakeAmmo_120mmCannonShell_HESH.jobString>
+
+  <MakeAmmo_120mmCannonShell_Stun.label>Сделать 120mm M337 Stun пушечный снаряд x1</MakeAmmo_120mmCannonShell_Stun.label>
+  <MakeAmmo_120mmCannonShell_Stun.description>Делает 120mm M337 Stun пушечный снаряд.</MakeAmmo_120mmCannonShell_Stun.description>
+  <MakeAmmo_120mmCannonShell_Stun.jobString>Сделано 120mm M337 Stun пушечный снаряд.</MakeAmmo_120mmCannonShell_Stun.jobString>
+
+
+</LanguageData>

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Craft Crate -->
+
+  <BuildXM307ACSW_Crate.label>Сделать ящик XM-307</BuildXM307ACSW_Crate.label>
+  <BuildXM307ACSW_Crate.description>Используйте это, чтобы построить XM-307 ACSW, тип стационарной пилотируемой турели. В качестве боеприпасов используются гранаты размером 25x59 мм.</BuildXM307ACSW_Crate.description>
+  <BuildXM307ACSW_Crate.jobString>Постройте ящик XM-307.</BuildXM307ACSW_Crate.jobString>
+
+
+</LanguageData>

@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Recipes -->
+
+  <MakeAmmo_TuF_AP.label>make 13.2x92mm SR TuF (AP) cartridge x50</MakeAmmo_TuF_AP.label>
+  <MakeAmmo_TuF_AP.description>Craft 50 13.2x92mm SR TuF (AP) cartridges.</MakeAmmo_TuF_AP.description>
+  <MakeAmmo_TuF_AP.jobString>Making 13.2x92mm SR TuF (AP) cartridges.</MakeAmmo_TuF_AP.jobString>
+
+  <MakeAmmo_TuF_APHE.label>make 13.2x92mm SR TuF (APHE) cartridge x50</MakeAmmo_TuF_APHE.label>
+  <MakeAmmo_TuF_APHE.description>Craft 50 13.2x92mm SR TuF (APHE) cartridges.</MakeAmmo_TuF_APHE.description>
+  <MakeAmmo_TuF_APHE.jobString>Making 13.2x92mm SR TuF (APHE) cartridges.</MakeAmmo_TuF_APHE.jobString>
+
+  <MakeAmmo_MG131_HET.label>make 13x64mmB (HE-T) cartridge x50</MakeAmmo_MG131_HET.label>
+  <MakeAmmo_MG131_HET.description>Craft 50 13x64mmB (HE-T) cartridges.</MakeAmmo_MG131_HET.description>
+  <MakeAmmo_MG131_HET.jobString>Making 13x64mmB (HE-T) cartridges.</MakeAmmo_MG131_HET.jobString>
+
+
+</LanguageData>

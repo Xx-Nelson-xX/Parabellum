@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Recipes -->
+
+  <MakeAmmo_PzF_HEAT.label>Сделать 149mm Panzerfaust HEAT боеголовка x1</MakeAmmo_PzF_HEAT.label>
+  <MakeAmmo_PzF_HEAT.description>Делает 149mm Panzerfaust HEAT боеголовка.</MakeAmmo_PzF_HEAT.description>
+  <MakeAmmo_PzF_HEAT.jobString>Сделано 149mm Panzerfaust HEAT боеголовка.</MakeAmmo_PzF_HEAT.jobString>
+
+  <MakeAmmo_PzF_Frag.label>Сделать 149mm Panzerfaust Осколочная боеголовка x1</MakeAmmo_PzF_Frag.label>
+  <MakeAmmo_PzF_Frag.description>Делает 149mm Panzerfaust Осколочная боеголовка.</MakeAmmo_PzF_Frag.description>
+  <MakeAmmo_PzF_Frag.jobString>Сделано 149mm Panzerfaust Осколочная боеголовка.</MakeAmmo_PzF_Frag.jobString>
+
+
+</LanguageData>

@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Ammo -->
+
+  <Ammo_120mmCannonShell_Canister.label>120mm пушечный снаряд (картечь)</Ammo_120mmCannonShell_Canister.label>
+  <Ammo_120mmCannonShell_Canister.description>Противопехотные боеприпасы ближнего боя для 120mm пушек.</Ammo_120mmCannonShell_Canister.description>
+
+  <Ammo_120mmCannonShell_HESH.label>120mm Фугасный боеприпас (HESH)</Ammo_120mmCannonShell_HESH.label>
+  <Ammo_120mmCannonShell_HESH.description>Фугасный боеприпас Squash Head для 120mm пушек.</Ammo_120mmCannonShell_HESH.description>
+
+  <Ammo_120mmCannonShell_Stun.label>120mm M337 пушечный снаряд (Stun)</Ammo_120mmCannonShell_Stun.label>
+  <Ammo_120mmCannonShell_Stun.description>Специальные боеприпасы для 120-мм малой смертельной оглушения (Flash Bang) для 120-мм пушек. \ N (Предупреждение: прямое попадание в пешку размером с человеческий рост может привести к серьезным повреждениям)</Ammo_120mmCannonShell_Stun.description>
+
+
+  <!-- Projectiles -->
+
+  <Bullet_120mmCannonShell_Canister.label>120mm M1028 пушечный снаряд (картечь)</Bullet_120mmCannonShell_Canister.label>
+  <Bullet_120mmCannonShell_HESH.label>120mm пушечный снаряд (HESH)</Bullet_120mmCannonShell_HESH.label>
+  <Bullet_120mmCannonShell_Stun.label>120mm M337 пушечный снаряд (Stun)</Bullet_120mmCannonShell_Stun.label>
+
+
+</LanguageData>

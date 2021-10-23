@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Recipes -->
+
+  <MakeAmmo_763x25mmM_FMJ.label>make 7.63x25mm Mauser (FMJ) cartridge x100</MakeAmmo_763x25mmM_FMJ.label>
+  <MakeAmmo_763x25mmM_FMJ.description>Craft 100 7.63x25mm Mauser (FMJ) cartridge.</MakeAmmo_763x25mmM_FMJ.description>
+  <MakeAmmo_763x25mmM_FMJ.jobString>Making 7.63x25mm Mauser (FMJ) cartridge.</MakeAmmo_763x25mmM_FMJ.jobString>
+
+  <MakeAmmo_763x25mmM_HP.label>make 7.63x25mm Mauser (HP) cartridge x100</MakeAmmo_763x25mmM_HP.label>
+  <MakeAmmo_763x25mmM_HP.description>Craft 100 7.63x25mm Mauser (HP) cartridge.</MakeAmmo_763x25mmM_HP.description>
+  <MakeAmmo_763x25mmM_HP.jobString>Making 7.63x25mm Mauser (HP) cartridge.</MakeAmmo_763x25mmM_HP.jobString>
+
+
+</LanguageData>

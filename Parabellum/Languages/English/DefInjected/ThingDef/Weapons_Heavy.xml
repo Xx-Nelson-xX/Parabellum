@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Lewis LMG -->
+
+  <Pa_Lewis.label>Lewis LMG</Pa_Lewis.label>
+  <Pa_Lewis.description>An ancient light machine gun, kind of big, heavy and sturdy, but, still reliable.</Pa_Lewis.description>
+
+
+  <!-- MG 08/15 LMG -->
+
+  <Pa_MG0815L.label>MG 08/15 LMG</Pa_MG0815L.label>
+  <Pa_MG0815L.description>An ancient light machine gun convertion from MG 08 to a portable handheld machine gun, even lots of engineering, still quite big, heavy and very sturdy, but it can make your pawn a walking tank.</Pa_MG0815L.description>
+
+
+  <!-- Madsen LMG -->
+
+  <Pa_Madsen.label>Madsen LMG</Pa_Madsen.label>
+  <Pa_Madsen.description>Madsen Machine Gun, it was the world's first true light machine gun produced in quantity, magazine fed, air cooled, quite complex and expensive, a quality machine gun.</Pa_Madsen.description>
+
+
+  <!-- MG 30 LMG -->
+
+  <Pa_MG30L.label>MG 30 LMG</Pa_MG30L.label>
+  <Pa_MG30L.description>A modernized light machine gun, when the light machine gun become more and more portable, then the MG 30 was created, even though it failed comparing with the MG15, it was modified to use in aircraft and exported to foreign army, it was one of the design pattern that led to MG34 and MG42.</Pa_MG30L.description>
+
+
+  <!-- MG 34 GPMG -->
+
+  <Pa_MG34L.label>MG 34 GPMG</Pa_MG34L.label>
+  <Pa_MG34L.description>Generally considered first General Purpose Machine Gun(GPMG) or Einheitsmaschinengewehr(Universal machine gun), the weapon itself can configurate to LMG, MMG, HMG, AA, Tank MG without redesign to do so, the versatile MG 34 was chambered for the full-power 7.92×57mm Mauser rifle cartridge, and was arguably the most advanced machine gun in the world at the time of its deployment.</Pa_MG34L.description>
+
+
+  <!-- MG 42 GPMG -->
+
+  <Pa_MG42L.label>MG 42 GPMG</Pa_MG42L.label>
+  <Pa_MG42L.description>The Maschinengewehr 42 is the intent to replace the expensive MG34 during mid war, the weapon is less complex, cheaper, more reliable and easier to produce than the MG 34, also increased its RoF up to 1200 rpm making it very effective for suppressive fire, but in the end the intent didn't really achieved due the MG 42 can't fit in the Tank hull or planes like the MG 34 does.</Pa_MG42L.description>
+
+
+  <!-- MG 45/MG 1 Hybrid GPMG -->
+
+  <Pa_MG45H.label>MG 45/1 Hybrid GPMG</Pa_MG45H.label>
+  <Pa_MG45H.description>The Maschinengewehr 45/1 is the intent to further simplify the MG42 during late war, the weapon is way less complex and lighter than any previous MG by removing most none essential and every bit of material it has, the weapon doesn't inherit any of their previous fire mechanism, it use an early concept of roller-delayed blowback action for a GPMG, which further increased its RoF up to 1800 rpm making it burns ammo like no tomorrow, the weapon was a prototype that didn't really get its chances to participate the war but the concept and design was carried and replicated after the war till modern era.</Pa_MG45H.description>
+
+
+</LanguageData>

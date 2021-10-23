@@ -51,11 +51,17 @@
 					</value>
 				</li>
 				
-				<!-- ==================== .44 Rimfire ========================== -->
+				<!-- ==================== Black Powder Catridge ========================== -->
 				<li Class="PatchOperationAdd">	
 				<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_SR"]/ammoTypes</xpath>
 					<value>
 						<Ammo_44Rimfire>Bullet_44Rimfire</Ammo_44Rimfire>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">	
+				<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_SP"]/ammoTypes</xpath>
+					<value>
+						<Ammo_5070Govt>Bullet_5070Govt</Ammo_5070Govt>
 					</value>
 				</li>
 				

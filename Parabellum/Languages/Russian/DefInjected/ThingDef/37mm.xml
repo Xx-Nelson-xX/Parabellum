@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Ammo -->
+
+  <Ammo_37mmCannonShell_APHE.label>3.7cm Pzgr.Patr.mit Bdz. 5103º(APHE)</Ammo_37mmCannonShell_APHE.label>
+  <Ammo_37mmCannonShell_APHE.description>3,7-см снаряд малой пушки - это небольшой размер боеприпасов для пушек и автопушек в начале войны.</Ammo_37mmCannonShell_APHE.description>
+
+  <Ammo_37mmCannonShell_HE.label>3.7cm Gr.Sprgr 40 mit A.Z.39(HE)</Ammo_37mmCannonShell_HE.label>
+  <Ammo_37mmCannonShell_HE.description>3,7-см снаряд малой пушки - это небольшой размер пушки и боеприпасов к автопушке времен войны.</Ammo_37mmCannonShell_HE.description>
+
+  <Ammo_37mmCannonShell_APCR.label>3.7cm Pzgr 40/37(APCR)</Ammo_37mmCannonShell_APCR.label>
+  <Ammo_37mmCannonShell_APCR.description>3,7-см снаряд малой пушки - это небольшой размер пушки и боеприпасов к автопушке времен войны.</Ammo_37mmCannonShell_APCR.description>
+
+
+  <!-- Projectiles -->
+
+  <Bullet_37mmCannonShell_APHE.label>3.7cm Pzgr.(APHE)</Bullet_37mmCannonShell_APHE.label>
+  <Bullet_37mmCannonShell_HE.label>3.7cm Gr.Sprgr(HE)</Bullet_37mmCannonShell_HE.label>
+  <Bullet_37mmCannonShell_APCR.label>3.7cm Pzgr 40/37(APCR)</Bullet_37mmCannonShell_APCR.label>
+
+
+</LanguageData>

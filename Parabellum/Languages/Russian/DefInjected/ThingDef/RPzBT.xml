@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Raketenpanzerbüchse 54/1 Multi Anti-Tank Rocket Launcher -->
+
+  <Pa_RPzB6T.label>RPzB 54/1 x6</Pa_RPzB6T.label>
+  <Pa_RPzB6T.description>6 RPzB прикреплены к прочной платформе.</Pa_RPzB6T.description>
+
+
+  <!-- 88mm Raketenwerfer -->
+
+  <Pa_RW.label>88mm Raketenwerfer</Pa_RW.label>
+  <Pa_RW.description>Raketenwerfer прикреплен к прочной платформе.</Pa_RW.description>
+
+
+  <!-- Raketen-Vielfachwerfer -->
+
+  <Pa_RVW.label>Raketen-Vielfachwerfer</Pa_RVW.label>
+  <Pa_RVW.description>Raketen-Vielfachwerfer прикреплен к прочной платформе.</Pa_RVW.description>
+
+
+  <!-- Turret Base(6) -->
+
+  <Turret_RPzB6T.label>RPzB 54/1 MATRL</Turret_RPzB6T.label>
+  <Turret_RPzB6T.description>Raketenpanzerbüchse 54/1 Многократная противотанковая ракетная установка, древнее импровизированное оружие Last Ditch Effort, объединяет 6 RPzB 54/1, чтобы сделать платформу башни и шлепнуть ее над трактором или любой платформой для противотанковых целей.</Turret_RPzB6T.description>
+
+
+  <!-- Turret Base(1) -->
+
+  <Turret_RW.label>88mm Raketenwerfer</Turret_RW.label>
+  <Turret_RW.description>Raketenpanzerbüchse 54/1 Многократная противотанковая ракетная установка, древнее импровизированное оружие Last Ditch Effort, объединяет 6 RPzB 54/1, чтобы сделать платформу башни и шлепнуть ее над трактором или любой платформой для противотанковых целей.</Turret_RW.description>
+
+
+  <!-- Turret Base(24) -->
+
+  <Turret_RVW.label>RVW MRLP</Turret_RVW.label>
+  <Turret_RVW.description>Raketen-Vielfachwerfer, Обратный инжиниринг ВМ-8 для установки 8cm и 88mm ракет, выглядит просто, но совершенно не удобен с точки зрения логистики, и требуется время, чтобы полностью перезарядить его, осторожно с тем, куда вы целитесь.</Turret_RVW.description>
+
+
+  <!-- Crate Base -->
+
+  <Pa_RPzB_Crate.label>RPzB ящик</Pa_RPzB_Crate.label>
+  <Pa_RPzB_Crate.description>Используйте это, чтобы построить башню, связанную с RPzB.</Pa_RPzB_Crate.description>
+
+
+  <!-- Minified -->
+
+  <MinifiedTurret_Pa_RPzB6T.label>RPzB 54/1 MRL Платформа</MinifiedTurret_Pa_RPzB6T.label>
+  <MinifiedTurret_Pa_RW.label>88mm Raketenwerfer ATRL</MinifiedTurret_Pa_RW.label>
+  <MinifiedTurret_Pa_RVW.label>Raketen-Vielfachwerfer MRLP</MinifiedTurret_Pa_RVW.label>
+
+
+</LanguageData>

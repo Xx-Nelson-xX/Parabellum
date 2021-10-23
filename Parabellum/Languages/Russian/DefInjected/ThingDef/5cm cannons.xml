@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- 5cm PaK38/L60 Anti-Tank Gun -->
+
+  <Pa_PaK38ATG.label>5cm Противотанковая пушка Pak 38/L60 </Pa_PaK38ATG.label>
+  <Pa_PaK38ATG.description>Противотанковая пушка PaK 38/L60 5cm.</Pa_PaK38ATG.description>
+
+
+  <!-- 5cm Flak41/L67 Anti-Aircraft Gun -->
+
+  <Pa_Flak41AA.label>5cm Зенитная пушка Flak41/L67.</Pa_Flak41AA.label>
+  <Pa_Flak41AA.description>5cm Зенитная пушка Flak41/L67.</Pa_Flak41AA.description>
+
+
+  <!-- Turret Base(5cm PaK38/L60) -->
+
+  <Turret_Pak38ATG.label>5cm PaK 38 ATG</Turret_Pak38ATG.label>
+  <Turret_Pak38ATG.description>PaK 38/L60 50mm древнее легкое противотанковое ружье середины войны, универсальное и быстрое, устаревшее, но все еще пригодное для использования.</Turret_Pak38ATG.description>
+
+
+  <!-- Turret Base(5cm Flak41/L67) -->
+
+  <Turret_Flak41AA.label>5cm Flak 41 AA</Turret_Flak41AA.label>
+  <Turret_Flak41AA.description>5cm Flak 41/L67 Древнее легкое противотанковое ружье середины войны, универсальное и быстрое, устаревшее, но все еще пригодное для использования.</Turret_Flak41AA.description>
+
+
+  <!-- Minified -->
+
+  <MinifiedTurret_Pa_PaK38ATG.label>PaK 38/L60 5cm ATG</MinifiedTurret_Pa_PaK38ATG.label>
+  <MinifiedTurret_Pa_Flak41AA.label>FlaK 41/L67 5cm AA</MinifiedTurret_Pa_Flak41AA.label>
+
+
+</LanguageData>

@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Recipes -->
+
+  <MakeAmmo_127x42mmB_FMJ.label>make .50 Beowulf (FMJ) cartridge x80</MakeAmmo_127x42mmB_FMJ.label>
+  <MakeAmmo_127x42mmB_FMJ.description>Craft 80 .50 Beowulf(FMJ) cartridges.</MakeAmmo_127x42mmB_FMJ.description>
+  <MakeAmmo_127x42mmB_FMJ.jobString>Making .50 Beowulf (FMJ) cartridges.</MakeAmmo_127x42mmB_FMJ.jobString>
+
+  <MakeAmmo_127x42mmB_API.label>make .50 Beowulf (AP-I) cartridge x80</MakeAmmo_127x42mmB_API.label>
+  <MakeAmmo_127x42mmB_API.description>Craft 80 .50 Beowulf (AP-I) cartridge.</MakeAmmo_127x42mmB_API.description>
+  <MakeAmmo_127x42mmB_API.jobString>Making .50 Beowulf (AP-I) cartridges.</MakeAmmo_127x42mmB_API.jobString>
+
+  <MakeAmmo_127x42mmB_HP.label>make .50 Beowulf (HP) cartridge x80</MakeAmmo_127x42mmB_HP.label>
+  <MakeAmmo_127x42mmB_HP.description>Craft 80 .50 Beowulf (HP) cartridge.</MakeAmmo_127x42mmB_HP.description>
+  <MakeAmmo_127x42mmB_HP.jobString>Making .50 Beowulf (HP) cartridges.</MakeAmmo_127x42mmB_HP.jobString>
+
+  <MakeAmmo_127x42mmB_EMP.label>make .50 Beowulf (EMP) cartridge x80</MakeAmmo_127x42mmB_EMP.label>
+  <MakeAmmo_127x42mmB_EMP.description>Craft 80 .50 Beowulf (EMP) cartridge.</MakeAmmo_127x42mmB_EMP.description>
+  <MakeAmmo_127x42mmB_EMP.jobString>Making .50 Beowulf (EMP) cartridges.</MakeAmmo_127x42mmB_EMP.jobString>
+
+
+</LanguageData>

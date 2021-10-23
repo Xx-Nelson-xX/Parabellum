@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Type 63 Multiple Rocket Launcher Platform -->
+
+  <Pa_Type63MRL.label>Тип 63 MRL</Pa_Type63MRL.label>
+  <Pa_Type63MRL.description>Реактивная установка залпового огня Тип 63 прикреплена к стационарной платформе.</Pa_Type63MRL.description>
+
+
+  <!-- Turret Base -->
+
+  <Turret_Type63MRL.label>Тип 63 MRLP</Turret_Type63MRL.label>
+  <Turret_Type63MRL.description>Платформа для залповых гранатометов Tип 63, простая и немного современная многоствольная тяжелая ракетная установка, имеет 19 ракетных стволов, созданных для людей, которые хотят превосходства в артиллерии.</Turret_Type63MRL.description>
+
+
+  <!-- Crate Base -->
+
+  <Pa_Type63_Crate.label>Tип 63 MRL ящик</Pa_Type63_Crate.label>
+  <Pa_Type63_Crate.description>Используйте это, чтобы построить башню MRL Tип 63.</Pa_Type63_Crate.description>
+
+
+  <!-- Minified -->
+
+  <MinifiedTurret_Pa_Type63MRL.label>Tип 63 MRL турель</MinifiedTurret_Pa_Type63MRL.label>
+
+
+</LanguageData>

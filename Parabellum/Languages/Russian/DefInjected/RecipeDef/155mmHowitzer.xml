@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Recipes -->
+
+  <MakeAmmo_155mmHowitzerShell_Nuke.label>Сделать 155mm W48 AFAP гаубичный снаряд x1</MakeAmmo_155mmHowitzerShell_Nuke.label>
+  <MakeAmmo_155mmHowitzerShell_Nuke.description>Делает 155mm W48 AFAP гаубичный снаряд.</MakeAmmo_155mmHowitzerShell_Nuke.description>
+  <MakeAmmo_155mmHowitzerShell_Nuke.jobString>Сделано 155mm W48 AFAP гаубичный снаряд.</MakeAmmo_155mmHowitzerShell_Nuke.jobString>
+
+  <MakeAmmo_155mmHowitzerShell_ADAM.label>Сделать 155mm ADAM гаубичный снаряд x1</MakeAmmo_155mmHowitzerShell_ADAM.label>
+  <MakeAmmo_155mmHowitzerShell_ADAM.description>Делает 155mm ADAM гаубичный снаряд.</MakeAmmo_155mmHowitzerShell_ADAM.description>
+  <MakeAmmo_155mmHowitzerShell_ADAM.jobString>Сделано 155mm ADAM гаубичный снаряд.</MakeAmmo_155mmHowitzerShell_ADAM.jobString>
+
+
+</LanguageData>

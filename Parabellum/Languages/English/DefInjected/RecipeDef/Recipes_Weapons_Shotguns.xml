@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- DP-12 Double-barreled Pumpshotgun -->
+
+  <BuildDP12.label>Build DP-12 Double-barreled Pumpshotgun</BuildDP12.label>
+  <BuildDP12.description>Build the DP-12 Double-barreled Pumpshotgun for double the fun... And double the cost.\nCaliber: 12 Gauge</BuildDP12.description>
+  <BuildDP12.jobString>Building DP-12.</BuildDP12.jobString>
+
+
+  <!-- HK CAWS -->
+
+  <BuildCAWS.label>Build CAWS</BuildCAWS.label>
+  <BuildCAWS.description>Build the CAWS, no longer a prototype.\nCaliber: 12 Gauge</BuildCAWS.description>
+  <BuildCAWS.jobString>Building CAWS.</BuildCAWS.jobString>
+
+
+  <!-- Serbu Super Shorty -->
+
+  <BuildSSS.label>Build Serbu Super Shorty</BuildSSS.label>
+  <BuildSSS.description>Build the Serbu Super Shorty, something between a common pistol and a pocket handcannon.\nCaliber: 12 Gauge</BuildSSS.description>
+  <BuildSSS.jobString>Building Serbu Super Shorty.</BuildSSS.jobString>
+
+
+  <!-- Winchester Model 1887 -->
+
+  <BuildPa_W1887L.label>Build Winchester Model 1887</BuildPa_W1887L.label>
+  <BuildPa_W1887L.description>Build the Winchester Model 1887 lever-action shotgun, live your cowboy action shooting dream.\nCaliber: 12 Gauge</BuildPa_W1887L.description>
+  <BuildPa_W1887L.jobString>Building Winchester Model 1887.</BuildPa_W1887L.jobString>
+
+
+  <!-- Winchester Model 1887 "Mare's Leg" -->
+
+  <BuildPa_W1887S.label>Build Winchester Model 1887 "Mare's Leg"</BuildPa_W1887S.label>
+  <BuildPa_W1887S.description>Build the Winchester Model 1887 "Mare's Leg" lever-action shotgun, "Hasta la vista, Baby".\nCaliber: 12 Gauge</BuildPa_W1887S.description>
+  <BuildPa_W1887S.jobString>Building Winchester Model 1887 "Mare's Leg".</BuildPa_W1887S.jobString>
+
+
+  <!-- Winchester Model 1897/Trench Gun -->
+
+  <BuildPa_W1897T.label>Build Winchester Model 1897(T)</BuildPa_W1897T.label>
+  <BuildPa_W1897T.description>Build Winchester Model 1897, Trench Grade pump-action shotgun, the usage of this weapon was almost consider a warcrime during its time.\nCaliber: 12 Gauge</BuildPa_W1897T.description>
+  <BuildPa_W1897T.jobString>Building Winchester Model 1897(T).</BuildPa_W1897T.jobString>
+
+  <BuildPa_W1897L.label>Build Winchester Model 1897(L)</BuildPa_W1897L.label>
+  <BuildPa_W1897L.description>Build Winchester Model 1897, Standard Grade pump-action shotgun with 30 in barrel, perfect weapon for trap shooting and hunters.\nCaliber: 12 Gauge</BuildPa_W1897L.description>
+  <BuildPa_W1897L.jobString>Building Winchester Model 1897(T).</BuildPa_W1897L.jobString>
+
+
+</LanguageData>

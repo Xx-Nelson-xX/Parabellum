@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Ammo -->
+
+  <Ammo_PzF_HEAT.label>149mm Panzerfaust HEAT боеголовка</Ammo_PzF_HEAT.label>
+  <Ammo_PzF_HEAT.description>Низкоскоростная боевая часть запущена из panzerfaust.</Ammo_PzF_HEAT.description>
+
+  <Ammo_PzF_Frag.label>149mm Panzerfaust Осколочна боеголовка</Ammo_PzF_Frag.label>
+  <Ammo_PzF_Frag.description>Низкоскоростная боевая часть запущена из panzerfaust.</Ammo_PzF_Frag.description>
+
+
+  <!-- Projectiles -->
+
+  <Bullet_PzF_HEAT.label>149mm Panzerfaust HEAT боеголовка</Bullet_PzF_HEAT.label>
+  <Bullet_PzF_Frag.label>149mm Panzerfaust Осколочна боеголовка</Bullet_PzF_Frag.label>
+
+
+</LanguageData>

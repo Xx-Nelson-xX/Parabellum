@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Type 63 Multiple Rocket Launcher Platform -->
+
+  <Pa_Type63MRL.label>Type63MRL</Pa_Type63MRL.label>
+  <Pa_Type63MRL.description>Type 63 Multiple Rocket Launcher attached to a Stationary platform.</Pa_Type63MRL.description>
+
+
+  <!-- Turret Base -->
+
+  <Turret_Type63MRL.label>Type 63 MRLP</Turret_Type63MRL.label>
+  <Turret_Type63MRL.description>Type 63 Multiple Rocket Launcher Platform, a simple and bit modern Multi-barrel Heavy Rocket Launcher, it has 19 rockets tubes, created for people who want artillery supremacy.</Turret_Type63MRL.description>
+
+
+  <!-- Crate Base -->
+
+  <Pa_Type63_Crate.label>Type 63 MRL crate</Pa_Type63_Crate.label>
+  <Pa_Type63_Crate.description>Use this to build a Type 63 MRL turret.</Pa_Type63_Crate.description>
+
+
+  <!-- Minified -->
+
+  <MinifiedTurret_Pa_Type63MRL.label>Type 63 MRL turret</MinifiedTurret_Pa_Type63MRL.label>
+
+
+</LanguageData>

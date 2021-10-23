@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Sturer Survival Pistol -->
+
+  <BuildSP.label>Build Sturer Survival Pistol</BuildSP.label>
+  <BuildSP.description>Build a Sturer Survival Pistol, guess you really need one of those.\nCaliber: Most Rifle Caliber</BuildSP.description>
+  <BuildSP.jobString>Building Sturer Survival Pistol.</BuildSP.jobString>
+
+
+  <!-- Medusa Survival Revolver -->
+
+  <BuildSR.label>Build Medusa Survival Revolver</BuildSR.label>
+  <BuildSR.description>Build a Medusa Survival Revolver, make every shot count!\nCaliber: Most Pistol Caliber</BuildSR.description>
+  <BuildSR.jobString>Building Medusa Survival Revolver.</BuildSR.jobString>
+
+
+  <!-- Mauser C96 Semi-Automatic Pistol -->
+
+  <BuildC96M.label>Build Mauser C96 Pistol</BuildC96M.label>
+  <BuildC96M.description>Build a Mauser C96 Pistol, a very popular pistol in certain Asian Country.\nCaliber: 7.63x25mm Mauser / 9x19mm Parabellum / .45 ACP.</BuildC96M.description>
+  <BuildC96M.jobString>Building Mauser C96 Pistol</BuildC96M.jobString>
+
+  <BuildM712S.label>Build M712 "Schnellfeuer" Pistol</BuildM712S.label>
+  <BuildM712S.description>Build a M712 "Schnellfeuer" Pistol, now you can have an automatic "Broomhandle".\nCaliber: 7.63x25mm Mauser / 9x19mm Parabellum / .45 ACP</BuildM712S.description>
+  <BuildM712S.jobString>Building M712 "Schnellfeuer" Pistol</BuildM712S.jobString>
+
+
+</LanguageData>

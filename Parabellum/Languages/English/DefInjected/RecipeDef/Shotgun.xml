@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Recipes -->
+
+  <MakeAmmo_10Gauge_Buck.label>make 10 gauge (Buck) shell x40</MakeAmmo_10Gauge_Buck.label>
+  <MakeAmmo_10Gauge_Buck.description>Craft 40 10 gauge (Buck) shells.</MakeAmmo_10Gauge_Buck.description>
+  <MakeAmmo_10Gauge_Buck.jobString>Making 10 gauge (Buck) shells.</MakeAmmo_10Gauge_Buck.jobString>
+
+
+</LanguageData>

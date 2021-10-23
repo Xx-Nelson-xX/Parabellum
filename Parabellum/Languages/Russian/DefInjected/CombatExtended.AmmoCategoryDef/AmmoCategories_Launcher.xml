@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Carl Gustav Shell -->
+
+  <CGHE.label>CG осколочно-фугасная</CGHE.label>
+  <CGHE.labelShort>CG HE</CGHE.labelShort>
+  <CGHE.description>Взрывной снаряд Заполнен осколками</CGHE.description>
+
+  <CGHEAT.label>CG осколочно-фугасный противотанковый</CGHEAT.label>
+  <CGHEAT.labelShort>CG HEAT</CGHEAT.labelShort>
+  <CGHEAT.description>Формовочный заряд ВВ, способный пробить бронированную цель.</CGHEAT.description>
+
+  <CGADM.label>CG Area Defense Боеприпасы</CGADM.label>
+  <CGADM.labelShort>CG ADM</CGADM.labelShort>
+  <CGADM.description>Флешетный патрон для защиты с близкого расстояния.</CGADM.description>
+
+
+  <!-- 40x29mm Grenades -->
+
+  <GrenadeBB.label>40mm Граната з фасолью</GrenadeBB.label>
+  <GrenadeBB.labelShort>40mm BB</GrenadeBB.labelShort>
+  <GrenadeBB.description>Болезненный, но несмертельный раунд.</GrenadeBB.description>
+
+  <GrenadeF.label>40mm Флешет</GrenadeF.label>
+  <GrenadeF.labelShort>40mm F</GrenadeF.labelShort>
+  <GrenadeF.description>Флешетный патрон для защиты с близкого расстояния.</GrenadeF.description>
+
+  <GrenadeStun.label>40mm Stun Граната</GrenadeStun.label>
+  <GrenadeStun.labelShort>40mm Stun</GrenadeStun.labelShort>
+  <GrenadeStun.description>Несмертельный выстрел сотрясения мозга.</GrenadeStun.description>
+
+  <GrenadeFoam.label>40mm Пенная Граната</GrenadeFoam.label>
+  <GrenadeFoam.labelShort>40mm Пена</GrenadeFoam.labelShort>
+  <GrenadeFoam.description>Несмертельный пенный снаряд, способный тушить пожар.</GrenadeFoam.description>
+
+
+  <!-- 66mm LAW Rockets -->
+
+  <TEA.label>66mm Зажигательный</TEA.label>
+  <TEA.labelShort>TEA</TEA.labelShort>
+  <TEA.description>Зажигательный снаряд, чтобы покрыть территорию пламенем.</TEA.description>
+
+
+  <!-- Panzerfaust Warheads -->
+
+  <PzFHEAT.label>Panzerfaust HEAT</PzFHEAT.label>
+  <PzFHEAT.labelShort>PzF HEAT</PzFHEAT.labelShort>
+  <PzFHEAT.description>Серийно производимая противотанковая боеголовка Shape Charge, отличная контрбронированная цель.</PzFHEAT.description>
+
+  <PzFFrag.label>Panzerfaust Оскол</PzFFrag.label>
+  <PzFFrag.labelShort>PzF Оскол</PzFFrag.labelShort>
+  <PzFFrag.description>Модифицированная боевая часть, снаряженная металлическими осколками и осколками.</PzFFrag.description>
+
+
+  <!-- RPzB Rockets -->
+
+  <RPzBHEAT.label>88mm RPzB HEAT</RPzBHEAT.label>
+  <RPzBHEAT.labelShort>RPzB HEAT</RPzBHEAT.labelShort>
+  <RPzBHEAT.description>Серийно производимая противотанковая ракета Shape Charge, отличная противобронированная цель, работает только с прямым попаданием, так как у нее недостаточно эффектов фрагментации для урона по области.</RPzBHEAT.description>
+
+  <RPzBFrag.label>88mm RPzB Оскол(ID)</RPzBFrag.label>
+  <RPzBFrag.labelShort>RPzB Оскол</RPzBFrag.labelShort>
+  <RPzBFrag.description>Противопехотная ракета с измененной формой заряда, отличное противодействие мягкой цели, не предназначена для прямого попадания, так как прикрытия осколков находятся сбоку от боевой части.</RPzBFrag.description>
+
+
+</LanguageData>

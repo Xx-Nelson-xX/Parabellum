@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Ammo -->
+
+  <Ammo_28cmNbWRocket.label>28cm rocket (HE)</Ammo_28cmNbWRocket.label>
+  <Ammo_28cmNbWRocket.description>28cm High Explosive rocket.</Ammo_28cmNbWRocket.description>
+
+  <Ammo_30cmNbWRocket.label>30cm rocket (HE)</Ammo_30cmNbWRocket.label>
+  <Ammo_30cmNbWRocket.description>30cm Improved High Explosive rocket.</Ammo_30cmNbWRocket.description>
+
+  <Ammo_32cmNbWRocket.label>32cm rocket (I)</Ammo_32cmNbWRocket.label>
+  <Ammo_32cmNbWRocket.description>32cm Incendiary rocket.</Ammo_32cmNbWRocket.description>
+
+
+  <!-- Projectiles -->
+
+  <Bullet_28cmNbWRocket.label>28cm HE Rocket</Bullet_28cmNbWRocket.label>
+  <Bullet_30cmNbWRocket.label>30cm HE Rocket</Bullet_30cmNbWRocket.label>
+  <Bullet_32cmNbWRocket.label>32cm Incendiary Rocket</Bullet_32cmNbWRocket.label>
+
+
+</LanguageData>

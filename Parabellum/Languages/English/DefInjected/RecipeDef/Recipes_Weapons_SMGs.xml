@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- M1928A1 Thompson -->
+
+  <BuildM1928A1.label>Build the Thompson M1928A1 SMG</BuildM1928A1.label>
+  <BuildM1928A1.description>The Thompson M1928A1 is a fullsize submachineg gun, cops and mobs favorites.\nCaliber: .45 ACP</BuildM1928A1.description>
+  <BuildM1928A1.jobString>Building a Thompson M1928A1.</BuildM1928A1.jobString>
+
+
+  <!-- Suomi KP-31 -->
+
+  <BuildSuomi.label>Build Suomi KP-31 SMG</BuildSuomi.label>
+  <BuildSuomi.description>Builds a Suomi KP-31 SMG, careful with the ammo consumption.\nCaliber: 9x19mm Para</BuildSuomi.description>
+  <BuildSuomi.jobString>Building Suomi KP-31.</BuildSuomi.jobString>
+
+
+  <!-- Bergmann Maschinenpistole 18 -->
+
+  <BuildMP18B.label>Build MP 18 SMG</BuildMP18B.label>
+  <BuildMP18B.description>Builds a MP 18 SMG, the father of most SMGs.\nCaliber: 7.63x25mm Mauser / 9x19mm Parabellum / .45 ACP</BuildMP18B.description>
+  <BuildMP18B.jobString>Building MP 18.</BuildMP18B.jobString>
+
+
+</LanguageData>

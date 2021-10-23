@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Craft Crate -->
+
+  <BuildXM307ACSW_Crate.label>Build XM-307 Advanced Crew Served Weapon crate</BuildXM307ACSW_Crate.label>
+  <BuildXM307ACSW_Crate.description>Use this to build a XM-307 ACSW, a type of stationary manned turret. It uses 25x59mm grenades for ammo.</BuildXM307ACSW_Crate.description>
+  <BuildXM307ACSW_Crate.jobString>Build XM-307 Advanced Crew Served Weapon crate.</BuildXM307ACSW_Crate.jobString>
+
+
+</LanguageData>

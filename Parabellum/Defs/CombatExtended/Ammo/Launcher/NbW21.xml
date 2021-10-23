@@ -300,6 +300,7 @@
 				<li>ComponentIndustrial</li>
 			</thingDefs>
 		</fixedIngredientFilter>
+		<researchPrerequisite>Rockets_D1</researchPrerequisite>
 		<products>
 			<Ammo_21cmNbWRocket>1</Ammo_21cmNbWRocket>
 		</products>
@@ -360,6 +361,7 @@
 				<li>ComponentIndustrial</li>
 			</thingDefs>
 		</fixedIngredientFilter>
+		<researchPrerequisite>Rockets_D1</researchPrerequisite>
 		<products>
 			<Ammo_15cmNbWRocket>1</Ammo_15cmNbWRocket>
 		</products>
@@ -420,6 +422,7 @@
 				<li>ComponentIndustrial</li>
 			</thingDefs>
 		</fixedIngredientFilter>
+		<researchPrerequisite>Rockets_D1</researchPrerequisite>
 		<products>
 			<Ammo_15cmDNbWRocket>1</Ammo_15cmDNbWRocket>
 		</products>
@@ -489,6 +492,7 @@
 				<li>ComponentIndustrial</li>
 			</thingDefs>
 		</fixedIngredientFilter>
+		<researchPrerequisite>Rockets_D1</researchPrerequisite>
 		<products>
 			<Ammo_15cmSNbWRocket>1</Ammo_15cmSNbWRocket>
 		</products>

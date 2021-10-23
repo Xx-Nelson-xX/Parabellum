@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Ammo -->
+
+  <Ammo_155mmHowitzerShell_Nuke.label>155mm гаубичный снаряд (AFAP)</Ammo_155mmHowitzerShell_Nuke.label>
+  <Ammo_155mmHowitzerShell_Nuke.description>W48/XM454 Артиллерийский атомный снаряд, он же. AFAP, тактическая ядерная боеголовка, способная стрелять из любой стандартной 155-мм (6,1 ") гаубицы. \\ n (Предупреждение: используйте ее только в том случае, если вы хотите, чтобы часть вашей карты превратилась в ничто, кроме равнинной местности, заполненной относительно длительным излучением после волна взрыва ЭМИ.)</Ammo_155mmHowitzerShell_Nuke.description>
+
+  <Ammo_155mmHowitzerShell_ADAM.label>155mm гаубичный снаряд (ADAM)</Ammo_155mmHowitzerShell_ADAM.label>
+  <Ammo_155mmHowitzerShell_ADAM.description>155mm (6,1 ") ADAM, также известный как Area Denial Artillery Munition, артиллерийский снаряд, начиненный несколькими десятками наземных мин, в данном случае бронебойных мин M67 / M72, разработанных для Area Denial, чтобы разрушить значительную зону за счет быстрого развертывания наземных мин на большом расстоянии .</Ammo_155mmHowitzerShell_ADAM.description>
+
+
+  <!-- Projectiles -->
+
+  <Bullet_155mmHowitzerShell_Nuke.label>155mm гаубичный снаряд (AFAP)</Bullet_155mmHowitzerShell_Nuke.label>
+  <Bullet_155mmHowitzerShell_ADAM.label>155mm гаубичный снаряд (ADAM)</Bullet_155mmHowitzerShell_ADAM.label>
+
+
+</LanguageData>

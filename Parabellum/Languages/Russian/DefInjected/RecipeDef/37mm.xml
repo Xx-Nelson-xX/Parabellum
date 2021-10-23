@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Recipes -->
+
+  <MakeAmmo_37mmCannonShell_APHE.label>Сделать 3.7cm Pzgr.Patr.mit Bdz. 5103º(APHE) снаряды x15</MakeAmmo_37mmCannonShell_APHE.label>
+  <MakeAmmo_37mmCannonShell_APHE.description>Делает 15 3.7cm Pzgr.Patr.mit Bdz. 5103º(APHE) снаряды.</MakeAmmo_37mmCannonShell_APHE.description>
+  <MakeAmmo_37mmCannonShell_APHE.jobString>Сделано 3.7cm Pzgr.Patr.mit Bdz. 5103º(APHE) снаряды.</MakeAmmo_37mmCannonShell_APHE.jobString>
+
+  <MakeAmmo_37mmCannonShell_HE.label>Сделать 3.7cm Gr.Sprgr 40 mit A.Z.39 (HE) x15</MakeAmmo_37mmCannonShell_HE.label>
+  <MakeAmmo_37mmCannonShell_HE.description>Делает 15 3.7cm Gr.Sprgr 40 mit A.Z.39 (HE) снаряды.</MakeAmmo_37mmCannonShell_HE.description>
+  <MakeAmmo_37mmCannonShell_HE.jobString>Сделано 3.7cm Gr.Sprgr 40 mit A.Z.39 (HE) снаряды.</MakeAmmo_37mmCannonShell_HE.jobString>
+
+  <MakeAmmo_37mmCannonShell_APCR.label>Сделать 3.7cm Pzgr 40/37(APCR) x15</MakeAmmo_37mmCannonShell_APCR.label>
+  <MakeAmmo_37mmCannonShell_APCR.description>Делает 15 3.7cm Pzgr 40/37(APCR) снаряды.</MakeAmmo_37mmCannonShell_APCR.description>
+  <MakeAmmo_37mmCannonShell_APCR.jobString>Сделано 3.7cm Pzgr 40/37(APCR) снаряды.</MakeAmmo_37mmCannonShell_APCR.jobString>
+
+
+</LanguageData>

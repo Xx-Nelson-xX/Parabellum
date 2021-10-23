@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Vickers MMG -->
+
+  <Pa_Vickers.label>Vickers .303 MMG</Pa_Vickers.label>
+  <Pa_Vickers.description>A Vickers Medium Machinegun attached to a tripod.</Pa_Vickers.description>
+
+
+  <!-- Maschinengewehr Model 1908 MMG -->
+
+  <Pa_MG08MMG.label>MG08 MMG</Pa_MG08MMG.label>
+  <Pa_MG08MMG.description>A MG08 Medium Machinegun attached to a tripod.</Pa_MG08MMG.description>
+
+
+  <!-- Maschinengewehr Model 1918 HMG -->
+
+  <Pa_MG18HMG.label>MG18 TuF HMG</Pa_MG18HMG.label>
+  <Pa_MG18HMG.description>A MG18 Tuf Heavy Machinegun attached to a solid platform.</Pa_MG18HMG.description>
+
+
+  <!-- Maxim Quad AA gun -->
+
+  <Pa_Mx4AA.label>Maxim x4</Pa_Mx4AA.label>
+  <Pa_Mx4AA.description>Maxim MMG x4 attached to a solid platform</Pa_Mx4AA.description>
+
+
+  <!-- Turret Base(Vickers) -->
+
+  <Turret_Vickers.label>Vickers .303 MMG</Turret_Vickers.label>
+  <Turret_Vickers.description>Vickers Medium machinegun mounted on a tripod.</Turret_Vickers.description>
+
+
+  <!-- Turret Base(MG08) -->
+
+  <Turret_MG08MMG.label>MG08 MMG</Turret_MG08MMG.label>
+  <Turret_MG08MMG.description>Maschinengewehr 08 Medium machinegun mounted on a tripod.</Turret_MG08MMG.description>
+
+
+  <!-- Turret Base(MG18 TuF) -->
+
+  <Turret_MG18HMG.label>MG18 TuF HMG</Turret_MG18HMG.label>
+  <Turret_MG18HMG.description>Maschinengewehr 18 TuF heavy machinegun mounted on a solid platform.</Turret_MG18HMG.description>
+
+
+  <!-- Turret Base(Maxim Quad AA gun) -->
+
+  <Turret_Mx4AA.label>Maxim Quad AA gun</Turret_Mx4AA.label>
+  <Turret_Mx4AA.description>Maxim Minegun x4 mounted on a solid AA platform.</Turret_Mx4AA.description>
+
+
+  <!-- Crate Base -->
+
+  <Pa_Machinegun_Crate.label>Machinegun Crate</Pa_Machinegun_Crate.label>
+  <Pa_Machinegun_Crate.description>This crate contain stuff that you need to build most Ancient Machineguns, some might need an extra crate.</Pa_Machinegun_Crate.description>
+
+
+  <!-- Minified -->
+
+  <MinifiedTurret_Vickers.label>Vickers .303 MMG turret</MinifiedTurret_Vickers.label>
+  <MinifiedTurret_MG08MMG.label>MG 08 MMG turret</MinifiedTurret_MG08MMG.label>
+  <MinifiedTurret_MG18HMG.label>MG 18 TuF HMG turret</MinifiedTurret_MG18HMG.label>
+  <MinifiedTurret_Mx4AA.label>Maxim x4 AA turret</MinifiedTurret_Mx4AA.label>
+
+
+</LanguageData>

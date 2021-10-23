@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- De Lisle Commando Carabine -->
+
+  <BuildDelisle.label>Build De Lisle Commando Carabine</BuildDelisle.label>
+  <BuildDelisle.description>Build a De lisle Commando Carabine, happy hunting.\nCaliber: .45 ACP</BuildDelisle.description>
+  <BuildDelisle.jobString>Building De Lisle Commando Carabine.</BuildDelisle.jobString>
+
+
+  <!-- M4.50 Beowulf Special Carabine -->
+
+  <BuildM4Beowulf.label>Build M4.50 Beowulf SC</BuildM4Beowulf.label>
+  <BuildM4Beowulf.description>Builds the M4.50 Beowulf SC,changing the standard AR barrel to the heavier .50 Beowulf barrel to deal with light armored target and bear size animals. High damage, average range, good rate of fire and accuracy, but not really controllable in burst.\nCaliber: .50 Beowulf(12,7x42mm)</BuildM4Beowulf.description>
+  <BuildM4Beowulf.jobString>Building M4.50 Beowulf SC.</BuildM4Beowulf.jobString>
+
+
+  <!-- M960(M) Calico Carabine -->
+
+  <BuildCalico.label>Build M960(M) Calico Carabine</BuildCalico.label>
+  <BuildCalico.description>Build the M960 Military Model 9mm Carabine, if you think traditional SMG's banana magazine isn't enough.\nCaliber: 9x19mm Para</BuildCalico.description>
+  <BuildCalico.jobString>Building M960(M) Calico Carabine.</BuildCalico.jobString>
+
+
+  <!-- Karabiner M1890 -->
+
+  <BuildK90M.label>Build a Karabiner M1890</BuildK90M.label>
+  <BuildK90M.description>Build a Karabiner M1890, an ancient Bolt Action carabine for cavary, fight for the Fatherland.\nCaliber: 8mm Mauser Rifle Catridge</BuildK90M.description>
+  <BuildK90M.jobString>Building Karabiner M1890.</BuildK90M.jobString>
+
+
+  <!-- Mauser Karabiner 98 Kurz -->
+
+  <BuildK98k.label>Build a Mauser Karabiner 98k</BuildK98k.label>
+  <BuildK98k.description>Build a Mauser Karabiner 98k, an ancient Bolt Action carabine.\nCaliber: 8mm Mauser Rifle Catridge / 7.62x51mm NATO</BuildK98k.description>
+  <BuildK98k.jobString>Building Mauser Karabiner 98k.</BuildK98k.jobString>
+
+
+  <!-- Gewehr 41(Walther) -->
+
+  <BuildG41W.label>Build a Gewehr 41(W)</BuildG41W.label>
+  <BuildG41W.description>Build a Gewehr 41(Walther), an ancient semi-automatic rifle/carabine(?), no sir, it doesn't use detachable box magazine yet.\nCaliber: 8mm Mauser Rifle Catridge</BuildG41W.description>
+  <BuildG41W.jobString>Building Gewehr 41(W).</BuildG41W.jobString>
+
+
+  <!-- Gewehr/Karabiner 43 -->
+
+  <BuildG43K.label>Build a Gewehr 43</BuildG43K.label>
+  <BuildG43K.description>Build a Gewehr 43, an ancient semi-automatic rifle/carabine(?), yes, now it use detachable box magazine.\nCaliber: 8mm Mauser Rifle Catridge</BuildG43K.description>
+  <BuildG43K.jobString>Building Gewehr 43.</BuildG43K.jobString>
+
+
+  <!-- Gustloff Volkssturmgewehr VG 1-5 -->
+
+  <BuildVG.label>Build a Gustloff VG 1-5</BuildVG.label>
+  <BuildVG.description>Build a Gustloff Volkssturmgewehr VG 1-5, still have enough time to earn your last Iron Cross...\nCaliber: 7.92x33mm Kurz</BuildVG.description>
+  <BuildVG.jobString>Building Mauser Karabiner 98k.</BuildVG.jobString>
+
+
+</LanguageData>

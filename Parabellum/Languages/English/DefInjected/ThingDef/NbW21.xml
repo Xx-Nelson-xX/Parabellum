@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Ammo -->
+
+  <Ammo_21cmNbWRocket.label>21cm rocket (HE)</Ammo_21cmNbWRocket.label>
+  <Ammo_21cmNbWRocket.description>21cm Improved High Explosive rocket.</Ammo_21cmNbWRocket.description>
+
+  <Ammo_15cmNbWRocket.label>15cm rocket (HE)</Ammo_15cmNbWRocket.label>
+  <Ammo_15cmNbWRocket.description>15cm High Explosive rocket.</Ammo_15cmNbWRocket.description>
+
+  <Ammo_15cmDNbWRocket.label>15cm rocket (HE-D)</Ammo_15cmDNbWRocket.label>
+  <Ammo_15cmDNbWRocket.description>15cm High Explosive rocket(Direct Targeting).</Ammo_15cmDNbWRocket.description>
+
+  <Ammo_15cmSNbWRocket.label>15cm rocket (Smoke)</Ammo_15cmSNbWRocket.label>
+  <Ammo_15cmSNbWRocket.description>15cm Smoke rocket.</Ammo_15cmSNbWRocket.description>
+
+
+  <!-- Projectiles -->
+
+  <Bullet_21cmNbWRocket.label>21cm HE Rocket</Bullet_21cmNbWRocket.label>
+  <Bullet_15cmNbWRocket.label>15cm HE Rocket</Bullet_15cmNbWRocket.label>
+  <Bullet_15cmDNbWRocket.label>15cm HE Rocket(Direct Targeting)</Bullet_15cmDNbWRocket.label>
+  <Bullet_15cmSNbWRocket.label>15cm Smoke Rocket</Bullet_15cmSNbWRocket.label>
+
+
+</LanguageData>

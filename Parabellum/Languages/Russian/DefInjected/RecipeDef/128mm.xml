@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Recipes -->
+
+  <MakeAmmo_128mmCannonShell_APC.label>Сделать 12.8cm Pzgr 40/43(APC) x1</MakeAmmo_128mmCannonShell_APC.label>
+  <MakeAmmo_128mmCannonShell_APC.description>Делает 12.8cm Pzgr 40/43(APC).</MakeAmmo_128mmCannonShell_APC.description>
+  <MakeAmmo_128mmCannonShell_APC.jobString>Сделано 12.8cm Pzgr. 40/43(APC).</MakeAmmo_128mmCannonShell_APC.jobString>
+
+  <MakeAmmo_128mmCannonShell_APCBCHE.label>Сделать 12.8cm Pzgr. 39/43(APCBC-HE) x1</MakeAmmo_128mmCannonShell_APCBCHE.label>
+  <MakeAmmo_128mmCannonShell_APCBCHE.description>Делает 12.8cm Pzgr. 39/43(APCBC-HE).</MakeAmmo_128mmCannonShell_APCBCHE.description>
+  <MakeAmmo_128mmCannonShell_APCBCHE.jobString>Сделано 12.8cm Pzgr. 39/43(APCBC-HE).</MakeAmmo_128mmCannonShell_APCBCHE.jobString>
+
+  <MakeAmmo_128mmCannonShell_HE.label>Сделать 12.8cm Sprgr. L/5(HE) x1</MakeAmmo_128mmCannonShell_HE.label>
+  <MakeAmmo_128mmCannonShell_HE.description>Делает 12.8cm Sprgr. L/5(HE).</MakeAmmo_128mmCannonShell_HE.description>
+  <MakeAmmo_128mmCannonShell_HE.jobString>Сделано 12.8cm Sprgr. L/5(HE).</MakeAmmo_128mmCannonShell_HE.jobString>
+
+  <MakeAmmo_128mmCannonShell_APCR.label>Сделать 12.8/8.8cm Pzgr. Ts(APCR) x1</MakeAmmo_128mmCannonShell_APCR.label>
+  <MakeAmmo_128mmCannonShell_APCR.description>Делает 12.8/8.8cm Pzgr. Ts(APCR).</MakeAmmo_128mmCannonShell_APCR.description>
+  <MakeAmmo_128mmCannonShell_APCR.jobString>Сделано 12.8/8.8cm Pzgr. Ts(APCR).</MakeAmmo_128mmCannonShell_APCR.jobString>
+
+
+</LanguageData>

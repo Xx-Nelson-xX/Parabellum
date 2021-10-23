@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Craft Crate -->
+
+  <BuildMk18GL_Crate.label>Сделать ящик Mk.18 Mod.0 GL</BuildMk18GL_Crate.label>
+  <BuildMk18GL_Crate.description>Используйте это, чтобы построить Mk.18 Mod.0, тип стационарной пилотируемой турели. В качестве боеприпасов используются гранаты размером 40x46мм.</BuildMk18GL_Crate.description>
+  <BuildMk18GL_Crate.jobString>Собери ящик GL Mk.18 Mod.0.</BuildMk18GL_Crate.jobString>
+
+
+</LanguageData>

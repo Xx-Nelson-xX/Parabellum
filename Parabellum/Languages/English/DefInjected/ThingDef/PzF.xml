@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Ammo -->
+
+  <Ammo_PzF_HEAT.label>149mm Panzerfaust HEAT warhead</Ammo_PzF_HEAT.label>
+  <Ammo_PzF_HEAT.description>Low velocity warhead launched from panzerfaust.</Ammo_PzF_HEAT.description>
+
+  <Ammo_PzF_Frag.label>149mm Panzerfaust Fragmentation warhead</Ammo_PzF_Frag.label>
+  <Ammo_PzF_Frag.description>Low velocity warhead launched from panzerfaust.</Ammo_PzF_Frag.description>
+
+
+  <!-- Projectiles -->
+
+  <Bullet_PzF_HEAT.label>149mm Panzerfaust HEAT warhead</Bullet_PzF_HEAT.label>
+  <Bullet_PzF_Frag.label>149mm Panzerfaust Fragmentation warhead</Bullet_PzF_Frag.label>
+
+
+</LanguageData>

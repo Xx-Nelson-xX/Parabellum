@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- 128mm PaK44/L55 Heavy Anti-Tank Gun -->
+
+  <Pa_PaK44ATG.label>128mm Противотанковая пушка Pak 44/L55</Pa_PaK44ATG.label>
+  <Pa_PaK44ATG.description>Противотанковая пушка PaK 44/L55 128mm.</Pa_PaK44ATG.description>
+
+
+  <!-- 12,8cm FlaK 40/L61 Heavy Anti-Aircraft Gun -->
+
+  <Pa_FlaK40AA.label>Спареная Тяжелая зенитная пушка 12,8cm FlaK 40/L61</Pa_FlaK40AA.label>
+  <Pa_FlaK40AA.description>Спареная Тяжелая зенитная пушка 12,8cm FlaK 40/L61.</Pa_FlaK40AA.description>
+
+
+  <!-- Turret Base(128mm PaK44/L55) -->
+
+  <Turret_PaK44HATGP.label>12,8cm PaK 44 HATGP</Turret_PaK44HATGP.label>
+  <Turret_PaK44HATGP.description>PaK 44/L55 12,8cm Тяжелая противотанковая пушка (платформа), древняя противотанковая пушка конца войны, чрезвычайно мощная, тяжелая и дорогостоящая технология старого мира, способная пробить и нанести серьезный урон всей наземной бронетехнике своей эпохи. это чрезмерно или чрезмерно.</Turret_PaK44HATGP.description>
+
+
+  <!-- Turret Base(12,8cm FlaK 40/L61) -->
+
+  <Turret_FlaK40ZHAAP.label>12,8cm FlaK 40 HAAP</Turret_FlaK40ZHAAP.label>
+  <Turret_FlaK40ZHAAP.description>FlaK 40/L61 12,8cm Тяжелое зенитное орудие (платформа), древнее зенитное орудие середины поздней войны, чрезвычайно мощное, тяжелое и безумно дорогое изделие из старинных технологий, с двойным 12,8-сантиметровым тяжелым стволом и системой полуавтоматического заряжания для улучшения боя. Эффективность, разработанная для борьбы с летающими крепостями своей эпохи, в основном размещенными в хорошо защищенных областях, особенно над зенитными ракетами, хотя и является зенитным орудием, она может эффективно уничтожить любую наземную технику своей эпохи с большого расстояния без труда.</Turret_FlaK40ZHAAP.description>
+
+
+  <!-- Crate Base(Heavy Cannons AA) -->
+
+  <Pa_complexcannon_Crate.label>Сложный ящик с пушкой</Pa_complexcannon_Crate.label>
+  <Pa_complexcannon_Crate.description>Используйте это, чтобы построить сложную пушку, в зависимости от сложности, может использоваться несколько ящиков.</Pa_complexcannon_Crate.description>
+
+
+  <!-- Minified -->
+
+  <MinifiedTurret_Pa_PaK44ATG.label>12,8cm PaK 44 HATGP</MinifiedTurret_Pa_PaK44ATG.label>
+  <MinifiedTurret_Pa_FlaK40ZAA.label>12,8cm FlaK 40 HAAP</MinifiedTurret_Pa_FlaK40ZAA.label>
+
+
+</LanguageData>

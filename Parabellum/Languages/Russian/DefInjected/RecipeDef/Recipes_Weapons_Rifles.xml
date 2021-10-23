@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Huot Automatic Rifle -->
+
+  <BuildHuot.label>Собрать автоматическую винтовку Хуот</BuildHuot.label>
+  <BuildHuot.description>Собирает древнюю автоматическую винтовку, действительно сложную для своего времени, но уже не представляющую проблем. \ Калибр: .303 British</BuildHuot.description>
+  <BuildHuot.jobString>Собрана автоматическая винтовка Хоут.</BuildHuot.jobString>
+
+
+  <!-- Mk.14 Mod.0 Enhanced Marksman Rifle -->
+
+  <BuildMk14.label>Собрать Mk.14 Mod.0</BuildMk14.label>
+  <BuildMk14.description>Собирает модернизированную боевую винтовку для стрелка-стрелка с умеренным уроном, большой дальностью, точной и не очень контролируемой высокой скорострельностью.\Калибр: 7.62x51mm NATO</BuildMk14.description>
+  <BuildMk14.jobString>Собран Mk.14 Mod.0.</BuildMk14.jobString>
+
+
+  <!-- Gewehr Model 1888 Bolt Action Rifle -->
+
+  <BuildG88M.label>Собрать a Gewehr Moдель 1888</BuildG88M.label>
+  <BuildG88M.description>Собирает древнюю болтовую винтовку и используйте ее для борьбы за Отечество. \ Калибр: 8мм Маузер</BuildG88M.description>
+  <BuildG88M.jobString>Собран Gewehr Moдель 1888.</BuildG88M.jobString>
+
+
+  <!-- Mauser 1918 T-Gewehr Bolt Action Anti-Tank Rifle -->
+
+  <BuildTG.label>Собрать Винковку Mauser 1918 T-Gewehr AT </BuildTG.label>
+  <BuildTG.description>Собирает противотанковую винтовку Mauser 1918 T-Rifle и противотанковую винтовку с болтовым затвором для бронированых целей. \ Калибр: 13,2x92ммSR TuF</BuildTG.description>
+  <BuildTG.jobString>Собрана Винтовка Mauser 1918 T-Gewehr AT.</BuildTG.jobString>
+
+
+  <!-- FG 42 Type F/II Dual Purpose Automatic Rifle -->
+
+  <BuildFG42F.label>Собрать FG 42 Tип F(II)</BuildFG42F.label>
+  <BuildFG42F.description>Собирает десантную винтовку 42 Type F (II), Зеленые дьяволы Монте-Кассино.\Калибр: 8mm Mauser Винтовочный</BuildFG42F.description>
+  <BuildFG42F.jobString>Собран FG 42 Tип F(II).</BuildFG42F.jobString>
+
+
+  <!-- MKb 42 (H) -->
+
+  <BuildMKb42H.label>Собрать MKb 42 (H)</BuildMKb42H.label>
+  <BuildMKb42H.description>Build a MaschinenKarabiner 42 (Haenel), an early concept Modern Assault Rifle.\Калибр: 7.92x33mm Kurz</BuildMKb42H.description>
+  <BuildMKb42H.jobString>Собран MKb 42 (H).</BuildMKb42H.jobString>
+
+
+  <!-- StG 44/MP 44 -->
+
+  <BuildStG44AR.label>Собрать StG 44/MP 44</BuildStG44AR.label>
+  <BuildStG44AR.description>Постройте Sturmgewehr 44, МЫ ДОЛЖНЫ ИМЕТЬ ШТУРМГЕВЕР! \ Калибр: 7,92x33 мм Kurz</BuildStG44AR.description>
+  <BuildStG44AR.jobString>Собран StG 44.</BuildStG44AR.jobString>
+
+
+  <!-- StG 45/MP 45(M)/Gerät 06H -->
+
+  <BuildStG45M.label>Собрать StG 45/MP 45(M)/Gerät 06H</BuildStG45M.label>
+  <BuildStG45M.description>Собирает Sturmgewehr 45, Ничего похожего на поездку по сельской местности ... просто жаль, что это не была эта СТРАНА. \ nКалибр: 7,92x33 мм Kurz</BuildStG45M.description>
+  <BuildStG45M.jobString>Собран StG 45(M).</BuildStG45M.jobString>
+
+
+</LanguageData>

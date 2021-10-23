@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Carl Gustav Shell -->
+
+  <CGHE.label>CG High Explosive</CGHE.label>
+  <CGHE.labelShort>CG HE</CGHE.labelShort>
+  <CGHE.description>Explosive round Filled with fragments</CGHE.description>
+
+  <CGHEAT.label>CG High Explosive Anti-Tank</CGHEAT.label>
+  <CGHEAT.labelShort>CG HEAT</CGHEAT.labelShort>
+  <CGHEAT.description>Shape charge explosive capable to penetrate armored target.</CGHEAT.description>
+
+  <CGADM.label>CG Area Defense Munition</CGADM.label>
+  <CGADM.labelShort>CG ADM</CGADM.labelShort>
+  <CGADM.description>Flechette round for close range defense.</CGADM.description>
+
+
+  <!-- 40x29mm Grenades -->
+
+  <GrenadeBB.label>40mm Bean Bag Grenade</GrenadeBB.label>
+  <GrenadeBB.labelShort>40mm BB</GrenadeBB.labelShort>
+  <GrenadeBB.description>Painful but non-lethal round.</GrenadeBB.description>
+
+  <GrenadeF.label>40mm Flechette</GrenadeF.label>
+  <GrenadeF.labelShort>40mm F</GrenadeF.labelShort>
+  <GrenadeF.description>Flechette round for close range defense.</GrenadeF.description>
+
+  <GrenadeStun.label>40mm Stun Grenade</GrenadeStun.label>
+  <GrenadeStun.labelShort>40mm Stun</GrenadeStun.labelShort>
+  <GrenadeStun.description>Non-Lethal Concussion Round.</GrenadeStun.description>
+
+  <GrenadeFoam.label>40mm Foam Grenade</GrenadeFoam.label>
+  <GrenadeFoam.labelShort>40mm Foam</GrenadeFoam.labelShort>
+  <GrenadeFoam.description>Non-Lethal Foam Round, capable to extinghish fire.</GrenadeFoam.description>
+
+
+  <!-- 66mm LAW Rockets -->
+
+  <TEA.label>66mm Incendiary</TEA.label>
+  <TEA.labelShort>TEA</TEA.labelShort>
+  <TEA.description>Incendiary round to scorch an area with flames.</TEA.description>
+
+
+  <!-- Panzerfaust Warheads -->
+
+  <PzFHEAT.label>Panzerfaust HEAT</PzFHEAT.label>
+  <PzFHEAT.labelShort>PzF HEAT</PzFHEAT.labelShort>
+  <PzFHEAT.description>Mass produced Shape Charge Anti-Tank Warhead, excellent counter armored target.</PzFHEAT.description>
+
+  <PzFFrag.label>Panzerfaust Frag</PzFFrag.label>
+  <PzFFrag.labelShort>PzF Frag</PzFFrag.labelShort>
+  <PzFFrag.description>Modified warhead, filled with metal fragments and shrapnels.</PzFFrag.description>
+
+
+  <!-- RPzB Rockets -->
+
+  <RPzBHEAT.label>88mm RPzB HEAT</RPzBHEAT.label>
+  <RPzBHEAT.labelShort>RPzB HEAT</RPzBHEAT.labelShort>
+  <RPzBHEAT.description>Mass produced Shape Charge Anti-Tank Rocket, excellent counter armored target, only work with direct hit since it doesn't has enough fragmentation effects for area damage.</RPzBHEAT.description>
+
+  <RPzBFrag.label>88mm RPzB Frag(ID)</RPzBFrag.label>
+  <RPzBFrag.labelShort>RPzB Frag</RPzBFrag.labelShort>
+  <RPzBFrag.description>Modified Shape Charge Anti-Personnel Rocket, excellent counter soft target, not designed for direct hit since the fragment covers are on the side of the warhead.</RPzBFrag.description>
+
+
+</LanguageData>

@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Hwak MM-1 -->
+
+  <Pa_Hawk.label>Hawk MM-1</Pa_Hawk.label>
+  <Pa_Hawk.description>An ancient simple Riot launcher converted to Military Grenade Launcher, the high capacity and fire rate make it a deadly weapon for suppression, the downside is, the weapon is really heavy, its effective range is shorter due its short barrel and it takes considerably long time to reload it completely.</Pa_Hawk.description>
+
+
+  <!-- RGS GL -->
+
+  <Pa_RGS.label>RGS GL</Pa_RGS.label>
+  <Pa_RGS.description>A compact multibarrel launcher from the ancient civilization, not many people know about its original purpose, but with time and modification gave it a new purpose and usage.</Pa_RGS.description>
+
+
+  <!-- Carl Gustav fm/42 Recoiless anti-tank Rifle -->
+
+  <Pa_CG42R.label>Carl Gustav fm/42 Recoiless anti-tank Rifle</Pa_CG42R.label>
+  <Pa_CG42R.description>One of the best anti-tank rifle of its era, the lightest and the most effective of its caliber in terms, since most of them are barely movable thanks to their size and weight.</Pa_CG42R.description>
+
+
+  <!-- Carl Gustav Recoiless Rifle Mod.U -->
+
+  <Pa_CGR.label>Carl Gustav Recoiless Rifle Mod.U</Pa_CGR.label>
+  <Pa_CGR.description>One of the latest model of Carl Gustav Recoiless Rifle family, after long time of military advancement, the model U(Universal) was created to reduce even more the logistic department, now you can use most of the anti-tank rockets and 90mm cannon shells with the weapon.</Pa_CGR.description>
+
+
+  <!-- M202 FLASH -->
+
+  <Pa_FLASH.label>M202 FLASH</Pa_FLASH.label>
+  <Pa_FLASH.description>M202 FLame Assault SHoulder, a quad rocket launcher, capable to fire incendiary ammo to cover a large area with flamesan ancient launcher system, planned to replace the flamethrower.</Pa_FLASH.description>
+
+
+  <!-- Panzerfaust 60 -->
+
+  <Pa_PzF.label>Panzerfaust 60</Pa_PzF.label>
+  <Pa_PzF.description>An ancient anti-tank grenade launcher, the most effective of its time in terms of antitank capability and mobility, the weapon is very simple to use, easy and cheap to produce, but is not very safe to use without proper training and the effective range of the weapon is really short.</Pa_PzF.description>
+
+
+  <!-- Panzerschreck / Raketenpanzerbüchse 54 -->
+
+  <Pa_RPzB.label>Raketenpanzerbüchse 54/1</Pa_RPzB.label>
+  <Pa_RPzB.description>One of the first Anti-Tank Rocket Launcher and also the most effective one during its war time in terms of anti-tank capability, the downside is is really bulky and heavy.</Pa_RPzB.description>
+
+
+  <!-- M320(K) Grenade Launcher -->
+
+  <Pa_M320K.label>M320(K) Grenade Launcher</Pa_M320K.label>
+  <Pa_M320K.description>An ancient compact launcher, safe, light, compact and very easy to use compared to any launcher of its age, it does have a downside, its effective range suffer way more than any conventional grenade launcher.</Pa_M320K.description>
+
+
+</LanguageData>

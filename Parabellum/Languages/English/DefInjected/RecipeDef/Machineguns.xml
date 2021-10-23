@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Craft Crate -->
+
+  <BuildMachinegun_Crate.label>Build a Machinegun crate</BuildMachinegun_Crate.label>
+  <BuildMachinegun_Crate.description>Use this carte to build most Ancient Machineguns, a type of stationary manned turret, the caliber can vary.</BuildMachinegun_Crate.description>
+  <BuildMachinegun_Crate.jobString>Building Machinegun crate.</BuildMachinegun_Crate.jobString>
+
+
+</LanguageData>

@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Ammo -->
+
+  <Ammo_792x33mmK_FMJ.label>7.92x33mm Короткий патрон 43(FMJ)</Ammo_792x33mmK_FMJ.label>
+  <Ammo_792x33mmK_FMJ.description>Ранний серийный промежуточный патрон, патрон для установки между 9x19mm Parabellum и 7.92x57mm Mauser, достаточно мощный и управляемый для современных штурмовых винтовок.</Ammo_792x33mmK_FMJ.description>
+
+  <Ammo_792x33mmK_AP.label>7.92x33mm Короткий патрон 43(AP)</Ammo_792x33mmK_AP.label>
+  <Ammo_792x33mmK_AP.description>Ранний серийный промежуточный патрон, патрон для установки между 9x19mm Parabellum и 7.92x57mm Mauser, достаточно мощный и управляемый для современных штурмовых винтовок.</Ammo_792x33mmK_AP.description>
+
+  <Ammo_792x33mmK_J.label>7.92x33mm Джаггер патрон 43(J)</Ammo_792x33mmK_J.label>
+  <Ammo_792x33mmK_J.description>Ранний серийный промежуточный патрон, патрон для установки между 9x19mm Parabellum и 7.92x57mm Mauser, достаточно мощный и управляемый для современных штурмовых винтовок.</Ammo_792x33mmK_J.description>
+
+
+  <!-- Projectiles -->
+
+  <Bullet_792x33mmK_FMJ.label>7.92x33mm K пуля (FMJ)</Bullet_792x33mmK_FMJ.label>
+  <Bullet_792x33mmK_AP.label>7.92x33mm K пуля (AP)</Bullet_792x33mmK_AP.label>
+  <Bullet_792x33mmK_J.label>7.92x33mm K пуля (J)</Bullet_792x33mmK_J.label>
+
+
+</LanguageData>

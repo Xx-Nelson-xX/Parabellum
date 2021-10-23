@@ -127,7 +127,7 @@
 		<defName>Bullet_127x42mmB_API</defName>
 		<label>.50 Beowulf bullet (AP-I)</label>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
-			<damageAmountBase>18</damageAmountBase>
+			<damageAmountBase>20</damageAmountBase>
 			<!-- <armorPenetrationBase>0.72</armorPenetrationBase> -->
 			<armorPenetrationSharp>18.2</armorPenetrationSharp>
 			<armorPenetrationBlunt>108</armorPenetrationBlunt>

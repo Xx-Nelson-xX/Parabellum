@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- 3.7cm PaK36/L45 Anti-Tank Gun -->
+
+  <Pa_PaK36ATG.label>3.7cm Pak 36/L45 Anti-Tank Gun</Pa_PaK36ATG.label>
+  <Pa_PaK36ATG.description>PaK 36/L45 3.7cm Anti-Tank Gun.</Pa_PaK36ATG.description>
+
+
+  <!-- 3.7cm Flak 37/L89 Anti-Aircraft Gun -->
+
+  <Pa_Flak37AA.label>3.7cm Flak 37/L89 Anti-Tank Gun</Pa_Flak37AA.label>
+  <Pa_Flak37AA.description>Flak 37/L89 3.7cm Anti-Aircraft Gun.</Pa_Flak37AA.description>
+
+
+  <!-- Turret Base(3.7cm PaK38/L60) -->
+
+  <Turret_Pak36ATG.label>3.7cm PaK 36 ATG</Turret_Pak36ATG.label>
+  <Turret_Pak36ATG.description>PaK 36/L45 3.7cm Anti-Tank Gun, an ancient Early War Light Anti-Tank gun, versatile and relatively light to positioning, kind of obsolete but still can punch a hole on light armored target.</Turret_Pak36ATG.description>
+
+
+  <!-- Turret Base(3.7cm Flak 37/L89) -->
+
+  <Turret_Flak37AA.label>3.7cm Flak 37 AA</Turret_Flak37AA.label>
+  <Turret_Flak37AA.description>Flak 37/L89 3.7cm Anti-Aircraft Gun, an ancient Early War Anti-Aircraft gun, relatively low rate of fire and small size to move around, the 3.7cm shell pack enough firepower to deal with most light armored target.</Turret_Flak37AA.description>
+
+
+  <!-- Crate Base -->
+
+  <Pa_SimpleCannon_Crate.label>Simple Cannon Crate</Pa_SimpleCannon_Crate.label>
+  <Pa_SimpleCannon_Crate.description>Use this to build any ancient light and medium cannon/AT gun.</Pa_SimpleCannon_Crate.description>
+
+
+  <!-- Minified -->
+
+  <MinifiedTurret_Pa_PaK36ATG.label>PaK 36/L45 3.7cm ATG</MinifiedTurret_Pa_PaK36ATG.label>
+  <MinifiedTurret_Pa_Flak37AA.label>PaK 37/L89 3.7cm AA</MinifiedTurret_Pa_Flak37AA.label>
+
+
+</LanguageData>

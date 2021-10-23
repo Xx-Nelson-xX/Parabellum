@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Nebelwerfer 28/30/32cm -->
+
+  <Pa_NbW21cm.label>Nebelwerfer</Pa_NbW21cm.label>
+  <Pa_NbW21cm.description>Nebelwefer attached to a Mobile platform.</Pa_NbW21cm.description>
+
+
+  <!-- Turret Base(NbW 28/30/32cm) -->
+
+  <Turret_NbW21cm.label>Nebelwerfer(15cm/21cm)</Turret_NbW21cm.label>
+  <Turret_NbW21cm.description>An ancient Multi-barrel Heavy Rocket Launcher, robust and simple, feared by many, one of the few cost-efficient weapon from the Wunderwaffen Project, with improved recket ballistic that increased more than 60% of its range and improved projectile speed, but reduce a lot of it damage effects as trade off.</Turret_NbW21cm.description>
+
+
+  <!-- Minified -->
+
+  <MinifiedTurret_Pa_NbW21cm.label>Nebelwefer turret</MinifiedTurret_Pa_NbW21cm.label>
+
+
+</LanguageData>

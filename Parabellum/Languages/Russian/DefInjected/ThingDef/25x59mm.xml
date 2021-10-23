@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Ammo -->
+
+  <Ammo_25x59mmGrenade_HEAB.label>25x59mm граната (HEAB)</Ammo_25x59mmGrenade_HEAB.label>
+  <Ammo_25x59mmGrenade_HEAB.description>Выстрел из высокоскоростной гранаты из системы OSW / AMPR.</Ammo_25x59mmGrenade_HEAB.description>
+
+  <Ammo_25x59mmGrenade_HEDP.label>25x59mm граната (HEDP)</Ammo_25x59mmGrenade_HEDP.label>
+  <Ammo_25x59mmGrenade_HEDP.description>Выстрел из высокоскоростной гранаты из системы OSW / AMPR.</Ammo_25x59mmGrenade_HEDP.description>
+
+  <Ammo_25x59mmGrenade_HEI.label>25x59mm граната (HEI)</Ammo_25x59mmGrenade_HEI.label>
+  <Ammo_25x59mmGrenade_HEI.description>Выстрел из высокоскоростной гранаты из системы OSW / AMPR.</Ammo_25x59mmGrenade_HEI.description>
+
+  <Ammo_25x59mmGrenade_HEEMP.label>25x59mm граната (HE-EMP)</Ammo_25x59mmGrenade_HEEMP.label>
+  <Ammo_25x59mmGrenade_HEEMP.description>Выстрел из высокоскоростной гранаты из системы OSW / AMPR.</Ammo_25x59mmGrenade_HEEMP.description>
+
+
+  <!-- Projectiles -->
+
+  <Bullet_25x59mmGrenade_HEAB.label>25x59mm граната (HEAB)</Bullet_25x59mmGrenade_HEAB.label>
+  <Bullet_25x59mmGrenade_HEDP.label>25x59mm граната (HEDP)</Bullet_25x59mmGrenade_HEDP.label>
+  <Bullet_25x59mmGrenade_HEI.label>25x59mm граната (HEI)</Bullet_25x59mmGrenade_HEI.label>
+  <Bullet_25x59mmGrenade_HEEMP.label>25x59mm граната (HE-EMP)</Bullet_25x59mmGrenade_HEEMP.label>
+
+
+</LanguageData>

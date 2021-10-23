@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- 128mm PaK44/L55 Heavy Anti-Tank Gun -->
+
+  <Pa_PaK44ATG.label>128mm Pak 44/L55 Anti-Tank Gun</Pa_PaK44ATG.label>
+  <Pa_PaK44ATG.description>PaK 44/L55 128mm Anti-Tank Gun.</Pa_PaK44ATG.description>
+
+
+  <!-- 12,8cm FlaK 40/L61 Heavy Anti-Aircraft Gun -->
+
+  <Pa_FlaK40AA.label>Dual 12,8cm FlaK 40/L61 Heavy Anti-Aircraft Gun</Pa_FlaK40AA.label>
+  <Pa_FlaK40AA.description>Dual 12,8cm FlaK 40/L61 Heavy Anti-Aircraft Gun.</Pa_FlaK40AA.description>
+
+
+  <!-- Turret Base(128mm PaK44/L55) -->
+
+  <Turret_PaK44HATGP.label>12,8cm PaK 44 HATGP</Turret_PaK44HATGP.label>
+  <Turret_PaK44HATGP.description>PaK 44/L55 12,8cm Heavy Anti-Tank Gun(Platform), an ancient Late War Anti-Tank gun, extremely powerful, heavy and expensive old world technology, capable to penetrate and cause serious damage for all the ground armored vehicle of its era, to the point of consider it excessive or overkill.</Turret_PaK44HATGP.description>
+
+
+  <!-- Turret Base(12,8cm FlaK 40/L61) -->
+
+  <Turret_FlaK40ZHAAP.label>12,8cm FlaK 40 HAAP</Turret_FlaK40ZHAAP.label>
+  <Turret_FlaK40ZHAAP.description>FlaK 40/L61 12,8cm Heavy Anti-Aircraft Gun(Platform), an ancient Mid-Late War Anti-Aircraft gun, extremely powerful, heavy and insanely expensive piece of old world technology, with dual 12,8cm heavy barrel and a Semi-Autoloading system to improve its combat effectiveness, designed to deal with flying fortress of its era, mostly placed in heavily defended area, specially over Flakturms, although is an AA gun, it can effectively destroy any land vehicle of its era from long range without sweat.</Turret_FlaK40ZHAAP.description>
+
+
+  <!-- Crate Base(Heavy Cannons AA) -->
+
+  <Pa_complexcannon_Crate.label>Complex Cannon Crate</Pa_complexcannon_Crate.label>
+  <Pa_complexcannon_Crate.description>Use this to build complex cannon piece, depends the complexity, it might use multiple crates.</Pa_complexcannon_Crate.description>
+
+
+  <!-- Minified -->
+
+  <MinifiedTurret_Pa_PaK44ATG.label>12,8cm PaK 44 HATGP</MinifiedTurret_Pa_PaK44ATG.label>
+  <MinifiedTurret_Pa_FlaK40ZAA.label>12,8cm FlaK 40 HAAP</MinifiedTurret_Pa_FlaK40ZAA.label>
+
+
+</LanguageData>

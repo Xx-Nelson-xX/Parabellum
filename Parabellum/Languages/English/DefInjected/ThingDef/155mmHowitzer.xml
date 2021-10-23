@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Ammo -->
+
+  <Ammo_155mmHowitzerShell_Nuke.label>155mm howitzer shell (AFAP)</Ammo_155mmHowitzerShell_Nuke.label>
+  <Ammo_155mmHowitzerShell_Nuke.description>W48/XM454 Artillery Fired Atomic Projectile, aka. AFAP, a tactical nuclear warhead, capable of being fired from any standard 155mm(6.1") howitzer.\\n(Warning: Use it only when you want part of your map wiped to nothing but plain terrain filled with relatively long lasting radiation after a wave of EMP blast.)</Ammo_155mmHowitzerShell_Nuke.description>
+
+  <Ammo_155mmHowitzerShell_ADAM.label>155mm howitzer shell (ADAM)</Ammo_155mmHowitzerShell_ADAM.label>
+  <Ammo_155mmHowitzerShell_ADAM.description>155 mm (6.1") ADAM, aka. Area Denial Artillery Munition, artillery projectile packed with few dozen of land mines, in this case M67/M72 AP mines, designed for Area Denial, to disrupt sizeable zone by long range rapid land mine deploying.</Ammo_155mmHowitzerShell_ADAM.description>
+
+
+  <!-- Projectiles -->
+
+  <Bullet_155mmHowitzerShell_Nuke.label>155mm howitzer shell (AFAP)</Bullet_155mmHowitzerShell_Nuke.label>
+  <Bullet_155mmHowitzerShell_ADAM.label>155mm howitzer shell (ADAM)</Bullet_155mmHowitzerShell_ADAM.label>
+
+
+</LanguageData>

@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Ammo -->
+
+  <Ammo_120mmCannonShell_Canister.label>120mm cannon shell (Canister)</Ammo_120mmCannonShell_Canister.label>
+  <Ammo_120mmCannonShell_Canister.description>Close Range Anti-Personel ammunition for 120mm cannons.</Ammo_120mmCannonShell_Canister.description>
+
+  <Ammo_120mmCannonShell_HESH.label>120mm cannon shell (HESH)</Ammo_120mmCannonShell_HESH.label>
+  <Ammo_120mmCannonShell_HESH.description>High-Explosive Squash Head ammunition for 120mm cannons.</Ammo_120mmCannonShell_HESH.description>
+
+  <Ammo_120mmCannonShell_Stun.label>120mm M337 cannon shell (Stun)</Ammo_120mmCannonShell_Stun.label>
+  <Ammo_120mmCannonShell_Stun.description>Special 120mm Less-than-Lethal Stun(Flash Bang) ammunition for 120mm cannons.\n(Warning: Direct hit for human size pawn can still cause serious damage)</Ammo_120mmCannonShell_Stun.description>
+
+
+  <!-- Projectiles -->
+
+  <Bullet_120mmCannonShell_Canister.label>120mm M1028 cannon shell (Canister)</Bullet_120mmCannonShell_Canister.label>
+  <Bullet_120mmCannonShell_HESH.label>120mm cannon shell (HESH)</Bullet_120mmCannonShell_HESH.label>
+  <Bullet_120mmCannonShell_Stun.label>120mm M337 cannon shell (Stun)</Bullet_120mmCannonShell_Stun.label>
+
+
+</LanguageData>

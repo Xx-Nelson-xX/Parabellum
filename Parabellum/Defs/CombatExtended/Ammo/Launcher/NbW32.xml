@@ -51,12 +51,12 @@
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<statBases>
-			<MarketValue>280</MarketValue>
+			<MarketValue>320</MarketValue>
 			<Mass>82</Mass>
 			<Bulk>132.6</Bulk>
 		</statBases>
 		<ammoClass>28cmHE</ammoClass>
-		<generateAllowChance>0.75</generateAllowChance>
+		<generateAllowChance>0.6</generateAllowChance>
 		<cookOffProjectile>Bullet_28cmNbWRocket</cookOffProjectile>
 	</ThingDef>
 	
@@ -69,12 +69,12 @@
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<statBases>
-			<MarketValue>340</MarketValue>
+			<MarketValue>400</MarketValue>
 			<Mass>127</Mass>
 			<Bulk>161.4</Bulk>
 		</statBases>
 		<ammoClass>30cmHE</ammoClass>
-		<generateAllowChance>0.45</generateAllowChance>
+		<generateAllowChance>0.3</generateAllowChance>
 		<cookOffProjectile>Bullet_30cmNbWRocket</cookOffProjectile>
 	</ThingDef>
 	
@@ -87,7 +87,7 @@
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<statBases>
-			<MarketValue>300</MarketValue>
+			<MarketValue>340</MarketValue>
 			<Mass>79</Mass>
 			<Bulk>147.4</Bulk>
 			<Flammability>1.5</Flammability>
@@ -257,6 +257,7 @@
 				<li>ComponentIndustrial</li>
 			</thingDefs>
 		</fixedIngredientFilter>
+		<researchPrerequisite>Rockets_C1</researchPrerequisite>
 		<products>
 			<Ammo_28cmNbWRocket>1</Ammo_28cmNbWRocket>
 		</products>
@@ -317,6 +318,7 @@
 				<li>ComponentIndustrial</li>
 			</thingDefs>
 		</fixedIngredientFilter>
+		<researchPrerequisite>Rockets_D1</researchPrerequisite>
 		<products>
 			<Ammo_30cmNbWRocket>1</Ammo_30cmNbWRocket>
 		</products>
@@ -386,6 +388,7 @@
 				<li>ComponentIndustrial</li>
 			</thingDefs>
 		</fixedIngredientFilter>
+		<researchPrerequisite>Rockets_C1</researchPrerequisite>
 		<products>
 			<Ammo_32cmNbWRocket>1</Ammo_32cmNbWRocket>
 		</products>

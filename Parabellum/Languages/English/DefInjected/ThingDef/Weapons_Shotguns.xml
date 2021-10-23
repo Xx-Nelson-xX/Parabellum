@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- DP-12 -->
+
+  <Pa_DP.label>DP-12 Double-barreled Pumpshotgun</Pa_DP.label>
+  <Pa_DP.description>The DP-12, a bullpup double-barreled pump action shotgun with double magazine tubes, the bullpup system slightly increase the effective range of the weapon but also decrease its pellets spread, making it less effective dealing with mass in short range but really deadly counter single pawn.</Pa_DP.description>
+
+
+  <!-- HK CAWS -->
+
+  <Pa_CAWS.label>HK CAWS</Pa_CAWS.label>
+  <Pa_CAWS.description>The CAWS, as know as Close Assault Weapon System, was a prototype bullpup automatic shotgun from an ancient military project, even though the project and production was cancelled for its time, the new era find it a perfect weapon for assault mission and restarted its production with new modifications: long barrel to increase its effective range and a low power hybrid scope for easy targeting, both modification make the weapon exceptionally accurate, but not so good for mass control.</Pa_CAWS.description>
+
+
+  <!-- Serbu Super Shorty -->
+
+  <Pa_SSS.label>Serbu Super Shorty</Pa_SSS.label>
+  <Pa_SSS.description>A super compacted pump action shotgun, a perfect weapon for self defense in CQC situation, very concealable and light to carry around.</Pa_SSS.description>
+
+
+  <!-- Winchester Model 1887 -->
+
+  <Pa_W1887L.label>Winchester Model 1887</Pa_W1887L.label>
+  <Pa_W1887L.description>An Ancient Level Action Shotgun, Model 1887 was one of the first successful repeating shotguns, even though is not what John Browning suggested for a repeating action shotgun, but since he is working for "Winchester Repeating Arms Company", the shotgun was designed with breech-loading, rolling block lever-action mechanism for brand recognition.</Pa_W1887L.description>
+
+
+  <!-- Winchester Model 1887 "Mare's Leg" -->
+
+  <Pa_W1887S.label>Winchester Model 1887(S)</Pa_W1887S.label>
+  <Pa_W1887S.description>The Winchester Model 1887 "Mare's Leg", with 18 inches short barreled version of Winchester 1887 and shorten the stock to make it even more portable, the downside is its effective range is reduced.</Pa_W1887S.description>
+
+
+  <!-- Winchester Model 1897(Trench Gun) -->
+
+  <Pa_W1897T.label>Winchester Model 1897(T)</Pa_W1897T.label>
+  <Pa_W1897T.description>An Ancient Pump Action Shotgun, Trench Grade, modified specifically for urban combat and trench cleaning/assault, with 20 in barrel, heat shield and M1917 Bayonet, entire CQC package in one.</Pa_W1897T.description>
+  <Pa_W1897T.tools.0.label>bayonet</Pa_W1897T.tools.0.label>
+  <Pa_W1897T.tools.1.label>blade</Pa_W1897T.tools.1.label>
+  <Pa_W1897T.tools.2.label>stock</Pa_W1897T.tools.2.label>
+
+
+  <!-- Winchester Model 1897(Standard 30 in) -->
+
+  <Pa_W1897L.label>Winchester Model 1897(L)</Pa_W1897L.label>
+  <Pa_W1897L.description>An Ancient Pump Action Shotgun, Standard Grade, the grade before trench war was a thing, with 30 in barrel, better pellet concentration and longer effective range, for people who like trap shooting and hunters.</Pa_W1897L.description>
+
+
+</LanguageData>

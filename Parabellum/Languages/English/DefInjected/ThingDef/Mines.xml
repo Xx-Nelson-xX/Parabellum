@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <Pa_Trap_SMine.label>S-Mine Trap</Pa_Trap_SMine.label>
+  <Pa_Trap_SMine.description>A robust ancient anti-personnel mine, simple, small and Lethal, require target step on it to trigger the delay fuse.</Pa_Trap_SMine.description>
+
+  <Pa_Trap_4kgMine.label>Improvised 4kg Mine Trap</Pa_Trap_4kgMine.label>
+  <Pa_Trap_4kgMine.description>A improvised High Explosive mine, very Lethal and good counter any ground unit, require target step on it to trigger the delay fuse.</Pa_Trap_4kgMine.description>
+
+  <Pa_Trap_M67Mine.label>M67 mine Trap</Pa_Trap_M67Mine.label>
+  <Pa_Trap_M67Mine.description>An ancient anti-personnel mine of FASCAM, capable to fit few dozen of it inside an artillery shell such as ADAM for long range rapid placement, simple, small and deadly, require target step on it to trigger the delay fuse.</Pa_Trap_M67Mine.description>
+
+
+</LanguageData>

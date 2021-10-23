@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Craft Crate -->
+
+  <BuildMachinegun_Crate.label>Сделать ящик для пулемета</BuildMachinegun_Crate.label>
+  <BuildMachinegun_Crate.description>Используйте этот ящик для создания большинства древних пулеметов, типа стационарной пилотируемой башни, калибр может варьироваться</BuildMachinegun_Crate.description>
+  <BuildMachinegun_Crate.jobString>Ящик для постройки пулемета.</BuildMachinegun_Crate.jobString>
+
+
+</LanguageData>

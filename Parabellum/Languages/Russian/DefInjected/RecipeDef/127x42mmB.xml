@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Recipes -->
+
+  <MakeAmmo_127x42mmB_FMJ.label>Сделать .50 Beowulf (FMJ) картридж x80</MakeAmmo_127x42mmB_FMJ.label>
+  <MakeAmmo_127x42mmB_FMJ.description>Делает 80 .50 Beowulf(FMJ) картридж.</MakeAmmo_127x42mmB_FMJ.description>
+  <MakeAmmo_127x42mmB_FMJ.jobString>Сделано .50 Beowulf (FMJ) картридж.</MakeAmmo_127x42mmB_FMJ.jobString>
+
+  <MakeAmmo_127x42mmB_API.label>Сделать .50 Beowulf (AP-I) картридж x80</MakeAmmo_127x42mmB_API.label>
+  <MakeAmmo_127x42mmB_API.description>Делает 80 .50 Beowulf (AP-I) картридж.</MakeAmmo_127x42mmB_API.description>
+  <MakeAmmo_127x42mmB_API.jobString>Сделано .50 Beowulf (AP-I) картридж.</MakeAmmo_127x42mmB_API.jobString>
+
+  <MakeAmmo_127x42mmB_HP.label>Сделать .50 Beowulf (HP) картридж x80</MakeAmmo_127x42mmB_HP.label>
+  <MakeAmmo_127x42mmB_HP.description>Делает 80 .50 Beowulf (HP) картридж.</MakeAmmo_127x42mmB_HP.description>
+  <MakeAmmo_127x42mmB_HP.jobString>Сделано .50 Beowulf (HP) картридж.</MakeAmmo_127x42mmB_HP.jobString>
+
+  <MakeAmmo_127x42mmB_EMP.label>Сделать .50 Beowulf (EMP) картридж x80</MakeAmmo_127x42mmB_EMP.label>
+  <MakeAmmo_127x42mmB_EMP.description>Делает 80 .50 Beowulf (EMP) картридж.</MakeAmmo_127x42mmB_EMP.description>
+  <MakeAmmo_127x42mmB_EMP.jobString>Сделано .50 Beowulf (EMP) картридж.</MakeAmmo_127x42mmB_EMP.jobString>
+
+
+</LanguageData>

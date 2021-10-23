@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Craft Crate(Simple Cannon Crate) -->
+
+  <Buildsimplecannon_Crate.label>Сделать простой пушечный ящик</Buildsimplecannon_Crate.label>
+  <Buildsimplecannon_Crate.description>Ящик содержит детали для сборки любой древней легкой и средней пушки / пушки, в зависимости от сложности пушки / пушки, может потребоваться несколько ящиков.</Buildsimplecannon_Crate.description>
+  <Buildsimplecannon_Crate.jobString>Строим простой пушечный ящик.</Buildsimplecannon_Crate.jobString>
+
+
+</LanguageData>

@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Nebelwerfer 28/30/32cm -->
+
+  <Pa_NbW32cm.label>Nebelwerfer</Pa_NbW32cm.label>
+  <Pa_NbW32cm.description>Nebelwerfer прикреплен к мобильной платформе.</Pa_NbW32cm.description>
+
+
+  <!-- Wurfrahmen -->
+
+  <Pa_NbW.label>Nebelwerfer</Pa_NbW.label>
+  <Pa_NbW.description>Nebelwefer прикреплен к платформе Скелета.</Pa_NbW.description>
+
+
+  <!-- Turret Base(NbW 28/30/32cm) -->
+
+  <Turret_NbW32cm.label>Nebelwerfer(28cm/30cm/32cm)</Turret_NbW32cm.label>
+  <Turret_NbW32cm.description>Древняя многоствольная тяжелая ракетная установка, прочная и простая, которую многие опасаются, одно из немногих экономичных орудий проекта Вундерваффен, но ракетный снаряд слишком тяжелый и сильно снижает его эффективную дальность.</Turret_NbW32cm.description>
+
+
+  <!-- Turret Base(Wurfrahmen) -->
+
+  <Turret_NbW.label>Wurfrahmen</Turret_NbW.label>
+  <Turret_NbW.description>Одиночная рама для пусковой установки Wurfrahmen, которую можно разместить в любом открытом поле со своей опорой / платформой.</Turret_NbW.description>
+
+
+  <!-- Crate Base -->
+
+  <Pa_NbW_Crate.label>Nebelwerfer ящик</Pa_NbW_Crate.label>
+  <Pa_NbW_Crate.description>Используйте это, чтобы построить Nebelwerfer</Pa_NbW_Crate.description>
+
+
+  <!-- Minified -->
+
+  <MinifiedTurret_Pa_NbW32cm.label>Nebelwefer турель</MinifiedTurret_Pa_NbW32cm.label>
+  <MinifiedTurret_Pa_NbW.label>Wurfrahmen турель</MinifiedTurret_Pa_NbW.label>
+
+
+</LanguageData>

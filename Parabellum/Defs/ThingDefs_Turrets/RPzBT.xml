@@ -218,7 +218,7 @@
 
 	<ThingDef ParentName="TurretMannedBase">
 		<defName>Turret_RW</defName>
-		<label>88mm Raketenwerfer</label>
+		<label>88mm Raketenwerfer 43</label>
 		<graphicData>
 			<texPath>Things/Building/Security/Base/NbW32_Base</texPath>
 			<drawSize>(1.6,1.6)</drawSize>
@@ -234,7 +234,7 @@
 			<Bulk>123.8</Bulk>
 		</statBases>
 		<techLevel>Industrial</techLevel>
-		<description>Raketenpanzerbüchse 54/1 Multiple Anti-Tank Rocket Launcher, an ancient Last Ditch Effort Improvised weapon, combine 6 RPzB 54/1 to make a turret platform and slap it over a tractor or any platform for anti-tank purpose.</description>
+		<description>88mm Raketenwerfer 43 Anti-Tank Rocket Launcher, mid-late war Anti-Tank Rocket Launcher, since the Hollow Shape Charge warhead showed its effectivenes counter armored target, the focus went to a new development of light weight Anti-Tank weapons, even thought Raketenwefer 43 performance hit the mark, it became obsolete considering RPzB 54 is way more cost efficient to produce and way more portable, the only adwantage it has is the effective range and its accuracy.</description>
 		<size>(1,1)</size>
 		<stuffCategories>
 			<li>RuggedMetallic</li>
@@ -396,7 +396,10 @@
 				<li>USLDBar</li>
              </categories>
 		</fixedIngredientFilter>
-		<researchPrerequisite>Rockets_C1</researchPrerequisite>
+		<recipeUsers>
+			<li>FabricationBench</li>
+		</recipeUsers>
+		<researchPrerequisite>Parabellum_Gamma</researchPrerequisite>
 	</RecipeDef>
 
 	<!-- ================== Minified ================== -->

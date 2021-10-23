@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Craft Crate -->
+
+  <BuilSPG9M_Crate.label>Собрать ящик SPG-9M RATG</BuilSPG9M_Crate.label>
+  <BuilSPG9M_Crate.description>Используйте это, чтобы построить SPG-9М RATG, тип стационарной пилотируемой турели. В качестве боеприпасов используются гранаты СПГ-9.</BuilSPG9M_Crate.description>
+  <BuilSPG9M_Crate.jobString>Build SPG-9M RATG crate.</BuilSPG9M_Crate.jobString>
+
+
+</LanguageData>

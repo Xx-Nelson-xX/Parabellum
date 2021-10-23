@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Recipes -->
+
+  <MakeAmmo_25x59mmGrenade_HEAB.label>make 25x59mm HEAB grenades x50</MakeAmmo_25x59mmGrenade_HEAB.label>
+  <MakeAmmo_25x59mmGrenade_HEAB.description>Craft 50 25x59mm HEAB grenades.</MakeAmmo_25x59mmGrenade_HEAB.description>
+  <MakeAmmo_25x59mmGrenade_HEAB.jobString>Making 25x59mm HEAB grenades.</MakeAmmo_25x59mmGrenade_HEAB.jobString>
+
+  <MakeAmmo_25x59mmGrenade_HEDP.label>make 25x59mm HEDP grenades x50</MakeAmmo_25x59mmGrenade_HEDP.label>
+  <MakeAmmo_25x59mmGrenade_HEDP.description>Craft 50 25x59mm HEDP grenades.</MakeAmmo_25x59mmGrenade_HEDP.description>
+  <MakeAmmo_25x59mmGrenade_HEDP.jobString>Making 25x59mm HEDP grenades.</MakeAmmo_25x59mmGrenade_HEDP.jobString>
+
+  <MakeAmmo_25x59mmGrenade_HEI.label>make 25x59mm HEI grenades x50</MakeAmmo_25x59mmGrenade_HEI.label>
+  <MakeAmmo_25x59mmGrenade_HEI.description>Craft 50 25x59mm HEI grenades.</MakeAmmo_25x59mmGrenade_HEI.description>
+  <MakeAmmo_25x59mmGrenade_HEI.jobString>Making 25x59mm HEI grenades.</MakeAmmo_25x59mmGrenade_HEI.jobString>
+
+  <MakeAmmo_25x59mmGrenade_HEEMP.label>make 25x59mm HE-EMP grenades x50</MakeAmmo_25x59mmGrenade_HEEMP.label>
+  <MakeAmmo_25x59mmGrenade_HEEMP.description>Craft 50 25x59mm HE-EMP grenades.</MakeAmmo_25x59mmGrenade_HEEMP.description>
+  <MakeAmmo_25x59mmGrenade_HEEMP.jobString>Making 25x59mm HE-EMP grenades.</MakeAmmo_25x59mmGrenade_HEEMP.jobString>
+
+
+</LanguageData>

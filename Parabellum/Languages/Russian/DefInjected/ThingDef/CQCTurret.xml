@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Improvised turret gun -->
+
+  <Pa_ShotgunT.label>Сторожевой Дробовик</Pa_ShotgunT.label>
+  <Pa_ShotgunT.description>Автомат AA12x2 с простым датчиком и опорной стойкой, прикрепленный к башне.</Pa_ShotgunT.description>
+
+  <Pa_AntiR.label>Сторожевой по борьбе с беспорядками</Pa_AntiR.label>
+  <Pa_AntiR.description>Простая автопушка небольшого размера, такая как турель, не способная стрелять никакими стандартными боеприпасами.</Pa_AntiR.description>
+
+
+  <!-- TurretBase - Improvised Shotgun turrets(AI) -->
+
+  <Turret_ShotgunT.label>IASST</Turret_ShotgunT.label>
+  <Turret_ShotgunT.description>Самодельная турель с автоматическим дробовиком (IASST), импровизированная турель, управляемая ИИ, с двумя AA-12, которая автоматически стреляет по ближайшим врагам. Для работы требуется 500 Вт. \ NКалибр: 0,12 манометра</Turret_ShotgunT.description>
+
+
+  <!-- TurretBase - Anti-Riot(AI) -->
+
+  <Turret_AntiR.label>Сторожевая турель для подавления беспорядков</Turret_AntiR.label>
+  <Turret_AntiR.description>Управляемая ИИ турель с адаптивным стволом, стреляющая по мирным протестующим мобам, не является боевой турелью. Для работы требуется 500 Вт. \ NКалибр: любые нелетальные и менее смертельные боеприпасы.</Turret_AntiR.description>
+
+
+  <!-- Minified -->
+
+  <Minified_ShotgunT.label>IASST</Minified_ShotgunT.label>
+  <Minified_AntiR.label>Сторожевая турель для подавления беспорядков</Minified_AntiR.label>
+
+
+</LanguageData>

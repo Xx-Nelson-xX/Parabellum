@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Recipes -->
+
+  <MakeAmmo_25x59mmGrenade_HEAB.label>Сделать 25x59mm HEAB гранаты x50</MakeAmmo_25x59mmGrenade_HEAB.label>
+  <MakeAmmo_25x59mmGrenade_HEAB.description>Делает 50 25x59mm HEAB гранаты.</MakeAmmo_25x59mmGrenade_HEAB.description>
+  <MakeAmmo_25x59mmGrenade_HEAB.jobString>Сделано 25x59mm HEAB гранаты.</MakeAmmo_25x59mmGrenade_HEAB.jobString>
+
+  <MakeAmmo_25x59mmGrenade_HEDP.label>Сделать 25x59mm HEDP гранаты x50</MakeAmmo_25x59mmGrenade_HEDP.label>
+  <MakeAmmo_25x59mmGrenade_HEDP.description>Делает 50 25x59mm HEDP гранаты.</MakeAmmo_25x59mmGrenade_HEDP.description>
+  <MakeAmmo_25x59mmGrenade_HEDP.jobString>Сделано 25x59mm HEDP гранаты.</MakeAmmo_25x59mmGrenade_HEDP.jobString>
+
+  <MakeAmmo_25x59mmGrenade_HEI.label>Сделать 25x59mm HEI гранаты x50</MakeAmmo_25x59mmGrenade_HEI.label>
+  <MakeAmmo_25x59mmGrenade_HEI.description>Делает 50 25x59mm HEI гранаты.</MakeAmmo_25x59mmGrenade_HEI.description>
+  <MakeAmmo_25x59mmGrenade_HEI.jobString>Сделано 25x59mm HEI гранаты.</MakeAmmo_25x59mmGrenade_HEI.jobString>
+
+  <MakeAmmo_25x59mmGrenade_HEEMP.label>Сделать 25x59mm HE-EMP гранаты x50</MakeAmmo_25x59mmGrenade_HEEMP.label>
+  <MakeAmmo_25x59mmGrenade_HEEMP.description>Делает 50 25x59mm HE-EMP гранаты.</MakeAmmo_25x59mmGrenade_HEEMP.description>
+  <MakeAmmo_25x59mmGrenade_HEEMP.jobString>Сделано 25x59mm HE-EMP гранаты.</MakeAmmo_25x59mmGrenade_HEEMP.jobString>
+
+
+</LanguageData>

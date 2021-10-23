@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Model 24 Stielhandgranate -->
+
+  <Proj_GrenadePotatoM.label>Model 24 Stielhandgranate</Proj_GrenadePotatoM.label>
+
+  <Pa_GrenadePotatoM.label>Model 24 Stielhandgranate</Pa_GrenadePotatoM.label>
+  <Pa_GrenadePotatoM.description>Cheap mass produced high explosive assault grenades, relatively low damage and has no fragmentation effects, the grenade length and weight improve the range of effectiveness, designed to stun target with blast effect.</Pa_GrenadePotatoM.description>
+  <Pa_GrenadePotatoM.verbs.0.label>throw potato masher</Pa_GrenadePotatoM.verbs.0.label>
+
+
+  <!-- Model 24 Stielhandgranate (Splitter) -->
+
+  <Proj_GrenadeM24S.label>Model 24 Stielhandgranate with Splittlerring</Proj_GrenadeM24S.label>
+
+  <Pa_GrenadeM24S.label>Model 24 Stielhandgranate with Splittlerring</Pa_GrenadeM24S.label>
+  <Pa_GrenadeM24S.description>Almost same as the standard M24 Stick grenade but with Splitterring cover around the warhead, increase it fragmentation damage, but reducing the blast with slightly weight increase.</Pa_GrenadeM24S.description>
+  <Pa_GrenadeM24S.verbs.0.label>throw M24 with Splittering</Pa_GrenadeM24S.verbs.0.label>
+
+
+  <!-- Model 24 Nebelgranate -->
+
+  <Proj_GrenadeM24Nb.label>Model 24 Nebelgranate</Proj_GrenadeM24Nb.label>
+
+  <Pa_GrenadeN24Nb.label>Model 24 Nebelgranate</Pa_GrenadeN24Nb.label>
+  <Pa_GrenadeN24Nb.description>M24 stick grenade with modified smoke warhead.</Pa_GrenadeN24Nb.description>
+  <Pa_GrenadeN24Nb.verbs.0.label>throw M24 Nebelgranate</Pa_GrenadeN24Nb.verbs.0.label>
+
+
+  <!-- Model 24 Stielhandgranate Bundle -->
+
+  <Proj_GrenadeM24B.label>Model 24 Bundler Charge</Proj_GrenadeM24B.label>
+
+  <Pa_GrenadeM24B.label>Model 24 Bundler Charge</Pa_GrenadeM24B.label>
+  <Pa_GrenadeM24B.description>A robust solution for anti-tank, by wraping 6 explosive warheads of M24 with a single M24 stick grenade, higly increase the damage and blast radius, but also decrease a lot of its effective range due increase weight.</Pa_GrenadeM24B.description>
+  <Pa_GrenadeM24B.verbs.0.label>throw M24 Bundler Charge</Pa_GrenadeM24B.verbs.0.label>
+
+
+  <!-- 4kg Demolition Grenade -->
+
+  <Proj_Grenade4kg.label>4kg Demolition Charge</Proj_Grenade4kg.label>
+
+  <Pa_Grenade4kg.label>4kg Demolition Charge</Pa_Grenade4kg.label>
+  <Pa_Grenade4kg.description>An engineer demolition charge, very heavy and powerful enough to demolish fortification.</Pa_Grenade4kg.description>
+  <Pa_Grenade4kg.verbs.0.label>throw 4kg Demolition Charge</Pa_Grenade4kg.verbs.0.label>
+
+
+  <!-- RGO Impact Grenade -->
+
+  <Proj_RGO.label>RGO Impact Grenade</Proj_RGO.label>
+
+  <Pa_RGO.label>RGO Impact Grenade</Pa_RGO.label>
+  <Pa_RGO.description>An special assault grenade with impact fuse for room cleaning and breaching.</Pa_RGO.description>
+
+
+  <!-- Panzerwurmine Anti-Tank Impact Grenade -->
+
+  <Pa_PWM.label>PWM(K)</Pa_PWM.label>
+  <Pa_PWM.description>Panzerwurmine(Kurz), Shape Charge Anti-Tank Impact Grenade, effective counter most armored vehicle of its era, not very effective counter infantry unless you hit them directly with it.</Pa_PWM.description>
+
+
+</LanguageData>

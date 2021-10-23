@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Craft Crate -->
+
+  <BuildWombat_Crate.label>Сделать ящик 120mm пушки Wombat.</BuildWombat_Crate.label>
+  <BuildWombat_Crate.description>Используйте это, чтобы построить 120mm безоткатную противотанковую пушку Wombat, тип стационарной пилотируемой турели. В качестве боеприпасов используется 120мм пушечный снаряд.</BuildWombat_Crate.description>
+  <BuildWombat_Crate.jobString>Постройте ящик для безоткатной противотанковой пушки Wombat 120mm.</BuildWombat_Crate.jobString>
+
+
+</LanguageData>

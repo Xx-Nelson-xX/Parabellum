@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- De Lisle Commando Carbine -->
+
+  <Pa_Delisle.label>Карабин Де Лиль Коммандос</Pa_Delisle.label>
+  <Pa_Delisle.description>Встроенный карабин пистолетного калибра с глушителем для древнего спецназа. Посредственный урон, низкая скорострельность, высокая точность и приличная эффективная дальность.</Pa_Delisle.description>
+
+
+  <!-- M4.50 Beowulf -->
+
+  <Pa_M4Beowulf.label>M4.50 Beowulf SC</Pa_M4Beowulf.label>
+  <Pa_M4Beowulf.description>M4.50 Beowulf Special Carabine, заменяющий стандартный ствол AR на более тяжелый ствол .50 Beowulf для борьбы с легкой бронированной целью и животными размером с медведя. Высокий урон, средняя дальность, хорошая скорострельность и точность, но не очень управляема очередью.</Pa_M4Beowulf.description>
+
+
+  <!-- M960(M) Calico Carbine -->
+
+  <Pa_Calico.label>Карабин Calico M960(M)</Pa_Calico.label>
+  <Pa_Calico.description>9mm карабин военной модели Calico M960 - это легкий карабин с цилиндрическим магазином со спиральной подачей большой емкости и компактной конструкцией, разработанный в качестве резервного оружия для экипажа транспортного средства.</Pa_Calico.description>
+
+
+  <!-- Karabiner Model 1890 Bolt Action Carabine -->
+
+  <Pa_K90M.label>Карабин обр.1890 г.</Pa_K90M.label>
+  <Pa_K90M.description>Укороченная версия Винтовки образца 1888 г., чтобы улучшить ее мобильность, компромисс заключается в уменьшении эффективной дальности и точности.</Pa_K90M.description>
+
+
+  <!-- Mauser Karabiner 98 Kurz(Replica) -->
+
+  <Pa_K98k.label>Карабин Mauser 98k(R)</Pa_K98k.label>
+  <Pa_K98k.description>Одна из последних версий семейства винтовок Mauser Bolt Action Rifle, кульминация семейства Mauser и одна из лучших олдскульных винтовок своего времени, реплика сделала ее способной соответствовать современным винтовочным патронам.</Pa_K98k.description>
+
+
+  <!-- Gewehr 41(Walther) -->
+
+  <Pa_G41W.label>Gewehr 41(W)</Pa_G41W.label>
+  <Pa_G41W.description>Одна из первых попыток создания полуавтоматической винтовки от Walther для увеличения огневой мощи отряда стрелков, другая от Mauser, из-за сложности и надежности оружия, проект был вытеснен Gewehr 43, но все же Walther добился большего. результат, чем у Маузера G41 (M).</Pa_G41W.description>
+
+
+  <!-- Gewehr/Karabiner 43 -->
+
+  <Pa_G43K.label>Gewehr 43</Pa_G43K.label>
+  <Pa_G43K.description>Преемник как G41 (W), так и G41 (M), включал улучшенную газовую систему с коротким ходом поршня, которая решила проблему надежности, и съемный магазинный ящик на 10 патронов для ускорения его повторной загрузки.</Pa_G43K.description>
+
+
+  <!-- Gustloff Volkssturmgewehr VG 1-5 -->
+
+  <Pa_VG.label>Gustloff VG 1-5</Pa_VG.label>
+  <Pa_VG.description>Gustloff Volkssturmgewehr VG 1-5, «Народная штурмовая винтовка», последняя попытка увеличить производство оружия почти в конце войны, очень прочный и дешевый полуавтоматический карабин, который обычно использовался фольксштурмом для борьбы за отечество. неизбежное в последний раз.</Pa_VG.description>
+
+
+</LanguageData>

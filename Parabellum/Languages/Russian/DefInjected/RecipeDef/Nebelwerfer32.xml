@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Craft Crate -->
+
+  <BuildNbW_Crate.label>Сделать ящик Nebelwerfer</BuildNbW_Crate.label>
+  <BuildNbW_Crate.description>Используйте это, чтобы построить Nebelwerfer, тип стационарной пилотируемой турели, в зависимости от варианта, он может использовать ракеты 15 см, 28 см, 30 см и 32 см в качестве боеприпасов.</BuildNbW_Crate.description>
+  <BuildNbW_Crate.jobString>Строительство ящика Nebelwerfer.</BuildNbW_Crate.jobString>
+
+
+</LanguageData>

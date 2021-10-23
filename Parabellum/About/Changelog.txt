@@ -63,6 +63,10 @@ LMGs:
 - MG 42 GPMG: 8mm Mauser Rifle Catridge, Automatic(1/7/19), Mid war GPMG, Drum fed(LMG), simplified version of MG 34 GPMG, carry even more ammo, cheaper, and increased RoF 
 - MG 45/MG 1 Hybrid GPMG: 8mm Mauser Rifle Catridge / 7,62x51mm NATO, Automatic(1/12/24), Box fed(LMG), simplified version of MG 42 GPMG, carry 120 round modern ammo box,  a lot cheaper, lighter, less bulky and further increase the RoF
 
+Sniper Rifle:
+- Mk.12 SPR: 5.56x45mm NATO, Semi-Automatic(1/2/3), Special Purpose Rifle, relative fast RoF and light weight to carry around for marksman
+- Mk.12 SPR(B): .50 Beowulf, Semi-Automatic, the same weapon with heavy Beowulf barrel, improves its stopping power
+
 Mines/Traps:
 - M67 Mine: Anti-Personnel trip mine, explosive charge with large amount of fragments, capable to load inside of an 155mm artillery shell for long range rapid deployment 
 
@@ -123,8 +127,11 @@ Unlocks:
 	-MG 131 HMG/Autocannon (Heavy Machinegun Turret)
 	-MG 131z HMG/Autocannon (Heavy Machinegun Turret)
 	-PaK 36/L45 ATG (Light Anti-Tank Gun)
-	-37mm cannon ammo (APHE, HE and APCR)
-	-Simple Cannon Crate (for cannon of early-mid Industrial stage)
+	-37mm cannon ammo (APHE, HE and APCR) recipe
+	-Simple Cannon Crate (for cannon of early-mid Industrial stage) recipe
+	-88mm Raketenwefer 43 (88mm HEAT rockets)
+	-88mm RPzB GR. 4992 HEAT rockets recipe
+	-RPzB Crate recipe
 *Located in the Siege Artillery Line before Turret Research
 
 Tweaks:
@@ -172,6 +179,21 @@ Tweaks:
 +Added a patch to add .44 Rimfire(Vile's Pre-Industrial) to Medusa Survival Revolver
 *Rebalanced both survival pistols, they no longer require weapon part and leather to craft and pistol component is craftable when unlock "Gun_I" Research
 *Experimental: Added Interaction sound for StGs
+*Changed 88mm Raketenwefer 43 description and moved the RPzB crates to "Defensive Measure II", now the recipe is available in the Hand Assembling bench
+*Changed Suomi/MP18 fire sound
+*Reduced Medusa Survival Revolver Range Cooldown(0.4 -> 0.34) and fixed a typo
+*Decreased Nebelwerfer 28cm and 30cm HE spawn chance: 28cm 0.75 -> 0.6, 30cm 0.45 -> 0.3, also slightly increase their cost: 28cm 280 -> 320, 30cm 340 -> 400, 32cm 300 -> 340
++Added .50-70 Government to the Sturer Survival Pistol
++Increased De Lisle Commando Carabine Hunting Stealth 85% -> 95%
++Increase a bit .50 Beowulf API damage 18 -> 20
++Texture Improvements for:
+ - M4.50 Beowulf SC
+ - Hawk MM-1
+ - Suomi KP-31
+ - Mk.14 Mod.0
+ - Huot Automatic Rifle
+ - Lewis
+ - RGS
 
 <--------------------------------------- 1.4 -------------------------------------------->
 *Added separated mod package(Parabellum - Earned in Blood & Parabellum - Hold the Line) for who only want handheld weapons or defensive turrets and explosives, not both of them

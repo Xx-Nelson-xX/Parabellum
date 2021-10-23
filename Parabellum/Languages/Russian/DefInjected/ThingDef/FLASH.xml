@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Ammo -->
+
+  <Ammo_FLASH.label>M202 FLASH Триэтилалюминиевая ракета</Ammo_FLASH.label>
+  <Ammo_FLASH.description>TEA Ракета, зажигательная ракета, наполненная легковоспламеняющимся химическим веществом, за короткое время горит сильнее, чем напалм.</Ammo_FLASH.description>
+
+
+  <!-- Projectiles -->
+
+  <Bullet_FLASH.label>M202 FLASH Триэтилалюминиевая ракета (TEA)</Bullet_FLASH.label>
+
+
+</LanguageData>

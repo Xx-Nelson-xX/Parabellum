@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- DamageDef -->
+
+  <Warhead.label>Impact explosive</Warhead.label>
+  <Warhead.deathMessage>{0} has died in an explosion.</Warhead.deathMessage>
+
+
+</LanguageData>

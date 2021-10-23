@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Rocket Artillery(P) -->
+
+  <SubCategory_ParabellumRA.label>Rocket Artillery(P)</SubCategory_ParabellumRA.label>
+  <SubCategory_ParabellumRA.description>Rocket Artillery from Parabellum, *Warning* excessive explosive material consumption.</SubCategory_ParabellumRA.description>
+
+
+  <!-- Machinegun(P) -->
+
+  <SubCategory_ParabellumMG.label>Machinegun(P)</SubCategory_ParabellumMG.label>
+  <SubCategory_ParabellumMG.description>Machine Gun from Parabellum, Ancient but still useful</SubCategory_ParabellumMG.description>
+
+
+  <!-- Anti-Tank Gun(P) -->
+
+  <SubCategory_ParabellumATG.label>Anti-Tank Gun(P)</SubCategory_ParabellumATG.label>
+  <SubCategory_ParabellumATG.description>Anti-Tank Gun from Parabellum, Ancient but still useful</SubCategory_ParabellumATG.description>
+
+
+  <!-- Special(P) -->
+
+  <SubCategory_ParabellumSP.label>Special(P)</SubCategory_ParabellumSP.label>
+  <SubCategory_ParabellumSP.description>Special building from Parabellum.</SubCategory_ParabellumSP.description>
+
+
+</LanguageData>

@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Ammo -->
+
+  <Ammo_50mmCannonShell_APHE.label>5cm Pzgr 39 (APHE)</Ammo_50mmCannonShell_APHE.label>
+  <Ammo_50mmCannonShell_APHE.description>5cm снаряд малой пушки - это определенный размер боеприпасов для пушек и автопушек.</Ammo_50mmCannonShell_APHE.description>
+
+  <Ammo_50mmCannonShell_HE.label>5cm Sprgr 38 (HE)</Ammo_50mmCannonShell_HE.label>
+  <Ammo_50mmCannonShell_HE.description>5cm снаряд малой пушки - это определенный размер боеприпасов для пушек и автопушек.</Ammo_50mmCannonShell_HE.description>
+
+  <Ammo_50mmCannonShell_APCR.label>5cm Pzgr 40 (APCR)</Ammo_50mmCannonShell_APCR.label>
+  <Ammo_50mmCannonShell_APCR.description>5cm снаряд малой пушки - это определенный размер боеприпасов для пушек и автопушек.</Ammo_50mmCannonShell_APCR.description>
+
+
+  <!-- Projectiles -->
+
+  <Bullet_50mmCannonShell_APHE.label>5cm Pzgr 39 (APHE)</Bullet_50mmCannonShell_APHE.label>
+  <Bullet_50mmCannonShell_HE.label>5cm Sprgr 38 (HE)</Bullet_50mmCannonShell_HE.label>
+  <Bullet_50mmCannonShell_APCR.label>5cm Pzgr 40 (APCR)</Bullet_50mmCannonShell_APCR.label>
+
+
+</LanguageData>

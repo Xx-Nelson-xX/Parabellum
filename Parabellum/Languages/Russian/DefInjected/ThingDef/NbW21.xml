@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Ammo -->
+
+  <Ammo_21cmNbWRocket.label>21cm ракета (HE)</Ammo_21cmNbWRocket.label>
+  <Ammo_21cmNbWRocket.description>21cm Улучшенная осколочно-фугасная ракета.</Ammo_21cmNbWRocket.description>
+
+  <Ammo_15cmNbWRocket.label>15cm ракета (HE)</Ammo_15cmNbWRocket.label>
+  <Ammo_15cmNbWRocket.description>15cm Осколочно-фугасная ракета.</Ammo_15cmNbWRocket.description>
+
+  <Ammo_15cmDNbWRocket.label>15cm ракета (HE-D)</Ammo_15cmDNbWRocket.label>
+  <Ammo_15cmDNbWRocket.description>15cm Осколочно-фугасная ракета (прямое наведение).</Ammo_15cmDNbWRocket.description>
+
+  <Ammo_15cmSNbWRocket.label>15cm ракета (Дым)</Ammo_15cmSNbWRocket.label>
+  <Ammo_15cmSNbWRocket.description>15cm Дымовая ракета.</Ammo_15cmSNbWRocket.description>
+
+
+  <!-- Projectiles -->
+
+  <Bullet_21cmNbWRocket.label>21cm HE Ракета</Bullet_21cmNbWRocket.label>
+  <Bullet_15cmNbWRocket.label>15cm HE Ракета</Bullet_15cmNbWRocket.label>
+  <Bullet_15cmDNbWRocket.label>15cm HE Ракета(прямое наведение)</Bullet_15cmDNbWRocket.label>
+  <Bullet_15cmSNbWRocket.label>15cm Дымовая ракета </Bullet_15cmSNbWRocket.label>
+
+
+</LanguageData>

@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Recipes -->
+
+  <MakeAmmo_TuF_AP.label>Сделать 13.2x92mm SR TuF (AP) картридж x50</MakeAmmo_TuF_AP.label>
+  <MakeAmmo_TuF_AP.description>Делает 50 13.2x92mm SR TuF (AP) картридж.</MakeAmmo_TuF_AP.description>
+  <MakeAmmo_TuF_AP.jobString>Сделано 13.2x92mm SR TuF (AP) картридж.</MakeAmmo_TuF_AP.jobString>
+
+  <MakeAmmo_TuF_APHE.label>Сделать 13.2x92mm SR TuF (APHE) картридж x50</MakeAmmo_TuF_APHE.label>
+  <MakeAmmo_TuF_APHE.description>Делает 50 13.2x92mm SR TuF (APHE) картридж.</MakeAmmo_TuF_APHE.description>
+  <MakeAmmo_TuF_APHE.jobString>Сделано 13.2x92mm SR TuF (APHE) картридж.</MakeAmmo_TuF_APHE.jobString>
+
+  <MakeAmmo_MG131_HET.label>Сделать 13x64mmB (HE-T) картридж x50</MakeAmmo_MG131_HET.label>
+  <MakeAmmo_MG131_HET.description>Делает 50 13x64mmB (HE-T) картридж.</MakeAmmo_MG131_HET.description>
+  <MakeAmmo_MG131_HET.jobString>Сделано 13x64mmB (HE-T) картридж.</MakeAmmo_MG131_HET.jobString>
+
+
+</LanguageData>

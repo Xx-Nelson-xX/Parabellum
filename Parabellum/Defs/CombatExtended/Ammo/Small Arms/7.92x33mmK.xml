@@ -76,7 +76,7 @@
 		</graphicData>
 		<statBases>
 			<Mass>0.0152</Mass>
-			<MarketValue>1.8</MarketValue>
+			<MarketValue>2.0</MarketValue>
 		</statBases>
 		<ammoClass>792mmKJ</ammoClass>
 		<generateAllowChance>0.2</generateAllowChance>
@@ -124,8 +124,8 @@
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
 			<speed>160</speed>
 			<spreadMult>0.85</spreadMult>
-			<damageAmountBase>21</damageAmountBase>
-			<armorPenetrationSharp>11.8</armorPenetrationSharp>
+			<damageAmountBase>20</damageAmountBase>
+			<armorPenetrationSharp>11.2</armorPenetrationSharp>
 			<armorPenetrationBlunt>56.3</armorPenetrationBlunt>
 		</projectile>
 	</ThingDef>

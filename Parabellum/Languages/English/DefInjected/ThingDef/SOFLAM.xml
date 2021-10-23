@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- SOFLAM -->
+
+  <Pa_SOFLAM.label>SOFLAM</Pa_SOFLAM.label>
+  <Pa_SOFLAM.description>Special Operations Forces Lacer Acquisition Marker.</Pa_SOFLAM.description>
+
+
+  <!-- TurretBase -->
+
+  <Special_SOFLAM.label>SOFLAM</Special_SOFLAM.label>
+  <Special_SOFLAM.description>Special Operations Forces Lacer Acquisition Marker, aka, SOFLAM, a special rangefinding device to designate/locate target using laser guided ordance, included sensor to detect hostile foes automatically.</Special_SOFLAM.description>
+
+
+  <!-- Minified -->
+
+  <MinifiedTurret_Pa_SOFLAM.label>SOFLAM(Minified)</MinifiedTurret_Pa_SOFLAM.label>
+
+
+</LanguageData>

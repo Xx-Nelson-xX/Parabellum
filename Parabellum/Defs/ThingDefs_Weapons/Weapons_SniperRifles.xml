@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+	
+    <!-- Barrett XM109 Anti-Materiel Payload Rifle -->
+    <ThingDef ParentName="BaseGun_LongBarreled">
+        <defName>Pa_XM109AMPR</defName>
+        <label>Barrett XM109 AMPR</label>
+        <description>Originally belong to the OSW program, it become AMPR thanks to it role, the XM109 can be reconfigured to use both .50 BMG and 25X59mm high-velocity grenade round for light-medium armored target, unlike the M82/M107 system, the XM109 offers greater range with a shorter weapon length. Very high damage, extremely long range and excellent accuracy.</description>
+        <graphicData>
+            <texPath>Things/Weapons/XM109</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>Interact_Rifle</soundInteract>
+        <statBases>
+            <MarketValue>4000</MarketValue>
+            <SightsEfficiency>1.8</SightsEfficiency>
+            <ShotSpread>0.01</ShotSpread>
+            <SwayFactor>0.7</SwayFactor>
+            <RangedWeapon_Cooldown>2.2</RangedWeapon_Cooldown>
+            <Bulk>12.9</Bulk>
+            <Mass>15.1</Mass>
+        </statBases>
+		<generateCommonality>0.2</generateCommonality>
+        <thingCategories>
+            <li>SRifles</li>
+        </thingCategories>
+        <weaponTags>
+            <li>SNIP4</li>
+            <li>AdvancedGun</li>
+            <li>TierThreeSniper</li>
+            <li>CE_AI_Rifle</li>
+        </weaponTags>
+        <verbs>
+            <li Class="CombatExtended.VerbPropertiesCE">
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>Bullet_25x59mmGrenade_HEDP</defaultProjectile>
+                <warmupTime>3.1</warmupTime>
+                <range>87</range>
+				<targetParams>
+                    <canTargetLocations>true</canTargetLocations>
+                </targetParams>
+                <soundCast>ShotM82</soundCast>
+                <soundCastTail>GunTail_Heavy</soundCastTail>
+                <muzzleFlashScale>14</muzzleFlashScale>
+            </li>
+        </verbs>
+        <comps>
+            <li Class="CombatExtended.CompProperties_FireModes">
+                <aiAimMode>AimedShot</aiAimMode>
+            </li>
+            <li Class="CombatExtended.CompProperties_AmmoUser">
+                <magazineSize>5</magazineSize>
+                <reloadTime>4</reloadTime>
+                <ammoSet>AmmoSet_XM109AMPR</ammoSet>
+            </li>
+        </comps>
+        <smeltProducts>
+            <AdvSniper_Component>1</AdvSniper_Component>
+            <Weapon_Parts>5</Weapon_Parts>
+			<Plastic>10</Plastic>
+        </smeltProducts>
+    </ThingDef>
+	
+	<!-- Mk.12 SPR -->
+	<ThingDef ParentName="BaseGun_LongBarreled">
+        <defName>Pa_Mk12SPR</defName>
+        <label>Mk.12 SPR</label>
+        <description>Mk.12 Special Purpose Rifle, is a semi-automatic designated marksman rifle, instead of the full length rifle ammo, the Mk.12 SPR use the standard 5,56x45mm NATO round, the weapon is designed to be light as any carabine lenght AR family(such as M-4 and M-16) while offer more effective range with marksman barrel and optic scope to suit the SPR role.</description>
+        <graphicData>
+            <texPath>Things/Weapons/Mk12SPR</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>Interact_Rifle</soundInteract>
+        <statBases>
+            <MarketValue>1200</MarketValue>
+            <SightsEfficiency>1.75</SightsEfficiency>
+            <ShotSpread>0.02</ShotSpread>
+            <SwayFactor>1</SwayFactor>
+            <RangedWeapon_Cooldown>1.4</RangedWeapon_Cooldown>
+            <Bulk>9.5</Bulk>
+            <Mass>4.5</Mass>
+        </statBases>
+		<generateCommonality>0.4</generateCommonality>
+		<equippedStatOffsets>
+			<HuntingStealth>0.65</HuntingStealth>
+		</equippedStatOffsets>
+		<equippedAngleOffset>45</equippedAngleOffset>
+        <weaponTags>
+            <li>SNIP1</li>
+			<li>SNIP2</li>
+            <li>SniperRifle</li>
+            <li>TierTwoSniper</li>
+            <li>CE_AI_Rifle</li>
+        </weaponTags>
+        <thingCategories>
+            <li>SRifles</li>
+        </thingCategories>
+        <verbs>
+            <li Class="CombatExtended.VerbPropertiesCE">
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>Bullet_556x45mmNATO_FMJ</defaultProjectile>
+                <warmupTime>0.7</warmupTime>
+				<burstShotCount>3</burstShotCount>
+                <ticksBetweenBurstShots>70</ticksBetweenBurstShots>
+                <range>60</range>
+                <soundCast>Shot_Delisle</soundCast>
+                <soundCastTail>GunTail_Medium</soundCastTail>
+                <muzzleFlashScale>2</muzzleFlashScale>
+            </li>
+        </verbs>
+        <comps>
+            <li Class="CombatExtended.CompProperties_FireModes">
+                <aiUseBurstMode>true</aiUseBurstMode>
+                <aiAimMode>AimedShot</aiAimMode>
+				<aimedBurstShotCount>2</aimedBurstShotCount>
+            </li>
+            <li Class="CombatExtended.CompProperties_AmmoUser">
+                <magazineSize>20</magazineSize>
+                <reloadTime>2.6</reloadTime>
+                <ammoSet>AmmoSet_556x45mmNATO</ammoSet>
+            </li>
+        </comps>
+        <smeltProducts>
+            <Sniper_Component>1</Sniper_Component>
+            <Weapon_Parts>1</Weapon_Parts>
+			<Plastic>2</Plastic>
+        </smeltProducts>
+    </ThingDef>
+	
+	<!-- Mk.12 SPR(.50 Beowulf) -->
+	<ThingDef ParentName="BaseGun_LongBarreled">
+        <defName>Pa_Mk1250SPR</defName>
+        <label>Mk.12 SPR(B)</label>
+        <description>Mk.12 Special Purpose Rifle, with Beowulf heavy barrel to chamber the special .50 Beowulf round, which offers lot more stopping power and armor penetration than the standard 5.56x45mm NATO and 7.62x51mm NATO round, not very ideal to use counter longrange moving target due increased bullet weight and reduced projectile speed, and the range is rather limited due the same reason.</description>
+        <graphicData>
+            <texPath>Things/Weapons/Mk1250SPR</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>Interact_Rifle</soundInteract>
+        <statBases>
+            <MarketValue>1600</MarketValue>
+            <SightsEfficiency>1.75</SightsEfficiency>
+            <ShotSpread>0.014</ShotSpread>
+            <SwayFactor>1</SwayFactor>
+            <RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
+            <Bulk>9.2</Bulk>
+            <Mass>4.7</Mass>
+        </statBases>
+		<generateCommonality>0.3</generateCommonality>
+		<equippedAngleOffset>45</equippedAngleOffset>
+        <weaponTags>
+			<li>SNIP2</li>
+			<li>SNIP3</li>
+            <li>AdvancedGun</li>
+            <li>TierTwoSniper</li>
+            <li>CE_AI_Rifle</li>
+        </weaponTags>
+        <thingCategories>
+            <li>SRifles</li>
+        </thingCategories>
+        <verbs>
+            <li Class="CombatExtended.VerbPropertiesCE">
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>Bullet_127x42mmB_FMJ</defaultProjectile>
+                <warmupTime>0.4</warmupTime>
+                <range>60</range>
+                <soundCast>Shot_Beowulf</soundCast>
+                <soundCastTail>GunTail_Heavy</soundCastTail>
+                <muzzleFlashScale>14</muzzleFlashScale>
+            </li>
+        </verbs>
+        <comps>
+            <li Class="CombatExtended.CompProperties_FireModes">
+                <aiAimMode>AimedShot</aiAimMode>
+            </li>
+            <li Class="CombatExtended.CompProperties_AmmoUser">
+                <magazineSize>12</magazineSize>
+                <reloadTime>2</reloadTime>
+                <ammoSet>AmmoSet_127x42mmB</ammoSet>
+            </li>
+        </comps>
+        <smeltProducts>
+            <AdvRifle_Component>1</AdvRifle_Component>
+            <Weapon_Parts>1</Weapon_Parts>
+			<Plastic>2</Plastic>
+        </smeltProducts>
+    </ThingDef>
+	
+</Defs>

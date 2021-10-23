@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Recipes -->
+
+  <MakeAmmo_8mmM_P88M.label>make 8x57mm Patrone 88 (FMJ) cartridge x50</MakeAmmo_8mmM_P88M.label>
+  <MakeAmmo_8mmM_P88M.description>Craft 50 8x57mm Patrone 88 (FMJ) cartridge.</MakeAmmo_8mmM_P88M.description>
+  <MakeAmmo_8mmM_P88M.jobString>Making 8x57mm Patrone 88 (FMJ) cartridge.</MakeAmmo_8mmM_P88M.jobString>
+
+  <MakeAmmo_8mmM_SP.label>make 7.92x57mm S Patrone (FMJ) cartridge x75</MakeAmmo_8mmM_SP.label>
+  <MakeAmmo_8mmM_SP.description>Craft 75 7.92x57mm S Patrone(FMJ) cartridge.</MakeAmmo_8mmM_SP.description>
+  <MakeAmmo_8mmM_SP.jobString>Making 7.92x57mm S Patrone (FMJ) cartridge.</MakeAmmo_8mmM_SP.jobString>
+
+  <MakeAmmo_8mmM_KP.label>make 7.92x57mm K Patrone (AP) cartridge x75</MakeAmmo_8mmM_KP.label>
+  <MakeAmmo_8mmM_KP.description>Craft 75 7.92x57mm K Patrone (AP) cartridge.</MakeAmmo_8mmM_KP.description>
+  <MakeAmmo_8mmM_KP.jobString>Making 7.92x57mm K Patrone (AP) cartridge.</MakeAmmo_8mmM_KP.jobString>
+
+  <MakeAmmo_8mmM_BP.label>make 7.92x57mm B Patrone (HE-T) cartridge x75</MakeAmmo_8mmM_BP.label>
+  <MakeAmmo_8mmM_BP.description>Craft 75 7.92x57mm B Patrone(HE-T) cartridge.</MakeAmmo_8mmM_BP.description>
+  <MakeAmmo_8mmM_BP.jobString>Making 7.92x57mm B Patrone (HE-T) cartridge.</MakeAmmo_8mmM_BP.jobString>
+
+
+</LanguageData>

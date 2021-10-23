@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Lewis LMG -->
+
+  <BuildLewis.label>Собрать Льюис LMG</BuildLewis.label>
+  <BuildLewis.description>Собирает Льюис LMG, да благословит Бог королеву. \ Калибр: .303 британский</BuildLewis.description>
+  <BuildLewis.jobString>Собран Льюис LMG</BuildLewis.jobString>
+
+
+  <!-- MG 08/15 LMG -->
+
+  <BuildMG0815L.label>Собрать MG 08/15 LMG</BuildMG0815L.label>
+  <BuildMG0815L.description>Собирает пулемет MG 08/15, все, что вам нужно сделать, это нажать на спусковой крючок и продолжать двигаться вперед, станьте шагающим танком. \ NКалибр: 8-миллиметровый патрон для винтовки Маузера.</BuildMG0815L.description>
+  <BuildMG0815L.jobString>Собран MG 08/15 LMG</BuildMG0815L.jobString>
+
+
+  <!-- Madsen LMG -->
+
+  <BuildMadsen.label>Собрать Madsen LMG</BuildMadsen.label>
+  <BuildMadsen.description>Собирает Madsen LMG, это пулемет с магазинным питанием, а не какой-то модный современный магазин с четырьмя стеками, поэтому он будет часто перезаряжаться, если вы хотите продолжать стрельбу. \ NКалибр: 7 ~ 8 мм калибр винтовки</BuildMadsen.description>
+  <BuildMadsen.jobString>Собран Madsen LMG</BuildMadsen.jobString>
+
+
+  <!-- MG 30 LMG -->
+
+  <BuildMG30L.label>Собрать MG 30 LMG</BuildMG30L.label>
+  <BuildMG30L.description>Собирает Maschinengewehr 30 LMG, это пулемет с магазинным питанием, а не какой-то модный современный магазин с четырьмя стеками, поэтому вы будете часто перезаряжать его, если хотите продолжать стрельбу. \ NКалибр: 8-мм патрон для винтовки Маузера.</BuildMG30L.description>
+  <BuildMG30L.jobString>Собран MG30 LMG</BuildMG30L.jobString>
+
+
+  <!-- MG 34 GPMG -->
+
+  <BuildMG34L.label>Собрать MG 34 GPMG</BuildMG34L.label>
+  <BuildMG34L.description>Собирает Maschinengewehr 34 GPMG, используйте его для любой роли пулемета. \ Калибр: 8mm патрон для винтовки Маузер</BuildMG34L.description>
+  <BuildMG34L.jobString>Собран MG 34 GPMG</BuildMG34L.jobString>
+
+
+  <!-- MG 42 GPMG -->
+
+  <BuildMG42L.label>Собрать MG 42 GPMG</BuildMG42L.label>
+  <BuildMG42L.description>Собирает Maschinengewehr 42 GPMG, он же. "Баззовая пила Гитлера". \ Калибр: 8mm патрон для винтовки Маузер.</BuildMG42L.description>
+  <BuildMG42L.jobString>Собран MG 42 GPMG</BuildMG42L.jobString>
+
+
+  <!-- MG 45/ Mg 1 Hybrid GPMG -->
+
+  <BuildMG45H.label>Собрать MG 45/1 Гибридный GPMG</BuildMG45H.label>
+  <BuildMG45H.description>Собирает Maschinengewehr 45/1 Hybrid GPMG, Разбуди нахрен самурая, У нас есть боеприпасы для сжигания. \ Калибр: 8mm патрон для винтовки Маузер / 7,62x51mm НАТО</BuildMG45H.description>
+  <BuildMG45H.jobString>Собран MG 45/1 Гибридный GPMG</BuildMG45H.jobString>
+
+
+</LanguageData>

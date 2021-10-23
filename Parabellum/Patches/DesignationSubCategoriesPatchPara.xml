@@ -20,6 +20,8 @@
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/ArchitectSense.DesignationSubCategoryDef[defName="SubCategory_Mortars"]/defNames</xpath>
 		<value>
+			<li>Turret_8cmGrW</li>
+			<li>Turret_Kz8cmGrW</li>
 			<li>Turret_Mk18GL</li>
 			<li>Turret_XM307ACSW</li>
 		</value>

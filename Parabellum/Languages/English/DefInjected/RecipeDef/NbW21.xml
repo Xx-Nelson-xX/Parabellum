@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Recipes -->
+
+  <MakeAmmo_21cmNbWRocket.label>make 21cm High Explosive Nebelwerfer Rocket x1</MakeAmmo_21cmNbWRocket.label>
+  <MakeAmmo_21cmNbWRocket.description>Craft 21cm High Explosive Nebelwerfer Rocket.</MakeAmmo_21cmNbWRocket.description>
+  <MakeAmmo_21cmNbWRocket.jobString>Making 21cm High Explosive Nebelwerfer Rocket.</MakeAmmo_21cmNbWRocket.jobString>
+
+  <MakeAmmo_15cmNbWRocket.label>make 15cm High Explosive Nebelwerfer Rocket x1</MakeAmmo_15cmNbWRocket.label>
+  <MakeAmmo_15cmNbWRocket.description>Craft 15cm High Explosive Nebelwerfer Rocket.</MakeAmmo_15cmNbWRocket.description>
+  <MakeAmmo_15cmNbWRocket.jobString>Making 15cm High Explosive Nebelwerfer Rocket.</MakeAmmo_15cmNbWRocket.jobString>
+
+  <MakeAmmo_15cmDNbWRocket.label>make 15cm High Explosive Nebelwerfer Rocket(D) x1</MakeAmmo_15cmDNbWRocket.label>
+  <MakeAmmo_15cmDNbWRocket.description>Craft 15cm High Explosive Nebelwerfer Rocket(D).</MakeAmmo_15cmDNbWRocket.description>
+  <MakeAmmo_15cmDNbWRocket.jobString>Making 15cm High Explosive Nebelwerfer Rocket(D).</MakeAmmo_15cmDNbWRocket.jobString>
+
+  <MakeAmmo_15cmSNbWRocket.label>make 15cm Smoke Nebelwerfer Rocket(D) x1</MakeAmmo_15cmSNbWRocket.label>
+  <MakeAmmo_15cmSNbWRocket.description>Craft 15cm Smoke Nebelwerfer Rocket(D).</MakeAmmo_15cmSNbWRocket.description>
+  <MakeAmmo_15cmSNbWRocket.jobString>Making 15cm Smoke Nebelwerfer Rocket(D).</MakeAmmo_15cmSNbWRocket.jobString>
+
+
+</LanguageData>

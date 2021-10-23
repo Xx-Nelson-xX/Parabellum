@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Recipes -->
+
+  <MakeAmmo_8mmM_P88M.label>Сделать 8x57mm Патрон 88 (FMJ) картридж x50</MakeAmmo_8mmM_P88M.label>
+  <MakeAmmo_8mmM_P88M.description>Делает 50 8x57mm Патрон 88 (FMJ) картридж.</MakeAmmo_8mmM_P88M.description>
+  <MakeAmmo_8mmM_P88M.jobString>Сделано 8x57mm Патрон 88 (FMJ) картридж.</MakeAmmo_8mmM_P88M.jobString>
+
+  <MakeAmmo_8mmM_SP.label>Сделать 7.92x57mm S Патрон (FMJ) картридж x75</MakeAmmo_8mmM_SP.label>
+  <MakeAmmo_8mmM_SP.description>Делает 75 7.92x57mm S Патрон(FMJ) картридж.</MakeAmmo_8mmM_SP.description>
+  <MakeAmmo_8mmM_SP.jobString>Сделано 7.92x57mm S Патрон (FMJ) картридж.</MakeAmmo_8mmM_SP.jobString>
+
+  <MakeAmmo_8mmM_KP.label>Сделать 7.92x57mm K Патрон (AP) картридж x75</MakeAmmo_8mmM_KP.label>
+  <MakeAmmo_8mmM_KP.description>Делает 75 7.92x57mm K Патрон (AP) картридж.</MakeAmmo_8mmM_KP.description>
+  <MakeAmmo_8mmM_KP.jobString>Сделано 7.92x57mm K Патрон (AP) картридж.</MakeAmmo_8mmM_KP.jobString>
+
+  <MakeAmmo_8mmM_BP.label>Сделать 7.92x57mm B Патрон (HE-T) картридж x75</MakeAmmo_8mmM_BP.label>
+  <MakeAmmo_8mmM_BP.description>Делает 75 7.92x57mm B Патрон(HE-T) картридж.</MakeAmmo_8mmM_BP.description>
+  <MakeAmmo_8mmM_BP.jobString>Сделано 7.92x57mm B Патрон (HE-T) картридж.</MakeAmmo_8mmM_BP.jobString>
+
+
+</LanguageData>

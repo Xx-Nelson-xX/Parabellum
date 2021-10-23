@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Sturer Survival Pistol -->
+
+  <BuildSP.label>Собрать Писталет Sturer писталет для выжывания</BuildSP.label>
+  <BuildSP.description>Собирает Писталет Sturer писталет для выжывания, думаю, вам действительно он нужен. \ Калибр: Любой Винтовочный Калибр</BuildSP.description>
+  <BuildSP.jobString>Собран Писталет Sturer для выжывания.</BuildSP.jobString>
+
+
+  <!-- Medusa Survival Revolver -->
+
+  <BuildSR.label>Собрать Револьвер Meдуза для выжывания</BuildSR.label>
+  <BuildSR.description>Собирает Револьвер Meдуза для выжывания, засчитывай каждый выстрел! \ Калибр: Любой пистолетный калибр</BuildSR.description>
+  <BuildSR.jobString>Собран Револьвер Meдуза для выжывания.</BuildSR.jobString>
+
+
+  <!-- Mauser C96 Semi-Automatic Pistol -->
+
+  <BuildC96M.label>Собрать Пистолет Mauser C96</BuildC96M.label>
+  <BuildC96M.description>Собирает a Mauser C96 Pistol, a very popular pistol in certain Asian Country.\ Калибр: 7.63x25mm Mauser / 9x19mm Parabellum / .45 ACP.</BuildC96M.description>
+  <BuildC96M.jobString>Собран Mauser C96 Pistol</BuildC96M.jobString>
+
+  <BuildM712S.label>Собрать Пистолет M712 "Schnellfeuer"</BuildM712S.label>
+  <BuildM712S.description>Собирает a M712 Пистолет "Schnellfeuer", теперь у вас есть автоматическая "Broomhandle"(Метла с авто стрельбой).\ Калибр: 7.63x25mm Mauser / 9x19mm Parabellum / .45 ACP</BuildM712S.description>
+  <BuildM712S.jobString>Собран M712 Пистолет "Schnellfeuer"</BuildM712S.jobString>
+
+
+</LanguageData>

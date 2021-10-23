@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Ammo -->
+
+  <Ammo_127x42mmB_FMJ.label>.50 Beowulf (FMJ)</Ammo_127x42mmB_FMJ.label>
+  <Ammo_127x42mmB_FMJ.description>Specialized High Caliber bullet, intended to improve stopping power greatly at short to medium range as compared to the standard 5.56×45mm NATO round.</Ammo_127x42mmB_FMJ.description>
+
+  <Ammo_127x42mmB_API.label>.50 Beowulf (AP-I)</Ammo_127x42mmB_API.label>
+  <Ammo_127x42mmB_API.description>Specialized High Caliber bullet, intended to improve stopping power greatly at short to medium range as compared to the standard 5.56×45mm NATO round.</Ammo_127x42mmB_API.description>
+
+  <Ammo_127x42mmB_HP.label>.50 Beowulf (HP)</Ammo_127x42mmB_HP.label>
+  <Ammo_127x42mmB_HP.description>Specialized High Caliber bullet, intended to improve stopping power greatly at short to medium range as compared to the standard 5.56×45mm NATO round.</Ammo_127x42mmB_HP.description>
+
+  <Ammo_127x42mmB_EMP.label>.50 Beowulf (EMP)</Ammo_127x42mmB_EMP.label>
+  <Ammo_127x42mmB_EMP.description>Specialized High Caliber bullet, intended to improve stopping power greatly at short to medium range as compared to the standard 5.56×45mm NATO round.</Ammo_127x42mmB_EMP.description>
+
+
+  <!-- Projectiles -->
+
+  <Bullet_127x42mmB_FMJ.label>.50 Beowulf bullet (FMJ)</Bullet_127x42mmB_FMJ.label>
+  <Bullet_127x42mmB_API.label>.50 Beowulf bullet (AP-I)</Bullet_127x42mmB_API.label>
+  <Bullet_127x42mmB_HP.label>.50 Beowulf bullet (HP)</Bullet_127x42mmB_HP.label>
+  <Bullet_127x42mmB_EMP.label>.50 Beowulf bullet (EMP)</Bullet_127x42mmB_EMP.label>
+
+
+</LanguageData>

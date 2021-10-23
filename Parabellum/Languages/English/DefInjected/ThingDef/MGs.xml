@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Maschinengewehr 34 Zilling MMG -->
+
+  <Pa_MG34Z.label>MG 34Z MMG</Pa_MG34Z.label>
+  <Pa_MG34Z.description>MG 34 x2 Medium Machinegun attached to a tripod.</Pa_MG34Z.description>
+
+
+  <!-- Maschinengewehr 42 Lafette MMG -->
+
+  <Pa_MG42M.label>MG 42 MMG</Pa_MG42M.label>
+  <Pa_MG42M.description>MG 42 Medium Machinegun with telescopic sight attached to a tripod.</Pa_MG42M.description>
+
+
+  <!-- Maschinengewehr 14/45z Lafette MMG -->
+
+  <Pa_MG45Z.label>MG 14/45z MMG</Pa_MG45Z.label>
+  <Pa_MG45Z.description>MG 45 x2 Medium Machinegun with telescopic sight attached to a tripod.</Pa_MG45Z.description>
+
+
+  <!-- Maschinengewehr 131 HMG/Autocannon -->
+
+  <Pa_MG131H.label>MG 131 HMG</Pa_MG131H.label>
+  <Pa_MG131H.description>MG 131 Heavy Machinegun attached to a solid platform.</Pa_MG131H.description>
+
+  <Pa_MG131Z.label>MG 131z HMG</Pa_MG131Z.label>
+  <Pa_MG131Z.description>MG 131 x2 Heavy Machineguns attached to a solid platform.</Pa_MG131Z.description>
+
+
+  <!-- Turret Base(MG34Z) -->
+
+  <Turret_MG34Z.label>MG 34z MMG</Turret_MG34Z.label>
+  <Turret_MG34Z.description>Maschinengewehr 34 Zwilling(Twin) Medium Machineguns mounted on a Lafette tripod, double the RoF for rapid suppression.</Turret_MG34Z.description>
+
+
+  <!-- Turret Base(MG42M) -->
+
+  <Turret_MG42M.label>MG 42 Lafette MMG</Turret_MG42M.label>
+  <Turret_MG42M.description>Maschinengewehr 42 Medium Machinegun mounted on a Lafette tripod, added a telescopic scope to increase its accuracy and effective range.</Turret_MG42M.description>
+
+
+  <!-- Turret Base(MG14/45z) -->
+
+  <Turret_MG45Z.label>MG 14/45z Lafette MMG</Turret_MG45Z.label>
+  <Turret_MG45Z.description>Maschinengewehr 14/45 Zwilling(Twin) Medium Machineguns mounted on a Lafette tripod, added a low power scope to increase its accuracy and effective range, consider it a more accurate Minigun turret.</Turret_MG45Z.description>
+
+
+  <!-- Turret Base(MG131H) -->
+
+  <Turret_MG131H.label>MG 131 HMG/Autocannon</Turret_MG131H.label>
+  <Turret_MG131H.description>Maschinengewehr 131 Heavy Machinegun/Autocannon, one of the lighest smallest HMG/Autocannon of its time, designed to either mount of Airplanes or AA defensive platform, capable to chamber explosive rounds to maximize its damage counter any light armored target, very devastating counter soft target.</Turret_MG131H.description>
+
+
+  <!-- Turret Base(MG131Z) -->
+
+  <Turret_MG131Z.label>MG 131z HMG/Autocannon</Turret_MG131Z.label>
+  <Turret_MG131Z.description>Maschinengewehr 131 Zwilling(Twin) Heavy Machinegun/Autocannon, due the progress of war demand more firepower for the fighter planes, the usage of autocannon become more and more important, so to increase its RoF and AA efficiency, they double the armament.</Turret_MG131Z.description>
+
+
+  <!-- Minified -->
+
+  <MinifiedTurret_MG34Z.label>MG 34Z MMG turret</MinifiedTurret_MG34Z.label>
+  <MinifiedTurret_MG42M.label>MG 42 Lafette MMG turret</MinifiedTurret_MG42M.label>
+  <MinifiedTurret_MG45Z.label>MG 14/45z Lafette MMG turret</MinifiedTurret_MG45Z.label>
+  <MinifiedTurret_MG131H.label>MG 131 HMG/Autocannon turret</MinifiedTurret_MG131H.label>
+  <MinifiedTurret_MG131Z.label>MG 131z HMG/Autocannon turret</MinifiedTurret_MG131Z.label>
+
+
+</LanguageData>

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Craft Crate -->
+
+  <BuildType63MRL_Crate.label>Build Type 63 MRL crate</BuildType63MRL_Crate.label>
+  <BuildType63MRL_Crate.description>Use this to build a Type 63, a type of stationary manned turret, it can uses 13cm rockets for ammo.</BuildType63MRL_Crate.description>
+  <BuildType63MRL_Crate.jobString>Building a Type 63 MRL crate.</BuildType63MRL_Crate.jobString>
+
+
+</LanguageData>

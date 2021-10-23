@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <Build_Hawk_MM1.label>Build Hawk MM-1</Build_Hawk_MM1.label>
+  <Build_Hawk_MM1.description>Build the Hawk MM-1 Grenade Launcher, big size revolver launcher, 12 shots with long reload.\nCaliber: 40x46mm Grenade</Build_Hawk_MM1.description>
+  <Build_Hawk_MM1.jobString>Building a Hawk MM-1.</Build_Hawk_MM1.jobString>
+
+  <Build_RGS.label>Build RGS</Build_RGS.label>
+  <Build_RGS.description>Builds the RGS Grenade Launcher, 3 times the ammo consumption.\nCaliber: 30x29mm Grenade</Build_RGS.description>
+  <Build_RGS.jobString>Building RGS.</Build_RGS.jobString>
+
+  <Build_CG42R.label>Build Carl Gustav fm/42 Recoiless anti-tank Rifle</Build_CG42R.label>
+  <Build_CG42R.description>Builds the Carl Gustav fm/42 Recoiless anti-tank Rifle, not as effective as a rocket launcher, but can still easily penetrate any armor.\nCaliber: 20mm shell</Build_CG42R.description>
+  <Build_CG42R.jobString>Building Carl Gustav fm/42 Recoiless anti-tank Rifle.</Build_CG42R.jobString>
+
+  <Build_CGR.label>Build Carl Gustav Recoiless Rifle Mod.U</Build_CGR.label>
+  <Build_CGR.description>Builds the Carl Gustav Recoiless Rifle Mod.U.\nCaliber: SPG-9 rocket/84mm CG/90mm shell/RPG rocket</Build_CGR.description>
+  <Build_CGR.jobString>Building Carl Gustav Recoiless Rifle Mod.U.</Build_CGR.jobString>
+
+  <BuildFLASH.label>Build M202 FLASH</BuildFLASH.label>
+  <BuildFLASH.description>Builds the M202 FLASH, a flamethrower replacement, can still use the common 66mm LAW rocket.\nCaliber: M72 LAW/66mm Rocket</BuildFLASH.description>
+  <BuildFLASH.jobString>Building M72 LAW.</BuildFLASH.jobString>
+
+  <BuildPzF.label>Build Panzerfaust 60</BuildPzF.label>
+  <BuildPzF.description>Builds a Panzerfaust 60, something better than throwing explosive with your hands.\nCaliber: 149mm Panzerfaust Warhead</BuildPzF.description>
+  <BuildPzF.jobString>Building Panzerfaust.</BuildPzF.jobString>
+
+  <BuildRPzB.label>Build Raketenpanzerbüchse 54/1</BuildRPzB.label>
+  <BuildRPzB.description>Builds a Raketenpanzerbüchse 54/1, the trade off is, heavier and weaker, but it has more range and can be reloaded easily.\nCaliber: 88mm RPzB HEAT Rocket</BuildRPzB.description>
+  <BuildRPzB.jobString>Building RPzB 54/1.</BuildRPzB.jobString>
+
+  <Build_M320K.label>Build M320(K) Grenade Launcher</Build_M320K.label>
+  <Build_M320K.description>Builds the M320(K) Grenade Launcher,good for CQC, keep a safe distance, you won't like 40mm grenade blast your face off.\nCaliber: 40x46mm Grenade</Build_M320K.description>
+  <Build_M320K.jobString>Building M320(K) GL.</Build_M320K.jobString>
+
+
+</LanguageData>

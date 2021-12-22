@@ -8,17 +8,42 @@
 		<li>1.3</li>
 	</supportedVersions>
 	<description>
+
 		Si vis pacem, para bellum - If you want peace, prepare for war
-	
-  The main purpose of this mod was adding more weapon for the base HSK, I feels weid that some ammo type is just available for a single weapon, not so good for production chain, variety and logistic, so I want to fill those gaps first before adding anything else.
 
-But now it also add custom weapons, ammo, explosives and turrets, any suggestion, feedback and bug report is always welcome!(I really need those)
++New Research and small compatibility patch with "Vile's Pre-Industrial" and "HSK More Content" mod
 
-+(New) Also New Research and small compatibility patch with Vile's Pre-Industrial mod
+The mod adds weapon, ammo, explosives, turrets, and the new update add more of them, including new balance, new research, new patches for HSK More Content and Vile's Mod(Pre-Industrial to be exact)
+
+Stuff to add combat variety and now included a chronological like progression research like how Vile did for Pre-Industrial, the mod focus on stuffs after Pre-Industrial  mostly, for now
+
+Any issue report it to me or pin me in Discord Server or in my mod Thread, I pass most of my time in the English server, any suggestion, feedback and bug report is always welcome!(I really need those), thanks for using my mod
 
 Sorry that I don't speak russian, also I am not a native English speaker, but I do speak English, Spanish and Chinese, so you are free to correct any typo I made and anyone is free to translate my mod to any other language if you want.
 
 Moved the changelog to separated text file
+
+
+[RUS - переводчик]
+
+		  Теперь поддержка русского перевода благодаря г-ну Винни Пух 
+
+		Si vis pacem, para bellum - Если хочешь мира, готовься к войне
+		
+
++ Новое исследование и небольшой патч совместимости с модами "Vile's Pre-Industrial" и "HSK More Content"
+
+Основной целью этого мода было добавить больше оружия для базового HSK, на данный момент
+
+Мод добавляет оружие, боеприпасы, взрывчатку, турели, а новое обновление добавляет их больше, включая новый баланс, новые исследования, новые патчи для HSK More Content и Vile's Mod (точнее доиндустриальный)
+
+Материал для добавления разнообразия боя и теперь включает в себя хронологическое исследование прогресса.
+
+О любой проблеме сообщите мне или закрепите меня на сервере Discord или в моей ветке мода, я провожу большую часть своего времени на английском сервере, любые предложения, отзывы и отчеты об ошибках всегда приветствуются! (Мне они действительно нужны), спасибо за использование моего мода
+
+
+Извините, мне трудно переводить журнал изменений, но я постараюсь предоставить его.
+
 	</description>
 	<modDependencies>
 		<li>

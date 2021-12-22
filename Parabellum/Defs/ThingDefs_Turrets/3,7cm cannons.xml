@@ -27,10 +27,10 @@
 				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Bullet_37mmCannonShell_APHE</defaultProjectile>
-				<warmupTime>1.4</warmupTime>
+				<warmupTime>1.2</warmupTime>
 				<minRange>5</minRange>
 				<!-- <forcedMissRadius>1.4</forcedMissRadius> -->
-				<range>82</range>
+				<range>96</range>
 				<soundCast>Shot_37mm</soundCast>
 				<soundCastTail>GunTail_Heavy</soundCastTail>
 				<muzzleFlashScale>14</muzzleFlashScale>
@@ -83,7 +83,7 @@
 				<!-- <forcedMissRadius>1.4</forcedMissRadius> -->
 				<ticksBetweenBurstShots>22</ticksBetweenBurstShots>
 				<burstShotCount>6</burstShotCount>
-				<range>88</range>
+				<range>115</range>
 				<soundCast>Shot_37mm</soundCast>
 				<soundCastTail>GunTail_Heavy</soundCastTail>
 				<muzzleFlashScale>14</muzzleFlashScale>
@@ -94,8 +94,8 @@
 		</verbs>
 		<comps>
 			<li Class="CombatExtended.CompProperties_AmmoUser">
-				<magazineSize>12</magazineSize>
-                <reloadTime>9.4</reloadTime>
+				<magazineSize>18</magazineSize>
+                <reloadTime>10.4</reloadTime>
 				<!-- <spawnUnloaded>true</spawnUnloaded> -->
 				<ammoSet>AmmoSet_37mmCannonShell</ammoSet>
 			</li>
@@ -108,7 +108,7 @@
 	<!--=============== Turret Base(3.7cm PaK38/L60) ===============-->
 
 	<ThingDef ParentName="TurretMannedBase">
-		<defName>Turret_Pak36ATG</defName>
+		<defName>Turret_PaK36ATG</defName>
 		<label>3.7cm PaK 36 ATG</label>
 		<graphicData>
 			<texPath>Things/Building/Security/Base/NbW32_Base</texPath>
@@ -145,13 +145,14 @@
 				<li>Artillery</li>
 				<li>Artillery_BaseDestroyer</li>
 			</buildingTags>
+			<uninstallWork>200</uninstallWork>
 		</building>
 		<minifiedDef>MinifiedTurret_Pa_PaK36ATG</minifiedDef>
 		<thingCategories>
 			<li>BuildingsSecurity</li>
 		</thingCategories>
 		<researchPrerequisites>
-			<li>Parabellum_Gamma</li>
+			<li>Parabellum_Beta</li>
 		</researchPrerequisites>
 		<constructionSkillPrerequisite>4</constructionSkillPrerequisite>
 	</ThingDef>
@@ -177,6 +178,7 @@
 			<Mass>1550</Mass>
 			<Bulk>1550</Bulk>
 		</statBases>
+		<fillPercent>0.98</fillPercent>
 		<techLevel>Industrial</techLevel>
 		<description>Flak 37/L89 3.7cm Anti-Aircraft Gun, an ancient Early War Anti-Aircraft gun, relatively low rate of fire and small size to move around, the 3.7cm shell pack enough firepower to deal with most light armored target.</description>
 		<size>(2,2)</size>
@@ -195,6 +197,7 @@
 			<buildingTags>
 				<li>SiegeGun</li>
 			</buildingTags>
+			<uninstallWork>500</uninstallWork>
 		</building>
 		<minifiedDef>MinifiedTurret_Pa_Flak37AA</minifiedDef>
 		<thingCategories>
@@ -290,7 +293,7 @@
 		<recipeUsers>
 			<li>FabricationBench</li>
 		</recipeUsers>
-		<researchPrerequisite>Parabellum_Gamma</researchPrerequisite>
+		<researchPrerequisite>Parabellum_Beta</researchPrerequisite>
 	</RecipeDef>
 	
 	<!-- ================== Minified ================== -->

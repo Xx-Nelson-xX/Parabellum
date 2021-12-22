@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- Injuries -->
+
+  <HediffDef ParentName="InjuryBase">
+    <defName>GunshotSalt</defName>
+    <label>gunshot</label>
+    <labelNoun>a gunshot wound with salt encrustation</labelNoun>
+    <description>A gunshot wound, encrusted with salt fragments.</description>
+    <comps>
+      <li Class="HediffCompProperties_TendDuration">
+        <labelTendedWell>bandaged</labelTendedWell>
+        <labelTendedWellInner>sutured</labelTendedWellInner>
+        <labelSolidTendedWell>set</labelSolidTendedWell>
+      </li>
+      <li Class="HediffCompProperties_Infecter">
+        <infectionChance>0.05</infectionChance>
+      </li>
+    </comps>
+    <injuryProps>
+      <painPerSeverity>0.008</painPerSeverity>
+      <averagePainPerSeverityPermanent>0.004</averagePainPerSeverityPermanent>
+      <bleedRate>0.005</bleedRate>
+      <canMerge>false</canMerge>
+      <destroyedLabel>Shot off</destroyedLabel>
+      <destroyedOutLabel>Shot out</destroyedOutLabel>
+    </injuryProps>
+  </HediffDef>
+
+</Defs>

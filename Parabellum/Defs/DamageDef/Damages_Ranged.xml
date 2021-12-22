@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <DamageDef ParentName="Bullet">
+    <defName>ACP</defName>
+    <label>shell</label>
+    <deathMessage>{0} has been shredded to death.</deathMessage>
+    <hediff>Shredded</hediff>
+    <hediffSolid>Crack</hediffSolid>
+    <minDamageToFragment>5</minDamageToFragment>
+    <buildingDamageFactor>5</buildingDamageFactor>
+	<buildingDamageFactorImpassable>5</buildingDamageFactorImpassable>
+    <buildingDamageFactorPassable>4</buildingDamageFactorPassable>
+    <plantDamageFactor>12</plantDamageFactor>
+  </DamageDef>
+  
+  <DamageDef ParentName="Bomb">
+    <defName>ACB</defName>
+    <label>bomb</label>
+    <minDamageToFragment>99999</minDamageToFragment>
+    <harmAllLayersUntilOutside>false</harmAllLayersUntilOutside>
+	<buildingDamageFactor>6</buildingDamageFactor>
+    <buildingDamageFactorPassable>5</buildingDamageFactorPassable>
+    <plantDamageFactor>7</plantDamageFactor>
+  </DamageDef>
+  
+  <DamageDef ParentName="LocalInjuryBase">
+    <defName>SaltF</defName>
+    <label>rock salt</label>
+    <externalViolence>true</externalViolence>
+    <deathMessage>{0} has been shot to death.</deathMessage>
+    <hediff>GunshotSalt</hediff>
+	<harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+	<canUseDeflectMetalEffect>false</canUseDeflectMetalEffect>
+	<additionalHediffs>
+		<li>
+			<hediff>Salt_Blindness</hediff>
+			<severityPerDamageDealt>0.1</severityPerDamageDealt>
+			<victimSeverityScaling>ToxicSensitivity</victimSeverityScaling>
+			<victimSeverityScalingByInvBodySize>true</victimSeverityScalingByInvBodySize>
+		</li>
+	</additionalHediffs>
+    <impactSoundType>Blunt</impactSoundType>
+    <armorCategory>Sharp</armorCategory>
+    <overkillPctToDestroyPart>0.4~1</overkillPctToDestroyPart>
+	<buildingDamageFactor>0</buildingDamageFactor>
+	<plantDamageFactor>0.1</plantDamageFactor>
+    <isRanged>true</isRanged>
+    <makesAnimalsFlee>true</makesAnimalsFlee>
+  </DamageDef>
+
+</Defs>

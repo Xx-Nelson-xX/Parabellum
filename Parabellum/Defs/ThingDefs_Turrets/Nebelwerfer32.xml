@@ -3,7 +3,7 @@
 
 	<!-- ================== Nebelwerfer 28/30/32cm ================== -->
 
-	<ThingDef ParentName="BaseArtilleryGun">
+	<ThingDef ParentName="BaseGun_Turret">
 		<defName>Pa_NbW32cm</defName>
 		<label>Nebelwerfer</label>
 		<graphicData>
@@ -17,7 +17,7 @@
 		<statBases>
 			<MarketValue>6000</MarketValue>
 			<SightsEfficiency>2.2</SightsEfficiency>
-			<ShotSpread>0.32</ShotSpread>
+			<ShotSpread>0.24</ShotSpread>
 			<SwayFactor>1.2</SwayFactor>
 			<RangedWeapon_Cooldown>6.2</RangedWeapon_Cooldown>
 		</statBases>
@@ -25,7 +25,7 @@
 		<verbs>
 			<li Class="CombatExtended.VerbPropertiesCE">
 				<recoilPattern>Mounted</recoilPattern>
-				<recoilAmount>0.52</recoilAmount>
+				<recoilAmount>0.4</recoilAmount>
 				<verbClass>CombatExtended.Verb_ShootMortarCE</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Bullet_28cmNbWRocket</defaultProjectile>
@@ -60,7 +60,7 @@
 	
 	<!-- ================== Wurfrahmen ================== -->
 
-	<ThingDef ParentName="BaseArtilleryGun">
+	<ThingDef ParentName="BaseGun_Turret">
 		<defName>Pa_NbW</defName>
 		<label>Nebelwerfer</label>
 		<graphicData>
@@ -74,7 +74,7 @@
 		<statBases>
 			<MarketValue>1000</MarketValue>
 			<SightsEfficiency>2.2</SightsEfficiency>
-			<ShotSpread>0.16</ShotSpread>
+			<ShotSpread>0.12</ShotSpread>
 			<SwayFactor>1.15</SwayFactor>
 			<RangedWeapon_Cooldown>5.8</RangedWeapon_Cooldown>
 		</statBases>

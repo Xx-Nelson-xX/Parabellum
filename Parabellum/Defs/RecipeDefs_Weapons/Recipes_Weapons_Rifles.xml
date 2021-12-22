@@ -174,7 +174,7 @@
 						<li>ComponentIndustrial</li>
 					</thingDefs>
 				</filter>
-				<count>22</count>
+				<count>24</count>
 			</li>
 			<li>
 				<filter>
@@ -299,6 +299,14 @@
 			<li>
 				<filter>
 					<thingDefs>
+						<li>Sniper_Component</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
 						<li>AdvRifle_Component</li>
 					</thingDefs>
 				</filter>
@@ -335,7 +343,7 @@
 						<li>Woody</li>
 					</categories>
 				</filter>
-				<count>22</count>
+				<count>36</count>
 			</li>
 		</ingredients>
 		<products>
@@ -343,6 +351,7 @@
 		</products>
 		<fixedIngredientFilter>
 			<thingDefs>
+				<li>Sniper_Component</li>
 				<li>AdvRifle_Component</li>
 				<li>Weapon_Parts</li>
 				<li>ComponentIndustrial</li>
@@ -384,7 +393,7 @@
 						<li>Weapon_Parts</li>
 					</thingDefs>
 				</filter>
-				<count>16</count>
+				<count>12</count>
 			</li>
 			<li>
 				<filter>
@@ -458,7 +467,7 @@
 						<li>Weapon_Parts</li>
 					</thingDefs>
 				</filter>
-				<count>14</count>
+				<count>10</count>
 			</li>
 			<li>
 				<filter>
@@ -513,7 +522,7 @@
 		<label>Build StG 45/MP 45(M)/Gerät 06H</label>
 		<description>Build a Sturmgewehr 45, Nothing like a trip through the countryside... just wish it wasn't this COUNTRY. \nCaliber: 7.92x33mm Kurz</description>
 		<jobString>Building the StG 45(M).</jobString>
-		<workAmount>10000</workAmount>
+		<workAmount>9000</workAmount>
 		<skillRequirements>
 			<Crafting>10</Crafting>
 		</skillRequirements>
@@ -532,7 +541,7 @@
 						<li>Weapon_Parts</li>
 					</thingDefs>
 				</filter>
-				<count>8</count>
+				<count>6</count>
 			</li>
 			<li>
 				<filter>

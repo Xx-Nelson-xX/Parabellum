@@ -68,7 +68,7 @@
 			<pelletCount>1100</pelletCount>
 			<spreadMult>37.8</spreadMult>
 			<armorPenetrationSharp>14</armorPenetrationSharp>
-			<armorPenetrationBlunt>32,5</armorPenetrationBlunt>
+			<armorPenetrationBlunt>32.5</armorPenetrationBlunt>
 		</projectile>
 	</ThingDef>
 

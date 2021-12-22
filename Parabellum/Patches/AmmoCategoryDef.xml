@@ -1,46 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Patch>
 
-	<Operation Class="PatchOperationFindMod">
-	<mods>
-		<li>Core SK</li>
-	</mods>
-		<match Class="PatchOperationSequence">
-			<operations>
-			
-				<li Class="PatchOperationReplace">	
-				<xpath>Defs/CombatExtended.AmmoCategoryDef[defName="BuckShot"]/label</xpath>
-					<value>
-						<label>12 Gauge Buckshot</label>
-					</value>
-				</li>
-				<li Class="PatchOperationReplace">	
-				<xpath>Defs/CombatExtended.AmmoCategoryDef[defName="BirdShot"]/label</xpath>
-					<value>
-						<label>12 Gauge BirdShot</label>
-					</value>
-				</li>
-				<li Class="PatchOperationReplace">	
-				<xpath>Defs/CombatExtended.AmmoCategoryDef[defName="Slug"]/label</xpath>
-					<value>
-						<label>12 Gauge Slug</label>
-					</value>
-				</li>
-				<li Class="PatchOperationReplace">	
-				<xpath>Defs/CombatExtended.AmmoCategoryDef[defName="Beanbag"]/label</xpath>
-					<value>
-						<label>12 Gauge Beanbag</label>
-					</value>
-				</li>
-				<li Class="PatchOperationReplace">	
-				<xpath>Defs/CombatExtended.AmmoCategoryDef[defName="ElectroSlug"]/label</xpath>
-					<value>
-						<label>12 Gauge EMP</label>
-					</value>
-				</li>
-				
-			</operations>
-		</match>
-    </Operation>
+	<Operation Class="PatchOperationReplace">	
+	<xpath>Defs/CombatExtended.AmmoCategoryDef[defName="BuckShot"]/label</xpath>
+		<value>
+			<label>12 Gauge Buckshot</label>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">	
+	<xpath>Defs/CombatExtended.AmmoCategoryDef[defName="BirdShot"]/label</xpath>
+		<value>
+			<label>12 Gauge BirdShot</label>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">	
+	<xpath>Defs/CombatExtended.AmmoCategoryDef[defName="Slug"]/label</xpath>
+		<value>
+			<label>12 Gauge Slug</label>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">	
+	<xpath>Defs/CombatExtended.AmmoCategoryDef[defName="Beanbag"]/label</xpath>
+		<value>
+			<label>12 Gauge Beanbag</label>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">	
+	<xpath>Defs/CombatExtended.AmmoCategoryDef[defName="ElectroSlug"]/label</xpath>
+		<value>
+			<label>12 Gauge EMP</label>
+		</value>
+	</Operation>
 	
 </Patch>

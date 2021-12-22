@@ -149,6 +149,7 @@
 				<li>Artillery</li>
 				<li>Artillery_BaseDestroyer</li>
 			</buildingTags>
+			<uninstallWork>150</uninstallWork>
 		</building>
 		<minifiedDef>MinifiedTurret_Pa_8cmGrW</minifiedDef>
 		<thingCategories>
@@ -199,6 +200,7 @@
 				<li>Artillery</li>
 				<li>Artillery_BaseDestroyer</li>
 			</buildingTags>
+			<uninstallWork>80</uninstallWork>
 		</building>
 		<minifiedDef>MinifiedTurret_Pa_Kz8cmGrW</minifiedDef>
 		<thingCategories>

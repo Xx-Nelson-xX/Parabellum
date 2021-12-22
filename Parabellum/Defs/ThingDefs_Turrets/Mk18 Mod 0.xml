@@ -94,6 +94,7 @@
 			<buildingTags>
 				<li>SiegeGun</li>
 			</buildingTags>
+			<uninstallWork>80</uninstallWork>
 		</building>
 		<minifiedDef>MinifiedTurret_Pa_Mk18GL</minifiedDef>
 		<thingCategories>

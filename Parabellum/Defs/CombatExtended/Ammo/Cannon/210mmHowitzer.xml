@@ -1,0 +1,456 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingCategoryDef>
+		<defName>Ammo210mmHowitzerShell</defName>
+		<label>21cm howitzer shell</label>
+		<parent>AmmoShells</parent>
+		<iconPath>Things/Ammo/210mm/AC</iconPath>
+	</ThingCategoryDef>
+
+	<!-- ==================== AmmoSet ========================== -->
+
+	<CombatExtended.AmmoSetDef>
+		<defName>AmmoSet_21cmM16HowitzerShell</defName>
+		<label>21cm howitzer shell</label>
+		<ammoTypes>
+			<Ammo_21cmHowitzerShell_AC>Bullet_21cmHowitzerShell_AC</Ammo_21cmHowitzerShell_AC>
+			<Ammo_21cmHowitzerShell_HE>Bullet_21cmHowitzerShell_HE</Ammo_21cmHowitzerShell_HE>
+			<Ammo_21cmHowitzerShell_APHE>Bullet_21cmHowitzerShell_APHE</Ammo_21cmHowitzerShell_APHE>
+		</ammoTypes>
+	</CombatExtended.AmmoSetDef>
+	
+	<CombatExtended.AmmoSetDef>
+		<defName>AmmoSet_21cmM18HowitzerShell</defName>
+		<label>21cm howitzer shell</label>
+		<ammoTypes>
+			<Ammo_21cmHowitzerShell_AC>Bullet_21cmHowitzerShell_ACD</Ammo_21cmHowitzerShell_AC>
+			<Ammo_21cmHowitzerShell_HE>Bullet_21cmHowitzerShell_HE</Ammo_21cmHowitzerShell_HE>
+			<Ammo_21cmHowitzerShell_APHE>Bullet_21cmHowitzerShell_APHE</Ammo_21cmHowitzerShell_APHE>
+		</ammoTypes>
+	</CombatExtended.AmmoSetDef>
+
+	<!-- ==================== Ammo ========================== -->
+
+	<ThingDef Class="CombatExtended.AmmoDef" Name="21cmHowitzerShellBase" ParentName="AmmoBase" Abstract="True">
+		<description>Large size 21cm shell for Mörser heavy siege artillery.</description>
+		<statBases>
+			<MaxHitPoints>500</MaxHitPoints>
+			<Bulk>138.6</Bulk>
+		</statBases>
+		<tradeTags>
+			<li>CE_AutoEnableTrade</li>
+			<li>CE_AutoEnableCrafting_TableMachining</li>
+		</tradeTags>
+		<thingCategories>
+			<li>Ammo210mmHowitzerShell</li>
+		</thingCategories>
+		<stackLimit>10</stackLimit>
+		<cookOffSound>Explosion_GiantBomb</cookOffSound>
+		<cookOffSpeed>0.1</cookOffSpeed>
+		<cookOffFlashScale>50</cookOffFlashScale>
+		<cookOffTailSound>ShellCookOff_Ambient</cookOffTailSound>
+		<isMortarAmmo>true</isMortarAmmo>
+	</ThingDef>
+
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="21cmHowitzerShellBase">
+		<defName>Ammo_21cmHowitzerShell_AC</defName>
+		<label>21cm Gr 18(AC)</label>
+		<graphicData>
+			<texPath>Things/Ammo/210mm/AC</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>200</MarketValue>
+			<Mass>131</Mass>
+		</statBases>
+		<ammoClass>21cmAC</ammoClass>
+		<generateAllowChance>0.5</generateAllowChance>
+		<cookOffProjectile>Bullet_21cmHowitzerShell_AC</cookOffProjectile>
+	</ThingDef>
+	
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="21cmHowitzerShellBase">
+		<defName>Ammo_21cmHowitzerShell_HE</defName>
+		<label>21cm Gr 18(HE)</label>
+		<graphicData>
+			<texPath>Things/Ammo/210mm/HE</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>272</MarketValue>
+			<Mass>113</Mass>
+		</statBases>
+		<ammoClass>21cmHE</ammoClass>
+		<cookOffProjectile>Bullet_21cmHowitzerShell_HE</cookOffProjectile>
+	</ThingDef>
+	
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="21cmHowitzerShellBase">
+		<defName>Ammo_21cmHowitzerShell_APHE</defName>
+		<label>21cm Gr 18 Be.(APHE)</label>
+		<graphicData>
+			<texPath>Things/Ammo/210mm/APHE</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>260</MarketValue>
+			<Mass>121.4</Mass>
+			<Bulk>151</Bulk>
+		</statBases>
+		<ammoClass>21cmAPHE</ammoClass>
+		<generateAllowChance>0.25</generateAllowChance>
+		<cookOffProjectile>Bullet_21cmHowitzerShell_APHE</cookOffProjectile>
+	</ThingDef>
+
+	<!-- ================== Projectiles ================== -->
+
+  <ThingDef Class="CombatExtended.AmmoDef" Name="Base21cmHowitzerShell" ParentName="SK_BaseBullet" Abstract="true" >
+		<thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
+		<graphicData>
+			<shaderType>TransparentPostLight</shaderType>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<explosionEffect>GiantExplosion</explosionEffect>
+			<soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
+			<soundExplode>Explosion_GiantBomb</soundExplode>
+			<soundImpactAnticipate>MortarRound_PreImpact</soundImpactAnticipate>
+			<soundAmbient>MortarRound_Ambient</soundAmbient>
+			<flyOverhead>true</flyOverhead>
+			<dropsCasings>true</dropsCasings>
+			<casingMoteDefname>Mote_BigShell</casingMoteDefname>
+			<gravityFactor>10</gravityFactor>
+			<alwaysFreeIntercept>false</alwaysFreeIntercept>
+		</projectile>
+	</ThingDef>
+	
+  <ThingDef Class="CombatExtended.AmmoDef" ParentName="Base21cmHowitzerShell">
+		<defName>Bullet_21cmHowitzerShell_ACD</defName>
+		<label>21cm howitzer shell(AC)</label>
+		<graphicData>
+			<texPath>Things/Projectile/210mm/AC</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<speed>85</speed> <!-- 550/s -->
+			<flyOverhead>false</flyOverhead>
+			<damageDef>ACP</damageDef>
+			<damageAmountBase>525</damageAmountBase>
+			<explosionChanceToStartFire>0.16</explosionChanceToStartFire>
+			<armorPenetrationSharp>296</armorPenetrationSharp>
+			<armorPenetrationBlunt>18900.24</armorPenetrationBlunt>
+			<secondaryDamage>
+				<li>
+					<def>Bullet</def>
+					<amount>820</amount>
+				</li>
+			</secondaryDamage>
+		</projectile>
+		<comps>
+			<li Class="CombatExtended.CompProperties_ExplosiveCE">
+				<damageAmountBase>105</damageAmountBase>
+				<explosiveDamageType>ACB</explosiveDamageType>
+				<explosiveRadius>1.8</explosiveRadius>
+			</li>
+			<li Class="CombatExtended.CompProperties_Fragments">
+				<fragments>
+					<Fragment_Large>72</Fragment_Large>
+					<Fragment_Small>18</Fragment_Small>
+				</fragments>
+			</li>
+		</comps>
+  </ThingDef>
+
+  <ThingDef Class="CombatExtended.AmmoDef" ParentName="Base21cmHowitzerShell">
+		<defName>Bullet_21cmHowitzerShell_AC</defName>
+		<label>21cm howitzer shell(AC)</label>
+		<graphicData>
+			<texPath>Things/Projectile/210mm/AC</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<speed>85</speed> <!-- 550m/s -->
+			<damageDef>ACP</damageDef>
+			<damageAmountBase>525</damageAmountBase>
+			<explosionChanceToStartFire>0.16</explosionChanceToStartFire>
+			<armorPenetrationSharp>296</armorPenetrationSharp>
+			<armorPenetrationBlunt>18900.24</armorPenetrationBlunt>
+			<secondaryDamage>
+				<li>
+					<def>Bullet</def>
+					<amount>820</amount>
+				</li>
+			</secondaryDamage>
+		</projectile>
+		<comps>
+			<li Class="CombatExtended.CompProperties_ExplosiveCE">
+				<damageAmountBase>105</damageAmountBase>
+				<explosiveDamageType>ACB</explosiveDamageType>
+				<explosiveRadius>1.8</explosiveRadius>
+			</li>
+			<li Class="CombatExtended.CompProperties_Fragments">
+				<fragments>
+					<Fragment_Large>72</Fragment_Large>
+					<Fragment_Small>18</Fragment_Small>
+				</fragments>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="Base21cmHowitzerShell">
+		<defName>Bullet_21cmHowitzerShell_HE</defName>
+		<label>21cm howitzer shell(HE)</label>
+		<graphicData>
+			<texPath>Things/Projectile/210mm/HE</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<speed>85</speed> <!-- 550m/s -->
+			<damageDef>Bomb</damageDef>
+			<damageAmountBase>340</damageAmountBase>
+			<explosionRadius>7</explosionRadius>
+			<explosionChanceToStartFire>0.52</explosionChanceToStartFire>
+			<ai_IsIncendiary>true</ai_IsIncendiary>
+		</projectile>
+		<comps>
+			<li Class="CombatExtended.CompProperties_Fragments">
+				<fragments>
+					<Fragment_Large>140</Fragment_Large>
+					<Fragment_Small>90</Fragment_Small>
+				</fragments>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="Base21cmHowitzerShell">
+		<defName>Bullet_21cmHowitzerShell_APHE</defName>
+		<label>21cm howitzer shell(APHE)</label>
+		<graphicData>
+			<texPath>Things/Projectile/210mm/APHE</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<speed>87</speed> <!-- 565m/s -->
+			<damageDef>ACP</damageDef>
+			<damageAmountBase>886</damageAmountBase>
+			<explosionChanceToStartFire>0.28</explosionChanceToStartFire>
+			<armorPenetrationSharp>372</armorPenetrationSharp>
+			<armorPenetrationBlunt>21000.24</armorPenetrationBlunt>
+		</projectile>
+		<comps>
+			<li Class="CompProperties_CameraShaker">
+				<mag>0.03</mag>
+			</li>
+			<li Class="CombatExtended.CompProperties_ExplosiveCE">
+				<damageAmountBase>197</damageAmountBase>
+				<explosiveDamageType>ACB</explosiveDamageType>
+				<explosiveRadius>3.9</explosiveRadius>
+			</li>
+			<li Class="CombatExtended.CompProperties_Fragments">
+				<fragments>
+					<Fragment_Large>88</Fragment_Large>
+					<Fragment_Small>36</Fragment_Small>
+				</fragments>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<!-- ==================== Recipes ========================== -->
+
+	<RecipeDef ParentName="AmmoRecipeBase">
+		<defName>MakeAmmo_21cmHowitzerShell_AC</defName>
+		<label>make 21cmm Gr 18 Anti-Concrete howitzer shells x1</label>
+		<description>Craft a 21cmm Gr 18 Anti-Concrete howitzer shells.</description>
+		<jobString>Making a 21cmm Gr 18 Anti-Concrete howitzer shells.</jobString>
+		<workAmount>1900</workAmount>
+		<targetCountAdjustment>10</targetCountAdjustment>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>SLDBar</li>
+						<li>USLDBar</li>
+					</categories>
+				</filter>
+				<count>28</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>HeavyBar</li>
+					</categories>
+				</filter>
+				<count>14</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Powder</li>
+						<li>FSX</li>
+					</thingDefs>
+				</filter>
+				<count>6</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>3</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>SLDBar</li>
+				<li>USLDBar</li>
+				<li>HeavyBar</li>
+			</categories>
+			<thingDefs>
+				<li>Powder</li>
+				<li>FSX</li>
+				<li>ComponentIndustrial</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Ammo_21cmHowitzerShell_AC>1</Ammo_21cmHowitzerShell_AC>
+		</products>
+		<skillRequirements>
+			<Crafting>10</Crafting>
+        </skillRequirements>
+		<recipeUsers>
+			<li>FabricationBench</li>
+		</recipeUsers>
+		<researchPrerequisite>Parabellum_Beta</researchPrerequisite>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="AmmoRecipeBase">
+		<defName>MakeAmmo_21cmHowitzerShell_HE</defName>
+		<label>make 21cmm Gr 18 High Explosive howitzer shells x1</label>
+		<description>Craft a 21cmm Gr 18 High Explosive howitzer shells.</description>
+		<jobString>Making a 21cmm Gr 18 High Explosive howitzer shells.</jobString>
+		<workAmount>1900</workAmount>
+		<targetCountAdjustment>10</targetCountAdjustment>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>SLDBar</li>
+						<li>USLDBar</li>
+					</categories>
+				</filter>
+				<count>34</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>HeavyBar</li>
+					</categories>
+				</filter>
+				<count>15</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Powder</li>
+						<li>FSX</li>
+					</thingDefs>
+				</filter>
+				<count>8</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>3</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>SLDBar</li>
+				<li>USLDBar</li>
+				<li>HeavyBar</li>
+			</categories>
+			<thingDefs>
+				<li>Powder</li>
+				<li>FSX</li>
+				<li>ComponentIndustrial</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Ammo_21cmHowitzerShell_HE>1</Ammo_21cmHowitzerShell_HE>
+		</products>
+		<skillRequirements>
+			<Crafting>10</Crafting>
+        </skillRequirements>
+		<recipeUsers>
+			<li>FabricationBench</li>
+		</recipeUsers>
+		<researchPrerequisite>Parabellum_Beta</researchPrerequisite>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="AmmoRecipeBase">
+		<defName>MakeAmmo_21cmHowitzerShell_APHE</defName>
+		<label>make 21cmm Gr 18 Be. High Explosive Anti-Concrete howitzer shells x1</label>
+		<description>Craft a 21cmm Gr 18 Be. High Explosive Anti-Concrete howitzer shells.</description>
+		<jobString>Making a 21cmm Gr 18 Be. High Explosive Anti-Concrete howitzer shells.</jobString>
+		<workAmount>1900</workAmount>
+		<targetCountAdjustment>10</targetCountAdjustment>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>SLDBar</li>
+						<li>USLDBar</li>
+					</categories>
+				</filter>
+				<count>32</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>HeavyBar</li>
+					</categories>
+				</filter>
+				<count>14</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Powder</li>
+						<li>FSX</li>
+					</thingDefs>
+				</filter>
+				<count>7</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>3</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>SLDBar</li>
+				<li>USLDBar</li>
+				<li>HeavyBar</li>
+			</categories>
+			<thingDefs>
+				<li>Powder</li>
+				<li>FSX</li>
+				<li>ComponentIndustrial</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Ammo_21cmHowitzerShell_APHE>1</Ammo_21cmHowitzerShell_APHE>
+		</products>
+		<skillRequirements>
+			<Crafting>10</Crafting>
+        </skillRequirements>
+		<researchPrerequisite>Parabellum_I</researchPrerequisite>
+	</RecipeDef>
+
+</Defs>

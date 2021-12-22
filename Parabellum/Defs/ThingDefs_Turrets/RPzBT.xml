@@ -24,7 +24,7 @@
 		<generateCommonality>0</generateCommonality>
 		<verbs>
 			<li Class="CombatExtended.VerbPropertiesCE">
-				<verbClass>CombatExtended.Verb_ShootMortarCE</verbClass>
+				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Bullet_88mmRPzB_HEAT</defaultProjectile>
 				<!--<forcedMissRadius>2</forcedMissRadius>-->
@@ -79,7 +79,7 @@
 		<generateCommonality>0</generateCommonality>
 		<verbs>
 			<li Class="CombatExtended.VerbPropertiesCE">
-				<verbClass>CombatExtended.Verb_ShootMortarCE</verbClass>
+				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Bullet_88mmRPzB_HEAT</defaultProjectile>
 				<!--<forcedMissRadius>2</forcedMissRadius>-->
@@ -108,7 +108,7 @@
 	
 	<!-- ================== Raketen-Vielfachwerfer ================== -->
 
-	<ThingDef ParentName="BaseArtilleryGun">
+	<ThingDef ParentName="BaseGun_Turret">
 		<defName>Pa_RVW</defName>
 		<label>Raketen-Vielfachwerfer</label>
 		<graphicData>

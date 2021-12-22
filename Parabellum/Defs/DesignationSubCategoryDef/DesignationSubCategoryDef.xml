@@ -43,13 +43,15 @@
 		<label>Anti-Tank Gun(P)</label>
 		<description>Anti-Tank Gun from Parabellum, Ancient but still useful</description>
 		<defNames>
-			<li>Turret_Pak36ATG</li>
-			<li>Turret_Pak38ATG</li>
+			<li>Turret_PaK36ATG</li>
+			<li>Turret_PaK38ATG</li>
+			<li>Turret_PaK40ATG</li>
+			<li>Turret_PaK44HATGP</li>
+			<li>Turret_FlaK40ZHAAP</li>
+			<li>Turret_LG</li>
 			<li>Turret_RW</li>
 			<li>Turret_RPzB6T</li>
 			<li>Turret_Wombat</li>
-			<li>Turret_PaK44HATGP</li>
-			<li>Turret_FlaK40ZHAAP</li>
 		</defNames>
 		<designationCategory>Security</designationCategory>
 		<debug>false</debug>

@@ -245,6 +245,7 @@
 		<label>make 25x59mm HEAB grenades x50</label>
 		<description>Craft 50 25x59mm HEAB grenades.</description>
 		<jobString>Making 25x59mm HEAB grenades.</jobString>
+		<targetCountAdjustment>50</targetCountAdjustment>
 		<ingredients>
 			<li>
 				<filter>
@@ -302,6 +303,7 @@
 		<label>make 25x59mm HEDP grenades x50</label>
 		<description>Craft 50 25x59mm HEDP grenades.</description>
 		<jobString>Making 25x59mm HEDP grenades.</jobString>
+		<targetCountAdjustment>50</targetCountAdjustment>
 		<ingredients>
 			<li>
 				<filter>
@@ -350,6 +352,7 @@
 		<label>make 25x59mm HEI grenades x50</label>
 		<description>Craft 50 25x59mm HEI grenades.</description>
 		<jobString>Making 25x59mm HEI grenades.</jobString>
+		<targetCountAdjustment>50</targetCountAdjustment>
 		<ingredients>
 			<li>
 				<filter>
@@ -407,6 +410,7 @@
 		<label>make 25x59mm HE-EMP grenades x50</label>
 		<description>Craft 50 25x59mm HE-EMP grenades.</description>
 		<jobString>Making 25x59mm HE-EMP grenades.</jobString>
+		<targetCountAdjustment>50</targetCountAdjustment>
 		<ingredients>
 			<li>
 				<filter>

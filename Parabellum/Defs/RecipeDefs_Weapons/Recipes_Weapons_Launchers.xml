@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-
+	
+	<!-- =============== Hawk MM-1 Grenade Launcher =============== -->
 	<RecipeDef ParentName="RangedWeaponRecipeBase">
 		<defName>Build_Hawk_MM1</defName>
 		<label>Build Hawk MM-1</label>
@@ -73,6 +74,7 @@
 		<researchPrerequisite>Grenade_launchers_C2</researchPrerequisite>
 	</RecipeDef>
 	
+	<!-- =============== RGS Grenade Launcher =============== -->
 	<RecipeDef ParentName="RangedWeaponRecipeBase">
 		<defName>Build_RGS</defName>
 		<label>Build RGS</label>
@@ -145,6 +147,7 @@
 		<researchPrerequisite>Grenade_launchers_C1</researchPrerequisite>
 	</RecipeDef>
 	
+	<!-- =============== Carl Gustav fm/42 Recoiless anti-tank Rifle =============== -->
 	<RecipeDef ParentName="RangedWeaponRecipeBase">
 		<defName>Build_CG42R</defName>
 		<label>Build Carl Gustav fm/42 Recoiless anti-tank Rifle</label>
@@ -189,11 +192,19 @@
 			</li>
 			<li>
 				<filter>
-					<thingDefs>
-						<li>Plastic</li>
-					</thingDefs>
+					<categories>
+						<li>Woody</li>
+					</categories>
 				</filter>
-				<count>40</count>
+				<count>22</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>Leathers</li>
+					</categories>
+				</filter>
+				<count>20</count>
 			</li>
 		</ingredients>
 		<products>
@@ -204,9 +215,10 @@
 				<li>Launcher_Component</li>
 				<li>Weapon_Parts</li>
 				<li>ComponentIndustrial</li>
-				<li>Plastic</li>
 			</thingDefs>
 			<categories>
+				<li>Woody</li>
+				<li>Leathers</li>
 				<li>SLDBar</li>
 				<li>USLDBar</li>
 			</categories>
@@ -217,6 +229,7 @@
 		<researchPrerequisite>HeavyTurrets</researchPrerequisite>
 	</RecipeDef> 
 	
+	<!-- =============== Carl Gustav Recoiless Rifle Mod.U =============== -->
 	<RecipeDef ParentName="RangedWeaponRecipeBase">
 		<defName>Build_CGR</defName>
 		<label>Build Carl Gustav Recoiless Rifle Mod.U</label>
@@ -298,6 +311,7 @@
 		<researchPrerequisite>Rockets_C2</researchPrerequisite>
 	</RecipeDef> 
 	
+	<!-- =============== M202 FLame Assault SHoulder =============== -->
 	<RecipeDef ParentName="RangedWeaponRecipeBase">
 		<defName>BuildFLASH</defName>
 		<label>Build M202 FLASH</label>
@@ -370,6 +384,7 @@
 		<researchPrerequisite>Rockets_C2</researchPrerequisite>
 	</RecipeDef>
 	
+	<!-- =============== Panzerfaust 60 =============== -->
 	<RecipeDef ParentName="RangedWeaponRecipeBase">
 		<defName>BuildPzF</defName>
 		<label>Build Panzerfaust 60</label>
@@ -424,6 +439,7 @@
 		<researchPrerequisite>Machining</researchPrerequisite>
 	</RecipeDef>
 	
+	<!-- =============== Raketenpanzerbüchse 54/1 =============== -->
 	<RecipeDef ParentName="RangedWeaponRecipeBase">
 		<defName>BuildRPzB</defName>
 		<label>Build Raketenpanzerbüchse 54/1</label>
@@ -495,7 +511,8 @@
 		</recipeUsers>
 		<researchPrerequisite>HeavyTurrets</researchPrerequisite>
 	</RecipeDef>
-
+	
+	<!-- =============== M320(K) Grenade Launcher =============== -->
 	<RecipeDef ParentName="RangedWeaponRecipeBase">
 		<defName>Build_M320K</defName>
 		<label>Build M320(K) Grenade Launcher</label>

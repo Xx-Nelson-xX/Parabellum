@@ -3,7 +3,7 @@
 
 	<!-- ================== Type 63 Multiple Rocket Launcher Platform ================== -->
 
-	<ThingDef ParentName="BaseArtilleryGun">
+	<ThingDef ParentName="BaseGun_Turret">
 		<defName>Pa_Type63MRL</defName>
 		<label>Type63MRL</label>
 		<graphicData>

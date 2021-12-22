@@ -125,5 +125,13 @@
     <labelShort>10 Gauge BS</labelShort>
     <description>Filled with several buckshot pellets which spread in a tight pattern, bigger pellets than 12 Gauges Buckshot, but with less pellets due increase pellet size.</description>
   </CombatExtended.AmmoCategoryDef>
+  
+  <!-- ==================== Shotgun SaltShot ========================== -->
+  <CombatExtended.AmmoCategoryDef>
+    <defName>SSalt</defName>
+    <label>Shotgun SaltShot</label>
+    <labelShort>Salt Shot</labelShort>
+    <description>Custom made shotgun shell filled with rock salt, cause lots of pain when the salt fragments manage to encrusted in living body part but very ineffective counter armored target and thick skin creatures.</description>
+  </CombatExtended.AmmoCategoryDef>
 
 </Defs>

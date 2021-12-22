@@ -114,7 +114,7 @@
   
   <CombatExtended.AmmoCategoryDef>
     <defName>RPzBFrag</defName>
-    <label>88mm RPzB Frag(ID)</label>
+    <label>88mm RPzB Frag</label>
     <labelShort>RPzB Frag</labelShort>
     <description>Modified Shape Charge Anti-Personnel Rocket, excellent counter soft target, not designed for direct hit since the fragment covers are on the side of the warhead.</description>
   </CombatExtended.AmmoCategoryDef>

@@ -312,7 +312,7 @@
 				<li>USLDBar</li>
              </categories>
 		</fixedIngredientFilter>
-		<researchPrerequisite>Artillery_C2</researchPrerequisite>
+		<researchPrerequisite>Turrets_31</researchPrerequisite>
 	</RecipeDef>
 
 	<!-- ================== Minified ================== -->

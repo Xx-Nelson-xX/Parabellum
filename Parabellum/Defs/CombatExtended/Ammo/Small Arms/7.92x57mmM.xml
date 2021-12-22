@@ -119,8 +119,8 @@
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
 			<speed>125</speed>
 			<damageAmountBase>20</damageAmountBase>
-			<armorPenetrationSharp>9.2</armorPenetrationSharp>
-			<armorPenetrationBlunt>74.6</armorPenetrationBlunt>
+			<armorPenetrationSharp>9.6</armorPenetrationSharp>
+			<armorPenetrationBlunt>62.6</armorPenetrationBlunt>
 		</projectile>
 	</ThingDef>
 	
@@ -128,11 +128,11 @@
 		<defName>Bullet_8mmM_SP</defName>
 		<label>7.92x57mm bullet (FMJ)</label>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
-			<speed>168</speed>
-			<spreadMult>0.94</spreadMult>
+			<speed>175</speed>
+			<spreadMult>0.96</spreadMult>
 			<damageAmountBase>24</damageAmountBase>
-			<armorPenetrationSharp>11.2</armorPenetrationSharp>
-			<armorPenetrationBlunt>72.5</armorPenetrationBlunt>
+			<armorPenetrationSharp>12</armorPenetrationSharp>
+			<armorPenetrationBlunt>76.5</armorPenetrationBlunt>
 		</projectile>
 	</ThingDef>
 	
@@ -140,10 +140,10 @@
 		<defName>Bullet_8mmM_KP</defName>
 		<label>7.92x57mm bullet (AP)</label>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
-			<speed>177</speed>
+			<speed>178</speed>
 			<spreadMult>0.9</spreadMult>
-			<damageAmountBase>27</damageAmountBase>
-			<armorPenetrationSharp>15.2</armorPenetrationSharp>
+			<damageAmountBase>20</damageAmountBase>
+			<armorPenetrationSharp>16.7</armorPenetrationSharp>
 			<armorPenetrationBlunt>69.4</armorPenetrationBlunt>
 		</projectile>
 	</ThingDef>
@@ -152,7 +152,7 @@
 		<defName>Bullet_8mmM_BP</defName>
 		<label>7.92x57mm bullet (HE-T)</label>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
-			<speed>162</speed>
+			<speed>181</speed>
 			<spreadMult>0.9</spreadMult>
 			<damageAmountBase>25</damageAmountBase>
 			<armorPenetrationSharp>10.8</armorPenetrationSharp>
@@ -180,6 +180,7 @@
 		<label>make 8x57mm Patrone 88 (FMJ) cartridge x50</label>
 		<description>Craft 50 8x57mm Patrone 88 (FMJ) cartridge.</description>
 		<jobString>Making 8x57mm Patrone 88 (FMJ) cartridge.</jobString>
+		<targetCountAdjustment>50</targetCountAdjustment>
 		<ingredients>
 			<li>
 				<filter>
@@ -227,6 +228,7 @@
 		<label>make 7.92x57mm S Patrone (FMJ) cartridge x75</label>
 		<description>Craft 75 7.92x57mm S Patrone(FMJ) cartridge.</description>
 		<jobString>Making 7.92x57mm S Patrone (FMJ) cartridge.</jobString>
+		<targetCountAdjustment>75</targetCountAdjustment>
 		<ingredients>
 			<li>
 				<filter>
@@ -280,6 +282,7 @@
 		<label>make 7.92x57mm K Patrone (AP) cartridge x75</label>
 		<description>Craft 75 7.92x57mm K Patrone (AP) cartridge.</description>
 		<jobString>Making 7.92x57mm K Patrone (AP) cartridge.</jobString>
+		<targetCountAdjustment>75</targetCountAdjustment>
 		<ingredients>
 			<li>
 				<filter>
@@ -288,7 +291,7 @@
 						<li>USLDBar</li>
 					</categories>
 				</filter>
-				<count>12</count>
+				<count>14</count>
 			</li>
 			<li>
 				<filter>
@@ -296,7 +299,7 @@
 						<li>Tungsten</li>
 					</thingDefs>
 				</filter>
-				<count>5</count>
+				<count>3</count>
 			</li>
 			<li>
 				<filter>
@@ -342,6 +345,7 @@
 		<label>make 7.92x57mm B Patrone (HE-T) cartridge x75</label>
 		<description>Craft 75 7.92x57mm B Patrone(HE-T) cartridge.</description>
 		<jobString>Making 7.92x57mm B Patrone (HE-T) cartridge.</jobString>
+		<targetCountAdjustment>75</targetCountAdjustment>
 		<ingredients>
 			<li>
 				<filter>

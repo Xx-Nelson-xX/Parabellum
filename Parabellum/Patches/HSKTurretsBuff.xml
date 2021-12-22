@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<!-- Cannon/Autocannon buff - 120mm Leopard ATG as base: 8000m range = 140 tiles, so the formula is (x Real life gun range/8000)x140 -->
+	<!-- 90mm M1 Flak gun as base: 10380m range -->
+	<Operation Class="PatchOperationReplace">	
+		<xpath>Defs/ThingDef[defName="Gun_FlakTurret"]/verbs/li[@Class="CombatExtended.VerbPropertiesCE"]/range</xpath>
+		<value>
+			<range>182</range>
+		</value>
+	</Operation>
+	
+	<!-- 120mm Leopard ATG: 8000m range -->
+	<Operation Class="PatchOperationReplace">	
+		<xpath>Defs/ThingDef[defName="Gun_CannonTurret"]/statBases/SightsEfficiency</xpath>
+		<value>
+			<SightsEfficiency>2.8</SightsEfficiency>
+		</value>
+	</Operation>
+	
+	<!-- 20mm Oerlikon autocannon: 4389m range -->
+	<Operation Class="PatchOperationReplace">	
+		<xpath>Defs/ThingDef[defName="Gun_Oerlikonautocannon"]/verbs/li[@Class="CombatExtended.VerbPropertiesCE"]/range</xpath>
+		<value>
+			<range>77</range>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">	
+		<xpath>Defs/ThingDef[defName="Gun_Oerlikonautocannon"]/verbs/li[@Class="CombatExtended.VerbPropertiesCE"]/burstShotCount</xpath>
+		<value>
+			<burstShotCount>12</burstShotCount>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">	
+		<xpath>Defs/ThingDef[defName="Gun_Oerlikonautocannon"]/comps/li[@Class="CombatExtended.CompProperties_FireModes"]/aimedBurstShotCount</xpath>
+		<value>
+			<aimedBurstShotCount>6</aimedBurstShotCount>
+		</value>
+	</Operation>
+	
+	<!-- 20mm Vulcan autocannon -->
+	<Operation Class="PatchOperationReplace">	
+		<xpath>Defs/ThingDef[defName="Gun_VulcanCannon"]/verbs/li[@Class="CombatExtended.VerbPropertiesCE"]/ticksBetweenBurstShots</xpath>
+		<value>
+			<ticksBetweenBurstShots>0</ticksBetweenBurstShots>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationRemove">	
+		<xpath>Defs/ThingDef[defName="Gun_VulcanCannon"]/verbs/li[@Class="CombatExtended.VerbPropertiesCE"]/recoilAmount</xpath>
+	</Operation>
+	<Operation Class="PatchOperationReplace">	
+		<xpath>Defs/ThingDef[defName="Gun_VulcanCannon"]/verbs/li[@Class="CombatExtended.VerbPropertiesCE"]/burstShotCount</xpath>
+		<value>
+			<burstShotCount>60</burstShotCount>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">	
+		<xpath>Defs/ThingDef[defName="Gun_VulcanCannon"]/comps/li[@Class="CombatExtended.CompProperties_FireModes"]</xpath>
+		<value>
+			<aimedBurstShotCount>12</aimedBurstShotCount>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">	
+		<xpath>Defs/ThingDef[defName="Gun_VulcanCannon"]/comps/li[@Class="CombatExtended.CompProperties_FireModes"]</xpath>
+		<value>
+			<noSingleShot>true</noSingleShot>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">	
+		<xpath>Defs/ThingDef[defName="Gun_VulcanCannon"]/comps/li[@Class="CombatExtended.CompProperties_AmmoUser"]/magazineSize</xpath>
+		<value>
+			<magazineSize>600</magazineSize>
+		</value>
+	</Operation>
+	
+	<!-- 30mm GAU-8 autocannon -->
+	<Operation Class="PatchOperationReplace">	
+		<xpath>Defs/ThingDef[defName="Gun_Avenger"]/verbs/li[@Class="CombatExtended.VerbPropertiesCE"]/ticksBetweenBurstShots</xpath>
+		<value>
+			<ticksBetweenBurstShots>1</ticksBetweenBurstShots>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationRemove">	
+		<xpath>Defs/ThingDef[defName="Gun_Avenger"]/verbs/li[@Class="CombatExtended.VerbPropertiesCE"]/recoilAmount</xpath>
+	</Operation>
+	<Operation Class="PatchOperationReplace">	
+		<xpath>Defs/ThingDef[defName="Gun_Avenger"]/verbs/li[@Class="CombatExtended.VerbPropertiesCE"]/burstShotCount</xpath>
+		<value>
+			<burstShotCount>35</burstShotCount>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">	
+		<xpath>Defs/ThingDef[defName="Gun_Avenger"]/comps/li[@Class="CombatExtended.CompProperties_FireModes"]</xpath>
+		<value>
+			<aimedBurstShotCount>7</aimedBurstShotCount>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">	
+		<xpath>Defs/ThingDef[defName="Gun_Avenger"]/comps/li[@Class="CombatExtended.CompProperties_FireModes"]</xpath>
+		<value>
+			<noSingleShot>true</noSingleShot>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">	
+		<xpath>Defs/ThingDef[defName="Gun_Avenger"]/comps/li[@Class="CombatExtended.CompProperties_AmmoUser"]/magazineSize</xpath>
+		<value>
+			<magazineSize>350</magazineSize>
+		</value>
+	</Operation>
+	
+</Patch>

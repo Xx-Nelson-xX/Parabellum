@@ -43,7 +43,7 @@
 
 	<ThingDef Class="CombatExtended.AmmoDef" ParentName="50mmCannonShellBase">
 		<defName>Ammo_50mmCannonShell_APHE</defName>
-		<label>5cm Pzgr 39 (APHE)</label>
+		<label>5cm Pzgr 39(APHE)</label>
 		<graphicData>
 			<texPath>Things/Ammo/50mm/APHE</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
@@ -59,7 +59,7 @@
 
 	<ThingDef Class="CombatExtended.AmmoDef" ParentName="50mmCannonShellBase">
 		<defName>Ammo_50mmCannonShell_HE</defName>
-		<label>5cm Sprgr 38 (HE)</label>
+		<label>5cm Sprgr 38(HE)</label>
 		<graphicData>
 			<texPath>Things/Ammo/50mm/HE</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
@@ -107,7 +107,7 @@
 
 	<ThingDef Class="CombatExtended.AmmoDef" ParentName="Base50mmCannonShell">
 		<defName>Bullet_50mmCannonShell_APHE</defName>
-		<label>5cm Pzgr 39 (APHE)</label>
+		<label>5cm Pzgr 39(APHE)</label>
 		<graphicData>
 			<texPath>Things/Projectile/50mm/APHE</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -116,7 +116,7 @@
 			<speed>129</speed> <!-- 835m/s -->
 			<damageDef>Bullet</damageDef>
 			<damageAmountBase>118</damageAmountBase>
-			<armorPenetrationSharp>100</armorPenetrationSharp>
+			<armorPenetrationSharp>100</armorPenetrationSharp> <!-- 0° -->
 			<armorPenetrationBlunt>3112.24</armorPenetrationBlunt>
 		</projectile>
 		<comps>
@@ -136,7 +136,7 @@
 
 	<ThingDef Class="CombatExtended.AmmoDef" ParentName="Base50mmCannonShell">
 		<defName>Bullet_50mmCannonShell_HE</defName>
-		<label>5cm Sprgr 38 (HE)</label>
+		<label>5cm Sprgr 38(HE)</label>
 		<thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
 		<graphicData>
 			<texPath>Things/Projectile/50mm/HE</texPath>
@@ -168,7 +168,7 @@
 
 	<ThingDef Class="CombatExtended.AmmoDef" ParentName="Base50mmCannonShell">
 		<defName>Bullet_50mmCannonShell_APCR</defName>
-		<label>5cm Pzgr 40 (APCR)</label>
+		<label>5cm Pzgr 40(APCR)</label>
 		<graphicData>
 			<texPath>Things/Projectile/50mm/APCR</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -203,6 +203,7 @@
 		<label>make 5cm Pzgr 39(APHE) shells x10</label>
 		<description>Craft 10 5cm Pzgr 39(APHE) shells.</description>
 		<jobString>Making 5cm Pzgr 39(APHE) shells.</jobString>
+		<targetCountAdjustment>10</targetCountAdjustment>
 		<ingredients>
 			<li>
 				<filter>
@@ -211,7 +212,7 @@
 						<li>USLDBar</li>
 					</categories>
 				</filter>
-				<count>40</count>
+				<count>50</count>
 			</li>
 			<li>
 				<filter>
@@ -228,7 +229,15 @@
 						<li>FSX</li>
 					</thingDefs>
 				</filter>
-				<count>25</count>
+				<count>17</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
 			</li>
 		</ingredients>
 		<fixedIngredientFilter>
@@ -240,6 +249,7 @@
 			<thingDefs>
 				<li>Powder</li>
 				<li>FSX</li>
+				<li>ComponentIndustrial</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
@@ -249,7 +259,7 @@
 			<Crafting>8</Crafting>
 		</skillRequirements>
 		<workSkill>Crafting</workSkill>
-		<researchPrerequisite>Turrets_31</researchPrerequisite>
+		<researchPrerequisite>Parabellum_Gamma</researchPrerequisite>
 	</RecipeDef>
 
 	<RecipeDef ParentName="AmmoRecipeBase">
@@ -257,6 +267,7 @@
 		<label>make 5cm Sprgr 38(HE) shells x10</label>
 		<description>Craft 10 5cm Sprgr 38(HE) shells.</description>
 		<jobString>Making 5cm Sprgr 38(HE) shells.</jobString>
+		<targetCountAdjustment>10</targetCountAdjustment>
 		<ingredients>
 			<li>
 				<filter>
@@ -265,7 +276,7 @@
 						<li>USLDBar</li>
 					</categories>
 				</filter>
-				<count>35</count>
+				<count>44</count>
 			</li>
 			<li>
 				<filter>
@@ -282,7 +293,15 @@
 						<li>FSX</li>
 					</thingDefs>
 				</filter>
-				<count>32</count>
+				<count>22</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
 			</li>
 		</ingredients>
 		<fixedIngredientFilter>
@@ -294,6 +313,7 @@
 			<thingDefs>
 				<li>Powder</li>
 				<li>FSX</li>
+				<li>ComponentIndustrial</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
@@ -303,7 +323,7 @@
 			<Crafting>8</Crafting>
 		</skillRequirements>
 		<workSkill>Crafting</workSkill>
-		<researchPrerequisite>Turrets_31</researchPrerequisite>
+		<researchPrerequisite>Parabellum_Gamma</researchPrerequisite>
 	</RecipeDef>
 
 	<RecipeDef ParentName="AmmoRecipeBase">
@@ -311,6 +331,7 @@
 		<label>make 5cm Pzgr 40(APCR) shells x10</label>
 		<description>Craft 10 5cm Pzgr 40(APCR) shells.</description>
 		<jobString>Making 5cm Pzgr 40(APCR) shells.</jobString>
+		<targetCountAdjustment>10</targetCountAdjustment>
 		<ingredients>
 			<li>
 				<filter>
@@ -319,7 +340,7 @@
 						<li>USLDBar</li>
 					</categories>
 				</filter>
-				<count>40</count>
+				<count>50</count>
 			</li>
 			<li>
 				<filter>
@@ -336,7 +357,15 @@
 						<li>FSX</li>
 					</thingDefs>
 				</filter>
-				<count>18</count>
+				<count>12</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
 			</li>
 		</ingredients>
 		<fixedIngredientFilter>
@@ -348,6 +377,7 @@
 				<li>Tungsten</li>
 				<li>Powder</li>
 				<li>FSX</li>
+				<li>ComponentIndustrial</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
@@ -357,7 +387,7 @@
 			<Crafting>8</Crafting>
 		</skillRequirements>
 		<workSkill>Crafting</workSkill>
-		<researchPrerequisite>Turrets_31</researchPrerequisite>
+		<researchPrerequisite>Parabellum_Gamma</researchPrerequisite>
 	</RecipeDef>
 
 </Defs>

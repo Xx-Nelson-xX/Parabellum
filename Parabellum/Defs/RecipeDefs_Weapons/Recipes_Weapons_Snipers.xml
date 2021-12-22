@@ -147,7 +147,7 @@
 	    <researchPrerequisite>Sniper_rifles_C1</researchPrerequisite>
 	</RecipeDef>
 	
-	<!-- Mk.12 SPR -->
+	<!-- Mk.12 .50 Beowulf SPR -->
 	<RecipeDef ParentName="RangedWeaponRecipeBase">
 		<defName>BuildMk1250SPR</defName>
 		<label>Build Mk.12 SPR(B)</label>
@@ -218,6 +218,79 @@
 			<li>AdvWeaponCraftingWorkTable</li>
 		</recipeUsers>
 	    <researchPrerequisite>PrecisionRifling</researchPrerequisite>
+	</RecipeDef>
+	
+	<!-- Karabiner 98k with Zielacht 8x -->
+	<RecipeDef ParentName="RangedWeaponRecipeBase">
+		<defName>BuildK98S</defName>
+		<label>Build Karabiner 98k(Z8x)</label>
+		<description>Builds a Karabiner 98k(Z8x), an ancient Bolt Action carabine with Zielacht 8x high power scope.\nCaliber: 8mm Mauser Rifle Catridge / 7.62x51mm NATO</description>
+		<jobString>Building Karabiner 98k(Z8x).</jobString>
+		<workAmount>12800</workAmount>
+		<skillRequirements>
+			<Crafting>10</Crafting>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Sniper_Component</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Weapon_Parts</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>4</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>Metallic</li>
+					</categories>
+				</filter>
+				<count>46</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>Woody</li>
+					</categories>
+				</filter>
+				<count>46</count>
+			</li>
+		</ingredients>
+		<products>
+			<Pa_K98S>1</Pa_K98S>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Sniper_Component</li>
+				<li>Weapon_Parts</li>
+				<li>ComponentIndustrial</li>
+			</thingDefs>
+			<categories>
+				<li>SLDBar</li>
+				<li>USLDBar</li>
+				<li>Woody</li>
+			</categories>
+		</fixedIngredientFilter>
+		<recipeUsers>
+			<li>WeaponCraftingWorkTable</li>
+		</recipeUsers>
+	    <researchPrerequisite>Sniper_rifles_C1</researchPrerequisite>
 	</RecipeDef>
 	
 </Defs>

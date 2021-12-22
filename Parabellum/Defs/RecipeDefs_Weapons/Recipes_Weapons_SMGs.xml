@@ -99,7 +99,7 @@
 						<li>Weapon_Parts</li>
 					</thingDefs>
 				</filter>
-				<count>12</count>
+				<count>8</count>
 			</li>
 			<li>
 				<filter>
@@ -153,7 +153,7 @@
 		<label>Build MP 18 SMG</label>
 		<description>Builds a MP 18 SMG, the father of most SMGs.\nCaliber: 7.63x25mm Mauser / 9x19mm Parabellum / .45 ACP</description>
 		<jobString>Building MP 18.</jobString>
-		<workAmount>15200</workAmount>
+		<workAmount>13200</workAmount>
 		<skillRequirements>
 			<Crafting>5</Crafting>
 		</skillRequirements>
@@ -164,7 +164,7 @@
 						<li>Weapon_Parts</li>
 					</thingDefs>
 				</filter>
-				<count>3</count>
+				<count>2</count>
 			</li>
 			<li>
 				<filter>
@@ -172,7 +172,7 @@
 						<li>ComponentIndustrial</li>
 					</thingDefs>
 				</filter>
-				<count>5</count>
+				<count>10</count>
 			</li>
 			<li>
 				<filter>
@@ -180,7 +180,7 @@
 						<li>Metallic</li>
 					</categories>
 				</filter>
-				<count>28</count>
+				<count>38</count>
 			</li>
 			<li>
 				<filter>

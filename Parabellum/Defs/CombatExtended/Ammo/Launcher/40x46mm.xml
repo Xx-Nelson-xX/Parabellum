@@ -155,6 +155,7 @@
 		<label>make 40x46mm Bean Bag grenades x20</label>
 		<description>Craft 20 40x46mm BB grenades.</description>
 		<jobString>Making 40x46mm BB grenades.</jobString>
+		<targetCountAdjustment>20</targetCountAdjustment>
 		<ingredients>
 			<li>
 				<filter>
@@ -202,6 +203,7 @@
 		<label>make 40x46mm Flechette grenades x20</label>
 		<description>Craft 20 40x46mm Flechette grenades.</description>
 		<jobString>Making 40x46mm Flechette grenades.</jobString>
+		<targetCountAdjustment>20</targetCountAdjustment>
 		<ingredients>
 			<li>
 				<filter>
@@ -251,6 +253,7 @@
 		<label>make 40x46mm Stun grenades x20</label>
 		<description>Craft 20 40x46mm Stun grenades.</description>
 		<jobString>Making 40x46mm Stun grenades.</jobString>
+		<targetCountAdjustment>20</targetCountAdjustment>
 		<ingredients>
 			<li>
 				<filter>
@@ -300,6 +303,7 @@
 		<label>make 40x46mm Foam grenades x20</label>
 		<description>Craft 20 40x46mm Foam grenades.</description>
 		<jobString>Making 40x46mm Foam grenades.</jobString>
+		<targetCountAdjustment>20</targetCountAdjustment>
 		<ingredients>
 			<li>
 				<filter>

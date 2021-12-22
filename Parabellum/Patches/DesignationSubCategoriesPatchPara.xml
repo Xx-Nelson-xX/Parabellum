@@ -42,5 +42,14 @@
 			<li>Turret_AntiR</li>
 		</value>
 	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ArchitectSense.DesignationSubCategoryDef[defName="SubCategory_Cannons"]/defNames</xpath>
+		<value>
+			<li>Turret_GebK</li>
+			<li>Turret_Morser16HSA</li>
+			<li>Turret_Morser18HSA</li>
+		</value>
+	</Operation>
 
 </Patch>

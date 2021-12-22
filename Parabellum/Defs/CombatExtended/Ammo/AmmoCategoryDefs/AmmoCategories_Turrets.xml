@@ -3,21 +3,21 @@
 
   <!-- ==================== Nebelwerfer(28cm/30cm/32cm) ========================== -->
   <CombatExtended.AmmoCategoryDef>
-    <defName>28cmHE</defName>
+    <defName>28cmHER</defName>
     <label>28cm High Explosive Rocket</label>
     <labelShort>28cm HE Rocket</labelShort>
     <description>Large size rocket filled with TNT explosive and fragments.</description>
   </CombatExtended.AmmoCategoryDef>
   
   <CombatExtended.AmmoCategoryDef>
-    <defName>30cmHE</defName>
+    <defName>30cmHER</defName>
     <label>30cm High Explosive Rocket</label>
     <labelShort>30cm HE Rocket</labelShort>
-    <description>Large size rocket filled with TNT explosive and fragments.</description>
+    <description>Improved large size rocket filled with TNT explosive and fragments.</description>
   </CombatExtended.AmmoCategoryDef>
   
   <CombatExtended.AmmoCategoryDef>
-    <defName>32cmIncendiary</defName>
+    <defName>32cmIncendiaryR</defName>
     <label>32cm Incendiary Rocket</label>
     <labelShort>32cm Incendiary Rocket</labelShort>
     <description>Large size rocket filled with fuel.</description>
@@ -25,31 +25,53 @@
   
   <!-- ==================== Nebelwerfer (15cm/21cm) ========================== -->
   <CombatExtended.AmmoCategoryDef>
-    <defName>21cmHE</defName>
+    <defName>21cmHER</defName>
     <label>21cm High Explosive Rocket</label>
     <labelShort>21cm HE Rocket</labelShort>
     <description>Large size rocket filled with TNT explosive and fragments.</description>
   </CombatExtended.AmmoCategoryDef>
   
   <CombatExtended.AmmoCategoryDef>
-    <defName>15cmHE</defName>
+    <defName>15cmHER</defName>
     <label>15cm High Explosive Rocket</label>
     <labelShort>15cm HE Rocket</labelShort>
     <description>Large size rocket filled with TNT explosive and fragments.</description>
   </CombatExtended.AmmoCategoryDef>
   
   <CombatExtended.AmmoCategoryDef>
-    <defName>15cmDHE</defName>
+    <defName>15cmDHER</defName>
     <label>15cm High Explosive Rocket(D)</label>
     <labelShort>15cm DHE Rocket</labelShort>
     <description>Large size rocket filled with TNT explosive and fragments.</description>
   </CombatExtended.AmmoCategoryDef>
   
   <CombatExtended.AmmoCategoryDef>
-    <defName>15cmS</defName>
+    <defName>15cmSR</defName>
     <label>15cm Smoke Rocket</label>
     <labelShort>15cm Smoke Rocket</labelShort>
-    <description>Large size rocket filled with chemical that produce huge smoke screen.</description>
+    <description>Large size rocket filled with chemical to produce huge smoke screen.</description>
+  </CombatExtended.AmmoCategoryDef>
+  
+  <!-- ==================== Mörser 16/18 (21cm) ========================== -->
+  <CombatExtended.AmmoCategoryDef>
+    <defName>21cmAC</defName>
+    <label>21cm Anti-Concrete Howitzer Shell</label>
+    <labelShort>21cm AC</labelShort>
+    <description>Primitive bunker buster shell, when grenades and demolition charge is not powerful enough for the job.</description>
+  </CombatExtended.AmmoCategoryDef>
+  
+  <CombatExtended.AmmoCategoryDef>
+    <defName>21cmHE</defName>
+    <label>21cm High Explosive Howitzer Shell</label>
+    <labelShort>21cm HE</labelShort>
+    <description>A 113kg shell filled with TNT and fragments, powerful enough to smack large buildings and fortification.</description>
+  </CombatExtended.AmmoCategoryDef>
+  
+  <CombatExtended.AmmoCategoryDef>
+    <defName>21cmAPHE</defName>
+    <label>21cm High Explosive Anti-Concrete Howitzer Shell</label>
+    <labelShort>21cm APHE</labelShort>
+    <description>Improved version of the previous one, with larger explosive payload and fragment but it reduce the direct impact damage.</description>
   </CombatExtended.AmmoCategoryDef>
   
   <!-- ==================== 120mm Cannon Shell ========================== -->
@@ -118,6 +140,34 @@
     <description>Armor Piercing, Composed Rigid ammunition for 50mm cannon, High velocity solid slug design purely for armor penetration with concentrated kinetic energy through a small impact area.</description>
   </CombatExtended.AmmoCategoryDef>
   
+  <!-- ==================== 7.5cm Cannon Shells ========================== -->
+  <CombatExtended.AmmoCategoryDef>
+    <defName>75mmAPCBCHE</defName>
+    <label>7.5cm Pzgr 39(APCBC-HE)</label>
+    <labelShort>7.5cm APCBC-HE</labelShort>
+    <description>Armor Piercing Capped Ballistic Cap - High Explosive ammunition for 75mm AT gun, still more metal slug than explosive charge so don't expect too much blast radius and fragmentation from it, the Ballistic Cap increase the stability of the projectile but it add extra weight for the projectile which reduce the travel speed slightly.</description>
+  </CombatExtended.AmmoCategoryDef>
+  
+  <CombatExtended.AmmoCategoryDef>
+    <defName>75mmHE</defName>
+    <label>7.5cm Sprgr.Patr.34(HE)</label>
+    <labelShort>7.5cm HE</labelShort>
+    <description>Standard 7.5cm High Explosive ammunition for light artillery, relatively low velocity projectile loaded with explosive payload.</description>
+  </CombatExtended.AmmoCategoryDef>
+  
+  <CombatExtended.AmmoCategoryDef>
+    <defName>75mmAPCR</defName>
+    <label>7.5cm Pzgr 40(APCR)</label>
+    <labelShort>7.5cm APCR</labelShort>
+    <description>Armor Piercing Composite Rigid ammunition for 75mm cannon, designed to take out Armored Target with purely concentrated kinetic energy in high speed, rather expensive to produce due the usage of Tungsten.</description>
+  </CombatExtended.AmmoCategoryDef>
+  
+  <CombatExtended.AmmoCategoryDef>
+    <defName>75mmHEAT</defName>
+    <label>7.5cm Gr.Patr.38 HL/B(HEAT)</label>
+    <labelShort>7.5cm HEAT</labelShort>
+    <description>Standard 7.5cm High Explosive Anti-Tank ammunition for light artillery and assault gun, usually short barrel cannon, to give them anti-tank capability during unexpected encounter with armored target.</description>
+  </CombatExtended.AmmoCategoryDef>
   
   <!-- ==================== 12.8cm Cannon Shells ========================== -->
   <CombatExtended.AmmoCategoryDef>

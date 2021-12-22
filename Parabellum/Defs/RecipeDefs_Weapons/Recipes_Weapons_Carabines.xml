@@ -278,7 +278,7 @@
 	<RecipeDef ParentName="RangedWeaponRecipeBase">
 		<defName>BuildK98k</defName>
 		<label>Build a Mauser Karabiner 98k</label>
-		<description>Build a Mauser Karabiner 98k, an ancient Bolt Action carabine.\nCaliber: 8mm Mauser Rifle Catridge / 7.62x51mm NATO</description>
+		<description>Build a Mauser Karabiner 98k, an ancient Bolt Action carabine, with bayonet and a bulky trench magazine.\nCaliber: 8mm Mauser Rifle Catridge / 7.62x51mm NATO</description>
 		<jobString>Building Mauser Karabiner 98k.</jobString>
 		<workAmount>12500</workAmount>
 		<skillRequirements>
@@ -299,7 +299,7 @@
 						<li>ComponentIndustrial</li>
 					</thingDefs>
 				</filter>
-				<count>8</count>
+				<count>12</count>
 			</li>
 			<li>
 				<filter>
@@ -307,7 +307,7 @@
 						<li>Metallic</li>
 					</categories>
 				</filter>
-				<count>32</count>
+				<count>42</count>
 			</li>
 			<li>
 				<filter>
@@ -371,7 +371,7 @@
 						<li>ComponentIndustrial</li>
 					</thingDefs>
 				</filter>
-				<count>6</count>
+				<count>8</count>
 			</li>
 			<li>
 				<filter>
@@ -425,6 +425,14 @@
 			<li>
 				<filter>
 					<thingDefs>
+						<li>Sniper_Component</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
 						<li>Rifle_Component</li>
 					</thingDefs>
 				</filter>
@@ -468,6 +476,7 @@
 		</products>
 		<fixedIngredientFilter>
 			<thingDefs>
+				<li>Sniper_Component</li>
 				<li>Rifle_Component</li>
 				<li>Weapon_Parts</li>
 				<li>ComponentIndustrial</li>

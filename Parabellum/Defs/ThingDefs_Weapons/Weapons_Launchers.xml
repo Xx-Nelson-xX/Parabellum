@@ -6,7 +6,7 @@
         <label>Hawk MM-1</label>
         <description>An ancient simple Riot launcher converted to Military Grenade Launcher, the high capacity and fire rate make it a deadly weapon for suppression, the downside is, the weapon is really heavy, its effective range is shorter due its short barrel and it takes considerably long time to reload it completely.</description>
         <graphicData>
-            <texPath>Things/Weapons/MM1</texPath>
+            <texPath>Things/Weapons/Launchers/MM1</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <soundInteract>Interact_Shotgun</soundInteract>
@@ -19,7 +19,7 @@
             <Bulk>10</Bulk>
             <Mass>5.7</Mass>
         </statBases>
-		<generateCommonality>0.4</generateCommonality>
+		<generateCommonality>0.2</generateCommonality>
         <weaponTags>
             <li>RKT3</li>
             <li>Glaunchers</li>
@@ -82,7 +82,7 @@
         <label>RGS GL</label>
         <description>A compact multibarrel launcher from the ancient civilization, not many people know about its original purpose, but with time and modification gave it a new purpose and usage.</description>
         <graphicData>
-            <texPath>Things/Weapons/RGS</texPath>
+            <texPath>Things/Weapons/Launchers/RGS</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <soundInteract>Interact_Rifle</soundInteract>
@@ -107,7 +107,7 @@
         <thingCategories>
             <li>Glaunchers</li>
         </thingCategories>
-		<generateCommonality>0.6</generateCommonality>
+		<generateCommonality>0.3</generateCommonality>
         <verbs>
             <li Class="CombatExtended.VerbPropertiesCE">
 				<recoilAmount>1.68</recoilAmount>
@@ -154,7 +154,7 @@
         <label>Carl Gustav fm/42 Recoiless anti-tank Rifle</label>
         <description>One of the best anti-tank rifle of its era, the lightest and the most effective of its caliber in terms, since most of them are barely movable thanks to their size and weight.</description>
         <graphicData>
-            <texPath>Things/Weapons/CG42R</texPath>
+            <texPath>Things/Weapons/Launchers/CG42R</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <soundInteract>Artillery_ShellLoaded</soundInteract>
@@ -162,9 +162,9 @@
             <MarketValue>4000</MarketValue>
             <SightsEfficiency>1.6</SightsEfficiency>
             <ShotSpread>0.04</ShotSpread>
-            <SwayFactor>1.4</SwayFactor>
+            <SwayFactor>1.28</SwayFactor>
             <RangedWeapon_Cooldown>1.9</RangedWeapon_Cooldown>
-            <Bulk>14</Bulk>
+            <Bulk>14.6</Bulk>
             <Mass>11</Mass>
         </statBases>
         <weaponTags>
@@ -227,16 +227,16 @@
         <label>Carl Gustav Recoiless Rifle Mod.U</label>
         <description>One of the latest model of Carl Gustav Recoiless Rifle family, after long time of military advancement, the model U(Universal) was created to reduce even more the logistic department, now you can use most of the anti-tank rockets and 90mm cannon shells with the weapon.</description>
         <graphicData>
-            <texPath>Things/Weapons/CGR</texPath>
+            <texPath>Things/Weapons/Launchers/CGR</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <soundInteract>Artillery_ShellLoaded</soundInteract>
         <statBases>
-            <MarketValue>5000</MarketValue>
+            <MarketValue>4200</MarketValue>
             <SightsEfficiency>1.8</SightsEfficiency>
             <ShotSpread>0.08</ShotSpread>
             <SwayFactor>1.4</SwayFactor>
-            <RangedWeapon_Cooldown>1.8</RangedWeapon_Cooldown>
+            <RangedWeapon_Cooldown>2.2</RangedWeapon_Cooldown>
             <Bulk>9</Bulk>
             <Mass>7</Mass>
         </statBases>
@@ -261,16 +261,14 @@
                 <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
                 <ai_AvoidFriendlyFireRadius>6</ai_AvoidFriendlyFireRadius>
 				<minRange>6</minRange>
-                <warmupTime>2.2</warmupTime>
+                <warmupTime>1.8</warmupTime>
 				<!--<forcedMissRadius>2</forcedMissRadius>-->
 				<circularError>0.65</circularError>
                 <noiseRadius>8</noiseRadius>
                 <range>75</range>
-                <!-- grenades at 12.9 -->
                 <targetParams>
                     <canTargetLocations>true</canTargetLocations>
                 </targetParams>
-                <burstShotCount>1</burstShotCount>
                 <soundCast>Shot_CGR</soundCast>
                 <soundCastTail>GunTail_Heavy</soundCastTail>
                 <muzzleFlashScale>14</muzzleFlashScale>
@@ -279,7 +277,6 @@
         </verbs>
         <comps>
             <li Class="CombatExtended.CompProperties_FireModes">
-                <aiUseBurstMode>FALSE</aiUseBurstMode>
                 <aiAimMode>AimedShot</aiAimMode>
             </li>
             <li Class="CombatExtended.CompProperties_AmmoUser">
@@ -301,16 +298,16 @@
         <label>M202 FLASH</label>
         <description>M202 FLame Assault SHoulder, a quad rocket launcher, capable to fire incendiary ammo to cover a large area with flamesan ancient launcher system, planned to replace the flamethrower.</description>
         <graphicData>
-            <texPath>Things/Weapons/FLASH</texPath>
+            <texPath>Things/Weapons/Launchers/FLASH</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <soundInteract>InteractPTUR</soundInteract>
         <statBases>
-            <MarketValue>7000</MarketValue>
+            <MarketValue>5400</MarketValue>
             <SightsEfficiency>1.05</SightsEfficiency>
             <ShotSpread>0.22</ShotSpread>
             <SwayFactor>1.8</SwayFactor>
-            <RangedWeapon_Cooldown>1.8</RangedWeapon_Cooldown>
+            <RangedWeapon_Cooldown>2.6</RangedWeapon_Cooldown>
             <Bulk>19</Bulk>
             <Mass>5.22</Mass>
         </statBases>
@@ -338,7 +335,7 @@
 				<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
                 <ai_AvoidFriendlyFireRadius>8</ai_AvoidFriendlyFireRadius>
 				<minRange>6</minRange>
-                <warmupTime>2.6</warmupTime>
+                <warmupTime>1.8</warmupTime>
 				<!--<forcedMissRadius>3</forcedMissRadius>-->
 				<circularError>0.85</circularError>
 				<burstShotCount>4</burstShotCount>
@@ -384,7 +381,7 @@
         <label>Panzerfaust 60</label>
         <description>An ancient anti-tank grenade launcher, the most effective of its time in terms of antitank capability and mobility, the weapon is very simple to use, easy and cheap to produce, but is not very safe to use without proper training and the effective range of the weapon is really short.</description>
         <graphicData>
-            <texPath>Things/Weapons/PzF</texPath>
+            <texPath>Things/Weapons/Launchers/PzF</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <soundInteract>Interact_Rifle</soundInteract>
@@ -459,16 +456,16 @@
         <label>Raketenpanzerbüchse 54/1</label>
         <description>One of the first Anti-Tank Rocket Launcher and also the most effective one during its war time in terms of anti-tank capability, the downside is is really bulky and heavy.</description>
         <graphicData>
-            <texPath>Things/Weapons/RPzB</texPath>
+            <texPath>Things/Weapons/Launchers/RPzB</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <soundInteract>Interact_Rifle</soundInteract>
         <statBases>
-            <MarketValue>1800</MarketValue>
+            <MarketValue>1500</MarketValue>
             <SightsEfficiency>1.2</SightsEfficiency>
             <ShotSpread>0.12</ShotSpread>
             <SwayFactor>1.5</SwayFactor>
-            <RangedWeapon_Cooldown>1.4</RangedWeapon_Cooldown>
+            <RangedWeapon_Cooldown>1.6</RangedWeapon_Cooldown>
             <Bulk>12.2</Bulk>
             <Mass>9.5</Mass>
         </statBases>
@@ -494,7 +491,7 @@
 				<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
                 <ai_AvoidFriendlyFireRadius>6</ai_AvoidFriendlyFireRadius>
 				<minRange>5</minRange>
-                <warmupTime>1.6</warmupTime>
+                <warmupTime>1.4</warmupTime>
 				<!-- <forcedMissRadius>1.4</forcedMissRadius> -->
 				<circularError>0.6</circularError>
                 <range>54</range>
@@ -536,15 +533,15 @@
         <label>M320(K) Grenade Launcher</label>
         <description>An ancient compact launcher, safe, light, compact and very easy to use compared to any launcher of its age, it does have a downside, its effective range suffer way more than any conventional grenade launcher.</description>
         <graphicData>
-            <texPath>Things/Weapons/M320K</texPath>
+            <texPath>Things/Weapons/Launchers/M320K</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <soundInteract>Interact_Rifle</soundInteract>
         <statBases>
-            <MarketValue>1500</MarketValue>
+            <MarketValue>1200</MarketValue>
             <SightsEfficiency>1.1</SightsEfficiency>
             <ShotSpread>0.12</ShotSpread>
-            <SwayFactor>1.8</SwayFactor>
+            <SwayFactor>1.6</SwayFactor>
             <RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
             <Bulk>3.3</Bulk>
             <Mass>1.5</Mass>
@@ -563,7 +560,7 @@
         <thingCategories>
             <li>Glaunchers</li>
         </thingCategories>
-		<generateCommonality>0.4</generateCommonality>
+		<generateCommonality>0.6</generateCommonality>
         <verbs>
             <li Class="CombatExtended.VerbPropertiesCE">
                 <verbClass>CombatExtended.Verb_ShootCE</verbClass>

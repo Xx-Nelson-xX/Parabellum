@@ -137,6 +137,7 @@
 		<label>make 7.92x33mm K(FMJ) cartridge x100</label>
 		<description>Craft 100 7.92x33mm K(FMJ) cartridges.</description>
 		<jobString>Making 7.92x33mm K(FMJ) cartridges.</jobString>
+		<targetCountAdjustment>100</targetCountAdjustment>
 		<ingredients>
 			<li>
 				<filter>
@@ -192,6 +193,7 @@
 		<label>make 7.92x33mm K(AP) cartridge x100</label>
 		<description>Craft 100 7.92x33mm K(AP) cartridges.</description>
 		<jobString>Making 7.92x33mm K(AP) cartridges.</jobString>
+		<targetCountAdjustment>100</targetCountAdjustment>
 		<ingredients>
 			<li>
 				<filter>
@@ -200,7 +202,7 @@
 						<li>USLDBar</li>
 					</categories>
 				</filter>
-				<count>8</count>
+				<count>10</count>
 			</li>
 			<li>
 				<filter>
@@ -208,7 +210,7 @@
 						<li>Tungsten</li>
 					</thingDefs>
 				</filter>
-				<count>3</count>
+				<count>2</count>
 			</li>
 			<li>
 				<filter>
@@ -256,6 +258,7 @@
 		<label>make 7.92x33mm K(J) cartridge x100</label>
 		<description>Craft 100 7.92x33mm K(J) cartridges.</description>
 		<jobString>Making 7.92x33mm K(J) cartridges.</jobString>
+		<targetCountAdjustment>100</targetCountAdjustment>
 		<ingredients>
 			<li>
 				<filter>

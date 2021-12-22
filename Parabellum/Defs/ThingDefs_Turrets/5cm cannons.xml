@@ -21,16 +21,17 @@
 			<SwayFactor>1.2</SwayFactor>
 			<RangedWeapon_Cooldown>1.8</RangedWeapon_Cooldown>
 		</statBases>
+		<fillPercent>0.98</fillPercent>
 		<generateCommonality>0</generateCommonality>
 		<verbs>
 			<li Class="CombatExtended.VerbPropertiesCE" Inherit="False">
 				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Bullet_50mmCannonShell_APHE</defaultProjectile>
-				<warmupTime>1.8</warmupTime>
+				<warmupTime>1.4</warmupTime>
 				<minRange>8</minRange>
 				<!-- <forcedMissRadius>2</forcedMissRadius> -->
-				<range>92</range>
+				<range>125</range>
 				<soundCast>Shot_50mm</soundCast>
 				<soundCastTail>GunTail_Heavy</soundCastTail>
 				<muzzleFlashScale>17</muzzleFlashScale>
@@ -70,6 +71,7 @@
 			<SwayFactor>0.85</SwayFactor>
 			<RangedWeapon_Cooldown>2.1</RangedWeapon_Cooldown>
 		</statBases>
+		<fillPercent>0.98</fillPercent>
 		<generateCommonality>0</generateCommonality>
 		<verbs>
 			<li Class="CombatExtended.VerbPropertiesCE">
@@ -83,7 +85,7 @@
 				<!-- <forcedMissRadius>2.4</forcedMissRadius> -->
 				<ticksBetweenBurstShots>20</ticksBetweenBurstShots>
 				<burstShotCount>5</burstShotCount>
-				<range>96</range>
+				<range>181</range>
 				<soundCast>Shot_50mm</soundCast>
 				<soundCastTail>GunTail_Heavy</soundCastTail>
 				<muzzleFlashScale>17</muzzleFlashScale>
@@ -108,7 +110,7 @@
 	<!--=============== Turret Base(5cm PaK38/L60) ===============-->
 
 	<ThingDef ParentName="TurretMannedBase">
-		<defName>Turret_Pak38ATG</defName>
+		<defName>Turret_PaK38ATG</defName>
 		<label>5cm PaK 38 ATG</label>
 		<graphicData>
 			<texPath>Things/Building/Security/Base/NbW32_Base</texPath>
@@ -145,13 +147,14 @@
 				<li>Artillery</li>
 				<li>Artillery_BaseDestroyer</li>
 			</buildingTags>
+			<uninstallWork>300</uninstallWork>
 		</building>
 		<minifiedDef>MinifiedTurret_Pa_PaK38ATG</minifiedDef>
 		<thingCategories>
 			<li>BuildingsSecurity</li>
 		</thingCategories>
 		<researchPrerequisites>
-			<li>Turrets_31</li>
+			<li>Parabellum_Gamma</li>
 		</researchPrerequisites>
 		<constructionSkillPrerequisite>8</constructionSkillPrerequisite>
 	</ThingDef>

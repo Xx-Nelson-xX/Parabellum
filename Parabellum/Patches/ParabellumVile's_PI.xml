@@ -65,6 +65,17 @@
 					</value>
 				</li>
 				
+				<!-- ==================== Recipes(21cm Mörser 16) ========================== -->
+				<li Class="PatchOperationReplace">	
+				<xpath>Defs/ThingDef[defName="Turret_Morser16HSA"]/costList</xpath>
+					<value>
+						<costList>
+							<CannonParts>8</CannonParts>
+							<Pa_SimpleCannon_Crate>4</Pa_SimpleCannon_Crate>
+						</costList>
+					</value>
+				</li>
+				
 			</operations>
 		</match>
     </Operation>

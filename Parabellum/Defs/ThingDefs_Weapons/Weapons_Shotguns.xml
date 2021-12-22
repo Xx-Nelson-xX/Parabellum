@@ -7,7 +7,7 @@
         <label>DP-12 Double-barreled Pumpshotgun</label>
         <description>The DP-12, a bullpup double-barreled pump action shotgun with double magazine tubes, the bullpup system slightly increase the effective range of the weapon but also decrease its pellets spread, making it less effective dealing with mass in short range but really deadly counter single pawn.</description>
         <graphicData>
-            <texPath>Things/Weapons/DP12</texPath>
+            <texPath>Things/Weapons/Shotguns/DP12</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <soundInteract>Interact_Shotgun</soundInteract>
@@ -76,7 +76,7 @@
         <label>HK CAWS</label>
         <description>The CAWS, as know as Close Assault Weapon System, was a prototype bullpup automatic shotgun from an ancient military project, even though the project and production was cancelled for its time, the new era find it a perfect weapon for assault mission and restarted its production with new modifications: long barrel to increase its effective range and a low power hybrid scope for easy targeting, both modification make the weapon exceptionally accurate, but not so good for mass control.</description>
         <graphicData>
-            <texPath>Things/Weapons/CAWS</texPath>
+            <texPath>Things/Weapons/Shotguns/CAWS</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <soundInteract>Interact_Shotgun</soundInteract>
@@ -145,7 +145,7 @@
         <label>Serbu Super Shorty</label>
         <description>A super compacted pump action shotgun, a perfect weapon for self defense in CQC situation, very concealable and light to carry around.</description>
         <graphicData>
-            <texPath>Things/Weapons/SSS</texPath>
+            <texPath>Things/Weapons/Shotguns/SSS</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <soundInteract>Interact_Shotgun</soundInteract>
@@ -216,7 +216,7 @@
         <label>Winchester Model 1887</label>
         <description>An Ancient Level Action Shotgun, Model 1887 was one of the first successful repeating shotguns, even though is not what John Browning suggested for a repeating action shotgun, but since he is working for "Winchester Repeating Arms Company", the shotgun was designed with breech-loading, rolling block lever-action mechanism for brand recognition.</description>
         <graphicData>
-            <texPath>Things/Weapons/W1887</texPath>
+            <texPath>Things/Weapons/Shotguns/W1887</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <soundInteract>Interact_Rifle</soundInteract>
@@ -282,7 +282,7 @@
         <label>Winchester Model 1887(S)</label>
         <description>The Winchester Model 1887 "Mare's Leg", with 18 inches short barreled version of Winchester 1887 and shorten the stock to make it even more portable, the downside is its effective range is reduced.</description>
         <graphicData>
-            <texPath>Things/Weapons/W1887S</texPath>
+            <texPath>Things/Weapons/Shotguns/W1887S</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <soundInteract>Interact_Rifle</soundInteract>
@@ -345,12 +345,12 @@
     </ThingDef>
 	
 	<!-- Winchester Model 1897(Trench Gun) -->
-    <ThingDef ParentName="BaseGun_LongBarreled">
+    <ThingDef ParentName="Pa_WwBayonetA">
         <defName>Pa_W1897T</defName>
         <label>Winchester Model 1897(T)</label>
         <description>An Ancient Pump Action Shotgun, Trench Grade, modified specifically for urban combat and trench cleaning/assault, with 20 in barrel, heat shield and M1917 Bayonet, entire CQC package in one.</description>
         <graphicData>
-            <texPath>Things/Weapons/W1897T</texPath>
+            <texPath>Things/Weapons/Shotguns/W1897T</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <soundInteract>Interact_Rifle</soundInteract>
@@ -370,6 +370,7 @@
 			<MeleeHitChance>1.2</MeleeHitChance>
 			<MeleeCritChance>0.75</MeleeCritChance>
 			<Suppressability>-0.45</Suppressability>
+			<PlantWorkSpeed>0.15</PlantWorkSpeed>
 		</equippedStatOffsets>
         <weaponTags>
             <li>ST1</li>
@@ -407,43 +408,6 @@
                 <ammoSet>AmmoSet_12Gauge</ammoSet>
             </li>
         </comps>
-		<tools>
-			<li Class="CombatExtended.ToolCE">
-				<label>bayonet</label>
-				<capacities>
-					<li>Stab</li>
-				</capacities>
-				<power>14</power>
-				<cooldownTime>1.4</cooldownTime>
-				<chanceFactor>1.5</chanceFactor>
-				<armorPenetrationSharp>6.5</armorPenetrationSharp>
-				<armorPenetrationBlunt>3.5</armorPenetrationBlunt>
-				<linkedBodyPartsGroup>Muzzle</linkedBodyPartsGroup>
-			</li>
-			<li Class="CombatExtended.ToolCE">
-				<label>blade</label>
-				<capacities>
-					<li>Cut</li>
-				</capacities>
-				<power>9</power>
-				<cooldownTime>1.1</cooldownTime>
-				<chanceFactor>1.2</chanceFactor>
-				<armorPenetrationBlunt>4</armorPenetrationBlunt>
-				<armorPenetrationSharp>3</armorPenetrationSharp>
-				<linkedBodyPartsGroup>Blade</linkedBodyPartsGroup>
-			</li>
-			<li Class="CombatExtended.ToolCE">
-				<label>stock</label>
-				<capacities>
-					<li>Blunt</li>
-				</capacities>
-				<power>10</power>
-				<cooldownTime>1.6</cooldownTime>
-				<chanceFactor>1.1</chanceFactor>
-				<armorPenetrationBlunt>8</armorPenetrationBlunt>
-				<linkedBodyPartsGroup>Stock</linkedBodyPartsGroup>
-			</li>
-		</tools>
 		<modExtensions>
 		  <li Class="CombatExtended.GunDrawExtension">
 			<DrawSize>1.2</DrawSize>
@@ -461,7 +425,7 @@
         <label>Winchester Model 1897(L)</label>
         <description>An Ancient Pump Action Shotgun, Standard Grade, the grade before trench war was a thing, with 30 in barrel, better pellet concentration and longer effective range, for people who like trap shooting and hunters.</description>
         <graphicData>
-            <texPath>Things/Weapons/W1897L</texPath>
+            <texPath>Things/Weapons/Shotguns/W1897L</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <soundInteract>Interact_Rifle</soundInteract>

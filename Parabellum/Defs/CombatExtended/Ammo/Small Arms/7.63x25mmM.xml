@@ -107,6 +107,7 @@
 		<label>make 7.63x25mm Mauser (FMJ) cartridge x100</label>
 		<description>Craft 100 7.63x25mm Mauser (FMJ) cartridge.</description>
 		<jobString>Making 7.63x25mm Mauser (FMJ) cartridge.</jobString>
+		<targetCountAdjustment>100</targetCountAdjustment>
 		<ingredients>
 			<li>
 				<filter>
@@ -154,6 +155,7 @@
 		<label>make 7.63x25mm Mauser (HP) cartridge x100</label>
 		<description>Craft 100 7.63x25mm Mauser (HP) cartridge.</description>
 		<jobString>Making 7.63x25mm Mauser (HP) cartridge.</jobString>
+		<targetCountAdjustment>100</targetCountAdjustment>
 		<ingredients>
 			<li>
 				<filter>

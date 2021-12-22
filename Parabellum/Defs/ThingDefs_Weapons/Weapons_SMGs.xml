@@ -4,22 +4,23 @@
     <ThingDef ParentName="BaseGun_LongBarreled">
         <defName>Pa_Tommy</defName>
         <label>Thompson M1928A1</label>
-        <description>A very expensive submachinegun of its time, also a very heavy and big one, is a fullsize sumbachine gun which require both hands holding it to use it efficiently.</description>
+        <description>A very expensive submachinegun of its time, also a very heavy and bulky one, is a fullsize sumbachine gun which require both hands holding it to use it efficiently, comes with 14 inches long barrel to improves its range, accuracy and reduce recoil.</description>
         <graphicData>
-            <texPath>Things/Weapons/M1928A1</texPath>
+            <texPath>Things/Weapons/SMGs/M1928A1</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <soundInteract>Interact_SMG</soundInteract>
         <statBases>
-            <MarketValue>1600</MarketValue>
+            <MarketValue>1200</MarketValue>
             <SightsEfficiency>0.95</SightsEfficiency>
-            <ShotSpread>0.16</ShotSpread>
+            <ShotSpread>0.15</ShotSpread>
             <SwayFactor>1.15</SwayFactor>
             <RangedWeapon_Cooldown>0.58</RangedWeapon_Cooldown>
             <Bulk>11.4</Bulk>
             <Mass>4.9</Mass>
         </statBases>
 		<generateCommonality>0.6</generateCommonality>
+		<equippedAngleOffset>45</equippedAngleOffset>
         <weaponTags>
             <li>SMG2</li>
             <li>Gun</li>
@@ -34,12 +35,12 @@
         <verbs>
             <li Class="CombatExtended.VerbPropertiesCE">
                 <recoilPattern>Regular</recoilPattern>
-                <recoilAmount>1.5</recoilAmount>
+                <recoilAmount>1.4</recoilAmount>
                 <verbClass>CombatExtended.Verb_ShootCE</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
                 <defaultProjectile>Bullet_45ACP_FMJ</defaultProjectile>
-                <burstShotCount>10</burstShotCount>
-                <ticksBetweenBurstShots>4</ticksBetweenBurstShots>
+                <burstShotCount>13</burstShotCount>
+                <ticksBetweenBurstShots>5</ticksBetweenBurstShots>
                 <warmupTime>0.58</warmupTime>
                 <range>36</range>
                 <soundCast>ShotUMP45</soundCast>
@@ -71,7 +72,7 @@
         <label>Suomi KP-31 SMG</label>
         <description>An ancient world weapon, one of the best of its kind, very effective for suppression fire and perform assault tactics, the downside is, they are bit expensive to produce.</description>
         <graphicData>
-            <texPath>Things/Weapons/Suomi</texPath>
+            <texPath>Things/Weapons/SMGs/Suomi</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <soundInteract>Interact_SMG</soundInteract>
@@ -131,12 +132,12 @@
     </ThingDef>
 	
 	<!-- Bergmann Maschinenpistole 18 -->
-    <ThingDef ParentName="BaseGun_LongBarreled">
+    <ThingDef ParentName="Pa_WwBayonetA">
         <defName>Pa_MP18B</defName>
         <label>MP 18 SMG</label>
         <description>An ancient world weapon, one of the earliest SMG created for trench warfare, very effective in CQC range, for urban combat and perform assault tactics.</description>
         <graphicData>
-            <texPath>Things/Weapons/MP18</texPath>
+            <texPath>Things/Weapons/SMGs/MP18</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <soundInteract>Interact_SMG</soundInteract>
@@ -146,10 +147,11 @@
             <ShotSpread>0.15</ShotSpread>
             <SwayFactor>1.5</SwayFactor>
             <RangedWeapon_Cooldown>0.4</RangedWeapon_Cooldown>
-            <Bulk>7.56</Bulk>
-            <Mass>4.18</Mass>
+            <Bulk>8.96</Bulk>
+            <Mass>5.18</Mass>
         </statBases>
 		<generateCommonality>0.4</generateCommonality>
+		<equippedAngleOffset>45</equippedAngleOffset>
         <weaponTags>
 			<li>SMG1</li>
             <li>Gun</li>
@@ -167,7 +169,7 @@
                 <verbClass>CombatExtended.Verb_ShootCE</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
                 <defaultProjectile>Bullet_9x19mmPara_FMJ</defaultProjectile>
-                <burstShotCount>10</burstShotCount>
+                <burstShotCount>11</burstShotCount>
                 <ticksBetweenBurstShots>7</ticksBetweenBurstShots>
                 <warmupTime>0.5</warmupTime>
                 <range>30</range>
@@ -180,16 +182,21 @@
             <li Class="CombatExtended.CompProperties_FireModes">
                 <aiUseBurstMode>true</aiUseBurstMode>
                 <aiAimMode>AimedShot</aiAimMode>
-                <aimedBurstShotCount>4</aimedBurstShotCount>
+                <aimedBurstShotCount>6</aimedBurstShotCount>
             </li>
             <li Class="CombatExtended.CompProperties_AmmoUser">
-                <magazineSize>20</magazineSize>
-                <reloadTime>2.2</reloadTime>
+                <magazineSize>32</magazineSize>
+                <reloadTime>2.4</reloadTime>
                 <ammoSet>AmmoSet_MauserP</ammoSet>
             </li>
         </comps>
+		<modExtensions>
+		  <li Class="CombatExtended.GunDrawExtension">
+			<DrawSize>1.1</DrawSize>
+		  </li>
+		</modExtensions>
         <smeltProducts>
-            <ComponentIndustrial>2</ComponentIndustrial>
+            <ComponentIndustrial>4</ComponentIndustrial>
             <Weapon_Parts>1</Weapon_Parts>
         </smeltProducts>
     </ThingDef>

@@ -6,7 +6,7 @@
 		<label>Sturer Survival Pistol</label>
 		<description>A very simple single shot pistol, created by combining other pistol parts and a barrel, even though is a pistol, it only use rifle catridge... you must be really desperate to use one of those...</description>
 		<graphicData>
-			<texPath>Things/Weapons/SP</texPath>
+			<texPath>Things/Weapons/Pistols/SP</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<soundInteract>Interact_Revolver</soundInteract>
@@ -61,7 +61,7 @@
 		</modExtensions>
 		<smeltProducts>
 			<Pistol_Component>1</Pistol_Component>
-			<Weapon_Parts>2</Weapon_Parts>
+			<Plasteel>5</Plasteel>
 		</smeltProducts>
 	</ThingDef>
 	
@@ -71,7 +71,7 @@
 		<label>Medusa Survival Revolver</label>
 		<description>A compact multi-caliber revolver, thanks to its special cylinder, make it capable to chamber most pistol/revolver catridge, is a self defense/survival weapon, not really suitable for combat.</description>
 		<graphicData>
-			<texPath>Things/Weapons/SR</texPath>
+			<texPath>Things/Weapons/Pistols/SR</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<soundInteract>Interact_Revolver</soundInteract>
@@ -81,7 +81,7 @@
 			<ShotSpread>0.14</ShotSpread>
 			<SwayFactor>1.2</SwayFactor>
 			<RangedWeapon_Cooldown>0.34</RangedWeapon_Cooldown>
-			<Bulk>1.8</Bulk>
+			<Bulk>1.4</Bulk>
 			<Mass>1.3</Mass>
 		</statBases>
 		<generateCommonality>0.9</generateCommonality>
@@ -127,7 +127,6 @@
 		</modExtensions>
 		<smeltProducts>
 			<Pistol_Component>1</Pistol_Component>
-			<Weapon_Parts>1</Weapon_Parts>
 		</smeltProducts>
 	</ThingDef>
 	
@@ -137,7 +136,7 @@
 		<label>Mauser C96 Pistol</label>
 		<description>One of the earliest Semi-Automatic pistol, with 10-round internal magazine fed by stripper clip, light weigh, cheap to produce and relatively high rate of fire.</description>
 		<graphicData>
-			<texPath>Things/Weapons/C96</texPath>
+			<texPath>Things/Weapons/Pistols/C96</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<soundInteract>Interact_Revolver</soundInteract>
@@ -147,7 +146,7 @@
 			<ShotSpread>0.32</ShotSpread>
 			<SwayFactor>1.2</SwayFactor>
 			<RangedWeapon_Cooldown>0.36</RangedWeapon_Cooldown>
-			<Bulk>2.1</Bulk>
+			<Bulk>1.85</Bulk>
 			<Mass>1.13</Mass>
 		</statBases>
 		<generateCommonality>0.8</generateCommonality>
@@ -167,8 +166,8 @@
 				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Bullet_763x25mmM_FMJ</defaultProjectile>
-				<warmupTime>0.4</warmupTime>
-				<range>25</range>
+				<warmupTime>0.32</warmupTime>
+				<range>26</range>
 				<soundCast>RF_Shot93R</soundCast>
 				<soundCastTail>GunTail_Light</soundCastTail>
 				<muzzleFlashScale>9</muzzleFlashScale>
@@ -201,7 +200,7 @@
 		<label>M712 "Schnellfeuer" Pistol</label>
 		<description>Automatic pistol convertion of the C96, included detachable box magazine and of course, automatic fire in a small package, incase semi-automatic is not enough.</description>
 		<graphicData>
-			<texPath>Things/Weapons/M712</texPath>
+			<texPath>Things/Weapons/Pistols/M712</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<soundInteract>Interact_SMG</soundInteract>
@@ -211,8 +210,8 @@
 			<ShotSpread>0.28</ShotSpread>
 			<SwayFactor>1.2</SwayFactor>
 			<RangedWeapon_Cooldown>0.3</RangedWeapon_Cooldown>
-			<Bulk>1.85</Bulk>
-			<Mass>1.15</Mass>
+			<Bulk>2.15</Bulk>
+			<Mass>1.35</Mass>
 		</statBases>
 		<generateCommonality>0.3</generateCommonality>
 		<weaponTags>
@@ -233,7 +232,7 @@
 				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Bullet_9x19mmPara_FMJ</defaultProjectile>
-				<burstShotCount>5</burstShotCount>
+				<burstShotCount>10</burstShotCount>
 				<ticksBetweenBurstShots>4</ticksBetweenBurstShots>
 				<warmupTime>0.56</warmupTime>
 				<range>28</range>
@@ -246,11 +245,11 @@
 			<li Class="CombatExtended.CompProperties_FireModes">
 				<aiUseBurstMode>true</aiUseBurstMode>
 				<aiAimMode>AimedShot</aiAimMode>
-				<aimedBurstShotCount>2</aimedBurstShotCount>
+				<aimedBurstShotCount>4</aimedBurstShotCount>
 			</li>
 			<li Class="CombatExtended.CompProperties_AmmoUser">
-				<magazineSize>10</magazineSize>
-				<reloadTime>2</reloadTime>
+				<magazineSize>20</magazineSize>
+				<reloadTime>2.5</reloadTime>
 				<ammoSet>AmmoSet_MauserP</ammoSet>
 			</li>
 		</comps>
@@ -260,7 +259,7 @@
 		  </li>
 		</modExtensions>
 		<smeltProducts>
-			<ComponentIndustrial>2</ComponentIndustrial>
+			<ComponentIndustrial>3</ComponentIndustrial>
 			<Plasteel>6</Plasteel>
 		</smeltProducts>
 	</ThingDef>

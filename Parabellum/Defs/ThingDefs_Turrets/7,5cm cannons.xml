@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<!-- ================== 7.5cm GebirgsKanone 15 ================== -->
+
+	<ThingDef ParentName="BaseGun_Turret">
+		<defName>Pa_GebK</defName>
+		<label>7.5cm GebK 15/L15.4 Gun</label>
+		<graphicData>
+			<texPath>Things/Building/Security/CMMT/GebK_Top</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Artillery_ShellLoaded</soundInteract>
+		<description>7.5cm GebK 15/L15.4 Gun, towable mountain gun.</description>
+		<techLevel>Industrial</techLevel>
+		<tradeability>None</tradeability>
+		<statBases>
+			<MarketValue>1500</MarketValue>
+			<SightsEfficiency>2</SightsEfficiency>
+			<ShotSpread>0.12</ShotSpread>
+			<SwayFactor>1.2</SwayFactor>
+			<RangedWeapon_Cooldown>2.4</RangedWeapon_Cooldown>
+		</statBases>
+		<weaponTags>
+			<li>Artillery</li>
+			<li>Artillery_BaseDestroyer</li>
+		</weaponTags>
+		<generateCommonality>0</generateCommonality>
+		<verbs>
+			<li Class="CombatExtended.VerbPropertiesCE" Inherit="False">
+				<verbClass>CombatExtended.Verb_ShootMortarCE</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_75mmCannonShell_HEID</defaultProjectile>
+				<!--<forcedMissRadius>5</forcedMissRadius>-->
+				<circularError>1.5</circularError>
+				<warmupTime>1.4</warmupTime>
+				<minRange>12</minRange>
+				<range>187</range>
+				<soundCast>Shot_75mm</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>18</muzzleFlashScale>
+				<targetParams>
+				  <canTargetLocations>true</canTargetLocations>
+				</targetParams>
+				<indirectFirePenalty>0.15</indirectFirePenalty>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="CombatExtended.CompProperties_AmmoUser">
+				<magazineSize>1</magazineSize>
+                <reloadTime>4.2</reloadTime>
+				<!-- <spawnUnloaded>true</spawnUnloaded> -->
+				<ammoSet>AmmoSet_GebK</ammoSet>
+			</li>
+			<li Class="CombatExtended.CompProperties_FireModes"/>
+		</comps>
+	</ThingDef>
+	
+	<!-- ================== 7.5cm Leichtgeschütz 40 ================== -->
+
+	<ThingDef ParentName="BaseGun_Turret">
+		<defName>Pa_LG</defName>
+		<label>7.5cm LG 40/L15.5 Gun</label>
+		<graphicData>
+			<texPath>Things/Building/Security/CMLT/LG40_Top</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Artillery_ShellLoaded</soundInteract>
+		<description>7.5cm LG 40/L15.5 Gun, towable mountain/paratrooper gun.</description>
+		<techLevel>Industrial</techLevel>
+		<tradeability>None</tradeability>
+		<statBases>
+			<MarketValue>1400</MarketValue>
+			<SightsEfficiency>1.8</SightsEfficiency>
+			<ShotSpread>0.18</ShotSpread>
+			<SwayFactor>1.2</SwayFactor>
+			<RangedWeapon_Cooldown>2</RangedWeapon_Cooldown>
+		</statBases>
+		<weaponTags>
+			<li>Artillery</li>
+			<li>Artillery_BaseDestroyer</li>
+		</weaponTags>
+		<generateCommonality>0</generateCommonality>
+		<verbs>
+			<li Class="CombatExtended.VerbPropertiesCE" Inherit="False">
+				<verbClass>CombatExtended.Verb_ShootMortarCE</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_75mmCannonShell_HEID</defaultProjectile>
+				<!--<forcedMissRadius>5</forcedMissRadius>-->
+				<circularError>1.2</circularError>
+				<warmupTime>1.4</warmupTime>
+				<minRange>8</minRange>
+				<range>119</range>
+				<soundCast>Shot_75mm</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>18</muzzleFlashScale>
+				<targetParams>
+				  <canTargetLocations>true</canTargetLocations>
+				</targetParams>
+				<indirectFirePenalty>0.12</indirectFirePenalty>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="CombatExtended.CompProperties_AmmoUser">
+				<magazineSize>1</magazineSize>
+                <reloadTime>4</reloadTime>
+				<!-- <spawnUnloaded>true</spawnUnloaded> -->
+				<ammoSet>AmmoSet_LG</ammoSet>
+			</li>
+			<li Class="CombatExtended.CompProperties_FireModes"/>
+		</comps>
+	</ThingDef>
+	
+	<!-- ================== 7.5cm Panzerabwehrkanone 40 ================== -->
+
+	<ThingDef ParentName="BaseGun_Turret">
+		<defName>Pa_PaK40ATG</defName>
+		<label>7.5cm PaK 40/L46 Gun</label>
+		<graphicData>
+			<texPath>Things/Building/Security/CMMT/PaK40_Top</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Artillery_ShellLoaded</soundInteract>
+		<description>7.5cm PaK 40/L46 Gun, towable medium Anti-Tank gun.</description>
+		<techLevel>Industrial</techLevel>
+		<tradeability>None</tradeability>
+		<statBases>
+			<MarketValue>1600</MarketValue>
+			<SightsEfficiency>2.2</SightsEfficiency>
+			<ShotSpread>0.12</ShotSpread>
+			<SwayFactor>1.2</SwayFactor>
+			<RangedWeapon_Cooldown>2</RangedWeapon_Cooldown>
+		</statBases>
+		<weaponTags>
+			<li>Artillery</li>
+			<li>Artillery_BaseDestroyer</li>
+		</weaponTags>
+		<generateCommonality>0</generateCommonality>
+		<verbs>
+			<li Class="CombatExtended.VerbPropertiesCE" Inherit="False">
+				<verbClass>CombatExtended.Verb_ShootMortarCE</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_75mmCannonShell_APCBCHE</defaultProjectile>
+				<warmupTime>1.6</warmupTime>
+				<minRange>10</minRange>
+				<range>134</range>
+				<soundCast>Shot_75mm</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>18</muzzleFlashScale>
+				<targetParams>
+				  <canTargetLocations>true</canTargetLocations>
+				</targetParams>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="CombatExtended.CompProperties_AmmoUser">
+				<magazineSize>1</magazineSize>
+                <reloadTime>4.4</reloadTime>
+				<!-- <spawnUnloaded>true</spawnUnloaded> -->
+				<ammoSet>AmmoSet_PaK40ATG</ammoSet>
+			</li>
+			<li Class="CombatExtended.CompProperties_FireModes"/>
+		</comps>
+	</ThingDef>
+	
+	<!--=============== Turret Base(7.5cm GebirgsKanone 15) ===============-->
+
+	<ThingDef ParentName="TurretMannedBase">
+		<defName>Turret_GebK</defName>
+		<label>7.5cm GebirgsKanone 15</label>
+		<graphicData>
+			<texPath>Things/Building/Security/Base/NbW32_Base</texPath>
+			<drawSize>(1.6,1.6)</drawSize>
+			<shadowData>
+				<volume>(0.3, 0.6, 0.3)</volume>
+			</shadowData>
+		</graphicData>
+		<uiIconPath>Things/Building/Security/CMMT/GebK_icon</uiIconPath>
+		<hasInteractionCell>True</hasInteractionCell>
+		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		<statBases>
+			<MaxHitPoints>200</MaxHitPoints>
+			<WorkToBuild>1400</WorkToBuild>
+			<Mass>613</Mass>
+			<Bulk>613</Bulk>
+		</statBases>
+		<techLevel>Industrial</techLevel>
+		<placeWorkers>
+			<li>PlaceWorker_NotUnderRoof</li>
+		</placeWorkers>
+		<description>7.5cm GebirgsKanone 15 mountain gun, an ancient Late War Light mountain gun, designed to provide ligh artillery/indirect fire support for mountain troops.</description>
+		<size>(2,2)</size>
+		<stuffCategories>
+			<li>RuggedMetallic</li>
+		</stuffCategories>
+		<costStuffCount>100</costStuffCount>
+		<costList>
+			<Pa_SimpleCannon_Crate>2</Pa_SimpleCannon_Crate>
+		</costList>
+		<specialDisplayRadius>12</specialDisplayRadius>
+		<designationCategory>Security</designationCategory>
+		<building>
+			<turretGunDef>Pa_GebK</turretGunDef>
+			<turretTopDrawSize>5.4</turretTopDrawSize>
+			<buildingTags>
+				<li>Artillery</li>
+				<li>Artillery_BaseDestroyer</li>
+				<li>Artillery_MannedMortar</li>
+			</buildingTags>
+			<uninstallWork>300</uninstallWork>
+		</building>
+		<minifiedDef>MinifiedTurret_Pa_GebK</minifiedDef>
+		<thingCategories>
+			<li>BuildingsSecurity</li>
+		</thingCategories>
+		<researchPrerequisites>
+			<li>Parabellum_Gamma</li>
+		</researchPrerequisites>
+		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+	</ThingDef>
+	
+	<!--=============== Turret Base(7.5cm Leichtgeschütz 40) ===============-->
+
+	<ThingDef ParentName="TurretMannedBase">
+		<defName>Turret_LG</defName>
+		<label>7.5 cm Leichtgeschütz 40</label>
+		<graphicData>
+			<texPath>Things/Building/Security/Base/LG40_Base</texPath>
+			<drawSize>(1.8,1.8)</drawSize>
+			<shadowData>
+				<volume>(0.3, 0.6, 0.3)</volume>
+			</shadowData>
+		</graphicData>
+		<uiIconPath>Things/Building/Security/CMLT/LG40_icon</uiIconPath>
+		<statBases>
+			<MaxHitPoints>140</MaxHitPoints>
+			<WorkToBuild>900</WorkToBuild>
+			<Mass>145</Mass>
+			<Bulk>120</Bulk>
+		</statBases>
+		<techLevel>Industrial</techLevel>
+		<description>7.5cm Leichtgeschütz 40 mountain/paratrooper gun, an ancient Mid War Light mountain/paratrooper gun, designed to provide ligh artillery/indirect fire support for mountain troops, also provide direct fire anti-tank role, not very efficient one but it gets the job done.</description>
+		<size>(1,1)</size>
+		<stuffCategories>
+			<li>RuggedMetallic</li>
+		</stuffCategories>
+		<costStuffCount>100</costStuffCount>
+		<costList>
+			<Pa_SimpleCannon_Crate>2</Pa_SimpleCannon_Crate>
+		</costList>
+		<specialDisplayRadius>8</specialDisplayRadius>
+		<designationCategory>Security</designationCategory>
+		<building>
+			<turretGunDef>Pa_LG</turretGunDef>
+			<turretTopDrawSize>1.8</turretTopDrawSize>
+			<buildingTags>
+				<li>Artillery</li>
+				<li>Artillery_BaseDestroyer</li>
+				<li>Artillery_MannedMortar</li>
+			</buildingTags>
+			<uninstallWork>200</uninstallWork>
+		</building>
+		<minifiedDef>MinifiedTurret_Pa_LG</minifiedDef>
+		<thingCategories>
+			<li>BuildingsSecurity</li>
+		</thingCategories>
+		<researchPrerequisites>
+			<li>Parabellum_Gamma</li>
+		</researchPrerequisites>
+		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+	</ThingDef>
+	
+	<!--=============== Turret Base(7.5cm Panzerabwehrkanone 40) ===============-->
+
+	<ThingDef ParentName="TurretMannedBase">
+		<defName>Turret_PaK40ATG</defName>
+		<label>7.5cm Panzerabwehrkanone  15</label>
+		<graphicData>
+			<texPath>Things/Building/Security/Base/NbW32_Base</texPath>
+			<drawSize>(2.4,2.4)</drawSize>
+			<shadowData>
+				<volume>(0.3, 0.6, 0.3)</volume>
+			</shadowData>
+		</graphicData>
+		<uiIconPath>Things/Building/Security/CMMT/PaK40_icon</uiIconPath>
+		<hasInteractionCell>True</hasInteractionCell>
+		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		<statBases>
+			<MaxHitPoints>280</MaxHitPoints>
+			<WorkToBuild>1800</WorkToBuild>
+			<Mass>1425</Mass>
+			<Bulk>1425</Bulk>
+		</statBases>
+		<fillPercent>0.98</fillPercent>
+		<techLevel>Industrial</techLevel>
+		<description>7.5cm Panzerabwehrkanone 40 Anti-Tank gun, an ancient Mid War Medium Anti-Tank gun, the gun was designed to improve the anti-tank capability, the trade of was its mobility and weight, even though is a toweable gun, crews can only tow it for short distance for repositioning, the good thing is its performance is one of the best of its time for tank hunting.</description>
+		<size>(2,2)</size>
+		<stuffCategories>
+			<li>RuggedMetallic</li>
+		</stuffCategories>
+		<costStuffCount>100</costStuffCount>
+		<costList>
+			<Pa_complexcannon_Crate>1</Pa_complexcannon_Crate>
+		</costList>
+		<specialDisplayRadius>10</specialDisplayRadius>
+		<designationCategory>Security</designationCategory>
+		<building>
+			<turretGunDef>Pa_PaK40ATG</turretGunDef>
+			<turretTopDrawSize>5</turretTopDrawSize>
+			<buildingTags>
+				<li>Artillery</li>
+				<li>Artillery_BaseDestroyer</li>
+			</buildingTags>
+			<uninstallWork>600</uninstallWork>
+		</building>
+		<minifiedDef>MinifiedTurret_Pa_PaK40ATG</minifiedDef>
+		<thingCategories>
+			<li>BuildingsSecurity</li>
+		</thingCategories>
+		<researchPrerequisites>
+			<li>Turrets_31</li>
+		</researchPrerequisites>
+		<constructionSkillPrerequisite>10</constructionSkillPrerequisite>
+	</ThingDef>
+	
+	<!-- ================== Minified ================== -->
+	
+	<ThingDef ParentName="MinifiedTurretBase">
+		<defName>MinifiedTurret_Pa_GebK</defName>
+		<label>Undeployed 7.5cm GebirgsKanone 15</label>
+		<statBases>
+			<Mass>320</Mass>
+			<Bulk>320</Bulk>
+		</statBases>
+	</ThingDef>
+	
+	<ThingDef ParentName="MinifiedTurretBase">
+		<defName>MinifiedTurret_Pa_LG</defName>
+		<label>Undeployed 7.5cm Leichtgeschütz 40</label>
+		<statBases>
+			<Mass>100</Mass>
+			<Bulk>55</Bulk>
+		</statBases>
+	</ThingDef>
+	
+	<ThingDef ParentName="MinifiedTurretBase">
+		<defName>MinifiedTurret_Pa_PaK40ATG</defName>
+		<label>Undeployed 7.5cm Panzerabwehrkanone 40</label>
+		<statBases>
+			<Mass>650</Mass>
+			<Bulk>500</Bulk>
+		</statBases>
+	</ThingDef>
+	
+</Defs>

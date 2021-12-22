@@ -7,12 +7,12 @@
         <label>De Lisle Commando Carabine</label>
         <description>An integrated suppressed pistol caliber carbine for ancient special force. Mediocre damage, low fire rate, highly accurate and decent effective range.</description>
         <graphicData>
-            <texPath>Things/Weapons/Delisle</texPath>
+            <texPath>Things/Weapons/Carabines/Delisle</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <soundInteract>Interact_Rifle</soundInteract>
         <statBases>
-            <MarketValue>640</MarketValue>
+            <MarketValue>380</MarketValue>
             <SightsEfficiency>1.15</SightsEfficiency>
             <ShotSpread>0.02</ShotSpread>
             <SwayFactor>1</SwayFactor>
@@ -70,7 +70,7 @@
         <label>M4.50 Beowulf SC</label>
         <description>The M4.50 Beowulf Special Carabine, changing the standard AR barrel to the heavier .50 Beowulf barrel to deal with light armored target and bear size animals. High damage, average range, good rate of fire and accuracy, but not really controllable in burst.</description>
         <graphicData>
-            <texPath>Things/Weapons/M4Beowulf</texPath>
+            <texPath>Things/Weapons/Carabines/M4Beowulf</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <soundInteract>Interact_Rifle</soundInteract>
@@ -79,7 +79,7 @@
             <SightsEfficiency>1.12</SightsEfficiency>
             <ShotSpread>0.058</ShotSpread>
             <SwayFactor>1.08</SwayFactor>
-            <RangedWeapon_Cooldown>0.8</RangedWeapon_Cooldown>
+            <RangedWeapon_Cooldown>0.95</RangedWeapon_Cooldown>
             <Bulk>9.2</Bulk>
             <Mass>3.8</Mass>
         </statBases>
@@ -99,7 +99,7 @@
                 <verbClass>CombatExtended.Verb_ShootCE</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
                 <defaultProjectile>Bullet_127x42mmB_FMJ</defaultProjectile>
-                <warmupTime>0.95</warmupTime>
+                <warmupTime>0.8</warmupTime>
                 <range>42</range>
                 <burstShotCount>4</burstShotCount>
                 <ticksBetweenBurstShots>5</ticksBetweenBurstShots>
@@ -133,7 +133,7 @@
         <label>M960(M) Calico Carabine</label>
         <description>The Calico M960 Military Model 9mm Carbine is a Light Weight Carbine with high capacity, cylindrical, helical-feed magazine in a compact design, designed as backup weapon for vehicle crew.</description>
         <graphicData>
-            <texPath>Things/Weapons/Calico</texPath>
+            <texPath>Things/Weapons/Carabines/Calico</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <soundInteract>Interact_Rifle</soundInteract>
@@ -142,7 +142,7 @@
             <SightsEfficiency>1.1</SightsEfficiency>
             <ShotSpread>0.054</ShotSpread>
             <SwayFactor>1.05</SwayFactor>
-            <RangedWeapon_Cooldown>0.5</RangedWeapon_Cooldown>
+            <RangedWeapon_Cooldown>0.6</RangedWeapon_Cooldown>
             <Bulk>7.8</Bulk>
             <Mass>2.17</Mass>
         </statBases>
@@ -168,7 +168,7 @@
                 <defaultProjectile>Bullet_9x19mmPara_FMJ</defaultProjectile>
                 <burstShotCount>25</burstShotCount>
                 <ticksBetweenBurstShots>5</ticksBetweenBurstShots>
-                <warmupTime>0.6</warmupTime>
+                <warmupTime>0.5</warmupTime>
                 <range>34</range>
                 <soundCast>Shot_MachinePistol</soundCast>
                 <soundCastTail>GunTail_Light</soundCastTail>
@@ -200,7 +200,7 @@
         <label>Karabiner Model 1890</label>
         <description>A shorter version of the Gewehr Model 1888 for Cavary, to improve its mobility, the trade off is reduced effective range and Accuracy.</description>
         <graphicData>
-            <texPath>Things/Weapons/K90</texPath>
+            <texPath>Things/Weapons/Carabines/K90</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <soundInteract>Interact_Rifle</soundInteract>
@@ -259,12 +259,12 @@
     </ThingDef>
 	
 	<!-- Mauser Karabiner 98 Kurz(Replica) -->
-    <ThingDef ParentName="BaseGun_LongBarreled">
+    <ThingDef ParentName="Pa_WwBayonetB">
         <defName>Pa_K98k</defName>
         <label>Mauser Karabiner 98k(R)</label>
         <description>One of the latest version of Mauser Bolt Action Rifle Family, the culmination of the Mauser family and one of the best old school rifle for its time,the replica made it capable to fit modern rifle rounds.</description>
         <graphicData>
-            <texPath>Things/Weapons/98k</texPath>
+            <texPath>Things/Weapons/Carabines/98k</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <soundInteract>Interact_Rifle</soundInteract>
@@ -274,18 +274,16 @@
             <ShotSpread>0.02</ShotSpread>
             <SwayFactor>1.15</SwayFactor>
             <RangedWeapon_Cooldown>1.6</RangedWeapon_Cooldown>
-            <Bulk>9.6</Bulk>
-            <Mass>3.7</Mass>
+            <Bulk>12.6</Bulk>
+            <Mass>5.5</Mass>
         </statBases>
-		<generateCommonality>0.5</generateCommonality>
+		<generateCommonality>0.3</generateCommonality>
 		<equippedAngleOffset>45</equippedAngleOffset>
         <weaponTags>
             <li>RF1</li>
-			<li>RF2</li>
             <li>Gun</li>
             <li>SniperRifle</li>
             <li>TierOneRifle</li>
-			<li>TierTwoRifle</li>
             <li>TierOneSniper</li>
             <li>CE_AI_Rifle</li>
         </weaponTags>
@@ -309,42 +307,42 @@
                 <aiAimMode>AimedShot</aiAimMode>
             </li>
             <li Class="CombatExtended.CompProperties_AmmoUser">
-                <magazineSize>5</magazineSize>
-                <reloadTime>2</reloadTime>
+                <magazineSize>20</magazineSize>
+                <reloadTime>7.6</reloadTime>
                 <ammoSet>AmmoSet_K98k</ammoSet>
             </li>
         </comps>
 		<modExtensions>
 		  <li Class="CombatExtended.GunDrawExtension">
-			<DrawSize>1.1</DrawSize>
+			<DrawSize>1.2</DrawSize>
 		  </li>
 		</modExtensions>
         <smeltProducts>
-			<ComponentIndustrial>4</ComponentIndustrial>
+			<ComponentIndustrial>6</ComponentIndustrial>
             <Weapon_Parts>1</Weapon_Parts>
         </smeltProducts>
     </ThingDef>
 	
 	<!-- Gewehr 41(Walther) -->
-    <ThingDef ParentName="BaseGun_LongBarreled">
+    <ThingDef ParentName="Pa_WwBayonetB">
         <defName>Pa_G41W</defName>
         <label>Gewehr 41(W)</label>
         <description>One of the early attemp to create a semi-automatic rifle by Walther, to increase firepower of rifleman squad, the other one was from Mauser, due the weapon complexity and reliability, the project was superseeded by Gewehr 43, but still, Walther achieved better result than Mauser's G41(M) did.</description>
         <graphicData>
-            <texPath>Things/Weapons/G41W</texPath>
+            <texPath>Things/Weapons/Carabines/G41W</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <soundInteract>Interact_Rifle</soundInteract>
         <statBases>
-            <MarketValue>900</MarketValue>
+            <MarketValue>950</MarketValue>
             <SightsEfficiency>1.2</SightsEfficiency>
             <ShotSpread>0.028</ShotSpread>
             <SwayFactor>1.3</SwayFactor>
             <RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
-            <Bulk>9.9</Bulk>
-            <Mass>4.9</Mass>
+            <Bulk>10.9</Bulk>
+            <Mass>5.7</Mass>
         </statBases>
-		<generateCommonality>0.4</generateCommonality>
+		<generateCommonality>0.25</generateCommonality>
 		<equippedAngleOffset>45</equippedAngleOffset>
         <weaponTags>
 			<li>RF1</li>
@@ -384,7 +382,7 @@
         </comps>
 		<modExtensions>
 		  <li Class="CombatExtended.GunDrawExtension">
-			<DrawSize>1.1</DrawSize>
+			<DrawSize>1.2</DrawSize>
 		  </li>
 		</modExtensions>
         <smeltProducts>
@@ -399,18 +397,18 @@
         <label>Gewehr 43</label>
         <description>The succesor of both G41(W) and G41(M), included improved short-stroke piston gas system which solved the reliability issue, and detachable 10 rounds magazine box to speed up its reaload.</description>
         <graphicData>
-            <texPath>Things/Weapons/G43</texPath>
+            <texPath>Things/Weapons/Carabines/G43</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <soundInteract>Interact_Rifle</soundInteract>
         <statBases>
-            <MarketValue>1000</MarketValue>
-            <SightsEfficiency>1.25</SightsEfficiency>
-            <ShotSpread>0.022</ShotSpread>
-            <SwayFactor>1.2</SwayFactor>
-            <RangedWeapon_Cooldown>1.4</RangedWeapon_Cooldown>
-            <Bulk>9.7</Bulk>
-            <Mass>4.4</Mass>
+            <MarketValue>1400</MarketValue>
+            <SightsEfficiency>1.55</SightsEfficiency>
+            <ShotSpread>0.014</ShotSpread>
+            <SwayFactor>1.1</SwayFactor>
+            <RangedWeapon_Cooldown>1.6</RangedWeapon_Cooldown>
+            <Bulk>10.3</Bulk>
+            <Mass>4.8</Mass>
         </statBases>
 		<generateCommonality>0.4</generateCommonality>
 		<equippedAngleOffset>45</equippedAngleOffset>
@@ -436,7 +434,7 @@
                 <warmupTime>0.54</warmupTime>
 				<burstShotCount>3</burstShotCount>
                 <ticksBetweenBurstShots>80</ticksBetweenBurstShots>
-                <range>57</range>
+                <range>62</range>
                 <soundCast>Shot_G43K</soundCast>
                 <soundCastTail>GunTail_Medium</soundCastTail>
                 <muzzleFlashScale>10</muzzleFlashScale>
@@ -460,6 +458,7 @@
 		  </li>
 		</modExtensions>
         <smeltProducts>
+			<Sniper_Component>1</Sniper_Component>
 			<Rifle_Component>1</Rifle_Component>
             <Weapon_Parts>1</Weapon_Parts>
         </smeltProducts>
@@ -471,7 +470,7 @@
         <label>Gustloff VG 1-5</label>
         <description>Gustloff Volkssturmgewehr VG 1-5, the "People's Assault Rifle", the last effort to increase weapon production almost in the end of the war, a very robust and cheap semi-automatic carabine, generally used by Volkssturm, to fight for the fatherland counter the inevitable for one last time.</description>
         <graphicData>
-            <texPath>Things/Weapons/VG</texPath>
+            <texPath>Things/Weapons/Carabines/VG</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <soundInteract>Interact_Rifle</soundInteract>

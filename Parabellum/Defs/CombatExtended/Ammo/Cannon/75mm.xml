@@ -1,0 +1,596 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingCategoryDef>
+		<defName>Ammo75mmCannonShells</defName>
+		<label>7.5cm Cannon shell</label>
+		<parent>AmmoShells</parent>
+		<iconPath>Things/Ammo/75mm/APCBCHE</iconPath>
+	</ThingCategoryDef>
+
+	<!-- ==================== AmmoSet ========================== -->
+
+	<CombatExtended.AmmoSetDef>
+		<defName>AmmoSet_PaK40ATG</defName>
+		<label>7.5cm Cannon shell</label>
+		<ammoTypes>
+			<Ammo_75mmCannonShell_APCBCHE>Bullet_75mmCannonShell_APCBCHE</Ammo_75mmCannonShell_APCBCHE>
+			<Ammo_75mmCannonShell_HE>Bullet_75mmCannonShell_HE</Ammo_75mmCannonShell_HE>
+			<Ammo_75mmCannonShell_APCR>Bullet_75mmCannonShell_APCR</Ammo_75mmCannonShell_APCR>
+			<Ammo_75mmCannonShell_HEAT>Bullet_75mmCannonShell_HEAT</Ammo_75mmCannonShell_HEAT>
+		</ammoTypes>
+	</CombatExtended.AmmoSetDef>
+	
+	<CombatExtended.AmmoSetDef>
+		<defName>AmmoSet_LG</defName>
+		<label>7.5cm Cannon shell</label>
+		<ammoTypes>
+			<Ammo_75mmCannonShell_HE>Bullet_75mmCannonShell_HEID</Ammo_75mmCannonShell_HE>
+			<Ammo_75mmCannonShell_HEAT>Bullet_75mmCannonShell_HEAT</Ammo_75mmCannonShell_HEAT>
+		</ammoTypes>
+	</CombatExtended.AmmoSetDef>
+	
+	<CombatExtended.AmmoSetDef>
+		<defName>AmmoSet_GebK</defName>
+		<label>7.5cm Cannon shell</label>
+		<ammoTypes>
+			<Ammo_75mmCannonShell_HE>Bullet_75mmCannonShell_HEID</Ammo_75mmCannonShell_HE>
+			<Ammo_75mmCannonShell_HEAT>Bullet_75mmCannonShell_HEATID</Ammo_75mmCannonShell_HEAT>
+		</ammoTypes>
+	</CombatExtended.AmmoSetDef>
+	
+	<!-- ==================== Ammo ========================== -->
+
+	<ThingDef Class="CombatExtended.AmmoDef" Name="75mmCannonShellBase" ParentName="AmmoBase" Abstract="True">
+		<description>The 7.5cm medium cannon shell is a specific size of cannon and artillery ammunition.</description>
+		<statBases>
+			<MaxHitPoints>250</MaxHitPoints>
+		</statBases>
+		<tradeTags>
+			<li>CE_AutoEnableTrade</li>
+			<li>CE_AutoEnableCrafting_TableMachining</li>
+		</tradeTags>
+		<thingCategories>
+			<li>Ammo75mmCannonShells</li>
+		</thingCategories>
+		<stackLimit>50</stackLimit>
+		<cookOffSound>MortarBomb_Explode</cookOffSound>
+		<cookOffSpeed>0.3</cookOffSpeed>
+		<cookOffFlashScale>25</cookOffFlashScale>
+		<cookOffTailSound>ShellCookOff_Ambient</cookOffTailSound>
+	</ThingDef>
+
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="75mmCannonShellBase">
+		<defName>Ammo_75mmCannonShell_APCBCHE</defName>
+		<label>7.5cm Pzgr 39(APCBC-HE)</label>
+		<graphicData>
+			<texPath>Things/Ammo/75mm/APCBCHE</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>56</MarketValue>
+			<Mass>11.52</Mass>
+			<Bulk>10.47</Bulk>
+		</statBases>
+		<ammoClass>75mmAPCBCHE</ammoClass>
+		<cookOffProjectile>Bullet_75mmCannonShell_APCBCHE</cookOffProjectile>
+	</ThingDef>
+
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="75mmCannonShellBase">
+		<defName>Ammo_75mmCannonShell_HE</defName>
+		<label>7.5cm Sprgr.Patr.34(HE)</label>
+		<graphicData>
+			<texPath>Things/Ammo/75mm/HE</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>61.1</MarketValue>
+			<Mass>8.71</Mass>
+			<Bulk>11</Bulk>
+		</statBases>
+		<ammoClass>75mmHE</ammoClass>
+		<generateAllowChance>0.5</generateAllowChance>
+		<cookOffProjectile>Bullet_75mmCannonShell_HE</cookOffProjectile>
+	</ThingDef>
+
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="75mmCannonShellBase">
+		<defName>Ammo_75mmCannonShell_APCR</defName>
+		<label>7.5cm Pzgr 40(APCR)</label>
+		<graphicData>
+			<texPath>Things/Ammo/75mm/APCR</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>58.2</MarketValue>
+			<Mass>8.61</Mass>
+			<Bulk>9.94</Bulk>
+		</statBases>
+		<ammoClass>75mmAPCR</ammoClass>
+		<generateAllowChance>0.15</generateAllowChance>
+		<cookOffProjectile>Bullet_75mmCannonShell_APCR</cookOffProjectile>
+	</ThingDef>
+	
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="75mmCannonShellBase">
+		<defName>Ammo_75mmCannonShell_HEAT</defName>
+		<label>7.5cm Gr.Patr.38 HL/B(HEAT)</label>
+		<graphicData>
+			<texPath>Things/Ammo/75mm/HEAT</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>60</MarketValue>
+			<Mass>8.71</Mass>
+			<Bulk>10.4</Bulk>
+		</statBases>
+		<ammoClass>75mmHEAT</ammoClass>
+		<generateAllowChance>0.25</generateAllowChance>
+		<cookOffProjectile>Bullet_75mmCannonShell_HEAT</cookOffProjectile>
+	</ThingDef>
+	
+	<!-- ================== Projectiles ================== -->
+
+	<ThingDef Class="CombatExtended.AmmoDef" Name="Base75mmCannonShell" ParentName="SK_BaseBullet" Abstract="true">
+		<graphicData>
+			<shaderType>TransparentPostLight</shaderType>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<soundExplode>MortarBomb_Explode</soundExplode>
+			<flyOverhead>false</flyOverhead>
+			<dropsCasings>true</dropsCasings>
+			<casingMoteDefname>Mote_BigShell</casingMoteDefname>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="Base75mmCannonShell">
+		<defName>Bullet_75mmCannonShell_APCBCHE</defName>
+		<label>7.5cm Pzgr 39 (APCBC-HE)</label>
+		<graphicData>
+			<texPath>Things/Projectile/75mm/APCBCHE</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<speed>122</speed> <!-- 790m/s -->
+			<damageDef>Bullet</damageDef>
+			<spreadMult>0.9</spreadMult>
+			<damageAmountBase>316</damageAmountBase>
+			<armorPenetrationSharp>110</armorPenetrationSharp> <!-- 0° -->
+			<armorPenetrationBlunt>4668.36</armorPenetrationBlunt>
+		</projectile>
+		<comps>
+			<li Class="CombatExtended.CompProperties_ExplosiveCE">
+				<damageAmountBase>96</damageAmountBase>
+				<explosiveDamageType>Bomb</explosiveDamageType>
+				<explosiveRadius>1.4</explosiveRadius>
+			</li>
+			<li Class="CombatExtended.CompProperties_Fragments">
+				<fragments>
+					<Fragment_Large>8</Fragment_Large>
+					<Fragment_Small>18</Fragment_Small>
+				</fragments>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="Base75mmCannonShell">
+		<defName>Bullet_75mmCannonShell_HE</defName>
+		<label>7.5cm Sprgr.Patr.34 (HE)</label>
+		<thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
+		<graphicData>
+			<texPath>Things/Projectile/75mm/HE</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<speed>85</speed> <!-- 550m/s -->
+			<damageDef>Bomb</damageDef>
+			<damageAmountBase>166</damageAmountBase>
+			<explosionRadius>2.8</explosionRadius>
+			<soundExplode>MortarBomb_Explode</soundExplode>
+			<ai_IsIncendiary>true</ai_IsIncendiary>
+			<secondaryDamage>
+				<li>
+					<def>Bomb_Secondary</def>
+					<amount>102</amount>
+				</li>
+			</secondaryDamage>
+		</projectile>
+		<comps>
+			<li Class="CombatExtended.CompProperties_Fragments">
+				<fragments>
+					<Fragment_Large>41</Fragment_Large>
+					<Fragment_Small>29</Fragment_Small>
+				</fragments>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="Base75mmCannonShell">
+		<defName>Bullet_75mmCannonShell_APCR</defName>
+		<label>7.5cm Pzgr 40 (APCR)</label>
+		<graphicData>
+			<texPath>Things/Projectile/75mm/APCR</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<speed>153</speed> <!-- 990m/s -->
+			<damageDef>Bullet</damageDef>
+			<spreadMult>0.8</spreadMult>
+			<damageAmountBase>363</damageAmountBase>
+			<armorPenetrationSharp>143</armorPenetrationSharp>
+			<armorPenetrationBlunt>4320</armorPenetrationBlunt>
+			<secondaryDamage>
+				<li>
+					<def>Blunt</def>
+					<amount>163</amount>
+				</li>
+			</secondaryDamage>
+		</projectile>
+		<comps>
+			<li Class="CombatExtended.CompProperties_ExplosiveCE">
+				<damageAmountBase>38</damageAmountBase>
+				<explosiveDamageType>Bomb</explosiveDamageType>
+				<explosiveRadius>0.5</explosiveRadius>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="Base75mmCannonShell">
+		<defName>Bullet_75mmCannonShell_HEAT</defName>
+		<label>7.5cm Gr.Patr.38 HL/B(HEAT)</label>
+		<graphicData>
+			<texPath>Things/Projectile/75mm/HEAT</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<speed>69</speed> <!-- 450m/s -->
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>338</damageAmountBase>
+			<soundExplode>MortarBomb_Explode</soundExplode>
+			<armorPenetrationSharp>87</armorPenetrationSharp>
+			<armorPenetrationBlunt>4320.24</armorPenetrationBlunt>
+		</projectile>
+		<comps>
+			<li Class="CombatExtended.CompProperties_ExplosiveCE">
+				<damageAmountBase>108</damageAmountBase>
+				<explosiveDamageType>Bomb</explosiveDamageType>
+				<explosiveRadius>1.1</explosiveRadius>
+			</li>
+			<li Class="CombatExtended.CompProperties_Fragments">
+				<fragments>
+					<Fragment_Large>18</Fragment_Large>
+					<Fragment_Small>30</Fragment_Small>
+				</fragments>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="Base75mmCannonShell">
+		<defName>Bullet_75mmCannonShell_HEATID</defName>
+		<label>7.5cm Gr.Patr.38 HL/B(HEAT)</label>
+		<graphicData>
+			<texPath>Things/Projectile/75mm/HEAT</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<flyOverhead>true</flyOverhead>
+			<gravityFactor>8</gravityFactor>
+			<speed>69</speed> <!-- 350m/s -->
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>338</damageAmountBase>
+			<soundExplode>MortarBomb_Explode</soundExplode>
+			<armorPenetrationSharp>87</armorPenetrationSharp>
+			<armorPenetrationBlunt>4320.24</armorPenetrationBlunt>
+		</projectile>
+		<comps>
+			<li Class="CombatExtended.CompProperties_ExplosiveCE">
+				<damageAmountBase>108</damageAmountBase>
+				<explosiveDamageType>Bomb</explosiveDamageType>
+				<explosiveRadius>1.1</explosiveRadius>
+			</li>
+			<li Class="CombatExtended.CompProperties_Fragments">
+				<fragments>
+					<Fragment_Large>18</Fragment_Large>
+					<Fragment_Small>30</Fragment_Small>
+				</fragments>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="Base75mmCannonShell">
+		<defName>Bullet_75mmCannonShell_HEID</defName>
+		<label>7.5cm Sprgr.Patr.34 (HE)</label>
+		<thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
+		<graphicData>
+			<texPath>Things/Projectile/75mm/HE</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<flyOverhead>true</flyOverhead>
+			<gravityFactor>8</gravityFactor>
+			<speed>54</speed> <!-- 350m/s -->
+			<damageDef>Bomb</damageDef>
+			<damageAmountBase>166</damageAmountBase>
+			<explosionRadius>2.8</explosionRadius>
+			<soundExplode>MortarBomb_Explode</soundExplode>
+			<ai_IsIncendiary>true</ai_IsIncendiary>
+			<secondaryDamage>
+				<li>
+					<def>Bomb_Secondary</def>
+					<amount>102</amount>
+				</li>
+			</secondaryDamage>
+		</projectile>
+		<comps>
+			<li Class="CombatExtended.CompProperties_Fragments">
+				<fragments>
+					<Fragment_Large>41</Fragment_Large>
+					<Fragment_Small>29</Fragment_Small>
+				</fragments>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<!-- ==================== Recipes ========================== -->
+
+	<RecipeDef ParentName="AmmoRecipeBase">
+		<defName>MakeAmmo_75mmCannonShell_APCBCHE</defName>
+		<label>make 7.5cm Pzgr 39(APCBCHE) shells x3</label>
+		<description>Craft 3 7.5cm Pzgr 39(APCBC-HE) shells.</description>
+		<jobString>Making 3 7.5cm Pzgr 39(APCBC-HE) shells.</jobString>
+		<targetCountAdjustment>3</targetCountAdjustment>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>SLDBar</li>
+						<li>USLDBar</li>
+					</categories>
+				</filter>
+				<count>30</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>HeavyBar</li>
+					</categories>
+				</filter>
+				<count>18</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Powder</li>
+						<li>FSX</li>
+					</thingDefs>
+				</filter>
+				<count>9</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>6</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>SLDBar</li>
+				<li>USLDBar</li>
+				<li>HeavyBar</li>
+			</categories>
+			<thingDefs>
+				<li>Powder</li>
+				<li>FSX</li>
+				<li>ComponentIndustrial</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Ammo_75mmCannonShell_APCBCHE>3</Ammo_75mmCannonShell_APCBCHE>
+		</products>
+		<skillRequirements>
+			<Crafting>8</Crafting>
+		</skillRequirements>
+		<workSkill>Crafting</workSkill>
+		<researchPrerequisite>Turrets_31</researchPrerequisite>
+	</RecipeDef>
+
+	<RecipeDef ParentName="AmmoRecipeBase">
+		<defName>MakeAmmo_75mmCannonShell_HE</defName>
+		<label>make 7.5cm Sprgr.Patr.34(HE) shells x3</label>
+		<description>Craft 3 7.5cm Sprgr.Patr.34(HE) shells.</description>
+		<jobString>Making 7.5cm Sprgr.Patr.34(HE) shells.</jobString>
+		<targetCountAdjustment>3</targetCountAdjustment>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>SLDBar</li>
+						<li>USLDBar</li>
+					</categories>
+				</filter>
+				<count>30</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>HeavyBar</li>
+					</categories>
+				</filter>
+				<count>15</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Powder</li>
+						<li>FSX</li>
+					</thingDefs>
+				</filter>
+				<count>12</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>6</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>SLDBar</li>
+				<li>USLDBar</li>
+				<li>HeavyBar</li>
+			</categories>
+			<thingDefs>
+				<li>Powder</li>
+				<li>FSX</li>
+				<li>ComponentIndustrial</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Ammo_75mmCannonShell_HE>3</Ammo_75mmCannonShell_HE>
+		</products>
+		<recipeUsers>
+			<li>FabricationBench</li>
+		</recipeUsers>
+		<skillRequirements>
+			<Crafting>8</Crafting>
+		</skillRequirements>
+		<workSkill>Crafting</workSkill>
+		<researchPrerequisite>Parabellum_Gamma</researchPrerequisite>
+	</RecipeDef>
+
+	<RecipeDef ParentName="AmmoRecipeBase">
+		<defName>MakeAmmo_75mmCannonShell_APCR</defName>
+		<label>make 7.5cm Pzgr 40(APCR) shells x3</label>
+		<description>Craft 3 7.5cm Pzgr 40(APCR) shells.</description>
+		<jobString>Making 3 7.5cm Pzgr 40(APCR) shells.</jobString>
+		<targetCountAdjustment>3</targetCountAdjustment>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>SLDBar</li>
+						<li>USLDBar</li>
+					</categories>
+				</filter>
+				<count>30</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Tungsten</li>
+					</thingDefs>
+				</filter>
+				<count>4</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Powder</li>
+						<li>FSX</li>
+					</thingDefs>
+				</filter>
+				<count>7</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>6</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>SLDBar</li>
+				<li>USLDBar</li>
+			</categories>
+			<thingDefs>
+				<li>Powder</li>
+				<li>FSX</li>
+				<li>ComponentIndustrial</li>
+				<li>Tungsten</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Ammo_75mmCannonShell_APCR>3</Ammo_75mmCannonShell_APCR>
+		</products>
+		<skillRequirements>
+			<Crafting>8</Crafting>
+		</skillRequirements>
+		<workSkill>Crafting</workSkill>
+		<researchPrerequisite>Turrets_31</researchPrerequisite>
+	</RecipeDef>
+
+	<RecipeDef ParentName="AmmoRecipeBase">
+		<defName>MakeAmmo_75mmCannonShell_HEAT</defName>
+		<label>make 7.5cm Gr.Patr.38 HL/B(HEAT) shells x3</label>
+		<description>Craft 3 7.5cm Gr.Patr.38 HL/B(HEAT) shells.</description>
+		<jobString>Making 7.5cm Gr.Patr.38 HL/B(HEAT) shells.</jobString>
+		<targetCountAdjustment>3</targetCountAdjustment>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>SLDBar</li>
+						<li>USLDBar</li>
+					</categories>
+				</filter>
+				<count>25</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>HeavyBar</li>
+					</categories>
+				</filter>
+				<count>15</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Powder</li>
+						<li>FSX</li>
+					</thingDefs>
+				</filter>
+				<count>12</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>6</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>SLDBar</li>
+				<li>USLDBar</li>
+				<li>HeavyBar</li>
+			</categories>
+			<thingDefs>
+				<li>Powder</li>
+				<li>FSX</li>
+				<li>ComponentIndustrial</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Ammo_75mmCannonShell_HEAT>3</Ammo_75mmCannonShell_HEAT>
+		</products>
+		<recipeUsers>
+			<li>FabricationBench</li>
+		</recipeUsers>
+		<skillRequirements>
+			<Crafting>8</Crafting>
+		</skillRequirements>
+		<workSkill>Crafting</workSkill>
+		<researchPrerequisite>Parabellum_Gamma</researchPrerequisite>
+	</RecipeDef>
+
+</Defs>

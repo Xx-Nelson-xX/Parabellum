@@ -7,7 +7,7 @@
         <label>Barrett XM109 AMPR</label>
         <description>Originally belong to the OSW program, it become AMPR thanks to it role, the XM109 can be reconfigured to use both .50 BMG and 25X59mm high-velocity grenade round for light-medium armored target, unlike the M82/M107 system, the XM109 offers greater range with a shorter weapon length. Very high damage, extremely long range and excellent accuracy.</description>
         <graphicData>
-            <texPath>Things/Weapons/XM109</texPath>
+            <texPath>Things/Weapons/SRs/XM109</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <soundInteract>Interact_Rifle</soundInteract>
@@ -68,7 +68,7 @@
         <label>Mk.12 SPR</label>
         <description>Mk.12 Special Purpose Rifle, is a semi-automatic designated marksman rifle, instead of the full length rifle ammo, the Mk.12 SPR use the standard 5,56x45mm NATO round, the weapon is designed to be light as any carabine lenght AR family(such as M-4 and M-16) while offer more effective range with marksman barrel and optic scope to suit the SPR role.</description>
         <graphicData>
-            <texPath>Things/Weapons/Mk12SPR</texPath>
+            <texPath>Things/Weapons/SRs/Mk12SPR</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <soundInteract>Interact_Rifle</soundInteract>
@@ -135,7 +135,7 @@
         <label>Mk.12 SPR(B)</label>
         <description>Mk.12 Special Purpose Rifle, with Beowulf heavy barrel to chamber the special .50 Beowulf round, which offers lot more stopping power and armor penetration than the standard 5.56x45mm NATO and 7.62x51mm NATO round, not very ideal to use counter longrange moving target due increased bullet weight and reduced projectile speed, and the range is rather limited due the same reason.</description>
         <graphicData>
-            <texPath>Things/Weapons/Mk1250SPR</texPath>
+            <texPath>Things/Weapons/SRs/Mk1250SPR</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <soundInteract>Interact_Rifle</soundInteract>
@@ -186,6 +186,71 @@
             <AdvRifle_Component>1</AdvRifle_Component>
             <Weapon_Parts>1</Weapon_Parts>
 			<Plastic>2</Plastic>
+        </smeltProducts>
+    </ThingDef>
+	
+	<!-- Mauser Karabiner 98k with Zielacht 8x -->
+    <ThingDef ParentName="BaseGun_LongBarreled">
+        <defName>Pa_K98S</defName>
+        <label>Mauser Karabiner 98k(R)</label>
+        <description>One of the latest version of Mauser Bolt Action Rifle Family, the culmination of the Mauser family and one of the best old school rifle for its time, the replica made it capable to fit modern rifle rounds, this one has a Zielatch 8x mounted in the rifle for sniping purpose.</description>
+        <graphicData>
+            <texPath>Things/Weapons/SRs/98s</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>Interact_Rifle</soundInteract>
+        <statBases>
+            <MarketValue>1780</MarketValue>
+            <SightsEfficiency>1.7</SightsEfficiency>
+            <ShotSpread>0.01</ShotSpread>
+            <SwayFactor>1.1</SwayFactor>
+            <RangedWeapon_Cooldown>1.6</RangedWeapon_Cooldown>
+            <Bulk>9.6</Bulk>
+            <Mass>3.9</Mass>
+        </statBases>
+		<generateCommonality>0.3</generateCommonality>
+		<equippedAngleOffset>45</equippedAngleOffset>
+        <weaponTags>
+			<li>SNIP1</li>
+            <li>SNIP2</li>
+            <li>SniperRifle</li>
+            <li>TierTwoSniper</li>
+            <li>CE_AI_Rifle</li>
+        </weaponTags>
+        <thingCategories>
+            <li>SRifles</li>
+        </thingCategories>
+        <verbs>
+            <li Class="CombatExtended.VerbPropertiesCE">
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>Bullet_8mmM_SP</defaultProjectile>
+                <warmupTime>1.1</warmupTime>
+                <range>70</range>
+                <soundCast>Shot_G88M</soundCast>
+                <soundCastTail>GunTail_Medium</soundCastTail>
+                <muzzleFlashScale>10</muzzleFlashScale>
+            </li>
+        </verbs>
+        <comps>
+            <li Class="CombatExtended.CompProperties_FireModes">
+                <aiAimMode>AimedShot</aiAimMode>
+            </li>
+            <li Class="CombatExtended.CompProperties_AmmoUser">
+                <magazineSize>5</magazineSize>
+                <reloadOneAtATime>true</reloadOneAtATime>
+                <reloadTime>0.6</reloadTime>
+                <ammoSet>AmmoSet_K98k</ammoSet>
+            </li>
+        </comps>
+		<modExtensions>
+		  <li Class="CombatExtended.GunDrawExtension">
+			<DrawSize>1.1</DrawSize>
+		  </li>
+		</modExtensions>
+        <smeltProducts>
+			<Sniper_Component>1</Sniper_Component>
+            <Weapon_Parts>1</Weapon_Parts>
         </smeltProducts>
     </ThingDef>
 	

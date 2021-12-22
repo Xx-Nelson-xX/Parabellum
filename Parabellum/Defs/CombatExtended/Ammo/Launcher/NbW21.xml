@@ -1,18 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<ThingCategoryDef>
-		<defName>AmmoNbW21Rockets</defName>
-		<label>Nebelwerfer rocket</label>
-		<parent>AmmoRockets</parent>
-		<iconPath>Things/Ammo/NbW/21cm/21cm_c</iconPath>
-	</ThingCategoryDef>
-
 	<!-- ==================== AmmoSet ========================== -->
 
 	<CombatExtended.AmmoSetDef>
 		<defName>AmmoSet_NbW21rockets</defName>
-		<label>Nebelwerfer rocket</label>
+		<label>Nebelwerfer rocket(15cm~21cm)</label>
 		<ammoTypes>
 			<Ammo_21cmNbWRocket>Bullet_21cmNbWRocket</Ammo_21cmNbWRocket>
 			<Ammo_15cmNbWRocket>Bullet_15cmNbWRocket</Ammo_15cmNbWRocket>
@@ -24,9 +17,9 @@
 	<!-- ==================== Ammo ========================== -->
 
 	<ThingDef Class="CombatExtended.AmmoDef" Name="NbW21RocketBase" ParentName="AmmoBase" Abstract="True">
-		<description>Nebelwerfer rocket.</description>
+		<description>Nebelwerfer rocket(15cm~21cm).</description>
 		<thingCategories>
-			<li>AmmoNbW21Rockets</li>
+			<li>AmmoNbWRockets</li>
 		</thingCategories>
 		<stackLimit>25</stackLimit>
 		<tradeTags>
@@ -36,6 +29,8 @@
 		<statBases>
 			<MaxHitPoints>180</MaxHitPoints>
 			<Flammability>1</Flammability>
+			<Mass>31.8</Mass>
+			<Bulk>82.4</Bulk>
 		</statBases>
 		<cookOffSound>Explosion_GiantBomb</cookOffSound>
 		<cookOffSpeed>0.7</cookOffSpeed>
@@ -53,10 +48,11 @@
 		</graphicData>
 		<statBases>
 			<MarketValue>240</MarketValue>
+			<MaxHitPoints>240</MaxHitPoints>
 			<Mass>109.55</Mass>
 			<Bulk>151.3</Bulk>
 		</statBases>
-		<ammoClass>21cmHE</ammoClass>
+		<ammoClass>21cmHER</ammoClass>
 		<generateAllowChance>0.85</generateAllowChance>
 		<cookOffProjectile>Bullet_21cmNbWRocket</cookOffProjectile>
 	</ThingDef>
@@ -71,10 +67,8 @@
 		</graphicData>
 		<statBases>
 			<MarketValue>180</MarketValue>
-			<Mass>31.8</Mass>
-			<Bulk>82.4</Bulk>
 		</statBases>
-		<ammoClass>15cmHE</ammoClass>
+		<ammoClass>15cmHER</ammoClass>
 		<cookOffProjectile>Bullet_15cmNbWRocket</cookOffProjectile>
 	</ThingDef>
 	
@@ -88,10 +82,8 @@
 		</graphicData>
 		<statBases>
 			<MarketValue>195</MarketValue>
-			<Mass>31.8</Mass>
-			<Bulk>82.4</Bulk>
 		</statBases>
-		<ammoClass>15cmDHE</ammoClass>
+		<ammoClass>15cmDHER</ammoClass>
 		<generateAllowChance>0.15</generateAllowChance>
 		<cookOffProjectile>Bullet_15cmDNbWRocket</cookOffProjectile>
 	</ThingDef>
@@ -109,7 +101,7 @@
 			<Mass>35.9</Mass>
 			<Bulk>76.3</Bulk>
 		</statBases>
-		<ammoClass>15cmS</ammoClass>
+		<ammoClass>15cmSR</ammoClass>
 		<generateAllowChance>0.15</generateAllowChance>
 		<cookOffProjectile>Bullet_15cmSNbWRocket</cookOffProjectile>
 	</ThingDef>
@@ -117,37 +109,29 @@
 	<!-- ================== Projectiles ================== -->
 
 	<ThingDef Class="CombatExtended.AmmoDef" Name="BaseNbW21Rocket" ParentName="BaseRocketLauncher" Abstract="true">
-		<thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
-		<graphicData>
-			<shaderType>TransparentPostLight</shaderType>
-		</graphicData>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
-			<speed>65</speed>
+			<speed>74</speed><!-- 342m/s 15cm NbW rocket -->
 			<flyOverhead>true</flyOverhead>
-			<gravityFactor>14</gravityFactor>
-			<soundAmbient>RocketPropelledLoop_Small</soundAmbient>
+			<gravityFactor>15</gravityFactor>
+			<explosionEffect>GiantExplosion</explosionEffect>
+			<soundExplode>Explosion_GiantBomb</soundExplode>
 		</projectile>
 	</ThingDef>
 
 	<ThingDef Class="CombatExtended.AmmoDef" ParentName="BaseNbW21Rocket">
 		<defName>Bullet_21cmNbWRocket</defName>
 		<label>21cm HE Rocket</label>
-		<thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
 		<graphicData>
 			<texPath>Things/Projectile/NbW/21cm</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
-			<speed>61</speed>
+			<gravityFactor>14</gravityFactor>
+			<speed>69</speed><!-- 320m/s 21cm NbW rocket -->
 			<damageDef>Bomb</damageDef>
 			<damageAmountBase>317</damageAmountBase>
 			<explosionRadius>6</explosionRadius>
 			<explosionChanceToStartFire>0.46</explosionChanceToStartFire>
-			<explosionEffect>GiantExplosion</explosionEffect>
-			<soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
-			<soundExplode>Explosion_GiantBomb</soundExplode>
-			<soundImpactAnticipate>MortarRound_PreImpact</soundImpactAnticipate>
-			<soundAmbient>MortarRound_Ambient</soundAmbient>
 			<ai_IsIncendiary>true</ai_IsIncendiary>
 		</projectile>
 		<comps>
@@ -163,7 +147,6 @@
 	<ThingDef Class="CombatExtended.AmmoDef" ParentName="BaseNbW21Rocket">
 		<defName>Bullet_15cmNbWRocket</defName>
 		<label>15cm HE Rocket</label>
-		<thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
 		<graphicData>
 			<texPath>Things/Projectile/NbW/15cm</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -173,11 +156,6 @@
 			<damageAmountBase>160</damageAmountBase>
 			<explosionRadius>3.6</explosionRadius>
 			<explosionChanceToStartFire>0.2</explosionChanceToStartFire>
-			<explosionEffect>GiantExplosion</explosionEffect>
-			<soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
-			<soundExplode>Explosion_GiantBomb</soundExplode>
-			<soundImpactAnticipate>MortarRound_PreImpact</soundImpactAnticipate>
-			<soundAmbient>MortarRound_Ambient</soundAmbient>
 			<ai_IsIncendiary>true</ai_IsIncendiary>
 		</projectile>
 		<comps>
@@ -204,8 +182,6 @@
 			<damageAmountBase>302</damageAmountBase>
 			<explosionRadius>3.6</explosionRadius>
 			<explosionChanceToStartFire>0.2</explosionChanceToStartFire>
-			<explosionEffect>GiantExplosion</explosionEffect>
-			<soundExplode>Explosion_GiantBomb</soundExplode>
 			<ai_IsIncendiary>true</ai_IsIncendiary>
 		</projectile>
 		<comps>
@@ -221,7 +197,6 @@
 	<ThingDef Class="CombatExtended.AmmoDef" ParentName="BaseNbW21Rocket">
 		<defName>Bullet_15cmSNbWRocket</defName>
 		<label>15cm Smoke Rocket</label>
-		<thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
 		<graphicData>
 			<texPath>Things/Projectile/NbW/15cmNb</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -250,8 +225,8 @@
 		<label>make 21cm High Explosive Nebelwerfer Rocket x1</label>
 		<description>Craft 21cm High Explosive Nebelwerfer Rocket.</description>
 		<jobString>Making 21cm High Explosive Nebelwerfer Rocket.</jobString>
-		<workAmount>1900</workAmount>
-		<targetCountAdjustment>10</targetCountAdjustment>
+		<workAmount>1800</workAmount>
+		<targetCountAdjustment>2</targetCountAdjustment>
 		<ingredients>
 			<li>
 				<filter>
@@ -260,7 +235,7 @@
 						<li>USLDBar</li>
 					</categories>
 				</filter>
-				<count>31</count>
+				<count>34</count>
 			</li>
 			<li>
 				<filter>
@@ -269,128 +244,6 @@
 					</categories>
 				</filter>
 				<count>7</count>
-			</li>
-			<li>
-				<filter>
-					<thingDefs>
-						<li>Powder</li>
-						<li>FSX</li>
-					</thingDefs>
-				</filter>
-				<count>14</count>
-			</li>
-			<li>
-				<filter>
-					<thingDefs>
-						<li>ComponentIndustrial</li>
-					</thingDefs>
-				</filter>
-				<count>2</count>
-			</li>
-		</ingredients>
-		<fixedIngredientFilter>
-			<categories>
-				<li>SLDBar</li>
-				<li>USLDBar</li>
-				<li>HeavyBar</li>
-			</categories>
-			<thingDefs>
-				<li>Powder</li>
-				<li>FSX</li>
-				<li>ComponentIndustrial</li>
-			</thingDefs>
-		</fixedIngredientFilter>
-		<researchPrerequisite>Rockets_D1</researchPrerequisite>
-		<products>
-			<Ammo_21cmNbWRocket>1</Ammo_21cmNbWRocket>
-		</products>
-	</RecipeDef>
-	
-	<RecipeDef ParentName="AmmoRecipeBase">
-		<defName>MakeAmmo_15cmNbWRocket</defName>
-		<label>make 15cm High Explosive Nebelwerfer Rocket x1</label>
-		<description>Craft 15cm High Explosive Nebelwerfer Rocket.</description>
-		<jobString>Making 15cm High Explosive Nebelwerfer Rocket.</jobString>
-		<workAmount>1800</workAmount>
-		<targetCountAdjustment>10</targetCountAdjustment>
-		<ingredients>
-			<li>
-				<filter>
-					<categories>
-						<li>SLDBar</li>
-						<li>USLDBar</li>
-					</categories>
-				</filter>
-				<count>30</count>
-			</li>
-			<li>
-				<filter>
-					<categories>
-						<li>HeavyBar</li>
-					</categories>
-				</filter>
-				<count>5</count>
-			</li>
-			<li>
-				<filter>
-					<thingDefs>
-						<li>Powder</li>
-						<li>FSX</li>
-					</thingDefs>
-				</filter>
-				<count>6</count>
-			</li>
-			<li>
-				<filter>
-					<thingDefs>
-						<li>ComponentIndustrial</li>
-					</thingDefs>
-				</filter>
-				<count>2</count>
-			</li>
-		</ingredients>
-		<fixedIngredientFilter>
-			<categories>
-				<li>SLDBar</li>
-				<li>USLDBar</li>
-				<li>HeavyBar</li>
-			</categories>
-			<thingDefs>
-				<li>Powder</li>
-				<li>FSX</li>
-				<li>ComponentIndustrial</li>
-			</thingDefs>
-		</fixedIngredientFilter>
-		<researchPrerequisite>Rockets_D1</researchPrerequisite>
-		<products>
-			<Ammo_15cmNbWRocket>1</Ammo_15cmNbWRocket>
-		</products>
-	</RecipeDef>
-	
-	<RecipeDef ParentName="AmmoRecipeBase">
-		<defName>MakeAmmo_15cmDNbWRocket</defName>
-		<label>make 15cm High Explosive Nebelwerfer Rocket(D) x1</label>
-		<description>Craft 15cm High Explosive Nebelwerfer Rocket(D).</description>
-		<jobString>Making 15cm High Explosive Nebelwerfer Rocket(D).</jobString>
-		<workAmount>1800</workAmount>
-		<targetCountAdjustment>10</targetCountAdjustment>
-		<ingredients>
-			<li>
-				<filter>
-					<categories>
-						<li>SLDBar</li>
-						<li>USLDBar</li>
-					</categories>
-				</filter>
-				<count>30</count>
-			</li>
-			<li>
-				<filter>
-					<categories>
-						<li>HeavyBar</li>
-					</categories>
-				</filter>
-				<count>5</count>
 			</li>
 			<li>
 				<filter>
@@ -422,10 +275,141 @@
 				<li>ComponentIndustrial</li>
 			</thingDefs>
 		</fixedIngredientFilter>
+		<recipeUsers>
+			<li>TableMachining</li>
+		</recipeUsers>
+		<products>
+			<Ammo_21cmNbWRocket>1</Ammo_21cmNbWRocket>
+		</products>
 		<researchPrerequisite>Rockets_D1</researchPrerequisite>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="AmmoRecipeBase">
+		<defName>MakeAmmo_15cmNbWRocket</defName>
+		<label>make 15cm High Explosive Nebelwerfer Rocket x1</label>
+		<description>Craft 15cm High Explosive Nebelwerfer Rocket.</description>
+		<jobString>Making 15cm High Explosive Nebelwerfer Rocket.</jobString>
+		<workAmount>1400</workAmount>
+		<targetCountAdjustment>5</targetCountAdjustment>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>SLDBar</li>
+						<li>USLDBar</li>
+					</categories>
+				</filter>
+				<count>30</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>HeavyBar</li>
+					</categories>
+				</filter>
+				<count>5</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Powder</li>
+						<li>FSX</li>
+					</thingDefs>
+				</filter>
+				<count>7</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>SLDBar</li>
+				<li>USLDBar</li>
+				<li>HeavyBar</li>
+			</categories>
+			<thingDefs>
+				<li>Powder</li>
+				<li>FSX</li>
+				<li>ComponentIndustrial</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<recipeUsers>
+			<li>TableMachining</li>
+		</recipeUsers>
+		<products>
+			<Ammo_15cmNbWRocket>1</Ammo_15cmNbWRocket>
+		</products>
+		<researchPrerequisite>Rockets_D1</researchPrerequisite>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="AmmoRecipeBase">
+		<defName>MakeAmmo_15cmDNbWRocket</defName>
+		<label>make 15cm High Explosive Nebelwerfer Rocket(D) x1</label>
+		<description>Craft 15cm High Explosive Nebelwerfer Rocket(D).</description>
+		<jobString>Making 15cm High Explosive Nebelwerfer Rocket(D).</jobString>
+		<workAmount>1400</workAmount>
+		<targetCountAdjustment>5</targetCountAdjustment>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>SLDBar</li>
+						<li>USLDBar</li>
+					</categories>
+				</filter>
+				<count>30</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>HeavyBar</li>
+					</categories>
+				</filter>
+				<count>5</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Powder</li>
+						<li>FSX</li>
+					</thingDefs>
+				</filter>
+				<count>7</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>SLDBar</li>
+				<li>USLDBar</li>
+				<li>HeavyBar</li>
+			</categories>
+			<thingDefs>
+				<li>Powder</li>
+				<li>FSX</li>
+				<li>ComponentIndustrial</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<recipeUsers>
+			<li>TableMachining</li>
+		</recipeUsers>
 		<products>
 			<Ammo_15cmDNbWRocket>1</Ammo_15cmDNbWRocket>
 		</products>
+		<researchPrerequisite>Rockets_D1</researchPrerequisite>
 	</RecipeDef>
 	
 	<RecipeDef ParentName="AmmoRecipeBase">
@@ -433,8 +417,8 @@
 		<label>make 15cm Smoke Nebelwerfer Rocket(D) x1</label>
 		<description>Craft 15cm Smoke Nebelwerfer Rocket(D).</description>
 		<jobString>Making 15cm Smoke Nebelwerfer Rocket(D).</jobString>
-		<workAmount>1800</workAmount>
-		<targetCountAdjustment>10</targetCountAdjustment>
+		<workAmount>1400</workAmount>
+		<targetCountAdjustment>5</targetCountAdjustment>
 		<ingredients>
 			<li>
 				<filter>
@@ -492,10 +476,13 @@
 				<li>ComponentIndustrial</li>
 			</thingDefs>
 		</fixedIngredientFilter>
-		<researchPrerequisite>Rockets_D1</researchPrerequisite>
+		<recipeUsers>
+			<li>TableMachining</li>
+		</recipeUsers>
 		<products>
 			<Ammo_15cmSNbWRocket>1</Ammo_15cmSNbWRocket>
 		</products>
+		<researchPrerequisite>Rockets_D1</researchPrerequisite>
 	</RecipeDef>
 	
 </Defs>

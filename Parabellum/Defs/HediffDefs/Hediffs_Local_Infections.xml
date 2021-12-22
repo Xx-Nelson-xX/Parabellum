@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<HediffDef>
+		<defName>Salt_Blindness</defName>
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(0.3, 0.4, 0.5)</defaultLabelColor>
+		<label>blinded by salt fragments</label>
+		<labelNoun>got blinded by salt fragments</labelNoun>
+		<description>Sensible body part got struck by salt fragments... Ouch</description>
+		<initialSeverity>0.001</initialSeverity>
+		<maxSeverity>1</maxSeverity>
+		<tendable>true</tendable>
+		<comps>
+			<li Class="HediffCompProperties_TendDuration">
+				<baseTendDurationHours>8</baseTendDurationHours>
+				<disappearsAtTotalTendQuality>2</disappearsAtTotalTendQuality>
+				<tendAllAtOnce>true</tendAllAtOnce>
+				<severityPerDayTended>-0.4</severityPerDayTended>
+			</li>
+			<li Class="SK.HediffCompProperties_FleshOnly"/>
+		</comps>
+		<stages>
+		  <li>
+			<label>minor</label>
+			<painOffset>0.2</painOffset>
+			<minSeverity>0.1</minSeverity>
+			<capMods>
+			  <li>
+				<capacity>Sight</capacity>
+				<setMax>0.9</setMax>
+			  </li>
+			  <li>
+				<capacity>Manipulation</capacity>
+				<setMax>0.95</setMax>
+			  </li>
+			</capMods>
+		  </li>
+		  <li>
+			<label>moderate</label>
+			<painOffset>0.4</painOffset>
+			<minSeverity>0.4</minSeverity>
+			<capMods>
+			  <li>
+				<capacity>Sight</capacity>
+				<setMax>0.7</setMax>
+			  </li>
+			  <li>
+				<capacity>Manipulation</capacity>
+				<setMax>0.8</setMax>
+			  </li>
+			</capMods>
+		  </li>
+		  <li>
+			<label>severe</label>
+			<painOffset>0.6</painOffset>
+			<minSeverity>0.6</minSeverity>
+			<capMods>
+			  <li>
+				<capacity>Sight</capacity>
+				<setMax>0.4</setMax>
+			  </li>
+			  <li>
+				<capacity>Manipulation</capacity>
+				<setMax>0.7</setMax>
+			  </li>
+			  <li>
+				<capacity>Moving</capacity>
+				<offset>-0.1</offset>
+			  </li>
+			</capMods>
+		  </li>
+		  <li>
+			<label>extreme</label>
+			<painOffset>0.8</painOffset>
+			<minSeverity>0.8</minSeverity>
+			<capMods>
+			  <li>
+				<capacity>Sight</capacity>
+				<setMax>0.1</setMax>
+			  </li>
+			  <li>
+				<capacity>Manipulation</capacity>
+				<setMax>0.4</setMax>
+			  </li>
+			  <li>
+				<capacity>Moving</capacity>
+				<offset>-0.25</offset>
+			  </li>
+			</capMods>
+		  </li>
+		</stages>
+	</HediffDef>
+
+</Defs>

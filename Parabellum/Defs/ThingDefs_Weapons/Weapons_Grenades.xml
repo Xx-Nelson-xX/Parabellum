@@ -430,6 +430,7 @@
 			<MarketValue>44.0</MarketValue>
 			<RangedWeapon_Cooldown>0.9</RangedWeapon_Cooldown>
 		</statBases>
+		<generateCommonality>0.3</generateCommonality>
 		<equippedStatOffsets>
 			<MoveSpeed>-0.1</MoveSpeed>
 			<WorkSpeedGlobal>-0.05</WorkSpeedGlobal>
@@ -497,6 +498,7 @@
 			<MarketValue>27</MarketValue>
 			<RangedWeapon_Cooldown>0.8</RangedWeapon_Cooldown>
 		</statBases>
+		<generateCommonality>0.25</generateCommonality>
 		<equippedStatOffsets>
 			<MoveSpeed>-0.1</MoveSpeed>
 			<WorkSpeedGlobal>-0.05</WorkSpeedGlobal>

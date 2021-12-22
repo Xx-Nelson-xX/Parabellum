@@ -1,15 +1,5 @@
 <--------------------------------------- 1.5 -------------------------------------------->
 								*New Update for RW HSK 1.3
-
-Planned features:
-	- early stage modern assault rifle:
-		+MkB 42(H) - Done
-		+StG 44
-		+Gerat 06H/StG 45
-	- weapons for old catridge which I added in previous version:
-		+SR-25 Suppressed(5.56x45mm NATO)
-		+SR-25 .50 Beowulf
-		+???
 	- Turrets:
 		+ M202 FLASH turret somesort(66mm LAW rockets)
 	- New stuff from latest build of CE: planned but didn't really want to implement it yet due it probably make the mod conflict with 1.2
@@ -22,10 +12,15 @@ Planned features:
 *Note:
 	-5cm PaK 38/L60 and 5cm Flak 41/L67 crates no longer exist in this update, so make sure you delete those crates in your map before installing the mod to prevent missing stuff error, else, save the game then load it, it usually fix the issue
 
+						The mod officially support russian translation
+					(it covers most of the feature, except the new one yet)
 
 The following features need playtesting, since is a Beta launch and there is stuff in WIP, so if you encounter any issue, please report it, thanks
 
-1.5 - 24 Weapons, 6 Turrets, 1 trip mine, 17 new ammo type, 3 new research, new balance, texture improvements, and more tweakings(pretty much the basic routine of each update)
+1.5 - 28 Weapons, 12 Turrets, 1 trip mine, 20 new ammo type, 3 new research, new balance, texture improvements, and more tweakings(pretty much the basic routine of each update)
+
+Melee:
+- S83/98III Bayonet: Stab/Poke/Cut, standard issued bayonet of the old empire, decent for stabbing soft target, terrible for anything else
 
 Pistols:
 - Mauser C96 pistol: 7.63x25mm Mauser(9x19mm,.45 ACP), Semi-Automatic, one of the earliest semi-automatic pistol, 10-round internal magazine, decent fire rate and low damage
@@ -66,6 +61,7 @@ LMGs:
 Sniper Rifle:
 - Mk.12 SPR: 5.56x45mm NATO, Semi-Automatic(1/2/3), Special Purpose Rifle, relative fast RoF and light weight to carry around for marksman
 - Mk.12 SPR(B): .50 Beowulf, Semi-Automatic, the same weapon with heavy Beowulf barrel, improves its stopping power
+- Mauser 98k with Zielacht 8x: 8mm Mauser/7.62x51mm NATO, Bolt Action, one of the latest Mauser Rifle, accurate and somewhat long range, now with High Power Optic scope for sniping
 
 Mines/Traps:
 - M67 Mine: Anti-Personnel trip mine, explosive charge with large amount of fragments, capable to load inside of an 155mm artillery shell for long range rapid deployment 
@@ -83,8 +79,16 @@ Turrets:
 - MG 131z HMG: 13mm HMG Catridge, Automatic(1/10/40), the AA convertion for ground troops and some planes, by combining 2 MG 131s, double the RoF
 - PaK 36/L45 ATG: 3.7cm cannon shell, Single Shot, early war Anti-Tank Gun, aka. the "DoorKnocker" due its versatility and mobility
 - Flak 37/L89 AA: 3.7cm cannon shell, Automatic(1/3/6), early war  AA gun, relatively low rate of fire but very effective counter light armored target
+- 8cm GrW 34: 81mm mortar shell, Single shot Muzzle fed, standard medium infantry mortar, medium effective range and not very accurate
+- Kurzer 8cm GrW 42: 81mm mortar shell, single shot Muzzle fed, lightened version of the GrW 34, short effective range, not very accurate, improve mobility and RoF
+- 7.5cm GebK 15: 75mm cannon shell, Single Shot, Late War Light mountain gun, designed to provide ligh artillery/indirect fire support for mountain troops.
+- 7.5cm LG 40: 75mm cannon shell, Single Shot, Mid War Light mountain/paratrooper gun, designed to provide ligh artillery/indirect fire support for mountain troops, also provide direct fire anti-tank role, not very efficient one but it gets the job done.(Require open roof to shoot HE shells)
+- 7.5cm PaK 40: 75mm cannon shell, Single Shot, Mid War Medium anti-tank gun, designed to deal with medium to heavy armored target of its time, relatively bulky and heavy cannon piece but it has high accuracy and decent RoF.
+- 21cm Mörser 16: 21cm Howitzer shell, Single Shot, Heavy Siege Artillery designed to destroy fortification and large structures, very powerful, also very heavy, slow and expensive
+- 21cm Mörser 18: 21cm Howitzer shell, Single Shot, Improved/Updated version of the previous one, improved reload speed, range, and accuracy
 
 Ammo:
+- Shotgun SaltShot round, Rock Salt, custom made less-than-lethal round for shotgun, cause lots of pain and blindness when manage to damage the target, very ineffective counter armored and thick skin target, even worse for Mechanical pawns
 - 8x57mm Patrone 88(FMJ), first generation smokeless propellant cartridge, not as powerful as modern catridge but is a step up from black gun powder catridge
 - 7.92x57mm S Patrone(FMJ), standard rifle catridge, powerful as modern rifle catridge with better ballistic than previos one
 - 7.92x57mm K Patrone(AP), Armor Piercing catridge, use hardened Tungsten core to increase the bullet penetration
@@ -101,7 +105,14 @@ Ammo:
 - 3.7cm Pzgr.Patr.mit Bdz. 5103º(APHE), Armor Piercing High Explosive round, early war small cannon shell, good enough to destroy light armored vehicle, the projectile contain small amount of explosive and fragment
 - 3.7cm Gr.Sprgr 40 mit A.Z.39(HE), High Explosive round, standard AA round, very effective counter light armored/soft target
 - 3.7cm Pzgr 40/37(APCR), Armor Piercing Composite Rigid round, hardened Tungsten core, a solid slug for maximize penetration and projectile travel speed
+- 7.5cm Pzgr 39(APCBC-HE),Armor Piercing Capped Ballistic Cap - High Explosive, mostly metal slug and some explosive charge, capped with ballistic cap to increase its trajectory stability
+- 7.5cm Sprgr.Patr.34(HE): High Explosive, standard ammo type for heavy Flak guns, big enough to damage medium and even heavy armored target with direct hit
+- 7.5cm Pzgr 40(APCR),Armor Piercing Composite Rigid, designed to increase anti-tank penetration more than average AP shell does, which sacrifice its fragmentation capability and being more expensive to produce
+- 7.5cm Gr.Patr.38 HL/B(HEAT), High Explosive Anti-Tank ammunition for light artillery and assault gun, usually short barrel cannon, to give them anti-tank capability during unexpected encounter with armored target.
 - 155mm ADAM: Area Denial Artillery Munition, loaded with 36 M67 Anti-Personnel Mine to perform Area Denial task(make sure you claim them when the spawn, also, try not walking above them)
+- 21cm Gr 18(AC), Anti-Concrete round, primitive bunker buster round, designed to specifically to destroy fortification and large structure
+- 21cm Gr 18(HE), High Explosive round, a large size High Explosive shell filled with TNT and fragments, the size of the shell and its payload is powerful enough to put most land unit out of compat with direct hit
+- 21cm Gr 18 Be(APHE), High Explosive Anti-Concrete round, Improved version of the previous one, with larger explosive payload and fragment but it reduce the direct impact damage
 
 New Research:
 + Parabellum
@@ -117,21 +128,31 @@ Unlocks:
 
 +Defensive Measure I
 Unlocks:
-	-MG 08 MMG (Machinegun Turret)
+	-Simple Cannon Crate recipe(for cannon of early-mid Industrial stage)
+	-3.7cm PaK 36/L45 ATG(Light Anti-Tank Gun)
+	-37mm cannon ammo recipe(APHE, HE and APCR)
+	-21cm Mörser 16(Heavy Artillery)
+	-21cm Siege Artillery Ammo(Gr 18 AC and Gr 18 HE)
+	-8cm GrW 34(Medium Mortar)
+	-81mm Mortar Shells(HE)
+	-MG 08 MMG(Machinegun Turret)
 	-Vickers .303 British MMG (Machinegun Turret)
 *Located in the Siege Artillery Line (Same research if you have Vile's Pre-Industrial, since he keep the name intact)
 
 +Defensive Measure II
 Unlocks:
-	-MG 18 TuF HMG (Heavy Machinegun Turret)
-	-MG 131 HMG/Autocannon (Heavy Machinegun Turret)
-	-MG 131z HMG/Autocannon (Heavy Machinegun Turret)
-	-PaK 36/L45 ATG (Light Anti-Tank Gun)
-	-37mm cannon ammo (APHE, HE and APCR) recipe
-	-Simple Cannon Crate (for cannon of early-mid Industrial stage) recipe
+	-MG 18 TuF HMG(Heavy Machinegun Turret)
+	-MG 131 HMG/Autocannon(Heavy Machinegun Turret)
+	-MG 131z HMG/Autocannon(Heavy Machinegun Turret)
+	-5cm PaK38/L60(Medium Anti-Tank Gun)
+	-50mm cannon ammo recipe(APHE, HE and APCR)
+	-7.5cm Leichtgeschütz 40(Light Mountain/Paratrooper Gun)
+	-7.5cm GebirgsKanone 15(Light Mountain Gun)
+	-75mm cannon ammo recipe(HE and HEAT)
 	-88mm Raketenwefer 43 (88mm HEAT rockets)
 	-88mm RPzB GR. 4992 HEAT rockets recipe
 	-RPzB Crate recipe
+	-Kurzer 8cm GrW 42
 *Located in the Siege Artillery Line before Turret Research
 
 Tweaks:
@@ -152,8 +173,8 @@ Tweaks:
 +Added extra ammo patch for HMC More Content ammo, now all weapon that use 7.62x25mmTT can also use 7.63x25mm Mauser
 -Nerfed a bit Lewis LMG to fit more current content's early LMGs(Sight Efficiency 0.95 -> 0.8, Range Cooldown 0.8 -> 1.2, added global work speed and move speed reduction), but now it cost way less than originaly was
 -Moved shotgun shell to new Early tech: Parabellum, right before Gun I
-*Pushed Nebelwerfer 1 tech later due the raid system is too stupid and can't differentiate mediaval and Industrial stage, or stupid tribals and medieval cavary are not suppose to use any Industrial tech
-+Rebalanced De Lisle Carbine, now it cost less to either build or buy, unlockable in Gun I
+*Pushed Nebelwerfer 1 tech later due the raid system is too stupid and can't differentiate Mediaval and Industrial stage, or stupid tribals and medieval cavary are not suppose to use any Industrial tech weapons
++Rebalanced De Lisle Carbine, now it cost less to either build or buy, unlockable in Gun I, also increased its Hunting Stealth from 85% -> 95%
 +Rebalanced Panzerfaust 60 and RPzB 54/1, now it cost less to either build or buy, reduced their forced radius to: PzF -> 0.2, RPzB 54/1 -> 0.6
 +Texture Improvements for RPzB 54/1
 *Modified the Weapon crafting bench to work without power, but the efficiency drop to 60% when working without power
@@ -170,22 +191,94 @@ Tweaks:
 *Increased slightly the explosive radius of 5cm APHE and HE, 120mm HESH and 12.8cm APHE shell, but reduce their damage after comparing them with 30mm, 90mm and 120mm shells
 *Reorganized the build Gizmo/Drop-down menu/Subcategory, now XM-307 ACSW goes in "Mortal", SPG-9 and SPG9M goes in "rocket launchers"
 *Now you can use any metallic to build S-mines and M67 Mines instead of steel alloy only
--Reduced 7.63x25mm Mauser HP spawn chance to 40%
 *Replaced LMGs Mechanism cost with weapon parts
-*Reduced the cost of Gewehr 1888, Karabiner 1890, Mauser K98k(R), G41(W), G43
-*Increased Winchester 1887 "Mare's Leg" texture outline
 *Vicker MMG texture Improvement
 +Increased G43K RoF(36 -> 45) RC 0.7 -> 0.65, G41(W) RC 0.8 -> 0.7
 +Added a patch to add .44 Rimfire(Vile's Pre-Industrial) to Medusa Survival Revolver
 *Rebalanced both survival pistols, they no longer require weapon part and leather to craft and pistol component is craftable when unlock "Gun_I" Research
+*Reduced Survival pistols smeltProduct drop to at least 1 pistol component and the Medusa Survival Revolver Bulk 1.8 -> 1.4
++Added .50-70 Government to the Sturer Survival Pistol
+*Reduced Medusa Survival Revolver Range Cooldown(0.4 -> 0.34) and fixed a typo
 *Experimental: Added Interaction sound for StGs
 *Changed 88mm Raketenwefer 43 description and moved the RPzB crates to "Defensive Measure II", now the recipe is available in the Hand Assembling bench
 *Changed Suomi/MP18 fire sound
-*Reduced Medusa Survival Revolver Range Cooldown(0.4 -> 0.34) and fixed a typo
 *Decreased Nebelwerfer 28cm and 30cm HE spawn chance: 28cm 0.75 -> 0.6, 30cm 0.45 -> 0.3, also slightly increase their cost: 28cm 280 -> 320, 30cm 340 -> 400, 32cm 300 -> 340
-+Added .50-70 Government to the Sturer Survival Pistol
 +Increased De Lisle Commando Carabine Hunting Stealth 85% -> 95%
 +Increase a bit .50 Beowulf API damage 18 -> 20
+*Changed Suomi/MP18 fire sound
+*Decreased Nebelwerfer 28cm and 30cm HE spawn chance: 28cm 0.75 -> 0.6, 30cm 0.45 -> 0.3, also slightly increase their cost: 28cm 280 -> 320, 30cm 340 -> 400, 32cm 300 -> 340
+*Moved 81mm Mortar shell to "Defensive Measure I"
+*Now NbW rockets require proper research to unlock the recipe, which is "Rocket I" and "Rocket III"
++Now light Turrets can be unistall/undeploy faster
++Now 88mm RPzB GR. 4992(Frag) is capable of direct fire
++Inverted the Warm up and Range Cooldown of all machineguns, rifles, carabine and Rocket Launchers
++Reduced M320(K) sway from 1.8 -> 1.6, Cost from 1500 -> 1200
++Removed some unused features from Rockets launchers and grenade launchers
+*Reduced cost for following weapon to make them available for raiders: CGRR(M) 5000 -> 4200, M202 FLASH 7000 -> 5400, RPzB 54/1 1800 -> 1500, Thompson M1928A1 1600 -> 1200, De Lisle CC 640 -> 380
++Texture Improvement for Thompson M1928A1, reduced its RoF from 900 -> 720, Recoil 1.5 -> 1.4, Fire mode 1s 5b 10a -> 1s 5b 13a
+*Changed "Complex Cannon Crate" Research from "Artillery II" to "Turret I" due latest change
+*Due some god awful unknown reason that broke the Nebelwerfer rockets storage list, I merged both rockets(21 and 32) in a single list, shouldn't break anything, hopefully doesn't happen ever again
+*Modified following weapon spawn chance:
+ - Hawk MM-1 40% -> 20%
+ - RGS GL    60% -> 30%
+ - M320(K)   40% -> 60%
+*CGRR m/42 ATG no longer require plastic to craft it, consider the weapon doesn't have any plastic parts, now require wood and leather instead, increased its bulk from 14 -> 14.6 and reduced its sway from 1.4 -> 1.28
++Rebalanced 12.8cm cannon shell recipe cost: Explosive(FSX/Gunpowder) +1 component
+ *APC: 8 -> 5,	*APCBC-HE: 11 -> 6,	*HE: 12 -> 7,	*APCR: 8 -> 5
++Rebalance NbW recipe cost: 
+Explosive(FSX/Gunpowder)
+ *21cmHE 14 -> 8,	*15cmHE 6 -> 7,		*15cmNb still 6,	7 *15cmHED 8 -> 7,		*28cmRHE 22 -> 9		*30cmRHE 30 -> 10	*32cmRIncendiary 24 -> 10
+Alloy
+ *21cmRHE 31 -> 34,	*28cmRHE 32 -> 38	*32cmIncendiary 20 -> 34
+Components
+ *21cmRHE 2 -> 3,	*28cmRHE 2 -> 4,		*30cmRHE 2 -> 4,		*32cmRIncendiary 2 -> 4
+-Now 5cm cannon shell require 1 component per round(10 rounds = 10 components) and nerfed their sharp penetration due using the wrong penetration table: APHE 100 -> 75, APCR 130 -> 111
+*Rebalance 5cm cannon shell cost:
+Alloy
+ *APHE 40 -> 50,	*HE 35 -> 44,	*APCR 40 -> 50
+Explosive(FSX/Gunpowder)
+ *APHE 25 -> 17,	*HE 32 -> 22,	*APCR 18 -> 12
+ 
+ +Rebalanced 12.8cm cannon shell recipe cost: Explosive(FSX/Gunpowder) +1 component
+ *APC: 8 -> 5,	*APCBC-HE: 11 -> 6,	*HE: 12 -> 7,	*APCR: 8 -> 5
++Rebalance NbW recipe cost: 
+Explosive(FSX/Gunpowder)
+ *21cmRHE 14 -> 8,	*15cmRHE 6 -> 7,		*15cmNb still 6,	7 *15cmRHED 8 -> 7,		*28cmRHE 22 -> 9		*30cmRHE 30 -> 10	*32cmRIncendiary 24 -> 10
+Alloy
+ *21cmRHE 31 -> 34,	*28cmRHE 32 -> 38	*32cmRIncendiary 20 -> 34
+Components
+ *21cmRHE 2 -> 3,	*28cmRHE 2 -> 4,		*30cmRHE 2 -> 4,		*32cmRIncendiary 2 -> 4
+-Now 5cm cannon shell require 1 component per round(10 rounds = 10 components) and nerfed their sharp penetration due using the wrong penetration table: APHE 100 -> 75, APCR 130 -> 111
+*Rebalance 5cm cannon shell cost:
+Alloy
+ *APHE 40 -> 50,	*HE 35 -> 44,	*APCR 40 -> 50
+Explosive(FSX/Gunpowder)
+ *APHE 25 -> 17,	*HE 32 -> 22,	*APCR 18 -> 12
+ 
+*Rebalance for the cannon:
+ -3.7cm Pak 36:		range 82 -> 96		WarmupTime 1.4 -> 1.2		Research: Defensive Measure II -> Defensive Measure I
+ -3.7cm Flak 38:	range 88 -> 115		Ammo 12 -> 18(extra clip)
+ -5cm Pak 38:		range 92 -> 125		WarmupTime 1.8 -> 1.4		Research: Turret I -> Defensive Measure II
+ -5cm Flak 41:		range 96 -> 181
+ 
+*Added Buff patch for HSK cannon/autocannon turrets:
+ -90mm Flak:		range 125 -> 182
+ -120mm ATG:		Sight Efficiency: 1.8 -> 2.8
+ -20mm Oerlikon:	range 75 -> 77		Firemode s1 b6 a12
+ -20mm Vulcan:		RoF 1200 -> inf  	Firemode b12 a60	Magazine Size 200 -> 300	*Removed recoil and single shot(Don't worry, still have spread)
+ -30mm GAU-8:		RoF 720 -> 3600  	Firemode b7 a35		Magazine Size 200 -> 300	*Removed recoil and single shot(Don't worry, still have spread)
+ 
+*Rebalance for NbW rocket projectile speed: (RPG-7 Rocket speed = 300m/s -> 65 speed)
+ -15cm: 		342m/s --- 65 -> 74
+ -21cm: 		320m/s --- 61 -> 69
+ -28/32cm:		145m/s --- 28 -> 31
+ -30cm:			230m/s --- 44 -> 50
+ 
+*Rebalance for RPzB rocket and PzF projectile speed: (RPG-7 Rocket speed = 300m/s -> 65 speed)
+ -88mm Gr.4992: 140m/s --- 37 -> 30
+ -8cm RVW: 		290m/s --- 58 -> 63
+ -PzF 60:		45m/s  --- 15 -> 10
+
 +Texture Improvements for:
  - M4.50 Beowulf SC
  - Hawk MM-1
@@ -194,6 +287,7 @@ Tweaks:
  - Huot Automatic Rifle
  - Lewis
  - RGS
+ - Thompson M1928A1
 
 <--------------------------------------- 1.4 -------------------------------------------->
 *Added separated mod package(Parabellum - Earned in Blood & Parabellum - Hold the Line) for who only want handheld weapons or defensive turrets and explosives, not both of them

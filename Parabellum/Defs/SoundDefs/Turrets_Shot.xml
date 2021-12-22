@@ -45,6 +45,28 @@
 		</subSounds>
 	</SoundDef>
 	
+	<!-- ==================== 75mm PaK 40/L46 ========================== -->
+
+	<SoundDef>
+		<defName>Shot_75mm</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<maxSimultaneous>1</maxSimultaneous>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Weapons/75mm</clipPath>
+					</li>
+				</grains>
+				<pitchRange>
+					<min>0.9152174</min>
+					<max>1.042391</max>
+				</pitchRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+	
 	<!-- ==================== Nebelwerfer ========================== -->
 
 	<SoundDef>
@@ -79,6 +101,28 @@
 				<grains>
 					<li Class="AudioGrain_Clip">
 						<clipPath>Weapons/128mm</clipPath>
+					</li>
+				</grains>
+				<pitchRange>
+					<min>0.9152174</min>
+					<max>1.042391</max>
+				</pitchRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+	<!-- ==================== 128mm Pak44/L55 ========================== -->
+
+	<SoundDef>
+		<defName>Shot_21cm</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<maxSimultaneous>1</maxSimultaneous>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Weapons/21cmSA</clipPath>
 					</li>
 				</grains>
 				<pitchRange>

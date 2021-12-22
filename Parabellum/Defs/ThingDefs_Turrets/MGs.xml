@@ -283,6 +283,7 @@
 			<buildingTags>
 				<li>MachineGun</li>
 			</buildingTags>
+			<uninstallWork>100</uninstallWork>
 		</building>
 		<minifiedDef>MinifiedTurret_MG34Z</minifiedDef>
 		<thingCategories>
@@ -332,6 +333,7 @@
 			<buildingTags>
 				<li>MachineGun</li>
 			</buildingTags>
+			<uninstallWork>70</uninstallWork>
 		</building>
 		<minifiedDef>MinifiedTurret_MG42M</minifiedDef>
 		<thingCategories>
@@ -381,6 +383,7 @@
 			<buildingTags>
 				<li>MachineGun</li>
 			</buildingTags>
+			<uninstallWork>100</uninstallWork>
 		</building>
 		<minifiedDef>MinifiedTurret_MG45Z</minifiedDef>
 		<thingCategories>
@@ -429,6 +432,7 @@
 			<buildingTags>
 				<li>MachineGun</li>
 			</buildingTags>
+			<uninstallWork>160</uninstallWork>
 		</building>
 		<minifiedDef>MinifiedTurret_MG131H</minifiedDef>
 		<thingCategories>
@@ -477,6 +481,7 @@
 			<buildingTags>
 				<li>MachineGun</li>
 			</buildingTags>
+			<uninstallWork>200</uninstallWork>
 		</building>
 		<minifiedDef>MinifiedTurret_MG131Z</minifiedDef>
 		<thingCategories>

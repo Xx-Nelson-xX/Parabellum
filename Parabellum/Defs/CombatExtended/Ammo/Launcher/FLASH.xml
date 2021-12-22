@@ -76,7 +76,7 @@
 		<description>Craft M202 FLASH TEA.</description>
 		<jobString>Making M202 FLASH TEA.</jobString>
 		<workAmount>850</workAmount>
-		<targetCountAdjustment>5</targetCountAdjustment>
+		<targetCountAdjustment>4</targetCountAdjustment>
 		<ingredients>
 			<li>
 				<filter>

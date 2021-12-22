@@ -167,7 +167,7 @@
 			<spreadMult>0.8</spreadMult>
 			<damageAmountBase>94</damageAmountBase>
 			<armorPenetrationSharp>86</armorPenetrationSharp>
-			<armorPenetrationBlunt>2880.16</armorPenetrationBlunt>
+			<armorPenetrationBlunt>1939.7</armorPenetrationBlunt>
 			<secondaryDamage>
 				<li>
 					<def>Blunt</def>
@@ -191,6 +191,7 @@
 		<label>make 3.7cm Pzgr.Patr.mit Bdz. 5103º(APHE) shells x15</label>
 		<description>Craft 15 3.7cm Pzgr.Patr.mit Bdz. 5103º(APHE) shells.</description>
 		<jobString>Making 3.7cm Pzgr.Patr.mit Bdz. 5103º(APHE) shells.</jobString>
+		<targetCountAdjustment>15</targetCountAdjustment>
 		<ingredients>
 			<li>
 				<filter>
@@ -237,7 +238,7 @@
 			<Crafting>4</Crafting>
 		</skillRequirements>
 		<workSkill>Crafting</workSkill>
-		<researchPrerequisite>Parabellum_Gamma</researchPrerequisite>
+		<researchPrerequisite>Parabellum_Beta</researchPrerequisite>
 	</RecipeDef>
 
 	<RecipeDef ParentName="AmmoRecipeBase">
@@ -245,6 +246,7 @@
 		<label>make 3.7cm Gr.Sprgr 40 mit A.Z.39 (HE) x15</label>
 		<description>Craft 15 3.7cm Gr.Sprgr 40 mit A.Z.39 (HE) shells.</description>
 		<jobString>Making 3.7cm Gr.Sprgr 40 mit A.Z.39 (HE) shells.</jobString>
+		<targetCountAdjustment>15</targetCountAdjustment>
 		<ingredients>
 			<li>
 				<filter>
@@ -291,7 +293,7 @@
 			<Crafting>5</Crafting>
 		</skillRequirements>
 		<workSkill>Crafting</workSkill>
-		<researchPrerequisite>Parabellum_Gamma</researchPrerequisite>
+		<researchPrerequisite>Parabellum_Beta</researchPrerequisite>
 	</RecipeDef>
 
 	<RecipeDef ParentName="AmmoRecipeBase">
@@ -299,6 +301,7 @@
 		<label>make 3.7cm Pzgr 40/37(APCR) x15</label>
 		<description>Craft 15 3.7cm Pzgr 40/37(APCR) shells.</description>
 		<jobString>Making 3.7cm Pzgr 40/37(APCR) shells.</jobString>
+		<targetCountAdjustment>15</targetCountAdjustment>
 		<ingredients>
 			<li>
 				<filter>
@@ -307,7 +310,7 @@
 						<li>USLDBar</li>
 					</categories>
 				</filter>
-				<count>45</count>
+				<count>40</count>
 			</li>
 			<li>
 				<filter>
@@ -324,7 +327,7 @@
 						<li>FSX</li>
 					</thingDefs>
 				</filter>
-				<count>16</count>
+				<count>4</count>
 			</li>
 		</ingredients>
 		<fixedIngredientFilter>
@@ -345,7 +348,7 @@
 			<Crafting>6</Crafting>
 		</skillRequirements>
 		<workSkill>Crafting</workSkill>
-		<researchPrerequisite>Parabellum_Gamma</researchPrerequisite>
+		<researchPrerequisite>Parabellum_Beta</researchPrerequisite>
 	</RecipeDef>
 
 </Defs>

@@ -163,6 +163,7 @@
 		<label>make 13.2x92mm SR TuF (AP) cartridge x50</label>
 		<description>Craft 50 13.2x92mm SR TuF (AP) cartridges.</description>
 		<jobString>Making 13.2x92mm SR TuF (AP) cartridges.</jobString>
+		<targetCountAdjustment>50</targetCountAdjustment>
 		<ingredients>
 			<li>
 				<filter>
@@ -218,6 +219,7 @@
 		<label>make 13.2x92mm SR TuF (APHE) cartridge x50</label>
 		<description>Craft 50 13.2x92mm SR TuF (APHE) cartridges.</description>
 		<jobString>Making 13.2x92mm SR TuF (APHE) cartridges.</jobString>
+		<targetCountAdjustment>50</targetCountAdjustment>
 		<ingredients>
 			<li>
 				<filter>
@@ -273,6 +275,7 @@
 		<label>make 13x64mmB (HE-T) cartridge x50</label>
 		<description>Craft 50 13x64mmB (HE-T) cartridges.</description>
 		<jobString>Making 13x64mmB (HE-T) cartridges.</jobString>
+		<targetCountAdjustment>50</targetCountAdjustment>
 		<ingredients>
 			<li>
 				<filter>

@@ -169,7 +169,7 @@
 			<pelletCount>1100</pelletCount>
 			<spreadMult>68.2</spreadMult>
 			<armorPenetrationSharp>12</armorPenetrationSharp>
-			<armorPenetrationBlunt>26,5</armorPenetrationBlunt>
+			<armorPenetrationBlunt>26.5</armorPenetrationBlunt>
 			<speed>110</speed>
 		</projectile>
 	</ThingDef>

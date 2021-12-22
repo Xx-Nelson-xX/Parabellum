@@ -277,7 +277,7 @@
 						<li>FSX</li>
 					</thingDefs>
 				</filter>
-				<count>8</count>
+				<count>5</count>
 			</li>
 			<li>
 				<filter>
@@ -285,7 +285,7 @@
 						<li>ComponentIndustrial</li>
 					</thingDefs>
 				</filter>
-				<count>2</count>
+				<count>3</count>
 			</li>
 		</ingredients>
 		<fixedIngredientFilter>
@@ -340,7 +340,7 @@
 						<li>FSX</li>
 					</thingDefs>
 				</filter>
-				<count>11</count>
+				<count>6</count>
 			</li>
 			<li>
 				<filter>
@@ -348,7 +348,7 @@
 						<li>ComponentIndustrial</li>
 					</thingDefs>
 				</filter>
-				<count>2</count>
+				<count>3</count>
 			</li>
 		</ingredients>
 		<fixedIngredientFilter>
@@ -402,7 +402,7 @@
 						<li>FSX</li>
 					</thingDefs>
 				</filter>
-				<count>12</count>
+				<count>7</count>
 			</li>
 			<li>
 				<filter>
@@ -410,7 +410,7 @@
 						<li>ComponentIndustrial</li>
 					</thingDefs>
 				</filter>
-				<count>2</count>
+				<count>3</count>
 			</li>
 		</ingredients>
 		<fixedIngredientFilter>
@@ -465,7 +465,7 @@
 						<li>FSX</li>
 					</thingDefs>
 				</filter>
-				<count>8</count>
+				<count>5</count>
 			</li>
 			<li>
 				<filter>
@@ -473,7 +473,7 @@
 						<li>ComponentIndustrial</li>
 					</thingDefs>
 				</filter>
-				<count>2</count>
+				<count>3</count>
 			</li>
 		</ingredients>
 		<fixedIngredientFilter>

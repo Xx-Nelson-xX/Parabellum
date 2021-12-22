@@ -26,5 +26,12 @@
 			<Ammo_155mmHowitzerShell_ADAM>Bullet_155mmHowitzerShell_ADAM</Ammo_155mmHowitzerShell_ADAM>
 		</value>
 	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_12Gauge"]/ammoTypes</xpath>
+		<value>
+			<Ammo_Gauge_Salt>Bullet_Gauge_Salt</Ammo_Gauge_Salt>
+		</value>
+	</Operation>
 
 </Patch>

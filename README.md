@@ -69,7 +69,7 @@ Also Sorry, ~~this is my first time~~ I am a newbie using GitHub, I really need 
 
 Any support can help me, if you like donation, here is my Ko-fi link: https://ko-fi.com/xxnelsonxx78863
 
-I am also open to Rimworld Mod commission, my speciality are XML modding and making texture, just DM me if you are interested
+I am also open to Rimworld Mod commission, my speciality are XML modding and making texture, just DM me in Discord if you are interested
 
 Note: any asset from this mod is created by me, some of them use HSK community and recently Dub's Rimatomic effects, stealing and distributing the mod and its asset in other place without permission is forbidden, and a disrespect for the community and people that work for it, **DON'T DO THAT**
 

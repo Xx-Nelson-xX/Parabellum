@@ -433,14 +433,6 @@
 			<li>
 				<filter>
 					<thingDefs>
-						<li>Rifle_Component</li>
-					</thingDefs>
-				</filter>
-				<count>1</count>
-			</li>
-			<li>
-				<filter>
-					<thingDefs>
 						<li>Weapon_Parts</li>
 					</thingDefs>
 				</filter>
@@ -477,7 +469,6 @@
 		<fixedIngredientFilter>
 			<thingDefs>
 				<li>Sniper_Component</li>
-				<li>Rifle_Component</li>
 				<li>Weapon_Parts</li>
 				<li>ComponentIndustrial</li>
 			</thingDefs>

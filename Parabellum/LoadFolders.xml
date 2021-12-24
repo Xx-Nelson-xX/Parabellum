@@ -1,8 +1,10 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <loadFolders>
-  <default>
+  <v1.2>
     <li>/</li>
-	 <li IfModActive="Ludeon.Rimworld.Royalty">Royalty</li>
-	 <li IfModActive="Ludeon.RimWorld.Ideology">Ideology</li>
-  </default>
+    <li>1.2</li>
+  </v1.2>
+  <v1.3>
+    <li>/</li>
+    <li>1.3</li>
+  </v1.3>
 </loadFolders>

@@ -274,7 +274,7 @@
 
 	<ThingDef ParentName="TurretMannedBase">
 		<defName>Turret_PaK40ATG</defName>
-		<label>7.5cm PaK 40/L46</label>
+		<label>7.5cm 7.5cm PaK 40/L46</label>
 		<graphicData>
 			<texPath>Things/Building/Security/Base/NbW32_Base</texPath>
 			<drawSize>(2.4,2.4)</drawSize>
@@ -293,7 +293,7 @@
 		</statBases>
 		<fillPercent>0.98</fillPercent>
 		<techLevel>Industrial</techLevel>
-		<description>7.5cm Panzerabwehrkanone 40 Anti-Tank gun, an ancient Mid War Medium Anti-Tank gun, the gun was designed to improve the anti-tank capability, the trade of was its mobility and weight, even though is a toweable gun, crews can only tow it in short distance for repositioning, the good thing is its performance is one of the best of its time for tank hunting.</description>
+		<description>7.5cm Panzerabwehrkanone 40 Anti-Tank gun, an ancient Mid War Medium Anti-Tank gun, the gun was designed to improve the anti-tank capability, the trade of was its mobility and weight, even though is a toweable gun, crews can only tow it for short distance for repositioning, the good thing is its performance is one of the best of its time for tank hunting.</description>
 		<size>(2,2)</size>
 		<stuffCategories>
 			<li>RuggedMetallic</li>
@@ -345,7 +345,7 @@
 	
 	<ThingDef ParentName="MinifiedTurretBase">
 		<defName>MinifiedTurret_Pa_PaK40ATG</defName>
-		<label>Undeployed 7.5cm Panzerabwehrkanone 40</label>
+		<label>Undeployed 7.5cm Pak 40/L46</label>
 		<statBases>
 			<Mass>650</Mass>
 			<Bulk>500</Bulk>

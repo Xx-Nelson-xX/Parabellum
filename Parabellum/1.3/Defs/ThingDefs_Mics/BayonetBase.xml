@@ -5,6 +5,10 @@
 		<equippedStatOffsets>
 			<Suppressability>-0.4</Suppressability>
 		</equippedStatOffsets>
+		<relicChance>0.85</relicChance>
+		<weaponClasses>
+			<li>LongShots</li>
+		</weaponClasses>
 		<tools>
 			<li Class="CombatExtended.ToolCE">
 				<label>bayonet</label>
@@ -36,6 +40,10 @@
 		<equippedStatOffsets>
 			<Suppressability>-0.4</Suppressability>
 		</equippedStatOffsets>
+		<relicChance>0.85</relicChance>
+		<weaponClasses>
+			<li>LongShots</li>
+		</weaponClasses>
 		<tools>
 			<li Class="CombatExtended.ToolCE">
 				<label>bayonet</label>

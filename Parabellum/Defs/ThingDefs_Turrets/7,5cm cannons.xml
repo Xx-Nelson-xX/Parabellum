@@ -277,7 +277,7 @@
 		<label>7.5cm 7.5cm PaK 40/L46</label>
 		<graphicData>
 			<texPath>Things/Building/Security/Base/NbW32_Base</texPath>
-			<drawSize>(2.4,2.4)</drawSize>
+			<drawSize>(2.2,2.2)</drawSize>
 			<shadowData>
 				<volume>(0.3, 0.6, 0.3)</volume>
 			</shadowData>
@@ -306,7 +306,7 @@
 		<designationCategory>Security</designationCategory>
 		<building>
 			<turretGunDef>Pa_PaK40ATG</turretGunDef>
-			<turretTopDrawSize>5</turretTopDrawSize>
+			<turretTopDrawSize>4.8</turretTopDrawSize>
 			<buildingTags>
 				<li>Artillery</li>
 				<li>Artillery_BaseDestroyer</li>

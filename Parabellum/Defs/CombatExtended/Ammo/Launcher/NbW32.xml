@@ -171,16 +171,18 @@
 		</graphicData>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
 			<damageDef>Flame</damageDef>
-			<damageAmountBase>4</damageAmountBase>
-			<preExplosionSpawnThingDef>FilthPrometheum</preExplosionSpawnThingDef>
-			<preExplosionSpawnChance>0.95</preExplosionSpawnChance>
+			<damageAmountBase>360</damageAmountBase>
+			<preExplosionSpawnThingDef>Filth_Fuel</preExplosionSpawnThingDef>
+			<preExplosionSpawnChance>1</preExplosionSpawnChance>
 			<explosionRadius>10</explosionRadius>
 		</projectile>
 		<comps>
 			<li Class="CombatExtended.CompProperties_ExplosiveCE">
-				<damageAmountBase>360</damageAmountBase>
-				<explosiveDamageType>Thermobaric</explosiveDamageType>
-				<explosiveRadius>10</explosiveRadius>
+				<damageAmountBase>4</damageAmountBase>
+				<explosiveDamageType>PrometheumFlame</explosiveDamageType>
+				<explosiveRadius>12</explosiveRadius>
+				<preExplosionSpawnThingDef>FilthPrometheum</preExplosionSpawnThingDef>
+				<preExplosionSpawnChance>1</preExplosionSpawnChance>
 			</li>
 			<li Class="CombatExtended.CompProperties_Fragments">
 				<fragments>
@@ -198,7 +200,7 @@
 		<label>make 28cm High Explosive Nebelwerfer Rocket x1</label>
 		<description>Craft 28cm High Explosive Nebelwerfer Rocket.</description>
 		<jobString>Making 28cm High Explosive Nebelwerfer Rocket.</jobString>
-		<workAmount>2000</workAmount>
+		<workAmount>2600</workAmount>
 		<targetCountAdjustment>1</targetCountAdjustment>
 		<ingredients>
 			<li>
@@ -262,7 +264,7 @@
 		<label>make 30cm High Explosive Nebelwerfer Rocket x1</label>
 		<description>Craft 30cm High Explosive Nebelwerfer Rocket.</description>
 		<jobString>Making 30cm High Explosive Nebelwerfer Rocket.</jobString>
-		<workAmount>2100</workAmount>
+		<workAmount>2800</workAmount>
 		<targetCountAdjustment>1</targetCountAdjustment>
 		<ingredients>
 			<li>
@@ -326,7 +328,7 @@
 		<label>make 32cm Incendiary Nebelwerfer Rocket x1</label>
 		<description>Craft 32cm Incendiary Nebelwerfer Rocket.</description>
 		<jobString>Making 32cm Incendiary Nebelwerfer Rocket.</jobString>
-		<workAmount>2200</workAmount>
+		<workAmount>2900</workAmount>
 		<targetCountAdjustment>1</targetCountAdjustment>
 		<ingredients>
 			<li>

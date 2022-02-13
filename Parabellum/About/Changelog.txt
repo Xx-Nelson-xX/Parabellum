@@ -1,23 +1,15 @@
 <--------------------------------------- 1.5 -------------------------------------------->
 								*New Update for RW HSK 1.3
-	- Turrets:
-		+ M202 FLASH turret somesort(66mm LAW rockets)
-	- New stuff from latest build of CE: planned but didn't really want to implement it yet due it probably make the mod conflict with 1.2
-		+ Night Vision
-		+ Flare
-	- Metalworking for late Industrial satage
-	- New Banner
-	- Ammo and Weapon parts disassembly
-	
 *Note:
 	-5cm PaK 38/L60 and 5cm Flak 41/L67 crates no longer exist in this update, so make sure you delete those crates in your map before installing the mod to prevent missing stuff error, else, save the game then load it, it usually fix the issue
+	-Not entirely sure how the mod work in 1.2 currently, please report any issue you found playing the mod in HSK Master Branch
 
 						The mod officially support russian translation
 					(it covers most of the feature, except the new one yet)
 
 The following features need playtesting, since is a Beta launch and there is stuff in WIP, so if you encounter any issue, please report it, thanks
 
-1.5 - 28 Weapons, 12 Turrets, 1 trip mine, 20 new ammo type, 3 new research, new balance, texture improvements, and more tweakings(pretty much the basic routine of each update)
+1.5 - 31 Weapons, 15 Turrets, 1 trip mine, 25 new ammo type, 3 new research, new balance, texture improvements, and more tweakings(pretty much the basic routine of each update)
 
 Melee:
 - S83/98III Bayonet: Stab/Poke/Cut, standard issued bayonet of the old empire, decent for stabbing soft target, terrible for anything else
@@ -25,6 +17,7 @@ Melee:
 Pistols:
 - Mauser C96 pistol: 7.63x25mm Mauser(9x19mm,.45 ACP), Semi-Automatic, one of the earliest semi-automatic pistol, 10-round internal magazine, decent fire rate and low damage
 - M712 "Schnellfeuer" Pistol: 9x19mm Parabellum(7.63x25mm, .45 ACP), Automatic(1/2/5) automatic convertion of C96, with detachable box magazine, high rate of fire and low damage
+- SW.50B: .50 Beaowulf, 5 shots Single/Double Action, a pocket handcannon chambered in .50 Beowulf rounds
 
 Shotguns:
 - Winchester 1887 "Mare's Leg": 10/12 Gauge, Level Action, compact shotgun, a Pop cultural shotgun, you can use it with one hand
@@ -217,6 +210,29 @@ Tweaks:
 *Reduced cost for following weapon to make them available for raiders: CGRR(M) 5000 -> 4200, M202 FLASH 7000 -> 5400, RPzB 54/1 1800 -> 1500, Thompson M1928A1 1600 -> 1200, De Lisle CC 640 -> 380
 +Texture Improvement for Thompson M1928A1, reduced its RoF from 900 -> 720, Recoil 1.5 -> 1.4, Fire mode 1s 5b 10a -> 1s 5b 13a
 *Changed "Complex Cannon Crate" Research from "Artillery II" to "Turret I" due latest change
+*changed simple cannon crates weight from 400kg -> 200kg
+*Readjusted Mk.18 Mod.0 GL Outline
+*Fixed a Typo from the 3.7cm Flak 37/L89 AA gun
+*The M960(M) Calico will no longer spawn as SMG but Carabine like the Beretta Cx4 Storm and UMP 45
+*Lowered the skill requirement to build both 12.8cm cannon: 12.8cm PaK 44 HATGP 15 -> 14, 	12.8cm FlaK 40(z) HAAP 18 -> 16
+*Slightly modified FG 42 shooting sounds
++Buff RVW MRLP range from 158 -> 180
++buff 12.8cm PaK 44/L56 sight efficiency from 220% to 250%
+*Adjusted Recipe Output stack for 120mm, 12.8cm and 155mm shells
++More metallic material options available to craft weapons
+*Fix some Typo for the English language file
+*Updated the Mod load order setting in About.xml
+*M24 grenades no longer available for medieval stage raider, hopefully, the Splitter ring variant now should be available for spacer tech
+*Most Grenade recipes are moved to Weapon bench, also added production count adjustment for them
++Buffed M4.50 Beowulf SC magazine capacity, now holds 20 rounds instead of 12, while also increased its reload time from 1.68 -> 1.8 and the firemode from 1s2b4a -> 1s2b5a
+*Changed the 40x46mm special grenades old ParentName, and buffed the 40mm Flechette round damage from 8 -> 10, doesn't makes sense it cause the same damage per pellet as the 12 gauge buckshot peellet
++Changed how the 25x59mm HEI, M202 FLASH and 32cm Nebelwerfer Incendiary Rockets work, now it ignite the fuel puddle the moment it explode
++Reduced M202 FLASH bulk size from 19 -> 17
++Buff for the Stielhandgranate, the M24 basic variant damage from 50 -> 90, the bundle variant from 350 -> 630, and the 4KG demolition charge from 700 -> 1000 DMG, so their respective price
+*Resize of PaK 40, PaK 44 and Flak 40z, also increased the outline of PaK 44 and added outline for Wurfrahmen
++Changed the mass and bulk of 25x59mm grenade round after further investigation, now is ligher to carry around
+*Increased C96 and M712 pistol outline also reduced 25% their resolution
+*Readjusted the cannon, autocannons/HMG, grenades(Grenade Launcher) and rocket recipe workspeed, now is no longer the default 3000 workAmount for everything
 *Due some god awful unknown reason that broke the Nebelwerfer rockets storage list, I merged both rockets(21 and 32) in a single list, shouldn't break anything, hopefully doesn't happen ever again
 *Modified following weapon spawn chance:
  - Hawk MM-1 40% -> 20%
@@ -279,6 +295,11 @@ Explosive(FSX/Gunpowder)
  -8cm RVW: 		290m/s --- 58 -> 63
  -PzF 60:		45m/s  --- 15 -> 10
 
+-Changed slightly the .50 Beowulf projectile speed:(Around 550~580m/s vs 948m/s of 5.56x45mm NATO)
+ -HP 106 -> 94 	
+ -FMJ 102 -> 96	
+ -EMP 102 -> 96
+ 
 +Texture Improvements for:
  - M4.50 Beowulf SC
  - Hawk MM-1

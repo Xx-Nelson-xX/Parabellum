@@ -56,6 +56,7 @@
 			<categories>
 				<li>SLDBar</li>
 				<li>USLDBar</li>
+				<li>HCMBar</li>
 				<li>Woody</li>
 			</categories>
 		</fixedIngredientFilter>
@@ -121,6 +122,7 @@
 			<categories>
 				<li>SLDBar</li>
 				<li>USLDBar</li>
+				<li>HCMBar</li>
 				<li>Woody</li>
 			</categories>
 		</fixedIngredientFilter>
@@ -239,6 +241,7 @@
 			<categories>
 				<li>SLDBar</li>
 				<li>USLDBar</li>
+				<li>HCMBar</li>
 				<li>Woody</li>
 			</categories>
 		</fixedIngredientFilter>
@@ -246,6 +249,80 @@
 			<li>WeaponCraftingWorkTable</li>
 		</recipeUsers>
 		<researchPrerequisite>Gunsmithing</researchPrerequisite>
+	</RecipeDef>
+	
+	<!-- Smith & Wesson .50 Beowulf Revolver -->
+	<RecipeDef ParentName="RangedWeaponRecipeBase">
+		<defName>BuildSW50B</defName>
+		<label>Build SW.50 Beowulf Revolver</label>
+		<description>Build a SW.50 Beowulf Revolver, safety measure counter large mammals and reptile.\nCaliber: .50 Beowulf(12,7x42mm)</description>
+		<jobString>Building SW.50 Beowulf Revolver.</jobString>
+		<workAmount>22000</workAmount>
+		<skillRequirements>
+			<Crafting>12</Crafting>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Heavy_Component</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>	
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Pistol_Component</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>12</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>Metallic</li>
+					</categories>
+				</filter>
+				<count>16</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Rubber</li>
+					</thingDefs>
+				</filter>
+				<count>4</count>
+			</li>
+		</ingredients>
+		<products>
+			<Pa_SW50B>1</Pa_SW50B>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Heavy_Component</li>
+				<li>Pistol_Component</li>
+				<li>ComponentIndustrial</li>
+				<li>Rubber</li>
+			</thingDefs>
+			<categories>
+				<li>SLDBar</li>
+				<li>USLDBar</li>
+				<li>HCMBar</li>
+			</categories>
+		</fixedIngredientFilter>
+		<recipeUsers>
+			<li>WeaponCraftingWorkTable</li>
+		</recipeUsers>
+		<researchPrerequisite>Range_C2</researchPrerequisite>
 	</RecipeDef>
 	
 </Defs>

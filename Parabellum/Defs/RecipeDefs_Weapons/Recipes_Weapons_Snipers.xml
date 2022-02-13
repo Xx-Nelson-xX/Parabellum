@@ -4,9 +4,9 @@
 	<!-- XM-109 Anti-Materiel Payload Rifle -->
 	<RecipeDef ParentName="RangedWeaponRecipeBase">
 		<defName>BuildXM109AMPR</defName>
-		<label>Build Barrett XM-109 Anti-Materiel Payload Rifle</label>
-		<description>Builds the Barrett XM-109 Anti-Materiel Payload Rifle, when the usual high caliber isn't enough to impress your high tech enemies.\nCaliber: 25x59mm / .50 BMG</description>
-		<jobString>Building XM-109 Anti-Materiel Payload Rifle.</jobString>
+		<label>Build Barrett XM-109 AMPR</label>
+		<description>Builds the Barrett XM-109 Anti-Materiel Payload Rifle, when the usual high caliber isn't enough to impress your high tech enemies.\nCaliber: 25x59mm HVG/ .50 BMG</description>
+		<jobString>Building XM-109 AMPR.</jobString>
 		<workAmount>24000</workAmount>
 		<skillRequirements>
 			<Crafting>18</Crafting>
@@ -66,6 +66,7 @@
 			<categories>
 				<li>SLDBar</li>
 				<li>USLDBar</li>
+				<li>HCMBar</li>
 			</categories>
 		</fixedIngredientFilter>
 		<recipeUsers>
@@ -139,6 +140,7 @@
 			<categories>
 				<li>SLDBar</li>
 				<li>USLDBar</li>
+				<li>HCMBar</li>
 			</categories>
 		</fixedIngredientFilter>
 		<recipeUsers>
@@ -212,6 +214,7 @@
 			<categories>
 				<li>SLDBar</li>
 				<li>USLDBar</li>
+				<li>HCMBar</li>
 			</categories>
 		</fixedIngredientFilter>
 		<recipeUsers>

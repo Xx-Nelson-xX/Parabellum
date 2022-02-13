@@ -260,8 +260,8 @@
 		<label>make 21cmm Gr 18 Anti-Concrete howitzer shells x1</label>
 		<description>Craft a 21cmm Gr 18 Anti-Concrete howitzer shells.</description>
 		<jobString>Making a 21cmm Gr 18 Anti-Concrete howitzer shells.</jobString>
-		<workAmount>1900</workAmount>
-		<targetCountAdjustment>10</targetCountAdjustment>
+		<workAmount>2700</workAmount>
+		<targetCountAdjustment>1</targetCountAdjustment>
 		<ingredients>
 			<li>
 				<filter>
@@ -327,8 +327,8 @@
 		<label>make 21cmm Gr 18 High Explosive howitzer shells x1</label>
 		<description>Craft a 21cmm Gr 18 High Explosive howitzer shells.</description>
 		<jobString>Making a 21cmm Gr 18 High Explosive howitzer shells.</jobString>
-		<workAmount>1900</workAmount>
-		<targetCountAdjustment>10</targetCountAdjustment>
+		<workAmount>2700</workAmount>
+		<targetCountAdjustment>1</targetCountAdjustment>
 		<ingredients>
 			<li>
 				<filter>
@@ -394,8 +394,8 @@
 		<label>make 21cmm Gr 18 Be. High Explosive Anti-Concrete howitzer shells x1</label>
 		<description>Craft a 21cmm Gr 18 Be. High Explosive Anti-Concrete howitzer shells.</description>
 		<jobString>Making a 21cmm Gr 18 Be. High Explosive Anti-Concrete howitzer shells.</jobString>
-		<workAmount>1900</workAmount>
-		<targetCountAdjustment>10</targetCountAdjustment>
+		<workAmount>2700</workAmount>
+		<targetCountAdjustment>1</targetCountAdjustment>
 		<ingredients>
 			<li>
 				<filter>

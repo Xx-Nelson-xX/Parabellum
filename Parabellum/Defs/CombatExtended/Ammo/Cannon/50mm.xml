@@ -203,6 +203,7 @@
 		<label>make 5cm Pzgr 39(APHE) shells x10</label>
 		<description>Craft 10 5cm Pzgr 39(APHE) shells.</description>
 		<jobString>Making 5cm Pzgr 39(APHE) shells.</jobString>
+		<workAmount>1650</workAmount>
 		<targetCountAdjustment>10</targetCountAdjustment>
 		<ingredients>
 			<li>
@@ -267,6 +268,7 @@
 		<label>make 5cm Sprgr 38(HE) shells x10</label>
 		<description>Craft 10 5cm Sprgr 38(HE) shells.</description>
 		<jobString>Making 5cm Sprgr 38(HE) shells.</jobString>
+		<workAmount>1650</workAmount>
 		<targetCountAdjustment>10</targetCountAdjustment>
 		<ingredients>
 			<li>
@@ -331,6 +333,7 @@
 		<label>make 5cm Pzgr 40(APCR) shells x10</label>
 		<description>Craft 10 5cm Pzgr 40(APCR) shells.</description>
 		<jobString>Making 5cm Pzgr 40(APCR) shells.</jobString>
+		<workAmount>1650</workAmount>
 		<targetCountAdjustment>10</targetCountAdjustment>
 		<ingredients>
 			<li>

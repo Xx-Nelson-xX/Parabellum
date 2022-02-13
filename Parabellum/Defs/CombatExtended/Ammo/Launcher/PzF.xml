@@ -141,7 +141,8 @@
 		<label>make 149mm Panzerfaust HEAT warhead x1</label>
 		<description>Craft a 149mm Panzerfaust HEAT warhead.</description>
 		<jobString>Making 149mm Panzerfaust HEAT warhead.</jobString>
-		<targetCountAdjustment>10</targetCountAdjustment>
+		<workAmount>400</workAmount>
+		<targetCountAdjustment>1</targetCountAdjustment>
 		<ingredients>
 			<li>
 				<filter>
@@ -193,7 +194,8 @@
 		<label>make 149mm Panzerfaust Fragmentation warhead x1</label>
 		<description>Craft a 149mm Panzerfaust Fragmentation warhead.</description>
 		<jobString>Making 149mm Panzerfaust Fragmentation warhead.</jobString>
-		<targetCountAdjustment>10</targetCountAdjustment>
+		<workAmount>400</workAmount>
+		<targetCountAdjustment>1</targetCountAdjustment>
 		<ingredients>
 			<li>
 				<filter>

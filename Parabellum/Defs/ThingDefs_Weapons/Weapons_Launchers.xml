@@ -308,7 +308,7 @@
             <ShotSpread>0.22</ShotSpread>
             <SwayFactor>1.8</SwayFactor>
             <RangedWeapon_Cooldown>2.6</RangedWeapon_Cooldown>
-            <Bulk>19</Bulk>
+            <Bulk>17</Bulk>
             <Mass>5.22</Mass>
         </statBases>
 		<generateCommonality>0.2</generateCommonality>

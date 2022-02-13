@@ -19,7 +19,7 @@
 	</additionalHediffs>
     <impactSoundType>Blunt</impactSoundType>
     <armorCategory>Sharp</armorCategory>
-    <overkillPctToDestroyPart>0.4~1</overkillPctToDestroyPart>
+    <overkillPctToDestroyPart>0.8~1</overkillPctToDestroyPart>
 	<buildingDamageFactor>0</buildingDamageFactor>
 	<plantDamageFactor>0.1</plantDamageFactor>
     <isRanged>true</isRanged>

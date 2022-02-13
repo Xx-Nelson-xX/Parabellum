@@ -141,7 +141,7 @@
 		<description>Craft 120mm M1028 Canister cannon shells.</description>
 		<jobString>Making 120mm M1028 Canister cannon shells.</jobString>
 		<workAmount>1500</workAmount>
-		<targetCountAdjustment>10</targetCountAdjustment>
+		<targetCountAdjustment>5</targetCountAdjustment>
 		<ingredients>
 			<li>
 				<filter>
@@ -202,7 +202,7 @@
 		<description>Craft 120mm HESH cannon shells.</description>
 		<jobString>Making 120mm HESH cannon shells.</jobString>
 		<workAmount>1500</workAmount>
-		<targetCountAdjustment>10</targetCountAdjustment>
+		<targetCountAdjustment>5</targetCountAdjustment>
 		<ingredients>
 			<li>
 				<filter>
@@ -263,7 +263,7 @@
 		<description>Craft 120mm M337 Stun cannon shells.</description>
 		<jobString>Making 120mm M337 Stun cannon shells.</jobString>
 		<workAmount>1500</workAmount>
-		<targetCountAdjustment>10</targetCountAdjustment>
+		<targetCountAdjustment>5</targetCountAdjustment>
 		<ingredients>
 			<li>
 				<filter>

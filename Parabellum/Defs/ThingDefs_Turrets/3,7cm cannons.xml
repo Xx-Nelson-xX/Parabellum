@@ -54,7 +54,7 @@
 
 	<ThingDef ParentName="BaseGun_Turret">
 		<defName>Pa_Flak37AA</defName>
-		<label>3.7cm Flak 37/L89 Anti-Tank Gun</label>
+		<label>3.7cm Flak 37/L89 Anti-Aircraft Gun Gun</label>
 		<graphicData>
 			<texPath>Things/Building/Security/CMMT/Flak37_Top</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -229,8 +229,8 @@
 			<MaxHitPoints>120</MaxHitPoints>
 			<Flammability>1</Flammability>
 			<DeteriorationRate>0</DeteriorationRate>
-			<Mass>400</Mass>
-			<Bulk>400</Bulk>
+			<Mass>200</Mass>
+			<Bulk>200</Bulk>
 		</statBases>
 		<thingCategories>
 			<li>WeaponCrate</li>

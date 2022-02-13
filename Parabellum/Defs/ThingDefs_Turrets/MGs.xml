@@ -5,7 +5,7 @@
 
 	<ThingDef ParentName="BaseGun_Turret">
 		<defName>Pa_MG34Z</defName>
-		<label>MG 34Z MMG</label>
+		<label>MG 34z MMG</label>
 		<graphicData>
 			<texPath>Things/Building/Security/CMLT/MG34Z_Top</texPath>
 			<graphicClass>Graphic_Single</graphicClass>

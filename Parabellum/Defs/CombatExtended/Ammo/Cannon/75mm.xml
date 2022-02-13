@@ -336,6 +336,7 @@
 		<label>make 7.5cm Pzgr 39(APCBCHE) shells x3</label>
 		<description>Craft 3 7.5cm Pzgr 39(APCBC-HE) shells.</description>
 		<jobString>Making 3 7.5cm Pzgr 39(APCBC-HE) shells.</jobString>
+		<workAmount>900</workAmount>
 		<targetCountAdjustment>3</targetCountAdjustment>
 		<ingredients>
 			<li>
@@ -400,6 +401,7 @@
 		<label>make 7.5cm Sprgr.Patr.34(HE) shells x3</label>
 		<description>Craft 3 7.5cm Sprgr.Patr.34(HE) shells.</description>
 		<jobString>Making 7.5cm Sprgr.Patr.34(HE) shells.</jobString>
+		<workAmount>900</workAmount>
 		<targetCountAdjustment>3</targetCountAdjustment>
 		<ingredients>
 			<li>
@@ -467,6 +469,7 @@
 		<label>make 7.5cm Pzgr 40(APCR) shells x3</label>
 		<description>Craft 3 7.5cm Pzgr 40(APCR) shells.</description>
 		<jobString>Making 3 7.5cm Pzgr 40(APCR) shells.</jobString>
+		<workAmount>900</workAmount>
 		<targetCountAdjustment>3</targetCountAdjustment>
 		<ingredients>
 			<li>
@@ -531,6 +534,7 @@
 		<label>make 7.5cm Gr.Patr.38 HL/B(HEAT) shells x3</label>
 		<description>Craft 3 7.5cm Gr.Patr.38 HL/B(HEAT) shells.</description>
 		<jobString>Making 7.5cm Gr.Patr.38 HL/B(HEAT) shells.</jobString>
+		<workAmount>900</workAmount>
 		<targetCountAdjustment>3</targetCountAdjustment>
 		<ingredients>
 			<li>

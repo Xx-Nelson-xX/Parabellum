@@ -16,7 +16,7 @@
 		<tradeability>None</tradeability>
 		<statBases>
 			<MarketValue>4800</MarketValue>
-			<SightsEfficiency>2.2</SightsEfficiency>
+			<SightsEfficiency>2.5</SightsEfficiency>
 			<ShotSpread>0.17</ShotSpread>
 			<SwayFactor>1.2</SwayFactor>
 			<RangedWeapon_Cooldown>2.8</RangedWeapon_Cooldown>
@@ -154,7 +154,7 @@
 		<designationCategory>Security</designationCategory>
 		<building>
 			<turretGunDef>Pa_PaK44ATG</turretGunDef>
-			<turretTopDrawSize>6</turretTopDrawSize>
+			<turretTopDrawSize>6.4</turretTopDrawSize>
 			<buildingTags>
 				<li>Artillery</li>
 				<li>Artillery_BaseDestroyer</li>
@@ -167,14 +167,14 @@
 		<researchPrerequisites>
 			<li>Artillery_C2</li>
 		</researchPrerequisites>
-		<constructionSkillPrerequisite>15</constructionSkillPrerequisite>
+		<constructionSkillPrerequisite>14</constructionSkillPrerequisite>
 	</ThingDef>
 	
 	<!--=============== Turret Base(12,8cm FlaK 40/L61) ===============-->
 
 	<ThingDef ParentName="TurretMannedBase">
 		<defName>Turret_FlaK40ZHAAP</defName>
-		<label>12,8cm FlaK 40 HAAP</label>
+		<label>12,8cm FlaK 40z HAAP</label>
 		<graphicData>
 			<texPath>Things/Building/Security/Base/H_Base</texPath>
 			<drawSize>(3.4,3.4)</drawSize>
@@ -206,7 +206,7 @@
 		<designationCategory>Security</designationCategory>
 		<building>
 			<turretGunDef>Pa_FlaK40AA</turretGunDef>
-			<turretTopDrawSize>8</turretTopDrawSize>
+			<turretTopDrawSize>8.2</turretTopDrawSize>
 			<buildingTags>
 				<li>Artillery</li>
 				<li>Artillery_BaseDestroyer</li>
@@ -219,10 +219,10 @@
 		<researchPrerequisites>
 			<li>Parabellum_I</li>
 		</researchPrerequisites>
-		<constructionSkillPrerequisite>18</constructionSkillPrerequisite>
+		<constructionSkillPrerequisite>16</constructionSkillPrerequisite>
 	</ThingDef>
 
-		<!--=============== Crate Base(Heavy Cannons AA) ===============-->
+		<!--=============== Crate Base(Complex Cannon Crate) ===============-->
 
 	<ThingDef ParentName="CrateBase">
 		<defName>Pa_complexcannon_Crate</defName>
@@ -242,8 +242,8 @@
 			<MaxHitPoints>400</MaxHitPoints>
 			<Flammability>1</Flammability>
 			<DeteriorationRate>0</DeteriorationRate>
-			<Mass>7000</Mass>
-			<Bulk>7000</Bulk>
+			<Mass>2000</Mass>
+			<Bulk>2000</Bulk>
 		</statBases>
 		<thingCategories>
 			<li>WeaponCrate</li>
@@ -253,13 +253,13 @@
 		</tradeTags>
 	</ThingDef>
 
-	<!-- ================== Craft Crate(50mm PaK38/L60 ATG) ================== -->
+	<!-- ================== Complex Cannon Crate ================== -->
 
 	<RecipeDef ParentName="cratecraftbase">
-		<defName>Buildheavycannon_Crate</defName>
-		<label>Build heavy cannon crate</label>
+		<defName>Buildcomplexcannon_Crate</defName>
+		<label>Build complex cannon crate</label>
 		<description>Use this to build a high caliber cannon, either for tanks or stationary turrets.</description>
-		<jobString>Building a heavy cannon crate.</jobString>
+		<jobString>Building a complex cannon crate.</jobString>
 		<workAmount>16000</workAmount>
 		<skillRequirements>
 			<Crafting>14</Crafting>
@@ -328,7 +328,7 @@
 	
 	<ThingDef ParentName="MinifiedTurretBase">
 		<defName>MinifiedTurret_Pa_FlaK40ZAA</defName>
-		<label>12,8cm FlaK 40 HAAP</label>
+		<label>12,8cm FlaK 40z HAAP</label>
 		<statBases>
 			<Mass>20000</Mass>
 			<Bulk>20000</Bulk>

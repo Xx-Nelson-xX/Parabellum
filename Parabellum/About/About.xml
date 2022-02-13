@@ -55,11 +55,14 @@ Moved the changelog to separated text file
 		<loadBefore>
 			<li>experimental.optimizations</li>
 			<li>notooshabby.rocketman</li>
+			<li>XxNelsonxX.ParabellumWT</li>
+			<li>XxNelsonxX.NsLP</li>
 		</loadBefore>
 		<loadAfter>
 			<li>brrainz.harmony</li>
 			<li>Ludeon.RimWorld</li>
 			<li>Ludeon.RimWorld.Royalty</li>
+			<li>Ludeon.RimWorld.Ideology</li>
 			<li>UnlimitedHugs.HugsLib</li>
 			<li>CETeam.CombatExtended</li>
 			<li>skyarkhangel.HSK</li>

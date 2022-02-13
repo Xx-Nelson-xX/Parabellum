@@ -214,7 +214,7 @@
 		<label>make RPzB Gr. 4992 HEAT rocket x5</label>
 		<description>Craft RPzB Gr. 4992 HEAT rocket, the standard issued shape charge anti-tank rocket for RPzB 54/1, with nearly no fragments and 180mm armor penetration.</description>
 		<jobString>Making RPzB Gr. 4992 HEAT.</jobString>
-		<workAmount>800</workAmount>
+		<workAmount>2500</workAmount>
 		<targetCountAdjustment>5</targetCountAdjustment>
 		<ingredients>
 			<li>
@@ -268,7 +268,7 @@
 		<label>make RPzB Gr. 4992 Frag rocket x5</label>
 		<description>Craft RPzB Gr. 4992 Fragmentation rocket, Modified rocket for RPzB 54/1, with improved fragmentation effects but really weak explosive damage.</description>
 		<jobString>Making RPzB Gr. 4992 Frag.</jobString>
-		<workAmount>800</workAmount>
+		<workAmount>2500</workAmount>
 		<targetCountAdjustment>5</targetCountAdjustment>
 		<ingredients>
 			<li>
@@ -319,7 +319,7 @@
 		<label>make 8cm Raketen Sprgr(HE) rocket x5</label>
 		<description>Craft 8cm Raketen Sprpr, modified high explosive rockets for Raketen-Vielfachwerfer, it contain better explosive charge than the standard RPzB rockets.</description>
 		<jobString>Making 8cm Raketen Sprgr(HE) rockets.</jobString>
-		<workAmount>800</workAmount>
+		<workAmount>2000</workAmount>
 		<targetCountAdjustment>5</targetCountAdjustment>
 		<ingredients>
 			<li>

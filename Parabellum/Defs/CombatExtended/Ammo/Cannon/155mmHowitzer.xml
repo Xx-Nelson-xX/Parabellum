@@ -140,7 +140,7 @@
 		<description>Craft a 155mm W48 AFAP howitzer shell.</description>
 		<jobString>Making a 155mm W48 AFAP howitzer shell.</jobString>
 		<workAmount>16000</workAmount>
-		<targetCountAdjustment>5</targetCountAdjustment>
+		<targetCountAdjustment>1</targetCountAdjustment>
 		<ingredients>
 			<li>
 				<filter>
@@ -218,7 +218,7 @@
 		<description>Craft a 155mm ADAM howitzer shell.</description>
 		<jobString>Making a 155mm ADAM howitzer shell.</jobString>
 		<workAmount>2000</workAmount>
-		<targetCountAdjustment>10</targetCountAdjustment>
+		<targetCountAdjustment>5</targetCountAdjustment>
 		<ingredients>
 			<li>
 				<filter>

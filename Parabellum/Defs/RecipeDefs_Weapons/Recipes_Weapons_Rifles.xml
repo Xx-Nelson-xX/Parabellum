@@ -122,6 +122,7 @@
 					<categories>
 						<li>SLDBar</li>
 						<li>USLDBar</li>
+						<li>HCMBar</li>
 					</categories>
 				</filter>
 				<count>40</count>
@@ -149,6 +150,7 @@
 			<categories>
 				<li>SLDBar</li>
 				<li>USLDBar</li>
+				<li>HCMBar</li>
 			</categories>
 		</fixedIngredientFilter>
 		<recipeUsers>
@@ -333,6 +335,7 @@
 					<categories>
 						<li>SLDBar</li>
 						<li>USLDBar</li>
+						<li>HCMBar</li>
 					</categories>
 				</filter>
 				<count>65</count>
@@ -360,6 +363,7 @@
 				<li>Woody</li>
 				<li>SLDBar</li>
 				<li>USLDBar</li>
+				<li>HCMBar</li>
 			</categories>
 		</fixedIngredientFilter>
 		<recipeUsers>
@@ -408,6 +412,7 @@
 					<categories>
 						<li>SLDBar</li>
 						<li>USLDBar</li>
+						<li>HCMBar</li>
 					</categories>
 				</filter>
 				<count>42</count>
@@ -433,6 +438,7 @@
 			<categories>
 				<li>SLDBar</li>
 				<li>USLDBar</li>
+				<li>HCMBar</li>
 				<li>Woody</li>
 			</categories>
 		</fixedIngredientFilter>
@@ -482,6 +488,7 @@
 					<categories>
 						<li>SLDBar</li>
 						<li>USLDBar</li>
+						<li>HCMBar</li>
 					</categories>
 				</filter>
 				<count>38</count>
@@ -507,6 +514,7 @@
 			<categories>
 				<li>SLDBar</li>
 				<li>USLDBar</li>
+				<li>HCMBar</li>
 				<li>Woody</li>
 			</categories>
 		</fixedIngredientFilter>
@@ -556,6 +564,7 @@
 					<categories>
 						<li>SLDBar</li>
 						<li>USLDBar</li>
+						<li>HCMBar</li>
 					</categories>
 				</filter>
 				<count>20</count>
@@ -581,6 +590,7 @@
 			<categories>
 				<li>SLDBar</li>
 				<li>USLDBar</li>
+				<li>HCMBar</li>
 				<li>Woody</li>
 			</categories>
 		</fixedIngredientFilter>

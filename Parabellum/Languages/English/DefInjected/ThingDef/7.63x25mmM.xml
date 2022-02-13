@@ -3,17 +3,17 @@
 
   <!-- Ammo -->
 
-  <Ammo_763x25mmM_FMJ.label>7.63x25mm Mauser (FMJ)</Ammo_763x25mmM_FMJ.label>
+  <Ammo_763x25mmM_FMJ.label>7.63x25mm Mauser(FMJ)</Ammo_763x25mmM_FMJ.label>
   <Ammo_763x25mmM_FMJ.description>Old School Mauser pistol ammo, high velocity bullet, but doesn't have as much stopping power as most of the pistol caliber.</Ammo_763x25mmM_FMJ.description>
 
-  <Ammo_763x25mmM_HP.label>7.63x25mm Mauser (HP)</Ammo_763x25mmM_HP.label>
+  <Ammo_763x25mmM_HP.label>7.63x25mm Mauser(HP)</Ammo_763x25mmM_HP.label>
   <Ammo_763x25mmM_HP.description>Old School Mauser pistol ammo, high velocity bullet, but doesn't have as much stopping power as most of the pistol caliber.</Ammo_763x25mmM_HP.description>
 
 
   <!-- Projectiles -->
 
-  <Bullet_763x25mmM_FMJ.label>7.63mm bullet (FMJ)</Bullet_763x25mmM_FMJ.label>
-  <Bullet_763x25mmM_HP.label>7.63mm bullet (HP)</Bullet_763x25mmM_HP.label>
+  <Bullet_763x25mmM_FMJ.label>7.63mm bullet(FMJ)</Bullet_763x25mmM_FMJ.label>
+  <Bullet_763x25mmM_HP.label>7.63mm bullet(HP)</Bullet_763x25mmM_HP.label>
 
 
 </LanguageData>

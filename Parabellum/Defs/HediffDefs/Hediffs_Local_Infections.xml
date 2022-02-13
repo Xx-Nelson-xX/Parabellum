@@ -7,6 +7,7 @@
 		<defaultLabelColor>(0.3, 0.4, 0.5)</defaultLabelColor>
 		<label>blinded by salt fragments</label>
 		<labelNoun>got blinded by salt fragments</labelNoun>
+		<battleStateLabel>blind</battleStateLabel>
 		<description>Sensible body part got struck by salt fragments... Ouch</description>
 		<initialSeverity>0.001</initialSeverity>
 		<maxSeverity>1</maxSeverity>
@@ -17,6 +18,9 @@
 				<disappearsAtTotalTendQuality>2</disappearsAtTotalTendQuality>
 				<tendAllAtOnce>true</tendAllAtOnce>
 				<severityPerDayTended>-0.4</severityPerDayTended>
+			</li>
+			<li Class="HediffCompProperties_SelfHeal">
+				<healAmount>0.002</healAmount>
 			</li>
 			<li Class="SK.HediffCompProperties_FleshOnly"/>
 		</comps>

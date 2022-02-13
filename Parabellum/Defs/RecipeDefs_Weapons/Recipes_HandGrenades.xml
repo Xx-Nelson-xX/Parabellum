@@ -2,11 +2,12 @@
 <Defs>
   
   <!-- Model 24 Stielhandgranate -->
-  <RecipeDef ParentName="GrenadeRecipeBase">
+  <RecipeDef ParentName="RangedWeaponRecipeBase">
     <defName>MakePotatoM</defName>
     <label>make M24 Stick Grenades x5</label>
     <description>Craft M24 Stick Grenades.</description>
     <jobString>Making M24 Stick Grenades.</jobString>
+	<targetCountAdjustment>5</targetCountAdjustment>
 	<workAmount>2000</workAmount>
     <soundWorking>Recipe_Machining</soundWorking>
 	<skillRequirements>
@@ -53,15 +54,19 @@
     <products>
       <Pa_GrenadePotatoM>5</Pa_GrenadePotatoM>
     </products>
+	<recipeUsers>
+		<li>WeaponCraftingWorkTable</li>
+	</recipeUsers>
 	<researchPrerequisite>Grenade_C1</researchPrerequisite>
   </RecipeDef>
   
   <!-- Model 24 with Splitterring -->
-  <RecipeDef ParentName="GrenadeRecipeBase">
+  <RecipeDef ParentName="RangedWeaponRecipeBase">
     <defName>MakeM24wSplitterring</defName>
     <label>make M24 with Splitterring x5</label>
     <description>Craft 5 M24 with Splitterring.</description>
     <jobString>Making M24 with Splitterring.</jobString>
+	<targetCountAdjustment>5</targetCountAdjustment>
 	<workAmount>2800</workAmount>
     <soundWorking>Recipe_Machining</soundWorking>
 	<skillRequirements>
@@ -108,15 +113,19 @@
     <products>
       <Pa_GrenadeM24S>5</Pa_GrenadeM24S>
     </products>
+	<recipeUsers>
+		<li>WeaponCraftingWorkTable</li>
+	</recipeUsers>
 	<researchPrerequisite>Grenade_C1</researchPrerequisite>
   </RecipeDef>
   
   <!-- Model 24 Nebelgranate -->
-  <RecipeDef ParentName="GrenadeRecipeBase">
+  <RecipeDef ParentName="RangedWeaponRecipeBase">
     <defName>MakeM24Nb</defName>
     <label>make M24 Nebelgranate x5</label>
     <description>Craft 5 M24 Nebelgranate.</description>
     <jobString>Making M24 Nebelgranate.</jobString>
+	<targetCountAdjustment>5</targetCountAdjustment>
 	<workAmount>2200</workAmount>
     <soundWorking>Recipe_Machining</soundWorking>
 	<skillRequirements>
@@ -172,11 +181,14 @@
     <products>
       <Pa_GrenadeN24Nb>5</Pa_GrenadeN24Nb>
     </products>
+	<recipeUsers>
+		<li>WeaponCraftingWorkTable</li>
+	</recipeUsers>
 	<researchPrerequisite>Grenade_C1</researchPrerequisite>
   </RecipeDef>
   
   <!-- M24 Grenade Bundle -->
-  <RecipeDef ParentName="GrenadeRecipeBase">
+  <RecipeDef ParentName="RangedWeaponRecipeBase">
     <defName>MakeM24Bundle</defName>
     <label>make M24 Bundle x1</label>
     <description>Craft a M24 Bundle.</description>
@@ -236,11 +248,14 @@
     <products>
       <Pa_GrenadeM24B>1</Pa_GrenadeM24B>
     </products>
+	<recipeUsers>
+		<li>WeaponCraftingWorkTable</li>
+	</recipeUsers>
 	<researchPrerequisite>Grenade_C2</researchPrerequisite>
   </RecipeDef>
   
   <!-- 4kg Demolition Charge -->
-  <RecipeDef ParentName="GrenadeRecipeBase">
+  <RecipeDef ParentName="RangedWeaponRecipeBase">
     <defName>Make4kg</defName>
     <label>make 4kg Demolition Charge x1</label>
     <description>Craft a 4kg Demolition Charge.</description>
@@ -300,6 +315,9 @@
     <products>
       <Pa_Grenade4kg>1</Pa_Grenade4kg>
     </products>
+	<recipeUsers>
+		<li>WeaponCraftingWorkTable</li>
+	</recipeUsers>
 	<researchPrerequisite>Grenade_C2</researchPrerequisite>
   </RecipeDef>
   
@@ -309,6 +327,7 @@
         <label>make RGO Impact Grenades x5</label>
         <description>Craft 5 RGO Impact Grenades.</description>
         <jobString>Making RGO Impact Grenades.</jobString>
+		<targetCountAdjustment>5</targetCountAdjustment>
         <workAmount>3500</workAmount>
         <soundWorking>Recipe_Machining</soundWorking>
         <skillRequirements>
@@ -355,10 +374,10 @@
         <products>
             <Pa_RGO>5</Pa_RGO>
         </products>
-        <recipeUsers>
-            <li>WeaponCraftingWorkTable</li>
-        </recipeUsers>
-        <researchPrerequisite>Grenade_C2</researchPrerequisite>
+		<recipeUsers>
+			<li>AdvWeaponCraftingWorkTable</li>
+		</recipeUsers>
+        <researchPrerequisite>Range_C2</researchPrerequisite>
     </RecipeDef>
 	
 	<!-- Panzerwurmine Anti-Tank Impact Grenade-->
@@ -368,6 +387,7 @@
         <description>Craft 5 PWM(K) Anti-Tank Impact Grenades.</description>
         <jobString>Making PWM(K) Anti-Tank Impact Grenades.</jobString>
         <workAmount>3500</workAmount>
+		<targetCountAdjustment>5</targetCountAdjustment>
         <soundWorking>Recipe_Machining</soundWorking>
         <skillRequirements>
             <Crafting>7</Crafting>
@@ -413,9 +433,9 @@
         <products>
             <Pa_PWM>5</Pa_PWM>
         </products>
-        <recipeUsers>
-            <li>WeaponCraftingWorkTable</li>
-        </recipeUsers>
+		<recipeUsers>
+			<li>WeaponCraftingWorkTable</li>
+		</recipeUsers>
         <researchPrerequisite>Grenade_C2</researchPrerequisite>
     </RecipeDef>
   

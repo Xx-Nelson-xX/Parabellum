@@ -252,6 +252,8 @@
 		<label>make 12.8cm Pzgr 40/43(APC) shell x1</label>
 		<description>Craft a 12.8cm Pzgr 40/43(APC) shell.</description>
 		<jobString>Making 12.8cm Pzgr. 40/43(APC) shell.</jobString>
+		<workAmount>1600</workAmount>
+		<targetCountAdjustment>1</targetCountAdjustment>
 		<ingredients>
 			<li>
 				<filter>
@@ -315,6 +317,8 @@
 		<label>make 12.8cm Pzgr. 39/43(APCBC-HE) shell x1</label>
 		<description>Craft a 12.8cm Pzgr. 39/43(APCBC-HE) shell.</description>
 		<jobString>Making 12.8cm Pzgr. 39/43(APCBC-HE) shell.</jobString>
+		<workAmount>1600</workAmount>
+		<targetCountAdjustment>1</targetCountAdjustment>
 		<ingredients>
 			<li>
 				<filter>
@@ -377,6 +381,8 @@
 		<label>make 12.8cm Sprgr. L/5(HE) shell x1</label>
 		<description>Craft a 12.8cm Sprgr. L/5(HE) shell.</description>
 		<jobString>Making 12.8cm Sprgr. L/5(HE) shell.</jobString>
+		<workAmount>1600</workAmount>
+		<targetCountAdjustment>1</targetCountAdjustment>
 		<ingredients>
 			<li>
 				<filter>
@@ -440,6 +446,8 @@
 		<label>make 12.8/8.8cm Pzgr. Ts(APCR) shell x1</label>
 		<description>Craft a 12.8/8.8cm Pzgr. Ts(APCR) shell.</description>
 		<jobString>Making 12.8/8.8cm Pzgr. Ts(APCR) shell.</jobString>
+		<workAmount>1600</workAmount>
+		<targetCountAdjustment>1</targetCountAdjustment>
 		<ingredients>
 			<li>
 				<filter>

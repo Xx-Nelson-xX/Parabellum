@@ -49,7 +49,7 @@
 
 	<ThingDef Class="CombatExtended.AmmoDef" ParentName="AmmoTuFBase">
 		<defName>Ammo_TuF_AP</defName>
-		<label>13.2x92mm SR TuF (Sabot)</label>
+		<label>13.2x92mm SR TuF(Sabot)</label>
 		<graphicData>
 			<texPath>Things/Ammo/Mauser/TuF/Sabot</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
@@ -63,7 +63,7 @@
 	
 	<ThingDef Class="CombatExtended.AmmoDef" ParentName="AmmoTuFBase">
 		<defName>Ammo_TuF_APHE</defName>
-		<label>13.2x92mm SR TuF (APHE)</label>
+		<label>13.2x92mm SR TuF(APHE)</label>
 		<graphicData>
 			<texPath>Things/Ammo/Mauser/TuF/APHE</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
@@ -78,7 +78,7 @@
 	
 	<ThingDef Class="CombatExtended.AmmoDef" ParentName="AmmoTuFBase">
 		<defName>Ammo_MG131_HET</defName>
-		<label>13x64mmB (HE-T)</label>
+		<label>13x64mmB(HE-T)</label>
 		<graphicData>
 			<texPath>Things/Ammo/Mauser/TuF/HET</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
@@ -106,7 +106,7 @@
 
 	<ThingDef Class="CombatExtended.AmmoDef" ParentName="BaseTuFBullet">
 		<defName>Bullet_TuF_AP</defName>
-		<label>13.2mm bullet (AP)</label>
+		<label>13.2mm bullet(AP)</label>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
 			<damageAmountBase>36</damageAmountBase>
 			<armorPenetrationSharp>25</armorPenetrationSharp>
@@ -116,7 +116,7 @@
 	
 	<ThingDef Class="CombatExtended.AmmoDef" ParentName="BaseTuFBullet">
 		<defName>Bullet_TuF_APHE</defName>
-		<label>13.2mm bullet (APHE)</label>
+		<label>13.2mm bullet(APHE)</label>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
 			<damageDef>Bomb</damageDef>
 			<damageAmountBase>24</damageAmountBase>
@@ -135,7 +135,7 @@
 	
 	<ThingDef Class="CombatExtended.AmmoDef" ParentName="BaseTuFBullet">
 		<defName>Bullet_MG131_HET</defName>
-		<label>13x64mmB bullet (HE-T)</label>
+		<label>13x64mmB bullet(HE-T)</label>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
 			<damageAmountBase>8</damageAmountBase>
 			<armorPenetrationSharp>11.4</armorPenetrationSharp>
@@ -160,9 +160,10 @@
 
 	<RecipeDef ParentName="AmmoRecipeHighCaliber">
 		<defName>MakeAmmo_TuF_AP</defName>
-		<label>make 13.2x92mm SR TuF (AP) cartridge x50</label>
-		<description>Craft 50 13.2x92mm SR TuF (AP) cartridges.</description>
-		<jobString>Making 13.2x92mm SR TuF (AP) cartridges.</jobString>
+		<label>make 13.2x92mm SR TuF(AP) cartridge x50</label>
+		<description>Craft 50 13.2x92mm SR TuF(AP) cartridges.</description>
+		<jobString>Making 13.2x92mm SR TuF(AP) cartridges.</jobString>
+		<workAmount>2000</workAmount>
 		<targetCountAdjustment>50</targetCountAdjustment>
 		<ingredients>
 			<li>
@@ -216,9 +217,10 @@
 	
 	<RecipeDef ParentName="AmmoRecipeHighCaliber">
 		<defName>MakeAmmo_TuF_APHE</defName>
-		<label>make 13.2x92mm SR TuF (APHE) cartridge x50</label>
-		<description>Craft 50 13.2x92mm SR TuF (APHE) cartridges.</description>
-		<jobString>Making 13.2x92mm SR TuF (APHE) cartridges.</jobString>
+		<label>make 13.2x92mm SR TuF(APHE) cartridge x50</label>
+		<description>Craft 50 13.2x92mm SR TuF(APHE) cartridges.</description>
+		<jobString>Making 13.2x92mm SR TuF(APHE) cartridges.</jobString>
+		<workAmount>2000</workAmount>
 		<targetCountAdjustment>50</targetCountAdjustment>
 		<ingredients>
 			<li>
@@ -272,9 +274,10 @@
 	
 	<RecipeDef ParentName="AmmoRecipeHighCaliber">
 		<defName>MakeAmmo_MG131_HET</defName>
-		<label>make 13x64mmB (HE-T) cartridge x50</label>
-		<description>Craft 50 13x64mmB (HE-T) cartridges.</description>
-		<jobString>Making 13x64mmB (HE-T) cartridges.</jobString>
+		<label>make 13x64mmB(HE-T) cartridge x50</label>
+		<description>Craft 50 13x64mmB(HE-T) cartridges.</description>
+		<jobString>Making 13x64mmB(HE-T) cartridges.</jobString>
+		<workAmount>2000</workAmount>
 		<targetCountAdjustment>50</targetCountAdjustment>
 		<ingredients>
 			<li>

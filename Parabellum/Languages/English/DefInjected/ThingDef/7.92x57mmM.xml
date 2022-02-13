@@ -3,25 +3,25 @@
 
   <!-- Ammo -->
 
-  <Ammo_8mmM_P88M.label>8x57mm Patrone 88 (FMJ)</Ammo_8mmM_P88M.label>
+  <Ammo_8mmM_P88M.label>8x57mm P88(FMJ)</Ammo_8mmM_P88M.label>
   <Ammo_8mmM_P88M.description>Old School long rifle ammo, heavier, larger and bit more expensive than modern battle rifle ammo, the good thing is, the size is bigger and load 50% more gun powder, which makes them really deadly even in obsoleted weapons.</Ammo_8mmM_P88M.description>
 
-  <Ammo_8mmM_SP.label>7.92x57mm S Patrone (FMJ)</Ammo_8mmM_SP.label>
+  <Ammo_8mmM_SP.label>7.92x57mm SP(FMJ)</Ammo_8mmM_SP.label>
   <Ammo_8mmM_SP.description>Old School long rifle ammo, heavier, larger and bit more expensive than modern battle rifle ammo, the good thing is, the size is bigger and load 50% more gun powder, which makes them really deadly even in obsoleted weapons.</Ammo_8mmM_SP.description>
 
-  <Ammo_8mmM_KP.label>7.92x57mm K Patrone (AP)</Ammo_8mmM_KP.label>
+  <Ammo_8mmM_KP.label>7.92x57mm KP(AP)</Ammo_8mmM_KP.label>
   <Ammo_8mmM_KP.description>Old School long rifle ammo, heavier, larger and bit more expensive than modern battle rifle ammo, the good thing is, the size is bigger and load 50% more gun powder, which makes them really deadly even in obsoleted weapons.</Ammo_8mmM_KP.description>
 
-  <Ammo_8mmM_BP.label>7.92x57mm B Patrone (HE-T)</Ammo_8mmM_BP.label>
+  <Ammo_8mmM_BP.label>7.92x57mm BP(HE-T)</Ammo_8mmM_BP.label>
   <Ammo_8mmM_BP.description>Old School long rifle ammo, heavier, larger and bit more expensive than modern battle rifle ammo, the good thing is, the size is bigger and load 50% more gun powder, which makes them really deadly even in obsoleted weapons.</Ammo_8mmM_BP.description>
 
 
   <!-- Projectiles -->
 
-  <Bullet_8mmM_P88M.label>8mm bullet (FMJ)</Bullet_8mmM_P88M.label>
-  <Bullet_8mmM_SP.label>7.92x57mm bullet (FMJ)</Bullet_8mmM_SP.label>
-  <Bullet_8mmM_KP.label>7.92x57mm bullet (AP)</Bullet_8mmM_KP.label>
-  <Bullet_8mmM_BP.label>7.92x57mm bullet (HE-T)</Bullet_8mmM_BP.label>
+  <Bullet_8mmM_P88M.label>8mm bullet(FMJ)</Bullet_8mmM_P88M.label>
+  <Bullet_8mmM_SP.label>7.92x57mm bullet(FMJ)</Bullet_8mmM_SP.label>
+  <Bullet_8mmM_KP.label>7.92x57mm bullet(AP)</Bullet_8mmM_KP.label>
+  <Bullet_8mmM_BP.label>7.92x57mm bullet(HE-T)</Bullet_8mmM_BP.label>
 
 
 </LanguageData>

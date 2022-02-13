@@ -225,8 +225,8 @@
 		<label>make 21cm High Explosive Nebelwerfer Rocket x1</label>
 		<description>Craft 21cm High Explosive Nebelwerfer Rocket.</description>
 		<jobString>Making 21cm High Explosive Nebelwerfer Rocket.</jobString>
-		<workAmount>1800</workAmount>
-		<targetCountAdjustment>2</targetCountAdjustment>
+		<workAmount>1960</workAmount>
+		<targetCountAdjustment>1</targetCountAdjustment>
 		<ingredients>
 			<li>
 				<filter>
@@ -290,7 +290,7 @@
 		<description>Craft 15cm High Explosive Nebelwerfer Rocket.</description>
 		<jobString>Making 15cm High Explosive Nebelwerfer Rocket.</jobString>
 		<workAmount>1400</workAmount>
-		<targetCountAdjustment>5</targetCountAdjustment>
+		<targetCountAdjustment>1</targetCountAdjustment>
 		<ingredients>
 			<li>
 				<filter>
@@ -354,7 +354,7 @@
 		<description>Craft 15cm High Explosive Nebelwerfer Rocket(D).</description>
 		<jobString>Making 15cm High Explosive Nebelwerfer Rocket(D).</jobString>
 		<workAmount>1400</workAmount>
-		<targetCountAdjustment>5</targetCountAdjustment>
+		<targetCountAdjustment>1</targetCountAdjustment>
 		<ingredients>
 			<li>
 				<filter>
@@ -418,7 +418,7 @@
 		<description>Craft 15cm Smoke Nebelwerfer Rocket(D).</description>
 		<jobString>Making 15cm Smoke Nebelwerfer Rocket(D).</jobString>
 		<workAmount>1400</workAmount>
-		<targetCountAdjustment>5</targetCountAdjustment>
+		<targetCountAdjustment>1</targetCountAdjustment>
 		<ingredients>
 			<li>
 				<filter>

@@ -38,7 +38,7 @@
 	
 	<ThingDef Class="CombatExtended.AmmoDef" ParentName="763x25mmMBase">
 		<defName>Ammo_763x25mmM_FMJ</defName>
-		<label>7.63x25mm Mauser (FMJ)</label>
+		<label>7.63x25mm Mauser(FMJ)</label>
 		<graphicData>
 			<texPath>Things/Ammo/Mauser/MP/FMJ</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
@@ -52,7 +52,7 @@
 	
 	<ThingDef Class="CombatExtended.AmmoDef" ParentName="763x25mmMBase">
 		<defName>Ammo_763x25mmM_HP</defName>
-		<label>7.63x25mm Mauser (HP)</label>
+		<label>7.63x25mm Mauser(HP)</label>
 		<graphicData>
 			<texPath>Things/Ammo/Mauser/MP/HP</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
@@ -80,7 +80,7 @@
 
 	<ThingDef Class="CombatExtended.AmmoDef" ParentName="Base763x25mmMBullet">
 		<defName>Bullet_763x25mmM_FMJ</defName>
-		<label>7.63mm bullet (FMJ)</label>
+		<label>7.63mm bullet(FMJ)</label>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
 			<speed>140</speed>
 			<damageAmountBase>10</damageAmountBase>
@@ -91,7 +91,7 @@
 	
 	<ThingDef Class="CombatExtended.AmmoDef" ParentName="Base763x25mmMBullet">
 		<defName>Bullet_763x25mmM_HP</defName>
-		<label>7.63mm bullet (HP)</label>
+		<label>7.63mm bullet(HP)</label>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
 			<speed>132</speed>
 			<damageAmountBase>14</damageAmountBase>
@@ -104,9 +104,9 @@
 
 	<RecipeDef ParentName="AmmoRecipePistol">
 		<defName>MakeAmmo_763x25mmM_FMJ</defName>
-		<label>make 7.63x25mm Mauser (FMJ) cartridge x100</label>
-		<description>Craft 100 7.63x25mm Mauser (FMJ) cartridge.</description>
-		<jobString>Making 7.63x25mm Mauser (FMJ) cartridge.</jobString>
+		<label>make 7.63x25mm Mauser(FMJ) cartridge x100</label>
+		<description>Craft 100 7.63x25mm Mauser(FMJ) cartridge.</description>
+		<jobString>Making 7.63x25mm Mauser(FMJ) cartridge.</jobString>
 		<targetCountAdjustment>100</targetCountAdjustment>
 		<ingredients>
 			<li>
@@ -152,9 +152,9 @@
 	
 	<RecipeDef ParentName="AmmoRecipePistol">
 		<defName>MakeAmmo_763x25mmM_HP</defName>
-		<label>make 7.63x25mm Mauser (HP) cartridge x100</label>
-		<description>Craft 100 7.63x25mm Mauser (HP) cartridge.</description>
-		<jobString>Making 7.63x25mm Mauser (HP) cartridge.</jobString>
+		<label>make 7.63x25mm Mauser(HP) cartridge x100</label>
+		<description>Craft 100 7.63x25mm Mauser(HP) cartridge.</description>
+		<jobString>Making 7.63x25mm Mauser(HP) cartridge.</jobString>
 		<targetCountAdjustment>100</targetCountAdjustment>
 		<ingredients>
 			<li>

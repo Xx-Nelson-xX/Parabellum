@@ -101,7 +101,7 @@
                 <defaultProjectile>Bullet_127x42mmB_FMJ</defaultProjectile>
                 <warmupTime>0.8</warmupTime>
                 <range>42</range>
-                <burstShotCount>4</burstShotCount>
+                <burstShotCount>5</burstShotCount>
                 <ticksBetweenBurstShots>5</ticksBetweenBurstShots>
                 <soundCast>Shot_Beowulf</soundCast>
                 <soundCastTail>GunTail_Heavy</soundCastTail>
@@ -115,8 +115,8 @@
                 <aimedBurstShotCount>2</aimedBurstShotCount>
             </li>
             <li Class="CombatExtended.CompProperties_AmmoUser">
-                <magazineSize>12</magazineSize>
-                <reloadTime>1.68</reloadTime>
+                <magazineSize>20</magazineSize>
+                <reloadTime>1.8</reloadTime>
                 <ammoSet>AmmoSet_127x42mmB</ammoSet>
             </li>
         </comps>
@@ -148,10 +148,8 @@
         </statBases>
 		<generateCommonality>0.4</generateCommonality>
         <weaponTags>
-            <li>RF2</li>
             <li>RF3</li>
             <li>Gun</li>
-			<li>SMG3</li>
             <li>TierOneRifle</li>
 			<li>TierTwoRifle</li>
 			<li>AdvancedGun</li>

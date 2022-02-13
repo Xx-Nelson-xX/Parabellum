@@ -12,7 +12,7 @@
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
 			<explosionRadius>2.4</explosionRadius>
 			<damageDef>Bomb</damageDef>
-			<damageAmountBase>50</damageAmountBase>
+			<damageAmountBase>90</damageAmountBase>
 			<explosionDelay>150</explosionDelay>
 			<soundExplode>Explosion_Bomb</soundExplode>
 		</projectile>
@@ -32,16 +32,16 @@
 		<statBases>
 			<Mass>0.6</Mass>
 			<Bulk>1.6</Bulk>
-			<MarketValue>10</MarketValue>
+			<MarketValue>14</MarketValue>
 			<SightsEfficiency>0.75</SightsEfficiency>
 			<RangedWeapon_Cooldown>0.85</RangedWeapon_Cooldown>
 		</statBases>
 		<generateCommonality>0.7</generateCommonality>
 		<weaponTags>
 			<li>GrenadeDestructive</li>
-			<li>GrenadeTierOne</li>
 			<li>GrenadeTierTwo</li>
 			<li>CE_AI_Grenade</li>
+			<li>CE_OneHandedWeapon</li>
 		</weaponTags>
 		<thingCategories>
 			<li>Grenades</li>
@@ -84,7 +84,7 @@
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
 			<explosionRadius>1.85</explosionRadius>
 			<damageDef>Bomb</damageDef>
-			<damageAmountBase>50</damageAmountBase>
+			<damageAmountBase>90</damageAmountBase>
 			<explosionDelay>150</explosionDelay>
 			<soundExplode>Explosion_Bomb</soundExplode>
 		</projectile>
@@ -118,9 +118,10 @@
 		<generateCommonality>0.5</generateCommonality>
 		<weaponTags>
 			<li>GrenadeDestructive</li>
-			<li>GrenadeTierOne</li>
 			<li>GrenadeTierTwo</li>
+			<li>GrenadeTierThree</li>
 			<li>CE_AI_Grenade</li>
+			<li>CE_OneHandedWeapon</li>
 		</weaponTags>
 		<thingCategories>
 			<li>Grenades</li>
@@ -187,7 +188,7 @@
 		<statBases>
 			<Mass>0.6</Mass>
 			<Bulk>1.6</Bulk>
-			<MarketValue>7.2</MarketValue>
+			<MarketValue>10.2</MarketValue>
 			<SightsEfficiency>0.75</SightsEfficiency>
 			<RangedWeapon_Cooldown>0.85</RangedWeapon_Cooldown>
 		</statBases>
@@ -195,6 +196,7 @@
 		<weaponTags>
 			<li>CE_GrenadeSmoke</li>
 			<li>CE_AI_Nonlethal</li>
+			<li>CE_OneHandedWeapon</li>
 		</weaponTags>
 		<thingCategories>
 			<li>Grenades</li>
@@ -236,7 +238,7 @@
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
 			<explosionRadius>5.2</explosionRadius>
 			<damageDef>Bomb</damageDef>
-			<damageAmountBase>350</damageAmountBase>
+			<damageAmountBase>630</damageAmountBase>
 			<explosionDelay>200</explosionDelay>
 			<soundExplode>Explosion_GiantBomb</soundExplode>
 		</projectile>
@@ -256,7 +258,7 @@
 		<statBases>
 			<Mass>3.2</Mass>
 			<Bulk>2.9</Bulk>
-			<MarketValue>64</MarketValue>
+			<MarketValue>84</MarketValue>
 			<SightsEfficiency>0.75</SightsEfficiency>
 			<RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
 		</statBases>
@@ -310,8 +312,8 @@
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
 			<explosionRadius>6</explosionRadius>
 			<damageDef>Bomb</damageDef>
-			<damageAmountBase>700</damageAmountBase>
-			<explosionDelay>300</explosionDelay>
+			<damageAmountBase>1000</damageAmountBase>
+			<explosionDelay>360</explosionDelay>
 			<soundExplode>Explosion_GiantBomb</soundExplode>
 		</projectile>
 		<comps>
@@ -338,7 +340,7 @@
 		<statBases>
 			<Mass>4.6</Mass>
 			<Bulk>3.4</Bulk>
-			<MarketValue>84</MarketValue>
+			<MarketValue>120</MarketValue>
 			<SightsEfficiency>0.65</SightsEfficiency>
 			<RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
 		</statBases>

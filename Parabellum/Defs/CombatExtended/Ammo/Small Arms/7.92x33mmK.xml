@@ -23,7 +23,7 @@
 	<!-- ==================== Ammo ========================== -->
 
 	<ThingDef Class="CombatExtended.AmmoDef" Name="792x33mmKBase" ParentName="SmallAmmoBase" Abstract="True">
-		<description>Early mass produced intermediate catridge, a catridge to fit between 9x19mm Parabellum and 7.92x57mm Mauser, powerful and controllable enough for modern assault rifles.</description>
+		<description>7.92x33mm Kurzpatrone(KP), early mass produced intermediate catridge, a catridge to fit between 9x19mm Parabellum and 7.92x57mm Mauser, powerful and controllable enough for modern assault rifles.</description>
 		<statBases>
 			<Bulk>0.0339</Bulk>
 		</statBases>
@@ -38,7 +38,7 @@
 	
 	<ThingDef Class="CombatExtended.AmmoDef" ParentName="792x33mmKBase">
 		<defName>Ammo_792x33mmK_FMJ</defName>
-		<label>7.92x33mm Kurzpatrone 43(FMJ)</label>
+		<label>7.92x33mm KP 43(FMJ)</label>
 		<graphicData>
 			<texPath>Things/Ammo/Mauser/K/FMJ</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
@@ -53,7 +53,7 @@
 	
 	<ThingDef Class="CombatExtended.AmmoDef" ParentName="792x33mmKBase">
 		<defName>Ammo_792x33mmK_AP</defName>
-		<label>7.92x33mm Kurzpatrone 43 Hart(AP)</label>
+		<label>7.92x33mm KP 43 Hart(AP)</label>
 		<graphicData>
 			<texPath>Things/Ammo/Mauser/K/AP</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
@@ -69,7 +69,7 @@
 	
 	<ThingDef Class="CombatExtended.AmmoDef" ParentName="792x33mmKBase">
 		<defName>Ammo_792x33mmK_J</defName>
-		<label>7.92x33mm Jaggerpatrone 43(J)</label>
+		<label>7.92x33mm JP 43(J)</label>
 		<graphicData>
 			<texPath>Things/Ammo/Mauser/K/J</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
@@ -98,7 +98,7 @@
 
 	<ThingDef Class="CombatExtended.AmmoDef" ParentName="Base792x33mmKBullet">
 		<defName>Bullet_792x33mmK_FMJ</defName>
-		<label>7.92x33mm K bullet (FMJ)</label>
+		<label>7.92x33mm K bullet(FMJ)</label>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
 			<speed>146</speed>
 			<damageAmountBase>17</damageAmountBase>
@@ -109,7 +109,7 @@
 	
 	<ThingDef Class="CombatExtended.AmmoDef" ParentName="Base792x33mmKBullet">
 		<defName>Bullet_792x33mmK_AP</defName>
-		<label>7.92x33mm K bullet (AP)</label>
+		<label>7.92x33mm K bullet(AP)</label>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
 			<speed>152</speed>
 			<damageAmountBase>18</damageAmountBase>
@@ -120,7 +120,7 @@
 	
 	<ThingDef Class="CombatExtended.AmmoDef" ParentName="Base792x33mmKBullet">
 		<defName>Bullet_792x33mmK_J</defName>
-		<label>7.92x33mm K bullet (J)</label>
+		<label>7.92x33mm K bullet(J)</label>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
 			<speed>160</speed>
 			<spreadMult>0.85</spreadMult>

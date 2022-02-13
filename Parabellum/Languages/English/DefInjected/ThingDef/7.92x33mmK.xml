@@ -3,21 +3,21 @@
 
   <!-- Ammo -->
 
-  <Ammo_792x33mmK_FMJ.label>7.92x33mm Kurzpatrone 43(FMJ)</Ammo_792x33mmK_FMJ.label>
+  <Ammo_792x33mmK_FMJ.label>7.92x33mm KP 43(FMJ)</Ammo_792x33mmK_FMJ.label>
   <Ammo_792x33mmK_FMJ.description>Early mass produced intermediate catridge, a catridge to fit between 9x19mm Parabellum and 7.92x57mm Mauser, powerful and controllable enough for modern assault rifles.</Ammo_792x33mmK_FMJ.description>
 
-  <Ammo_792x33mmK_AP.label>7.92x33mm Kurzpatrone 43 Hart(AP)</Ammo_792x33mmK_AP.label>
+  <Ammo_792x33mmK_AP.label>7.92x33mm KP 43 Hart(AP)</Ammo_792x33mmK_AP.label>
   <Ammo_792x33mmK_AP.description>Early mass produced intermediate catridge, a catridge to fit between 9x19mm Parabellum and 7.92x57mm Mauser, powerful and controllable enough for modern assault rifles.</Ammo_792x33mmK_AP.description>
 
-  <Ammo_792x33mmK_J.label>7.92x33mm Jaggerpatrone 43(J)</Ammo_792x33mmK_J.label>
+  <Ammo_792x33mmK_J.label>7.92x33mm JP 43(J)</Ammo_792x33mmK_J.label>
   <Ammo_792x33mmK_J.description>Early mass produced intermediate catridge, a catridge to fit between 9x19mm Parabellum and 7.92x57mm Mauser, powerful and controllable enough for modern assault rifles.</Ammo_792x33mmK_J.description>
 
 
   <!-- Projectiles -->
 
-  <Bullet_792x33mmK_FMJ.label>7.92x33mm K bullet (FMJ)</Bullet_792x33mmK_FMJ.label>
-  <Bullet_792x33mmK_AP.label>7.92x33mm K bullet (AP)</Bullet_792x33mmK_AP.label>
-  <Bullet_792x33mmK_J.label>7.92x33mm K bullet (J)</Bullet_792x33mmK_J.label>
+  <Bullet_792x33mmK_FMJ.label>7.92x33mm K bullet(FMJ)</Bullet_792x33mmK_FMJ.label>
+  <Bullet_792x33mmK_AP.label>7.92x33mm K bullet(AP)</Bullet_792x33mmK_AP.label>
+  <Bullet_792x33mmK_J.label>7.92x33mm K bullet(J)</Bullet_792x33mmK_J.label>
 
 
 </LanguageData>

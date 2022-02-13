@@ -137,7 +137,7 @@
 				<!--<forcedMissRadius>2</forcedMissRadius>-->
 				<circularError>0.6</circularError>
 				<minRange>40</minRange>
-				<range>158</range>
+				<range>180</range>
 				<warmupTime>4.8</warmupTime>
 				<ticksBetweenBurstShots>16</ticksBetweenBurstShots>
 				<burstShotCount>24</burstShotCount>

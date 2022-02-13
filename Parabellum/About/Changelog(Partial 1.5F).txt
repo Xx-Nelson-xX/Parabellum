@@ -1,0 +1,54 @@
+<--------------------------------------- 1.5 -------------------------------------------->
+								*New Update for RW HSK 1.3
+	Planned features for the next update:
+	- Turrets:
+		+ M202 FLASH turret somesort(66mm LAW rockets)
+	- Modular WWI~Cold War Armor
+	- Combat Drugs and First Aids(?)
+	- New stuff from latest build of CE:
+		+ Night Vision
+		+ Flare
+	- ???
+	
+1.5F - 5 apparels, 1 weapon, texture improvements and tweaks
+
+Pistol:
+- SW.50B: .50 Beaowulf, 5 shots Single/Double Action, a pocket handcannon chambered in .50 Beowulf rounds
+
+Apparels:
+*Head gear:
++ Standard Stahlhelm 	- layer: Head(Outer?), coverage: ears and head, cheap piece of 40s~60s military metallic helmet, offers decent protection counter small fragments and some pistol round with the the basic steel variant
++ Sturmtooper Stahlhelm - layer: Fullhead, coverage: the entire head portion and neck, reinforced variant of the basic Stahlhelm, comes with face plate and extra metallic plate in the forehead part, capable to protect rifle rounds with increased protection but is bit more bulkier, heavier and expensive as trade off
+
+*Body Armor:
++ Sappenpanzer			- layer: Shell(Outer), coverage: neck, shoulders, chest and torso, modernized body armor, cover the body center mass, capable to deflect small fragments, some pistol rounds and maybe some rifle rounds
++ SN-46 Breast plate	- layer: Shell(Outer), coverage: neck, chest and torso, 50s Post War body armor, cover the body center mass, capable to deflect small~medium size fragments, most pistol rounds and some rifle rounds
++ 6B5 Ballistic Vest	- layer: Middle,	   coverage: neck, shoulders, chest and torso, 90s~2000s ballistic vest, capable to deflect large size fragments, and probably up to 5.56x45mm NATO AP rounds
+
+Tweaks:
+*changed simple cannon crates weight from 400kg -> 200kg
+*Readjusted Mk.18 Mod.0 GL Outline
+*Fixed a Typo from the 3.7cm Flak 37/L89 AA gun
+*The M960(M) Calico will no longer spawn as SMG but Carabine like the Beretta Cx4 Storm and UMP 45
+*Lowered the skill requirement to build both 12.8cm cannon: 12.8cm PaK 44 HATGP 15 -> 14, 	12.8cm FlaK 40(z) HAAP 18 -> 16
+*Slightly modified FG 42 shooting sounds
++Buff RVW MRLP range from 158 -> 180
+*Shorter label for Mauser ammo
++buff 12.8cm PaK 44/L56 sight efficiency from 220% to 250%
+*Adjusted Recipe Output stack for 120mm, 12.8cm and 155mm shells
++More metallic material options available to craft weapons
+*Fix some Typo for the English language file
+*Pawn get shot by Salt Shot Shell now will slowly heal/recover from the blindness debuff without tending it
+*Updated the Mod load order setting in About.xml
+*M24 grenades no longer available for medieval stage raider, hopefully, the Splitter ring variant now should be available for spacer tech
+*Most Grenade recipes are moved to Weapon bench, RGO Impact grenade recipe are moved to Advanced Weapon Crafting bench and it research to Guns II, also added production count adjustment for them
++Buffed M4.50 Beowulf SC magazine capacity, now holds 20 rounds instead of 12, while also increased its reload time from 1.68 -> 1.8 and the firemode from 1s2b4a -> 1s2b5a
+*Changed the 40x46mm special grenades old ParentName, and buffed the 40mm Flechette round damage from 8 -> 10, doesn't makes sense it cause the same damage per pellet as the 12 gauge buckshot pellet
++Changed how the 25x59mm HEI, M202 FLASH and 32cm Nebelwerfer Incendiary Rockets work, now it ignite the fuel puddle the moment it explode
++Reduced M202 FLASH bulk size from 19 -> 17
++Buff for the Stielhandgranate, the M24 basic variant damage from 50 -> 90, the bundle variant from 350 -> 630, and the 4KG demolition charge from 700 -> 1000 DMG, so their respective price
+*Resize of PaK 40, PaK 44 and Flak 40z, also increased the outline of PaK 44 and added outline for Wurfrahmen
++Changed the mass and bulk of 25x59mm grenade round after further investigation, now is ligher to carry around
+-Changed slightly the .50 Beowulf projectile speed for: HP 106 -> 94 	FMJ 102 -> 96	EMP 102 -> 96
+*Increased C96 and M712 pistol outline also reduced 25% their resolution
+*Readjusted the cannon, autocannons/HMG, grenades(Grenade Launcher) and rocket recipe workspeed, now is no longer the default 3000 workAmount for everything

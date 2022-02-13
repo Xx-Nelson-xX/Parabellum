@@ -26,8 +26,8 @@
 	<ThingDef Class="CombatExtended.AmmoDef" Name="25x59mmGrenadeBase" ParentName="AmmoBase" Abstract="True">
 		<description>High velocity grenade fired from OSW/AMPR system.</description>
 		<statBases>
-			<Mass>0.174</Mass>
-			<Bulk>0.24</Bulk>
+			<Mass>0.132</Mass>
+			<Bulk>0.165</Bulk>
 		</statBases>
 		<tradeTags>
 			<li>CE_AutoEnableTrade</li>
@@ -63,6 +63,7 @@
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<statBases>
+			<Mass>0.141</Mass>
 			<MarketValue>5.8</MarketValue>
 		</statBases>
 		<ammoClass>25x59mmHEDP</ammoClass>
@@ -174,8 +175,12 @@
 		<defName>Bullet_25x59mmGrenade_HEI</defName>
 		<label>25x59mm grenade (HEI)</label>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
-			<damageAmountBase>5</damageAmountBase>
-			<damageDef>PrometheumFlame</damageDef>
+			<damageDef>Flame</damageDef>
+			<damageAmountBase>18</damageAmountBase>
+			<explosionRadius>1.5</explosionRadius>
+			<soundExplode>MortarBomb_Explode</soundExplode>
+			<preExplosionSpawnThingDef>Filth_Fuel</preExplosionSpawnThingDef>
+			<preExplosionSpawnChance>0.5</preExplosionSpawnChance>
 			<ai_IsIncendiary>true</ai_IsIncendiary>
 			<secondaryDamage>
 				<li>
@@ -190,9 +195,11 @@
 		</projectile>
 		<comps>
 			<li Class="CombatExtended.CompProperties_ExplosiveCE">
-				<damageAmountBase>18</damageAmountBase>
-				<explosiveDamageType>Bomb</explosiveDamageType>
-				<explosiveRadius>1.5</explosiveRadius>
+				<damageAmountBase>0</damageAmountBase>
+				<explosiveDamageType>PrometheumFlame</explosiveDamageType>
+				<explosiveRadius>1.8</explosiveRadius>				
+				<preExplosionSpawnThingDef>FilthPrometheum</preExplosionSpawnThingDef>
+				<preExplosionSpawnChance>0.25</preExplosionSpawnChance>
 			</li>
 			<li Class="CombatExtended.CompProperties_Fragments">
 				<fragments>
@@ -245,6 +252,7 @@
 		<label>make 25x59mm HEAB grenades x50</label>
 		<description>Craft 50 25x59mm HEAB grenades.</description>
 		<jobString>Making 25x59mm HEAB grenades.</jobString>
+		<workAmount>5000</workAmount>
 		<targetCountAdjustment>50</targetCountAdjustment>
 		<ingredients>
 			<li>
@@ -303,6 +311,7 @@
 		<label>make 25x59mm HEDP grenades x50</label>
 		<description>Craft 50 25x59mm HEDP grenades.</description>
 		<jobString>Making 25x59mm HEDP grenades.</jobString>
+		<workAmount>5000</workAmount>
 		<targetCountAdjustment>50</targetCountAdjustment>
 		<ingredients>
 			<li>
@@ -352,6 +361,7 @@
 		<label>make 25x59mm HEI grenades x50</label>
 		<description>Craft 50 25x59mm HEI grenades.</description>
 		<jobString>Making 25x59mm HEI grenades.</jobString>
+		<workAmount>5000</workAmount>
 		<targetCountAdjustment>50</targetCountAdjustment>
 		<ingredients>
 			<li>
@@ -410,6 +420,7 @@
 		<label>make 25x59mm HE-EMP grenades x50</label>
 		<description>Craft 50 25x59mm HE-EMP grenades.</description>
 		<jobString>Making 25x59mm HE-EMP grenades.</jobString>
+		<workAmount>5000</workAmount>
 		<targetCountAdjustment>50</targetCountAdjustment>
 		<ingredients>
 			<li>

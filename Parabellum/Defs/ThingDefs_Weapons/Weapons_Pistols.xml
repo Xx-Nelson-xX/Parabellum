@@ -264,4 +264,72 @@
 		</smeltProducts>
 	</ThingDef>
 	
+	<!-- Smith & Wesson .50 Beowulf Revolver -->
+	<ThingDef ParentName="BaseGun_ShortBarreled">
+		<defName>Pa_SW50B</defName>
+		<label>SW.50B Revolver</label>
+		<description>A compact handcannon, a short barrel SW Model 500 revolver, capable to chamber both .50 Beowulf and .500 SW, since both are very similar except the rim difference.</description>
+		<graphicData>
+			<texPath>Things/Weapons/Pistols/SW50B</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Interact_Revolver</soundInteract>
+		<statBases>
+			<MarketValue>1150</MarketValue>
+			<SightsEfficiency>1.08</SightsEfficiency>
+			<ShotSpread>0.1</ShotSpread>
+			<SwayFactor>1.2</SwayFactor>
+			<RangedWeapon_Cooldown>0.5</RangedWeapon_Cooldown>
+			<Bulk>1.6</Bulk>
+			<Mass>1.5</Mass>
+		</statBases>
+		<generateCommonality>0.4</generateCommonality>
+		<weaponTags>
+			<li>PT2</li>
+			<li>Gun</li>
+			<li>AdvancedGun</li>
+			<li>TierTwoPistol</li>
+			<li>CE_Sidearm</li>
+			<li>CE_AI_Pistol</li>
+			<li>CE_OneHandedWeapon</li>
+		</weaponTags>
+		<thingCategories>
+			<li>Pistols</li>
+		</thingCategories>
+		<verbs>
+			<li Class="CombatExtended.VerbPropertiesCE">
+				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_127x42mmB_HP</defaultProjectile>
+				<warmupTime>0.42</warmupTime>
+				<range>30</range>
+				<soundCast>ShotDesertEagle</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>14</muzzleFlashScale>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="CombatExtended.CompProperties_FireModes">
+				<aiAimMode>AimedShot</aiAimMode>
+			</li>
+			<li Class="CombatExtended.CompProperties_AmmoUser">
+				<magazineSize>5</magazineSize>
+				<reloadOneAtATime>true</reloadOneAtATime>
+				<reloadTime>0.5</reloadTime>
+				<ammoSet>AmmoSet_127x42mmB</ammoSet>
+			</li>
+		</comps>
+		<modExtensions>
+		  <li Class="CombatExtended.GunDrawExtension">
+			<DrawSize>0.46</DrawSize>
+		  </li>
+		</modExtensions>
+		<smeltProducts>
+			<Heavy_Component>1</Heavy_Component>
+			<Pistol_Component>1</Pistol_Component>
+			<Weapon_Parts>2</Weapon_Parts>
+			<Rubber>2</Rubber>
+		</smeltProducts>
+	</ThingDef>
+	
 </Defs>

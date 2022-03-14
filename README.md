@@ -14,12 +14,13 @@ FEATURES:
 mostly Industrial scale stuff(IRL,Between WWI era and till Nowadays)
 
 +  Reworked Progression tech tree for:
-1. Guns, lots of guns
+1. Weapons
 2. Turrets
 3. Explosives
 4. New Ammo type
+5. Apparels
 
-*COMPATIBLE OPTIONAL MODS:*
+## COMPATIBLE OPTIONAL MODS:
 
 1. HMC More Content(Some of my weapons share their catridge and also add ammo for it) -> https://discord.com/channels/272340793174392832/745746107329413121/823202940910829568(Discord Link)
 
@@ -27,7 +28,7 @@ mostly Industrial scale stuff(IRL,Between WWI era and till Nowadays)
 
 3. N's Lazy Patcher(Patch mod made by myself, open for suggestion) -> https://github.com/Xx-Nelson-xX/N-s-Lazy-Patching/tree/N's-Lazy-Patcher/N's%20lazy%20patching/Patches
 
-**INSTALLATION(Manually):**
+## INSTALLATION(Manually):
 
 1. Locate your game directory
 2. Locate the Rimworld "Mod" folder
@@ -42,9 +43,11 @@ mostly Industrial scale stuff(IRL,Between WWI era and till Nowadays)
 11. Done
 
 
-*EXTRA NOTES:*
+## EXTRA NOTES:
 
 **NOW THE MOD HAS SEPARATED PACKAGE**
+
+*outsated*
 
 *(only maintained with the latest features, for any old version, pin me in the Discord server for it)
 
@@ -59,9 +62,9 @@ to get them you need to switch the branch from "main" to any of them, don't use 
 
 **¿BASE GAME SUPPORT?**
 
-Mmmmm maybe, gonna have a hard time balance it, material conversion, obligatory use CE within the mod, probably change all the stats of all the weapons and turrets since the Base game CE has totally different balance compared to the one in HSK
+  Unlikely, let's say I lost my hope, interest and support for the RW basegame, there is serious issue with Tynan "Game Design" and the RW community itself, I don't hate the community, actually I love few of them, they helped me go throught all the issue and improve my modding skill for RW, but there is bunch of them that I feels absolutely disgusted about how unprofessional, unhealthy, and bad is their feedback... Sorry, I just don't want to think about it to be honest 
 
-I do speak and write English, Spanish and Chinese(not traditional, atleast not writing it), the thing is, I never mastered any of those language so typo is expected, and English is not my main language, I am just fortunate to learn it when I was young, and sadly I don't speak Russian, I can't interact with the russian server of HSK due that reason 
+I do speak and write English, Spanish and Chinese(not traditional, atleast not writing it), the thing is, I never mastered any of those language so typo is expected, and English is not my main language, I am just fortunate to learn it when I was young, and sadly I don't speak Russian, I can't really interact with the russian server of HSK due that reason 
 
 Any issue(either balance or bug) or suggestion report it to me please!
 

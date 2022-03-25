@@ -85,7 +85,7 @@
             <SightsEfficiency>1.2</SightsEfficiency>
             <ShotSpread>0.07</ShotSpread>
             <SwayFactor>1.55</SwayFactor>
-            <RangedWeapon_Cooldown>0.95</RangedWeapon_Cooldown>
+            <RangedWeapon_Cooldown>1.2</RangedWeapon_Cooldown>
             <Bulk>7.2</Bulk>
             <Mass>3.7</Mass>
         </statBases>
@@ -110,7 +110,7 @@
                 <defaultProjectile>Bullet_12Gauge_Buck</defaultProjectile>
                 <burstShotCount>5</burstShotCount>
                 <ticksBetweenBurstShots>12</ticksBetweenBurstShots>
-                <warmupTime>1.2</warmupTime>
+                <warmupTime>0.95</warmupTime>
                 <range>20</range>
 				<targetParams>
                     <canTargetLocations>true</canTargetLocations>
@@ -154,7 +154,7 @@
             <SightsEfficiency>0.75</SightsEfficiency>
             <ShotSpread>0.26</ShotSpread>
             <SwayFactor>1.7</SwayFactor>
-            <RangedWeapon_Cooldown>0.4</RangedWeapon_Cooldown>
+            <RangedWeapon_Cooldown>0.45</RangedWeapon_Cooldown>
             <Bulk>3.1</Bulk>
             <Mass>1.8</Mass>
         </statBases>
@@ -176,7 +176,7 @@
                 <verbClass>CombatExtended.Verb_ShootCE</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
                 <defaultProjectile>Bullet_12Gauge_Buck</defaultProjectile>
-                <warmupTime>0.45</warmupTime>
+                <warmupTime>0.4</warmupTime>
                 <range>11</range>
 				<targetParams>
                     <canTargetLocations>true</canTargetLocations>
@@ -227,7 +227,7 @@
             <SightsEfficiency>0.7</SightsEfficiency>
             <ShotSpread>0.16</ShotSpread>
             <SwayFactor>1.68</SwayFactor>
-            <RangedWeapon_Cooldown>0.86</RangedWeapon_Cooldown>
+            <RangedWeapon_Cooldown>0.9</RangedWeapon_Cooldown>
             <Bulk>8.6</Bulk>
             <Mass>3.6</Mass>
         </statBases>
@@ -245,7 +245,7 @@
                 <verbClass>CombatExtended.Verb_ShootCE</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
                 <defaultProjectile>Bullet_10Gauge_Buck</defaultProjectile>
-                <warmupTime>0.9</warmupTime>
+                <warmupTime>0.86</warmupTime>
                 <range>17</range>
                 <soundCast>Shot_Shotgun</soundCast>
                 <soundCastTail>GunTail_Heavy</soundCastTail>
@@ -291,7 +291,7 @@
             <SightsEfficiency>0.56</SightsEfficiency>
             <ShotSpread>0.24</ShotSpread>
             <SwayFactor>1.82</SwayFactor>
-            <RangedWeapon_Cooldown>0.48</RangedWeapon_Cooldown>
+            <RangedWeapon_Cooldown>0.6</RangedWeapon_Cooldown>
             <Bulk>4.89</Bulk>
             <Mass>3.1</Mass>
         </statBases>
@@ -313,7 +313,7 @@
                 <verbClass>CombatExtended.Verb_ShootCE</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
                 <defaultProjectile>Bullet_10Gauge_Buck</defaultProjectile>
-                <warmupTime>0.6</warmupTime>
+                <warmupTime>0.48</warmupTime>
                 <range>10</range>
                 <soundCast>Shot_Shotgun</soundCast>
                 <soundCastTail>GunTail_Heavy</soundCastTail>
@@ -361,7 +361,7 @@
             <SightsEfficiency>0.85</SightsEfficiency>
             <ShotSpread>0.18</ShotSpread>
             <SwayFactor>1.58</SwayFactor>
-            <RangedWeapon_Cooldown>0.78</RangedWeapon_Cooldown>
+            <RangedWeapon_Cooldown>0.87</RangedWeapon_Cooldown>
             <Bulk>10.1</Bulk>
             <Mass>4.1</Mass>
         </statBases>
@@ -388,7 +388,7 @@
                 <verbClass>CombatExtended.Verb_ShootCE</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
                 <defaultProjectile>Bullet_12Gauge_Buck</defaultProjectile>
-                <warmupTime>0.87</warmupTime>
+                <warmupTime>0.78</warmupTime>
                 <range>16</range>
                 <soundCast>Shot_Shotgun</soundCast>
                 <soundCastTail>GunTail_Heavy</soundCastTail>
@@ -436,7 +436,7 @@
             <SightsEfficiency>1</SightsEfficiency>
             <ShotSpread>0.1</ShotSpread>
             <SwayFactor>1.48</SwayFactor>
-            <RangedWeapon_Cooldown>1.2</RangedWeapon_Cooldown>
+            <RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
             <Bulk>10.8</Bulk>
             <Mass>4.6</Mass>
         </statBases>
@@ -456,7 +456,7 @@
                 <verbClass>CombatExtended.Verb_ShootCE</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
                 <defaultProjectile>Bullet_12Gauge_Buck</defaultProjectile>
-                <warmupTime>1.1</warmupTime>
+                <warmupTime>0.86</warmupTime>
                 <range>22</range>
                 <soundCast>Shot_Shotgun</soundCast>
                 <soundCastTail>GunTail_Heavy</soundCastTail>
@@ -484,6 +484,143 @@
         <smeltProducts>
             <Plasteel>7</Plasteel>
             <ComponentIndustrial>4</ComponentIndustrial>
+        </smeltProducts>
+    </ThingDef>
+	
+	<!-- Browning Automatic 5 -->
+    <ThingDef ParentName="BaseGun_LongBarreled">
+        <defName>Pa_BA5L</defName>
+        <label>Browning Auto-5</label>
+        <description>An ancient recoil-operated semi-automatic shotgun. The Browning Auto-5 was the first mass-produced semi-automatic shotgun. Designed by John Browning. Shells are stored in a tubular magazine under the barrel. When a chambered shell is fired, the barrel and bolt recoil together and re-cock the hammer. As the barrel returns forward to its initial position the bolt remains behind and thus the spent shell is ejected through a port on the right-hand side of the receiver. Then the bolt returns forward and feeds another shell from the magazine into the action. This type of long recoil action was the first of its kind and patented in 1900 by John Browning.</description>
+        <graphicData>
+            <texPath>Things/Weapons/Shotguns/BA5L</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>Interact_Rifle</soundInteract>
+		<generateCommonality>0.6</generateCommonality>
+		<equippedAngleOffset>45</equippedAngleOffset>
+        <statBases>
+            <MarketValue>650</MarketValue>
+            <SightsEfficiency>0.9</SightsEfficiency>
+            <ShotSpread>0.14</ShotSpread>
+            <SwayFactor>1.52</SwayFactor>
+            <RangedWeapon_Cooldown>0.9</RangedWeapon_Cooldown>
+            <Bulk>8</Bulk>
+            <Mass>4.1</Mass>
+        </statBases>
+        <weaponTags>
+            <li>ST2</li>
+            <li>Gun</li>
+			<li>TierOnePistol</li>
+            <li>TierTwoPistol</li>
+			<li>CE_AI_AssaultWeapon</li>
+        </weaponTags>
+        <thingCategories>
+            <li>Shotguns</li>
+        </thingCategories>
+        <verbs>
+            <li Class="CombatExtended.VerbPropertiesCE">
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>Bullet_12Gauge_Buck</defaultProjectile>
+                <warmupTime>0.38</warmupTime>
+                <range>16</range>
+				<ticksBetweenBurstShots>20</ticksBetweenBurstShots>
+                <soundCast>Shot_CAWS</soundCast>
+                <soundCastTail>GunTail_Heavy</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+            </li>
+        </verbs>
+        <comps>
+            <li Class="CombatExtended.CompProperties_FireModes">
+                <aiAimMode>AimedShot</aiAimMode>
+				<noSingleShot>FALSE</noSingleShot>
+            </li>
+            <li Class="CombatExtended.CompProperties_AmmoUser">
+                <magazineSize>5</magazineSize>
+				<reloadOneAtATime>true</reloadOneAtATime>
+                <reloadTime>0.8</reloadTime>
+                <ammoSet>AmmoSet_12Gauge</ammoSet>
+            </li>
+        </comps>
+		<modExtensions>
+		  <li Class="CombatExtended.GunDrawExtension">
+			<DrawSize>1.1</DrawSize>
+		  </li>
+		</modExtensions>
+        <smeltProducts>
+			<Shotgun_Component>1</Shotgun_Component>
+			<ComponentIndustrial>1</ComponentIndustrial>
+            <Weapon_Parts>1</Weapon_Parts>
+			<Plasteel>6</Plasteel>
+        </smeltProducts>
+    </ThingDef>
+	
+	<!-- Browning Automatic 5(Sawoff with 10 inch barrel) -->
+    <ThingDef ParentName="BaseGun_LongBarreled">
+        <defName>Pa_BA5S</defName>
+        <label>Sawed-off Browning Auto-5</label>
+        <description>An ancient recoil-operated semi-automatic shotgun. The Browning Auto-5 was the first mass-produced semi-automatic shotgun. Designed by John Browning. Shells are stored in a tubular magazine under the barrel. When a chambered shell is fired, the barrel and bolt recoil together and re-cock the hammer. As the barrel returns forward to its initial position the bolt remains behind and thus the spent shell is ejected through a port on the right-hand side of the receiver. Then the bolt returns forward and feeds another shell from the magazine into the action. This type of long recoil action was the first of its kind and patented in 1900 by John Browning.</description>
+        <graphicData>
+            <texPath>Things/Weapons/Shotguns/BA5S</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>Interact_Rifle</soundInteract>
+		<generateCommonality>0.4</generateCommonality>
+        <statBases>
+            <MarketValue>580</MarketValue>
+            <SightsEfficiency>0.78</SightsEfficiency>
+            <ShotSpread>0.2</ShotSpread>
+            <SwayFactor>1.52</SwayFactor>
+            <RangedWeapon_Cooldown>0.75</RangedWeapon_Cooldown>
+            <Bulk>4</Bulk>
+            <Mass>3.2</Mass>
+        </statBases>
+        <weaponTags>
+            <li>ST2</li>
+            <li>Gun</li>
+			<li>TierOnePistol</li>
+            <li>TierTwoPistol</li>
+			<li>CE_Sidearm</li>
+			<li>CE_OneHandedWeapon</li>
+			<li>CE_AI_AssaultWeapon</li>
+        </weaponTags>
+        <thingCategories>
+            <li>Shotguns</li>
+        </thingCategories>
+        <verbs>
+            <li Class="CombatExtended.VerbPropertiesCE">
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>Bullet_12Gauge_Buck</defaultProjectile>
+                <warmupTime>0.3</warmupTime>
+                <range>10</range>
+				<ticksBetweenBurstShots>15</ticksBetweenBurstShots>
+                <soundCast>Shot_CAWS</soundCast>
+                <soundCastTail>GunTail_Heavy</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+            </li>
+        </verbs>
+        <comps>
+            <li Class="CombatExtended.CompProperties_FireModes">
+                <aiAimMode>AimedShot</aiAimMode>
+				<noSingleShot>FALSE</noSingleShot>
+            </li>
+            <li Class="CombatExtended.CompProperties_AmmoUser">
+                <magazineSize>5</magazineSize>
+				<reloadOneAtATime>true</reloadOneAtATime>
+                <reloadTime>0.6</reloadTime>
+                <ammoSet>AmmoSet_12Gauge</ammoSet>
+            </li>
+        </comps>
+		<modExtensions>
+		  <li Class="CombatExtended.GunDrawExtension">
+			<DrawSize>0.7</DrawSize>
+		  </li>
+		</modExtensions>
+        <smeltProducts>
+            <Shotgun_Component>1</Shotgun_Component>
+			<Plasteel>12</Plasteel>
         </smeltProducts>
     </ThingDef>
 

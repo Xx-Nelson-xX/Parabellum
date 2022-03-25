@@ -448,4 +448,152 @@
 		<researchPrerequisite>Parabellum_Alpha</researchPrerequisite>
 	</RecipeDef>
 	
+	<!-- Browning Automatic 5-->
+	<RecipeDef ParentName="RangedWeaponRecipeBase">
+		<defName>BuildPa_BA5L</defName>
+		<label>Build Browning Auto-5</label>
+		<description>Build Browning Automatic 5, claimed by John Browning, his best achievement, sucks that Winchester didn't wanted it.\nCaliber: 12 Gauge</description>
+		<jobString>Building Browning Auto-5.</jobString>
+		<workAmount>13800</workAmount>
+		<skillRequirements>
+			<Crafting>6</Crafting>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Shotgun_Component</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Weapon_Parts</li>
+					</thingDefs>
+				</filter>
+				<count>4</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>6</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>Metallic</li>
+					</categories>
+				</filter>
+				<count>40</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>Woody</li>
+					</categories>
+				</filter>
+				<count>18</count>
+			</li>
+		</ingredients>
+		<products>
+			<Pa_BA5L>1</Pa_BA5L>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>ComponentIndustrial</li>
+				<li>Shotgun_Component</li>
+				<li>Weapon_Parts</li>
+			</thingDefs>
+			<categories>
+				<li>SLDBar</li>
+				<li>USLDBar</li>
+				<li>HCMBar</li>
+				<li>Woody</li>
+			</categories>
+		</fixedIngredientFilter>
+		<recipeUsers>
+			<li>WeaponCraftingWorkTable</li>
+		</recipeUsers>
+		<researchPrerequisite>Machining</researchPrerequisite>
+	</RecipeDef>
+	
+	<!-- Browning Automatic 5(Sawoff with 10 inch barrel) -->
+	<RecipeDef ParentName="RangedWeaponRecipeBase">
+		<defName>BuildPa_BA5S</defName>
+		<label>Build Browning Automatic 5(Sawed off)</label>
+		<description>Build Browning Automatic 5(Sawed off), the standard one for the Riot an police force, this one goes in the Mob's arsenal.\nCaliber: 12 Gauge</description>
+		<jobString>Building Browning Auto-5(Sawed off).</jobString>
+		<workAmount>10500</workAmount>
+		<skillRequirements>
+			<Crafting>6</Crafting>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Shotgun_Component</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Weapon_Parts</li>
+					</thingDefs>
+				</filter>
+				<count>4</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>Metallic</li>
+					</categories>
+				</filter>
+				<count>22</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>Woody</li>
+					</categories>
+				</filter>
+				<count>10</count>
+			</li>
+		</ingredients>
+		<products>
+			<Pa_BA5S>1</Pa_BA5S>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>ComponentIndustrial</li>
+				<li>Shotgun_Component</li>
+				<li>Weapon_Parts</li>
+			</thingDefs>
+			<categories>
+				<li>SLDBar</li>
+				<li>USLDBar</li>
+				<li>HCMBar</li>
+				<li>Woody</li>
+			</categories>
+		</fixedIngredientFilter>
+		<recipeUsers>
+			<li>WeaponCraftingWorkTable</li>
+		</recipeUsers>
+		<researchPrerequisite>GasOperation</researchPrerequisite>
+	</RecipeDef>
+	
 </Defs>

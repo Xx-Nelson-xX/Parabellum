@@ -4,7 +4,7 @@
 		<defName>Parabellum_Alpha</defName>
 		<label>Parebellum</label>
 		<description>Welcome to the gap between Industrial and Pre-Industrial, where the preparation of war is essential, future enemies awaits, and you are about to witness the wonder of humanity achieved by using violence combined with intelligence.</description>
-		<baseCost>400</baseCost>
+		<baseCost>1000</baseCost>
 		<techLevel>Medieval</techLevel>
 		<researchViewX>7.00</researchViewX>
 		<researchViewY>30.00</researchViewY>
@@ -18,7 +18,7 @@
 		<defName>Parabellum_Beta</defName>
 		<label>Defensive Measure I</label>
 		<description>Early Development of Medium Machine Guns, something to deal with a horde of angry mobs and your not-so-friendly neighbor paying you a surprise visit in considerable large number.</description>
-		<baseCost>400</baseCost>
+		<baseCost>500</baseCost>
 		<techLevel>Medieval</techLevel>
 		<researchViewX>9.00</researchViewX>
 		<researchViewY>36.00</researchViewY>

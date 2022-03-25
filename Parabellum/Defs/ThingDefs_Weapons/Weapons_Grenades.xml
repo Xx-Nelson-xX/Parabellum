@@ -471,7 +471,7 @@
 		</thingCategories>
 		<smeltProducts>
 			<Plasteel>5</Plasteel>
-			<Powder>2</Powder>
+			<Powder>1</Powder>
 			<Weapon_Parts>1</Weapon_Parts>
 		</smeltProducts>
 	</ThingDef>

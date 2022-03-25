@@ -24,7 +24,7 @@
 		<verbs>
 			<li Class="CombatExtended.VerbPropertiesCE">
 				<recoilPattern>Mounted</recoilPattern>
-				<recoilAmount>0.78</recoilAmount>
+				<recoilAmount>0.64</recoilAmount>
 				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Bullet_8mmM_SP</defaultProjectile>
@@ -64,7 +64,7 @@
 		<tradeability>None</tradeability>
 		<statBases>
 			<MarketValue>420</MarketValue>
-			<SightsEfficiency>1.6</SightsEfficiency>
+			<SightsEfficiency>1.8</SightsEfficiency>
 			<ShotSpread>0.04</ShotSpread>
 			<SwayFactor>0.7</SwayFactor>
 			<RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
@@ -73,7 +73,7 @@
 		<verbs>
 			<li Class="CombatExtended.VerbPropertiesCE">
 				<recoilPattern>Mounted</recoilPattern>
-				<recoilAmount>0.66</recoilAmount>
+				<recoilAmount>0.4</recoilAmount>
 				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Bullet_8mmM_SP</defaultProjectile>

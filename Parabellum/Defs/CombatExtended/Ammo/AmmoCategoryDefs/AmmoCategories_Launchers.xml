@@ -60,21 +60,6 @@
     <description>Incendiary round to scorch an area with flames.</description>
   </CombatExtended.AmmoCategoryDef>
   
-  <!-- =============== Panzerfaust Warheads =============== -->
-  <CombatExtended.AmmoCategoryDef>
-    <defName>PzFHEAT</defName>
-    <label>Panzerfaust HEAT</label>
-    <labelShort>PzF HEAT</labelShort>
-    <description>Mass produced Shape Charge Anti-Tank Warhead, excellent counter armored target.</description>
-  </CombatExtended.AmmoCategoryDef>
-  
-  <CombatExtended.AmmoCategoryDef>
-    <defName>PzFFrag</defName>
-    <label>Panzerfaust Frag</label>
-    <labelShort>PzF Frag</labelShort>
-    <description>Modified warhead, filled with metal fragments and shrapnels.</description>
-  </CombatExtended.AmmoCategoryDef>
-  
   <!-- =============== 25x59mm grenades =============== -->
   <CombatExtended.AmmoCategoryDef>
     <defName>25x59mmHEAB</defName>

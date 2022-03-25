@@ -103,7 +103,7 @@
 			<shaderType>TransparentPostLight</shaderType>
 		</graphicData>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
-			<speed>31</speed><!-- 145m/s 28cm/32cm NbW rocket -->
+			<speed>29</speed><!-- 145m/s 28cm/32cm NbW rocket -->
 			<flyOverhead>true</flyOverhead>
 			<gravityFactor>4</gravityFactor>
 			<explosionEffect>GiantExplosion</explosionEffect>
@@ -145,7 +145,7 @@
 		</graphicData>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
 			<gravityFactor>12</gravityFactor>
-			<speed>50</speed><!-- 230m/s 30cm NbW rocket -->
+			<speed>46</speed><!-- 230m/s 30cm NbW rocket -->
 			<damageDef>Bomb</damageDef>
 			<damageAmountBase>780</damageAmountBase>
 			<explosionRadius>9</explosionRadius>

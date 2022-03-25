@@ -149,7 +149,7 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
-			<speed>122</speed> <!-- 790m/s -->
+			<speed>158</speed> <!-- 790m/s -->
 			<damageDef>Bullet</damageDef>
 			<spreadMult>0.9</spreadMult>
 			<damageAmountBase>316</damageAmountBase>
@@ -180,7 +180,7 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
-			<speed>85</speed> <!-- 550m/s -->
+			<speed>110</speed> <!-- 550m/s -->
 			<damageDef>Bomb</damageDef>
 			<damageAmountBase>166</damageAmountBase>
 			<explosionRadius>2.8</explosionRadius>
@@ -211,7 +211,7 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
-			<speed>153</speed> <!-- 990m/s -->
+			<speed>198</speed> <!-- 990m/s -->
 			<damageDef>Bullet</damageDef>
 			<spreadMult>0.8</spreadMult>
 			<damageAmountBase>363</damageAmountBase>
@@ -241,7 +241,7 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
-			<speed>69</speed> <!-- 450m/s -->
+			<speed>90</speed> <!-- 450m/s -->
 			<damageDef>Bullet</damageDef>
 			<damageAmountBase>338</damageAmountBase>
 			<soundExplode>MortarBomb_Explode</soundExplode>
@@ -272,8 +272,8 @@
 		</graphicData>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
 			<flyOverhead>true</flyOverhead>
-			<gravityFactor>8</gravityFactor>
-			<speed>69</speed> <!-- 350m/s -->
+			<gravityFactor>12</gravityFactor>
+			<speed>90</speed> <!-- 450m/s -->
 			<damageDef>Bullet</damageDef>
 			<damageAmountBase>338</damageAmountBase>
 			<soundExplode>MortarBomb_Explode</soundExplode>

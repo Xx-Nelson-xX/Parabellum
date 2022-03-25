@@ -1,3 +1,98 @@
+<--------------------------------------- 1.6B -------------------------------------------->
+
+1.6 - 3 weapon, texture improvements and tweaks
+
+Shotguns:
+- Browning Auto-5: 12 Gauge, Semi-Automatic, recoil-operated semi-automatic shotgun, decent RoF, magazine capacity, subpar accuracy and effective for Riot control
+- Browning Auto-5(sawed off): 12 Gauge, Semi-Automatic, with sawed off stock and 10 inch short barrel, increased RoF and small enought to carry with one hand, the downside is, more spread, less accurate and effective range reduction
+
+Launchers:
+- Faustpatrone 30: 100mm Faustpatrone Warhead, Single Shot, a very simple, cheap and easy to use anti-tank weapon, not very ideal trying to hit moving target with it
+
+Tweaks:
+*changed advanced launchers(RL and GL) weapontag so other advanced factions can spawn them
+*slightly changed the north and south view of the SN-46 Breast Plate texture to fir the breast portion
++Buffed HSK Tactical Helmet with patch
+*Reduced the amount of material return when smelting RGO grenades
+*Reworked Panzerfaust, now it behaves more like a single use weapons(like grenades), greatly reduced its marketvalue, and the weapon no longer need to reload
+*Increased the research points requirements for early Parabellum Researchs: 1000 points for Parabellum, 500 points for Defensive Measure I
+*Inverted Shotgun Range Cooldown value with Warmup value
+*Changed Winchester M1897L stat: Range Cooldown 1.1 -> 1, Warmup 1.2 -> 0.86
+*Moved 7.92X57mm BP rounds from Research Rifle II to Rifle III
+*Reduced Ballista Minimium range from 10 to 1, and increased Ballista bolt sharp penetration from 6.9mm to 8mm
++Rebalance the 10 Gauge after further investigation:
+  Market Value: 	1 -> 1.2
+  Mass: 			0.05 -> 0.06
+  Bulk: 			0.07 -> 0.08
+  Pellets:			7 -> 11
+  Spread:			12.5 -> 18.5
+  Cost(Crafting): 	13 -> 15
+
++Buffed MGs withing Laffete Tripod mount:
+  -MG34z:    	Recoil 0.78 -> 0.64
+  -MG42 MMG: 	Recoil 0.66 -> 0.4  	Sight Effectiveness 1.6 -> 1.8
+  -MG 08 MMG:	Recoil 0.86	-> 0.7
+  
+*Changed the VG 1-5 Stats slightly:
+	*Sight Efficiency: 1.05 -> 1
+	*Spread: 0.04 -> 0.08
+	
+*Changed Gewehr 88 stats slightly:
+	*Spread: 0.08 -> 0.06
+	*Commonality: 0.7 -> 0.8
+	*MarketValue: 650 -> 580
+	
+*Changed the Stalhelm with Stimpanzer following stats:
+	*Mass: 3kg -> 6kg
+	*Bulk: 5 -> 4
+	*Blunt protection: 20 -> 18
+	*Global work speed: -2% -> -5%
+	*Move Speed: -0.04 -> -0.08
+	*Commonality: 100% -> 40%
+	*Suppressability: -0.06 -> -0.1
+	*Mental Break Threshold: -0.08 -> -0.04
+	
+*Rebalance projectile speed with CE formula: IRL projectile speed(m/s) * 0.2 = Speed
+7.63x25mm Mauser					- 140 -> 88	<441m/s>
+7.92x33mm Kurz	 		FMJ	 		- 146 -> 137	<685m/s>
+						AP	 		- 152 -> 142
+						J	 		- 160 -> 150
+8x57mm 	P88				FMJ	 		- 125 -> 128	<639m/s>
+7.92x57mm SP  			FMJ	 		- 175 -> 176	<878m/s>	DMG 24 -> 25
+		  KP 			AP	 		- 178 -> 184	<920m/s>
+		  BP			HET  		- 181 -> 182	<910m/s>	DMG 25+9 -> 26+10
+13.2x92mmSR TuF 		 			- 160 -> 157	<785m/s>
+13x64mmB  				HET  		- 160 -> 150	<750m/s>
+.50 Beowulf				FMJ  		- 96  -> 110	<550m/s>
+						HP	 		- 92  -> 108   	<540m/s>
+						API	 		- 102 -> 116   	<580m/s>
+25x59mm HVG				 			- 87  -> 85		<425m/s>
+3.7cm Pzgr.				APHE 		- 118 -> 153   	<762m/s>
+3.7cm Gr.Sprgr			HE	 		- 108 -> 140   	<700m/s>
+3.7cm Pzgr 40/37		APCR 		- 159 -> 206   	<1030m/s>
+5cm Pzgr 39				APHE 		- 129 -> 167	<835m/s>
+5cm Sprgr 38 			HE	 		- 85  -> 110 	<550m/s>
+5cm Pzgr 40				APCR 		- 182 -> 236	<1180m/s>
+7.5cm Pzgr 39			APCBC-HE	- 122 -> 158	<790m/s>
+7.5cm Sprgr.Patr.34 	HE			- 85  -> 110	<550m/s>
+7.5cm Pzgr 40			APCR		- 153 -> 198	<990m/s>
+7.5cm Gr.Patr.38 HL/B	HEAT		- 69  -> 90 	<450m/s>
+66mm TEA rocket			TEA  		- 52  -> 23		<114m/s>
+88mm RPzB GR.4992   	 			- 30  -> 28    	<140m/s>
+8cm Raketen Sprgr   	HE   		- 63  -> 58		<290m/s>
+120mm M1028 shell		Casnister	- 192 -> 282	<1410m/s>
+12.8cm Pzgr.40/43		APC 		- 129 -> 190	<950m/s>
+12.8cm Pzgr. 39/43		APCBC-HE	- 125 -> 184	<920m/s>
+12.8cm Sprgr. L/5 		HE			- 120 -> 176	<880m/s>
+12.8/8.8cm Pzgr. Ts		APCR		- 167 -> 246	<1230m/s>
+15cm NbW				 			- 74  -> 69		<342m/s>
+21cm 								- 85  -> 110	<550m/s>
+						APHE		- 87  -> 113	<565m/s>
+21cm NbW				HE	 		- 69  -> 64 	<320m/s>
+28cm NbW				HE	 		- 31  -> 29    	<145m/s>
+32cm NbW				I	 		- 31  -> 29    	<145m/s>
+30cm NbW				HE	 		- 50  -> 46		<230m/s>
+
 <--------------------------------------- 1.5 -------------------------------------------->
 								*New Update for RW HSK 1.3
 *Note:

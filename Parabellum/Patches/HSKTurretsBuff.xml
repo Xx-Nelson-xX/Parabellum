@@ -108,4 +108,20 @@
 		</value>
 	</Operation>
 	
+	<!-- Ballista -->
+	<Operation Class="PatchOperationReplace">	
+		<xpath>Defs/ThingDef[defName="Medieval_Ballista_Turret"]/verbs/li[@Class="CombatExtended.VerbPropertiesCE"]/minRange</xpath>
+		<value>
+			<minRange>1</minRange>
+		</value>
+	</Operation>
+	
+	<!-- Ballista Bolt -->
+	<Operation Class="PatchOperationReplace">	
+		<xpath>Defs/ThingDef[defName="Projectile_BalistaBolt"]/projectile[@Class="CombatExtended.ProjectilePropertiesCE"]/armorPenetrationSharp</xpath>
+		<value>
+			<armorPenetrationSharp>8</armorPenetrationSharp>
+		</value>
+	</Operation>
+	
 </Patch>

@@ -142,15 +142,15 @@
         </graphicData>
         <soundInteract>Interact_Rifle</soundInteract>
         <statBases>
-            <MarketValue>650</MarketValue>
+            <MarketValue>580</MarketValue>
             <SightsEfficiency>1.1</SightsEfficiency>
-            <ShotSpread>0.08</ShotSpread>
+            <ShotSpread>0.06</ShotSpread>
             <SwayFactor>1.25</SwayFactor>
             <RangedWeapon_Cooldown>1.6</RangedWeapon_Cooldown>
             <Bulk>11.8</Bulk>
             <Mass>4.7</Mass>
         </statBases>
-		<generateCommonality>0.7</generateCommonality>
+		<generateCommonality>0.8</generateCommonality>
 		<equippedAngleOffset>45</equippedAngleOffset>
         <weaponTags>
             <li>RF1</li>

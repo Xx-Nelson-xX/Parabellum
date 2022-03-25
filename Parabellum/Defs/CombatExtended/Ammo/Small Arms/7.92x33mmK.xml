@@ -100,7 +100,7 @@
 		<defName>Bullet_792x33mmK_FMJ</defName>
 		<label>7.92x33mm K bullet(FMJ)</label>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
-			<speed>146</speed>
+			<speed>137</speed><!--685m/s-->
 			<damageAmountBase>17</damageAmountBase>
 			<armorPenetrationSharp>8.4</armorPenetrationSharp>
 			<armorPenetrationBlunt>50.6</armorPenetrationBlunt>
@@ -111,7 +111,7 @@
 		<defName>Bullet_792x33mmK_AP</defName>
 		<label>7.92x33mm K bullet(AP)</label>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
-			<speed>152</speed>
+			<speed>142</speed>
 			<damageAmountBase>18</damageAmountBase>
 			<armorPenetrationSharp>13.4</armorPenetrationSharp>
 			<armorPenetrationBlunt>41.5</armorPenetrationBlunt>
@@ -122,7 +122,7 @@
 		<defName>Bullet_792x33mmK_J</defName>
 		<label>7.92x33mm K bullet(J)</label>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
-			<speed>160</speed>
+			<speed>150</speed>
 			<spreadMult>0.85</spreadMult>
 			<damageAmountBase>20</damageAmountBase>
 			<armorPenetrationSharp>11.2</armorPenetrationSharp>

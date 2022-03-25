@@ -27,7 +27,9 @@
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<statBases>
-			<MarketValue>1.0</MarketValue>
+			<Mass>0.06</Mass>
+			<Bulk>0.08</Bulk>
+			<MarketValue>1.2</MarketValue>
 		</statBases>
 		<ammoClass>10GBS</ammoClass>
 		<cookOffProjectile>Bullet_10Gauge_Buck</cookOffProjectile>
@@ -60,11 +62,11 @@
 		</graphicData>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
 			<damageAmountBase>10</damageAmountBase>
-			<pelletCount>7</pelletCount>
+			<pelletCount>11</pelletCount>
 			<!-- <armorPenetrationBase>0.30</armorPenetrationBase> -->
 			<armorPenetrationSharp>6.1</armorPenetrationSharp>
 			<armorPenetrationBlunt>8.75</armorPenetrationBlunt>
-			<spreadMult>12.5</spreadMult>
+			<spreadMult>18.5</spreadMult>
 		</projectile>
 	</ThingDef>
 	
@@ -103,7 +105,7 @@
 						<li>USLDBar</li>
 					</categories>
 				</filter>
-				<count>13</count>
+				<count>15</count>
 			</li>
 			<li>
 				<filter>

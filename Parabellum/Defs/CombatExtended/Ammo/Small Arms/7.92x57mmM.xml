@@ -117,7 +117,7 @@
 		<defName>Bullet_8mmM_P88M</defName>
 		<label>8mm bullet(FMJ)</label>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
-			<speed>125</speed>
+			<speed>128</speed><!--639m/s-->
 			<damageAmountBase>20</damageAmountBase>
 			<armorPenetrationSharp>9.6</armorPenetrationSharp>
 			<armorPenetrationBlunt>62.6</armorPenetrationBlunt>
@@ -128,9 +128,9 @@
 		<defName>Bullet_8mmM_SP</defName>
 		<label>7.92x57mm bullet(FMJ)</label>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
-			<speed>175</speed>
+			<speed>176</speed><!--878m/s-->
 			<spreadMult>0.96</spreadMult>
-			<damageAmountBase>24</damageAmountBase>
+			<damageAmountBase>25</damageAmountBase>
 			<armorPenetrationSharp>12</armorPenetrationSharp>
 			<armorPenetrationBlunt>76.5</armorPenetrationBlunt>
 		</projectile>
@@ -140,7 +140,7 @@
 		<defName>Bullet_8mmM_KP</defName>
 		<label>7.92x57mm bullet(AP)</label>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
-			<speed>178</speed>
+			<speed>184</speed><!--920m/s-->
 			<spreadMult>0.9</spreadMult>
 			<damageAmountBase>20</damageAmountBase>
 			<armorPenetrationSharp>16.7</armorPenetrationSharp>
@@ -152,15 +152,15 @@
 		<defName>Bullet_8mmM_BP</defName>
 		<label>7.92x57mm bullet(HE-T)</label>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
-			<speed>181</speed>
+			<speed>182</speed><!--910m/s-->
 			<spreadMult>0.9</spreadMult>
-			<damageAmountBase>25</damageAmountBase>
+			<damageAmountBase>26</damageAmountBase>
 			<armorPenetrationSharp>10.8</armorPenetrationSharp>
 			<armorPenetrationBlunt>82.6</armorPenetrationBlunt>
 			<secondaryDamage>
 				<li>
 					<def>Bomb_Secondary</def>
-					<amount>9</amount>
+					<amount>10</amount>
 				</li>
 			</secondaryDamage>
 		</projectile>
@@ -393,7 +393,7 @@
 		</skillRequirements>
 		<workSkill>Crafting</workSkill>
 		<workSkillLearnFactor>0.8</workSkillLearnFactor>
-		<researchPrerequisite>Rifles_C2</researchPrerequisite>
+		<researchPrerequisite>Rifles_C3</researchPrerequisite>
 	</RecipeDef>
 	
 </Defs>

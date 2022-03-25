@@ -131,7 +131,7 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
-			<speed>129</speed>
+			<speed>190</speed><!--950m/s-->
 			<damageDef>Bullet</damageDef>
 			<spreadMult>0.9</spreadMult>
 			<damageAmountBase>500</damageAmountBase>
@@ -161,7 +161,7 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
-			<speed>125</speed>
+			<speed>184</speed><!--920m/s-->
 			<damageDef>Bullet</damageDef>
 			<spreadMult>0.8</spreadMult>
 			<damageAmountBase>540</damageAmountBase>
@@ -192,7 +192,7 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
-			<speed>120</speed>
+			<speed>176</speed><!--880m/s-->
 			<damageDef>Bomb</damageDef>
 			<damageAmountBase>320</damageAmountBase>
 			<explosionRadius>4</explosionRadius>
@@ -223,7 +223,7 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
-			<speed>167</speed>
+			<speed>246</speed><!--1230m/s-->
 			<damageDef>Bullet</damageDef>
 			<spreadMult>0.6</spreadMult>
 			<damageAmountBase>620</damageAmountBase>

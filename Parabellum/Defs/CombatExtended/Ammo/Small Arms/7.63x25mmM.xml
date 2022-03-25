@@ -75,6 +75,7 @@
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
 			<damageDef>Bullet</damageDef>
 			<dropsCasings>true</dropsCasings>
+			<speed>88</speed><!--441m/s-->
 		</projectile>
 	</ThingDef>
 
@@ -82,7 +83,6 @@
 		<defName>Bullet_763x25mmM_FMJ</defName>
 		<label>7.63mm bullet(FMJ)</label>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
-			<speed>140</speed>
 			<damageAmountBase>10</damageAmountBase>
 			<armorPenetrationSharp>7.8</armorPenetrationSharp>
 			<armorPenetrationBlunt>10.6</armorPenetrationBlunt>
@@ -93,7 +93,6 @@
 		<defName>Bullet_763x25mmM_HP</defName>
 		<label>7.63mm bullet(HP)</label>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
-			<speed>132</speed>
 			<damageAmountBase>14</damageAmountBase>
 			<armorPenetrationSharp>4.2</armorPenetrationSharp>
 			<armorPenetrationBlunt>13.28</armorPenetrationBlunt>

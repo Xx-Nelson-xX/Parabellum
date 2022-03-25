@@ -31,9 +31,9 @@
   <Pa_FLASH.description>M202 FLame Assault SHoulder, a quad rocket launcher, capable to fire incendiary ammo to cover a large area with flamesan ancient launcher system, planned to replace the flamethrower.</Pa_FLASH.description>
 
 
-  <!-- Panzerfaust 60 -->
+  <!-- Panzerfaust 100 -->
 
-  <Pa_PzF.label>Panzerfaust 60</Pa_PzF.label>
+  <Pa_PzF.label>Panzerfaust 100</Pa_PzF.label>
   <Pa_PzF.description>An ancient anti-tank grenade launcher, the most effective of its time in terms of antitank capability and mobility, the weapon is very simple to use, easy and cheap to produce, but is not very safe to use without proper training and the effective range of the weapon is really short.</Pa_PzF.description>
 
 

@@ -110,7 +110,7 @@
 		<defName>Bullet_37mmCannonShell_APHE</defName>
 		<label>3.7cm Pzgr.(APHE)</label>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
-			<speed>118</speed> <!-- 762m/s -->
+			<speed>153</speed> <!-- 762m/s -->
 			<damageDef>Bullet</damageDef>
 			<damageAmountBase>82</damageAmountBase>
 			<armorPenetrationSharp>61</armorPenetrationSharp>
@@ -135,7 +135,7 @@
 		<defName>Bullet_37mmCannonShell_HE</defName>
 		<label>3.7cm Gr.Sprgr(HE)</label>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
-			<speed>108</speed> <!-- 700m/s -->
+			<speed>140</speed> <!-- 700m/s -->
 			<damageDef>Bomb</damageDef>
 			<damageAmountBase>62</damageAmountBase>
 			<explosionRadius>1.8</explosionRadius>
@@ -162,7 +162,7 @@
 		<defName>Bullet_37mmCannonShell_APCR</defName>
 		<label>3.7cm Pzgr 40/37(APCR)</label>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
-			<speed>159</speed> <!-- 1030m/s -->
+			<speed>206</speed> <!-- 1030m/s -->
 			<damageDef>Bullet</damageDef>
 			<spreadMult>0.8</spreadMult>
 			<damageAmountBase>94</damageAmountBase>

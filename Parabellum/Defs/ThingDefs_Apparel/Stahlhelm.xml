@@ -20,7 +20,7 @@
 		</costList>
 		<statBases>
 			<WorkToMake>2500</WorkToMake>
-			<MaxHitPoints>50</MaxHitPoints>
+			<MaxHitPoints>40</MaxHitPoints>
 			<Flammability>0.4</Flammability>
 			<Mass>1</Mass>
 			<Bulk>2</Bulk>
@@ -101,10 +101,10 @@
 		</costList>
 		<statBases>
 			<WorkToMake>4600</WorkToMake>
-			<MaxHitPoints>85</MaxHitPoints>
+			<MaxHitPoints>65</MaxHitPoints>
 			<Flammability>0.2</Flammability>
-			<Mass>3</Mass>
-			<Bulk>5</Bulk>
+			<Mass>6</Mass>
+			<Bulk>4</Bulk>
 			<WornBulk>0</WornBulk>
 			<EquipDelay>1</EquipDelay>
 			<Insulation_Heat>6</Insulation_Heat>
@@ -113,21 +113,21 @@
 			<StuffEffectMultiplierInsulation_Heat>0.25</StuffEffectMultiplierInsulation_Heat>
 			<StuffEffectMultiplierArmor>3</StuffEffectMultiplierArmor>
 			<ArmorRating_Sharp>9.6</ArmorRating_Sharp>
-			<ArmorRating_Blunt>20</ArmorRating_Blunt>
+			<ArmorRating_Blunt>16</ArmorRating_Blunt>
 			<ArmorRating_Heat>0</ArmorRating_Heat>
 		</statBases>
 		<equippedStatOffsets>
-			<MoveSpeed>-0.04</MoveSpeed>
-			<WorkSpeedGlobal>-0.02</WorkSpeedGlobal>
+			<MoveSpeed>-0.08</MoveSpeed>
+			<WorkSpeedGlobal>-0.05</WorkSpeedGlobal>
 			<GermResistance>0.08</GermResistance>
 			<GermContainment>0.2</GermContainment>
-			<Suppressability>-0.06</Suppressability>
-			<MentalBreakThreshold>-0.08</MentalBreakThreshold>
+			<Suppressability>-0.1</Suppressability>
+			<MentalBreakThreshold>-0.04</MentalBreakThreshold>
 			<ShootingAccuracyPawn>-0.02</ShootingAccuracyPawn>
 			<AimingDelayFactor>0.05</AimingDelayFactor>
 			<MeleeHitChance>-0.05</MeleeHitChance>
 		</equippedStatOffsets>
-		<generateCommonality>1</generateCommonality>
+		<generateCommonality>0.4</generateCommonality>
 		<apparel>
 			<bodyPartGroups>
 				<li>FullHead</li>

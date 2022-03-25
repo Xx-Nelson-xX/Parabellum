@@ -25,6 +25,10 @@
             <li>Glaunchers</li>
             <li>CE_AI_Rifle</li>
             <li>CE_AI_Launcher</li>
+			<li>EliteGun</li>
+            <li>TierOneAdvanced</li>
+			<li>SyndicateLaunchers</li>
+			<li>EmpireGrenadeDestructive</li>
         </weaponTags>
 		<tradeTags>
             <li>Exotic</li>
@@ -100,6 +104,10 @@
             <li>Glaunchers</li>
             <li>CE_AI_Rifle</li>
             <li>CE_AI_Launcher</li>
+			<li>EliteGun</li>
+            <li>TierOneAdvanced</li>
+			<li>SyndicateLaunchers</li>
+			<li>EmpireGrenadeDestructive</li>
         </weaponTags>
 		<tradeTags>
             <li>Exotic</li>
@@ -171,9 +179,9 @@
             <li>RKT3</li>
 			<li>SNIP4</li>
 			<li>TierThreeSniper</li>
-            <li>Launchers</li>
             <li>CE_AI_Rifle</li>
             <li>CE_AI_Launcher</li>
+			<li>EliteGun</li>
         </weaponTags>
 		<tradeTags>
             <li>Exotic</li>
@@ -245,6 +253,9 @@
             <li>Launchers</li>
             <li>CE_AI_Rifle</li>
             <li>CE_AI_Launcher</li>
+			<li>EliteGun</li>
+			<li>SyndicateLaunchers</li>
+			<li>EmpireGrenadeDestructive</li>
         </weaponTags>
 		<tradeTags>
             <li>Exotic</li>
@@ -314,12 +325,12 @@
 		<generateCommonality>0.2</generateCommonality>
         <weaponTags>
             <li>RKT3</li>
-            <li>Launchers</li>
-            <li>TierOneAdvanced</li>
             <li>CE_AI_Rifle</li>
             <li>CE_AI_Launcher</li>
-			<li>SyndicateLaunchers</li>
 			<li>EliteGun</li>
+            <li>TierOneAdvanced</li>
+			<li>SyndicateLaunchers</li>
+			<li>EmpireGrenadeDestructive</li>
         </weaponTags>
         <tradeTags>
             <li>Exotic</li>
@@ -372,81 +383,6 @@
             <Launcher_Component>2</Launcher_Component>
             <Weapon_Parts>6</Weapon_Parts>
 			<Plastic>10</Plastic>
-        </smeltProducts>
-    </ThingDef>
-	
-	<!-- Panzerfaust 60 -->
-    <ThingDef ParentName="BaseGun_Heavy">
-        <defName>Pa_PzF</defName>
-        <label>Panzerfaust 60</label>
-        <description>An ancient anti-tank grenade launcher, the most effective of its time in terms of antitank capability and mobility, the weapon is very simple to use, easy and cheap to produce, but is not very safe to use without proper training and the effective range of the weapon is really short.</description>
-        <graphicData>
-            <texPath>Things/Weapons/Launchers/PzF</texPath>
-            <graphicClass>Graphic_Single</graphicClass>
-        </graphicData>
-        <soundInteract>Interact_Rifle</soundInteract>
-        <statBases>
-            <MarketValue>650</MarketValue>
-            <SightsEfficiency>1.4</SightsEfficiency>
-            <ShotSpread>0.04</ShotSpread>
-            <SwayFactor>1.2</SwayFactor>
-            <RangedWeapon_Cooldown>1.2</RangedWeapon_Cooldown>
-            <Bulk>5.4</Bulk>
-            <Mass>1.9</Mass>
-        </statBases>
-		<generateCommonality>0.7</generateCommonality>
-        <weaponTags>
-            <li>RKT1</li>
-			<li>Launchers</li>
-            <li>Glaunchers</li>
-            <li>CE_AI_Rifle</li>
-            <li>CE_AI_Launcher</li>
-        </weaponTags>
-        <tradeTags>
-            <li>Exotic</li>
-        </tradeTags>
-        <thingCategories>
-            <li>Launchers</li>
-        </thingCategories>
-        <verbs>
-            <li Class="CombatExtended.VerbPropertiesCE" Inherit="False">
-                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
-                <hasStandardCommand>true</hasStandardCommand>
-                <defaultProjectile>Bullet_PzF_HEAT</defaultProjectile>
-				<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
-                <ai_AvoidFriendlyFireRadius>5</ai_AvoidFriendlyFireRadius>
-				<minRange>2</minRange>
-                <warmupTime>1.2</warmupTime>
-				<forcedMissRadius>0</forcedMissRadius>
-				<circularError>0.2</circularError>
-                <range>26</range>
-                <targetParams>
-                    <canTargetLocations>true</canTargetLocations>
-                </targetParams>
-                <noiseRadius>6</noiseRadius>
-                <soundCast>Shot_PzF</soundCast>
-                <soundCastTail>GunTail_Heavy</soundCastTail>
-                <muzzleFlashScale>12</muzzleFlashScale>
-				<onlyManualCast>true</onlyManualCast>
-            </li>
-        </verbs>
-        <comps>
-		<li Class="CombatExtended.CompProperties_FireModes">
-                <aiAimMode>AimedShot</aiAimMode>
-            </li>
-            <li Class="CombatExtended.CompProperties_AmmoUser">
-                <magazineSize>1</magazineSize>
-                <reloadTime>14</reloadTime>
-                <ammoSet>AmmoSet_PzF</ammoSet>
-            </li>
-        </comps>
-		<modExtensions>
-		  <li Class="CombatExtended.GunDrawExtension">
-			<DrawSize>1.1</DrawSize>
-		  </li>
-		</modExtensions>
-        <smeltProducts>
-            <Weapon_Parts>2</Weapon_Parts>
         </smeltProducts>
     </ThingDef>
 	

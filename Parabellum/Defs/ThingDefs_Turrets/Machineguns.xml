@@ -73,7 +73,7 @@
 		<verbs>
 			<li Class="CombatExtended.VerbPropertiesCE">
 				<recoilPattern>Mounted</recoilPattern>
-				<recoilAmount>0.86</recoilAmount>
+				<recoilAmount>0.7</recoilAmount>
 				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Bullet_8mmM_P88M</defaultProjectile>

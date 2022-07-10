@@ -15,7 +15,7 @@
 			<SightsEfficiency>1.2</SightsEfficiency>
 			<ShotSpread>0.08</ShotSpread>
 			<SwayFactor>1.4</SwayFactor>
-			<RangedWeapon_Cooldown>0.2</RangedWeapon_Cooldown>
+			<RangedWeapon_Cooldown>0.25</RangedWeapon_Cooldown>
 			<Bulk>2.6</Bulk>
 			<Mass>2.25</Mass>
 		</statBases>
@@ -37,7 +37,7 @@
 				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Bullet_556x45mmNATO_FMJ</defaultProjectile>
-				<warmupTime>0.25</warmupTime>
+				<warmupTime>0.2</warmupTime>
 				<range>32</range>
 				<soundCast>Shot_Beowulf</soundCast>
 				<soundCastTail>GunTail_Heavy</soundCastTail>
@@ -327,7 +327,7 @@
 		<smeltProducts>
 			<Heavy_Component>1</Heavy_Component>
 			<Pistol_Component>1</Pistol_Component>
-			<Weapon_Parts>2</Weapon_Parts>
+			<ComponentIndustrial>2</ComponentIndustrial>
 			<Rubber>2</Rubber>
 		</smeltProducts>
 	</ThingDef>

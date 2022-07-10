@@ -13,7 +13,7 @@
         <soundInteract>Interact_Shotgun</soundInteract>
         <statBases>
             <MarketValue>1300</MarketValue>
-            <SightsEfficiency>0.9</SightsEfficiency>
+            <SightsEfficiency>0.95</SightsEfficiency>
             <ShotSpread>0.085</ShotSpread>
             <SwayFactor>1.7</SwayFactor>
             <RangedWeapon_Cooldown>0.85</RangedWeapon_Cooldown>
@@ -35,14 +35,13 @@
         </thingCategories>
         <verbs>
             <li Class="CombatExtended.VerbPropertiesCE">
-				<recoilAmount>1.5</recoilAmount>
                 <verbClass>CombatExtended.Verb_ShootCE</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
                 <defaultProjectile>Bullet_12Gauge_Buck</defaultProjectile>
 				<burstShotCount>2</burstShotCount>
                 <ticksBetweenBurstShots>3</ticksBetweenBurstShots>
-                <warmupTime>0.85</warmupTime>
-                <range>17</range>
+                <warmupTime>0.7</warmupTime>
+                <range>18</range>
 				<targetParams>
                     <canTargetLocations>true</canTargetLocations>
                 </targetParams>
@@ -167,6 +166,8 @@
             <li>Gun</li>
             <li>TierOnePistol</li>
 			<li>CE_AI_AssaultWeapon</li>
+			<li>CE_Sidearm</li>
+			<li>CE_OneHandedWeapon</li>
         </weaponTags>
         <thingCategories>
             <li>Shotguns</li>
@@ -188,13 +189,12 @@
         </verbs>
         <comps>
             <li Class="CombatExtended.CompProperties_FireModes">
-                <aiUseBurstMode>true</aiUseBurstMode>
                 <aiAimMode>AimedShot</aiAimMode>
             </li>
             <li Class="CombatExtended.CompProperties_AmmoUser">
                 <magazineSize>3</magazineSize>
 				<reloadOneAtATime>true</reloadOneAtATime>
-                <reloadTime>0.7</reloadTime>
+                <reloadTime>0.5</reloadTime>
                 <ammoSet>AmmoSet_12Gauge</ammoSet>
             </li>
         </comps>
@@ -549,7 +549,7 @@
 		  </li>
 		</modExtensions>
         <smeltProducts>
-			<Shotgun_Component>1</Shotgun_Component>
+			<Heavy_Component>1</Heavy_Component>
 			<ComponentIndustrial>1</ComponentIndustrial>
             <Weapon_Parts>1</Weapon_Parts>
 			<Plasteel>6</Plasteel>
@@ -619,7 +619,7 @@
 		  </li>
 		</modExtensions>
         <smeltProducts>
-            <Shotgun_Component>1</Shotgun_Component>
+            <Heavy_Component>1</Heavy_Component>
 			<Plasteel>12</Plasteel>
         </smeltProducts>
     </ThingDef>

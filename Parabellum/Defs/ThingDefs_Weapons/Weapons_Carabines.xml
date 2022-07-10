@@ -146,7 +146,7 @@
             <Bulk>7.8</Bulk>
             <Mass>2.17</Mass>
         </statBases>
-		<generateCommonality>0.4</generateCommonality>
+		<generateCommonality>0.5</generateCommonality>
         <weaponTags>
             <li>RF3</li>
             <li>Gun</li>
@@ -466,7 +466,7 @@
     <ThingDef ParentName="BaseGun_LongBarreled">
         <defName>Pa_VG</defName>
         <label>Gustloff VG 1-5</label>
-        <description>Gustloff Volkssturmgewehr VG 1-5, the "People's Assault Rifle", the last effort to increase weapon production almost in the end of the war, a very robust and cheap semi-automatic carabine, generally used by Volkssturm, to fight for the fatherland counter the inevitable for one last time.</description>
+        <description>Gustloff Volkssturmgewehr VG 1-5, the "People's Storm - Rifle", the last effort to increase weapon production almost in the end of the war, a very robust and cheap semi-automatic carabine, generally used by Volkssturm, to fight for the fatherland counter the inevitable for one last time.</description>
         <graphicData>
             <texPath>Things/Weapons/Carabines/VG</texPath>
             <graphicClass>Graphic_Single</graphicClass>

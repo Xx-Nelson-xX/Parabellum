@@ -18,7 +18,7 @@
     <defName>ACB</defName>
     <label>bomb</label>
     <minDamageToFragment>99999</minDamageToFragment>
-    <harmAllLayersUntilOutside>false</harmAllLayersUntilOutside>
+    <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
 	<buildingDamageFactor>6</buildingDamageFactor>
     <buildingDamageFactorPassable>5</buildingDamageFactorPassable>
     <plantDamageFactor>7</plantDamageFactor>

@@ -26,7 +26,7 @@
 	<ThingDef Class="CombatExtended.AmmoDef" Name="127x42mmBase" ParentName="SmallAmmoBase" Abstract="True">
 		<description>Specialized High Caliber bullet, intended to improve stopping power greatly at short to medium range as compared to the standard 5.56×45mm NATO round.</description>
 		<statBases>
-			<Mass>0.065</Mass>
+			<Mass>0.0356</Mass>
 			<Bulk>0.04</Bulk>
 		</statBases>
 		<tradeTags>
@@ -46,6 +46,7 @@
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<statBases>
+			<Mass>0.0326</Mass>
 			<MarketValue>3.2</MarketValue>
 		</statBases>
 		<ammoClass>BeowulFMJ</ammoClass>

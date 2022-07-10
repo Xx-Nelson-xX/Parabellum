@@ -119,6 +119,7 @@
 			<casingMoteDefname>Mote_BigShell</casingMoteDefname>
 			<gravityFactor>12</gravityFactor>
 			<alwaysFreeIntercept>false</alwaysFreeIntercept>
+			<applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
 		</projectile>
 	</ThingDef>
 	

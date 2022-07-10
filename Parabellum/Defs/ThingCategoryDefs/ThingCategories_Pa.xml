@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- === ARMOR - HSK Set === -->
+	<ThingCategoryDef>
+		<defName>SetIOTV</defName>
+		<label>IOTV Heavy Set</label>
+		<parent>Sets</parent>
+	</ThingCategoryDef>
+	
+	<!-- === ARMOR - Parabellum Set Main === -->
+	<ThingCategoryDef>
+		<defName>SetParabellum</defName>
+		<label>Parabellum Apparels</label>
+		<parent>Sets</parent>
+	</ThingCategoryDef>
+	
+	<ThingCategoryDef>
+		<defName>SetParabellumA</defName>
+		<label>Parabellum Body Armor</label>
+		<parent>SetParabellum</parent>
+	</ThingCategoryDef>
+	<ThingCategoryDef>
+		<defName>SetParabellumH</defName>
+		<label>Parabellum Helmet</label>
+		<parent>SetParabellum</parent>
+	</ThingCategoryDef>
+	<ThingCategoryDef>
+		<defName>SetParabellumExt</defName>
+		<label>Parabellum Extra</label>
+		<parent>SetParabellum</parent>
+	</ThingCategoryDef>
+	
+	<!-- === ARMOR - Parabellum Set Sub === -->
+	<ThingCategoryDef>
+		<defName>SetParabellumIP</defName>
+		<label>Armor Insert Plate</label>
+		<parent>SetParabellumExt</parent>
+	</ThingCategoryDef>
+	
+</Defs>

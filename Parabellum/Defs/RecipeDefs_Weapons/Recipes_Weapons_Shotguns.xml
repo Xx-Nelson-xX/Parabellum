@@ -454,7 +454,7 @@
 		<label>Build Browning Auto-5</label>
 		<description>Build Browning Automatic 5, claimed by John Browning, his best achievement, sucks that Winchester didn't wanted it.\nCaliber: 12 Gauge</description>
 		<jobString>Building Browning Auto-5.</jobString>
-		<workAmount>13800</workAmount>
+		<workAmount>12800</workAmount>
 		<skillRequirements>
 			<Crafting>6</Crafting>
 		</skillRequirements>
@@ -462,7 +462,7 @@
 			<li>
 				<filter>
 					<thingDefs>
-						<li>Shotgun_Component</li>
+						<li>Heavy_Component</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -473,7 +473,7 @@
 						<li>Weapon_Parts</li>
 					</thingDefs>
 				</filter>
-				<count>4</count>
+				<count>1</count>
 			</li>
 			<li>
 				<filter>
@@ -506,7 +506,7 @@
 		<fixedIngredientFilter>
 			<thingDefs>
 				<li>ComponentIndustrial</li>
-				<li>Shotgun_Component</li>
+				<li>Heavy_Component</li>
 				<li>Weapon_Parts</li>
 			</thingDefs>
 			<categories>
@@ -536,18 +536,10 @@
 			<li>
 				<filter>
 					<thingDefs>
-						<li>Shotgun_Component</li>
+						<li>Heavy_Component</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
-			</li>
-			<li>
-				<filter>
-					<thingDefs>
-						<li>Weapon_Parts</li>
-					</thingDefs>
-				</filter>
-				<count>4</count>
 			</li>
 			<li>
 				<filter>
@@ -580,8 +572,7 @@
 		<fixedIngredientFilter>
 			<thingDefs>
 				<li>ComponentIndustrial</li>
-				<li>Shotgun_Component</li>
-				<li>Weapon_Parts</li>
+				<li>Heavy_Component</li>
 			</thingDefs>
 			<categories>
 				<li>SLDBar</li>

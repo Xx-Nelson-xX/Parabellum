@@ -2,7 +2,7 @@
 <Defs>
 
 	<!-- Panzerfaust 100 -->
-    <ThingDef Class="CombatExtended.AmmoDef" ParentName="BaseGun_Heavy">
+    <ThingDef Class="CombatExtended.AmmoDef" ParentName="BaseGrenadeEquipment">
         <defName>Pa_PzF</defName>
         <label>Panzerfaust 100</label>
         <description>An ancient anti-tank grenade launcher, the most effective of its time in terms of antitank capability and mobility, the weapon is very simple to use, easy and cheap to produce, but is not very safe to use without proper training and the effective range of the weapon is really short.</description>
@@ -12,6 +12,7 @@
 			<onGroundRandomRotateAngle>0</onGroundRandomRotateAngle>
         </graphicData>
         <soundInteract>Interact_Rifle</soundInteract>
+		<techLevel>Industrial</techLevel>
 		<stackLimit>25</stackLimit>
         <statBases>
             <MarketValue>80</MarketValue>
@@ -75,7 +76,7 @@
     </ThingDef>
 	
 	<!-- Panzerfaust 30 Klein/Faustpatrone 30 -->
-    <ThingDef Class="CombatExtended.AmmoDef" ParentName="BaseGun_Heavy">
+    <ThingDef Class="CombatExtended.AmmoDef" ParentName="BaseGrenadeEquipment">
         <defName>Pa_PzFK</defName>
         <label>Faustpatrone 30</label>
         <description>An ancient anti-tank grenade launcher, the early version of its serie, was much smaller than the better-known Panzerfaust, it launch a very slow speed hollow shaped charge with effective range of 30 meter distance, a very simple, cheap and easy to use anti-tank weapon, and nevertheless, deadly and effective.</description>
@@ -85,7 +86,8 @@
 			<onGroundRandomRotateAngle>0</onGroundRandomRotateAngle>
         </graphicData>
         <soundInteract>Interact_Rifle</soundInteract>
-		<stackLimit>25</stackLimit>
+		<techLevel>Industrial</techLevel>
+		<stackLimit>50</stackLimit>
         <statBases>
             <MarketValue>50</MarketValue>
             <SightsEfficiency>1.4</SightsEfficiency>

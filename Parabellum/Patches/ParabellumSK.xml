@@ -67,16 +67,6 @@
 		</value>
 	</Operation>
 	
-	<Operation Class="PatchOperationAdd">	
-		<xpath>Defs/RecipeDef[defName="MakeShell_Smoke"]</xpath>
-		<value>
-			<recipeUsers>
-				<li>FabricationBench</li>
-			</recipeUsers>
-			<researchPrerequisite>Parabellum_Beta</researchPrerequisite>
-		</value>
-	</Operation>
-	
 	<!-- WeaponCraftingBench -->
 	<Operation Class="PatchOperationAdd">	
 		<xpath>Defs/ThingDef[defName="WeaponCraftingWorkTable"]/building</xpath>
@@ -102,6 +92,31 @@
 		<xpath>Defs/RecipeDef[defName="MakePistol_Component"]/researchPrerequisite</xpath>
 		<value>
 			<researchPrerequisite>Machining</researchPrerequisite>
+		</value>
+	</Operation>
+	
+	<!-- M2 Browning HMG -->
+	<Operation Class="PatchOperationReplace">	
+		<xpath>Defs/ThingDef[defName="Turret_M2Browning"]/graphicData</xpath>
+		<value>
+			<graphicData>
+				<texPath>Things/Building/Security/Base/T_Base</texPath>
+				<graphicClass>Graphic_Single</graphicClass>
+				<drawSize>(1.6, 1.6)</drawSize>
+				<damageData>
+					<rect>(0.2,0.2,0.6,0.6)</rect>
+				</damageData>
+				<shadowData>
+					<volume>(0.3, 0.6, 0.3)</volume>
+				</shadowData>
+			</graphicData>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">	
+		<xpath>Defs/ThingDef[defName="Turret_M2Browning"]/building/turretTopDrawSize</xpath>
+		<value>
+			<turretTopDrawSize>1.6</turretTopDrawSize>
 		</value>
 	</Operation>
 	

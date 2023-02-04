@@ -180,6 +180,7 @@
 		<label>make .50 Beowulf (FMJ) cartridge x80</label>
 		<description>Craft 80 .50 Beowulf(FMJ) cartridges.</description>
 		<jobString>Making .50 Beowulf (FMJ) cartridges.</jobString>
+		<targetCountAdjustment>80</targetCountAdjustment>
 		<ingredients>
 			<li>
 				<filter>
@@ -202,6 +203,7 @@
 				<filter>
 					<thingDefs>
 						<li>Powder</li>
+						<li>FSX</li>
 					</thingDefs>
 				</filter>
 				<count>6</count>
@@ -215,6 +217,7 @@
 			</categories>
 			<thingDefs>
 				<li>Powder</li>
+				<li>FSX</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
@@ -233,6 +236,7 @@
 		<label>make .50 Beowulf (AP-I) cartridge x80</label>
 		<description>Craft 80 .50 Beowulf (AP-I) cartridge.</description>
 		<jobString>Making .50 Beowulf (AP-I) cartridges.</jobString>
+		<targetCountAdjustment>80</targetCountAdjustment>
 		<ingredients>
 			<li>
 				<filter>
@@ -263,6 +267,7 @@
 				<filter>
 					<thingDefs>
 						<li>Powder</li>
+						<li>FSX</li>
 					</thingDefs>
 				</filter>
 				<count>6</count>
@@ -276,6 +281,7 @@
 			</categories>
 			<thingDefs>
 				<li>Powder</li>
+				<li>FSX</li>
 				<li>Prometheum</li>
 			</thingDefs>
 		</fixedIngredientFilter>
@@ -295,6 +301,7 @@
 		<label>make .50 Beowulf (HP) cartridge x80</label>
 		<description>Craft 80 .50 Beowulf (HP) cartridge.</description>
 		<jobString>Making .50 Beowulf (HP) cartridges.</jobString>
+		<targetCountAdjustment>80</targetCountAdjustment>
 		<ingredients>
 			<li>
 				<filter>
@@ -317,6 +324,7 @@
 				<filter>
 					<thingDefs>
 						<li>Powder</li>
+						<li>FSX</li>
 					</thingDefs>
 				</filter>
 				<count>6</count>
@@ -330,6 +338,7 @@
 			</categories>
 			<thingDefs>
 				<li>Powder</li>
+				<li>FSX</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
@@ -348,6 +357,7 @@
 		<label>make .50 Beowulf (EMP) cartridge x80</label>
 		<description>Craft 80 .50 Beowulf (EMP) cartridge.</description>
 		<jobString>Making .50 Beowulf (EMP) cartridges.</jobString>
+		<targetCountAdjustment>80</targetCountAdjustment>
 		<ingredients>
 			<li>
 				<filter>
@@ -378,6 +388,7 @@
 				<filter>
 					<thingDefs>
 						<li>Powder</li>
+						<li>FSX</li>
 					</thingDefs>
 				</filter>
 				<count>4</count>
@@ -391,6 +402,7 @@
 			</categories>
 			<thingDefs>
 				<li>Powder</li>
+				<li>FSX</li>
 				<li>ElectronicComponents</li>
 			</thingDefs>
 		</fixedIngredientFilter>

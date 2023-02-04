@@ -1,0 +1,21 @@
+<Defs>
+
+	<ThingDef ParentName="SK_BaseGrenadeProjectile">
+		<defName>Proj_GrenadeM24Nb</defName>
+		<label>Model 24 Nebelgranate</label>
+		<graphicData>
+			<texPath>Things/Projectile/Grenades/M24Nb</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<explosionRadius>5</explosionRadius>
+			<damageDef>Smoke</damageDef>
+			<explosionDelay>120</explosionDelay>
+			<postExplosionSpawnThingDef>Gas_Smoke</postExplosionSpawnThingDef>
+			<postExplosionSpawnChance>1</postExplosionSpawnChance>
+			<postExplosionSpawnThingCount>1</postExplosionSpawnThingCount>
+			<soundExplode>Explosion_Smoke</soundExplode>
+		</projectile>
+	</ThingDef>
+	
+</Defs>

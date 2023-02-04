@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<!-- S84/98III Bayonet -->
+	<ThingDef ParentName="WeaponIndustrialBase">
+		<defName>Pa_S8498III</defName>
+		<label>S84/98III Bayonet</label>
+		<description>A single edged dagger type melee weapon.</description>
+		<graphicData>
+			<texPath>Things/Weapons/Specials/S8498III</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>InteractMelee</soundInteract>
+		<techLevel>Industrial</techLevel>
+		<weaponTags>
+			<li>MedievalMelee</li>
+			<li>HitechMelee</li>
+			<li>CE_OneHandedWeapon</li>
+		</weaponTags>
+		<stuffCategories>
+			<li>StrongMetallic</li>
+		</stuffCategories>
+		<costStuffCount>50</costStuffCount>
+		<recipeMaker>
+			<recipeUsers>
+				<li>ElectricSmithy</li>
+				<li>FueledSmithy</li>
+			</recipeUsers>
+			<researchPrerequisite>Parabellum_Alpha</researchPrerequisite>
+		</recipeMaker>
+		<statBases>
+			<WorkToMake>7200</WorkToMake>
+			<Bulk>1.05</Bulk>
+			<Mass>0.85</Mass>
+			<MeleeCounterParryBonus>1.2</MeleeCounterParryBonus>
+		</statBases>
+		<equippedAngleOffset>-45</equippedAngleOffset>
+		<equippedStatOffsets>
+			<CookSpeed>0.1</CookSpeed>
+			<ButcheryFleshSpeed>0.1</ButcheryFleshSpeed>
+			<PlantWorkSpeed>0.15</PlantWorkSpeed>
+			<MeleeCritChance>0.9</MeleeCritChance>
+			<MeleeDodgeChance>0.2</MeleeDodgeChance>
+			<MeleeParryChance>0.2</MeleeParryChance>
+			<Suppressability>-0.25</Suppressability>
+		</equippedStatOffsets>
+		<tools>
+			<li Class="CombatExtended.ToolCE">
+				<label>handle</label>
+				<capacities>
+					<li>Poke</li>
+				</capacities>
+				<power>6</power>
+				<cooldownTime>1.05</cooldownTime>
+				<chanceFactor>0.6</chanceFactor>
+				<armorPenetrationBlunt>4</armorPenetrationBlunt>
+				<linkedBodyPartsGroup>Handle</linkedBodyPartsGroup>
+			</li>
+			<li Class="CombatExtended.ToolCE">
+				<label>blade</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>8</power>
+				<cooldownTime>0.9</cooldownTime>
+				<chanceFactor>0.3</chanceFactor>
+				<armorPenetrationBlunt>0.8</armorPenetrationBlunt>
+				<armorPenetrationSharp>3.6</armorPenetrationSharp>
+				<linkedBodyPartsGroup>Blade</linkedBodyPartsGroup>
+			</li>
+			<li Class="CombatExtended.ToolCE">
+				<label>point</label>
+				<capacities>
+					<li>Stab</li>
+				</capacities>
+				<power>17</power>
+				<cooldownTime>1.2</cooldownTime>
+				<chanceFactor>1.45</chanceFactor>
+				<armorPenetrationBlunt>1.4</armorPenetrationBlunt>
+				<armorPenetrationSharp>7.0</armorPenetrationSharp>
+				<linkedBodyPartsGroup>Point</linkedBodyPartsGroup>
+			</li>
+		</tools>
+		<weaponClasses>
+			<li>MeleePiercer</li>
+		</weaponClasses>
+		<thingCategories>
+			<li>AgileMelee</li>
+			<li>SharpMelee</li>
+		</thingCategories>
+		<modExtensions>
+		  <li Class="CombatExtended.GunDrawExtension">
+			<DrawSize>0.9</DrawSize>
+		  </li>
+		</modExtensions>
+	</ThingDef>
+	
+</Defs>

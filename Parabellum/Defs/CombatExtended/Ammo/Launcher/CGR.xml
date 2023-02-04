@@ -182,7 +182,7 @@
 		<description>Craft FFV551 High Explosive Anti-Tank shells, the standard issued anti-tank ammo, with small fragments and 400mm armor penetration.</description>
 		<jobString>Making FFV551 HEAT shells.</jobString>
 		<workAmount>1100</workAmount>
-		<targetCountAdjustment>10</targetCountAdjustment>
+		<targetCountAdjustment>1</targetCountAdjustment>
 		<ingredients>
 			<li>
 				<filter>
@@ -242,7 +242,7 @@
 		<description>Craft FFV441B High Explosive shells, impact explosive warhead, packed with lots of fragment for anti-personel at distance.</description>
 		<jobString>Making FFV441B HE shells.</jobString>
 		<workAmount>1100</workAmount>
-		<targetCountAdjustment>10</targetCountAdjustment>
+		<targetCountAdjustment>1</targetCountAdjustment>
 		<ingredients>
 			<li>
 				<filter>
@@ -302,7 +302,7 @@
 		<description>Craft FFV401 Area Defense Munition shells, Anti-personel warhead filled with flechette/steel darts for direct fire.</description>
 		<jobString>Making FFV401 ADM shells.</jobString>
 		<workAmount>1100</workAmount>
-		<targetCountAdjustment>10</targetCountAdjustment>
+		<targetCountAdjustment>1</targetCountAdjustment>
 		<ingredients>
 			<li>
 				<filter>

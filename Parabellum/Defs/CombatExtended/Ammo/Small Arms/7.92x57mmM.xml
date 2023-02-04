@@ -195,6 +195,7 @@
 				<filter>
 					<thingDefs>
 						<li>Powder</li>
+						<li>FSX</li>
 					</thingDefs>
 				</filter>
 				<count>5</count>
@@ -207,6 +208,7 @@
 			</categories>
 			<thingDefs>
 				<li>Powder</li>
+				<li>FSX</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
@@ -251,6 +253,7 @@
 				<filter>
 					<thingDefs>
 						<li>Powder</li>
+						<li>FSX</li>
 					</thingDefs>
 				</filter>
 				<count>5</count>
@@ -264,6 +267,7 @@
 			</categories>
 			<thingDefs>
 				<li>Powder</li>
+				<li>FSX</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
@@ -313,6 +317,7 @@
 				<filter>
 					<thingDefs>
 						<li>Powder</li>
+						<li>FSX</li>
 					</thingDefs>
 				</filter>
 				<count>5</count>
@@ -327,6 +332,7 @@
 			<thingDefs>
 				<li>Tungsten</li>
 				<li>Powder</li>
+				<li>FSX</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>

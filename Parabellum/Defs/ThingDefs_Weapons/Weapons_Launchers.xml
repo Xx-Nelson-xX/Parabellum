@@ -164,6 +164,7 @@
         <graphicData>
             <texPath>Things/Weapons/Launchers/CG42R</texPath>
             <graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.1</drawSize>
         </graphicData>
         <soundInteract>Artillery_ShellLoaded</soundInteract>
         <statBases>
@@ -311,6 +312,7 @@
         <graphicData>
             <texPath>Things/Weapons/Launchers/FLASH</texPath>
             <graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.05</drawSize>
         </graphicData>
         <soundInteract>InteractPTUR</soundInteract>
         <statBases>
@@ -394,6 +396,7 @@
         <graphicData>
             <texPath>Things/Weapons/Launchers/RPzB</texPath>
             <graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.1</drawSize>
         </graphicData>
         <soundInteract>Interact_Rifle</soundInteract>
         <statBases>
@@ -471,6 +474,7 @@
         <graphicData>
             <texPath>Things/Weapons/Launchers/M320K</texPath>
             <graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.5</drawSize>
         </graphicData>
         <soundInteract>Interact_Rifle</soundInteract>
         <statBases>
@@ -527,7 +531,7 @@
         </comps>
 		<modExtensions>
 		  <li Class="CombatExtended.GunDrawExtension">
-			<DrawSize>0.6</DrawSize>
+			<DrawSize>0.5</DrawSize>
 		  </li>
 		</modExtensions>
         <smeltProducts>

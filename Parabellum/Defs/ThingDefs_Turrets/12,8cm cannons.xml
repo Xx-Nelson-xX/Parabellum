@@ -12,13 +12,13 @@
 		</graphicData>
 		<soundInteract>Artillery_ShellLoaded</soundInteract>
 		<description>PaK 44/L55 128mm Anti-Tank Gun.</description>
-		<techLevel>Industrial</techLevel>
+		<techLevel>Spacer</techLevel>
 		<tradeability>None</tradeability>
 		<statBases>
 			<MarketValue>4800</MarketValue>
-			<SightsEfficiency>2.5</SightsEfficiency>
-			<ShotSpread>0.17</ShotSpread>
-			<SwayFactor>1.2</SwayFactor>
+			<SightsEfficiency>2.8</SightsEfficiency>
+			<ShotSpread>0.14</ShotSpread>
+			<SwayFactor>1</SwayFactor>
 			<RangedWeapon_Cooldown>2.8</RangedWeapon_Cooldown>
 		</statBases>
 		<weaponTags>
@@ -31,7 +31,7 @@
 				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Bullet_128mmCannonShell_APCBCHE</defaultProjectile>
-				<circularError>1.36</circularError>
+				<circularError>1.28</circularError>
 				<warmupTime>2.2</warmupTime>
 				<minRange>16</minRange>
 				<!--<forcedMissRadius>4</forcedMissRadius>-->
@@ -72,7 +72,7 @@
 		<statBases>
 			<MarketValue>13600</MarketValue>
 			<SightsEfficiency>2.6</SightsEfficiency>
-			<ShotSpread>0.21</ShotSpread>
+			<ShotSpread>0.18</ShotSpread>
 			<SwayFactor>1.2</SwayFactor>
 			<RangedWeapon_Cooldown>3.2</RangedWeapon_Cooldown>
 		</statBases>
@@ -88,7 +88,7 @@
 				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Bullet_128mmCannonShell_APCBCHE</defaultProjectile>
-				<circularError>1.5</circularError>
+				<circularError>1.4</circularError>
 				<warmupTime>2.6</warmupTime>
 				<minRange>16</minRange>
 				<!--<forcedMissRadius>4</forcedMissRadius>-->

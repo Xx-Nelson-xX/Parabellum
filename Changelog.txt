@@ -1,3 +1,85 @@
+<--------------------------------------- 1.8a(RW 1.4 Alpha) -------------------------------------------->
+
+1.8 - 7 New ammo type, 2 turrets, 2 grenades, 3 consumibles, 1 weapon and Fixes
+
+SMGs:
+- MP717(r): 7.63x25mm, Automatic(1/6/18), An ancient world weapon, captured from enemies hands with new assignation and familiar catridge to avoid logistic issue
+
+Grenades:
+- M34 White Phosphorus Grenade:(Partially done)White Phosphorus grenade, releases a large cloud of volatile chemical that burns when contact with oxygen, it works for assault and defense, great for area denial and against closed space structure and fortification.
+- Dirty Bomb:a.k.a Nuclear Waste Grenade or nuclear grenade, aim to irradiate the strike zone with hazardous radiation than rely on explosive blast to damage target, very unsafe to use and the effect last quite long.
+
+Turrets:
+- Dual M2 Browning HMG: .50 BMG, Automatic(1/6/20), A manned, mounted Dual M2HB Browning Heavy Machine Gun. It uses .50 BMG Bullets for ammo.
+- M45 Quadmount: .50 BMG, Automatic(1/12/40), A manned, mounted Quad M2HB Browning AA Turret. It uses .50 BMG Bullets for ammo.
+
+Ammo:
+- 9x19mm +p+, Overpressure Jacked Hollow Point, increase overall bullet performance + Jacket Hollow Point for increase tissue damage after impact.
+- .45 Super, Overpressure Jacked Hollow Point, increase overall bullet performance compared to standard .45 ACP.
+- 5.56.x45mm NATO Duplex, Duplex round, Just like normal FMJ round but with extra bullet per shot, the addition of extra bullet alter the ballistic of the projectile a bit, not enough to achive the original goal.
+- 7.62x39mm Incendiary, Incendiary round, Special Intermediate round with incendiary tip, designed as observation round, cause burning uppon impact.
+- .303 British Incendiary, Incendiary round, Special Rifle round with incendiary tip, designed as observation round or countermeasure against Zeppelins, cause burning uppon impact.
+- 7.62x51mm NATO Triplex, Triplex round, Just like normal FMJ round but with extra 2 bullet per shot, the addition of 2 more bullets alter the ballistic of the projectile even more, maybe using a shotgun instead?
+- 12 Gauge 000 Magnum Buckshot, Magnum load 000 buckshot, increase pellet size and lower the pellet count, which also reduce spread and increase tissue damage and penetration.
+
+Consumeable:
+- Scho-Ka-Kola: performance-enhancing energy "sport chocolate", improve pawn's conciousness and reduce their tireness
+- Pervitin: Standard issue enhancement drug, long term usage can cause severe permanent damage to health
+- Panzerchokolade: Mix of Scho-Ka-Kola with Pervitin, very potent and effective for short term
+
+
+-Fixed more Language missmatch and copy paste issue(I am tired of this shite)
+-Readjust .50 Beowulf and 84mm Carl Gustav Shells bill crafting stack count
+-Dropped M4.50 Beowulf Magazine size from 20 back to 12, and max burst at 4 instead of 5
+-Reduced Panzerfaust 100 and Fasutpatrone 30 commonality
++Readjust weapon and ammo drawsize, they should be the same size when they are drafted and when they are not used by pawn
++Reduced 120mm Canister shell pellets to half of its original count due performance, but they deal double damage and 20% less spread to compensate
+-Improved medium and large rocket texture
+-New texture for M2 Browning Machinegun
+-Removed 81mm mortar shell patch to prevent any future issue in 1.4
+-Removed scale with toxicsensitivity for saltshot, doesn't really make sense and is not used in 1.4, so, removed
++Added FSX to ammo recipe, now it is available for every ammo recipe that only use gun powder
+
+*Cannon rebalance:
+-3.7cm:
+	PaK36:		SS 0.1 -> 0.08
+				SF 1.1 -> 1
+				CE x -> 0.5
+		   
+	Flak 41: 	CE x -> 0.7
+
+-5cm:
+	PaK38:		SS 0.15 -> 0.08
+				SF 1.2 -> 0.8
+				CE x -> 0.7
+		   
+	Flak 41: 	SS 0.12 -> 0.1
+				CE x -> 0.9
+				
+-7.5cm:
+	GebK 15:	CE 1.5 -> 1.38
+				RT 4.2s -> 3.6s
+				
+	LG 40: 	    MV 1400 -> 1300
+				SS 0.18 -> 0.16
+				RT 4s -> 3.8s
+		   
+	PaK 40: 	MV 1600 -> 1750
+				SS 0.12 -> 0.1
+				SF 1.2 -> 0.9
+				CE x -> 0.9
+				
+
+-12.8cm:
+	PaK44:		TL Industrial -> Spacer
+				SE 2.5 -> 2.8
+				SS 0.17 -> 0.14
+				SF 1.2 -> 1
+				CE 1.36 -> 1.28
+		   
+	Flak 40: 	SS 0.21 -> 0.18
+				CE 1.5 -> 1.4
+				
 <--------------------------------------- 1.7 -------------------------------------------->
 
 1.7 - 2 armor, 1 apparel, 7 armor accesories and tweaks

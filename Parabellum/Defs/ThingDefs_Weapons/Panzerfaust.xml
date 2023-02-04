@@ -10,6 +10,7 @@
             <texPath>Things/Weapons/Launchers/PzF100</texPath>
             <graphicClass>Graphic_StackCount</graphicClass>
 			<onGroundRandomRotateAngle>0</onGroundRandomRotateAngle>
+			<drawSize>1.1</drawSize>
         </graphicData>
         <soundInteract>Interact_Rifle</soundInteract>
 		<techLevel>Industrial</techLevel>
@@ -23,7 +24,7 @@
             <Bulk>5.4</Bulk>
             <Mass>6.8</Mass>
         </statBases>
-		<generateCommonality>0.8</generateCommonality>
+		<generateCommonality>0.6</generateCommonality>
         <weaponTags>
             <li>RKT1</li>
 			<li>GrenadeTierTwo</li>
@@ -84,6 +85,7 @@
             <texPath>Things/Weapons/Launchers/PzFK</texPath>
             <graphicClass>Graphic_StackCount</graphicClass>
 			<onGroundRandomRotateAngle>0</onGroundRandomRotateAngle>
+			<drawSize>1.1</drawSize>
         </graphicData>
         <soundInteract>Interact_Rifle</soundInteract>
 		<techLevel>Industrial</techLevel>
@@ -97,7 +99,7 @@
             <Bulk>3</Bulk>
             <Mass>3.2</Mass>
         </statBases>
-		<generateCommonality>0.5</generateCommonality>
+		<generateCommonality>0.4</generateCommonality>
         <weaponTags>
             <li>RKT1</li>
 			<li>GrenadeTierTwo</li>

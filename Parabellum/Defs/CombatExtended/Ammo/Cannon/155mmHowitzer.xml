@@ -37,6 +37,7 @@
 		<graphicData>
 			<texPath>Things/Ammo/155mm/W48</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.65</drawSize>
 		</graphicData>
 		<ammoClass>155mmNuke</ammoClass>
 		<techLevel>Spacer</techLevel>
@@ -51,6 +52,7 @@
 		<graphicData>
 			<texPath>Things/Ammo/155mm/ADAM</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.75</drawSize>
 		</graphicData>
 		<statBases>
 			<MarketValue>860</MarketValue>
@@ -70,6 +72,7 @@
 		<graphicData>
 			<texPath>Things/Projectile/155mm/W48</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.65</drawSize>
 		</graphicData>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
 			<damageDef>ACB</damageDef>
@@ -112,6 +115,7 @@
 		<graphicData>
 			<texPath>Things/Projectile/155mm/ADAM</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.75</drawSize>
 		</graphicData>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
 			<damageDef>Bomb</damageDef>

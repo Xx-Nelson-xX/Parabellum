@@ -19,6 +19,15 @@
 		</ammoTypes>
 	</CombatExtended.AmmoSetDef>
 	
+	<CombatExtended.AmmoSetDef>
+		<defName>AmmoSet_MP717r</defName>
+		<label>8mm Mauser Pistol Ammo(7.63x25mm)/7.62×25mm Tokarev</label>
+		<ammoTypes>
+			<Ammo_763x25mmM_FMJ>Bullet_763x25mmM_FMJ</Ammo_763x25mmM_FMJ>
+			<Ammo_763x25mmM_HP>Bullet_763x25mmM_HP</Ammo_763x25mmM_HP>
+		</ammoTypes>
+	</CombatExtended.AmmoSetDef>
+	
 	<!-- ==================== Ammo ========================== -->
 
 	<ThingDef Class="CombatExtended.AmmoDef" Name="763x25mmMBase" ParentName="SmallAmmoBase" Abstract="True">
@@ -121,6 +130,7 @@
 				<filter>
 					<thingDefs>
 						<li>Powder</li>
+						<li>FSX</li>
 					</thingDefs>
 				</filter>
 				<count>2</count>
@@ -133,6 +143,7 @@
 			</categories>
 			<thingDefs>
 				<li>Powder</li>
+				<li>FSX</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
@@ -177,6 +188,7 @@
 				<filter>
 					<thingDefs>
 						<li>Powder</li>
+						<li>FSX</li>
 					</thingDefs>
 				</filter>
 				<count>2</count>
@@ -190,6 +202,7 @@
 			</categories>
 			<thingDefs>
 				<li>Powder</li>
+				<li>FSX</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>

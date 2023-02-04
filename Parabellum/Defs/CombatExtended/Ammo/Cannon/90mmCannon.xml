@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- ==================== Ammo ========================== -->
+
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="90mmCannonShellBase">
+		<defName>Ammo_90mmCannonShell_F</defName>
+		<label>90mm M580 cannon shell(Flechette)</label>
+		<graphicData>
+			<texPath>Things/Ammo/90mm/APERS-T</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.1</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>90</MarketValue>
+			<Mass>18.7</Mass>
+		</statBases>
+		<ammoClass>90mmFlechette</ammoClass>
+		<detonateProjectile>Bullet_90mmCannonShell_F</detonateProjectile>
+	</ThingDef>
+	
+	<!-- ================== Projectiles ================== -->
+	
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="SK_BaseBullet">
+		<defName>Bullet_90mmCannonShell_F</defName>
+		<label>90mm M580 APERS-T cannon shell(Flechette)</label>
+		<graphicData>
+			<texPath>Things/Projectile/Shotgun_Pellet</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+			<drawSize>1.1</drawSize>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<speed>282</speed><!--1410m/s-->
+			<soundExplode>MortarBomb_Explode</soundExplode>
+			<flyOverhead>false</flyOverhead>
+			<dropsCasings>true</dropsCasings>
+			<casingMoteDefname>Mote_BigShell</casingMoteDefname>
+			<alwaysFreeIntercept>false</alwaysFreeIntercept>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>14</damageAmountBase>
+			<pelletCount>600</pelletCount><!-- 4200 OG-->
+			<spreadMult>21.5</spreadMult>
+			<armorPenetrationSharp>12</armorPenetrationSharp>
+			<armorPenetrationBlunt>26.8</armorPenetrationBlunt>
+		</projectile>
+	</ThingDef>
+	
+	<!-- ==================== Recipes ========================== -->
+	
+	<RecipeDef ParentName="AmmoRecipeBase">
+		<defName>MakeAmmo_90mmCannonShell_F</defName>
+		<label>make 90mm APERS-T cannon shells x1</label>
+		<description>Craft 90mm APERS-T cannon shell.</description>
+		<jobString>Making 90mm APERS-T cannon shell.</jobString>
+		<workAmount>1200</workAmount>
+		<targetCountAdjustment>10</targetCountAdjustment>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>SLDBar</li>
+						<li>USLDBar</li>
+					</categories>
+				</filter>
+				<count>24</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>HeavyBar</li>
+					</categories>
+				</filter>
+				<count>8</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Powder</li>
+						<li>FSX</li>
+					</thingDefs>
+				</filter>
+				<count>7</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>SLDBar</li>
+				<li>USLDBar</li>
+				<li>HeavyBar</li>
+			</categories>
+			<thingDefs>
+				<li>Powder</li>
+				<li>FSX</li>
+				<li>ComponentIndustrial</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Ammo_90mmCannonShell_F>1</Ammo_90mmCannonShell_F>
+		</products>
+		<researchPrerequisite>Artillery_C2</researchPrerequisite>
+	</RecipeDef>
+	
+</Defs>

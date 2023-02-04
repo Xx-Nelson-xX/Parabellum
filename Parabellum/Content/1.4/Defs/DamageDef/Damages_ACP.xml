@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <DamageDef ParentName="Bullet">
+    <defName>ACP</defName>
+    <label>shell</label>
+    <deathMessage>{0} has been shredded to death.</deathMessage>
+    <hediff>Shredded</hediff>
+    <hediffSolid>Crack</hediffSolid>
+    <minDamageToFragment>5</minDamageToFragment>
+    <buildingDamageFactor>5</buildingDamageFactor>
+	<buildingDamageFactorImpassable>5</buildingDamageFactorImpassable>
+    <buildingDamageFactorPassable>4</buildingDamageFactorPassable>
+    <plantDamageFactor>12</plantDamageFactor>
+  </DamageDef>
+  
+  <DamageDef ParentName="Bomb">
+    <defName>ACB</defName>
+    <label>bomb</label>
+    <minDamageToFragment>99999</minDamageToFragment>
+    <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+	<buildingDamageFactor>6</buildingDamageFactor>
+    <buildingDamageFactorPassable>5</buildingDamageFactorPassable>
+    <plantDamageFactor>7</plantDamageFactor>
+  </DamageDef>
+
+</Defs>

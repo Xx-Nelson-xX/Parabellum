@@ -9,6 +9,7 @@
 		<ammoTypes>
 			<Ammo_Gauge_Salt>Bullet_Gauge_Salt</Ammo_Gauge_Salt>
 			<Ammo_10Gauge_Buck>Bullet_10Gauge_Buck</Ammo_10Gauge_Buck>
+			<Ammo_12Gauge_Magnum>Bullet_12Gauge_Magnum</Ammo_12Gauge_Magnum>
 			<Ammo_12Gauge_Buck>Bullet_12Gauge_Buck</Ammo_12Gauge_Buck>
 			<Ammo_12Gauge_Bird>Bullet_12Gauge_Bird</Ammo_12Gauge_Bird>
 			<Ammo_12Gauge_Slug>Bullet_12Gauge_Slug</Ammo_12Gauge_Slug>
@@ -51,6 +52,22 @@
 		<generateAllowChance>0.1</generateAllowChance>
 	</ThingDef>
 	
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="12GaugeBase">
+		<defName>Ammo_12Gauge_Magnum</defName>
+		<label>12 gauge shell (000 Magnum)</label>
+		<graphicData>
+			<texPath>Things/Ammo/Shotgun/Slug</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<Mass>0.08</Mass>
+			<MarketValue>1.25</MarketValue>
+		</statBases>
+		<ammoClass>Magnum</ammoClass>
+		<cookOffProjectile>Bullet_12Gauge_Magnum</cookOffProjectile>
+		<generateAllowChance>0.2</generateAllowChance>
+	</ThingDef>
+	
 	<!-- ================== Projectiles ================== -->
 	
 	<ThingDef Class="CombatExtended.AmmoDef" ParentName="Base12GaugeBullet">
@@ -88,6 +105,24 @@
 		</projectile>
 	</ThingDef>
 	
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="Base12GaugeBullet">
+		<defName>Bullet_12Gauge_Magnum</defName>
+		<label>000 magnum buckshot pellet</label>
+		<graphicData>
+			<texPath>Things/Projectile/Bullet_big</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<speed>100</speed>
+			<damageAmountBase>25</damageAmountBase>
+			<pelletCount>3</pelletCount>
+			<!-- <armorPenetrationBase>0.30</armorPenetrationBase> -->
+			<armorPenetrationSharp>8</armorPenetrationSharp>
+			<armorPenetrationBlunt>28.4</armorPenetrationBlunt>
+			<spreadMult>8.9</spreadMult>
+		</projectile>
+	</ThingDef>
+	
 	<!-- ==================== Recipes ========================== -->
 
 	<RecipeDef ParentName="AmmoRecipeShotgunShell">
@@ -111,6 +146,7 @@
 				<filter>
 					<thingDefs>
 						<li>Powder</li>
+						<li>FSX</li>
 					</thingDefs>
 				</filter>
 				<count>2</count>
@@ -123,6 +159,7 @@
 			</categories>
 			<thingDefs>
 				<li>Powder</li>
+				<li>FSX</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
@@ -168,6 +205,7 @@
 				<filter>
 					<thingDefs>
 						<li>Powder</li>
+						<li>FSX</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -181,6 +219,7 @@
 			<thingDefs>
 				<li>Salt</li>
 				<li>Powder</li>
+				<li>FSX</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
@@ -195,6 +234,60 @@
 			<li>FabricationBench</li>
 		</recipeUsers>
 		<researchPrerequisite>Parabellum_Alpha</researchPrerequisite>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="AmmoRecipeShotgunShell">
+		<defName>MakeAmmo_12Gauge_Magnum</defName>
+		<label>make 12 gauge (000 Magnum) shell x40</label>
+		<description>Craft 40 12 gauge (000 Magnum) shells.</description>
+		<jobString>Making 12 gauge (000 Magnum) shells.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>SLDBar</li>
+						<li>USLDBar</li>
+					</categories>
+				</filter>
+				<count>6</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>HeavyBar</li>
+					</categories>
+				</filter>
+				<count>8</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Powder</li>
+						<li>FSX</li>
+					</thingDefs>
+				</filter>
+				<count>3</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>SLDBar</li>
+				<li>USLDBar</li>
+				<li>HeavyBar</li>
+			</categories>
+			<thingDefs>
+				<li>Powder</li>
+				<li>FSX</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Ammo_12Gauge_Magnum>40</Ammo_12Gauge_Magnum>
+		</products>
+		<skillRequirements>
+			<Crafting>6</Crafting>
+		</skillRequirements>
+		<workSkill>Crafting</workSkill>
+		<researchPrerequisite>Shotgun_C2</researchPrerequisite>
 	</RecipeDef>
 	
 </Defs>

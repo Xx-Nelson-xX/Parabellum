@@ -139,6 +139,7 @@
         <graphicData>
             <texPath>Things/Weapons/SMGs/MP18</texPath>
             <graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.1</drawSize>
         </graphicData>
         <soundInteract>Interact_SMG</soundInteract>
         <statBases>
@@ -198,6 +199,71 @@
         <smeltProducts>
             <ComponentIndustrial>4</ComponentIndustrial>
             <Weapon_Parts>1</Weapon_Parts>
+        </smeltProducts>
+    </ThingDef>
+	
+	<!-- Suomi KP-31 -->
+    <ThingDef ParentName="BaseGun_LongBarreled">
+        <defName>Pa_MP717r</defName>
+        <label>MP717(r) SMG</label>
+        <description>An ancient world weapon, captured from enemies hands with new assignation and familiar catridge to avoid logistic issue, the Fatherland do know how to maintain their weapon... since they don't have the luxury to produce more of them in stable quality in that time.</description>
+        <graphicData>
+            <texPath>Things/Weapons/SMGs/MP717r</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>Interact_SMG</soundInteract>
+        <statBases>
+            <MarketValue>700</MarketValue>
+            <SightsEfficiency>0.92</SightsEfficiency>
+            <ShotSpread>0.2</ShotSpread>
+            <SwayFactor>1.58</SwayFactor>
+            <RangedWeapon_Cooldown>0.47</RangedWeapon_Cooldown>
+            <Bulk>9.1</Bulk>
+            <Mass>3.63</Mass>
+        </statBases>
+		<generateCommonality>0.6</generateCommonality>
+        <weaponTags>
+			<li>SMG2</li>
+            <li>Gun</li>
+            <li>TierOneSMG</li>
+			<li>TierTwoSMG</li>
+			<li>CE_SMG</li>
+			<li>CE_AI_AssaultWeapon</li>
+        </weaponTags>
+        <thingCategories>
+            <li>SMGs</li>
+        </thingCategories>
+        <verbs>
+            <li Class="CombatExtended.VerbPropertiesCE">
+				<recoilPattern>Regular</recoilPattern>
+                <recoilAmount>1.52</recoilAmount>
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>Bullet_763x25mmM_FMJ</defaultProjectile>
+                <burstShotCount>18</burstShotCount>
+                <ticksBetweenBurstShots>4</ticksBetweenBurstShots>
+                <warmupTime>0.47</warmupTime>
+                <range>30</range>
+                <soundCast>Shot_Suomi</soundCast>
+                <soundCastTail>GunTail_Medium</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+            </li>
+        </verbs>
+        <comps>
+            <li Class="CombatExtended.CompProperties_FireModes">
+                <aiUseBurstMode>true</aiUseBurstMode>
+                <aiAimMode>AimedShot</aiAimMode>
+                <aimedBurstShotCount>6</aimedBurstShotCount>
+            </li>
+            <li Class="CombatExtended.CompProperties_AmmoUser">
+                <magazineSize>71</magazineSize>
+                <reloadTime>4.4</reloadTime>
+                <ammoSet>AmmoSet_763x25mmM</ammoSet>
+            </li>
+        </comps>
+        <smeltProducts>
+            <SMG_Component>1</SMG_Component>
+            <Weapon_Parts>2</Weapon_Parts>
         </smeltProducts>
     </ThingDef>
 	

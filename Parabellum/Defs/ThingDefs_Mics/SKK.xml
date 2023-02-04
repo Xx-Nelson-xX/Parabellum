@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+ <!-- ========== Scho-Ka-Kola ========== -->
+  <ThingDef ParentName="SweetMealBase">
+    <defName>Pa_SKK</defName>
+    <label>Scho-Ka-Kola</label>
+	<thingClass>ThingWithComps</thingClass>
+    <description>Scho-Ka-Kola is a German brand of chocolate consumed for its strong caffeine and kola nut mix. In World War II, Scho-Ka-Kola was colloquially known as the "Aviator Chocolate", as it was commonly provided with Luftwaffe pilot and crew rations, to induce or extend wakefulness and alertness, especially on night-bombing missions, and was also issued to flight-crews in blue canisters as emergency sea-survival rations.</description>
+    <graphicData>
+      <texPath>Things/Special/SchoKaKola</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+      <drawSize>0.8</drawSize>
+    </graphicData>
+    <soundInteract>Standard_Drop</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+    <socialPropernessMatters>true</socialPropernessMatters>
+	<stackLimit>80</stackLimit>
+    <statBases>
+      <MaxHitPoints>80</MaxHitPoints>
+      <MarketValue>10</MarketValue>
+      <Mass>0.00625</Mass>
+	  <Bulk>0.02</Bulk>
+      <Flammability>1.0</Flammability>
+      <DeteriorationRate>0.5</DeteriorationRate>
+      <Nutrition>0.05</Nutrition>
+    </statBases>
+	<comps>
+		<li Class="CompProperties_Drug">
+			<chemical>Caffeine</chemical>
+			<addictiveness>0.002</addictiveness>
+			<minToleranceToAddict>0.5</minToleranceToAddict>
+			<existingAddictionSeverityOffset>0.02</existingAddictionSeverityOffset>
+			<needLevelOffset>0.5</needLevelOffset>
+			<listOrder>1100</listOrder>
+		</li>
+	</comps>
+    <ingestible>
+      <preferability>DesperateOnly</preferability>
+      <foodType>Processed</foodType>
+      <joy>0.10</joy>
+      <joyKind>Gluttonous</joyKind>
+	  <nurseable>true</nurseable>
+      <maxNumToIngestAtOnce>4</maxNumToIngestAtOnce>
+      <ingestSound>Meal_Eat</ingestSound>
+	  <outcomeDoers>
+		<li Class="IngestionOutcomeDoer_GiveHediff">
+			<hediffDef>Caffeine</hediffDef>
+			<severity>0.025</severity>
+			<toleranceChemical>Caffeine</toleranceChemical>
+		</li>
+		<li Class="IngestionOutcomeDoer_OffsetNeed">
+			<need>Rest</need>
+			<offset>0.075</offset>
+			<toleranceChemical>Caffeine</toleranceChemical>
+		</li>
+		<li Class="IngestionOutcomeDoer_GiveHediff">
+			<hediffDef>SKKEffect</hediffDef>
+			<severity>0.15</severity>
+		</li>
+		<li Class="IngestionOutcomeDoer_GiveHediff">
+			<hediffDef>CaffeineTolerance</hediffDef>
+			<severity>0.005</severity>
+		</li>
+	</outcomeDoers>
+    </ingestible>
+  </ThingDef>
+  
+  <!-- ========== Effect ========== -->
+  <HediffDef>
+		<defName>SKKEffect</defName>
+		<label>Scho-Ka-Kola</label>
+		<description>Tasting the Scho-Ka-Kola.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<initialSeverity>2</initialSeverity>
+		<isBad>false</isBad>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-0.5</severityPerDay>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<minSeverity>0</minSeverity>
+				<label>Bitter Sweet</label>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>0.05</offset>
+					</li>
+					<li>
+						<capacity>BloodFiltration</capacity>
+						<offset>0.05</offset>
+					</li>
+				</capMods>
+			</li>
+			<li>
+				<minSeverity>0.35</minSeverity>
+				<label>Pleasant Feeling</label>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>0.10</offset>
+					</li>
+					<li>
+						<capacity>BloodFiltration</capacity>
+						<offset>0.15</offset>
+					</li>
+				</capMods>
+			</li>
+			<li>
+				<minSeverity>0.75</minSeverity>
+				<label>Hammered</label>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>0.20</offset>
+					</li>
+					<li>
+						<capacity>BloodFiltration</capacity>
+						<offset>0.25</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+  </HediffDef>
+  
+  <!-- ========== Recipe ========== -->
+  <RecipeDef>
+		<defName>MakeSKK</defName>
+		<label>Make 16 Scho-Ka-Kola</label>
+		<description>Making Scho-Ka-Kola, is a long march to the frontline, you will need this. Produces 16.</description>
+		<jobString>Making 16 Scho-Ka-Kola.</jobString>
+		<workSpeedStat>DrugCookingSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_Brewing</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<workAmount>1600</workAmount>
+		<targetCountAdjustment>16</targetCountAdjustment>
+		<recipeUsers>
+			<li>TableKitchen</li>
+		</recipeUsers>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RawCoffee</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Chocolate</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>RawCoffee</li>
+				<li>Chocolate</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Pa_SKK>16</Pa_SKK>
+		</products>
+		<skillRequirements>
+			<Cooking>6</Cooking>
+		</skillRequirements>
+		<workSkill>Cooking</workSkill>
+		<researchPrerequisite>PackagedSurvivalMeal</researchPrerequisite>
+	</RecipeDef>
+
+</Defs>

@@ -32,7 +32,7 @@
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Bullet_75mmCannonShell_HEID</defaultProjectile>
 				<!--<forcedMissRadius>5</forcedMissRadius>-->
-				<circularError>1.5</circularError>
+				<circularError>1.38</circularError>
 				<warmupTime>1.4</warmupTime>
 				<minRange>12</minRange>
 				<range>187</range>
@@ -48,7 +48,7 @@
 		<comps>
 			<li Class="CombatExtended.CompProperties_AmmoUser">
 				<magazineSize>1</magazineSize>
-                <reloadTime>4.2</reloadTime>
+                <reloadTime>3.6</reloadTime>
 				<!-- <spawnUnloaded>true</spawnUnloaded> -->
 				<ammoSet>AmmoSet_GebK</ammoSet>
 			</li>
@@ -70,9 +70,9 @@
 		<techLevel>Industrial</techLevel>
 		<tradeability>None</tradeability>
 		<statBases>
-			<MarketValue>1400</MarketValue>
+			<MarketValue>1300</MarketValue>
 			<SightsEfficiency>1.8</SightsEfficiency>
-			<ShotSpread>0.18</ShotSpread>
+			<ShotSpread>0.16</ShotSpread>
 			<SwayFactor>1.2</SwayFactor>
 			<RangedWeapon_Cooldown>2</RangedWeapon_Cooldown>
 		</statBases>
@@ -103,7 +103,7 @@
 		<comps>
 			<li Class="CombatExtended.CompProperties_AmmoUser">
 				<magazineSize>1</magazineSize>
-                <reloadTime>4</reloadTime>
+                <reloadTime>3.8</reloadTime>
 				<!-- <spawnUnloaded>true</spawnUnloaded> -->
 				<ammoSet>AmmoSet_LG</ammoSet>
 			</li>
@@ -125,10 +125,10 @@
 		<techLevel>Industrial</techLevel>
 		<tradeability>None</tradeability>
 		<statBases>
-			<MarketValue>1600</MarketValue>
+			<MarketValue>1750</MarketValue>
 			<SightsEfficiency>2.2</SightsEfficiency>
-			<ShotSpread>0.12</ShotSpread>
-			<SwayFactor>1.2</SwayFactor>
+			<ShotSpread>0.1</ShotSpread>
+			<SwayFactor>0.9</SwayFactor>
 			<RangedWeapon_Cooldown>2</RangedWeapon_Cooldown>
 		</statBases>
 		<weaponTags>
@@ -138,9 +138,10 @@
 		<generateCommonality>0</generateCommonality>
 		<verbs>
 			<li Class="CombatExtended.VerbPropertiesCE" Inherit="False">
-				<verbClass>CombatExtended.Verb_ShootMortarCE</verbClass>
+				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Bullet_75mmCannonShell_APCBCHE</defaultProjectile>
+				<circularError>0.9</circularError>
 				<warmupTime>1.6</warmupTime>
 				<minRange>10</minRange>
 				<range>134</range>

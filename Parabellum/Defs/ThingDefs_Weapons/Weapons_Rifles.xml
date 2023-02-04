@@ -139,6 +139,7 @@
         <graphicData>
             <texPath>Things/Weapons/Rifles/G88</texPath>
             <graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.5</drawSize>
         </graphicData>
         <soundInteract>Interact_Rifle</soundInteract>
         <statBases>
@@ -205,6 +206,7 @@
         <graphicData>
             <texPath>Things/Weapons/Rifles/TG18</texPath>
             <graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.5</drawSize>
         </graphicData>
         <soundInteract>Interact_Rifle</soundInteract>
         <statBases>
@@ -349,6 +351,7 @@
         <graphicData>
             <texPath>Things/Weapons/Rifles/MKb42H</texPath>
             <graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.1</drawSize>
         </graphicData>
         <soundInteract>Interact_StG44</soundInteract>
         <statBases>

@@ -78,7 +78,7 @@
     <defName>792mmKJ</defName>
     <label>7.92x33mm K (J)</label>
     <labelShort>7.92K J</labelShort>
-    <description>Jaggerpatrone 43, overcharge sharpshooter round, increase its overall performance.</description>
+    <description>Jaggerpatrone 43, overpressure sharpshooter round, increase its overall performance.</description>
   </CombatExtended.AmmoCategoryDef>
   
   <!-- ==================== 8mm Mauser Pistol Catridge ========================== -->
@@ -126,12 +126,65 @@
     <description>Filled with several buckshot pellets which spread in a tight pattern, bigger pellets than 12 Gauges Buckshot, but with less pellets due increase pellet size.</description>
   </CombatExtended.AmmoCategoryDef>
   
-  <!-- ==================== Shotgun SaltShot ========================== -->
+  <!-- ==================== HSK+ ========================== -->
+  
+  <!-- ==================== Shotgun Shell ========================== -->
   <CombatExtended.AmmoCategoryDef>
     <defName>SSalt</defName>
     <label>Shotgun SaltShot</label>
     <labelShort>Salt Shot</labelShort>
     <description>Custom made shotgun shell filled with rock salt, cause lots of pain when the salt fragments manage to encrusted in living body part but very ineffective counter armored target and thick skin creatures.</description>
+  </CombatExtended.AmmoCategoryDef>
+  
+  <CombatExtended.AmmoCategoryDef>
+    <defName>Magnum</defName>
+    <label>000 Magnum Buckshot</label>
+    <labelShort>000 MB</labelShort>
+    <description>Magnum load 000 buck shotgun shell, increase pellet size and lower the pellet count, which also reduce spread and increase tissue damage and penetration.</description>
+  </CombatExtended.AmmoCategoryDef>
+  
+  <!-- ==================== Pistol ========================== -->
+  <CombatExtended.AmmoCategoryDef>
+    <defName>9mmJHP</defName>
+    <label>9x19mm Para JHP +p+</label>
+    <labelShort>JHP +p+</labelShort>
+    <description>Overpressure Jacked Hollow Point round, increase overall bullet performance + Jacket Hollow Point for increase tissue damage after impact.</description>
+  </CombatExtended.AmmoCategoryDef>
+  
+  <CombatExtended.AmmoCategoryDef>
+    <defName>45Super</defName>
+    <label>.45 Super</label>
+    <labelShort>Super</labelShort>
+    <description>Overpressure pistol round, increase overall bullet performance compared to standard .45 ACP.</description>
+  </CombatExtended.AmmoCategoryDef>
+  
+  <!-- ==================== Rifle ========================== -->
+  <CombatExtended.AmmoCategoryDef>
+    <defName>556x45mmD</defName>
+    <label>5.56x45mm NATO Duplex</label>
+    <labelShort>Duplex</labelShort>
+    <description>Just like normal FMJ round but with extra bullet per shot, the addition of extra bullet alter the ballistic of the projectile a bit, not enough to achive the original goal.</description>
+  </CombatExtended.AmmoCategoryDef>
+  
+  <CombatExtended.AmmoCategoryDef>
+    <defName>762x39mmI</defName>
+    <label>7.62x39mm Incendiary</label>
+    <labelShort>Incendiary</labelShort>
+    <description>Special Intermediate round with incendiary tip, designed as observation round, cause burning uppon impact.</description>
+  </CombatExtended.AmmoCategoryDef>
+  
+  <CombatExtended.AmmoCategoryDef>
+    <defName>303BritishI</defName>
+    <label>.303 British Incendiary</label>
+    <labelShort>Incendiary</labelShort>
+    <description>Special Rifle round with incendiary tip, designed as observation round or countermeasure against Zeppelins, cause burning uppon impact.</description>
+  </CombatExtended.AmmoCategoryDef>
+  
+  <CombatExtended.AmmoCategoryDef>
+    <defName>762x51mmT</defName>
+    <label>7.62x51mm NATO Triplex</label>
+    <labelShort>Triplex</labelShort>
+    <description>Just like normal FMJ round but with extra 2 bullet per shot, the addition of 2 more bullets alter the ballistic of the projectile even more, maybe using a shotgun instead?</description>
   </CombatExtended.AmmoCategoryDef>
 
 </Defs>

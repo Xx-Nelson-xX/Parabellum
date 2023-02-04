@@ -8,6 +8,7 @@
 		<graphicData>
 			<texPath>Things/Weapons/Pistols/SP</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.8</drawSize>
 		</graphicData>
 		<soundInteract>Interact_Revolver</soundInteract>
 		<statBases>
@@ -73,6 +74,7 @@
 		<graphicData>
 			<texPath>Things/Weapons/Pistols/SR</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.8</drawSize>
 		</graphicData>
 		<soundInteract>Interact_Revolver</soundInteract>
 		<statBases>
@@ -138,6 +140,7 @@
 		<graphicData>
 			<texPath>Things/Weapons/Pistols/C96</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.5</drawSize>
 		</graphicData>
 		<soundInteract>Interact_Revolver</soundInteract>
 		<statBases>
@@ -202,6 +205,7 @@
 		<graphicData>
 			<texPath>Things/Weapons/Pistols/M712</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.5</drawSize>
 		</graphicData>
 		<soundInteract>Interact_SMG</soundInteract>
 		<statBases>
@@ -272,6 +276,7 @@
 		<graphicData>
 			<texPath>Things/Weapons/Pistols/SW50B</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.46</drawSize>
 		</graphicData>
 		<soundInteract>Interact_Revolver</soundInteract>
 		<statBases>

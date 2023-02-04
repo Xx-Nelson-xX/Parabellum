@@ -9,6 +9,7 @@
         <graphicData>
             <texPath>Things/Weapons/SRs/XM109</texPath>
             <graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.1</drawSize>
         </graphicData>
         <soundInteract>Interact_Rifle</soundInteract>
         <statBases>
@@ -55,6 +56,11 @@
                 <ammoSet>AmmoSet_XM109AMPR</ammoSet>
             </li>
         </comps>
+		<modExtensions>
+		  <li Class="CombatExtended.GunDrawExtension">
+			<DrawSize>1.1</DrawSize>
+		  </li>
+		</modExtensions>
         <smeltProducts>
             <AdvSniper_Component>1</AdvSniper_Component>
             <Weapon_Parts>5</Weapon_Parts>
@@ -197,6 +203,7 @@
         <graphicData>
             <texPath>Things/Weapons/SRs/98s</texPath>
             <graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.1</drawSize>
         </graphicData>
         <soundInteract>Interact_Rifle</soundInteract>
         <statBases>

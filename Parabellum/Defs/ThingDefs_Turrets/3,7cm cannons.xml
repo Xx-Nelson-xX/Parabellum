@@ -17,8 +17,8 @@
 		<statBases>
 			<MarketValue>1050</MarketValue>
 			<SightsEfficiency>1.6</SightsEfficiency>
-			<ShotSpread>0.1</ShotSpread>
-			<SwayFactor>1.1</SwayFactor>
+			<ShotSpread>0.08</ShotSpread>
+			<SwayFactor>1</SwayFactor>
 			<RangedWeapon_Cooldown>1.2</RangedWeapon_Cooldown>
 		</statBases>
 		<generateCommonality>0</generateCommonality>
@@ -27,6 +27,7 @@
 				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Bullet_37mmCannonShell_APHE</defaultProjectile>
+				<circularError>0.5</circularError>
 				<warmupTime>1.2</warmupTime>
 				<minRange>5</minRange>
 				<!-- <forcedMissRadius>1.4</forcedMissRadius> -->
@@ -78,6 +79,7 @@
 				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Bullet_37mmCannonShell_APHE</defaultProjectile>
+				<circularError>0.7</circularError>
 				<warmupTime>1.6</warmupTime>
 				<minRange>5</minRange>
 				<!-- <forcedMissRadius>1.4</forcedMissRadius> -->

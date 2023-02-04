@@ -118,6 +118,13 @@
     <description>Armor Piercing, Composed Rigid ammunition for 3.7cm cannon, High velocity solid slug design purely for armor penetration with concentrated kinetic energy through a small impact area.</description>
   </CombatExtended.AmmoCategoryDef>
   
+  <CombatExtended.AmmoCategoryDef>
+    <defName>37mmCanister</defName>
+    <label>3.7cm Ktgr 169(f)(Canister)</label>
+    <labelShort>3.7cm Canister</labelShort>
+    <description>Canister ammunition for 3.7cm cannon, large size buckshot for light cannon and tank gun at close range anti-personel defense.</description>
+  </CombatExtended.AmmoCategoryDef>
+  
   <!-- ==================== 5cm Cannon Shells ========================== -->
   <CombatExtended.AmmoCategoryDef>
     <defName>50mmAPHE</defName>
@@ -167,6 +174,14 @@
     <label>7.5cm Gr.Patr.38 HL/B(HEAT)</label>
     <labelShort>7.5cm HEAT</labelShort>
     <description>Standard 7.5cm High Explosive Anti-Tank ammunition for light artillery and assault gun, usually short barrel cannon, to give them anti-tank capability during unexpected encounter with armored target.</description>
+  </CombatExtended.AmmoCategoryDef>
+  
+  <!-- ==================== 90mm Cannon Shells ========================== -->
+  <CombatExtended.AmmoCategoryDef>
+    <defName>90mmFlechette</defName>
+    <label>90mm M580 APERS-T(Flechette)</label>
+    <labelShort>90mm APERS-T</labelShort>
+    <description>Equivalent of shotgun's flechette but for 90mm cannons.</description>
   </CombatExtended.AmmoCategoryDef>
   
   <!-- ==================== 12.8cm Cannon Shells ========================== -->

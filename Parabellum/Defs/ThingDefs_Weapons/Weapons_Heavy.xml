@@ -53,7 +53,7 @@
         <comps>
             <li Class="CombatExtended.CompProperties_FireModes">
                 <aiUseBurstMode>FALSE</aiUseBurstMode>
-                <aiAimMode>AimedShot</aiAimMode>
+                <aiAimMode>SuppressFire</aiAimMode>
                 <aimedBurstShotCount>8</aimedBurstShotCount>
             </li>
             <li Class="CombatExtended.CompProperties_AmmoUser">
@@ -76,6 +76,7 @@
         <graphicData>
             <texPath>Things/Weapons/MGs/MG0815</texPath>
             <graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.2</drawSize>
         </graphicData>
         <soundInteract>Interact_Rifle</soundInteract>
         <statBases>
@@ -122,7 +123,7 @@
         <comps>
             <li Class="CombatExtended.CompProperties_FireModes">
                 <aiUseBurstMode>true</aiUseBurstMode>
-                <aiAimMode>AimedShot</aiAimMode>
+                <aiAimMode>SuppressFire</aiAimMode>
                 <aimedBurstShotCount>25</aimedBurstShotCount>
             </li>
             <li Class="CombatExtended.CompProperties_AmmoUser">
@@ -150,6 +151,7 @@
         <graphicData>
             <texPath>Things/Weapons/MGs/Madsen</texPath>
             <graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.1</drawSize>
         </graphicData>
         <soundInteract>Interact_Rifle</soundInteract>
         <statBases>
@@ -191,7 +193,7 @@
         <comps>
             <li Class="CombatExtended.CompProperties_FireModes">
                 <aiUseBurstMode>true</aiUseBurstMode>
-                <aiAimMode>AimedShot</aiAimMode>
+                <aiAimMode>SuppressFire</aiAimMode>
                 <aimedBurstShotCount>5</aimedBurstShotCount>
             </li>
             <li Class="CombatExtended.CompProperties_AmmoUser">
@@ -261,7 +263,7 @@
         <comps>
             <li Class="CombatExtended.CompProperties_FireModes">
                 <aiUseBurstMode>true</aiUseBurstMode>
-                <aiAimMode>AimedShot</aiAimMode>
+                <aiAimMode>SuppressFire</aiAimMode>
                 <aimedBurstShotCount>3</aimedBurstShotCount>
             </li>
             <li Class="CombatExtended.CompProperties_AmmoUser">
@@ -284,6 +286,7 @@
         <graphicData>
             <texPath>Things/Weapons/MGs/MG34</texPath>
             <graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.1</drawSize>
         </graphicData>
         <soundInteract>Interact_Rifle</soundInteract>
         <statBases>
@@ -330,7 +333,7 @@
         <comps>
             <li Class="CombatExtended.CompProperties_FireModes">
                 <aiUseBurstMode>true</aiUseBurstMode>
-                <aiAimMode>AimedShot</aiAimMode>
+                <aiAimMode>SuppressFire</aiAimMode>
                 <aimedBurstShotCount>5</aimedBurstShotCount>
             </li>
             <li Class="CombatExtended.CompProperties_AmmoUser">
@@ -358,6 +361,7 @@
         <graphicData>
             <texPath>Things/Weapons/MGs/MG42</texPath>
             <graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.1</drawSize>
         </graphicData>
         <soundInteract>Interact_Rifle</soundInteract>
         <statBases>
@@ -404,7 +408,7 @@
         <comps>
             <li Class="CombatExtended.CompProperties_FireModes">
                 <aiUseBurstMode>true</aiUseBurstMode>
-                <aiAimMode>AimedShot</aiAimMode>
+                <aiAimMode>SuppressFire</aiAimMode>
                 <aimedBurstShotCount>7</aimedBurstShotCount>
             </li>
             <li Class="CombatExtended.CompProperties_AmmoUser">
@@ -433,6 +437,7 @@
         <graphicData>
             <texPath>Things/Weapons/MGs/MG45</texPath>
             <graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.1</drawSize>
         </graphicData>
         <soundInteract>Interact_Rifle</soundInteract>
         <statBases>
@@ -478,7 +483,7 @@
         <comps>
             <li Class="CombatExtended.CompProperties_FireModes">
                 <aiUseBurstMode>true</aiUseBurstMode>
-                <aiAimMode>AimedShot</aiAimMode>
+                <aiAimMode>SuppressFire</aiAimMode>
                 <aimedBurstShotCount>12</aimedBurstShotCount>
             </li>
             <li Class="CombatExtended.CompProperties_AmmoUser">

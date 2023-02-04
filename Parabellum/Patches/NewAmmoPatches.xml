@@ -11,6 +11,13 @@
 	</Operation>
 	
 	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_90mmCannonShell"]/ammoTypes</xpath>
+		<value>
+			<Ammo_90mmCannonShell_F>Bullet_90mmCannonShell_F</Ammo_90mmCannonShell_F>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_120mmCannonShell"]/ammoTypes</xpath>
 		<value>
 			<Ammo_120mmCannonShell_Canister>Bullet_120mmCannonShell_Canister</Ammo_120mmCannonShell_Canister>
@@ -31,6 +38,49 @@
 		<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_12Gauge"]/ammoTypes</xpath>
 		<value>
 			<Ammo_Gauge_Salt>Bullet_Gauge_Salt</Ammo_Gauge_Salt>
+			<Ammo_12Gauge_Magnum>Bullet_12Gauge_Magnum</Ammo_12Gauge_Magnum>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_9x19mmPara"]/ammoTypes</xpath>
+		<value>
+			<Ammo_9x19mmPara_JHP>Bullet_9x19mmPara_JHP</Ammo_9x19mmPara_JHP>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_45ACP"]/ammoTypes</xpath>
+		<value>
+			<Ammo_45ACP_Super>Bullet_45ACP_Super</Ammo_45ACP_Super>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_556x45mmNATO"]/ammoTypes</xpath>
+		<value>
+			<Ammo_556x45mmNATO_D>Bullet_556x45mmNATO_D</Ammo_556x45mmNATO_D>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_762x51mmNATO"]/ammoTypes</xpath>
+		<value>
+			<Ammo_762x51mmNATO_T>Bullet_762x51mmNATO_T</Ammo_762x51mmNATO_T>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_762x39mmSoviet"]/ammoTypes</xpath>
+		<value>
+			<Ammo_762x39mmSoviet_I>Bullet_762x39mmSoviet_I</Ammo_762x39mmSoviet_I>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_303British"]/ammoTypes</xpath>
+		<value>
+			<Ammo_303British_I>Bullet_303British_I</Ammo_303British_I>
 		</value>
 	</Operation>
 

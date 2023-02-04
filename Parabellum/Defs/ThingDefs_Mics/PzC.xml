@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+<!-- ========== "Panzerchokolade" mix ========== -->
+  <ThingDef ParentName="DrugBase">
+    <defName>Pa_PzC</defName>
+    <label>"Panzerchokolade" mix</label>
+	<thingClass>ThingWithComps</thingClass>
+    <description>Homebrew "Panzerchokolade", very potent and tasty, though you probably don't care about that while under its effect.</description>
+    <descriptionHyperlinks>
+      <HediffDef>PervitinHigh</HediffDef>
+      <HediffDef>PervitinTolerance</HediffDef>
+      <HediffDef>PsychiteAddiction</HediffDef>
+      <HediffDef>ChemicalDamageSevere</HediffDef>
+    </descriptionHyperlinks>
+	<graphicData>
+      <texPath>Things/Item/Drug/Yayo</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+      <color>(48.2,24.7,0)</color>
+      <drawSize>0.75</drawSize>
+    </graphicData>
+    <soundInteract>Standard_Drop</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+    <socialPropernessMatters>true</socialPropernessMatters>
+	<stackLimit>80</stackLimit>
+    <statBases>
+      <MaxHitPoints>80</MaxHitPoints>
+      <MarketValue>50</MarketValue>
+      <Mass>0.005</Mass>
+	  <Bulk>0.02</Bulk>
+      <Flammability>1.0</Flammability>
+      <DeteriorationRate>0.5</DeteriorationRate>
+      <Nutrition>0.075</Nutrition>
+    </statBases>
+	<comps>
+		<li Class="CompProperties_Drug">
+			<chemical>Caffeine</chemical>
+			<addictiveness>0.005</addictiveness>
+			<minToleranceToAddict>0.35</minToleranceToAddict>
+			<existingAddictionSeverityOffset>0.1</existingAddictionSeverityOffset>
+			<needLevelOffset>0.5</needLevelOffset>
+			<listOrder>1100</listOrder>
+		</li>
+	</comps>
+	<techLevel>Industrial</techLevel>
+    <ingestible>
+      <preferability>DesperateOnly</preferability>
+      <foodType>Processed</foodType>
+      <joy>0.95</joy>
+      <drugCategory>Hard</drugCategory>
+      <joyKind>Chemical</joyKind>
+	  <nurseable>true</nurseable>
+      <maxNumToIngestAtOnce>2</maxNumToIngestAtOnce>
+      <ingestSound>Meal_Eat</ingestSound>
+	  <baseIngestTicks>60</baseIngestTicks>
+	  <outcomeDoers>
+		<li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>PervitinHigh</hediffDef>
+          <severity>0.85</severity>
+          <toleranceChemical>Pervitin</toleranceChemical>
+        </li>
+        <li Class="IngestionOutcomeDoer_OffsetNeed">
+          <need>Rest</need>
+          <offset>1.0</offset>
+          <toleranceChemical>Pervitin</toleranceChemical>
+        </li>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>PervitinTolerance</hediffDef>
+          <severity>0.05</severity>
+          <divideByBodySize>true</divideByBodySize>
+        </li>
+		<li Class="IngestionOutcomeDoer_GiveHediff">
+			<hediffDef>Caffeine</hediffDef>
+			<severity>0.1</severity>
+			<toleranceChemical>Caffeine</toleranceChemical>
+		</li>
+		<li Class="IngestionOutcomeDoer_OffsetNeed">
+			<need>Rest</need>
+			<offset>0.15</offset>
+			<toleranceChemical>Caffeine</toleranceChemical>
+		</li>
+		<li Class="IngestionOutcomeDoer_GiveHediff">
+			<hediffDef>SKKEffect</hediffDef>
+			<severity>0.35</severity>
+		</li>
+		<li Class="IngestionOutcomeDoer_GiveHediff">
+			<hediffDef>CaffeineTolerance</hediffDef>
+			<severity>0.01</severity>
+		</li>
+	</outcomeDoers>
+    </ingestible>
+  </ThingDef>
+  
+  <!-- ========== Recipe ========== -->
+  <RecipeDef>
+		<defName>MakePzC</defName>
+		<label>Make 10 Panzerchokolade mix</label>
+		<description>Making Panzerchokolade mix, meth-laden chocolate, no longer a fake advertisement/propaganda. Produces 10.</description>
+		<jobString>Making 10 Panzerchokolade mix.</jobString>
+		<workSpeedStat>DrugCookingSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_Drug</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<workAmount>800</workAmount>
+		<targetCountAdjustment>10</targetCountAdjustment>
+		<recipeUsers>
+			<li>DrugLab</li>
+		</recipeUsers>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Pa_Pervitin</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Pa_SKK</li>
+					</thingDefs>
+				</filter>
+				<count>4</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Pa_Pervitin</li>
+				<li>Pa_SKK</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Pa_PzC>10</Pa_PzC>
+		</products>
+		<skillRequirements>
+			<Medicine>10</Medicine>
+			<Cooking>6</Cooking>
+		</skillRequirements>
+		<workSkill>Cooking</workSkill>
+		<researchPrerequisite>PsychiteRefining</researchPrerequisite>
+	</RecipeDef>
+ 
+ </Defs>

@@ -146,6 +146,7 @@
         <graphicData>
             <texPath>Things/Weapons/Shotguns/SSS</texPath>
             <graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.6</drawSize>
         </graphicData>
         <soundInteract>Interact_Shotgun</soundInteract>
         <statBases>
@@ -218,6 +219,7 @@
         <graphicData>
             <texPath>Things/Weapons/Shotguns/W1887</texPath>
             <graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.2</drawSize>
         </graphicData>
         <soundInteract>Interact_Rifle</soundInteract>
 		<generateCommonality>0.8</generateCommonality>
@@ -284,6 +286,7 @@
         <graphicData>
             <texPath>Things/Weapons/Shotguns/W1887S</texPath>
             <graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.9</drawSize>
         </graphicData>
         <soundInteract>Interact_Rifle</soundInteract>
         <statBases>
@@ -352,6 +355,7 @@
         <graphicData>
             <texPath>Things/Weapons/Shotguns/W1897T</texPath>
             <graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.2</drawSize>
         </graphicData>
         <soundInteract>Interact_Rifle</soundInteract>
 		<generateCommonality>0.6</generateCommonality>
@@ -427,6 +431,7 @@
         <graphicData>
             <texPath>Things/Weapons/Shotguns/W1897L</texPath>
             <graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.3</drawSize>
         </graphicData>
         <soundInteract>Interact_Rifle</soundInteract>
 		<generateCommonality>0.4</generateCommonality>
@@ -495,6 +500,7 @@
         <graphicData>
             <texPath>Things/Weapons/Shotguns/BA5L</texPath>
             <graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.1</drawSize>
         </graphicData>
         <soundInteract>Interact_Rifle</soundInteract>
 		<generateCommonality>0.6</generateCommonality>
@@ -564,6 +570,7 @@
         <graphicData>
             <texPath>Things/Weapons/Shotguns/BA5S</texPath>
             <graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.7</drawSize>
         </graphicData>
         <soundInteract>Interact_Rifle</soundInteract>
 		<generateCommonality>0.4</generateCommonality>

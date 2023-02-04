@@ -24,6 +24,9 @@
 
 	<ThingDef Class="CombatExtended.AmmoDef" Name="NbW32RocketBase" ParentName="AmmoBase" Abstract="True">
 		<description>Nebelwerfer rocket(28cm~32cm).</description>
+		<graphicData>
+			<drawSize>1.7</drawSize>
+		</graphicData>
 		<thingCategories>
 			<li>AmmoNbWRockets</li>
 		</thingCategories>
@@ -101,6 +104,7 @@
 	<ThingDef Class="CombatExtended.AmmoDef" Name="BaseNbW32Rocket" ParentName="BaseRocketLauncher" Abstract="true">
 		<graphicData>
 			<shaderType>TransparentPostLight</shaderType>
+			<drawSize>1.7</drawSize>
 		</graphicData>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
 			<speed>29</speed><!-- 145m/s 28cm/32cm NbW rocket -->

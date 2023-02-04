@@ -212,4 +212,77 @@
 		<researchPrerequisite>Machining</researchPrerequisite>
 	</RecipeDef>
 	
+	<!-- MP717r -->
+	<RecipeDef ParentName="RangedWeaponRecipeBase">
+		<defName>BuildMP717r</defName>
+		<label>Build MP717(r) SMG</label>
+		<description>Builds a MP717(r) SMG, you know how bad was that time to start using enemies weapon for your own soldiers.\nCaliber: 7.63x25mm Mauser / 7.62x25mm Tokarev</description>
+		<jobString>Building MP717(r).</jobString>
+		<workAmount>14400</workAmount>
+		<skillRequirements>
+			<Crafting>4</Crafting>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SMG_Component</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Weapon_Parts</li>
+					</thingDefs>
+				</filter>
+				<count>9</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>9</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>Metallic</li>
+					</categories>
+				</filter>
+				<count>36</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>Woody</li>
+					</categories>
+				</filter>
+				<count>32</count>
+			</li>
+		</ingredients>
+		<products>
+			<Pa_MP717r>1</Pa_MP717r>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>SMG_Component</li>
+				<li>Weapon_Parts</li>
+				<li>ComponentIndustrial</li>
+			</thingDefs>
+			<categories>
+				<li>SLDBar</li>
+				<li>USLDBar</li>
+				<li>Woody</li>
+			</categories>
+		</fixedIngredientFilter>
+		<recipeUsers>
+			<li>WeaponCraftingWorkTable</li>
+		</recipeUsers>
+		<researchPrerequisite>BlowbackOperation</researchPrerequisite>
+	</RecipeDef>
+	
 </Defs>

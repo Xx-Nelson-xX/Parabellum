@@ -101,7 +101,7 @@
                 <defaultProjectile>Bullet_127x42mmB_FMJ</defaultProjectile>
                 <warmupTime>0.8</warmupTime>
                 <range>42</range>
-                <burstShotCount>5</burstShotCount>
+                <burstShotCount>4</burstShotCount>
                 <ticksBetweenBurstShots>5</ticksBetweenBurstShots>
                 <soundCast>Shot_Beowulf</soundCast>
                 <soundCastTail>GunTail_Heavy</soundCastTail>
@@ -115,7 +115,7 @@
                 <aimedBurstShotCount>2</aimedBurstShotCount>
             </li>
             <li Class="CombatExtended.CompProperties_AmmoUser">
-                <magazineSize>20</magazineSize>
+                <magazineSize>12</magazineSize>
                 <reloadTime>1.8</reloadTime>
                 <ammoSet>AmmoSet_127x42mmB</ammoSet>
             </li>
@@ -200,6 +200,7 @@
         <graphicData>
             <texPath>Things/Weapons/Carabines/K90</texPath>
             <graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.3</drawSize>
         </graphicData>
         <soundInteract>Interact_Rifle</soundInteract>
         <statBases>
@@ -264,6 +265,7 @@
         <graphicData>
             <texPath>Things/Weapons/Carabines/98k</texPath>
             <graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.2</drawSize>
         </graphicData>
         <soundInteract>Interact_Rifle</soundInteract>
         <statBases>
@@ -329,6 +331,7 @@
         <graphicData>
             <texPath>Things/Weapons/Carabines/G41W</texPath>
             <graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.2</drawSize>
         </graphicData>
         <soundInteract>Interact_Rifle</soundInteract>
         <statBases>
@@ -397,6 +400,7 @@
         <graphicData>
             <texPath>Things/Weapons/Carabines/G43</texPath>
             <graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.1</drawSize>
         </graphicData>
         <soundInteract>Interact_Rifle</soundInteract>
         <statBases>

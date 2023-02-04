@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationReplace">	
+	<xpath>Defs/ThingDef[defName="Bullet_15cmSNbWRocket"]/comps</xpath>
+		<value>
+			<comps>
+				<li Class="CombatExtended.CompProperties_ExplosiveCE">
+					<explosiveRadius>9.0</explosiveRadius>
+					<explosiveDamageType>Smoke</explosiveDamageType>
+					<postExplosionGasType>BlindSmoke</postExplosionGasType>
+					<applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+				</li>
+			</comps>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">	
+	<xpath>Defs/ThingDef[defName="Proj_GrenadeM24Nb"]/projectile</xpath>
+		<value>
+			<projectile Class="CombatExtended.ProjectilePropertiesCE">
+				<explosionRadius>5</explosionRadius>
+				<damageDef>Smoke</damageDef>
+				<explosionDelay>120</explosionDelay>
+				<postExplosionGasType>BlindSmoke</postExplosionGasType>
+				<applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+				<soundExplode>Explosion_Smoke</soundExplode>
+			</projectile>
+		</value>
+	</Operation>
+	
+</Patch>

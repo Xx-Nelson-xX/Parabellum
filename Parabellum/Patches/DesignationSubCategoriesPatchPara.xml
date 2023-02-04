@@ -9,6 +9,14 @@
 	</Operation>
 	
 	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ArchitectSense.DesignationSubCategoryDef[defName="SubCategory_Machineguns"]/defNames</xpath>
+		<value>
+			<li>Turret_M2BrowningD</li>
+			<li>Turret_M2BrowningQ</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/ArchitectSense.DesignationSubCategoryDef[defName="SubCategory_Traps"]/defNames</xpath>
 		<value>
 			<li>Pa_Trap_SMine</li>

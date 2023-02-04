@@ -16,15 +16,22 @@
 			<Ammo_762x51mmNATO_FMJ>Bullet_762x51mmNATO_FMJ</Ammo_762x51mmNATO_FMJ>
 			<Ammo_762x51mmNATO_AP>Bullet_762x51mmNATO_AP</Ammo_762x51mmNATO_AP>
 			<Ammo_762x51mmNATO_HP>Bullet_762x51mmNATO_HP</Ammo_762x51mmNATO_HP>
+			<Ammo_762x51mmNATO_T>Bullet_762x51mmNATO_T</Ammo_762x51mmNATO_T>
 			<Ammo_303British_FMJ>Bullet_303British_FMJ</Ammo_303British_FMJ>
 			<Ammo_303British_AP>Bullet_303British_AP</Ammo_303British_AP>
 			<Ammo_303British_HP>Bullet_303British_HP</Ammo_303British_HP>
+			<Ammo_303British_I>Bullet_303British_I</Ammo_303British_I>
 			<Ammo_792x33mmK_FMJ>Bullet_792x33mmK_FMJ</Ammo_792x33mmK_FMJ>
 			<Ammo_792x33mmK_AP>Bullet_792x33mmK_AP</Ammo_792x33mmK_AP>
 			<Ammo_792x33mmK_J>Bullet_792x33mmK_J</Ammo_792x33mmK_J>
+			<Ammo_762x39mmSoviet_FMJ>Bullet_762x39mmSoviet_FMJ</Ammo_762x39mmSoviet_FMJ>
+			<Ammo_762x39mmSoviet_AP>Bullet_762x39mmSoviet_AP</Ammo_762x39mmSoviet_AP>
+			<Ammo_762x39mmSoviet_HP>Bullet_762x39mmSoviet_HP</Ammo_762x39mmSoviet_HP>
+			<Ammo_762x39mmSoviet_I>Bullet_762x39mmSoviet_I</Ammo_762x39mmSoviet_I>
 			<Ammo_556x45mmNATO_FMJ>Bullet_556x45mmNATO_FMJ</Ammo_556x45mmNATO_FMJ>
 			<Ammo_556x45mmNATO_AP>Bullet_556x45mmNATO_AP</Ammo_556x45mmNATO_AP>
 			<Ammo_556x45mmNATO_HP>Bullet_556x45mmNATO_HP</Ammo_556x45mmNATO_HP>
+			<Ammo_556x45mmNATO_D>Bullet_556x45mmNATO_D</Ammo_556x45mmNATO_D>
 		</ammoTypes>
 	</CombatExtended.AmmoSetDef>
 	
@@ -54,6 +61,7 @@
 			<Ammo_762x51mmNATO_FMJ>Bullet_762x51mmNATO_FMJ</Ammo_762x51mmNATO_FMJ>
 			<Ammo_762x51mmNATO_AP>Bullet_762x51mmNATO_AP</Ammo_762x51mmNATO_AP>
 			<Ammo_762x51mmNATO_HP>Bullet_762x51mmNATO_HP</Ammo_762x51mmNATO_HP>
+			<Ammo_762x51mmNATO_T>Bullet_762x51mmNATO_T</Ammo_762x51mmNATO_T>
 		</ammoTypes>
 	</CombatExtended.AmmoSetDef>
 	
@@ -83,9 +91,11 @@
 			<Ammo_762x51mmNATO_FMJ>Bullet_762x51mmNATO_FMJ</Ammo_762x51mmNATO_FMJ>
 			<Ammo_762x51mmNATO_AP>Bullet_762x51mmNATO_AP</Ammo_762x51mmNATO_AP>
 			<Ammo_762x51mmNATO_HP>Bullet_762x51mmNATO_HP</Ammo_762x51mmNATO_HP>
+			<Ammo_762x51mmNATO_T>Bullet_762x51mmNATO_T</Ammo_762x51mmNATO_T>
 			<Ammo_303British_FMJ>Bullet_303British_FMJ</Ammo_303British_FMJ>
 			<Ammo_303British_AP>Bullet_303British_AP</Ammo_303British_AP>
 			<Ammo_303British_HP>Bullet_303British_HP</Ammo_303British_HP>
+			<Ammo_303British_I>Bullet_303British_I</Ammo_303British_I>
 		</ammoTypes>
 	</CombatExtended.AmmoSetDef>
 	
@@ -100,6 +110,7 @@
 			<Ammo_303British_FMJ>Bullet_303British_FMJ</Ammo_303British_FMJ>
 			<Ammo_303British_AP>Bullet_303British_AP</Ammo_303British_AP>
 			<Ammo_303British_HP>Bullet_303British_HP</Ammo_303British_HP>
+			<Ammo_303British_I>Bullet_303British_I</Ammo_303British_I>
 		</ammoTypes>
 	</CombatExtended.AmmoSetDef>
 

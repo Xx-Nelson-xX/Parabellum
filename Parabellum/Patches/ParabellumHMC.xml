@@ -51,6 +51,16 @@
 				</li>
 				
 				<li Class="PatchOperationAdd">	
+				<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_MP717r"]/ammoTypes</xpath>
+					<value>
+						<Ammo_762x25mmTT_FMJ>Bullet_762x25mmTT_FMJ</Ammo_762x25mmTT_FMJ>
+						<Ammo_762x25mmTT_AP>Bullet_762x25mmTT_AP</Ammo_762x25mmTT_AP>
+						<Ammo_762x25mmTT_HP>Bullet_762x25mmTT_HP</Ammo_762x25mmTT_HP>
+						<Ammo_762x25mmTT_API>Bullet_762x25mmTT_API</Ammo_762x25mmTT_API>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">	
 				<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_Winchester"]/ammoTypes</xpath>
 					<value>
 						<Ammo_12Gauge_DB>Bullet_12Gauge_DB</Ammo_12Gauge_DB>

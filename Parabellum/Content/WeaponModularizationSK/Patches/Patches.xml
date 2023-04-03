@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="WeaponCraftingWorkTable" or defName="AdvWeaponCraftingWorkTable"]/comps/li[@Class="RW_ModularizationWeapon.CompProperties_CustomWeaponPort"]/filter/thingDefs</xpath>
+			<value>
+				<!-- Rifles -->
+				<li>Pa_MKb42H</li>				<!--SMG_C2 -->
+				<li>Pa_StG44AR</li> 			<!--Range_C2 -->
+				<li>Pa_StG45M</li>				<!--Rifles_C2 -->
+				<!-- Carbines -->
+				<li>Pa_VG</li> 					<!--Rifles_C1 -->
+				<li>Pa_VG45k</li> 				<!--Machining -->
+				<li>Pa_K98kM</li> 				<!--Rifles_C1 -->
+				<li>Pa_G43C</li> 				<!--Range_C2 -->
+				<li>Pa_UniversalAR</li> 		<!--Rifles_C1 -->
+				<!-- SMG -->
+				<!-- Pistols -->
+				<!-- Shotguns -->
+				<li>Pa_DP</li>				<!--GasOperation -->
+				<li>Pa_SSS</li> 			<!--GasOperation -->
+				<li>Pa_W1887L</li>			<!--Parabellum_Alpha/Muskets_B3(Vile's P-I) -->
+				<li>Pa_W1887S</li> 			<!--Parabellum_Alpha -->
+				<li>Pa_W1897T</li>			<!--Parabellum_Alpha -->
+				<li>Pa_W1897L</li> 			<!--Parabellum_Alpha -->
+				<li>Pa_BA5L</li>			<!--Machining -->
+				<li>Pa_BA5S</li> 			<!--GasOperation -->
+				<!-- Heavy -->
+				<!-- Sniper Rifles -->
+				<!-- Anti-Material Rifles -->
+			</value>
+		<order>Append</order>
+	</Operation>
+	
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/ThingDef[defName="Pa_K98S" or defName="Pa_K98k"]</xpath>
+	</Operation>
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/RecipeDef[defName="BuildK98k" or defName="BuildK98S"]</xpath>
+	</Operation>
+	
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/ThingDef[defName="Pa_G43K"]</xpath>
+	</Operation>
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/RecipeDef[defName="BuildG43K"]</xpath>
+	</Operation>
+
+</Patch>

@@ -21,6 +21,14 @@
 		</ammoTypes>
 	</CombatExtended.AmmoSetDef>
 	
+	<CombatExtended.AmmoSetDef>
+		<defName>AmmoSet_8x94mmPzB</defName>
+		<label>7.92x94mm Patronen</label>
+		<ammoTypes>
+			<Ammo_8mmM_KP>Bullet_8x94mmPzB_AP</Ammo_8mmM_KP>
+		</ammoTypes>
+	</CombatExtended.AmmoSetDef>
+	
 	<!-- ==================== Ammo ========================== -->
 
 	<ThingDef Class="CombatExtended.AmmoDef" Name="8mmMBase" ParentName="SmallAmmoBase" Abstract="True">
@@ -145,6 +153,17 @@
 			<damageAmountBase>20</damageAmountBase>
 			<armorPenetrationSharp>16.7</armorPenetrationSharp>
 			<armorPenetrationBlunt>69.4</armorPenetrationBlunt>
+		</projectile>
+	</ThingDef>
+	
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="Base8mmMBullet">
+		<defName>Bullet_8x94mmPzB_AP</defName>
+		<label>7.92x94mm bullet(AP)</label>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<speed>242</speed><!--1210m/s-->
+			<damageAmountBase>28</damageAmountBase>
+			<armorPenetrationSharp>30</armorPenetrationSharp>
+			<armorPenetrationBlunt>213.44</armorPenetrationBlunt>
 		</projectile>
 	</ThingDef>
 	

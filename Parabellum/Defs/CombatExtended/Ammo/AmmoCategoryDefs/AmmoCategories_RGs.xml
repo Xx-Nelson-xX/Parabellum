@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+  <!-- =============== Schiessbecher Rifle Grenades =============== -->
+  <CombatExtended.AmmoCategoryDef>
+    <defName>SchiessbecherHEAT</defName>
+    <label>61mm Grosse Panzerganate 61</label>
+    <labelShort>61mm GPG(HEAT)</labelShort>
+    <description>Anti-Tank rifle grenade, used by Schiessbecher rifle grenade launcher, it has quite slow projectile speed and limited armor penetration, very subpar against non-armored target or moving target.</description>
+  </CombatExtended.AmmoCategoryDef>
+  
+  <CombatExtended.AmmoCategoryDef>
+    <defName>SchiessbecherHE</defName>
+    <label>30mm Gewehr-Sprenggranate</label>
+    <labelShort>30mm GSG(HE)</labelShort>
+    <description>High Explosive rifle grenade, used by Schiessbecher rifle grenade launcher, it has slow projectile speed and limited explosion blast range, not very effective against armored target.</description>
+  </CombatExtended.AmmoCategoryDef>
+
+</Defs>

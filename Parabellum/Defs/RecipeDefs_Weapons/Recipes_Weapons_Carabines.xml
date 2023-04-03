@@ -551,4 +551,69 @@
 	    <researchPrerequisite>Rifles_C1</researchPrerequisite>
 	</RecipeDef>
 	
+	<!-- Gustloff Volkssturmgewehr VG 3/45k -->
+	<RecipeDef ParentName="RangedWeaponRecipeBase">
+		<defName>BuildVG45k</defName>
+		<label>Build a Gustloff VG 3/45k</label>
+		<description>Build a Gustloff Volkssturmgewehr VG 3/45k, is not a BB gun.\nCaliber: 7.92x33mm Kurz</description>
+		<jobString>Building Gustloff VG 3/45.</jobString>
+		<workAmount>7600</workAmount>
+		<skillRequirements>
+			<Crafting>4</Crafting>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Weapon_Parts</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>6</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>Metallic</li>
+					</categories>
+				</filter>
+				<count>24</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>Woody</li>
+					</categories>
+				</filter>
+				<count>26</count>
+			</li>
+		</ingredients>
+		<products>
+			<Pa_VG45k>1</Pa_VG45k>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Weapon_Parts</li>
+				<li>ComponentIndustrial</li>
+			</thingDefs>
+			<categories>
+				<li>SLDBar</li>
+				<li>USLDBar</li>
+				<li>HCMBar</li>
+				<li>Woody</li>
+			</categories>
+		</fixedIngredientFilter>
+		<recipeUsers>
+			<li>WeaponCraftingWorkTable</li>
+		</recipeUsers>
+	    <researchPrerequisite>Machining</researchPrerequisite>
+	</RecipeDef>
+	
 	</Defs>

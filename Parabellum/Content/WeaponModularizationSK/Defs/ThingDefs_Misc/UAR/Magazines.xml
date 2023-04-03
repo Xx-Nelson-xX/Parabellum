@@ -1,0 +1,582 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--Magazine-->
+	
+	<!-- AR Magazine-->
+	<ThingDef Name="Module_ARMagazine" ParentName="GunPartBase" Abstract="True">
+		<graphicData>
+			<texPath>Things/WeaponPart/Parts/AttachmentItem_Magazine_Generic</texPath>
+		</graphicData>
+		<uiIconPath>ui/icons/AttachmentIcon/AttachmentIcon_Mag</uiIconPath>
+		<recipeMaker>
+			<recipeUsers>
+				<li>ARToolingSet</li>
+			</recipeUsers>
+		</recipeMaker>
+	</ThingDef>
+	
+	<!--9mm Magazine-->
+	<!--32rnd magazine(Uzi)-->
+	<ThingDef ParentName="Module_ARMagazine">
+		<defName>Module_SMG32rnd</defName>
+		<label>32rnd SMG stick magazine</label>
+		<description>Standard double stack 32rnd double feed stick magazine.</description>
+		<statBases>
+			<WorkToMake>100</WorkToMake>
+			<MarketValue>20</MarketValue>
+			<Mass>0.227</Mass>
+			<Bulk>0.12</Bulk>
+		</statBases>
+		<costList>
+			<ComponentIndustrial>1</ComponentIndustrial>
+		</costList>
+		<recipeMaker>
+			<researchPrerequisite>Range_C2</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>4</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<comps>
+			<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
+				<PartTexPath>Things/WeaponPart/Gun/HeavySMG/HeavySMG_Magazine</PartTexPath>
+				<statOffset>
+					<Bulk>0.12</Bulk>
+				</statOffset>
+				<compPropertiesMultiplier>
+					<li Reader-Class="CombatExtended.CompProperties_AmmoUser">
+						<reloadTime>0.8</reloadTime>
+					</li>
+				</compPropertiesMultiplier>
+				<compPropertiesOffseter>
+					<li Reader-Class="CombatExtended.CompProperties_AmmoUser">
+						<magazineSize>31</magazineSize>
+					</li>
+				</compPropertiesOffseter>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<!--100rnd magazine-->
+	<ThingDef ParentName="Module_ARMagazine">
+		<defName>Module_SMG100rnd</defName>
+		<label>100rnd SMG drum magazine(9x19mm)</label>
+		<description>A double stack 100rnd double feed drum magazine.</description>
+		<statBases>
+			<Mass>1.36</Mass>
+			<WorkToMake>250</WorkToMake>
+			<MarketValue>220</MarketValue>
+			<Bulk>1.15</Bulk>
+		</statBases>
+		<costList>
+			<ComponentIndustrial>4</ComponentIndustrial>
+		</costList>
+		<recipeMaker>
+			<researchPrerequisite>Range_C2</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>8</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<comps>
+			<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
+				<PartTexPath>Things/WeaponPart/Gun/HeavySMG/HeavySMG_CartridgeDrumV</PartTexPath>
+				<statOffset>
+					<Bulk>1.15</Bulk>
+				</statOffset>
+				<compPropertiesOffseter>
+					<il Reader-Class="CombatExtended.CompProperties_AmmoUser">
+						<magazineSize>99</magazineSize>
+					</il>
+				</compPropertiesOffseter>
+				<compPropertiesMultiplier>
+					<il Reader-Class="CombatExtended.CompProperties_AmmoUser">
+						<reloadTime>1.2</reloadTime>
+					</il>
+				</compPropertiesMultiplier>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<!--.223/5.56mm / .50 Beowulf AR Magazine-->
+	<!--20rnd AR Magazine-->
+	<ThingDef ParentName="Module_ARMagazine">
+		<defName>Module_AR20rnd</defName>
+		<label>20rnd AR magazine</label>
+		<description>Old school double stack 20rnd double feed straight magazine for 5.56x45mm NATO AR rifles.</description>
+		<statBases>
+			<WorkToMake>200</WorkToMake>
+			<MarketValue>40</MarketValue>
+			<Mass>0.09</Mass>
+			<Bulk>0.34</Bulk>
+		</statBases>
+		<costList>
+			<ComponentIndustrial>2</ComponentIndustrial>
+		</costList>
+		<recipeMaker>
+			<researchPrerequisite>Range_C2</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>1</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<comps>
+			<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
+				<PartTexPath>Things/WeaponPart/Magazines/Pa_AR_20rnd</PartTexPath>
+				<statOffset>
+					<Bulk>0.34</Bulk>
+				</statOffset>
+				<compPropertiesMultiplier>
+					<li Reader-Class="CombatExtended.CompProperties_AmmoUser">
+						<reloadTime>0.9</reloadTime>
+					</li>
+				</compPropertiesMultiplier>
+				<compPropertiesOffseter>
+					<li Reader-Class="CombatExtended.CompProperties_AmmoUser">
+						<magazineSize>19</magazineSize>
+					</li>
+				</compPropertiesOffseter>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<!--8rnd .50 Beowulf AR Magazine-->
+	<ThingDef ParentName="Module_ARMagazine">
+		<defName>Module_AR8rndBeowulf</defName>
+		<label>.50 Beowulf 8rnd magazine</label>
+		<description>Old school double stack 20rnd double feed straight magazine converted to single stack 8rnd .50 Beowulf for AR rifles.</description>
+		<statBases>
+			<WorkToMake>220</WorkToMake>
+			<MarketValue>100</MarketValue>
+			<Mass>0.09</Mass>
+			<Bulk>0.34</Bulk>
+		</statBases>
+		<costList>
+			<ComponentIndustrial>2</ComponentIndustrial>
+		</costList>
+		<recipeMaker>
+			<researchPrerequisite>Rifles_C3</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>2</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<comps>
+			<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
+				<PartTexPath>Things/WeaponPart/Magazines/Pa_AR_20rnd</PartTexPath>
+				<statOffset>
+					<Bulk>0.34</Bulk>
+				</statOffset>
+				<compPropertiesMultiplier>
+					<li Reader-Class="CombatExtended.CompProperties_AmmoUser">
+						<reloadTime>0.9</reloadTime>
+					</li>
+				</compPropertiesMultiplier>
+				<compPropertiesOffseter>
+					<il Reader-Class="CombatExtended.CompProperties_AmmoUser">
+						<magazineSize>7</magazineSize>
+					</il>
+				</compPropertiesOffseter>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<!--30rnd AR Magazine-->
+	<ThingDef ParentName="Module_ARMagazine">
+		<defName>Module_AR30rnd</defName>
+		<label>30rnd STANAG AR magazine</label>
+		<description>Old school double stack 30rnd double feed curve magazine for 5.56x45mm NATO AR rifles.</description>
+		<statBases>
+			<WorkToMake>320</WorkToMake>
+			<MarketValue>70</MarketValue>
+			<Mass>0.117</Mass>
+			<Bulk>0.45</Bulk>
+		</statBases>
+		<costList>
+			<ComponentIndustrial>3</ComponentIndustrial>
+		</costList>
+		<recipeMaker>
+			<researchPrerequisite>Range_C2</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>2</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<comps>
+			<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
+				<PartTexPath>Things/WeaponPart/Gun/AssaultRifle/AssaultRifle_Magazine</PartTexPath>
+				<statOffset>
+					<Bulk>0.45</Bulk>
+				</statOffset>
+				<compPropertiesOffseter>
+					<li Reader-Class="CombatExtended.CompProperties_AmmoUser">
+						<magazineSize>29</magazineSize>
+					</li>
+				</compPropertiesOffseter>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<!--12rnd .50 Beowulf AR Magazine-->
+	<ThingDef ParentName="Module_ARMagazine">
+		<defName>Module_AR12rndBeowulf</defName>
+		<label>.50 Beowulf 12rnd magazine</label>
+		<description>Old school double stack 30rnd double feed curve magazine converted to single stack 12rnd .50 Beowulf for AR rifles.</description>
+		<statBases>
+			<WorkToMake>380</WorkToMake>
+			<MarketValue>180</MarketValue>
+			<Mass>0.117</Mass>
+			<Bulk>0.45</Bulk>
+		</statBases>
+		<costList>
+			<ComponentIndustrial>3</ComponentIndustrial>
+		</costList>
+		<recipeMaker>
+			<researchPrerequisite>Rifles_C3</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>4</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<comps>
+			<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
+				<PartTexPath>Things/WeaponPart/Gun/AssaultRifle/AssaultRifle_Magazine</PartTexPath>
+				<statOffset>
+					<Bulk>0.34</Bulk>
+				</statOffset>
+				<compPropertiesOffseter>
+					<il Reader-Class="CombatExtended.CompProperties_AmmoUser">
+						<magazineSize>11</magazineSize>
+					</il>
+				</compPropertiesOffseter>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<!--60rnd AR Magazine-->
+	<ThingDef ParentName="Module_ARMagazine">
+		<defName>Module_AR60rnd</defName>
+		<label>60rnd quad stack AR magazine</label>
+		<description>A quad stack 60rnd double feed curve magazine for 5.56x45mm NATO AR rifles.</description>
+		<statBases>
+			<WorkToMake>600</WorkToMake>
+			<MarketValue>120</MarketValue>
+			<Mass>0.181</Mass>
+			<Bulk>0.85</Bulk>
+		</statBases>
+		<costList>
+			<ComponentIndustrial>1</ComponentIndustrial>
+			<Weapon_Parts>1</Weapon_Parts>
+		</costList>
+		<recipeMaker>
+			<researchPrerequisite>Rifles_C2</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>5</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<comps>
+			<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
+				<PartTexPath>Things/WeaponPart/Gun/AssaultRifle/AssaultRifle_Magazine60</PartTexPath>
+				<statOffset>
+					<Bulk>0.85</Bulk>
+				</statOffset>
+				<compPropertiesMultiplier>
+					<li Reader-Class="CombatExtended.CompProperties_AmmoUser">
+						<reloadTime>1.2</reloadTime>
+					</li>
+				</compPropertiesMultiplier>
+				<compPropertiesOffseter>
+					<li Reader-Class="CombatExtended.CompProperties_AmmoUser">
+						<magazineSize>59</magazineSize>
+					</li>
+				</compPropertiesOffseter>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<!--20rnd .50 Beowulf AR Magazine-->
+	<ThingDef ParentName="Module_ARMagazine">
+		<defName>Module_AR20rndBeowulf</defName>
+		<label>.50 Beowulf 20rnd magazine</label>
+		<description>A quad stack 60rnd double feed curve magazine converted to double stack single feed 20rnd .50 Beowulf for AR rifles.</description>
+		<statBases>
+			<WorkToMake>640</WorkToMake>
+			<MarketValue>300</MarketValue>
+			<Mass>0.181</Mass>
+			<Bulk>0.85</Bulk>
+		</statBases>
+		<costList>
+			<ComponentIndustrial>1</ComponentIndustrial>
+			<Weapon_Parts>1</Weapon_Parts>
+		</costList>
+		<recipeMaker>
+			<researchPrerequisite>Rifles_C3</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>6</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<comps>
+			<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
+				<PartTexPath>Things/WeaponPart/Gun/AssaultRifle/AssaultRifle_Magazine60</PartTexPath>
+				<statOffset>
+					<Bulk>0.85</Bulk>
+				</statOffset>
+				<compPropertiesMultiplier>
+					<li Reader-Class="CombatExtended.CompProperties_AmmoUser">
+						<reloadTime>1.2</reloadTime>
+					</li>
+				</compPropertiesMultiplier>
+				<compPropertiesOffseter>
+					<il Reader-Class="CombatExtended.CompProperties_AmmoUser">
+						<magazineSize>19</magazineSize>
+					</il>
+				</compPropertiesOffseter>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<!--100rnd AR Magazine-->
+	<ThingDef ParentName="Module_ARMagazine">
+		<defName>Module_AR100rnd</defName>
+		<label>100rnd AR Beta-C magazine</label>
+		<description>A quad stack 100rnd double feed curve magazine for 5.56x45mm NATO AR rifles.</description>
+		<statBases>
+			<WorkToMake>2000</WorkToMake>
+			<MarketValue>240</MarketValue>
+			<Mass>1.51</Mass>
+			<Bulk>2.84</Bulk>
+		</statBases>
+		<costList>
+			<ComponentIndustrial>2</ComponentIndustrial>
+			<Weapon_Parts>3</Weapon_Parts>
+		</costList>
+		<recipeMaker>
+			<researchPrerequisite>HeavyTurrets</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>8</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<comps>
+			<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
+				<PartTexPath>Things/WeaponPart/Gun/AssaultRifle/AssaultRifle_CartridgeDrum</PartTexPath>
+				<statOffset>
+					<Bulk>2.84</Bulk>
+				</statOffset>
+				<compPropertiesMultiplier>
+					<li Reader-Class="CombatExtended.CompProperties_AmmoUser">
+						<reloadTime>2</reloadTime>
+					</li>
+				</compPropertiesMultiplier>
+				<compPropertiesOffseter>
+					<li Reader-Class="CombatExtended.CompProperties_AmmoUser">
+						<magazineSize>99</magazineSize>
+					</li>
+				</compPropertiesOffseter>
+				<statMultiplier>
+					<RangedWeapon_Cooldown>1.3</RangedWeapon_Cooldown>
+				</statMultiplier>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<!--32rnd .50 Beowulf AR Magazine-->
+	<ThingDef ParentName="Module_ARMagazine">
+		<defName>Module_AR32rndBeowulf</defName>
+		<label>.50 Beowulf 32rnd snail magazine</label>
+		<description>A 32rnd single feed .50 Beowulf snail magazine for AR rifles.</description>
+		<statBases>
+			<WorkToMake>1800</WorkToMake>
+			<MarketValue>420</MarketValue>
+			<Mass>0.57</Mass>
+			<Bulk>2.21</Bulk>
+		</statBases>
+		<costList>
+			<ComponentIndustrial>4</ComponentIndustrial>
+			<Weapon_Parts>2</Weapon_Parts>
+		</costList>
+		<recipeMaker>
+			<researchPrerequisite>HeavyTurrets</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>10</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<comps>
+			<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
+				<PartTexPath>Things/WeaponPart/Gun/AssaultRifle/AssaultRifle_CartridgeDrum</PartTexPath>
+				<statOffset>
+					<Bulk>2.21</Bulk>
+				</statOffset>
+				<compPropertiesMultiplier>
+					<li Reader-Class="CombatExtended.CompProperties_AmmoUser">
+						<reloadTime>1.8</reloadTime>
+					</li>
+				</compPropertiesMultiplier>
+				<compPropertiesOffseter>
+					<il Reader-Class="CombatExtended.CompProperties_AmmoUser">
+						<magazineSize>31</magazineSize>
+					</il>
+				</compPropertiesOffseter>
+				<statMultiplier>
+					<RangedWeapon_Cooldown>1.2</RangedWeapon_Cooldown>
+				</statMultiplier>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<!--20rnd .308/7.62x51mm NATO AR Magazine-->
+	<ThingDef ParentName="Module_ARMagazine">
+		<defName>Module_BR20rnd</defName>
+		<label>20rnd BR magazine</label>
+		<description>A double stack 20rnd double feed straight battle rifle magazine for AR like rifles.</description>
+		<statBases>
+			<WorkToMake>340</WorkToMake>
+			<MarketValue>200</MarketValue>
+			<Mass>0.35</Mass>
+			<Bulk>0.45</Bulk>
+		</statBases>
+		<costList>
+			<Weapon_Parts>1</Weapon_Parts>
+		</costList>
+		<recipeMaker>
+			<researchPrerequisite>Rifles_C3</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>6</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<comps>
+			<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
+				<PartTexPath>Things/WeaponPart/Magazines/Pa_BR_20rnd</PartTexPath>
+				<statOffset>
+					<Bulk>0.45</Bulk>
+				</statOffset>
+				<compPropertiesMultiplier>
+					<li Reader-Class="CombatExtended.CompProperties_AmmoUser">
+						<reloadTime>1.1</reloadTime>
+					</li>
+				</compPropertiesMultiplier>
+				<compPropertiesOffseter>
+					<il Reader-Class="CombatExtended.CompProperties_AmmoUser">
+						<magazineSize>19</magazineSize>
+					</il>
+				</compPropertiesOffseter>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<!--30rnd .308/7.62x51mm NATO AR Magazine-->
+	<ThingDef ParentName="Module_ARMagazine">
+		<defName>Module_BR30rnd</defName>
+		<label>30rnd BR magazine</label>
+		<description>A double stack 30rnd double feed straight battle rifle magazine for AR like rifles.</description>
+		<statBases>
+			<WorkToMake>380</WorkToMake>
+			<MarketValue>240</MarketValue>
+			<Mass>0.49</Mass>
+			<Bulk>0.6</Bulk>
+		</statBases>
+		<costList>
+			<ComponentIndustrial>1</ComponentIndustrial>
+			<Weapon_Parts>2</Weapon_Parts>
+		</costList>
+		<recipeMaker>
+			<researchPrerequisite>Rifles_C3</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>7</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<comps>
+			<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
+				<PartTexPath>Things/WeaponPart/Magazines/Pa_BR_30rnd</PartTexPath>
+				<statOffset>
+					<Bulk>0.6</Bulk>
+				</statOffset>
+				<compPropertiesMultiplier>
+					<li Reader-Class="CombatExtended.CompProperties_AmmoUser">
+						<reloadTime>1.2</reloadTime>
+					</li>
+				</compPropertiesMultiplier>
+				<compPropertiesOffseter>
+					<il Reader-Class="CombatExtended.CompProperties_AmmoUser">
+						<magazineSize>29</magazineSize>
+					</il>
+				</compPropertiesOffseter>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<!--8rnd 12 Gauge Magazine-->
+	<ThingDef ParentName="Module_ARMagazine">
+		<defName>Module_SG8rnd</defName>
+		<label>8rnd SG box magazine</label>
+		<description>A single stack 8rnd single feed box magazine for autoloader shotgun.</description>
+		<statBases>
+			<WorkToMake>300</WorkToMake>
+			<MarketValue>100</MarketValue>
+			<Mass>0.23</Mass>
+			<Bulk>0.38</Bulk>
+		</statBases>
+		<costList>
+			<ComponentIndustrial>2</ComponentIndustrial>
+		</costList>
+		<recipeMaker>
+			<researchPrerequisite>Shotgun_C2</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>4</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<comps>
+			<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
+				<PartTexPath>Things/WeaponPart/Magazines/Pa_SG_8rnd</PartTexPath>
+				<statOffset>
+					<Bulk>0.38</Bulk>
+				</statOffset>
+				<compPropertiesMultiplier>
+					<li Reader-Class="CombatExtended.CompProperties_AmmoUser">
+						<reloadTime>0.9</reloadTime>
+					</li>
+				</compPropertiesMultiplier>
+				<compPropertiesOffseter>
+					<il Reader-Class="CombatExtended.CompProperties_AmmoUser">
+						<magazineSize>7</magazineSize>
+					</il>
+				</compPropertiesOffseter>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<!--20rnd 12 Gauge Magazine-->
+	<ThingDef ParentName="Module_ARMagazine">
+		<defName>Module_SG20rnd</defName>
+		<label>20rnd SG drum magazine</label>
+		<description>A single stack 20rnd single feed drum magazine for autoloader shotgun.</description>
+		<statBases>
+			<WorkToMake>2400</WorkToMake>
+			<MarketValue>220</MarketValue>
+			<Mass>1.42</Mass>
+			<Bulk>2.26</Bulk>
+		</statBases>
+		<costList>
+			<ComponentIndustrial>2</ComponentIndustrial>
+		</costList>
+		<recipeMaker>
+			<researchPrerequisite>Shotgun_C2</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>8</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<comps>
+			<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
+				<PartTexPath>Things/WeaponPart/Magazines/Pa_SG_20rnd</PartTexPath>
+				<statOffset>
+					<Bulk>2.26</Bulk>
+				</statOffset>
+				<compPropertiesMultiplier>
+					<li Reader-Class="CombatExtended.CompProperties_AmmoUser">
+						<reloadTime>1.4</reloadTime>
+					</li>
+				</compPropertiesMultiplier>
+				<compPropertiesOffseter>
+					<il Reader-Class="CombatExtended.CompProperties_AmmoUser">
+						<magazineSize>19</magazineSize>
+					</il>
+				</compPropertiesOffseter>
+			</li>
+		</comps>
+	</ThingDef>
+	
+</Defs>

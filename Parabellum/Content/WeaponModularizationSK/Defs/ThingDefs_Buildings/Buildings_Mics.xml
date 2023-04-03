@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	
+	<ThingDef ParentName="WorkTable">
+		<defName>ARToolingSet</defName>
+		<label>AR tooling set</label>
+		<description>A tool set to cuztomize AR family rifle can craft its parts.</description>
+		<graphicData>
+			<texPath>Things/Building/Furniture/Tools/SmallToolCabinet</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(1,1)</drawSize>
+			<drawRotated>true</drawRotated>
+			<shaderType>CutoutComplex</shaderType>
+			<shadowData>
+				<volume>(1.8, 1.0, 0.85)</volume>
+				<offset>(0,0,0)</offset>
+			</shadowData>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<stuffCategories>
+			<li>RuggedMetallic</li>
+		</stuffCategories>
+		<costStuffCount>80</costStuffCount>
+		<costList>
+			<Weapon_Parts>10</Weapon_Parts>
+			<Mechanism>1</Mechanism>
+		</costList>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<thingCategories>
+			<li>BuildingsProduction</li>
+		</thingCategories>
+		<statBases>
+			<WorkToBuild>400</WorkToBuild>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Flammability>0</Flammability>
+			<WorkTableWorkSpeedFactor>1</WorkTableWorkSpeedFactor>
+			<Mass>5</Mass>
+		</statBases>
+		<size>(1,1)</size>
+		<pathCost>60</pathCost>
+		<passability>Standable</passability>
+		<designationCategory>Production</designationCategory>
+		<comps>
+			<li Class="CompProperties_AffectedByFacilities">
+				<linkableFacilities>
+					<li>Small_ToolCabinet</li>
+					<li>PodChair</li>
+				</linkableFacilities>
+			</li>
+			<li Class="CompProperties_Facility">
+				<statOffsets>
+					<WorkTableWorkSpeedFactor>0.10</WorkTableWorkSpeedFactor>
+				</statOffsets>
+				<maxSimultaneous>1</maxSimultaneous>
+			</li>
+			<li Class="RW_ModularizationWeapon.CompProperties_CustomWeaponPort">
+				<filter>
+					<thingDefs>
+						<li>Pa_UniversalAR</li> 		<!--Rifles_C1 -->
+					</thingDefs>
+				</filter>
+			</li>
+			<li>
+				<compClass>CompReportWorkSpeed</compClass>
+			</li>
+		</comps>
+		<building>
+			<uninstallWork>250</uninstallWork>
+			<buildingTags>
+				<li>Production</li>
+			</buildingTags>
+		</building>
+		<researchPrerequisites>
+			<li>Rifles_C1</li>
+		</researchPrerequisites>
+		<placeWorkers>
+			<li>PlaceWorker_ShowFacilitiesConnections</li>
+			<li>PlaceWorker_ReportWorkSpeedPenalties</li>
+		</placeWorkers>
+		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+	</ThingDef>
+	
+</Defs>

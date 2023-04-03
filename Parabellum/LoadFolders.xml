@@ -10,5 +10,6 @@
   <v1.4>
     <li>/</li>
     <li>Content/1.4</li>
+	<li IfModActive="RWNodeTree.ModularizationVanillaWeapon">Content/WeaponModularizationSK</li>
   </v1.4>
 </loadFolders>

@@ -9,6 +9,7 @@
 		<graphicData>
 			<texPath>Things/Weapons/Specials/S8498III</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.65</drawSize>
 		</graphicData>
 		<soundInteract>InteractMelee</soundInteract>
 		<techLevel>Industrial</techLevel>
@@ -87,7 +88,7 @@
 		</thingCategories>
 		<modExtensions>
 		  <li Class="CombatExtended.GunDrawExtension">
-			<DrawSize>0.9</DrawSize>
+			<DrawSize>0.65</DrawSize>
 		  </li>
 		</modExtensions>
 	</ThingDef>

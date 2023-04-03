@@ -25,7 +25,7 @@
             <Mass>6.8</Mass>
         </statBases>
 		<generateCommonality>0.6</generateCommonality>
-        <weaponTags>
+        <weaponTags Inherit="False">
             <li>RKT1</li>
 			<li>GrenadeTierTwo</li>
 			<li>Launchers</li>
@@ -100,7 +100,7 @@
             <Mass>3.2</Mass>
         </statBases>
 		<generateCommonality>0.4</generateCommonality>
-        <weaponTags>
+        <weaponTags Inherit="False">
             <li>RKT1</li>
 			<li>GrenadeTierTwo</li>
 			<li>Launchers</li>

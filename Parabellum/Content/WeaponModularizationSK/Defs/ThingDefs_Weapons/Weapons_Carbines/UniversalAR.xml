@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<!-- Universal AR -->
+    <ThingDef ParentName="BaseGun_LongBarreled">
+        <defName>Pa_UniversalAR</defName>
+        <label>Universal AR</label>
+        <description>The receiver of the basic AR family, you can use it as a bolt pistol but is a very ineffective way to use the gun, please add the rest of the gun parts.</description>
+        <graphicData>
+            <texPath>Things/Weapons/Carabines/Pa_AR_R</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>Interact_Rifle</soundInteract>
+        <statBases>
+            <MarketValue>250</MarketValue>
+            <SightsEfficiency>0.5</SightsEfficiency>
+            <ShotSpread>0.8</ShotSpread>
+            <SwayFactor>1.9</SwayFactor>
+            <RangedWeapon_Cooldown>0.24</RangedWeapon_Cooldown>
+            <Bulk>3.2</Bulk>
+            <Mass>0.9</Mass>
+        </statBases>
+		<generateCommonality>0.7</generateCommonality>
+        <weaponTags>
+            <li>RF1</li>
+			<li>RF3</li>
+			<li>RF4</li>
+			<li>IndustrialGunAdvanced</li>
+			<li>AdvancedGun</li>
+			<li>TierOneRifle</li>
+            <li>TierTwoRifle</li>
+			<li>TierThreeRifle</li>
+            <li>CE_AI_Rifle</li>
+        </weaponTags>
+        <thingCategories>
+            <li>Rifles</li>
+        </thingCategories>
+        <verbs>
+            <li Class="CombatExtended.VerbPropertiesCE">
+                <recoilAmount>1.3</recoilAmount>
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>Bullet_556x45mmNATO_FMJ</defaultProjectile>
+                <warmupTime>0.2</warmupTime>
+                <range>22</range>
+				<burstShotCount>1</burstShotCount>
+                <ticksBetweenBurstShots>4</ticksBetweenBurstShots>
+                <soundCast>Shot_AssaultRifle</soundCast>
+                <soundCastTail>GunTail_Heavy</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+            </li>
+        </verbs>
+        <comps>
+            <li Class="CombatExtended.CompProperties_FireModes">
+                <aiAimMode>AimedShot</aiAimMode>
+				<aiUseBurstMode>true</aiUseBurstMode>
+            </li>
+            <li Class="CombatExtended.CompProperties_AmmoUser">
+                <magazineSize>1</magazineSize>
+                <reloadTime>2</reloadTime>
+                <ammoSet>AmmoSet_556x45mmNATO</ammoSet>
+            </li>
+			<li Class="RW_NodeTree.CompProperties_ChildNodeProccesser">
+				<TextureSizeFactor>320</TextureSizeFactor>
+				<TextureFilterMode>Point</TextureFilterMode>
+				<ExceedanceFactor>2</ExceedanceFactor>
+				<ExceedanceOffset>1</ExceedanceOffset>
+				<ForceNodeIdControl>true</ForceNodeIdControl>
+			</li>
+			<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
+				<setRandomPartWhenCreate>true</setRandomPartWhenCreate>
+				<!--<verbPropertiesObjectPatchByOtherPart Default="true"/>-->
+				<attachmentProperties>
+					<li>
+						<id>ModAR_Sight</id>
+						<name>sight</name>
+						<UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Scope</UITexPath>
+						<postion>(0.025,0.1,-0.00465)</postion>
+						<scale>(0.9,0,0.9)</scale>
+						<allowEmpty>true</allowEmpty>
+						<filter>
+							<thingDefs>
+								<li>Module_ACOG</li>
+								<li>Module_HoloSight</li>
+								<li>Module_RedDotSight</li>
+								<li>Module_SniperScope</li>
+							</thingDefs>
+						</filter>
+					</li>
+					<li>
+						<id>ModAR_CK</id>
+						<name>convertion</name>
+						<UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Receiver_Component</UITexPath>
+						<!--<compPropertiesObjectPatchByChildPart  Default="false" />-->
+						<postion>(0,0.1,0)</postion>
+						<scale>(0.8,0,0.8)</scale>
+						<defultThing>Module_DK</defultThing>
+						<allowEmpty>false</allowEmpty>
+						<filter>
+							<thingDefs>
+								<li>Module_DK</li>
+								<li>Module_BeowulfCK</li>
+								<li>Module_9mmCK</li>
+								<li>Module_12GK</li>
+								<li>Module_308K</li>
+							</thingDefs>
+						</filter>
+					</li>
+					<!--<li>
+						<id>ModAR_Barrel</id>
+						<name>barrel</name>
+						<UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Barrel</UITexPath>
+						<postion>(0.284986,0.1,0)</postion>
+						<allowEmpty>true</allowEmpty>
+						<filter>
+							<thingDefs>
+								<li>Module_6inchB</li>
+								<li>Module_10inchB</li>
+								<li>Module_14inchB</li>
+								<li>Module_20inchB</li>
+							</thingDefs>
+						</filter>
+					</li>-->
+					<!--<li>
+						<id>ModAR_Magazine</id>
+						<name>magazine</name>
+						<UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Mag</UITexPath>
+						<postion>(0,-0.1,0.0893)</postion>
+						<defultThing>Module_AR20rnd</defultThing>
+						<allowEmpty>true</allowEmpty>
+						<filter>
+							<thingDefs>
+								<li>Module_AR20rnd</li>
+								<li>Module_AR_MagClip</li>
+								<li>Module_AR_Mag60Clip</li>
+								<li>Module_AR_MagDrum</li>
+							</thingDefs>
+						</filter>
+					</li>-->
+					<li>
+						<id>ModAR_Stock</id>
+						<name>stock</name>
+						<UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Stock</UITexPath>
+						<postion>(0,0.1,0)</postion>
+						<defultThing>Module_ARBT</defultThing>
+						<allowEmpty>true</allowEmpty>
+						<filter>
+							<thingDefs>
+								<li>Module_ARBT</li>
+							</thingDefs>
+						</filter>
+					</li>
+				</attachmentProperties>
+			</li>
+        </comps>
+        <smeltProducts>
+			<ComponentIndustrial>1</ComponentIndustrial>
+			<Rifle_Component>1</Rifle_Component>
+            <Weapon_Parts>1</Weapon_Parts>
+			<Plastic>2</Plastic>
+        </smeltProducts>
+    </ThingDef>
+	
+	<!-- Universal AR -->
+	<RecipeDef ParentName="RangedWeaponRecipeBase">
+		<defName>BuildUAR</defName>
+		<label>Build a Universal AR</label>
+		<description>Build a Universal AR, just the receiver and the grip part, you need other parts to work better, unless you are in a budget.\nCaliber: 5.56x45mm NATO</description>
+		<jobString>Building Universal AR.</jobString>
+		<workAmount>2500</workAmount>
+		<skillRequirements>
+			<Crafting>6</Crafting>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Rifle_Component</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Weapon_Parts</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>Metallic</li>
+					</categories>
+				</filter>
+				<count>4</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Plastic</li>
+					</thingDefs>
+				</filter>
+				<count>4</count>
+			</li>
+		</ingredients>
+		<products>
+			<Pa_UniversalAR>1</Pa_UniversalAR>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Rifle_Component</li>
+				<li>Weapon_Parts</li>
+				<li>ComponentIndustrial</li>
+				<li>Plastic</li>
+			</thingDefs>
+			<categories>
+				<li>SLDBar</li>
+				<li>USLDBar</li>
+			</categories>
+		</fixedIngredientFilter>
+		<recipeUsers>
+			<li>ARToolingSet</li>
+		</recipeUsers>
+	    <researchPrerequisite>Rifles_C1</researchPrerequisite>
+	</RecipeDef>
+
+</Defs>

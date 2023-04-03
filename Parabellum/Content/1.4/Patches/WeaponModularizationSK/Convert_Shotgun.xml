@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+	
+	<Operation Class="PatchOperationFindMod">
+	<mods>
+		<li>Modularization Vanilla Weapon</li>
+	</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<!-- SturmGewehr -->
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="Pa_DP" or defName="Pa_SSS" or defName="Pa_W1887L" or defName="Pa_W1887S" or defName="Pa_W1897T" or defName="Pa_W1897L" or defName="Pa_BA5L" or defName="Pa_BA5S"]/comps</xpath>
+					<value>
+						<li Class="RW_NodeTree.CompProperties_ChildNodeProccesser">
+							<TextureSizeFactor>256</TextureSizeFactor>
+							<TextureFilterMode>Point</TextureFilterMode>
+							<ExceedanceFactor>2</ExceedanceFactor>
+							<ExceedanceOffset>1</ExceedanceOffset>
+							<ForceNodeIdControl>true</ForceNodeIdControl>
+						</li>
+						<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
+							<setRandomPartWhenCreate>true</setRandomPartWhenCreate>
+							<attachmentProperties>
+								<li>
+									<id>ModChainSG_Magazine</id>
+									<name>magazine</name>
+									<UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Mag</UITexPath>
+									<postion>(0, -0.1, 0)</postion>
+									<allowEmpty>true</allowEmpty>
+									<filter>
+										<thingDefs>
+											<li>Module_SG_Speedloadertube</li>
+										</thingDefs>
+									</filter>
+									<!--<randomThingDefWeights>
+										<Module_SG_Speedloadertube>1</Module_SG_Speedloadertube>
+									</randomThingDefWeights>-->
+									<verbPropertiesObjectPatchByChildPart Default="false" />
+								</li>
+							</attachmentProperties>
+							<compGetGizmosExtraAllowedCompType>
+								<li>CombatExtended.CompAmmoUser</li>
+								<li>CombatExtended.CompFireModes</li>
+							</compGetGizmosExtraAllowedCompType>
+							<compPropertiesInitializeCompType>
+								<li>CombatExtended.CompAmmoUser</li>
+								<li>CombatExtended.CompFireModes</li>
+							</compPropertiesInitializeCompType>
+							<compPropertiesCreateInstanceCompType>
+								<li>CombatExtended.CompFireModes</li>
+							</compPropertiesCreateInstanceCompType>
+						</li>
+					</value>
+				</li>
+			</operations>
+		</match>
+    </Operation>
+	
+</Patch>

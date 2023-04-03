@@ -29,7 +29,7 @@
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_155mmHowitzerShell"]/ammoTypes</xpath>
 		<value>
-			<Ammo_155mmHowitzerShell_Nuke>Bullet_155mmHowitzerShell_Nuke</Ammo_155mmHowitzerShell_Nuke>
+			<Ammo_155mmHowitzerShell_Nuke MayRequire="Dubwise.Rimatomics">Bullet_155mmHowitzerShell_Nuke</Ammo_155mmHowitzerShell_Nuke>
 			<Ammo_155mmHowitzerShell_ADAM>Bullet_155mmHowitzerShell_ADAM</Ammo_155mmHowitzerShell_ADAM>
 		</value>
 	</Operation>

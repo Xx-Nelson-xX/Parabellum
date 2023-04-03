@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<!--StG Magazine-->
+	<ThingDef ParentName="GunPartBase">
+		<defName>Module_StGDT</defName>
+		<label>Duct tape dual stack StG magazine</label>
+		<description>Improvised modification with duct tape to double stack magazine side by side for faster reload.</description>
+		<statBases>
+			<WorkToMake>100</WorkToMake>
+			<Mass>0.432</Mass>
+			<Bulk>0.6</Bulk>
+		</statBases>
+		<graphicData>
+			<texPath>Things/WeaponPart/Parts/AttachmentItem_Magazine_Generic</texPath>
+		</graphicData>
+		<uiIconPath>ui/icons/AttachmentIcon/AttachmentIcon_Mag</uiIconPath>
+		<costList>
+			<ComponentMedieval>1</ComponentMedieval>
+		</costList>
+		<recipeMaker>
+			<recipeUsers>
+				<li>WeaponCraftingWorkTable</li>
+			</recipeUsers>
+			<researchPrerequisite>Machining</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>1</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<comps>
+			<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
+				<PartTexPath>Things/WeaponPart/Magazines/DT</PartTexPath>
+				<compPropertiesMultiplier>
+					<il Reader-Class="CombatExtended.CompProperties_AmmoUser">
+						<reloadTime>0.6</reloadTime>
+					</il>
+				</compPropertiesMultiplier>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<!--Mauser Magazine-->
+	<ThingDef ParentName="GunPartBase">
+		<defName>Module_MauserT</defName>
+		<label>Mauser 20rnd Trench magazine</label>
+		<description>Large rifle magazine designed for Trench Warfare, has 20rnd capacity + 5 in the Mauser rifle.</description>
+		<statBases>
+			<WorkToMake>200</WorkToMake>
+			<Mass>0.432</Mass>
+			<Bulk>0.65</Bulk>
+		</statBases>
+		<graphicData>
+			<texPath>Things/WeaponPart/Parts/AttachmentItem_Magazine_Generic</texPath>
+		</graphicData>
+		<uiIconPath>ui/icons/AttachmentIcon/AttachmentIcon_Mag</uiIconPath>
+		<costList>
+			<ComponentMedieval>1</ComponentMedieval>
+		</costList>
+		<recipeMaker>
+			<recipeUsers>
+				<li>WeaponCraftingWorkTable</li>
+			</recipeUsers>
+			<researchPrerequisite>Machining</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>4</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<comps>
+			<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
+				<PartTexPath>Things/WeaponPart/Magazines/MauserTM</PartTexPath>
+				<compPropertiesObjectPatch>
+					<il Reader-Class="CombatExtended.CompProperties_AmmoUser">
+						<reloadTime>7.6</reloadTime>
+						<magazineSize>25</magazineSize>
+					</il>
+				</compPropertiesObjectPatch>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<!--G43 Magazine-->
+	<ThingDef ParentName="GunPartBase">
+		<defName>Module_G43Default</defName>
+		<label>G43 10rnd double stack magazine</label>
+		<description>default magazine for G43/K43, has 10rnd of capacity(7.92x57mmM).</description>
+		<statBases>
+			<WorkToMake>100</WorkToMake>
+			<Mass>0.1</Mass>
+			<Bulk>0.2</Bulk>
+		</statBases>
+		<graphicData>
+			<texPath>Things/WeaponPart/Parts/AttachmentItem_Magazine_Generic</texPath>
+		</graphicData>
+		<uiIconPath>ui/icons/AttachmentIcon/AttachmentIcon_Mag</uiIconPath>
+		<costList>
+			<ComponentIndustrial>1</ComponentIndustrial>
+		</costList>
+		<recipeMaker>
+			<recipeUsers>
+				<li>WeaponCraftingWorkTable</li>
+			</recipeUsers>
+			<researchPrerequisite>Machining</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>2</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<comps>
+			<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
+				<PartTexPath>Things/WeaponPart/Magazines/G4310rnd</PartTexPath>
+				<compPropertiesObjectPatch>
+					<il Reader-Class="CombatExtended.CompProperties_AmmoUser">
+						<reloadTime>2.1</reloadTime>
+						<magazineSize>10</magazineSize>
+					</il>
+				</compPropertiesObjectPatch>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<ThingDef ParentName="GunPartBase">
+		<defName>Module_G4320rnd</defName>
+		<label>G43 20rnd extended magazine</label>
+		<description>Gerät 03 magazine, has 20rnd of capacity(7.92x57mmM).</description>
+		<statBases>
+			<WorkToMake>200</WorkToMake>
+			<Mass>0.15</Mass>
+			<Bulk>0.4</Bulk>
+		</statBases>
+		<graphicData>
+			<texPath>Things/WeaponPart/Parts/AttachmentItem_Magazine_Generic</texPath>
+		</graphicData>
+		<uiIconPath>ui/icons/AttachmentIcon/AttachmentIcon_Mag</uiIconPath>
+		<costList>
+			<ComponentIndustrial>2</ComponentIndustrial>
+		</costList>
+		<recipeMaker>
+			<recipeUsers>
+				<li>WeaponCraftingWorkTable</li>
+			</recipeUsers>
+			<researchPrerequisite>Machining</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>3</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<comps>
+			<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
+				<PartTexPath>Things/WeaponPart/Magazines/G4320rnd</PartTexPath>
+				<compPropertiesObjectPatch>
+					<il Reader-Class="CombatExtended.CompProperties_AmmoUser">
+						<reloadTime>2.4</reloadTime>
+						<magazineSize>20</magazineSize>
+					</il>
+				</compPropertiesObjectPatch>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<ThingDef ParentName="GunPartBase">
+		<defName>Module_G43Kurz</defName>
+		<label>G43 30rnd StG magazine convertion</label>
+		<description>G43 with assault rifle magazine convertion, it has 30rnd of capacity(7.92x33mm Kurz).</description>
+		<statBases>
+			<WorkToMake>500</WorkToMake>
+			<Mass>0.1</Mass>
+			<Bulk>0.6</Bulk>
+		</statBases>
+		<graphicData>
+			<texPath>Things/WeaponPart/Parts/AttachmentItem_Magazine_Generic</texPath>
+		</graphicData>
+		<uiIconPath>ui/icons/AttachmentIcon/AttachmentIcon_Mag</uiIconPath>
+		<costList>
+			<ComponentIndustrial>2</ComponentIndustrial>
+			<Weapon_Parts>1</Weapon_Parts>
+		</costList>
+		<recipeMaker>
+			<recipeUsers>
+				<li>AdvWeaponCraftingWorkTable</li>
+			</recipeUsers>
+			<researchPrerequisite>Range_C2</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>6</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<comps>
+			<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
+				<PartTexPath>Things/WeaponPart/Magazines/G43StG</PartTexPath>
+				<setRandomPartWhenCreate>true</setRandomPartWhenCreate>
+				<verbPropertiesOffseter>
+					<li>
+						<range>-5</range>
+					</li>
+				</verbPropertiesOffseter>
+				<verbPropertiesObjectPatch>
+					<li>
+						<burstShotCount>3</burstShotCount>
+						<defaultProjectile>Bullet_792x33mmK_J</defaultProjectile>
+						<ticksBetweenBurstShots>4</ticksBetweenBurstShots>
+					</li>
+				</verbPropertiesObjectPatch>
+				<verbPropertiesMultiplier>
+					<li>
+						<warmupTime>0.75</warmupTime>
+					</li>
+				</verbPropertiesMultiplier>
+				<statMultiplier>
+					<SightsEfficiency>0.9</SightsEfficiency>
+					<ShotSpread>2.5</ShotSpread>
+					<SwayFactor>0.9</SwayFactor>
+					<RangedWeapon_Cooldown>0.55</RangedWeapon_Cooldown>
+				</statMultiplier>
+				<compPropertiesObjectPatch>
+					<il Reader-Class="CombatExtended.CompProperties_AmmoUser">
+						<reloadTime>2.2</reloadTime>
+						<magazineSize>30</magazineSize>
+						<ammoSet>AmmoSet_792x33mmK</ammoSet>
+					</il>
+				</compPropertiesObjectPatch>
+				<attachmentProperties>
+					<li>
+						<id>ModAR_SubMagazine</id>
+						<name>magazine</name>
+						<UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Mag</UITexPath>
+						<postion>(-0.02,0.1,0)</postion>
+						<scale>(1,0,1)</scale>
+						<allowEmpty>true</allowEmpty>
+						<filter>
+							<thingDefs>
+								<li>Module_StGDT</li>
+							</thingDefs>
+						</filter>
+					</li>
+				</attachmentProperties>
+			</li>
+		</comps>
+	</ThingDef>
+	
+</Defs>

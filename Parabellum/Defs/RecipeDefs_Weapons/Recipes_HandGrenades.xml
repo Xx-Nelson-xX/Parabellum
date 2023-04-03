@@ -496,7 +496,7 @@
     </RecipeDef>
 	
 	<!-- Dirty Bomb -->
-	<RecipeDef ParentName="RangedWeaponRecipeBase">
+	<RecipeDef MayRequire="Dubwise.Rimatomics" ParentName="RangedWeaponRecipeBase">
         <defName>MakeDB</defName>
         <label>make 5 Dirty Bombs</label>
         <description>Dirty Bomb, perfect for scorched earth doctrine, being as hazardous and not-eco friendly as possible.</description>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+	
+	<Operation Class="PatchOperationFindMod">
+	<mods>
+		<li>Modularization Vanilla Weapon</li>
+	</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+			
+				<!-- SturmGewehr -->
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="Pa_MKb42H" or defName="Pa_StG44AR"]/comps</xpath>
+					<value>
+						<li Class="RW_NodeTree.CompProperties_ChildNodeProccesser">
+							<TextureSizeFactor>320</TextureSizeFactor>
+							<TextureFilterMode>Point</TextureFilterMode>
+							<ExceedanceFactor>2</ExceedanceFactor>
+							<ExceedanceOffset>1</ExceedanceOffset>
+							<ForceNodeIdControl>true</ForceNodeIdControl>
+						</li>
+						<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
+							<setRandomPartWhenCreate>true</setRandomPartWhenCreate>
+							<attachmentProperties>
+								<li>
+									<id>ModAR_Sight</id>
+									<name>sight</name>
+									<UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Scope</UITexPath>
+									<postion>(0,0.1,0)</postion>
+									<scale>(1.2,0,1.2)</scale>
+									<allowEmpty>true</allowEmpty>
+									<filter>
+										<thingDefs>
+											<li>Module_ZF4S</li>
+											<li>Module_ZF41S</li>
+											<li>Module_Vampir</li>
+										</thingDefs>
+									</filter>
+								</li>
+								<li>
+									<id>ModChainSG_Magazine</id>
+									<name>magazine</name>
+									<UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Mag</UITexPath>
+									<postion>(0, 0.1, 0)</postion>
+									<scale>(1.2,0,1.2)</scale>
+									<allowEmpty>true</allowEmpty>
+									<filter>
+										<thingDefs>
+											<li>Module_StGDT</li>
+										</thingDefs>
+									</filter>
+									<verbPropertiesObjectPatchByChildPart Default="false" />
+								</li>
+							</attachmentProperties>
+							<compGetGizmosExtraAllowedCompType>
+								<li>CombatExtended.CompAmmoUser</li>
+								<li>CombatExtended.CompFireModes</li>
+							</compGetGizmosExtraAllowedCompType>
+							<compPropertiesInitializeCompType>
+								<li>CombatExtended.CompAmmoUser</li>
+								<li>CombatExtended.CompFireModes</li>
+							</compPropertiesInitializeCompType>
+							<compPropertiesCreateInstanceCompType>
+								<li>CombatExtended.CompFireModes</li>
+							</compPropertiesCreateInstanceCompType>
+						</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="Pa_StG45M" or defName="Pa_VG45k" or defName="Pa_VG"]/comps</xpath>
+					<value>
+						<li Class="RW_NodeTree.CompProperties_ChildNodeProccesser">
+							<TextureSizeFactor>320</TextureSizeFactor>
+							<TextureFilterMode>Point</TextureFilterMode>
+							<ExceedanceFactor>2</ExceedanceFactor>
+							<ExceedanceOffset>1</ExceedanceOffset>
+							<ForceNodeIdControl>true</ForceNodeIdControl>
+						</li>
+						<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
+							<setRandomPartWhenCreate>true</setRandomPartWhenCreate>
+							<attachmentProperties>
+								<li>
+									<id>ModChainSG_Magazine</id>
+									<name>magazine</name>
+									<UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Mag</UITexPath>
+									<postion>(0, 0.1, 0)</postion>
+									<scale>(1.2,0,1.2)</scale>
+									<allowEmpty>true</allowEmpty>
+									<filter>
+										<thingDefs>
+											<li>Module_StGDT</li>
+										</thingDefs>
+									</filter>
+									<!--<verbPropertiesObjectPatchByChildPart Default="false" />-->
+								</li>
+							</attachmentProperties>
+						</li>
+					</value>
+				</li>
+				
+			</operations>
+		</match>
+    </Operation>
+	
+</Patch>

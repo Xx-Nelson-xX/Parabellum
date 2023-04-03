@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--Handguars and rails-->
+	
+	<!--ParentName-->
+	<ThingDef Name="Module_Handguard" ParentName="GunPartBase" Abstract="True">
+		<graphicData>
+			<texPath>Things/WeaponPart/Parts/AttachmentItem_HandGuard_Generic</texPath>
+		</graphicData>
+		<uiIconPath>ui/icons/AttachmentIcon/AttachmentIcon_Handguard</uiIconPath>
+		<recipeMaker>
+			<recipeUsers>
+				<li>ARToolingSet</li>
+			</recipeUsers>
+		</recipeMaker>
+	</ThingDef>
+	
+	<!--4" Rail Handguard-->
+	<ThingDef ParentName="Module_Handguard">
+		<defName>Module_4inchHG</defName>
+		<label>AR style 4" Rail Handguard</label>
+		<description>Pistol length handguard with rails for the AR family.</description>
+		<statBases>
+			<WorkToMake>800</WorkToMake>
+			<Mass>0.188</Mass>
+			<Bulk>0.64</Bulk>
+		</statBases>
+		<costList>
+			<ComponentIndustrial>2</ComponentIndustrial>
+		</costList>
+		<recipeMaker>
+			<researchPrerequisite>Rifles_C1</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>4</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<comps>
+			<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
+				<PartTexPath>Things/WeaponPart/Handguards/Pa_AR_HGa</PartTexPath>
+				<drawChildPartWhenOnGround>false</drawChildPartWhenOnGround>
+				<setRandomPartWhenCreate>true</setRandomPartWhenCreate>
+				<statOffset>
+					<MarketValue>120</MarketValue>
+					<Bulk>0.64</Bulk>
+				</statOffset>
+				<statMultiplier>
+					<SwayFactor>0.94</SwayFactor>
+					<RangedWeapon_Cooldown>1.1</RangedWeapon_Cooldown>
+				</statMultiplier>
+				<verbPropertiesMultiplier>
+					<li>
+						<!--<recoilAmount>0.94</recoilAmount>-->
+						<warmupTime>1.2</warmupTime>
+					</li>
+				</verbPropertiesMultiplier>
+				<attachmentProperties>
+					<li>
+						<id>ModAR_UnderBarrel</id>
+						<name>under barrel</name>
+						<UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Underbarrel</UITexPath>
+						<verbPropertiesObjectPatchByChildPart Default="false" />
+						<postion>(-0.291,0.1,-0.007626)</postion>
+						<scale>(0.75,0,0.75)</scale>
+						<allowEmpty>true</allowEmpty>
+						<filter>
+							<thingDefs>
+								<li>Module_VerticalGrip</li>
+								<li>Module_AngledGrip</li>
+							</thingDefs>
+						</filter>
+					</li>
+				</attachmentProperties>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<!--8" Rail Handguard-->
+	<ThingDef ParentName="Module_Handguard">
+		<defName>Module_8inchHG</defName>
+		<label>AR style 8" Rail Handguard</label>
+		<description>CQB/PDW length handguard with rails for the AR family.</description>
+		<statBases>
+			<WorkToMake>800</WorkToMake>
+			<Mass>0.36</Mass>
+			<Bulk>1.28</Bulk>
+		</statBases>
+		<costList>
+			<ComponentIndustrial>4</ComponentIndustrial>
+		</costList>
+		<recipeMaker>
+			<researchPrerequisite>Rifles_C1</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>5</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<comps>
+			<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
+				<PartTexPath>Things/WeaponPart/Handguards/Pa_AR_HGb</PartTexPath>
+				<drawChildPartWhenOnGround>false</drawChildPartWhenOnGround>
+				<setRandomPartWhenCreate>true</setRandomPartWhenCreate>
+				<statOffset>
+					<MarketValue>250</MarketValue>
+					<Bulk>1.28</Bulk>
+				</statOffset>
+				<statMultiplier>
+					<SwayFactor>0.9</SwayFactor>
+					<RangedWeapon_Cooldown>1.1</RangedWeapon_Cooldown>
+				</statMultiplier>
+				<verbPropertiesMultiplier>
+					<li>
+						<!--<recoilAmount>0.96</recoilAmount>-->
+						<warmupTime>1.16</warmupTime>
+					</li>
+				</verbPropertiesMultiplier>
+				<attachmentProperties>
+					<li>
+						<id>ModAR_UnderBarrel</id>
+						<name>under barrel</name>
+						<UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Underbarrel</UITexPath>
+						<verbPropertiesObjectPatchByChildPart Default="false" />
+						<postion>(-0.291,0.1,-0.007626)</postion>
+						<scale>(0.75,0,0.75)</scale>
+						<allowEmpty>true</allowEmpty>
+						<filter>
+							<thingDefs>
+								<li>Module_Bipod</li>
+								<li>Module_UBGL</li>
+								<li>Module_MasterKey</li>
+								<li>Module_VerticalGrip</li>
+								<li>Module_AngledGrip</li>
+							</thingDefs>
+						</filter>
+						<allowedExtraCompType>
+							<li>CombatExtended.BipodComp</li>
+						</allowedExtraCompType>
+					</li>
+				</attachmentProperties>
+				<compGetGizmosExtraAllowedCompType>
+					<li>CombatExtended.CompAmmoUser</li>
+					<li>CombatExtended.CompFireModes</li>
+				</compGetGizmosExtraAllowedCompType>
+				<compPropertiesInitializeCompType>
+					<li>CombatExtended.CompAmmoUser</li>
+					<li>CombatExtended.CompFireModes</li>
+				</compPropertiesInitializeCompType>
+				<compPropertiesCreateInstanceCompType>
+					<li>CombatExtended.CompFireModes</li>
+				</compPropertiesCreateInstanceCompType>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<!--12" Rail Handguard-->
+	<ThingDef ParentName="Module_Handguard">
+		<defName>Module_12inchHG</defName>
+		<label>AR style 12" Rail Handguard</label>
+		<description>Carbine length handguard with rails for the AR family.</description>
+		<statBases>
+			<WorkToMake>1000</WorkToMake>
+			<Mass>0.52</Mass>
+			<Bulk>1.92</Bulk>
+		</statBases>
+		<costList>
+			<ComponentIndustrial>5</ComponentIndustrial>
+		</costList>
+		<recipeMaker>
+			<recipeUsers>
+				<li>WeaponCraftingWorkTable</li>
+			</recipeUsers>
+			<researchPrerequisite>Range_C2</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>6</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<comps>
+			<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
+				<PartTexPath>Things/WeaponPart/Handguards/Pa_AR_HGc</PartTexPath>
+				<drawChildPartWhenOnGround>false</drawChildPartWhenOnGround>
+				<setRandomPartWhenCreate>true</setRandomPartWhenCreate>
+				<statOffset>
+					<MarketValue>290</MarketValue>
+					<Bulk>1.92</Bulk>
+				</statOffset>
+				<statMultiplier>
+					<SwayFactor>0.86</SwayFactor>
+					<RangedWeapon_Cooldown>1.2</RangedWeapon_Cooldown>
+				</statMultiplier>
+				<verbPropertiesMultiplier>
+					<li>
+						<!--<recoilAmount>0.94</recoilAmount>-->
+						<warmupTime>1.2</warmupTime>
+					</li>
+				</verbPropertiesMultiplier>
+				<attachmentProperties>
+					<li>
+						<id>ModAR_UnderBarrel</id>
+						<name>under barrel</name>
+						<UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Underbarrel</UITexPath>
+						<verbPropertiesObjectPatchByChildPart Default="false" />
+						<postion>(-0.291,0.1,-0.007626)</postion>
+						<scale>(0.75,0,0.75)</scale>
+						<allowEmpty>true</allowEmpty>
+						<filter>
+							<thingDefs>
+								<li>Module_Bipod</li>
+								<li>Module_UBGL</li>
+								<li>Module_MasterKey</li>
+								<li>Module_VerticalGrip</li>
+								<li>Module_AngledGrip</li>
+							</thingDefs>
+						</filter>
+						<allowedExtraCompType>
+							<li>CombatExtended.BipodComp</li>
+						</allowedExtraCompType>
+					</li>
+				</attachmentProperties>
+				<compGetGizmosExtraAllowedCompType>
+					<li>CombatExtended.CompAmmoUser</li>
+					<li>CombatExtended.CompFireModes</li>
+				</compGetGizmosExtraAllowedCompType>
+				<compPropertiesInitializeCompType>
+					<li>CombatExtended.CompAmmoUser</li>
+					<li>CombatExtended.CompFireModes</li>
+				</compPropertiesInitializeCompType>
+				<compPropertiesCreateInstanceCompType>
+					<li>CombatExtended.CompFireModes</li>
+				</compPropertiesCreateInstanceCompType>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<!--16" Rail Handguard-->
+	<ThingDef ParentName="Module_Handguard">
+		<defName>Module_16inchHG</defName>
+		<label>AR style 16" Rail Handguard</label>
+		<description>Carbine length handguard with rails for the AR family.</description>
+		<statBases>
+			<WorkToMake>1000</WorkToMake>
+			<Mass>0.52</Mass>
+			<Bulk>2.56</Bulk>
+		</statBases>
+		<costList>
+			<ComponentIndustrial>6</ComponentIndustrial>
+		</costList>
+		<recipeMaker>
+			<researchPrerequisite>Range_C2</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>6</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<comps>
+			<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
+				<PartTexPath>Things/WeaponPart/Handguards/Pa_AR_HGd</PartTexPath>
+				<drawChildPartWhenOnGround>false</drawChildPartWhenOnGround>
+				<setRandomPartWhenCreate>true</setRandomPartWhenCreate>
+				<statOffset>
+					<MarketValue>320</MarketValue>
+					<Bulk>2.56</Bulk>
+				</statOffset>
+				<statMultiplier>
+					<SwayFactor>0.8</SwayFactor>
+					<RangedWeapon_Cooldown>1.24</RangedWeapon_Cooldown>
+				</statMultiplier>
+				<verbPropertiesMultiplier>
+					<li>
+						<!--<recoilAmount>0.9</recoilAmount>-->
+						<warmupTime>1.22</warmupTime>
+					</li>
+				</verbPropertiesMultiplier>
+				<attachmentProperties>
+					<li>
+						<id>ModAR_UnderBarrel</id>
+						<name>under barrel</name>
+						<UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Underbarrel</UITexPath>
+						<verbPropertiesObjectPatchByChildPart Default="false" />
+						<postion>(-0.291,0.1,-0.007626)</postion>
+						<scale>(0.75,0,0.75)</scale>
+						<allowEmpty>true</allowEmpty>
+						<filter>
+							<thingDefs>
+								<li>Module_Bipod</li>
+								<li>Module_UBGL</li>
+								<li>Module_MasterKey</li>
+								<li>Module_VerticalGrip</li>
+								<li>Module_AngledGrip</li>
+							</thingDefs>
+						</filter>
+						<allowedExtraCompType>
+							<li>CombatExtended.BipodComp</li>
+						</allowedExtraCompType>
+					</li>
+				</attachmentProperties>
+				<compGetGizmosExtraAllowedCompType>
+					<li>CombatExtended.CompAmmoUser</li>
+					<li>CombatExtended.CompFireModes</li>
+				</compGetGizmosExtraAllowedCompType>
+				<compPropertiesInitializeCompType>
+					<li>CombatExtended.CompAmmoUser</li>
+					<li>CombatExtended.CompFireModes</li>
+				</compPropertiesInitializeCompType>
+				<compPropertiesCreateInstanceCompType>
+					<li>CombatExtended.CompFireModes</li>
+				</compPropertiesCreateInstanceCompType>
+			</li>
+		</comps>
+	</ThingDef>
+
+	
+</Defs>

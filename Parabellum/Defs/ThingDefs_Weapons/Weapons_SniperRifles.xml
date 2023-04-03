@@ -203,7 +203,7 @@
         <graphicData>
             <texPath>Things/Weapons/SRs/98s</texPath>
             <graphicClass>Graphic_Single</graphicClass>
-			<drawSize>1.1</drawSize>
+			<drawSize>1.2</drawSize>
         </graphicData>
         <soundInteract>Interact_Rifle</soundInteract>
         <statBases>
@@ -216,7 +216,6 @@
             <Mass>3.9</Mass>
         </statBases>
 		<generateCommonality>0.3</generateCommonality>
-		<equippedAngleOffset>45</equippedAngleOffset>
         <weaponTags>
 			<li>SNIP1</li>
             <li>SNIP2</li>
@@ -252,7 +251,7 @@
         </comps>
 		<modExtensions>
 		  <li Class="CombatExtended.GunDrawExtension">
-			<DrawSize>1.1</DrawSize>
+			<DrawSize>1.2</DrawSize>
 		  </li>
 		</modExtensions>
         <smeltProducts>

@@ -38,6 +38,7 @@
         <verbs>
             <li Class="CombatExtended.VerbPropertiesCE">
                 <recoilAmount>1.32</recoilAmount>
+				<recoilPattern>Mounted</recoilPattern>
                 <verbClass>CombatExtended.Verb_ShootCE</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
                 <defaultProjectile>Bullet_303British_FMJ</defaultProjectile>
@@ -108,6 +109,7 @@
         <verbs>
             <li Class="CombatExtended.VerbPropertiesCE">
                 <recoilAmount>1.56</recoilAmount>
+				<recoilPattern>Mounted</recoilPattern>
                 <verbClass>CombatExtended.Verb_ShootCE</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
                 <defaultProjectile>Bullet_8mmM_SP</defaultProjectile>
@@ -178,6 +180,7 @@
         <verbs>
             <li Class="CombatExtended.VerbPropertiesCE">
                 <recoilAmount>1.28</recoilAmount>
+				<recoilPattern>Mounted</recoilPattern>
                 <verbClass>CombatExtended.Verb_ShootCE</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
                 <defaultProjectile>Bullet_8mmM_SP</defaultProjectile>
@@ -248,6 +251,7 @@
         <verbs>
             <li Class="CombatExtended.VerbPropertiesCE">
                 <recoilAmount>1.22</recoilAmount>
+				<recoilPattern>Mounted</recoilPattern>
                 <verbClass>CombatExtended.Verb_ShootCE</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
                 <defaultProjectile>Bullet_8mmM_SP</defaultProjectile>
@@ -318,6 +322,7 @@
         <verbs>
             <li Class="CombatExtended.VerbPropertiesCE">
                 <recoilAmount>1.52</recoilAmount>
+				<recoilPattern>Mounted</recoilPattern>
                 <verbClass>CombatExtended.Verb_ShootCE</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
                 <defaultProjectile>Bullet_8mmM_SP</defaultProjectile>
@@ -393,6 +398,7 @@
         <verbs>
             <li Class="CombatExtended.VerbPropertiesCE">
                 <recoilAmount>1.46</recoilAmount>
+				<recoilPattern>Mounted</recoilPattern>
                 <verbClass>CombatExtended.Verb_ShootCE</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
                 <defaultProjectile>Bullet_8mmM_SP</defaultProjectile>
@@ -468,6 +474,7 @@
         <verbs>
             <li Class="CombatExtended.VerbPropertiesCE">
                 <recoilAmount>1.38</recoilAmount>
+				<recoilPattern>Mounted</recoilPattern>
                 <verbClass>CombatExtended.Verb_ShootCE</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
                 <defaultProjectile>Bullet_8mmM_SP</defaultProjectile>

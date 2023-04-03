@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ArchitectSense.DesignationSubCategoryDef[defName="SubCategory_CraftWeapons"]/defNames</xpath>
+			<value>
+				<li>ARToolingSet</li>
+			</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="WeaponCraftingWorkTable" or defName="CraftingSpot" or defName="AdvWeaponCraftingWorkTable" or defName="HeavyArmsBench" or defName="MechWeaponCraftingWorkTable" or defName="AmmoBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+			<value>
+				<li>ARToolingSet</li>
+			</value>
+	</Operation>
+
+</Patch>

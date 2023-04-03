@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<!-- Player Faction -->
+	<FactionDef ParentName="SK_PlayerFactionBase">
+		<defName>PlayerParabellumIndustrial</defName>
+		<label>Rifleman Remnant</label>
+		<description>A mixed group of recently-arrived off-worlders.</description>
+		<isPlayer>true</isPlayer>
+		<basicMemberKind>IndustrialRifleman</basicMemberKind>
+		<pawnSingular>colonist</pawnSingular>
+		<pawnsPlural>colonists</pawnsPlural>
+		<techLevel>Industrial</techLevel>
+		<factionIconPath>World/WorldObjects/Expanding/Town</factionIconPath>
+		<factionNameMaker>NamerFactionOutlander</factionNameMaker>
+		<settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
+		<allowedCultures>
+			<li>Astropolitan</li>
+		</allowedCultures>
+		<backstoryFilters>
+			<li>
+				<categories>
+					<li>Offworld</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+		<forageabilityFactor>1.2</forageabilityFactor>
+		<startingResearchTags>
+			<li>ClassicStart</li>
+			<li>ParabellumStart</li>
+		</startingResearchTags>
+		<apparelStuffFilter>
+			<thingDefs>
+				<li>Synthread</li>
+				<li>Kevlar</li>
+				<li>Plasteel</li>
+				<li>SteelBar</li>
+			</thingDefs>
+		</apparelStuffFilter>
+	</FactionDef>
+	
+	<!-- Colonist -->
+	<PawnKindDef ParentName="SK_BasePlayerPawnKind">
+		<defName>IndustrialRifleman</defName>
+		<label>Rifleman</label>
+		<defaultFactionType>PlayerParabellumIndustrial</defaultFactionType>
+		<chemicalAddictionChance>0.02</chemicalAddictionChance>
+		<minGenerationAge>18</minGenerationAge>
+		<maxGenerationAge>35</maxGenerationAge>
+		<apparelMoney>
+			<min>4000</min>
+			<max>6500</max>
+		</apparelMoney>
+		<apparelTags>
+			<li>BrotherhoodLight</li>
+		</apparelTags>
+		<weaponMoney>
+			<min>1200</min>
+			<max>3000</max>
+		</weaponMoney>
+		<weaponTags>
+			<li>RF2Pa</li>
+		</weaponTags>
+		<skills>
+			<li>
+				<skill>Shooting</skill>
+				<range>8~14</range>
+			</li>
+		</skills>
+		<apparelRequired>
+			<li>Carbon_overalls</li>
+			<li>PaB_BNC</li>
+			<li>PaB_6B5BV</li>
+			<li>PaB_MB</li>
+			<li>PaH_Stahlhelm</li>
+			<li>PaB_BPI</li>
+		</apparelRequired>
+		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+		<forceNormalGearQuality>true</forceNormalGearQuality>
+		<techHediffsDisallowTags>
+			<li>PainCauser</li>
+		</techHediffsDisallowTags>
+		<initialResistanceRange>8~17</initialResistanceRange>
+		<modExtensions>
+			<li Class="CombatExtended.LoadoutPropertiesExtension">
+				<primaryMagazineCount>
+					<min>10</min>
+					<max>20</max>
+				</primaryMagazineCount>
+				<sidearms>
+					<li>
+						<sidearmMoney>
+							<min>200</min>
+							<max>400</max>
+						</sidearmMoney>
+						<weaponTags>
+							<li>M24SHG</li>
+						</weaponTags>
+						<magazineCount>
+							<min>2</min>
+							<max>5</max>
+						</magazineCount>
+					</li>
+				</sidearms>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
+
+</Defs>

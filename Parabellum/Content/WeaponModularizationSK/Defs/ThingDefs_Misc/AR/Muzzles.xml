@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--Muzzles-->
+
+	<!--<ThingDef Name="Schiessbecher" ParentName="GunPartBase" Abstract="True">
+		<label>Schießbecher</label>
+		<description>The Schiessbecher/Schießbecher - literally "shooting cup" is used for launching rifle grenades any weapon capable to attach the device.</description>
+		<statBases>
+			<WorkToMake>1000</WorkToMake>
+			<Mass>0.737</Mass>
+			<Bulk>0.26</Bulk>
+			<SightsEfficiency>1</SightsEfficiency>
+			<ShotSpread>0.18</ShotSpread>
+			<SwayFactor>1.31</SwayFactor>
+			<RangedWeapon_Cooldown>0.39</RangedWeapon_Cooldown>
+		</statBases>
+		<graphicData>
+			<texPath>Things/WeaponPart/Parts/AttachmentItem_Barrel_Long</texPath>
+		</graphicData>
+		<uiIconPath>ui/icons/AttachmentIcon/AttachmentIcon_Barrel_Long</uiIconPath>
+		<costList>
+			<Weapon_Parts>2</Weapon_Parts>
+		</costList>
+		<recipeMaker>
+			<recipeUsers>
+				<li>WeaponCraftingWorkTable</li>
+			</recipeUsers>
+			<researchPrerequisite>Rifles_C1</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>6</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+	</ThingDef>
+	
+	<ThingDef ParentName="Schiessbecher">
+		<defName>Module_Schiessbecher</defName>
+		<comps>
+			<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
+				<PartTexPath>Things/WeaponPart/Muzzles/Schiessbecher</PartTexPath>
+				<compPropertiesObjectPatch>
+					<li Reader-Class="CombatExtended.CompProperties_UnderBarrel">
+						<propsUnderBarrel>
+							<magazineSize>1</magazineSize>
+							<reloadTime>2.4</reloadTime>
+							<ammoSet>AmmoSet_Schiessbecher</ammoSet>
+						</propsUnderBarrel>
+						<verbPropsUnderBarrel>
+							<recoilAmount>2.84</recoilAmount>
+							<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+							<hasStandardCommand>true</hasStandardCommand>
+							<defaultProjectile>Bullet_30mmGSG_HE</defaultProjectile>
+							<warmupTime>1.1</warmupTime>
+							<range>40</range>
+							<soundCast>Shot_IncendiaryLauncher</soundCast>
+							<soundCastTail>GunTail_Medium</soundCastTail>
+							<muzzleFlashScale>5</muzzleFlashScale>
+							<targetParams>
+								<canTargetLocations>true</canTargetLocations>
+							</targetParams>
+						</verbPropsUnderBarrel>
+						<propsFireModesUnderBarrel>
+							<aiAimMode>AimedShot</aiAimMode>
+						</propsFireModesUnderBarrel>
+					</li>
+				</compPropertiesObjectPatch>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<ThingDef ParentName="Schiessbecher">
+		<defName>Module_Schiessbecherb</defName>
+		<comps>
+			<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
+				<PartTexPath>Things/WeaponPart/Muzzles/SchiessbecherG43</PartTexPath>
+				<compPropertiesObjectPatch>
+					<li Reader-Class="CombatExtended.CompProperties_UnderBarrel">
+						<propsUnderBarrel>
+							<magazineSize>1</magazineSize>
+							<reloadTime>2.4</reloadTime>
+							<ammoSet>AmmoSet_Schiessbecher</ammoSet>
+						</propsUnderBarrel>
+						<verbPropsUnderBarrel>
+							<recoilAmount>2.84</recoilAmount>
+							<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+							<hasStandardCommand>true</hasStandardCommand>
+							<defaultProjectile>Bullet_30mmGSG_HE</defaultProjectile>
+							<warmupTime>1.1</warmupTime>
+							<range>40</range>
+							<soundCast>Shot_IncendiaryLauncher</soundCast>
+							<soundCastTail>GunTail_Medium</soundCastTail>
+							<muzzleFlashScale>5</muzzleFlashScale>
+							<targetParams>
+								<canTargetLocations>true</canTargetLocations>
+							</targetParams>
+						</verbPropsUnderBarrel>
+						<propsFireModesUnderBarrel>
+							<aiAimMode>AimedShot</aiAimMode>
+						</propsFireModesUnderBarrel>
+					</li>
+				</compPropertiesObjectPatch>
+			</li>
+		</comps>
+	</ThingDef>-->
+	
+</Defs>

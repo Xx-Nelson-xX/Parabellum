@@ -185,7 +185,7 @@
 		</skillRequirements>
 		<workSkill>Crafting</workSkill>
 		<workSkillLearnFactor>0.8</workSkillLearnFactor>
-		<researchPrerequisite>Rifles_C1</researchPrerequisite>
+		<researchPrerequisite>Machining</researchPrerequisite>
 	</RecipeDef>
 	
 	<RecipeDef ParentName="AmmoRecipeRifle">

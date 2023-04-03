@@ -274,6 +274,7 @@
         <graphicData>
             <texPath>Things/Weapons/Rifles/FG42</texPath>
             <graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.2</drawSize>
         </graphicData>
         <soundInteract>Interact_Rifle</soundInteract>
         <statBases>
@@ -286,7 +287,6 @@
             <Mass>4.6</Mass>
         </statBases>
 		<generateCommonality>0.1</generateCommonality>
-		<equippedAngleOffset>45</equippedAngleOffset>
         <weaponTags>
 			<li>RF4</li>
             <li>AdvancedGun</li>
@@ -336,6 +336,11 @@
                 <ammoSet>AmmoSet_8mmM</ammoSet>
             </li>
         </comps>
+		<modExtensions>
+		  <li Class="CombatExtended.GunDrawExtension">
+			<DrawSize>1.2</DrawSize>
+		  </li>
+		</modExtensions>
         <smeltProducts>
 			<Sniper_Component>1</Sniper_Component>
             <AdvRifle_Component>1</AdvRifle_Component>
@@ -351,7 +356,7 @@
         <graphicData>
             <texPath>Things/Weapons/Rifles/MKb42H</texPath>
             <graphicClass>Graphic_Single</graphicClass>
-			<drawSize>1.1</drawSize>
+			<drawSize>1.2</drawSize>
         </graphicData>
         <soundInteract>Interact_StG44</soundInteract>
         <statBases>
@@ -364,8 +369,8 @@
             <Mass>5.49</Mass>
         </statBases>
 		<generateCommonality>0.3</generateCommonality>
-		<equippedAngleOffset>45</equippedAngleOffset>
         <weaponTags>
+			<li>RF2Pa</li>
 			<li>RF2</li>
 			<li>RF3</li>
 			<li>IndustrialGunAdvanced</li>
@@ -404,7 +409,7 @@
         </comps>
 		<modExtensions>
 		  <li Class="CombatExtended.GunDrawExtension">
-			<DrawSize>1.1</DrawSize>
+			<DrawSize>1.2</DrawSize>
 		  </li>
 		</modExtensions>
         <smeltProducts>
@@ -421,6 +426,7 @@
         <graphicData>
             <texPath>Things/Weapons/Rifles/StG44</texPath>
             <graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.2</drawSize>
         </graphicData>
         <soundInteract>Interact_StG44</soundInteract>
         <statBases>
@@ -433,7 +439,6 @@
             <Mass>4.6</Mass>
         </statBases>
 		<generateCommonality>0.5</generateCommonality>
-		<equippedAngleOffset>45</equippedAngleOffset>
         <weaponTags>
 			<li>RF3</li>
             <li>AdvancedGun</li>
@@ -472,6 +477,11 @@
                 <ammoSet>AmmoSet_792x33mmK</ammoSet>
             </li>
         </comps>
+		<modExtensions>
+			<li Class="CombatExtended.GunDrawExtension">
+				<DrawSize>1.2</DrawSize>
+			</li>
+		</modExtensions>
         <smeltProducts>
 			<Rifle_Component>1</Rifle_Component>
             <Weapon_Parts>3</Weapon_Parts>
@@ -486,6 +496,7 @@
         <graphicData>
             <texPath>Things/Weapons/Rifles/StG45</texPath>
             <graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.2</drawSize>
         </graphicData>
         <soundInteract>Interact_StG44</soundInteract>
         <statBases>
@@ -498,7 +509,6 @@
             <Mass>4</Mass>
         </statBases>
 		<generateCommonality>0.5</generateCommonality>
-		<equippedAngleOffset>45</equippedAngleOffset>
         <weaponTags>
 			<li>RF3</li>
             <li>AdvancedGun</li>
@@ -537,8 +547,88 @@
                 <ammoSet>AmmoSet_792x33mmK</ammoSet>
             </li>
         </comps>
+		<modExtensions>
+			<li Class="CombatExtended.GunDrawExtension">
+				<DrawSize>1.2</DrawSize>
+			</li>
+		</modExtensions>
         <smeltProducts>
 			<Rifle_Component>1</Rifle_Component>
+        </smeltProducts>
+    </ThingDef>
+	
+	<!-- Granatbüchse 39(GrB 39) Anti-Tank Grenade Launcher(Leicht) -->
+    <ThingDef ParentName="BaseGun_LongBarreled">
+        <defName>Pa_GrB</defName>
+        <label>GrB 39(L)</label>
+        <description>An ancient mid war rifle grenade launcher convertion from an obsolete anti-tank rifle to improve its penetration effectiveness against armored vehicle, this version further reduce its weight by removing the bipod and the carry handle.</description>
+        <graphicData>
+            <texPath>Things/Weapons/Rifles/GrB</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.4</drawSize>
+        </graphicData>
+        <soundInteract>Interact_Rifle</soundInteract>
+        <statBases>
+            <MarketValue>1800</MarketValue>
+            <SightsEfficiency>1.4</SightsEfficiency>
+            <ShotSpread>0.02</ShotSpread>
+            <SwayFactor>0.75</SwayFactor>
+            <RangedWeapon_Cooldown>1.8</RangedWeapon_Cooldown>
+            <Bulk>10.2</Bulk>
+            <Mass>8.1</Mass>
+        </statBases>
+		<generateCommonality>0.2</generateCommonality>
+        <weaponTags>
+			<li>RKT2</li>
+            <li>Glaunchers</li>
+			<li>SNIP3</li>
+            <li>AdvancedGun</li>
+            <li>SniperRifle</li>
+            <li>TierTwoSniper</li>
+            <li>CE_AI_Rifle</li>
+			<li>CE_AI_Launcher</li>
+        </weaponTags>
+        <thingCategories>
+            <li>Rifles</li>
+        </thingCategories>
+        <verbs>
+            <li Class="CombatExtended.VerbPropertiesCE">
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>Bullet_61mmGPG_HEAT</defaultProjectile>
+                <warmupTime>1.4</warmupTime>
+                <range>58</range>
+                <soundCast>Shot_IncendiaryLauncher</soundCast>
+                <soundCastTail>GunTail_Heavy</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+				<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+                <ai_AvoidFriendlyFireRadius>2</ai_AvoidFriendlyFireRadius>
+				<minRange>2</minRange>
+            </li>
+        </verbs>
+        <comps>
+            <li Class="CombatExtended.CompProperties_FireModes">
+                <aiAimMode>AimedShot</aiAimMode>
+            </li>
+            <li Class="CombatExtended.CompProperties_AmmoUser">
+                <magazineSize>1</magazineSize>
+                <reloadTime>2.8</reloadTime>
+                <ammoSet>AmmoSet_Schiessbecher</ammoSet>
+            </li>
+        </comps>
+		<modExtensions>
+		  <li Class="CombatExtended.GunDrawExtension">
+			<DrawSize>1.4</DrawSize>
+		  </li>
+		</modExtensions>
+        <smeltProducts>
+			<Rifle_Component>1</Rifle_Component>
+            <Weapon_Parts>2</Weapon_Parts>
+            <Plasteel>12</Plasteel>
+			<ComponentIndustrial>4</ComponentIndustrial>
         </smeltProducts>
     </ThingDef>
 

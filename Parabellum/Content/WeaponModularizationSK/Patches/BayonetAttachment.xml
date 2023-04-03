@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Pa_S8498III"]</xpath>
+			<value>
+				<comps>
+					<li Class="RW_NodeTree.CompProperties_ChildNodeProccesser">
+						<TextureSizeFactor>320</TextureSizeFactor>
+						<TextureFilterMode>Point</TextureFilterMode>
+						<ForceNodeIdControl>true</ForceNodeIdControl>
+					</li>
+					<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
+						<PartTexPath>Things/WeaponPart/Muzzles/S8498B</PartTexPath>
+					</li>
+				</comps>
+			</value>
+	</Operation>
+
+</Patch>

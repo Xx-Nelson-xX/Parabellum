@@ -213,7 +213,7 @@
 		</skillRequirements>
 		<workSkill>Crafting</workSkill>
 		<workSkillLearnFactor>0.8</workSkillLearnFactor>
-	    <researchPrerequisite>Rifles_C1</researchPrerequisite>
+	    <researchPrerequisite>Machining</researchPrerequisite>
 	</RecipeDef>
 	
 	<RecipeDef ParentName="AmmoRecipeHighCaliber">
@@ -270,7 +270,7 @@
 		</skillRequirements>
 		<workSkill>Crafting</workSkill>
 		<workSkillLearnFactor>0.8</workSkillLearnFactor>
-	    <researchPrerequisite>Range_C2</researchPrerequisite>
+	    <researchPrerequisite>Rifles_C1</researchPrerequisite>
 	</RecipeDef>
 	
 	<RecipeDef ParentName="AmmoRecipeHighCaliber">

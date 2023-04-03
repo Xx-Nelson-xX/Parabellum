@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
+
+	<ResearchProjectTagDef>
+		<defName>ParabellumStart</defName>
+	</ResearchProjectTagDef>
+	
 	<ResearchProjectDef ParentName="MedievalBase">
 		<defName>Parabellum_Alpha</defName>
 		<label>Parebellum</label>
@@ -12,6 +17,9 @@
 			<li>Bow_B2</li>
 		</prerequisites>
 		<tab>Weapon_SK</tab>
+		<tags>
+		  <li>ParabellumStart</li>
+		</tags>
 	</ResearchProjectDef>
 	
 	<ResearchProjectDef ParentName="MedievalBase">
@@ -27,6 +35,9 @@
 			<li>Ballista_B1</li>
 		</prerequisites>
 		<tab>Weapon_SK</tab>
+		<tags>
+		  <li>ParabellumStart</li>
+		</tags>
 	</ResearchProjectDef>
 	
 	<ResearchProjectDef ParentName="IndustrialBase">

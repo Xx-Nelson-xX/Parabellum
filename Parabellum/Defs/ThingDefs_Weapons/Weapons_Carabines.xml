@@ -348,6 +348,7 @@
         <weaponTags>
 			<li>RF1</li>
 			<li>RF2</li>
+			<li>RF2Pa</li>
             <li>Gun</li>
             <li>SniperRifle</li>
             <li>TierOneRifle</li>
@@ -413,7 +414,6 @@
             <Mass>4.8</Mass>
         </statBases>
 		<generateCommonality>0.4</generateCommonality>
-		<equippedAngleOffset>45</equippedAngleOffset>
         <weaponTags>
 			<li>RF2</li>
 			<li>RF3</li>
@@ -461,7 +461,6 @@
 		</modExtensions>
         <smeltProducts>
 			<Sniper_Component>1</Sniper_Component>
-			<Rifle_Component>1</Rifle_Component>
             <Weapon_Parts>1</Weapon_Parts>
         </smeltProducts>
     </ThingDef>
@@ -474,6 +473,7 @@
         <graphicData>
             <texPath>Things/Weapons/Carabines/VG</texPath>
             <graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.2</drawSize>
         </graphicData>
         <soundInteract>Interact_Rifle</soundInteract>
         <statBases>
@@ -486,7 +486,6 @@
             <Mass>4.6</Mass>
         </statBases>
 		<generateCommonality>0.7</generateCommonality>
-		<equippedAngleOffset>45</equippedAngleOffset>
         <weaponTags>
 			<li>RF1</li>
 			<li>RF2</li>
@@ -520,6 +519,73 @@
                 <ammoSet>AmmoSet_792x33mmK</ammoSet>
             </li>
         </comps>
+		<modExtensions>
+		  <li Class="CombatExtended.GunDrawExtension">
+			<DrawSize>1.2</DrawSize>
+		  </li>
+		</modExtensions>
+        <smeltProducts>
+			<Weapon_Parts>2</Weapon_Parts>
+        </smeltProducts>
+    </ThingDef>
+	
+	<!-- Gustloff Volkssturmgewehr VG 3/45k -->
+    <ThingDef ParentName="BaseGun_LongBarreled">
+        <defName>Pa_VG45k</defName>
+        <label>Gustloff VG 3/45k</label>
+        <description>Gustloff Volkssturmgewehr VG 3/45k, the "People's Storm - Rifle", the last effort to increase weapon production almost in the end of the war, a very robust and cheap bolt action carabine chambered in 7.92x33mm Kurz, generally used by Volkssturm, to fight for the fatherland counter the inevitable for one last time.</description>
+        <graphicData>
+            <texPath>Things/Weapons/Carabines/VG3</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.2</drawSize>
+        </graphicData>
+        <soundInteract>Interact_Rifle</soundInteract>
+        <statBases>
+            <MarketValue>700</MarketValue>
+            <SightsEfficiency>1.1</SightsEfficiency>
+            <ShotSpread>0.024</ShotSpread>
+            <SwayFactor>1.2</SwayFactor>
+            <RangedWeapon_Cooldown>1.2</RangedWeapon_Cooldown>
+            <Bulk>8.6</Bulk>
+            <Mass>3.1</Mass>
+        </statBases>
+		<generateCommonality>0.6</generateCommonality>
+        <weaponTags>
+			<li>RF1</li>
+            <li>Gun</li>
+            <li>TierOneRifle</li>
+            <li>CE_AI_Rifle</li>
+        </weaponTags>
+        <thingCategories>
+            <li>Rifles</li>
+        </thingCategories>
+        <verbs>
+            <li Class="CombatExtended.VerbPropertiesCE">
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>Bullet_792x33mmK_FMJ</defaultProjectile>
+                <warmupTime>0.74</warmupTime>
+                <range>45</range>
+                <soundCast>Shot_Madsen</soundCast>
+                <soundCastTail>GunTail_Medium</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+            </li>
+        </verbs>
+		<comps>
+            <li Class="CombatExtended.CompProperties_FireModes">
+                <aiAimMode>AimedShot</aiAimMode>
+            </li>
+            <li Class="CombatExtended.CompProperties_AmmoUser">
+                <magazineSize>30</magazineSize>
+                <reloadTime>2.4</reloadTime>
+                <ammoSet>AmmoSet_792x33mmK</ammoSet>
+            </li>
+        </comps>
+		<modExtensions>
+		  <li Class="CombatExtended.GunDrawExtension">
+			<DrawSize>1.2</DrawSize>
+		  </li>
+		</modExtensions>
         <smeltProducts>
 			<Weapon_Parts>2</Weapon_Parts>
         </smeltProducts>

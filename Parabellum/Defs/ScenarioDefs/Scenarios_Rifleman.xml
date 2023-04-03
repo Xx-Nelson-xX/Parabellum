@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ScenarioDef>
+		<defName>RRemnant</defName>
+		<label>Rifleman Squad Remnant</label>
+		<description>A group of rifleman lost their former HQ and got chased to unknown location, as last resort they planned a counter attack to get rid of their enemy chasing their back and hopefully buy enought time to settle a new outpost and secure their future survival. \n\nAlert! Enemies has arrived, prepare to attack!</description>
+		<scenario>
+			<summary>A group of rifleman lost in somewhere.</summary>
+			<playerFaction>
+				<def>PlayerFaction</def>
+				<factionDef>PlayerParabellumIndustrial</factionDef>
+			</playerFaction>
+			<parts>
+				<!-- Game start dialog -->
+				<li Class="ScenPart_GameStartDialog">
+					<def>GameStartDialog</def>
+					<textKey>Gather your soldiers and get rid the enemies!</textKey>
+					<closeSound>GameStartSting</closeSound>
+				</li>
+				<li Class="SK.ScenPart_StartwithAsssault">
+					<def>StartWithRaidEnemy</def>
+					<visible>false</visible>
+				</li>
+				
+				<!-- Config pages -->
+				<li Class="ScenPart_ConfigPage_ConfigureStartingPawns">
+					<def>ConfigPage_ConfigureStartingPawns</def>
+					<pawnCount>5</pawnCount>
+					<pawnChoiceCount>8</pawnChoiceCount>
+				</li>
+
+				<!-- Player starting stuff spawn method-->
+				<li Class="ScenPart_PlayerPawnsArriveMethod">
+					<def>PlayerPawnsArriveMethod</def>
+					<method>Standing</method>
+					<visible>false</visible>
+				</li>
+
+				<!-- Player pawns Weapons & Tools -->
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>Pa_W1897T</thingDef>
+					<count>2</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>Ammo_12Gauge_Buck</thingDef>
+					<count>200</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+				<def>StartingThing_Defined</def>
+					<thingDef>TFJ_Tool_Building_Hammer</thingDef>
+					<stuff>Plasteel</stuff>
+					<count>5</count>
+				</li>
+				
+				<!-- Scatter some things anywhere -->
+				<li Class="ScenPart_ScatterThingsAnywhere">
+					<def>ScatterThingsAnywhere</def>
+					<visible>false</visible>
+					<thingDef>MealSurvivalPack</thingDef>
+					<count>60</count>
+				</li>
+
+				<li Class="ScenPart_ScatterThingsAnywhere">
+					<def>ScatterThingsAnywhere</def>
+					<visible>false</visible>
+					<thingDef>MedicineIndustrial</thingDef>
+					<count>10</count>
+				</li>
+				
+				<!-- Scatter some things anywhere -->
+				<li Class="ScenPart_ScatterThingsAnywhere">
+					<def>ScatterThingsAnywhere</def>
+					<visible>false</visible>
+					<thingDef>ShipChunk</thingDef>
+					<count>22</count>
+					<allowRoofed>false</allowRoofed>
+				</li>
+				<li Class="ScenPart_ScatterThingsAnywhere">
+					<def>ScatterThingsAnywhere</def>
+					<visible>false</visible>
+					<thingDef>ShipMechChunk</thingDef>
+					<count>16</count>
+					<allowRoofed>false</allowRoofed>
+				</li>
+
+				<!-- Starting research -->
+				<!--<li Class="ScenPart_StartingResearch">
+					<def>StartingResearch</def>
+					<visible>false</visible>
+					<project>Cultivation_C3</project>
+				</li>-->
+				
+				<!-- Forced Incident -->
+				<li Class="ScenPart_CreateIncident">
+					<def>CreateIncident</def>
+					<incident>TraderCaravanArrival</incident>
+					<intervalDays>7</intervalDays>
+					<repeat>True</repeat>
+				</li>
+				<li Class="ScenPart_CreateIncident">
+					<def>CreateIncident</def>
+					<incident>RaidEnemy</incident>
+					<intervalDays>15</intervalDays>
+					<visible>false</visible>
+					<repeat>True</repeat>
+				</li>
+			</parts>
+		</scenario>
+	</ScenarioDef>
+
+</Defs>

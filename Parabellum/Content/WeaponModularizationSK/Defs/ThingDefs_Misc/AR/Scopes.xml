@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--Sights-->
+
+	<ThingDef Name="ZF4Scope" ParentName="GunPartBase" Abstract="True">
+		<label>ZF-4 x4 Scope</label>
+		<description>The Zielfernrohr 4(ZF-4) is copy of the Soviet PU scope and designed for mass production. The scope features a 4x zoom and is fitted with a T-Post reticle. It is available for most German WWII rifles.</description>
+		<statBases>
+			<WorkToMake>2200</WorkToMake>
+			<Mass>0.52</Mass>
+			<Bulk>0.5</Bulk>
+		</statBases>
+		<graphicData>
+			<texPath>Things/WeaponPart/Parts/AttachmentItem_Scope_ACOG</texPath>
+		</graphicData>
+		<uiIconPath>ui/icons/AttachmentIcon/AttachmentIcon_Scope_acog</uiIconPath>
+		<!--<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>25</costStuffCount>-->
+		<costList>
+			<Weapon_Parts>1</Weapon_Parts>
+			<Glass>2</Glass>
+			<Plasteel>10</Plasteel>
+		</costList>
+		<recipeMaker>
+			<recipeUsers>
+				<li>WeaponCraftingWorkTable</li>
+			</recipeUsers>
+			<researchPrerequisite>Sniper_rifles_C1</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>8</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+	</ThingDef>
+	
+	<ThingDef ParentName="ZF4Scope">
+		<defName>Module_ZF4S</defName>
+		<label>ZF-4 x4 Scope(StG/MP)</label>
+		<comps>
+			<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
+				<PartTexPath>Things/WeaponPart/Scopes/ZF4</PartTexPath>
+				<statOffset>
+					<Bulk>0.5</Bulk>
+				</statOffset>
+				<verbPropertiesOffseter>
+					<li>
+						<range>4</range>
+					</li>
+				</verbPropertiesOffseter>
+				<statMultiplier>
+					<SightsEfficiency>1.2</SightsEfficiency>
+					<ShotSpread>0.75</ShotSpread>
+					<RangedWeapon_Cooldown>1.1</RangedWeapon_Cooldown>
+				</statMultiplier>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<ThingDef ParentName="ZF4Scope">
+		<defName>Module_ZF4G43k</defName>
+		<label>ZF-4 x4 Scope(G43)</label>
+		<comps>
+			<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
+				<PartTexPath>Things/WeaponPart/Scopes/ZF4G43</PartTexPath>
+				<statOffset>
+					<Bulk>0.5</Bulk>
+				</statOffset>
+				<verbPropertiesOffseter>
+					<li>
+						<range>4</range>
+					</li>
+				</verbPropertiesOffseter>
+				<statMultiplier>
+					<SightsEfficiency>1.2</SightsEfficiency>
+					<ShotSpread>0.75</ShotSpread>
+					<RangedWeapon_Cooldown>1.1</RangedWeapon_Cooldown>
+				</statMultiplier>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<ThingDef Name="ZF41Scope" ParentName="GunPartBase" Abstract="True">
+		<description>The Zielfernrohr 41(ZF-41) was the first attempt to provide the ordinary infantryman with a rifle capable of being used, if not for pure sniping, then at least for sharpshooting.</description>
+		<statBases>
+			<WorkToMake>1800</WorkToMake>
+			<Mass>0.205</Mass>
+			<Bulk>0.2</Bulk>
+		</statBases>
+		<graphicData>
+			<texPath>Things/WeaponPart/Parts/AttachmentItem_Scope_Generic</texPath>
+		</graphicData>
+		<uiIconPath>ui/icons/AttachmentIcon/AttachmentIcon_Scope</uiIconPath>
+		<!--<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>25</costStuffCount>-->
+		<costList>
+			<Weapon_Parts>1</Weapon_Parts>
+			<Glass>1</Glass>
+		</costList>
+		<recipeMaker>
+			<recipeUsers>
+				<li>WeaponCraftingWorkTable</li>
+			</recipeUsers>
+			<researchPrerequisite>Rifles_C1</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>6</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+	</ThingDef>
+	
+	<ThingDef ParentName="ZF41Scope">
+		<defName>Module_ZF41S</defName>
+		<label>ZF-41 x1.5 Scope(StG/MP)</label>
+		<comps>
+			<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
+				<PartTexPath>Things/WeaponPart/Scopes/ZF41</PartTexPath>
+				<statOffset>
+					<Bulk>0.2</Bulk>
+				</statOffset>
+				<verbPropertiesOffseter>
+					<li>
+						<range>2</range>
+					</li>
+				</verbPropertiesOffseter>
+				<statMultiplier>
+					<SightsEfficiency>1.1</SightsEfficiency>
+					<ShotSpread>0.95</ShotSpread>
+				</statMultiplier>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<ThingDef ParentName="ZF41Scope">
+		<defName>Module_ZF41M</defName>
+		<label>ZF-41 x1.5 Scope(Mauser)</label>
+		<comps>
+			<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
+				<PartTexPath>Things/WeaponPart/Scopes/ZF41M</PartTexPath>
+				<statOffset>
+					<Bulk>0.2</Bulk>
+				</statOffset>
+				<verbPropertiesOffseter>
+					<li>
+						<range>2</range>
+					</li>
+				</verbPropertiesOffseter>
+				<statMultiplier>
+					<SightsEfficiency>1.1</SightsEfficiency>
+					<ShotSpread>0.95</ShotSpread>
+				</statMultiplier>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<ThingDef ParentName="GunPartBase">
+		<defName>Module_Vampir</defName>
+		<label>ZG 1229 "Vampir" x1.5 Scope</label>
+		<description>The Zielgerät 1229, also known by its code name "Vampir", was an active infrared device developed for the Wehrmacht for the Sturmgewehr 44 assault rifle during World War II, intended primarily for night use.</description>
+		<statBases>
+			<WorkToMake>1800</WorkToMake>
+			<Mass>2.25</Mass>
+			<Bulk>1.5</Bulk>
+		</statBases>
+		<graphicData>
+			<texPath>Things/WeaponPart/Parts/AttachmentItem_Scope_ACOG</texPath>
+		</graphicData>
+		<uiIconPath>ui/icons/AttachmentIcon/AttachmentIcon_Scope_acog</uiIconPath>
+		<!--<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>25</costStuffCount>-->
+		<costList>
+			<Weapon_Parts>2</Weapon_Parts>
+			<Glass>4</Glass>
+			<Plasteel>18</Plasteel>
+			<Wire>4</Wire>
+		</costList>
+		<recipeMaker>
+			<recipeUsers>
+				<li>WeaponCraftingWorkTable</li>
+			</recipeUsers>
+			<researchPrerequisite>Range_C2</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>6</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<comps>
+			<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
+				<PartTexPath>Things/WeaponPart/Scopes/Vampir</PartTexPath>
+				<statOffset>
+					<Bulk>1.5</Bulk>
+					<NightVisionEfficiency_Weapon>0.5</NightVisionEfficiency_Weapon>
+				</statOffset>
+				<!--statOffseter>
+				</statOffseter>-->
+				<verbPropertiesOffseter>
+					<li>
+						<range>2</range>
+					</li>
+				</verbPropertiesOffseter>
+				<statMultiplier>
+					<SightsEfficiency>1.1</SightsEfficiency>
+					<ShotSpread>0.98</ShotSpread>
+					<RangedWeapon_Cooldown>1.1</RangedWeapon_Cooldown>
+				</statMultiplier>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<ThingDef ParentName="GunPartBase">
+		<defName>Module_ZS</defName>
+		<label>Zielacht x8 Scope</label>
+		<description>The ZS Zielacht x8 is a German high power sniper scope issued only to recon soldiers, a commercial hunting scope adapted to the army by that time.</description>
+		<statBases>
+			<WorkToMake>4000</WorkToMake>
+			<Mass>0.417</Mass>
+			<Bulk>0.9</Bulk>
+		</statBases>
+		<graphicData>
+			<texPath>Things/WeaponPart/Parts/AttachmentItem_Scope_Sniper</texPath>
+		</graphicData>
+		<uiIconPath>ui/icons/AttachmentIcon/AttachmentIcon_Scope_Sniper</uiIconPath>
+		<costList>
+			<Sniper_Component>1</Sniper_Component>
+		</costList>
+		<recipeMaker>
+			<recipeUsers>
+				<li>WeaponCraftingWorkTable</li>
+			</recipeUsers>
+			<researchPrerequisite>Sniper_rifles_C1</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>10</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<comps>
+			<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
+				<PartTexPath>Things/WeaponPart/Scopes/ZS</PartTexPath>
+				<statOffset>
+					<Bulk>0.9</Bulk>
+				</statOffset>
+				<verbPropertiesOffseter>
+					<li>
+						<range>10</range>
+					</li>
+				</verbPropertiesOffseter>
+				<verbPropertiesMultiplier>
+					<li>
+						<warmupTime>1.1</warmupTime>
+					</li>
+				</verbPropertiesMultiplier>
+				<statMultiplier>
+					<SightsEfficiency>1.2</SightsEfficiency>
+					<ShotSpread>0.25</ShotSpread>
+					<SwayFactor>0.9</SwayFactor>
+					<RangedWeapon_Cooldown>1.1</RangedWeapon_Cooldown>
+				</statMultiplier>
+				<compPropertiesObjectPatch>
+					<il Reader-Class="CombatExtended.CompProperties_AmmoUser">
+						<reloadOneAtATime>true</reloadOneAtATime>
+						<reloadTime>0.5</reloadTime>
+					</il>
+				</compPropertiesObjectPatch>
+			</li>
+		</comps>
+	</ThingDef>
+	
+</Defs>

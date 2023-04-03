@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingCategoryDef>
+		<defName>AmmoSchiessbecher</defName>
+		<label>Schiessbecher Rifle Grenades</label>
+		<parent>AmmoGrenades</parent>
+		<iconPath>Things/Ammo/Schiessbecher/HEAT/HEAT_c</iconPath>
+	</ThingCategoryDef>
+
+	<!-- ==================== AmmoSet ========================== -->
+
+	<CombatExtended.AmmoSetDef>
+		<defName>AmmoSet_Schiessbecher</defName>
+		<label>Schiessbecher Rifle Grenades</label>
+		<ammoTypes>
+			<Pa_Grenade30mmGSG>Bullet_30mmGSG_HE</Pa_Grenade30mmGSG>
+			<Ammo_61mmGPG_HEAT>Bullet_61mmGPG_HEAT</Ammo_61mmGPG_HEAT>
+		</ammoTypes>
+	</CombatExtended.AmmoSetDef>
+	
+	<!-- ==================== Ammo ========================== -->
+
+	<ThingDef Class="CombatExtended.AmmoDef" Name="SchiessbecherBase" ParentName="AmmoBase" Abstract="True">
+		<description>Schiessbecher rifle grenades, relatively simple, cheap and easy to produce.</description>
+		<stackLimit>100</stackLimit>
+		<tradeTags>
+			<li>CE_AutoEnableTrade</li>
+			<li>CE_AutoEnableCrafting_TableMachining</li>
+		</tradeTags>
+		<thingCategories>
+			<li>AmmoSchiessbecher</li>
+		</thingCategories>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+		</statBases>
+		<cookOffSound>MortarBomb_Explode</cookOffSound>
+		<cookOffSpeed>0.8</cookOffSpeed>
+		<cookOffFlashScale>25</cookOffFlashScale>
+		<cookOffTailSound>ShellCookOff_Ambient</cookOffTailSound>
+	</ThingDef>
+
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="SchiessbecherBase">
+		<defName>Ammo_61mmGPG_HEAT</defName>
+		<label>61mm Grosse Panzerganate 61(HEAT)</label>
+		<graphicData>
+			<texPath>Things/Ammo/Schiessbecher/HEAT</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<Mass>0.58</Mass>
+			<Bulk>0.9</Bulk>
+			<MarketValue>10</MarketValue>
+		</statBases>
+		<ammoClass>SchiessbecherHEAT</ammoClass>
+		<detonateProjectile>Bullet_61mmGPG_HEAT</detonateProjectile>
+	</ThingDef>
+	
+	<!-- The Grenade as Ammo and Weapon -->
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="BaseGrenadeEquipment">
+		<defName>Pa_Grenade30mmGSG</defName>
+		<equipmentType>Primary</equipmentType>
+		<label>30mm Gewehr-Sprenggranate(HE)</label>
+		<description>High Explosive rifle grenade, used by Schiessbecher rifle grenade launcher, it has slow projectile speed and limited explosion blast range, not very effective against armored target.</description>
+		<graphicData>
+			<texPath>Things/Ammo/Schiessbecher/HE</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<soundInteract>Interact_Grenade</soundInteract>
+		<techLevel>Industrial</techLevel>
+		<generateAllowChance>0.25</generateAllowChance>
+		<tradeTags>
+			<li>CE_AutoEnableTrade</li>
+			<li>CE_AutoEnableCrafting_TableMachining</li>
+		</tradeTags>
+		<stackLimit>100</stackLimit>
+		<cookOffFlashScale>25</cookOffFlashScale>
+		<cookOffSound>Explosion_Bomb</cookOffSound>
+		<cookOffSpeed>0.8</cookOffSpeed>
+		<cookOffTailSound>ShellCookOff_Ambient</cookOffTailSound>
+		<statBases>
+			<Mass>0.26</Mass>
+			<Bulk>0.38</Bulk>
+			<MarketValue>6</MarketValue>
+			<SightsEfficiency>0.65</SightsEfficiency>
+			<RangedWeapon_Cooldown>0.5</RangedWeapon_Cooldown>
+		</statBases>
+		<ammoClass>SchiessbecherHE</ammoClass>
+		<detonateProjectile>Proj_Grenade30mmGSG</detonateProjectile>
+		<generateCommonality>0.5</generateCommonality>
+		<weaponTags>
+			<li>GrenadeDestructive</li>
+			<li>GrenadeTierTwo</li>
+			<li>GrenadeTierThree</li>
+			<li>CE_AI_Grenade</li>
+			<li>CE_OneHandedWeapon</li>
+		</weaponTags>
+		<thingCategories>
+			<li>Grenades</li>
+			<li>AmmoSchiessbecher</li>
+		</thingCategories>
+		<verbs>
+			<li Class="CombatExtended.VerbPropertiesCE">
+				<label>throw 30mm Gewehr-Sprenggranate(HE)</label>
+				<verbClass>CombatExtended.Verb_ShootCEOneUse</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<range>14</range>
+				<minRange>3</minRange>
+				<warmupTime>1</warmupTime>
+				<noiseRadius>4</noiseRadius>
+				<ai_AvoidFriendlyFireRadius>4</ai_AvoidFriendlyFireRadius>
+				<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+				<soundCast>ThrowGrenade</soundCast>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+				<defaultProjectile>Proj_Grenade30mmGSG</defaultProjectile>
+				<onlyManualCast>true</onlyManualCast>
+				<ignorePartialLoSBlocker>true</ignorePartialLoSBlocker>
+			</li>
+		</verbs>
+		<smeltProducts>
+			<Plasteel>2</Plasteel>
+		</smeltProducts>
+	</ThingDef>
+	
+	<!-- Projectile As Hand Grenade -->
+	<ThingDef Name="Projectile_30mmGSG" ParentName="SK_BaseGrenadeProjectile">
+		<defName>Proj_Grenade30mmGSG</defName>
+		<label>30mm Gewehr-Sprenggranate(HE)</label>
+		<graphicData>
+			<texPath>Things/Projectile/Schiessbecher/HE</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<explosionRadius>1.55</explosionRadius>
+			<damageDef>Bomb</damageDef>
+			<damageAmountBase>72</damageAmountBase>
+			<explosionDelay>150</explosionDelay>
+			<soundExplode>Explosion_Bomb</soundExplode>
+			<dropsCasings>true</dropsCasings>
+			<casingMoteDefname>Mote_GrenadePin</casingMoteDefname>
+			<applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+		</projectile>
+		<comps>
+			<li Class="CombatExtended.CompProperties_Fragments">
+				<fragments>
+					<Fragment_GrenadeFrag>20</Fragment_GrenadeFrag>
+				</fragments>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<!-- Projectile As Rifle Grenade -->
+	<ThingDef ParentName="Projectile_30mmGSG">
+		<defName>Bullet_30mmGSG_HE</defName>
+		<label>30mm GSG(HE)</label>
+		<graphicData>
+			<texPath>Things/Projectile/Schiessbecher/HE</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<speed>36</speed><!-- 180m/s? -->
+			<explosionDelay>10</explosionDelay>
+		</projectile>
+	</ThingDef>
+
+	<!-- ================== Projectiles ================== -->
+
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="SK_BaseBullet">
+		<defName>Bullet_61mmGPG_HEAT</defName>
+		<label>61mm GPG 61(HEAT)</label>
+		<graphicData>
+			<texPath>Things/Projectile/Schiessbecher/HEAT</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<speed>24</speed><!-- 120m/s? -->
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>256</damageAmountBase>
+			<armorPenetrationSharp>130</armorPenetrationSharp>
+			<armorPenetrationBlunt>25.056</armorPenetrationBlunt>
+		</projectile>
+		<comps>
+			<li Class="CombatExtended.CompProperties_ExplosiveCE">
+				<damageAmountBase>131.15</damageAmountBase>
+				<explosiveDamageType>Bomb</explosiveDamageType>
+				<explosiveRadius>1.1</explosiveRadius>
+			</li>
+			<li Class="CombatExtended.CompProperties_Fragments">
+				<fragments>
+					<Fragment_Large>3</Fragment_Large>
+					<Fragment_Small>10</Fragment_Small>
+				</fragments>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<!-- ==================== Recipes ========================== -->
+
+	<RecipeDef ParentName="AmmoRecipeBase">
+		<defName>MakeAmmo_30mmGSG_HE</defName>
+		<label>make 30mm Gewehr-Sprenggranate(HE) x10</label>
+		<description>Craft 30mm Gewehr-Sprenggranate rifle grenade x10.</description>
+		<jobString>Making 30mm Gewehr-Sprenggranate rifle grenade.</jobString>
+		<workAmount>1400</workAmount>
+		<targetCountAdjustment>10</targetCountAdjustment>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>SLDBar</li>
+						<li>USLDBar</li>
+					</categories>
+				</filter>
+				<count>15</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>HeavyBar</li>
+					</categories>
+				</filter>
+				<count>6</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Powder</li>
+						<li>FSX</li>
+					</thingDefs>
+				</filter>
+				<count>4</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>SLDBar</li>
+				<li>USLDBar</li>
+				<li>HeavyBar</li>
+			</categories>
+			<thingDefs>
+				<li>Powder</li>
+				<li>FSX</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<recipeUsers>
+			<li>AmmoBench</li>
+		</recipeUsers>
+		<products>
+			<Pa_Grenade30mmGSG>10</Pa_Grenade30mmGSG>
+		</products>
+		<researchPrerequisite>Machining</researchPrerequisite>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="AmmoRecipeBase">
+		<defName>MakeAmmo_61mmGPG_HEAT</defName>
+		<label>make 61mm Grosse Panzerganate 61 x10</label>
+		<description>Craft 61mm Grosse Panzerganate 61 rifle grenade x10.</description>
+		<jobString>Making 61mm Grosse Panzerganate 61 rifle grenade.</jobString>
+		<workAmount>2000</workAmount>
+		<targetCountAdjustment>10</targetCountAdjustment>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>SLDBar</li>
+						<li>USLDBar</li>
+					</categories>
+				</filter>
+				<count>50</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>HeavyBar</li>
+					</categories>
+				</filter>
+				<count>10</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Powder</li>
+						<li>FSX</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>SLDBar</li>
+				<li>USLDBar</li>
+				<li>HeavyBar</li>
+			</categories>
+			<thingDefs>
+				<li>Powder</li>
+				<li>FSX</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<recipeUsers>
+			<li>AmmoBench</li>
+		</recipeUsers>
+		<products>
+			<Ammo_61mmGPG_HEAT>10</Ammo_61mmGPG_HEAT>
+		</products>
+		<researchPrerequisite>Rifles_C1</researchPrerequisite>
+	</RecipeDef>
+
+</Defs>

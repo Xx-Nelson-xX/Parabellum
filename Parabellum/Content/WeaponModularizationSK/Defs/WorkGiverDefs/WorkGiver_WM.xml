@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<WorkGiverDef ParentName="WorkGiverPrioritizeSustains">
+		<defName>DoBillsWM</defName>
+		<label>Using</label>
+		<workType>Smithing</workType>
+		<priorityInType>100</priorityInType>
+		<fixedBillGiverDefs>
+			<li>ARToolingSet</li>
+			<!--<li>FueledSmithy</li>-->
+		</fixedBillGiverDefs>
+		<verb>working</verb>
+		<gerund>working at</gerund>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+	</WorkGiverDef>
+
+</Defs>

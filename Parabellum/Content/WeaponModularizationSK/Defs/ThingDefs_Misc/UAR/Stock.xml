@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<!--Stock-->
+	
+	<!--ParentName-->
+	<ThingDef Name="Module_Stock" ParentName="GunPartBase" Abstract="True">
+		<graphicData>
+			<texPath>Things/WeaponPart/Parts/AttachmentItem_Stock_Generic</texPath>
+		</graphicData>
+		<uiIconPath>ui/icons/AttachmentIcon/AttachmentIcon_Stock</uiIconPath>
+		<recipeMaker>
+			<recipeUsers>
+				<li>ARToolingSet</li>
+			</recipeUsers>
+		</recipeMaker>
+	</ThingDef>
+	
+	<!--AR Buffer Tube-->
+	<ThingDef ParentName="Module_Stock">
+		<defName>Module_ARBT</defName>
+		<label>AR Buffer Tube</label>
+		<description>The AR Buffer Tube is one of the vital part of the AR like weapon, unless you want a bolt action gun and no recoil reduction.</description>
+		<statBases>
+			<WorkToMake>400</WorkToMake>
+			<Mass>0.278</Mass>
+			<Bulk>0.512</Bulk>
+		</statBases>
+		<costList>
+			<Weapon_Parts>2</Weapon_Parts>
+		</costList>
+		<recipeMaker>
+			<researchPrerequisite>Rifles_C1</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>5</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<comps>
+			<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
+				<PartTexPath>Things/WeaponPart/Stocks/Pa_AR_BT</PartTexPath>
+				<drawChildPartWhenOnGround>false</drawChildPartWhenOnGround>
+				<setRandomPartWhenCreate>true</setRandomPartWhenCreate>
+				<statOffset>
+					<MarketValue>100</MarketValue>
+					<Bulk>0.512</Bulk>
+				</statOffset>
+				<statMultiplier>
+					<SwayFactor>0.95</SwayFactor>
+				</statMultiplier>
+				<!--<verbPropertiesMultiplier>
+					<li>
+						<recoilAmount>0.96</recoilAmount>
+					</li>
+				</verbPropertiesMultiplier>-->
+				<attachmentProperties>
+					<li>
+						<id>ModS_SubStock</id>
+						<name>stock</name>
+						<allowEmpty>true</allowEmpty>
+						<UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Stock</UITexPath>
+						<postion>(-0.0183,0.1,0)</postion>
+						<scale>(0.833,0,0.833)</scale>
+						<filter>
+							<thingDefs>
+								<li>Module_FixedStock</li>
+								<li>Module_CollapsibleStock</li>
+							</thingDefs>
+						</filter>
+					</li>
+				</attachmentProperties>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<!--Fixed M16 Stock-->
+	<ThingDef ParentName="Module_Stock">
+		<defName>Module_FixedStock</defName>
+		<label>Fixed M16 Stock</label>
+		<description>Old trusty M16 fixed stock, very sturdy and reliable.</description>
+		<statBases>
+			<WorkToMake>800</WorkToMake>
+			<Mass>0.45</Mass>
+			<Bulk>1.92</Bulk>
+		</statBases>
+		<costList>
+			<Plastic>6</Plastic>
+		</costList>
+		<recipeMaker>
+			<researchPrerequisite>Rifles_C1</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>2</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<comps>
+			<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
+				<PartTexPath>Things/WeaponPart/Stocks/Pa_AR_FixedS</PartTexPath>
+				<statOffset>
+					<MarketValue>150</MarketValue>
+					<Bulk>1.92</Bulk>
+				</statOffset>
+				<statMultiplier>
+					<SwayFactor>0.75</SwayFactor>
+					<RangedWeapon_Cooldown>1.46</RangedWeapon_Cooldown>
+				</statMultiplier>
+				<verbPropertiesMultiplier>
+					<li>
+						<!--<recoilAmount>0.8</recoilAmount>-->
+						<warmupTime>1.32</warmupTime>
+					</li>
+				</verbPropertiesMultiplier>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<!--Adjustable M4 Stock-->
+	<ThingDef ParentName="Module_Stock">
+		<defName>Module_CollapsibleStock</defName>
+		<label>Collapsible M4 Stock</label>
+		<description>Standard Collapsible M4 Stock, simple, compact and light weight.</description>
+		<statBases>
+			<WorkToMake>800</WorkToMake>
+			<Mass>0.192</Mass>
+			<Bulk>1.6</Bulk>
+		</statBases>
+		<costList>
+			<Plastic>2</Plastic>
+			<ComponentIndustrial>1</ComponentIndustrial>
+		</costList>
+		<recipeMaker>
+			<researchPrerequisite>Rifles_C1</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>8</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<comps>
+			<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
+				<PartTexPath>Things/WeaponPart/Stocks/Pa_AR_CollapsibleS</PartTexPath>
+				<statOffset>
+					<MarketValue>100</MarketValue>
+					<Bulk>1.6</Bulk>
+				</statOffset>
+				<statMultiplier>
+					<SwayFactor>0.8</SwayFactor>
+					<RangedWeapon_Cooldown>1.32</RangedWeapon_Cooldown>
+				</statMultiplier>
+				<verbPropertiesMultiplier>
+					<li>
+						<!--<recoilAmount>0.85</recoilAmount>-->
+						<warmupTime>1.24</warmupTime>
+					</li>
+				</verbPropertiesMultiplier>
+			</li>
+		</comps>
+	</ThingDef>
+	
+</Defs>

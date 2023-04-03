@@ -30,7 +30,7 @@
 		<isMortarAmmo>true</isMortarAmmo>
 	</ThingDef>
 
-	<ThingDef Class="CombatExtended.AmmoDef" ParentName="155mmHowitzerAFAPShellBase">
+	<ThingDef MayRequire="Dubwise.Rimatomics" Class="CombatExtended.AmmoDef" ParentName="155mmHowitzerAFAPShellBase">
 		<defName>Ammo_155mmHowitzerShell_Nuke</defName>
 		<label>155mm howitzer shell (AFAP)</label>
 		<description>W48/XM454 Artillery Fired Atomic Projectile, aka. AFAP, a tactical nuclear warhead, capable of being fired from any standard 155mm(6.1") howitzer.\\n(Warning: Use it only when you want part of your map wiped to nothing but plain terrain filled with relatively long lasting radiation after a wave of EMP blast.)</description>
@@ -65,7 +65,7 @@
 
 	<!-- ================== Projectiles ================== -->
 
-  <ThingDef Class="CombatExtended.AmmoDef" ParentName="Base155mmHowitzerShell">
+  <ThingDef MayRequire="Dubwise.Rimatomics" Class="CombatExtended.AmmoDef" ParentName="Base155mmHowitzerShell">
 		<defName>Bullet_155mmHowitzerShell_Nuke</defName>
 		<label>155mm howitzer shell (AFAP)</label>
 		<thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
@@ -138,7 +138,7 @@
 
 	<!-- ==================== Recipes ========================== -->
 
-	<RecipeDef ParentName="AmmoRecipeBase">
+	<RecipeDef MayRequire="Dubwise.Rimatomics" ParentName="AmmoRecipeBase">
 		<defName>MakeAmmo_155mmHowitzerShell_Nuke</defName>
 		<label>make 155mm W48 AFAP howitzer shells x1</label>
 		<description>Craft a 155mm W48 AFAP howitzer shell.</description>

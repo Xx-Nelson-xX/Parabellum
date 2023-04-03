@@ -37,10 +37,9 @@
 		</statBases>
 		<generateCommonality>0.7</generateCommonality>
 		<weaponTags>
-			<li>GrenadeDestructive</li>
+			<li>M24SHG</li>
 			<li>GrenadeTierTwo</li>
 			<li>CE_AI_Grenade</li>
-			<li>CE_OneHandedWeapon</li>
 		</weaponTags>
 		<thingCategories>
 			<li>Grenades</li>
@@ -116,11 +115,9 @@
 		</statBases>
 		<generateCommonality>0.5</generateCommonality>
 		<weaponTags>
-			<li>GrenadeDestructive</li>
 			<li>GrenadeTierTwo</li>
 			<li>GrenadeTierThree</li>
 			<li>CE_AI_Grenade</li>
-			<li>CE_OneHandedWeapon</li>
 		</weaponTags>
 		<thingCategories>
 			<li>Grenades</li>
@@ -195,7 +192,6 @@
 		<weaponTags>
 			<li>CE_GrenadeSmoke</li>
 			<li>CE_AI_Nonlethal</li>
-			<li>CE_OneHandedWeapon</li>
 		</weaponTags>
 		<thingCategories>
 			<li>Grenades</li>
@@ -263,7 +259,6 @@
 		</statBases>
 		<generateCommonality>0.5</generateCommonality>
 		<weaponTags>
-			<li>GrenadeDestructive</li>
 			<li>GrenadeTierTwo</li>
 			<li>GrenadeTierThree</li>
 			<li>CE_AI_Grenade</li>
@@ -344,8 +339,7 @@
 			<RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
 		</statBases>
 		<generateCommonality>0.4</generateCommonality>
-		<weaponTags>
-			<li>GrenadeDestructive</li>
+		<weaponTags Inherit="False">
 			<li>GrenadeTierTwo</li>
 			<li>GrenadeTierThree</li>
 			<li>CE_AI_Grenade</li>
@@ -440,10 +434,8 @@
 			<Suppressability>-0.5</Suppressability>
 		</equippedStatOffsets>
 		<weaponTags>
-			<li>GrenadeDestructive</li>
 			<li>GrenadeTierThree</li>
 			<li>CE_AI_Grenade</li>
-			<li>CE_OneHandedWeapon</li>
 		</weaponTags>
 		<verbs>
 			<li Class="CombatExtended.VerbPropertiesCE">
@@ -508,10 +500,8 @@
 			<Suppressability>-0.5</Suppressability>
 		</equippedStatOffsets>
 		<weaponTags>
-			<li>GrenadeDestructive</li>
 			<li>GrenadeTierThree</li>
 			<li>CE_AI_Grenade</li>
-			<li>CE_OneHandedWeapon</li>
 		</weaponTags>
 		<verbs>
 			<li Class="CombatExtended.VerbPropertiesCE">
@@ -589,7 +579,6 @@
 			<RangedWeapon_Cooldown>0.9</RangedWeapon_Cooldown>
 		</statBases>
 		<weaponTags>
-			<li>GrenadeDestructive</li>
 			<li>GrenadeTierThree</li>
 			<li>CE_AI_Grenade</li>
 		</weaponTags>
@@ -624,7 +613,7 @@
 	</ThingDef>
 	
 	<!-- Dirty Bomb -->
-	<ThingDef ParentName="SK_BaseGrenadeProjectile">
+	<ThingDef MayRequire="Dubwise.Rimatomics" ParentName="SK_BaseGrenadeProjectile">
 		<defName>Pa_DB</defName>
 		<label>Dirty Bomb</label>
 		<graphicData>
@@ -663,7 +652,7 @@
 			</li>
 		</comps>
 	</ThingDef>
-	<ThingDef Class="CombatExtended.AmmoDef" ParentName="BaseGrenadeEquipment">
+	<ThingDef MayRequire="Dubwise.Rimatomics" Class="CombatExtended.AmmoDef" ParentName="BaseGrenadeEquipment">
 		<defName>Pa_DBG</defName>
 		<equipmentType>Primary</equipmentType>
 		<label>Dirty Bomb</label>
@@ -682,7 +671,6 @@
 			<RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
 		</statBases>
 		<weaponTags>
-			<li>GrenadeDestructive</li>
 			<li>GrenadeTierFour</li>
 			<li>CE_AI_Grenade</li>
 		</weaponTags>

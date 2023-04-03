@@ -284,7 +284,7 @@
 		<recipeUsers>
 			<li>WeaponCraftingWorkTable</li>
 		</recipeUsers>
-		<researchPrerequisite>Rifles_C1</researchPrerequisite>
+		<researchPrerequisite>Machining</researchPrerequisite>
 	</RecipeDef>
 	
 	<!-- =============== FG 42 Type F/II Dual Purpose Automatic Rifle =============== -->
@@ -598,6 +598,80 @@
 			<li>AdvWeaponCraftingWorkTable</li>
 		</recipeUsers>
 		<researchPrerequisite>Rifles_C2</researchPrerequisite>
+	</RecipeDef>
+	
+	<!-- Granatbüchse Model 39(GrB 39) Anti-Tank Grenade Launcher(Leicht) -->
+	<RecipeDef ParentName="RangedWeaponRecipeBase">
+		<defName>BuildGrB</defName>
+		<label>Build GrB 39 ATGL(L)</label>
+		<description>Build the GrB 39 ATGL(L), Upgrade son.\nCaliber: Schiessbecher rifle grenades</description>
+		<jobString>Building GrB 39 ATGL(L).</jobString>
+		<workAmount>10500</workAmount>
+		<skillRequirements>
+			<Crafting>8</Crafting>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Rifle_Component</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Weapon_Parts</li>
+					</thingDefs>
+				</filter>
+				<count>4</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>19</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>SLDBar</li>
+						<li>USLDBar</li>
+					</categories>
+				</filter>
+				<count>40</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>Woody</li>
+					</categories>
+				</filter>
+				<count>12</count>
+			</li>
+		</ingredients>
+		<products>
+			<Pa_GrB>1</Pa_GrB>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Rifle_Component</li>
+				<li>Weapon_Parts</li>
+				<li>ComponentIndustrial</li>
+			</thingDefs>
+			<categories>
+				<li>SLDBar</li>
+				<li>USLDBar</li>
+				<li>Woody</li>
+			</categories>
+		</fixedIngredientFilter>
+		<recipeUsers>
+			<li>WeaponCraftingWorkTable</li>
+		</recipeUsers>
+		<researchPrerequisite>Rifles_C1</researchPrerequisite>
 	</RecipeDef>
 
 </Defs>

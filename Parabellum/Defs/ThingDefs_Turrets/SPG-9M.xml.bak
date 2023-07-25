@@ -29,7 +29,7 @@
 			<li Class="CombatExtended.VerbPropertiesCE">
 				<verbClass>CombatExtended.Verb_ShootMortarCE</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>Bullet_SPG9Rocket_Frag</defaultProjectile>
+				<defaultProjectile>Bullet_SPG9Grenade_Frag</defaultProjectile>
 				<!--<forcedMissRadius>2</forcedMissRadius>-->
 				<circularError>0.75</circularError>
 				<minRange>10</minRange>
@@ -48,7 +48,7 @@
 				<magazineSize>1</magazineSize>
 				<reloadTime>3.2</reloadTime>
 				<!-- <spawnUnloaded>true</spawnUnloaded> -->
-				<ammoSet>AmmoSet_SPG9Rocket</ammoSet>
+				<ammoSet>AmmoSet_SPG9Grenade</ammoSet>
 			</li>
 			<li Class="CombatExtended.CompProperties_FireModes" />
 		</comps>
@@ -82,7 +82,7 @@
 			<li Class="CombatExtended.VerbPropertiesCE">
 				<verbClass>CombatExtended.Verb_ShootMortarCE</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>Bullet_SPG9Rocket_Frag</defaultProjectile>
+				<defaultProjectile>Bullet_SPG9Grenade_Frag</defaultProjectile>
 				<!--<forcedMissRadius>2</forcedMissRadius>-->
 				<circularError>0.8</circularError>
 				<minRange>10</minRange>
@@ -103,7 +103,7 @@
 				<magazineSize>2</magazineSize>
                 <reloadTime>5.8</reloadTime>
 				<!-- <spawnUnloaded>true</spawnUnloaded> -->
-				<ammoSet>AmmoSet_SPG9Rocket</ammoSet>
+				<ammoSet>AmmoSet_SPG9Grenade</ammoSet>
 			</li>
 			<li Class="CombatExtended.CompProperties_FireModes">
 				<aiUseBurstMode>true</aiUseBurstMode>

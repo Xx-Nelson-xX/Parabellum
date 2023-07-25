@@ -15,8 +15,8 @@
 			<Ammo_RPG7Grenade_HEAT>Bullet_RPG7Grenade_HEAT</Ammo_RPG7Grenade_HEAT>
 			<Ammo_RPG7Grenade_Thermobaric>Bullet_RPG7Grenade_Thermobaric</Ammo_RPG7Grenade_Thermobaric>
 			<Ammo_RPG7Grenade_Frag>Bullet_RPG7Grenade_Frag</Ammo_RPG7Grenade_Frag>
-			<Ammo_SPG9Rocket_HEAT>Bullet_SPG9Rocket_HEAT</Ammo_SPG9Rocket_HEAT>
-			<Ammo_SPG9Rocket_Frag>Bullet_SPG9Rocket_Frag</Ammo_SPG9Rocket_Frag>
+			<Ammo_SPG9Grenade_HEAT>Bullet_SPG9Grenade_HEAT</Ammo_SPG9Grenade_HEAT>
+			<Ammo_SPG9Grenade_Frag>Bullet_SPG9Grenade_Frag</Ammo_SPG9Grenade_Frag>
 		</ammoTypes>
 	</CombatExtended.AmmoSetDef>
 	

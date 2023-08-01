@@ -139,7 +139,7 @@
 			<explosionDelay>150</explosionDelay>
 			<soundExplode>Explosion_Bomb</soundExplode>
 			<dropsCasings>true</dropsCasings>
-			<casingMoteDefname>Mote_GrenadePin</casingMoteDefname>
+			<casingMoteDefname>Fleck_GrenadePin</casingMoteDefname>
 			<applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
 		</projectile>
 		<comps>

@@ -120,7 +120,7 @@
 			<soundAmbient>MortarRound_Ambient</soundAmbient>
 			<flyOverhead>true</flyOverhead>
 			<dropsCasings>true</dropsCasings>
-			<casingMoteDefname>Mote_BigShell</casingMoteDefname>
+			<casingMoteDefname>Fleck_BigShell</casingMoteDefname>
 			<gravityFactor>12</gravityFactor>
 			<alwaysFreeIntercept>false</alwaysFreeIntercept>
 			<applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>

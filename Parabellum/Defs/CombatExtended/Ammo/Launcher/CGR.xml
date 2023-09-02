@@ -100,7 +100,7 @@
 			<speed>62</speed>
 			<soundExplode>MortarBomb_Explode</soundExplode>
 			<flyOverhead>false</flyOverhead>
-			<casingMoteDefname>Mote_BigShell</casingMoteDefname>
+			<casingMoteDefname>Fleck_BigShell</casingMoteDefname>
 		</projectile>
 	</ThingDef>
 

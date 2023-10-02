@@ -68,12 +68,12 @@
 		<comps>
 			<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
 				<PartTexPath>Things/WeaponPart/Magazines/MauserTM</PartTexPath>
-				<compPropertiesObjectPatch>
+				<compPropertiesOffseter>
 					<il Reader-Class="CombatExtended.CompProperties_AmmoUser">
-						<reloadTime>7.6</reloadTime>
-						<magazineSize>25</magazineSize>
+						<reloadTime>5.6</reloadTime>
+						<magazineSize>20</magazineSize>
 					</il>
-				</compPropertiesObjectPatch>
+				</compPropertiesOffseter>
 			</li>
 		</comps>
 	</ThingDef>
@@ -107,12 +107,12 @@
 		<comps>
 			<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
 				<PartTexPath>Things/WeaponPart/Magazines/G4310rnd</PartTexPath>
-				<compPropertiesObjectPatch>
+				<compPropertiesOffseter>
 					<il Reader-Class="CombatExtended.CompProperties_AmmoUser">
-						<reloadTime>2.1</reloadTime>
-						<magazineSize>10</magazineSize>
+						<reloadTime>1</reloadTime>
+						<magazineSize>9</magazineSize>
 					</il>
-				</compPropertiesObjectPatch>
+				</compPropertiesOffseter>
 			</li>
 		</comps>
 	</ThingDef>
@@ -145,12 +145,12 @@
 		<comps>
 			<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
 				<PartTexPath>Things/WeaponPart/Magazines/G4320rnd</PartTexPath>
-				<compPropertiesObjectPatch>
+				<compPropertiesOffseter>
 					<il Reader-Class="CombatExtended.CompProperties_AmmoUser">
-						<reloadTime>2.4</reloadTime>
-						<magazineSize>20</magazineSize>
+						<reloadTime>1.4</reloadTime>
+						<magazineSize>19</magazineSize>
 					</il>
-				</compPropertiesObjectPatch>
+				</compPropertiesOffseter>
 			</li>
 		</comps>
 	</ThingDef>

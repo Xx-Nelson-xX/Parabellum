@@ -405,7 +405,7 @@
 		<soundInteract>Standard_Drop</soundInteract>
 		<soundDrop>Standard_Drop</soundDrop>
 		<tickerType>Normal</tickerType>
-		<stackLimit>25</stackLimit>
+		<stackLimit>50</stackLimit>
 		<techLevel>Industrial</techLevel>
 		<statBases>
 			<MarketValue>700</MarketValue>

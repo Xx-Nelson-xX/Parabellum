@@ -2,7 +2,16 @@
 <Patch>
 
 	<Operation Class="PatchOperationAdd">	
-	<xpath>Defs/ThingDef[defName="Pa_Lewis" or defName="Pa_MG0815L" or defName="Pa_Madsen" or defName="Pa_MG30L" or defName="Pa_MG34L" or defName="Pa_MG42L" or defName="Pa_MG45H" or defName="Pa_FG42F"]/weaponTags</xpath>
+	<xpath>Defs/ThingDef[defName="Pa_Lewis" 
+					  or defName="Pa_MG0815L" 
+					  or defName="Pa_Madsen" 
+					  or defName="Pa_MG30L" 
+					  or defName="Pa_MG34L" 
+					  or defName="Pa_MG42L" 
+					  or defName="Pa_MG45H" 
+					  or defName="Pa_FG42F"
+					  or defName="Pa_XM109AMPR"
+					  or defName="Pa_GrB"]/weaponTags</xpath>
 		<value>
 			<li>Bipod_PaMG</li>
 		</value>

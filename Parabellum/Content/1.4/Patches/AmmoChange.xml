@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+	<!-- ================== SPG-9 ================== -->
+	
+	<Operation Class="PatchOperationReplace">	
+	<xpath>Defs/ThingDef[defName="Pa_SPG9M" or defName="Pa_SPG9MD"]/comps/li[@Class="CombatExtended.CompProperties_AmmoUser"]/ammoSet</xpath>
+		<value>
+			<ammoSet>AmmoSet_SPG9Rocket</ammoSet>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+	<xpath>Defs/ThingDef[defName="Pa_SPG9M" or defName="Pa_SPG9MD"]/verbs/li[@Class="CombatExtended.VerbPropertiesCE"]/defaultProjectile</xpath>
+		<value>
+			<defaultProjectile>Bullet_SPG9Rocket_HEAT</defaultProjectile>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">	
+	<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_CGRMU"]/ammoTypes</xpath>
+		<value>
+			<ammoTypes>
+				<Ammo_84mmCGShell_HEAT>Bullet_84mmCGShell_HEAT</Ammo_84mmCGShell_HEAT>
+				<Ammo_84mmCGShell_HE>Bullet_84mmCGShell_HE</Ammo_84mmCGShell_HE>
+				<Ammo_84mmCGShell_ADM>Bullet_84mmCGShell_ADM</Ammo_84mmCGShell_ADM>
+				<Ammo_90mmCannonShell_HEAT>Bullet_90mmCannonShell_HEAT</Ammo_90mmCannonShell_HEAT>
+				<Ammo_90mmCannonShell_HE>Bullet_90mmCannonShell_HE</Ammo_90mmCannonShell_HE>
+				<Ammo_90mmCannonShell_EMP>Bullet_90mmCannonShell_EMP</Ammo_90mmCannonShell_EMP>
+				<Ammo_90mmCannonShell_F>Bullet_90mmCannonShell_F</Ammo_90mmCannonShell_F>
+				<Ammo_RPG7Grenade_HEAT>Bullet_RPG7Grenade_HEAT</Ammo_RPG7Grenade_HEAT>
+				<Ammo_RPG7Grenade_Thermobaric>Bullet_RPG7Grenade_Thermobaric</Ammo_RPG7Grenade_Thermobaric>
+				<Ammo_RPG7Grenade_Frag>Bullet_RPG7Grenade_Frag</Ammo_RPG7Grenade_Frag>
+				<Ammo_SPG9Rocket_HEAT>Bullet_SPG9Rocket_HEAT</Ammo_SPG9Rocket_HEAT>
+				<Ammo_SPG9Rocket_Frag>Bullet_SPG9Rocket_Frag</Ammo_SPG9Rocket_Frag>
+			</ammoTypes>
+		</value>
+	</Operation>
+	
+	<!-- ================== Motes to Flecks ================== -->
+	
+	<Operation Class="PatchOperationReplace">	
+	<xpath>Defs/ThingDef/projectile[@Class="CombatExtended.ProjectilePropertiesCE"]/casingMoteDefname[text()="Mote_BigShell"]</xpath>
+		<value>
+			<casingMoteDefname>Fleck_BigShell</casingMoteDefname>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">	
+	<xpath>Defs/ThingDef/projectile[@Class="CombatExtended.ProjectilePropertiesCE"]/casingMoteDefname[text()="Mote_GrenadePin"]</xpath>
+		<value>
+			<casingMoteDefname>Fleck_GrenadePin</casingMoteDefname>
+		</value>
+	</Operation>
+	
+</Patch>

@@ -3,49 +3,51 @@
 
 	<!-- Universal AR -->
     <ThingDef ParentName="BaseGun_LongBarreled">
-        <defName>Pa_UniversalAR</defName>
-        <label>Universal AR</label>
-        <description>The receiver of the basic AR family, you can use it as a bolt pistol but is a very ineffective way to use the gun, please add the rest of the gun parts.</description>
+        <defName>Pa_UniversalAR_SG</defName>
+        <label>UAR SG</label>
+        <description>The receiver of the basic AR family, SG version for Shotgun ammo.</description>
         <graphicData>
             <texPath>Things/Weapons/Carabines/Pa_AR_R</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <soundInteract>Interact_Rifle</soundInteract>
         <statBases>
-            <MarketValue>250</MarketValue>
+            <MarketValue>400</MarketValue>
             <SightsEfficiency>0.5</SightsEfficiency>
-            <ShotSpread>0.8</ShotSpread>
-            <SwayFactor>1.5</SwayFactor>
-            <RangedWeapon_Cooldown>0.24</RangedWeapon_Cooldown>
-            <Bulk>3.2</Bulk>
-            <Mass>0.9</Mass>
+            <ShotSpread>1</ShotSpread>
+            <SwayFactor>2.5</SwayFactor>
+            <RangedWeapon_Cooldown>0.8</RangedWeapon_Cooldown>
+            <Bulk>3.4</Bulk>
+            <Mass>1</Mass>
         </statBases>
-		<generateCommonality>0.7</generateCommonality>
+		<generateCommonality>0.25</generateCommonality>
+		<tradeTags>
+            <li>Exotic</li>
+        </tradeTags>
         <weaponTags>
-			<li>RF3</li>
-			<li>RF4</li>
-			<li>IndustrialGunAdvanced</li>
-			<li>AdvancedGun</li>
-			<li>TierOneRifle</li>
-            <li>TierTwoRifle</li>
-			<li>TierThreeRifle</li>
-            <li>CE_AI_Rifle</li>
+			<li>ST3</li>
+            <li>Gun</li>
+            <li>TierTwoSMG</li>
+			<li>CE_AI_AssaultWeapon</li>
         </weaponTags>
         <thingCategories>
-            <li>Rifles</li>
+            <li>Shotguns</li>
         </thingCategories>
         <verbs>
             <li Class="CombatExtended.VerbPropertiesCE">
-                <recoilAmount>1.3</recoilAmount>
+                <recoilAmount>1.5</recoilAmount>
                 <verbClass>CombatExtended.Verb_ShootCE</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
-                <defaultProjectile>Bullet_556x45mmNATO_FMJ</defaultProjectile>
-                <warmupTime>0.2</warmupTime>
-                <range>22</range>
+                <defaultProjectile>Bullet_12Gauge_Buck</defaultProjectile>
+                <warmupTime>0.6</warmupTime>
+                <range>20</range>
+				<targetParams>
+                    <canTargetLocations>true</canTargetLocations>
+                </targetParams>
 				<burstShotCount>1</burstShotCount>
                 <ticksBetweenBurstShots>4</ticksBetweenBurstShots>
-                <soundCast>Shot_AssaultRifle</soundCast>
-                <soundCastTail>GunTail_Medium</soundCastTail>
+                <soundCast>RF_ShotAA12</soundCast>
+                <soundCastTail>GunTail_Heavy</soundCastTail>
                 <muzzleFlashScale>9</muzzleFlashScale>
             </li>
         </verbs>
@@ -56,8 +58,8 @@
             </li>
             <li Class="CombatExtended.CompProperties_AmmoUser">
                 <magazineSize>1</magazineSize>
-                <reloadTime>1.85</reloadTime>
-                <ammoSet>AmmoSet_556x45mmNATO</ammoSet>
+                <reloadTime>1.9</reloadTime>
+                <ammoSet>AmmoSet_12Gauge</ammoSet>
             </li>
 			<li Class="RW_NodeTree.CompProperties_ChildNodeProccesser">
 				<TextureSizeFactor>320</TextureSizeFactor>
@@ -83,6 +85,7 @@
 								<li>Module_HoloSight</li>
 								<li>Module_RedDotSight</li>
 								<li>Module_SniperScope</li>
+								<li>Module_AdvSniperScope</li>
 							</thingDefs>
 						</filter>
 					</li>
@@ -93,13 +96,11 @@
 						<!--<compPropertiesObjectPatchByChildPart  Default="false" />-->
 						<postion>(0,0.1,0)</postion>
 						<scale>(0.8,0,0.8)</scale>
-						<defultThing>Module_DK</defultThing>
+						<defultThing>Module_12GK</defultThing>
 						<allowEmpty>false</allowEmpty>
 						<filter>
 							<thingDefs>
-								<li>Module_DK</li>
-								<li>Module_BeowulfCK</li>
-								<li>Module_AK762CK</li>
+								<li>Module_12GK</li>
 							</thingDefs>
 						</filter>
 					</li>
@@ -154,70 +155,19 @@
     </ThingDef>
 	
 	<!-- Recipe -->
-	<RecipeDef Name="UniversalARRecipeBase" ParentName="RangedWeaponRecipeBase" Abstract="true">
-		<ingredients>
-			<li>
-				<filter>
-					<thingDefs>
-						<li>Weapon_Parts</li>
-					</thingDefs>
-				</filter>
-				<count>2</count>
-			</li>
-			<li>
-				<filter>
-					<thingDefs>
-						<li>ComponentIndustrial</li>
-					</thingDefs>
-				</filter>
-				<count>2</count>
-			</li>
-			<li>
-				<filter>
-					<categories>
-						<li>Metallic</li>
-					</categories>
-				</filter>
-				<count>4</count>
-			</li>
-			<li>
-				<filter>
-					<thingDefs>
-						<li>Plastic</li>
-					</thingDefs>
-				</filter>
-				<count>4</count>
-			</li>
-		</ingredients>
-		<fixedIngredientFilter>
-			<thingDefs>
-				<li>Weapon_Parts</li>
-				<li>ComponentIndustrial</li>
-				<li>Plastic</li>
-			</thingDefs>
-			<categories>
-				<li>SLDBar</li>
-				<li>USLDBar</li>
-			</categories>
-		</fixedIngredientFilter>
-		<recipeUsers>
-			<li>ARToolingSet</li>
-		</recipeUsers>
-	</RecipeDef>
-	
 	<RecipeDef ParentName="UniversalARRecipeBase">
-		<defName>BuildUAR</defName>
-		<label>Build a Universal AR</label>
-		<description>Build a Universal AR, just the receiver and the grip part, you need other parts to work better, unless you are in a budget.\nCaliber: 5.56x45mm NATO</description>
-		<jobString>Building Universal AR.</jobString>
-		<workAmount>2500</workAmount>
+		<defName>BuildUARSG</defName>
+		<label>Build an UAR SG</label>
+		<description>Build an Universal AR, just the receiver and the grip part, you need other parts to work better, unless you are in a budget.\nCaliber: 12 Gauge</description>
+		<jobString>Building UAR SG.</jobString>
+		<workAmount>2400</workAmount>
 		<skillRequirements>
-			<Crafting>6</Crafting>
+			<Crafting>8</Crafting>
 		</skillRequirements>
 		<products>
-			<Pa_UniversalAR>1</Pa_UniversalAR>
+			<Pa_UniversalAR_SG>1</Pa_UniversalAR_SG>
 		</products>
-	    <researchPrerequisite>Rifles_C1</researchPrerequisite>
+	    <researchPrerequisite>Shotgun_C2</researchPrerequisite>
 	</RecipeDef>
 
 </Defs>

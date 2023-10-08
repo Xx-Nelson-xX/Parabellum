@@ -125,8 +125,6 @@
 						<filter>
 							<thingDefs>
 								<li>Module_Bipod</li>
-								<li>Module_UBGL</li>
-								<li>Module_MasterKey</li>
 								<li>Module_VerticalGrip</li>
 								<li>Module_AngledGrip</li>
 							</thingDefs>
@@ -136,17 +134,6 @@
 						</allowedExtraCompType>
 					</li>
 				</attachmentProperties>
-				<compGetGizmosExtraAllowedCompType>
-					<li>CombatExtended.CompAmmoUser</li>
-					<li>CombatExtended.CompFireModes</li>
-				</compGetGizmosExtraAllowedCompType>
-				<compPropertiesInitializeCompType>
-					<li>CombatExtended.CompAmmoUser</li>
-					<li>CombatExtended.CompFireModes</li>
-				</compPropertiesInitializeCompType>
-				<compPropertiesCreateInstanceCompType>
-					<li>CombatExtended.CompFireModes</li>
-				</compPropertiesCreateInstanceCompType>
 			</li>
 		</comps>
 	</ThingDef>
@@ -204,8 +191,6 @@
 						<filter>
 							<thingDefs>
 								<li>Module_Bipod</li>
-								<li>Module_UBGL</li>
-								<li>Module_MasterKey</li>
 								<li>Module_VerticalGrip</li>
 								<li>Module_AngledGrip</li>
 							</thingDefs>
@@ -215,17 +200,6 @@
 						</allowedExtraCompType>
 					</li>
 				</attachmentProperties>
-				<compGetGizmosExtraAllowedCompType>
-					<li>CombatExtended.CompAmmoUser</li>
-					<li>CombatExtended.CompFireModes</li>
-				</compGetGizmosExtraAllowedCompType>
-				<compPropertiesInitializeCompType>
-					<li>CombatExtended.CompAmmoUser</li>
-					<li>CombatExtended.CompFireModes</li>
-				</compPropertiesInitializeCompType>
-				<compPropertiesCreateInstanceCompType>
-					<li>CombatExtended.CompFireModes</li>
-				</compPropertiesCreateInstanceCompType>
 			</li>
 		</comps>
 	</ThingDef>
@@ -280,8 +254,6 @@
 						<filter>
 							<thingDefs>
 								<li>Module_Bipod</li>
-								<li>Module_UBGL</li>
-								<li>Module_MasterKey</li>
 								<li>Module_VerticalGrip</li>
 								<li>Module_AngledGrip</li>
 							</thingDefs>
@@ -291,17 +263,6 @@
 						</allowedExtraCompType>
 					</li>
 				</attachmentProperties>
-				<compGetGizmosExtraAllowedCompType>
-					<li>CombatExtended.CompAmmoUser</li>
-					<li>CombatExtended.CompFireModes</li>
-				</compGetGizmosExtraAllowedCompType>
-				<compPropertiesInitializeCompType>
-					<li>CombatExtended.CompAmmoUser</li>
-					<li>CombatExtended.CompFireModes</li>
-				</compPropertiesInitializeCompType>
-				<compPropertiesCreateInstanceCompType>
-					<li>CombatExtended.CompFireModes</li>
-				</compPropertiesCreateInstanceCompType>
 			</li>
 		</comps>
 	</ThingDef>

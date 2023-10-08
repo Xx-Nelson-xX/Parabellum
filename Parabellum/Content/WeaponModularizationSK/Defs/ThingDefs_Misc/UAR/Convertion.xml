@@ -134,11 +134,11 @@
 				<PartTexPath>Things/WeaponPart/Misc/Pa_AR_DR</PartTexPath>
 				<drawChildPartWhenOnGround>false</drawChildPartWhenOnGround>
 				<setRandomPartWhenCreate>true</setRandomPartWhenCreate>
-				<compPropertiesObjectPatch>
+				<!--<compPropertiesObjectPatch>
 					<il Reader-Class="CombatExtended.CompProperties_AmmoUser">
 						<ammoSet>AmmoSet_556x45mmNATO</ammoSet>
 					</il>
-				</compPropertiesObjectPatch>
+				</compPropertiesObjectPatch>-->
 				<attachmentProperties>
 					<li>
 						<id>ModAR_Barrel</id>
@@ -176,6 +176,92 @@
 		</comps>
 	</ThingDef>
 	
+	<!--7.62x39mm Convertion Kit-->
+	<ThingDef ParentName="Module_Convertion">
+		<defName>Module_AK762CK</defName>
+		<label>7.62x39mm Convertion Kit</label>
+		<description>Use to assemble a 7.62x39mm assault rifle.</description>
+		<statBases>
+			<WorkToMake>300</WorkToMake>
+		</statBases>
+		<costList>
+			<Rifle_Component>1</Rifle_Component>
+		</costList>
+		<recipeMaker>
+			<researchPrerequisite>Range_C2</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>8</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<comps>
+			<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
+				<PartTexPath>Things/WeaponPart/Misc/Pa_AR_AK</PartTexPath>
+				<drawChildPartWhenOnGround>false</drawChildPartWhenOnGround>
+				<setRandomPartWhenCreate>true</setRandomPartWhenCreate>
+				<statOffset>
+					<MarketValue>100</MarketValue>
+				</statOffset>
+				<statMultiplier>
+					<RangedWeapon_Cooldown>1.15</RangedWeapon_Cooldown>
+					<ShotSpread>1.05</ShotSpread>
+				</statMultiplier>
+				<verbPropertiesObjectPatch>
+					<li>
+						<defaultProjectile>Bullet_762x39mmSoviet_FMJ</defaultProjectile>
+						<soundCast>ShotAK47</soundCast>
+					</li>
+				</verbPropertiesObjectPatch>
+				<verbPropertiesMultiplier>
+					<li>
+						<warmupTime>1.1</warmupTime>
+					</li>
+				</verbPropertiesMultiplier>
+				<compPropertiesObjectPatch>
+					<il Reader-Class="CombatExtended.CompProperties_AmmoUser">
+						<ammoSet>AmmoSet_762x39mmSoviet</ammoSet>
+					</il>
+				</compPropertiesObjectPatch>
+				<!--<compPropertiesObjectPatch>
+					<il Reader-Class="CombatExtended.CompProperties_AmmoUser">
+						<ammoSet>AmmoSet_556x45mmNATO</ammoSet>
+					</il>
+				</compPropertiesObjectPatch>-->
+				<attachmentProperties>
+					<li>
+						<id>ModAR_Barrel</id>
+						<name>barrel</name>
+						<UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Barrel</UITexPath>
+						<postion>(0.3562,0.1,0)</postion>
+						<allowEmpty>true</allowEmpty>
+						<filter>
+							<thingDefs>
+								<li>Module_6inchB</li>
+								<li>Module_10inchB</li>
+								<li>Module_14inchB</li>
+								<li>Module_20inchB</li>
+							</thingDefs>
+						</filter>
+					</li>
+					<li>
+						<id>ModAR_Magazine</id>
+						<name>magazine</name>
+						<UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Mag</UITexPath>
+						<postion>(0,-0.1,0.0893)</postion>
+						<defultThing>Module_AKPM30rnd</defultThing>
+						<allowEmpty>true</allowEmpty>
+						<filter>
+							<thingDefs>
+								<li>Module_AKPM30rnd</li>
+								<li>Module_AKQPM60rnd</li>
+								<li>Module_AR100rnd</li>
+							</thingDefs>
+						</filter>
+					</li>
+				</attachmentProperties>
+			</li>
+		</comps>
+	</ThingDef>
+	
 	<!--.50 Beowulf Convertion Kit-->
 	<ThingDef ParentName="Module_Convertion">
 		<defName>Module_BeowulfCK</defName>
@@ -183,7 +269,6 @@
 		<description>Use to rechamber AR like rifle to .50 Beowulf.</description>
 		<statBases>
 			<WorkToMake>500</WorkToMake>
-			<MarketValue>400</MarketValue>
 		</statBases>
 		<costList>
 			<AdvRifle_Component>1</AdvRifle_Component>
@@ -199,6 +284,9 @@
 				<PartTexPath>Things/WeaponPart/Misc/Pa_AR_DR</PartTexPath>
 				<drawChildPartWhenOnGround>false</drawChildPartWhenOnGround>
 				<setRandomPartWhenCreate>true</setRandomPartWhenCreate>
+				<statOffset>
+					<MarketValue>400</MarketValue>
+				</statOffset>
 				<statMultiplier>
 					<RangedWeapon_Cooldown>1.1</RangedWeapon_Cooldown>
 					<ShotSpread>1.2</ShotSpread>
@@ -269,7 +357,6 @@
 		<description>Use to rechamber AR like rifle to 12 Gauge shotgun.</description>
 		<statBases>
 			<WorkToMake>700</WorkToMake>
-			<MarketValue>-200</MarketValue>
 		</statBases>
 		<costList>
 			<Shotgun_Component>1</Shotgun_Component>
@@ -286,11 +373,12 @@
 				<drawChildPartWhenOnGround>false</drawChildPartWhenOnGround>
 				<setRandomPartWhenCreate>true</setRandomPartWhenCreate>
 				<statOffset>
+					<MarketValue>300</MarketValue>
 					<Bulk>0.1</Bulk>
 				</statOffset>
 				<statMultiplier>
-					<RangedWeapon_Cooldown>1.8</RangedWeapon_Cooldown>
-					<ShotSpread>1.8</ShotSpread>
+					<RangedWeapon_Cooldown>1.1</RangedWeapon_Cooldown>
+					<ShotSpread>1.4</ShotSpread>
 				</statMultiplier>
 				<verbPropertiesObjectPatch>
 					<li>
@@ -300,12 +388,12 @@
 				</verbPropertiesObjectPatch>
 				<verbPropertiesOffseter>
 					<li>
-						<range>-16</range>
+						<range>-10</range>
 					</li>
 				</verbPropertiesOffseter>
 				<verbPropertiesMultiplier>
 					<li>
-						<warmupTime>1.8</warmupTime>
+						<warmupTime>1.2</warmupTime>
 					</li>
 				</verbPropertiesMultiplier>
 				<compPropertiesObjectPatch>
@@ -430,7 +518,101 @@
 						<id>ModAR_Magazine</id>
 						<name>magazine</name>
 						<UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Mag</UITexPath>
-						<postion>(-0.0635,-0.2,-0.03)</postion>
+						<postion>(-0.0635,-0.1,-0.03)</postion>
+						<scale>(0.5,0,0.5)</scale>
+						<defultThing>Module_SMG32rnd</defultThing>
+						<allowEmpty>true</allowEmpty>
+						<filter>
+							<thingDefs>
+								<li>Module_SMG32rnd</li>
+								<li>Module_SMG100rnd</li>
+							</thingDefs>
+						</filter>
+					</li>
+				</attachmentProperties>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<!--.45 ACP Convertion Kit-->
+	<ThingDef ParentName="Module_Convertion">
+		<defName>Module_45ACPCK</defName>
+		<label>.45 ACP Convertion Kit</label>
+		<description>Use to rechamber AR like rifle to .45 ACP pistol round.</description>
+		<statBases>
+			<WorkToMake>220</WorkToMake>
+			<MarketValue>60</MarketValue>
+		</statBases>
+		<costList>
+			<SMG_Component>1</SMG_Component>
+		</costList>
+		<recipeMaker>
+			<researchPrerequisite>BlowbackOperation</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>4</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<comps>
+			<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
+				<PartTexPath>Things/WeaponPart/Misc/Pa_AR_DR</PartTexPath>
+				<drawChildPartWhenOnGround>false</drawChildPartWhenOnGround>
+				<setRandomPartWhenCreate>true</setRandomPartWhenCreate>
+				<statMultiplier>
+					<RangedWeapon_Cooldown>0.85</RangedWeapon_Cooldown>
+					<ShotSpread>1.5</ShotSpread>
+				</statMultiplier>
+				<verbPropertiesObjectPatch>
+					<li>
+						<defaultProjectile>Bullet_45ACP_FMJ</defaultProjectile>
+						<soundCast>ShotUMP45</soundCast>
+					</li>
+				</verbPropertiesObjectPatch>
+				<verbPropertiesOffseter>
+					<li>
+						<burstShotCount>2</burstShotCount>
+						<range>-2</range>
+					</li>
+				</verbPropertiesOffseter>
+				<verbPropertiesMultiplier>
+					<li>
+						<warmupTime>0.85</warmupTime>
+					</li>
+				</verbPropertiesMultiplier>
+				<compPropertiesMultiplier>
+					<il Reader-Class="CombatExtended.CompProperties_AmmoUser">
+						<reloadTime>0.95</reloadTime>
+					</il>
+				</compPropertiesMultiplier>
+				<compPropertiesObjectPatch>
+					<il Reader-Class="CombatExtended.CompProperties_AmmoUser">
+						<ammoSet>AmmoSet_45ACP</ammoSet>
+					</il>
+				</compPropertiesObjectPatch>
+				<!--<verbPropertiesMultiplier>
+					<li>
+						<recoilAmount>0.96</recoilAmount>
+					</li>
+				</verbPropertiesMultiplier>-->
+				<attachmentProperties>
+					<li>
+						<id>ModAR_Barrel</id>
+						<name>barrel</name>
+						<UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Barrel</UITexPath>
+						<postion>(0.3562,0.1,0)</postion>
+						<allowEmpty>true</allowEmpty>
+						<filter>
+							<thingDefs>
+								<li>Module_6inchB</li>
+								<li>Module_10inchB</li>
+								<li>Module_14inchB</li>
+							</thingDefs>
+						</filter>
+					</li>
+					<li>
+						<id>ModAR_Magazine</id>
+						<name>magazine</name>
+						<UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Mag</UITexPath>
+						<postion>(-0.0635,-0.1,-0.03)</postion>
 						<scale>(0.5,0,0.5)</scale>
 						<defultThing>Module_SMG32rnd</defultThing>
 						<allowEmpty>true</allowEmpty>

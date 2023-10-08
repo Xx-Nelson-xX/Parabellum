@@ -24,7 +24,6 @@
 		<description>Standard double stack 32rnd double feed stick magazine.</description>
 		<statBases>
 			<WorkToMake>100</WorkToMake>
-			<MarketValue>20</MarketValue>
 			<Mass>0.227</Mass>
 			<Bulk>0.12</Bulk>
 		</statBases>
@@ -42,6 +41,7 @@
 				<PartTexPath>Things/WeaponPart/Gun/HeavySMG/HeavySMG_Magazine</PartTexPath>
 				<statOffset>
 					<Bulk>0.12</Bulk>
+					<MarketValue>20</MarketValue>
 				</statOffset>
 				<compPropertiesMultiplier>
 					<li Reader-Class="CombatExtended.CompProperties_AmmoUser">
@@ -65,7 +65,6 @@
 		<statBases>
 			<Mass>1.36</Mass>
 			<WorkToMake>250</WorkToMake>
-			<MarketValue>220</MarketValue>
 			<Bulk>1.15</Bulk>
 		</statBases>
 		<costList>
@@ -82,6 +81,7 @@
 				<PartTexPath>Things/WeaponPart/Gun/HeavySMG/HeavySMG_CartridgeDrumV</PartTexPath>
 				<statOffset>
 					<Bulk>1.15</Bulk>
+					<MarketValue>220</MarketValue>
 				</statOffset>
 				<compPropertiesOffseter>
 					<il Reader-Class="CombatExtended.CompProperties_AmmoUser">
@@ -97,7 +97,7 @@
 		</comps>
 	</ThingDef>
 	
-	<!--.223/5.56mm / .50 Beowulf AR Magazine-->
+	<!--.223/5.56mm / 7.62x39mm Soviet / .50 Beowulf AR Magazine-->
 	<!--20rnd AR Magazine-->
 	<ThingDef ParentName="Module_ARMagazine">
 		<defName>Module_AR20rnd</defName>
@@ -105,7 +105,6 @@
 		<description>Old school double stack 20rnd double feed straight magazine for 5.56x45mm NATO AR rifles.</description>
 		<statBases>
 			<WorkToMake>200</WorkToMake>
-			<MarketValue>40</MarketValue>
 			<Mass>0.09</Mass>
 			<Bulk>0.34</Bulk>
 		</statBases>
@@ -123,6 +122,7 @@
 				<PartTexPath>Things/WeaponPart/Magazines/Pa_AR_20rnd</PartTexPath>
 				<statOffset>
 					<Bulk>0.34</Bulk>
+					<MarketValue>40</MarketValue>
 				</statOffset>
 				<compPropertiesMultiplier>
 					<li Reader-Class="CombatExtended.CompProperties_AmmoUser">
@@ -145,7 +145,6 @@
 		<description>Old school double stack 20rnd double feed straight magazine converted to single stack 8rnd .50 Beowulf for AR rifles.</description>
 		<statBases>
 			<WorkToMake>220</WorkToMake>
-			<MarketValue>100</MarketValue>
 			<Mass>0.09</Mass>
 			<Bulk>0.34</Bulk>
 		</statBases>
@@ -163,6 +162,7 @@
 				<PartTexPath>Things/WeaponPart/Magazines/Pa_AR_20rnd</PartTexPath>
 				<statOffset>
 					<Bulk>0.34</Bulk>
+					<MarketValue>100</MarketValue>
 				</statOffset>
 				<compPropertiesMultiplier>
 					<li Reader-Class="CombatExtended.CompProperties_AmmoUser">
@@ -185,7 +185,6 @@
 		<description>Old school double stack 30rnd double feed curve magazine for 5.56x45mm NATO AR rifles.</description>
 		<statBases>
 			<WorkToMake>320</WorkToMake>
-			<MarketValue>70</MarketValue>
 			<Mass>0.117</Mass>
 			<Bulk>0.45</Bulk>
 		</statBases>
@@ -203,6 +202,42 @@
 				<PartTexPath>Things/WeaponPart/Gun/AssaultRifle/AssaultRifle_Magazine</PartTexPath>
 				<statOffset>
 					<Bulk>0.45</Bulk>
+					<MarketValue>70</MarketValue>
+				</statOffset>
+				<compPropertiesOffseter>
+					<li Reader-Class="CombatExtended.CompProperties_AmmoUser">
+						<magazineSize>29</magazineSize>
+					</li>
+				</compPropertiesOffseter>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<!--30rnd AK Polymer Magazine-->
+	<ThingDef ParentName="Module_ARMagazine">
+		<defName>Module_AKPM30rnd</defName>
+		<label>30rnd AK PMAG</label>
+		<description>Old polymer double stack 30rnd double feed curve magazine for AK rifles.</description>
+		<statBases>
+			<WorkToMake>350</WorkToMake>
+			<Mass>0.184</Mass>
+			<Bulk>0.5</Bulk>
+		</statBases>
+		<costList>
+			<ComponentIndustrial>3</ComponentIndustrial>
+		</costList>
+		<recipeMaker>
+			<researchPrerequisite>Range_C2</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>2</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<comps>
+			<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
+				<PartTexPath>Things/WeaponPart/Magazines/Pa_AKPmag</PartTexPath>
+				<statOffset>
+					<Bulk>0.5</Bulk>
+					<MarketValue>75</MarketValue>
 				</statOffset>
 				<compPropertiesOffseter>
 					<li Reader-Class="CombatExtended.CompProperties_AmmoUser">
@@ -220,7 +255,6 @@
 		<description>Old school double stack 30rnd double feed curve magazine converted to single stack 12rnd .50 Beowulf for AR rifles.</description>
 		<statBases>
 			<WorkToMake>380</WorkToMake>
-			<MarketValue>180</MarketValue>
 			<Mass>0.117</Mass>
 			<Bulk>0.45</Bulk>
 		</statBases>
@@ -238,6 +272,7 @@
 				<PartTexPath>Things/WeaponPart/Gun/AssaultRifle/AssaultRifle_Magazine</PartTexPath>
 				<statOffset>
 					<Bulk>0.34</Bulk>
+					<MarketValue>180</MarketValue>
 				</statOffset>
 				<compPropertiesOffseter>
 					<il Reader-Class="CombatExtended.CompProperties_AmmoUser">
@@ -255,7 +290,6 @@
 		<description>A quad stack 60rnd double feed curve magazine for 5.56x45mm NATO AR rifles.</description>
 		<statBases>
 			<WorkToMake>600</WorkToMake>
-			<MarketValue>120</MarketValue>
 			<Mass>0.181</Mass>
 			<Bulk>0.85</Bulk>
 		</statBases>
@@ -274,6 +308,48 @@
 				<PartTexPath>Things/WeaponPart/Gun/AssaultRifle/AssaultRifle_Magazine60</PartTexPath>
 				<statOffset>
 					<Bulk>0.85</Bulk>
+					<MarketValue>120</MarketValue>
+				</statOffset>
+				<compPropertiesMultiplier>
+					<li Reader-Class="CombatExtended.CompProperties_AmmoUser">
+						<reloadTime>1.2</reloadTime>
+					</li>
+				</compPropertiesMultiplier>
+				<compPropertiesOffseter>
+					<li Reader-Class="CombatExtended.CompProperties_AmmoUser">
+						<magazineSize>59</magazineSize>
+					</li>
+				</compPropertiesOffseter>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<!--60rnd Quad stack AK Polymer Magazine-->
+	<ThingDef ParentName="Module_ARMagazine">
+		<defName>Module_AKQPM60rnd</defName>
+		<label>60rnd AK QS PMAG</label>
+		<description>Old polymer quad stack 60rnd double feed curve magazine for AK rifles.</description>
+		<statBases>
+			<WorkToMake>600</WorkToMake>
+			<Mass>0.296</Mass>
+			<Bulk>0.85</Bulk>
+		</statBases>
+		<costList>
+			<ComponentIndustrial>1</ComponentIndustrial>
+			<Weapon_Parts>1</Weapon_Parts>
+		</costList>
+		<recipeMaker>
+			<researchPrerequisite>Range_C2</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>5</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<comps>
+			<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
+				<PartTexPath>Things/WeaponPart/Magazines/Pa_AKQmag</PartTexPath>
+				<statOffset>
+					<Bulk>0.85</Bulk>
+					<MarketValue>120</MarketValue>
 				</statOffset>
 				<compPropertiesMultiplier>
 					<li Reader-Class="CombatExtended.CompProperties_AmmoUser">
@@ -296,7 +372,6 @@
 		<description>A quad stack 60rnd double feed curve magazine converted to double stack single feed 20rnd .50 Beowulf for AR rifles.</description>
 		<statBases>
 			<WorkToMake>640</WorkToMake>
-			<MarketValue>300</MarketValue>
 			<Mass>0.181</Mass>
 			<Bulk>0.85</Bulk>
 		</statBases>
@@ -314,6 +389,7 @@
 			<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
 				<PartTexPath>Things/WeaponPart/Gun/AssaultRifle/AssaultRifle_Magazine60</PartTexPath>
 				<statOffset>
+					<MarketValue>300</MarketValue>
 					<Bulk>0.85</Bulk>
 				</statOffset>
 				<compPropertiesMultiplier>
@@ -337,7 +413,6 @@
 		<description>A quad stack 100rnd double feed curve magazine for 5.56x45mm NATO AR rifles.</description>
 		<statBases>
 			<WorkToMake>2000</WorkToMake>
-			<MarketValue>240</MarketValue>
 			<Mass>1.51</Mass>
 			<Bulk>2.84</Bulk>
 		</statBases>
@@ -355,6 +430,7 @@
 			<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
 				<PartTexPath>Things/WeaponPart/Gun/AssaultRifle/AssaultRifle_CartridgeDrum</PartTexPath>
 				<statOffset>
+					<MarketValue>240</MarketValue>
 					<Bulk>2.84</Bulk>
 				</statOffset>
 				<compPropertiesMultiplier>
@@ -381,7 +457,6 @@
 		<description>A 32rnd single feed .50 Beowulf snail magazine for AR rifles.</description>
 		<statBases>
 			<WorkToMake>1800</WorkToMake>
-			<MarketValue>420</MarketValue>
 			<Mass>0.57</Mass>
 			<Bulk>2.21</Bulk>
 		</statBases>
@@ -399,6 +474,7 @@
 			<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
 				<PartTexPath>Things/WeaponPart/Gun/AssaultRifle/AssaultRifle_CartridgeDrum</PartTexPath>
 				<statOffset>
+					<MarketValue>420</MarketValue>
 					<Bulk>2.21</Bulk>
 				</statOffset>
 				<compPropertiesMultiplier>
@@ -425,7 +501,6 @@
 		<description>A double stack 20rnd double feed straight battle rifle magazine for AR like rifles.</description>
 		<statBases>
 			<WorkToMake>340</WorkToMake>
-			<MarketValue>200</MarketValue>
 			<Mass>0.35</Mass>
 			<Bulk>0.45</Bulk>
 		</statBases>
@@ -443,6 +518,7 @@
 				<PartTexPath>Things/WeaponPart/Magazines/Pa_BR_20rnd</PartTexPath>
 				<statOffset>
 					<Bulk>0.45</Bulk>
+					<MarketValue>200</MarketValue>
 				</statOffset>
 				<compPropertiesMultiplier>
 					<li Reader-Class="CombatExtended.CompProperties_AmmoUser">
@@ -465,7 +541,6 @@
 		<description>A double stack 30rnd double feed straight battle rifle magazine for AR like rifles.</description>
 		<statBases>
 			<WorkToMake>380</WorkToMake>
-			<MarketValue>240</MarketValue>
 			<Mass>0.49</Mass>
 			<Bulk>0.6</Bulk>
 		</statBases>
@@ -483,6 +558,7 @@
 			<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
 				<PartTexPath>Things/WeaponPart/Magazines/Pa_BR_30rnd</PartTexPath>
 				<statOffset>
+					<MarketValue>240</MarketValue>
 					<Bulk>0.6</Bulk>
 				</statOffset>
 				<compPropertiesMultiplier>
@@ -506,7 +582,6 @@
 		<description>A single stack 8rnd single feed box magazine for autoloader shotgun.</description>
 		<statBases>
 			<WorkToMake>300</WorkToMake>
-			<MarketValue>100</MarketValue>
 			<Mass>0.23</Mass>
 			<Bulk>0.38</Bulk>
 		</statBases>
@@ -523,6 +598,7 @@
 			<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
 				<PartTexPath>Things/WeaponPart/Magazines/Pa_SG_8rnd</PartTexPath>
 				<statOffset>
+					<MarketValue>150</MarketValue>
 					<Bulk>0.38</Bulk>
 				</statOffset>
 				<compPropertiesMultiplier>
@@ -546,7 +622,6 @@
 		<description>A single stack 20rnd single feed drum magazine for autoloader shotgun.</description>
 		<statBases>
 			<WorkToMake>2400</WorkToMake>
-			<MarketValue>220</MarketValue>
 			<Mass>1.42</Mass>
 			<Bulk>2.26</Bulk>
 		</statBases>
@@ -563,6 +638,7 @@
 			<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
 				<PartTexPath>Things/WeaponPart/Magazines/Pa_SG_20rnd</PartTexPath>
 				<statOffset>
+					<MarketValue>250</MarketValue>
 					<Bulk>2.26</Bulk>
 				</statOffset>
 				<compPropertiesMultiplier>

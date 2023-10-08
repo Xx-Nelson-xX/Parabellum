@@ -8,7 +8,6 @@
 					<li Class="RW_NodeTree.CompProperties_ChildNodeProccesser">
 						<TextureSizeFactor>320</TextureSizeFactor>
 						<TextureFilterMode>Point</TextureFilterMode>
-						<ForceNodeIdControl>true</ForceNodeIdControl>
 					</li>
 					<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
 						<PartTexPath>Things/WeaponPart/Muzzles/S8498B</PartTexPath>

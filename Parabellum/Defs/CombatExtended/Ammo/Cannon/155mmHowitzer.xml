@@ -3,7 +3,7 @@
 
 	<!-- ==================== Ammo ========================== -->
 
-	<ThingDef Class="CombatExtended.AmmoDef" Name="155mmHowitzerAFAPShellBase" ParentName="AmmoBase" Abstract="True">
+	<ThingDef MayRequire="Dubwise.Rimatomics" Class="CombatExtended.AmmoDef" Name="155mmHowitzerAFAPShellBase" ParentName="155mmHowitzerShellBase" Abstract="True">
 		<description>Special 155mm howitzer shell.</description>
 		<thingCategories>
 			<li>Ammo155mmHowitzerShells</li>

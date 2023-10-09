@@ -5,9 +5,6 @@
 
 	<ThingDef MayRequire="Dubwise.Rimatomics" Class="CombatExtended.AmmoDef" Name="155mmHowitzerAFAPShellBase" ParentName="155mmHowitzerShellBase" Abstract="True">
 		<description>Special 155mm howitzer shell.</description>
-		<thingCategories>
-			<li>Ammo155mmHowitzerShells</li>
-		</thingCategories>
 		<stackLimit>5</stackLimit>
 		<thingSetMakerTags>
 			<li>RewardSpecial</li>

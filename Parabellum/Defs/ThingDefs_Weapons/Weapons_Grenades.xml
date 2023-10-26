@@ -152,7 +152,7 @@
 	</ThingDef>
 	
 	<!-- Model 24 Nebelgranate -->
-	<ThingDef ParentName="SK_BaseGrenadeProjectile">
+	<ThingDef Name="Projectile_GrenadeM24Nb" ParentName="SK_BaseGrenadeProjectile">
 		<defName>Proj_GrenadeM24Nb</defName>
 		<label>Model 24 Nebelgranate</label>
 		<graphicData>
@@ -196,6 +196,7 @@
 		<thingCategories>
 			<li>Grenades</li>
 		</thingCategories>
+		<ammoClass>Schnellnebelkerze39Nb</ammoClass>
 		<verbs>
 			<li Class="CombatExtended.VerbPropertiesCE">
 				<label>throw M24 Nebelgranate</label>

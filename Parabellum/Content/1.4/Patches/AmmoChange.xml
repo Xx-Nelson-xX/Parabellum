@@ -36,7 +36,7 @@
 		</value>
 	</Operation>
 	
-	<!-- ================== Motes to Flecks ================== -->
+	<!-- ================== Motes to Flecks ==================
 	
 	<Operation Class="PatchOperationReplace">	
 	<xpath>Defs/ThingDef/projectile[@Class="CombatExtended.ProjectilePropertiesCE"]/casingMoteDefname[text()="Mote_BigShell"]</xpath>
@@ -51,5 +51,5 @@
 			<casingMoteDefname>Fleck_GrenadePin</casingMoteDefname>
 		</value>
 	</Operation>
-	
+	 -->
 </Patch>

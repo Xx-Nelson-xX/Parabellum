@@ -84,7 +84,7 @@
 			<postExplosionSpawnThingDef>Filth_Ash</postExplosionSpawnThingDef>
 			<postExplosionSpawnChance>0.8</postExplosionSpawnChance>
 			<ai_IsIncendiary>true</ai_IsIncendiary>
-		</projectile>
+		</projectile><!--
 		<modExtensions>
 			<li Class="ProjectileImpactFX.EffectProjectileExtension">
 				<explosionMote>true</explosionMote>
@@ -94,7 +94,7 @@
 				<ImpactGlowMoteDef>Mote_NukeCloud</ImpactGlowMoteDef>
 				<ImpactGlowMoteSize>6</ImpactGlowMoteSize>
 			</li>
-		</modExtensions>   
+		</modExtensions>  --> 
 		<comps>
 			<li Class="CombatExtended.CompProperties_ExplosiveCE">
 				<explosiveRadius>48</explosiveRadius>

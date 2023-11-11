@@ -1,4 +1,4 @@
-<--------------------------------------- 1.8a(RW 1.4 Alpha) -------------------------------------------->
+<--------------------------------------- 1.8d(RW 1.4 taa) -------------------------------------------->
 
 1.8 - 9 New ammo type, 2 turrets, 2 grenades, 3 consumibles, 3 weapon and Fixes
 
@@ -70,6 +70,25 @@ Scenario:
 -Removed HSKWR(Lee Enfield and AK47)
 +Added Bipod function for all Machineguns and FG42
 +Added support for Weapon Modulization SK
++Added 8 inch handguard for 20" shotgun barrel, since it doesn't have an exposed gas piston
+*Separated grenade launcher slot from handguard due WM limitation causing any launcher that's not in the first layer stop working
++Added stack for HSK weapon crates
++Increased Machinegun crates stack from 25 to 50
+-Moved M320 grenade launcher to Parabellum War Trophy
+-Changed the layer of UBGL for Universal AR due another limitation of Weapon Modularization
++Added Bipod function to XM109 and GrB
+*Separated classification for UniversalAR, now you have 4 classes instead of single gun due CE Extentedloadout can't register any change on them sadly
++Rebalanced all Universal AR parts to fit their separated class properly
++Added AK kit for UniversalAR, the weapon can be rechambered to soviet 7.62x39mm
+*Updated Magazine behavior, now is more friendly with other weapon parts that override the weapon behavior
++Fix for latest CE update and mote to flecks issues
+	*Grenade pin spam issue
+	*Artillery issue
++Added Bunker storage(WIP)
+Tweaks and Fixes:
+*Fixed UAR variant not showing up in cuztomization bench
+*Changed how S-mine work for recipes and building
++Added smoke charge by converting M24Nb for future vehicle update
 -(1.4)Added Rifle grenade for following weapons:
 	+ G43
 	+ FG42 model F

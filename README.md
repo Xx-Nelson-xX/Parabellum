@@ -47,7 +47,7 @@ mostly Industrial scale stuff(IRL,Between WWI era and till Nowadays)
 
 **NOW THE MOD HAS SEPARATED PACKAGE**
 
-*outsated*
+*outdated*
 
 *(only maintained with the latest features, for any old version, pin me in the Discord server for it)
 

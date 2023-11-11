@@ -1,47 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
-
-	<ThingDef ParentName="SK_TrapIEDBase">
-		<defName>Pa_Trap_SMine</defName>
-		<label>S-Mine Trap</label>
-		<description>A robust ancient anti-personnel mine, simple, small and Lethal, require target step on it to trigger the delay fuse.</description>
-		<graphicData>
-			<texPath>Things/Building/Mines/Smine</texPath>
-		</graphicData>
-		<statBases>
-			<Flammability>0.4</Flammability>
-		</statBases>
-		<stuffCategories>
-			<li>RuggedMetallic</li>
-		</stuffCategories>
-		<costStuffCount>9</costStuffCount>
-		<costList>
-			<Powder>2</Powder>
-			<Weapon_Parts>1</Weapon_Parts>
-		</costList>
-		<comps>
-			<li Class="CompProperties_Explosive">
-				<explosiveRadius>1.6</explosiveRadius>
-				<explosiveDamageType>Bomb</explosiveDamageType>
-				<startWickHitPointsPercent>0.2</startWickHitPointsPercent>
-				<wickTicks>25</wickTicks>
-				<startWickOnDamageTaken>
-					<li>Bullet</li>
-					<li>Arrow</li>
-					<li>ArrowHighVelocity</li>
-				</startWickOnDamageTaken>
-			</li>
-			<li Class="CombatExtended.CompProperties_Fragments">
-				<fragments>
-					<Fragment_Small>360</Fragment_Small>
-				</fragments>
-			</li>
-		</comps>
-		<specialDisplayRadius>1.6</specialDisplayRadius>
-		<researchPrerequisites>
-			<li>IED_C1</li>
-		</researchPrerequisites>
-	</ThingDef>
 	
 	<ThingDef ParentName="SK_TrapIEDBase">
 		<defName>Pa_Trap_4kgMine</defName>

@@ -110,5 +110,20 @@
     <labelShort>8cm HE Rocket</labelShort>
     <description>Modified High Explosive Rocket, Good counter light/medium armored target, not designed for direct hit since its purpose is cover an large area with explosive.</description>
   </CombatExtended.AmmoCategoryDef>
+  
+  <!-- =============== Minenabwurfvorrichtung/Nahverteidigungswaffe grenade =============== -->
+  <CombatExtended.AmmoCategoryDef>
+    <defName>Smine</defName>
+    <label>S-mine(Frag)</label>
+    <labelShort>S-mine</labelShort>
+    <description>The S-mine was an anti-personnel mine, designed to be used in open areas against unshielded infantry, when triggered, the explosion projects a lethal spray of shrapnel in all directions.</description>
+  </CombatExtended.AmmoCategoryDef>
+  
+  <CombatExtended.AmmoCategoryDef>
+    <defName>Schnellnebelkerze39Nb</defName>
+    <label>Schnellnebelkerze 39</label>
+    <labelShort>SchNbKz 39</labelShort>
+    <description>Modified smoke grenade to fit in the tank launcher, the charge provide temporal smoke screen cover for the vehicle or its surrounding.</description>
+  </CombatExtended.AmmoCategoryDef>
 
 </Defs>

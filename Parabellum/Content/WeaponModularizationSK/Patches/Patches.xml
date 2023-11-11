@@ -14,6 +14,9 @@
 				<li>Pa_K98kM</li> 				<!--Rifles_C1 -->
 				<li>Pa_G43C</li> 				<!--Range_C2 -->
 				<li>Pa_UniversalAR</li> 		<!--Rifles_C1 -->
+				<li>Pa_UniversalAR_SMG</li> 	<!--BlowbackOperation -->
+				<li>Pa_UniversalAR_BR</li> 		<!--Rifles_C3 -->
+				<li>Pa_UniversalAR_SG</li> 		<!--Shotgun_C2 -->
 				<!-- SMG -->
 				<!-- Pistols -->
 				<!-- Shotguns -->

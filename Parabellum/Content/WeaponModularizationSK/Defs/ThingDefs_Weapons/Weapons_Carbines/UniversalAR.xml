@@ -82,6 +82,7 @@
 								<li>Module_HoloSight</li>
 								<li>Module_RedDotSight</li>
 								<li>Module_SniperScope</li>
+								<li>Module_AdvSniperScope</li>
 							</thingDefs>
 						</filter>
 					</li>

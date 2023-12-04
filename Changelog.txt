@@ -1,9 +1,49 @@
-<--------------------------------------- 1.8a(RW 1.4 Alpha) -------------------------------------------->
+<--------------------------------------- 1.9(RW 1.4 Dev) -------------------------------------------->
 
-1.8 - 7 New ammo type, 2 turrets, 2 grenades, 3 consumibles, 1 weapon and Fixes
+1.9 - 4 new turret, 4 new ammo, Tweaks and Fixes
+
+Turrets:
+- Improvised 3cm Flak 103/38 autocannon: 30mm, Automatic(1/4/10), an ancient Mid War dual purpose autocannon, decent rate of fire and rather high performance againt planes and tanks, specially with the proper ammo for the role.
+- 3cm Flak 103/38 autocannon(Quad): 30mm, Automatic(1/8/24), an ancient Mid War dual purpose autocannon, 4 barrels syncronized in single platform to improve it rate of fire and stability of the gun.
+- SMG Sentry Turret: Any Pistol ammo, Automatic(15), An AI-controlled turret with adaptive barrel that fires pistol rounds, is not a combat turret. Requires 200 W to function.
+- MMG Sentry Turret: 7.92mm Mauser Rifle ammo/7.62x51mm NATO, Automatic(10), An AI-controlled turret with adaptive barrel that fires 7.92mm Mauser or 7.62x51mm NATO rifle rounds, an actual tank machinegun turret. Requires 700 W to function.
+
+Ammo:
+- 30mm Flak ammo, Small Special Explosive shell filled with fragments, made with special fuze that detonate the warhead under specific condition and create airbust effect to maximize its effective blast range and area of effect, usually used against aircraft.
+- 30mm APCR ammo, Armor Piercing, Composed Rigid ammunition ammunition for 3cm/30mm cannon, High velocity solid slug design purely for armor penetration with concentrated kinetic energy through a small impact area.
+- 130mm HE-FRAG rocket, High Explosive - Fragmentation, Large size rocket filled with TNT explosive and fragments, though more fragments than TNT explosive.
+- 130mm HEI rocket, High Explosive Incendiary, Large size rocket filled with incendiary agent and small amount of TNT explosive and some fragments.
+
+Tweaks:
+*Simplified Anti-Concrete/AC damage
++New Flecks for nuclear weapons due recent changes
++Update for Weapon Modularization
++New and stronger fragments for any weapon using larger than 100mm size ammo and 4kg Demolition charge
++Reduced Improvised shotgun turret power consumption to 300w 
+-removed 88mm HEAT for RVW
+-Nerfed Stalhelm Material multiplier from 300% -> 260%(for comparison Tactical Helmet is 400%+)
++Buffed Tactical Helmet blunt protection up to 60 as baseline with steel, now can fully tank 7.62x51mm NATO non AP ammo
+*Removed Muzzle Flas from De Lisle Carbine
+*Chnaged Bunker Storage Texture still WIP though
+*Added Off map artillery ability to following turrets:
+ - Nebelwerfer(All variants)
+ - Raketen-Vielfachwerfer(8cm rocket)
+ - 8cm GrW(8cm Mortars)
+ - Type 63 MRL
+ - Morser 16 and 18(21cm shell)
+
+<--------------------------------------- 1.8(RW 1.4 Alpha) -------------------------------------------->
+
+1.8 - 9 New ammo type, 2 turrets, 2 grenades, 3 consumibles, 3 weapon and Fixes
 
 SMGs:
 - MP717(r): 7.63x25mm, Automatic(1/6/18), An ancient world weapon, captured from enemies hands with new assignation and familiar catridge to avoid logistic issue
+
+Carbines:
+- VG 3/45k: 7.92x33mm Kurz, Bolt Action, Gustloff Volkssturmgewehr VG 3/45k, the "People's Storm - Rifle", the last effort to increase weapon production almost in the end of the war, a very robust and cheap bolt action carabine chambered in 7.92x33mm Kurz, generally used by Volkssturm, to fight for the fatherland counter the inevitable for one last time.
+
+Rifle:
+- GrB 39: Schiessbecher rifle grenade, Level Action, An ancient mid war rifle grenade launcher convertion from an obsolete anti-tank rifle to improve its penetration effectiveness against armored vehicle, this version further reduce its weight by removing the bipod and the carry handle.
 
 Grenades:
 - M34 White Phosphorus Grenade:(Partially done)White Phosphorus grenade, releases a large cloud of volatile chemical that burns when contact with oxygen, it works for assault and defense, great for area denial and against closed space structure and fortification.
@@ -21,12 +61,24 @@ Ammo:
 - .303 British Incendiary, Incendiary round, Special Rifle round with incendiary tip, designed as observation round or countermeasure against Zeppelins, cause burning uppon impact.
 - 7.62x51mm NATO Triplex, Triplex round, Just like normal FMJ round but with extra 2 bullet per shot, the addition of 2 more bullets alter the ballistic of the projectile even more, maybe using a shotgun instead?
 - 12 Gauge 000 Magnum Buckshot, Magnum load 000 buckshot, increase pellet size and lower the pellet count, which also reduce spread and increase tissue damage and penetration.
+- 61mm Grosse Panzergranate 61: Anti-Tank rifle grenade, used by Schiessbecher rifle grenade launcher, it has quite slow projectile speed and limited armor penetration, very subpar against non-armored target or moving target.
+- 30mm Gewehr-Sprenggranate: High Explosive rifle grenade, used by Schiessbecher rifle grenade launcher, it has slow projectile speed and limited explosion blast range, not very effective against armored target, can also used as hand grenade.
 
 Consumeable:
 - Scho-Ka-Kola: performance-enhancing energy "sport chocolate", improve pawn's conciousness and reduce their tireness
 - Pervitin: Standard issue enhancement drug, long term usage can cause severe permanent damage to health
 - Panzerchokolade: Mix of Scho-Ka-Kola with Pervitin, very potent and effective for short term
 
+Scenario:
+- Rifleman start:
+	+5 chooseable human pawns between 18~35 years old
+		*Average~excelent shooting skill(8~16)
+	+Classic starter research
+	+Parabellum starter research(Parabellum and Defensive Measure I)
+	+1 G41(W) + 150rnd of bullet for every colonist
+	+Maybe grenades as sidearm
+	+Military gear for every colonist
+	+60 Survival meal and some Industrial medicine
 
 -Fixed more Language missmatch and copy paste issue(I am tired of this shite)
 -Readjust .50 Beowulf and 84mm Carl Gustav Shells bill crafting stack count
@@ -39,6 +91,68 @@ Consumeable:
 -Removed 81mm mortar shell patch to prevent any future issue in 1.4
 -Removed scale with toxicsensitivity for saltshot, doesn't really make sense and is not used in 1.4, so, removed
 +Added FSX to ammo recipe, now it is available for every ammo recipe that only use gun powder
+-4kg Demolition Charge due obvious reason no longer can use with one hand
+-Panzerfaust no longer can use with one hand
+*Moved TG 1918, 7.92x33mm Kurz and the 13.2mm TuP AP round recipe to Gun I research
+*Added checks for Dub's Rimatomic for mod compatibility
+*Readjust S84/98 III bayonet size
+*Moved Scho-Ka-Kola to Candy Table
++Added Parabellum Research start
+*Panzerfaust no longer inherit grenade WeaponTags
+*Set some weapon back to horizontal display position
++Fixed Projectile issue for 1.3
+-Removed HSKWR(Lee Enfield and AK47)
++Added Bipod function for all Machineguns and FG42
++Added support for Weapon Modulization SK
++Added 8 inch handguard for 20" shotgun barrel, since it doesn't have an exposed gas piston
+*Separated grenade launcher slot from handguard due WM limitation causing any launcher that's not in the first layer stop working
++Added stack for HSK weapon crates
++Increased Machinegun crates stack from 25 to 50
+-Moved M320 grenade launcher to Parabellum War Trophy
+-Changed the layer of UBGL for Universal AR due another limitation of Weapon Modularization
++Added Bipod function to XM109 and GrB
+*Separated classification for UniversalAR, now you have 4 classes instead of single gun due CE Extentedloadout can't register any change on them sadly
++Rebalanced all Universal AR parts to fit their separated class properly
++Added AK kit for UniversalAR, the weapon can be rechambered to soviet 7.62x39mm
+*Updated Magazine behavior, now is more friendly with other weapon parts that override the weapon behavior
++Fix for latest CE update and mote to flecks issues
+*Fixed UAR variant not showing up in cuztomization bench
+*Changed how S-mine work for recipes and building
++Added smoke charge by converting M24Nb for future vehicle update
+	*Grenade pin spam issue
+	*Artillery issue
++Added Bunker storage(WIP)
+-(1.4)Added Rifle grenade for following weapons:
+	+ G43
+	+ FG42 model F
+	+ StG44
+	+ StG45(M)
+	+ Kar 98 Sniper
+	+ VG 3/45k
+	
+-(1.4)Replaced following weapons texture:
+	+ G43
+	+ FG42 model F
+	+ StG44
+	+ StG45(M)
+	+ MKb42(H)
+	+ Kar 98 Sniper
+	+ VG 3/45k
+	+ VG 1-5
+	
+-Weapons available for Weapon Modularization:
+	+MKb 42(H)
+	+StG 44
+	+StG 45(M)
+	+VG 1-5
+	+VG 3/45k
+	+G43
+	+Kar 98
+	+Universal AR:
+	  -SG
+	  -SMG
+	  -AR
+	  -BR
 
 *Cannon rebalance:
 -3.7cm:
@@ -79,7 +193,7 @@ Consumeable:
 		   
 	Flak 40: 	SS 0.21 -> 0.18
 				CE 1.5 -> 1.4
-				
+
 <--------------------------------------- 1.7 -------------------------------------------->
 
 1.7 - 2 armor, 1 apparel, 7 armor accesories and tweaks
@@ -133,7 +247,7 @@ Tweaks:
 *Added new ThingCategories for Parabellum Apparels
 -Fixed a Typo from VG 1-5
 *Changed S&W.50B Revolver smelting product from weapon parts to Components
-+Reduced .50 Beowulf round mass(Too me time to make that investigation)
++Reduced .50 Beowulf round mass(Took me time to make that investigation)
 -Removed AN-94 ammoType from the Sturer Pistol, since in conflict with the normal 5.45x39mm ammoType
 -Increased M960(M) Calico Carabine spawn chance from 40% to 50%
 -Reduced Complex Cannon Crates mass and bulk from 2000 -> 500

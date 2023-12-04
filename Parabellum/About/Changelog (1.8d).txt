@@ -1,8 +1,0 @@
-<--------------------------------------- 1.8d2(RW 1.4 Beta) -------------------------------------------->
-
-1.8d2 - Tweaks and Fixes
-
-Tweaks and Fixes:
-*Fixed UAR variant not showing up in cuztomization bench
-*Changed how S-mine work for recipes and building
-+Added smoke charge by converting M24Nb for future vehicle update

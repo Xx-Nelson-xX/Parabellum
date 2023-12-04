@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- ==================== Ammo ========================== -->
+	
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="Ammo30x173mmBase">
+		<defName>Ammo_30mm_Flak</defName>
+		<label>30mm cartridge(Flak)</label>
+		<graphicData>
+			<texPath>Things/Ammo/Mauser/TuF/Sabot</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>8.4</MarketValue>
+		</statBases>
+		<ammoClass>30mmFlak</ammoClass>
+		<cookOffProjectile>Bullet_30mm_Flak</cookOffProjectile>
+	</ThingDef>
+	
+	<!-- ================== Projectiles ================== -->
+	
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="Base30x173mmBullet">
+		<defName>Bullet_30mm_Flak</defName>
+		<label>30mm bullet(Flak)</label>
+		<thingClass>CombatExtended.ProjectileCE_Bursting</thingClass>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageAmountBase>54</damageAmountBase>
+			<armorPenetrationSharp>32</armorPenetrationSharp>
+			<armorPenetrationBlunt>1669</armorPenetrationBlunt>
+			<aimHeightOffset>1.4</aimHeightOffset>
+			<armingDelay>3</armingDelay>
+			<secondaryDamage>
+				<li>
+					<def>Bomb_Secondary</def>
+					<amount>42</amount>
+				</li>
+			</secondaryDamage>
+		</projectile>
+		<comps>
+			<li Class="CombatExtended.CompProperties_Fragments">
+				<fragments>
+					<Fragment_Large>12</Fragment_Large>
+					<Fragment_Small>22</Fragment_Small>
+				</fragments>
+				<fragAngleRange>-89~-1</fragAngleRange>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<!-- ==================== Recipes ========================== -->
+
+	<RecipeDef ParentName="AmmoRecipeHighCaliber">
+		<defName>MakeAmmo_30mm_Flak</defName>
+		<label>make 30mm (Flak) cartridge x30</label>
+		<description>Craft 30 30mm (Flak) cartridges.</description>
+		<jobString>Making 30mm (Flak) cartridges.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>SLDBar</li>
+						<li>USLDBar</li>
+					</categories>
+				</filter>
+				<count>77</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>USLDHBar</li>
+					</categories>
+				</filter>
+				<count>16</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>FSX</li>
+					</thingDefs>
+				</filter>
+				<count>12</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Powder</li>
+					</thingDefs>
+				</filter>
+				<count>8</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>SLDBar</li>
+				<li>USLDBar</li>
+				<li>USLDHBar</li>
+			</categories>
+			<thingDefs>
+				<li>Powder</li>
+				<li>FSX</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Ammo_30mm_Flak>30</Ammo_30mm_Flak>
+		</products>
+		<skillRequirements>
+			<Crafting>12</Crafting>
+		</skillRequirements>
+		<workSkill>Crafting</workSkill>
+		<workSkillLearnFactor>0.8</workSkillLearnFactor>
+		<researchPrerequisite>Heavy_turrets_C3</researchPrerequisite>
+	</RecipeDef>
+
+</Defs>

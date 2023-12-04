@@ -121,6 +121,7 @@
 			<gravityFactor>15</gravityFactor>
 			<explosionEffect>GiantExplosion</explosionEffect>
 			<soundExplode>Explosion_GiantBomb</soundExplode>
+			<armorPenetrationBlunt>3000</armorPenetrationBlunt>
 		</projectile>
 	</ThingDef>
 
@@ -136,6 +137,7 @@
 			<speed>64</speed><!-- 320m/s 21cm NbW rocket -->
 			<damageDef>Bomb</damageDef>
 			<damageAmountBase>317</damageAmountBase>
+			<armorPenetrationBlunt>4200</armorPenetrationBlunt>
 			<explosionRadius>6</explosionRadius>
 			<explosionChanceToStartFire>0.46</explosionChanceToStartFire>
 			<ai_IsIncendiary>true</ai_IsIncendiary>
@@ -143,7 +145,7 @@
 		<comps>
 			<li Class="CombatExtended.CompProperties_Fragments">
 				<fragments>
-					<Fragment_RocketFrag>128</Fragment_RocketFrag>
+					<Fragment_LargeProjectileFrag>128</Fragment_LargeProjectileFrag>
 					<Fragment_Small>86</Fragment_Small>
 				</fragments>
 			</li>
@@ -167,7 +169,7 @@
 		<comps>
 			<li Class="CombatExtended.CompProperties_Fragments">
 				<fragments>
-					<Fragment_RocketFrag>62</Fragment_RocketFrag>
+					<Fragment_LargeProjectileFrag>62</Fragment_LargeProjectileFrag>
 					<Fragment_Small>56</Fragment_Small>
 				</fragments>
 			</li>
@@ -193,7 +195,7 @@
 		<comps>
 			<li Class="CombatExtended.CompProperties_Fragments">
 				<fragments>
-					<Fragment_RocketFrag>62</Fragment_RocketFrag>
+					<Fragment_LargeProjectileFrag>62</Fragment_LargeProjectileFrag>
 					<Fragment_Small>56</Fragment_Small>
 				</fragments>
 			</li>

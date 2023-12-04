@@ -45,7 +45,7 @@
                 <range>42</range>
                 <soundCast>Shot_Delisle</soundCast>
                 <soundCastTail>GunTail_Light</soundCastTail>
-                <muzzleFlashScale>1</muzzleFlashScale>
+                <muzzleFlashScale>0</muzzleFlashScale>
             </li>
         </verbs>
         <comps>

@@ -127,13 +127,14 @@
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
 			<damageDef>Bomb</damageDef>
 			<damageAmountBase>540</damageAmountBase>
+			<armorPenetrationBlunt>5400</armorPenetrationBlunt>
 			<explosionRadius>8</explosionRadius>
 			<explosionChanceToStartFire>0.55</explosionChanceToStartFire>
 		</projectile>
 		<comps>
 			<li Class="CombatExtended.CompProperties_Fragments">
 				<fragments>
-					<Fragment_RocketFrag>132</Fragment_RocketFrag>
+					<Fragment_LargeProjectileFrag>132</Fragment_LargeProjectileFrag>
 					<Fragment_Small>115</Fragment_Small>
 				</fragments>
 			</li>
@@ -152,13 +153,14 @@
 			<speed>46</speed><!-- 230m/s 30cm NbW rocket -->
 			<damageDef>Bomb</damageDef>
 			<damageAmountBase>780</damageAmountBase>
+			<armorPenetrationBlunt>6500</armorPenetrationBlunt>
 			<explosionRadius>9</explosionRadius>
 			<explosionChanceToStartFire>0.65</explosionChanceToStartFire>
 		</projectile>
 		<comps>
 			<li Class="CombatExtended.CompProperties_Fragments">
 				<fragments>
-					<Fragment_RocketFrag>174</Fragment_RocketFrag>
+					<Fragment_LargeProjectileFrag>174</Fragment_LargeProjectileFrag>
 					<Fragment_Small>152</Fragment_Small>
 				</fragments>
 			</li>
@@ -176,6 +178,7 @@
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
 			<damageDef>Flame</damageDef>
 			<damageAmountBase>360</damageAmountBase>
+			<armorPenetrationBlunt>7000</armorPenetrationBlunt>
 			<preExplosionSpawnThingDef>Filth_Fuel</preExplosionSpawnThingDef>
 			<preExplosionSpawnChance>1</preExplosionSpawnChance>
 			<explosionRadius>10</explosionRadius>
@@ -190,7 +193,7 @@
 			</li>
 			<li Class="CombatExtended.CompProperties_Fragments">
 				<fragments>
-					<Fragment_RocketFrag>12</Fragment_RocketFrag>
+					<Fragment_LargeProjectileFrag>12</Fragment_LargeProjectileFrag>
 					<Fragment_Small>60</Fragment_Small>
 				</fragments>
 			</li>

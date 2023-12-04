@@ -27,6 +27,14 @@
 	</Operation>
 	
 	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_130mmRocketMissile"]/ammoTypes</xpath>
+		<value>
+			<Ammo_130mmRocketMissileHEF>Bullet_130mmRocketMissileHEFRAG</Ammo_130mmRocketMissileHEF>
+			<Ammo_130mmRocketMissileHEI>Bullet_130mmRocketMissileHEI</Ammo_130mmRocketMissileHEI>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_155mmHowitzerShell"]/ammoTypes</xpath>
 		<value>
 			<Ammo_155mmHowitzerShell_Nuke MayRequire="Dubwise.Rimatomics">Bullet_155mmHowitzerShell_Nuke</Ammo_155mmHowitzerShell_Nuke>

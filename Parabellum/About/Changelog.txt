@@ -1,4 +1,38 @@
-<--------------------------------------- 1.8d(RW 1.4 taa) -------------------------------------------->
+<--------------------------------------- 1.9(RW 1.4 Dev) -------------------------------------------->
+
+1.9 - 4 new turret, 4 new ammo, Tweaks and Fixes
+
+Turrets:
+- Improvised 3cm Flak 103/38 autocannon: 30mm, Automatic(1/4/10), an ancient Mid War dual purpose autocannon, decent rate of fire and rather high performance againt planes and tanks, specially with the proper ammo for the role.
+- 3cm Flak 103/38 autocannon(Quad): 30mm, Automatic(1/8/24), an ancient Mid War dual purpose autocannon, 4 barrels syncronized in single platform to improve it rate of fire and stability of the gun.
+- SMG Sentry Turret: Any Pistol ammo, Automatic(15), An AI-controlled turret with adaptive barrel that fires pistol rounds, is not a combat turret. Requires 200 W to function.
+- MMG Sentry Turret: 7.92mm Mauser Rifle ammo/7.62x51mm NATO, Automatic(10), An AI-controlled turret with adaptive barrel that fires 7.92mm Mauser or 7.62x51mm NATO rifle rounds, an actual tank machinegun turret. Requires 700 W to function.
+
+Ammo:
+- 30mm Flak ammo, Small Special Explosive shell filled with fragments, made with special fuze that detonate the warhead under specific condition and create airbust effect to maximize its effective blast range and area of effect, usually used against aircraft.
+- 30mm APCR ammo, Armor Piercing, Composed Rigid ammunition ammunition for 3cm/30mm cannon, High velocity solid slug design purely for armor penetration with concentrated kinetic energy through a small impact area.
+- 130mm HE-FRAG rocket, High Explosive - Fragmentation, Large size rocket filled with TNT explosive and fragments, though more fragments than TNT explosive.
+- 130mm HEI rocket, High Explosive Incendiary, Large size rocket filled with incendiary agent and small amount of TNT explosive and some fragments.
+
+Tweaks:
+*Simplified Anti-Concrete/AC damage
++New Flecks for nuclear weapons due recent changes
++Update for Weapon Modularization
++New and stronger fragments for any weapon using larger than 100mm size ammo and 4kg Demolition charge
++Reduced Improvised shotgun turret power consumption to 300w 
+-removed 88mm HEAT for RVW
+-Nerfed Stalhelm Material multiplier from 300% -> 260%(for comparison Tactical Helmet is 400%+)
++Buffed Tactical Helmet blunt protection up to 60 as baseline with steel, now can fully tank 7.62x51mm NATO non AP ammo
+*Removed Muzzle Flas from De Lisle Carbine
+*Chnaged Bunker Storage Texture still WIP though
+*Added Off map artillery ability to following turrets:
+ - Nebelwerfer(All variants)
+ - Raketen-Vielfachwerfer(8cm rocket)
+ - 8cm GrW(8cm Mortars)
+ - Type 63 MRL
+ - Morser 16 and 18(21cm shell)
+
+<--------------------------------------- 1.8(RW 1.4 Alpha) -------------------------------------------->
 
 1.8 - 9 New ammo type, 2 turrets, 2 grenades, 3 consumibles, 3 weapon and Fixes
 
@@ -82,13 +116,12 @@ Scenario:
 +Added AK kit for UniversalAR, the weapon can be rechambered to soviet 7.62x39mm
 *Updated Magazine behavior, now is more friendly with other weapon parts that override the weapon behavior
 +Fix for latest CE update and mote to flecks issues
-	*Grenade pin spam issue
-	*Artillery issue
-+Added Bunker storage(WIP)
-Tweaks and Fixes:
 *Fixed UAR variant not showing up in cuztomization bench
 *Changed how S-mine work for recipes and building
 +Added smoke charge by converting M24Nb for future vehicle update
+	*Grenade pin spam issue
+	*Artillery issue
++Added Bunker storage(WIP)
 -(1.4)Added Rifle grenade for following weapons:
 	+ G43
 	+ FG42 model F
@@ -115,7 +148,11 @@ Tweaks and Fixes:
 	+VG 3/45k
 	+G43
 	+Kar 98
-	+Universal AR
+	+Universal AR:
+	  -SG
+	  -SMG
+	  -AR
+	  -BR
 
 *Cannon rebalance:
 -3.7cm:

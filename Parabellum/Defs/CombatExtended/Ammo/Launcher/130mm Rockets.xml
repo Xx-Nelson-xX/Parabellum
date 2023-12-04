@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- ==================== Ammo ========================== -->
+
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="130mmRocketMissileBase">
+		<defName>Ammo_130mmRocketMissileHEF</defName>
+		<label>130mm rocket(HE-FRAG)</label>
+		<description>130mm High-Explosive Fragmentation Rocket.</description>
+		<graphicData>
+			<texPath>Things/Ammo/130mmR/HEFR</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<Mass>33</Mass>
+			<Bulk>9.2</Bulk>
+			<MarketValue>120</MarketValue>
+		</statBases>
+		<ammoClass>130mmHEFR</ammoClass>
+		<cookOffProjectile>Bullet_130mmRocketMissileHEFRAG</cookOffProjectile>
+	</ThingDef>
+	
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="130mmRocketMissileBase">
+		<defName>Ammo_130mmRocketMissileHEI</defName>
+		<label>130mm rocket(HEI)</label>
+		<description>130mm High-Explosive Incendiary Rocket.</description>
+		<graphicData>
+			<texPath>Things/Ammo/130mmR/HEIR</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<Mass>32</Mass>
+			<Bulk>10</Bulk>
+			<MarketValue>150</MarketValue>
+		</statBases>
+		<ammoClass>130mmHEIR</ammoClass>
+		<cookOffProjectile>Bullet_130mmRocketMissileHEI</cookOffProjectile>
+	</ThingDef>
+
+	<!-- ================== Projectiles ================== -->
+	
+	 <ThingDef Class="CombatExtended.AmmoDef" Name="Base130mmRocketMissilePlus" ParentName="Base130mmRocketMissile" Abstract="true">
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<speed>77</speed> <!-- 385m/s -->
+			<explosionEffect>GiantExplosion</explosionEffect>
+			<soundExplode>Explosion_GiantBomb</soundExplode>
+			<applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+			<ai_IsIncendiary>true</ai_IsIncendiary>
+		</projectile>
+	</ThingDef>
+	
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="Base130mmRocketMissilePlus">
+		<defName>Bullet_130mmRocketMissileHEFRAG</defName>
+		<label>130mm HEF Rocket</label>
+		<graphicData>
+			<texPath>Things/Ammo/130mmR/HEFR/HEFR_a</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageDef>Bomb</damageDef>
+			<damageAmountBase>120</damageAmountBase>
+			<explosionRadius>3</explosionRadius>
+			<explosionChanceToStartFire>0.2</explosionChanceToStartFire>
+		</projectile>
+		<comps>
+			<li Class="CombatExtended.CompProperties_Fragments">
+				<fragments>
+					<Fragment_LargeProjectileFrag>78</Fragment_LargeProjectileFrag>
+					<Fragment_RocketFrag>650</Fragment_RocketFrag>
+				</fragments>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="Base130mmRocketMissilePlus">
+		<defName>Bullet_130mmRocketMissileHEI</defName>
+		<label>130mm HEF Rocket</label>
+		<graphicData>
+			<texPath>Things/Ammo/130mmR/HEIR/HEIR_a</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageDef>Flame</damageDef>
+			<damageAmountBase>106</damageAmountBase>
+			<preExplosionSpawnThingDef>Filth_Fuel</preExplosionSpawnThingDef>
+			<preExplosionSpawnChance>1</preExplosionSpawnChance>
+			<explosionRadius>4</explosionRadius>
+		</projectile>
+		<comps>
+			<li Class="CombatExtended.CompProperties_ExplosiveCE">
+				<damageAmountBase>2</damageAmountBase>
+				<explosiveDamageType>PrometheumFlame</explosiveDamageType>
+				<explosiveRadius>5</explosiveRadius>
+				<preExplosionSpawnThingDef>FilthPrometheum</preExplosionSpawnThingDef>
+				<preExplosionSpawnChance>1</preExplosionSpawnChance>
+			</li>
+			<li Class="CombatExtended.CompProperties_Fragments">
+				<fragments>
+					<Fragment_RocketFrag>14</Fragment_RocketFrag>
+					<Fragment_Small>46</Fragment_Small>
+				</fragments>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<!-- ==================== Recipes ========================== -->
+
+	<RecipeDef ParentName="AmmoRecipeBase">
+		<defName>MakeAmmo_130mmRocketMissileHEF</defName>
+		<label>make 130mm HE-FRAG Rocket x1</label>
+		<description>Craft 130mm HE-FRAG Rocket.</description>
+		<jobString>Making 130mm HE-FRAG Rocket.</jobString>
+		<workAmount>1200</workAmount>
+		<targetCountAdjustment>1</targetCountAdjustment>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>SLDBar</li>
+						<li>USLDBar</li>
+					</categories>
+				</filter>
+				<count>35</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>HeavyBar</li>
+					</categories>
+				</filter>
+				<count>5</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Powder</li>
+						<li>FSX</li>
+					</thingDefs>
+				</filter>
+				<count>6</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>SLDBar</li>
+				<li>USLDBar</li>
+				<li>HeavyBar</li>
+			</categories>
+			<thingDefs>
+				<li>FSX</li>
+				<li>Powder</li>
+				<li>ComponentIndustrial</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<recipeUsers>
+			<li>TableMachining</li>
+		</recipeUsers>
+		<products>
+			<Ammo_130mmRocketMissileHEF>1</Ammo_130mmRocketMissileHEF>
+		</products>
+		<researchPrerequisite>Range_C2</researchPrerequisite>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="AmmoRecipeBase">
+		<defName>MakeAmmo_130mmRocketMissileHEI</defName>
+		<label>make 130mm HEI Rocket x1</label>
+		<description>Craft 130mm HEI Rocket.</description>
+		<jobString>Making 130mm HEI Rocket.</jobString>
+		<workAmount>1200</workAmount>
+		<targetCountAdjustment>1</targetCountAdjustment>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>SLDBar</li>
+						<li>USLDBar</li>
+					</categories>
+				</filter>
+				<count>18</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>HeavyBar</li>
+					</categories>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Powder</li>
+						<li>FSX</li>
+					</thingDefs>
+				</filter>
+				<count>4</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Chemfuel</li>
+					</thingDefs>
+				</filter>
+				<count>24</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>SLDBar</li>
+				<li>USLDBar</li>
+				<li>HeavyBar</li>
+			</categories>
+			<thingDefs>
+				<li>Chemfuel</li>
+				<li>FSX</li>
+				<li>Powder</li>
+				<li>ComponentIndustrial</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<recipeUsers>
+			<li>TableMachining</li>
+		</recipeUsers>
+		<products>
+			<Ammo_130mmRocketMissileHEI>1</Ammo_130mmRocketMissileHEI>
+		</products>
+		<researchPrerequisite>Range_C2</researchPrerequisite>
+	</RecipeDef>
+	
+</Defs>

@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<!-- ================== Improvised 3cm Flak 103/38 ================== -->
+
+	<ThingDef ParentName="BaseGun_Turret">
+		<defName>Pa_MK103AA</defName>
+		<label>3cm MK103</label>
+		<graphicData>
+			<texPath>Things/Building/Security/CMMT/MK103_Top</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Artillery_ShellLoaded</soundInteract>
+		<description>3cm MK103 Autocannon.</description>
+		<techLevel>Industrial</techLevel>
+		<tradeability>None</tradeability>
+		<statBases>
+			<MarketValue>2970</MarketValue>
+			<SightsEfficiency>1.74</SightsEfficiency>
+			<ShotSpread>0.048</ShotSpread>
+			<SwayFactor>1</SwayFactor>
+			<RangedWeapon_Cooldown>1.54</RangedWeapon_Cooldown>
+		</statBases>
+		<generateCommonality>0</generateCommonality>
+		<verbs>
+			<li Class="CombatExtended.VerbPropertiesCE">
+				<recoilPattern>Mounted</recoilPattern>
+				<recoilAmount>0.92</recoilAmount>
+				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_30x173mm_FMJ</defaultProjectile>
+				<warmupTime>1.22</warmupTime>
+				<minRange>3</minRange>
+				<!-- <forcedMissRadius>1.4</forcedMissRadius> -->
+				<ticksBetweenBurstShots>9</ticksBetweenBurstShots>
+				<burstShotCount>10</burstShotCount>
+				<range>94</range>
+				<soundCast>35mm_shot</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>14</muzzleFlashScale>
+				<targetParams>
+				  <canTargetLocations>true</canTargetLocations>
+				</targetParams>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="CombatExtended.CompProperties_AmmoUser">
+				<magazineSize>50</magazineSize>
+                <reloadTime>14.5</reloadTime>
+				<!-- <spawnUnloaded>true</spawnUnloaded> -->
+				<ammoSet>AmmoSet_30x173mm</ammoSet>
+			</li>
+			<li Class="CombatExtended.CompProperties_FireModes">
+				<aimedBurstShotCount>4</aimedBurstShotCount>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<!-- ================== 3cm Flak 103/38 Quad ================== -->
+	<ThingDef ParentName="BaseGun_Turret">
+		<defName>Pa_MK103AAQ</defName>
+		<label>3cm MK103 x4</label>
+		<graphicData>
+			<texPath>Things/Building/Security/CMMT/MK103Q_Top</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Artillery_ShellLoaded</soundInteract>
+		<description>3cm MK103 Autocannon x4.</description>
+		<techLevel>Industrial</techLevel>
+		<tradeability>None</tradeability>
+		<statBases>
+			<MarketValue>7240</MarketValue>
+			<SightsEfficiency>1.82</SightsEfficiency>
+			<ShotSpread>0.054</ShotSpread>
+			<SwayFactor>1</SwayFactor>
+			<RangedWeapon_Cooldown>2.34</RangedWeapon_Cooldown>
+		</statBases>
+		<generateCommonality>0</generateCommonality>
+		<verbs>
+			<li Class="CombatExtended.VerbPropertiesCE">
+				<recoilPattern>Mounted</recoilPattern>
+				<recoilAmount>0.84</recoilAmount>
+				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_30x173mm_FMJ</defaultProjectile>
+				<warmupTime>1.82</warmupTime>
+				<minRange>3</minRange>
+				<!-- <forcedMissRadius>1.4</forcedMissRadius> -->
+				<ticksBetweenBurstShots>2</ticksBetweenBurstShots>
+				<burstShotCount>24</burstShotCount>
+				<range>94</range>
+				<soundCast>35mm_shot</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>14</muzzleFlashScale>
+				<targetParams>
+				  <canTargetLocations>true</canTargetLocations>
+				</targetParams>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="CombatExtended.CompProperties_AmmoUser">
+				<magazineSize>200</magazineSize>
+                <reloadTime>32.6</reloadTime>
+				<!-- <spawnUnloaded>true</spawnUnloaded> -->
+				<ammoSet>AmmoSet_30x173mm</ammoSet>
+			</li>
+			<li Class="CombatExtended.CompProperties_FireModes">
+				<aimedBurstShotCount>8</aimedBurstShotCount>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<!--=============== Turret Base(Improvised 3cm Flak 103/38) ===============-->
+
+	<ThingDef ParentName="TurretMannedBase">
+		<defName>Turret_MK103AA</defName>
+		<label>Improvised 3cm Flak 103/38 AA</label>
+		<graphicData>
+			<texPath>Things/Building/Security/Base/P_Base</texPath>
+			<drawSize>(2,2)</drawSize>
+			<shadowData>
+				<volume>(0.3, 0.6, 0.3)</volume>
+			</shadowData>
+		</graphicData>
+		<uiIconPath>Things/Building/Security/CMMT/MK103_icon</uiIconPath>
+		<statBases>
+			<MaxHitPoints>200</MaxHitPoints>
+			<WorkToBuild>2100</WorkToBuild>
+			<Mass>150</Mass>
+			<Bulk>52</Bulk>
+		</statBases>
+		<fillPercent>0.98</fillPercent>
+		<techLevel>Industrial</techLevel>
+		<description>Improvised 3cm Flak 103/38 autocannon, an ancient Mid War dual purpose autocannon, decent rate of fire and rather high performance againt planes and tanks, specially with the proper ammo for the role.</description>
+		<size>(1,1)</size>
+		<stuffCategories>
+			<li>RuggedMetallic</li>
+		</stuffCategories>
+		<costStuffCount>80</costStuffCount>
+		<costList>
+			<Pa_Machinegun_Crate>1</Pa_Machinegun_Crate>
+			<Pa_SimpleCannon_Crate>2</Pa_SimpleCannon_Crate>
+		</costList>
+		<specialDisplayRadius>3</specialDisplayRadius>
+		<designationCategory>Security</designationCategory>
+		<building>
+			<turretGunDef>Pa_MK103AA</turretGunDef>
+			<turretTopDrawSize>2.8</turretTopDrawSize>
+			<buildingTags>
+				<li>SiegeGun</li>
+			</buildingTags>
+			<uninstallWork>320</uninstallWork>
+		</building>
+		<minifiedDef>MinifiedTurret_Pa_MK103AA</minifiedDef>
+		<thingCategories>
+			<li>BuildingsSecurity</li>
+		</thingCategories>
+		<researchPrerequisites>
+			<li>Heavy_turrets_C3</li>
+		</researchPrerequisites>
+		<constructionSkillPrerequisite>10</constructionSkillPrerequisite>
+	</ThingDef>
+	
+	<!--=============== Turret Base(3cm Flak 103/38 Quad) ===============-->
+
+	<ThingDef ParentName="TurretMannedBase">
+		<defName>Turret_MK103AAQ</defName>
+		<label>3cm Flak 103/38 AA(Quad)</label>
+		<graphicData>
+			<texPath>Things/Building/Security/Base/Flak41_Base</texPath>
+			<drawSize>(2.2,2.2)</drawSize>
+			<shadowData>
+				<volume>(0.3, 0.6, 0.3)</volume>
+			</shadowData>
+		</graphicData>
+		<uiIconPath>Things/Building/Security/CMMT/MK103Q_icon</uiIconPath>
+		<hasInteractionCell>True</hasInteractionCell>
+		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		<statBases>
+			<MaxHitPoints>400</MaxHitPoints>
+			<WorkToBuild>4500</WorkToBuild>
+			<Mass>750</Mass>
+			<Bulk>750</Bulk>
+		</statBases>
+		<fillPercent>0.98</fillPercent>
+		<techLevel>Industrial</techLevel>
+		<description>3cm Flak 103/38 autocannon(Quad), an ancient Mid War dual purpose autocannon, 4 barrels syncronized in single platform to improve it rate of fire and stability of the gun.</description>
+		<size>(2,2)</size>
+		<stuffCategories>
+			<li>RuggedMetallic</li>
+		</stuffCategories>
+		<costStuffCount>200</costStuffCount>
+		<costList>
+			<Pa_Machinegun_Crate>4</Pa_Machinegun_Crate>
+			<Pa_SimpleCannon_Crate>8</Pa_SimpleCannon_Crate>
+		</costList>
+		<specialDisplayRadius>3</specialDisplayRadius>
+		<designationCategory>Security</designationCategory>
+		<building>
+			<turretGunDef>Pa_MK103AAQ</turretGunDef>
+			<turretTopDrawSize>3.2</turretTopDrawSize>
+			<buildingTags>
+				<li>SiegeGun</li>
+			</buildingTags>
+			<uninstallWork>600</uninstallWork>
+		</building>
+		<minifiedDef>MinifiedTurret_Pa_MK103AAQ</minifiedDef>
+		<thingCategories>
+			<li>BuildingsSecurity</li>
+		</thingCategories>
+		<researchPrerequisites>
+			<li>Parabellum_I</li>
+		</researchPrerequisites>
+		<constructionSkillPrerequisite>10</constructionSkillPrerequisite>
+	</ThingDef>
+	
+	<!-- ================== Minified ================== -->
+	
+	<ThingDef ParentName="MinifiedTurretBase">
+		<defName>MinifiedTurret_Pa_MK103AA</defName>
+		<label>MK103 3cm</label>
+		<statBases>
+			<Mass>120</Mass>
+			<Bulk>44</Bulk>
+		</statBases>
+	</ThingDef>
+	
+	<ThingDef ParentName="MinifiedTurretBase">
+		<defName>MinifiedTurret_Pa_MK103AAQ</defName>
+		<label>MK103 3cm(Quad)</label>
+		<statBases>
+			<Mass>450</Mass>
+			<Bulk>450</Bulk>
+		</statBases>
+	</ThingDef>
+	
+</Defs>

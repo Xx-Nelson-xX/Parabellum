@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<!-- ================== Improvised turret gun ================== -->
+	<!-- ================== Improvised shotgun turret gun ================== -->
 
 	<ThingDef ParentName="BaseAutoTurretGun">
 		<defName>Pa_ShotgunT</defName>
@@ -48,7 +48,7 @@
 		</comps>
 	</ThingDef>
 	
-	<!-- ================== Improvised turret gun ================== -->
+	<!-- ================== Riot control turret gun ================== -->
 
 	<ThingDef ParentName="BaseAutoTurretGun">
 		<defName>Pa_AntiR</defName>
@@ -94,6 +94,53 @@
 			</li>
 		</comps>
 	</ThingDef>
+	
+	<!-- ================== SMG turret gun ================== -->
+
+	<ThingDef ParentName="BaseAutoTurretGun">
+		<defName>Pa_SMGT</defName>
+		<label>SMG Sentry</label>
+		<graphicData>
+			<texPath>Things/Building/Security/Sentry/SMGSentry_Top</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<description>Automatic SMG turret with simple sensor and support strcture attached to a turret.</description>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<techLevel>Industrial</techLevel>
+		<tradeability>None</tradeability>
+		<statBases>
+			<SightsEfficiency>1.2</SightsEfficiency>
+			<ShotSpread>0.1</ShotSpread>
+			<SwayFactor>1.1</SwayFactor>
+			<RangedWeapon_Cooldown>0.62</RangedWeapon_Cooldown>
+			<DeteriorationRate>0</DeteriorationRate>
+		</statBases>
+		<generateCommonality>0</generateCommonality>
+		<verbs>
+			<li Class="CombatExtended.VerbPropertiesCE">
+				<recoilPattern>Mounted</recoilPattern>
+				<recoilAmount>0.62</recoilAmount>
+				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_9x19mmPara_FMJ</defaultProjectile>
+				<warmupTime>0.55</warmupTime>
+				<range>32</range>
+				<ticksBetweenBurstShots>3</ticksBetweenBurstShots>
+				<burstShotCount>15</burstShotCount>
+				<soundCast>ShotMP5</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>12</muzzleFlashScale>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="CombatExtended.CompProperties_AmmoUser">
+				<magazineSize>500</magazineSize>
+				<reloadTime>8.4</reloadTime>
+				<!-- <spawnUnloaded>false</spawnUnloaded> -->
+				<ammoSet>AmmoSet_SR</ammoSet>
+			</li>
+		</comps>
+	</ThingDef>
 
 	<!-- ================== TurretBase - Improvised Shotgun turrets(AI) ================== -->
 
@@ -123,7 +170,7 @@
 		<comps>
 			<li Class="CompProperties_Power">
 				<compClass>CompPowerTrader</compClass>
-				<basePowerConsumption>500</basePowerConsumption>
+				<basePowerConsumption>300</basePowerConsumption>
 			</li>
 			<li Class="CompProperties_Flickable"/>
 			<li Class="CompProperties_Breakdownable"/>
@@ -227,6 +274,72 @@
 		<constructionSkillPrerequisite>12</constructionSkillPrerequisite>
 	</ThingDef>
 	
+	<!-- ================== TurretBase - SMG Turret(AI) ================== -->
+
+	<ThingDef ParentName="TurretBase">
+		<defName>Turret_SMGT</defName>
+		<label>SMG Sentry Turret</label>
+		<graphicData>
+			<texPath>Things/Building/Security/Base/H_Base</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1,1)</drawSize>
+			<damageData>
+				<rect>(0.2,0.2,0.6,0.6)</rect>
+			</damageData>
+			<shadowData>
+				<volume>(0.27,0.25,0.27)</volume>
+				<offset>(0,0,0)</offset>
+			</shadowData>
+		</graphicData>
+		<uiIconPath>Things/Building/Security/Sentry/SMGSentry_icon</uiIconPath>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Flammability>0.4</Flammability>
+			<WorkToBuild>2200</WorkToBuild>
+			<Mass>14</Mass>
+			<Bulk>24</Bulk>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>200</basePowerConsumption>
+			</li>
+			<li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_Breakdownable"/>
+		</comps>
+		<description>An AI-controlled turret with adaptive barrel that fires pistol rounds, is not a combat turret. Requires 200 W to function.\nCaliber: Any pistol ammo</description>
+		<stuffCategories>
+			<li>RuggedMetallic</li>
+		</stuffCategories>
+		<costStuffCount>70</costStuffCount>
+		<costList>
+			<ComponentIndustrial>2</ComponentIndustrial>
+			<Mechanism>1</Mechanism>
+			<ElectronicComponents>1</ElectronicComponents>
+			<Sniper_Component>1</Sniper_Component>
+			<SMG_Component>1</SMG_Component>
+		</costList>
+		<specialDisplayRadius>0.5</specialDisplayRadius>
+		<designationCategory>Security</designationCategory>
+		<building>
+			<ai_combatDangerous>true</ai_combatDangerous>
+			<turretGunDef>Pa_SMGT</turretGunDef>
+			<turretTopDrawSize>0.7</turretTopDrawSize>
+		</building>
+		<designationHotKey>Misc1</designationHotKey>
+		<tradeTags>
+			<li>CE_Turret</li>
+		</tradeTags>
+		<minifiedDef>Minified_SMGT</minifiedDef>
+		<thingCategories>
+			<li>BuildingsSecurity</li>
+		</thingCategories>
+		<researchPrerequisites>
+			<li>Autoturrets_D2</li>
+		</researchPrerequisites>
+		<constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+	</ThingDef>
+	
 	<!-- ================== Minified ================== -->
 	
 	<ThingDef ParentName="MinifiedTurretBase">
@@ -244,6 +357,15 @@
 		<statBases>
 			<Mass>14</Mass>
 			<Bulk>24</Bulk>
+		</statBases>
+	</ThingDef>
+	
+	<ThingDef ParentName="MinifiedTurretBase">
+		<defName>Minified_SMGT</defName>
+		<label>SMG Sentry Turret</label>
+		<statBases>
+			<Mass>8</Mass>
+			<Bulk>12</Bulk>
 		</statBases>
 	</ThingDef>
 	

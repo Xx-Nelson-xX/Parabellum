@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+	
+	<Operation Class="PatchOperationAdd">	
+	<xpath>Defs/DamageDef[defName="ACP"]</xpath>
+		<value>
+			<buildingDamageFactorImpassable>5</buildingDamageFactorImpassable>
+			<buildingDamageFactorPassable>4</buildingDamageFactorPassable>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">	
+	<xpath>Defs/DamageDef[@Name="ACExp"]</xpath>
+		<value>
+			<buildingDamageFactorImpassable>6</buildingDamageFactorImpassable>
+			<buildingDamageFactorPassable>5</buildingDamageFactorPassable>
+		</value>
+	</Operation>
+
+</Patch>

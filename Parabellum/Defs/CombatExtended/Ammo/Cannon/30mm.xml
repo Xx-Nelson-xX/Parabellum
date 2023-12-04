@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- ==================== Ammo ========================== -->
+	
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="Ammo30x173mmBase">
+		<defName>Ammo_30mm_APCR</defName>
+		<label>30mm cartridge(APCR)</label>
+		<graphicData>
+			<texPath>Things/Ammo/Mauser/TuF/HET</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>9.2</MarketValue>
+		</statBases>
+		<ammoClass>30mmAPCR</ammoClass>
+		<cookOffProjectile>Bullet_30mm_APCR</cookOffProjectile>
+	</ThingDef>
+	
+	<!-- ================== Projectiles ================== -->
+	
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="Base30x173mmBullet">
+		<defName>Bullet_30mm_APCR</defName>
+		<label>30mm bullet(APCR)</label>
+		<thingClass>CombatExtended.ProjectileCE_Bursting</thingClass>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<speed>188</speed> <!-- 940m/s -->
+			<damageDef>Bullet</damageDef>
+			<spreadMult>0.65</spreadMult>
+			<damageAmountBase>75</damageAmountBase>
+			<armorPenetrationSharp>86</armorPenetrationSharp>
+			<armorPenetrationBlunt>1544.44</armorPenetrationBlunt>
+			<secondaryDamage>
+				<li>
+					<def>Blunt</def>
+					<amount>69</amount>
+				</li>
+			</secondaryDamage>
+		</projectile>
+		<comps>
+			<li Class="CombatExtended.CompProperties_ExplosiveCE">
+				<damageAmountBase>14</damageAmountBase>
+				<explosiveDamageType>Bomb</explosiveDamageType>
+				<explosiveRadius>0.2</explosiveRadius>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<!-- ==================== Recipes ========================== -->
+
+	<RecipeDef ParentName="AmmoRecipeHighCaliber">
+		<defName>MakeAmmo_30mm_APCR</defName>
+		<label>make 30mm (APCR) cartridge x30</label>
+		<description>Craft 30 30mm (APCR) cartridges.</description>
+		<jobString>Making 30mm (APCR) cartridges.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>SLDBar</li>
+						<li>USLDBar</li>
+					</categories>
+				</filter>
+				<count>77</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Tungsten</li>
+						<li>DepletedUranium</li>
+					</thingDefs>
+				</filter>
+				<count>12</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Powder</li>
+						<li>FSX</li>
+					</thingDefs>
+				</filter>
+				<count>6</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>SLDBar</li>
+				<li>USLDBar</li>
+				<li>USLDHBar</li>
+			</categories>
+			<thingDefs>
+				<li>DepletedUranium</li>
+				<li>Tungsten</li>
+				<li>Powder</li>
+				<li>FSX</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Ammo_30mm_APCR>30</Ammo_30mm_APCR>
+		</products>
+		<skillRequirements>
+			<Crafting>12</Crafting>
+		</skillRequirements>
+		<workSkill>Crafting</workSkill>
+		<workSkillLearnFactor>0.8</workSkillLearnFactor>
+		<researchPrerequisite>Heavy_turrets_C3</researchPrerequisite>
+	</RecipeDef>
+
+</Defs>

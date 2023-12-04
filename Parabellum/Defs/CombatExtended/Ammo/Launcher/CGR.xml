@@ -165,9 +165,9 @@
 		</graphicData>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
 			<damageDef>Bullet</damageDef>
-			<damageAmountBase>4</damageAmountBase>
-			<pelletCount>1100</pelletCount>
-			<spreadMult>68.2</spreadMult>
+			<damageAmountBase>8</damageAmountBase>
+			<pelletCount>550</pelletCount>
+			<spreadMult>46.2</spreadMult>
 			<armorPenetrationSharp>12</armorPenetrationSharp>
 			<armorPenetrationBlunt>26.5</armorPenetrationBlunt>
 			<speed>110</speed>

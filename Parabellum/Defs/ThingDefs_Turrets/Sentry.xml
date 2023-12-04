@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- ================== MG turret gun ================== -->
+
+	<ThingDef ParentName="BaseAutoTurretGun">
+		<defName>Pa_MGT</defName>
+		<label>MMG Sentry</label>
+		<graphicData>
+			<texPath>Things/Building/Security/Sentry/MGSentry_Top</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<description>Automatic MG42/3 turret with simple sensor and support strcture attached to a turret.</description>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<techLevel>Spacer</techLevel>
+		<tradeability>None</tradeability>
+		<statBases>
+			<SightsEfficiency>1.85</SightsEfficiency>
+			<ShotSpread>0.032</ShotSpread>
+			<SwayFactor>0.64</SwayFactor>
+			<RangedWeapon_Cooldown>1.62</RangedWeapon_Cooldown>
+			<DeteriorationRate>0</DeteriorationRate>
+		</statBases>
+		<generateCommonality>0</generateCommonality>
+		<verbs>
+			<li Class="CombatExtended.VerbPropertiesCE">
+				<recoilPattern>Mounted</recoilPattern>
+				<recoilAmount>0.32</recoilAmount>
+				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_8mmM_SP</defaultProjectile>
+				<warmupTime>0.95</warmupTime>
+				<range>60</range>
+				<ticksBetweenBurstShots>3</ticksBetweenBurstShots>
+				<burstShotCount>10</burstShotCount>
+				<soundCast>Shot_MG42s</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>10</muzzleFlashScale>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="CombatExtended.CompProperties_AmmoUser">
+				<magazineSize>250</magazineSize>
+				<reloadTime>5.6</reloadTime>
+				<!-- <spawnUnloaded>true</spawnUnloaded> -->
+				<ammoSet>AmmoSet_K98k</ammoSet>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<!-- ================== TurretBase - MG42/3 Turret(AI) ================== -->
+
+	<ThingDef ParentName="TurretBase">
+		<defName>Turret_MGT</defName>
+		<label>MMG Sentry Turret</label>
+		<graphicData>
+			<texPath>Things/Building/Security/Base/H_Base</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1,1)</drawSize>
+			<damageData>
+				<rect>(0.2,0.2,0.6,0.6)</rect>
+			</damageData>
+			<shadowData>
+				<volume>(0.27,0.25,0.27)</volume>
+				<offset>(0,0,0)</offset>
+			</shadowData>
+		</graphicData>
+		<uiIconPath>Things/Building/Security/Sentry/MGSentry_icon</uiIconPath>
+		<statBases>
+			<MaxHitPoints>180</MaxHitPoints>
+			<Flammability>0.4</Flammability>
+			<WorkToBuild>5000</WorkToBuild>
+			<Mass>30</Mass>
+			<Bulk>52</Bulk>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>400</basePowerConsumption>
+			</li>
+			<li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_Breakdownable"/>
+		</comps>
+		<description>An AI-controlled turret with adaptive barrel that fires 7.92mm Mauser or 7.62x51mm NATO rifle rounds, an actual tank machinegun turret. Requires 700 W to function.\nCaliber: 7.92x57mm Mauser/7.62x51mm NATO</description>
+		<stuffCategories>
+			<li>RuggedMetallic</li>
+		</stuffCategories>
+		<costStuffCount>100</costStuffCount>
+		<costList>
+			<ComponentIndustrial>4</ComponentIndustrial>
+			<Mechanism>2</Mechanism>
+			<ElectronicComponents>2</ElectronicComponents>
+			<Sniper_Component>1</Sniper_Component>
+			<Pa_MG42L>1</Pa_MG42L>
+		</costList>
+		<specialDisplayRadius>0.5</specialDisplayRadius>
+		<designationCategory>Security</designationCategory>
+		<building>
+			<ai_combatDangerous>true</ai_combatDangerous>
+			<turretGunDef>Pa_MGT</turretGunDef>
+			<turretTopDrawSize>1.9</turretTopDrawSize>
+		</building>
+		<designationHotKey>Misc1</designationHotKey>
+		<tradeTags>
+			<li>CE_Turret</li>
+		</tradeTags>
+		<minifiedDef>Minified_MGT</minifiedDef>
+		<thingCategories>
+			<li>BuildingsSecurity</li>
+		</thingCategories>
+		<researchPrerequisites>
+			<li>Autoturrets_D2</li>
+		</researchPrerequisites>
+		<constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+	</ThingDef>
+	
+	<!-- ================== Minified ================== -->
+	
+	<ThingDef ParentName="MinifiedTurretBase">
+		<defName>Minified_MGT</defName>
+		<label>MG 42/3 MMG sentry turret</label>
+		<statBases>
+			<Mass>20</Mass>
+			<Bulk>34</Bulk>
+		</statBases>
+	</ThingDef>
+	
+</Defs>

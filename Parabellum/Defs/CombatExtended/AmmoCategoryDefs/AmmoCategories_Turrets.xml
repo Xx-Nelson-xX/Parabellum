@@ -20,7 +20,7 @@
     <defName>32cmIncendiaryR</defName>
     <label>32cm Incendiary Rocket</label>
     <labelShort>32cm Incendiary Rocket</labelShort>
-    <description>Large size rocket filled with fuel.</description>
+    <description>Large size rocket filled with incendiary agent.</description>
   </CombatExtended.AmmoCategoryDef>
   
   <!-- ==================== Nebelwerfer (15cm/21cm) ========================== -->
@@ -50,6 +50,22 @@
     <label>15cm Smoke Rocket</label>
     <labelShort>15cm Smoke Rocket</labelShort>
     <description>Large size rocket filled with chemical to produce huge smoke screen.</description>
+  </CombatExtended.AmmoCategoryDef>
+  
+  <!-- ==================== Type 63 130mm rocket ========================== -->
+  
+  <CombatExtended.AmmoCategoryDef>
+    <defName>130mmHEFR</defName>
+    <label>130mm rocket(HE-FRAG)</label>
+    <labelShort>130mm HE-FRAG Rocket</labelShort>
+    <description>Large size rocket filled with TNT explosive and fragments, though more fragments than TNT explosive.</description>
+  </CombatExtended.AmmoCategoryDef>
+  
+  <CombatExtended.AmmoCategoryDef>
+    <defName>130mmHEIR</defName>
+    <label>130mm rocket(HEI)</label>
+    <labelShort>130mm HEI Rocket</labelShort>
+    <description>Large size rocket filled with incendiary agent and small amount of TNT explosive and some fragments.</description>
   </CombatExtended.AmmoCategoryDef>
   
   <!-- ==================== Mörser 16/18 (21cm) ========================== -->
@@ -94,6 +110,14 @@
     <label>120mm Stun Shell</label>
     <labelShort>120mm Stun</labelShort>
     <description>Non-Lethal Stun ammunition for 120mm cannon.</description>
+  </CombatExtended.AmmoCategoryDef>
+  
+  <!-- ==================== 3cm Cannon Shells ========================== -->
+  <CombatExtended.AmmoCategoryDef>
+    <defName>30mmAPCR</defName>
+    <label>30mm APCR</label>
+    <labelShort>30mm(APCR)</labelShort>
+    <description>Armor Piercing, Composed Rigid ammunition ammunition for 3cm/30mm cannon, High velocity solid slug design purely for armor penetration with concentrated kinetic energy through a small impact area.</description>
   </CombatExtended.AmmoCategoryDef>
   
   <!-- ==================== 3.7cm Cannon Shells ========================== -->

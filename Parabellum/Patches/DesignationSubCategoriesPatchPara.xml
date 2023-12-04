@@ -5,6 +5,8 @@
 		<value>
 			<li>Turret_Flak37AA</li>
 			<li>Turret_Flak41AA</li>
+			<li>Turret_MK103AA</li>
+			<li>Turret_MK103AAQ</li>
 		</value>
 	</Operation>
 	
@@ -48,6 +50,8 @@
 		<value>
 			<li>Turret_ShotgunT</li>
 			<li>Turret_AntiR</li>
+			<li>Turret_SMGT</li>
+			<li>Turret_MGT</li>
 		</value>
 	</Operation>
 	

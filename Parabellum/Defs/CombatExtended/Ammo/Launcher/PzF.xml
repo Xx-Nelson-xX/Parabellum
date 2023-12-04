@@ -35,7 +35,7 @@
 			</li>
 			<li Class="CombatExtended.CompProperties_Fragments">
 				<fragments>
-					<Fragment_Large>6</Fragment_Large>
+					<Fragment_LargeProjectileFrag>6</Fragment_LargeProjectileFrag>
 					<Fragment_Small>24</Fragment_Small>
 				</fragments>
 			</li>
@@ -64,7 +64,7 @@
 			</li>
 			<li Class="CombatExtended.CompProperties_Fragments">
 				<fragments>
-					<Fragment_Large>4</Fragment_Large>
+					<Fragment_LargeProjectileFrag>4</Fragment_LargeProjectileFrag>
 					<Fragment_Small>16</Fragment_Small>
 				</fragments>
 			</li>

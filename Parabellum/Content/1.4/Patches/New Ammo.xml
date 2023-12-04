@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<!-- ================== Airbust/Timed fuze ammo ================== -->
+	<Operation Class="PatchOperationAdd">	
+	<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_30x173mm"]/ammoTypes</xpath>
+		<value>
+			<Ammo_30mm_Flak>Bullet_30mm_Flak</Ammo_30mm_Flak>
+		</value>
+	</Operation>
+	
+	<!--<Operation Class="PatchOperationAdd">	
+	<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_37mmCannonShell"]/ammoTypes</xpath>
+		<value>
+			<Ammo_37mmCannonShell_Flak>Bullet_37mmCannonShell_Flak</Ammo_37mmCannonShell_Flak>
+		</value>
+	</Operation>-->
+	
+	<!--<Operation Class="PatchOperationAdd">	
+	<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_50mmCannonShell"]/ammoTypes</xpath>
+		<value>
+			<Ammo_50mmCannonShell_Flak>Bullet_50mmCannonShell_Flak</Ammo_50mmCannonShell_Flak>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">	
+	<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_128mmCannonShell"]/ammoTypes</xpath>
+		<value>
+			<Ammo_128mmCannonShell_Flak>Bullet_128mmCannonShell_Flak</Ammo_128mmCannonShell_Flak>
+		</value>
+	</Operation>-->
+	
+</Patch>

@@ -52,4 +52,35 @@
 		</value>
 	</Operation>
 	 -->
+	
+	<Operation Class="PatchOperationReplace">	
+	<xpath>Defs/ThingDef[defName="Pa_DB"]/modExtensions</xpath>
+		<value>
+			<modExtensions>
+				<li Class="ProjectileImpactFX.EffectProjectileExtension">
+					<explosionFleckDef>ExplosionFlash</explosionFleckDef>
+					<explosionFleckSize>3.6</explosionFleckSize>
+					<ImpactFleckDef>Fleck_PaNukeFlash</ImpactFleckDef>
+					<ImpactFleckSize>4.2</ImpactFleckSize>
+				</li>
+			</modExtensions>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">	
+	<xpath>Defs/ThingDef[defName="Bullet_155mmHowitzerShell_Nuke"]/modExtensions</xpath>
+		<value>
+			<modExtensions>
+				<li Class="ProjectileImpactFX.EffectProjectileExtension">
+					<explosionFleckDef>ExplosionFlash</explosionFleckDef>
+					<explosionFleckSize>3</explosionFleckSize>
+					<ImpactFleckDef>Fleck_PaNukeFlash</ImpactFleckDef>
+					<ImpactFleckSize>2</ImpactFleckSize>
+					<ImpactGlowFleckDef>Fleck_PaNukeCloud</ImpactGlowFleckDef>
+					<ImpactGlowFleckSize>6</ImpactGlowFleckSize>
+				</li>
+			</modExtensions>
+		</value>
+	</Operation>
+	
 </Patch>

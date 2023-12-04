@@ -180,7 +180,7 @@
 			</li>
 			<li Class="CombatExtended.CompProperties_Fragments">
 				<fragments>
-					<Fragment_Large>13</Fragment_Large>
+					<Fragment_LargeProjectileFrag>13</Fragment_LargeProjectileFrag>
 					<Fragment_Small>31</Fragment_Small>
 				</fragments>
 			</li>
@@ -199,6 +199,7 @@
 			<speed>176</speed><!--880m/s-->
 			<damageDef>Bomb</damageDef>
 			<damageAmountBase>320</damageAmountBase>
+			<armorPenetrationBlunt>2200</armorPenetrationBlunt>
 			<explosionRadius>4</explosionRadius>
 			<soundExplode>Explosion_GiantBomb</soundExplode>
 			<ai_IsIncendiary>true</ai_IsIncendiary>
@@ -212,7 +213,7 @@
 		<comps>
 			<li Class="CombatExtended.CompProperties_Fragments">
 				<fragments>
-					<Fragment_Large>64</Fragment_Large>
+					<Fragment_LargeProjectileFrag>64</Fragment_LargeProjectileFrag>
 					<Fragment_Small>52</Fragment_Small>
 				</fragments>
 			</li>

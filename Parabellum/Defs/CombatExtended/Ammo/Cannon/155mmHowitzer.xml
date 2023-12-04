@@ -72,8 +72,9 @@
 			<drawSize>1.65</drawSize>
 		</graphicData>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
-			<damageDef>ACB</damageDef>
+			<damageDef>NuclearB</damageDef>
 			<damageAmountBase>18000</damageAmountBase>
+			<armorPenetrationBlunt>18000</armorPenetrationBlunt>
 			<explosionRadius>22</explosionRadius>
 			<explosionChanceToStartFire>0.95</explosionChanceToStartFire>
 			<explosionEffect>GiantExplosion</explosionEffect>
@@ -91,8 +92,6 @@
 				<explosionMoteSize>3</explosionMoteSize>
 				<ImpactMoteDef>Mote_NukeFlash</ImpactMoteDef>
 				<ImpactMoteSize>2</ImpactMoteSize>
-				<ImpactGlowMoteDef>Mote_NukeCloud</ImpactGlowMoteDef>
-				<ImpactGlowMoteSize>6</ImpactGlowMoteSize>
 			</li>
 		</modExtensions>  --> 
 		<comps>

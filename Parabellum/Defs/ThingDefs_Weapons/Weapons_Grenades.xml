@@ -634,7 +634,7 @@
 			<ai_IsIncendiary>true</ai_IsIncendiary>
 			<dropsCasings>true</dropsCasings>
 			<casingMoteDefname>Fleck_GrenadePin</casingMoteDefname>
-		</projectile><!--
+		</projectile>
 		<modExtensions>
 			<li Class="ProjectileImpactFX.EffectProjectileExtension">
 				<explosionMote>true</explosionMote>
@@ -642,7 +642,7 @@
 				<ImpactMoteDef>Mote_NukeFlash</ImpactMoteDef>
 				<ImpactMoteSize>4.2</ImpactMoteSize>
 			</li>
-		</modExtensions>-->
+		</modExtensions>
 		<comps>
 			<li Class="CombatExtended.CompProperties_ExplosiveCE">
 				<explosiveRadius>4</explosiveRadius>

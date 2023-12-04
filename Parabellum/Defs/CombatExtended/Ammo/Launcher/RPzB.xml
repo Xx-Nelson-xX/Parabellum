@@ -23,7 +23,6 @@
 		<defName>AmmoSet_RVW</defName>
 		<label>Raketen-Vielfachwerfer Rockets</label>
 		<ammoTypes>
-			<Ammo_88mmRPzB_HEAT>Bullet_88mmRPzB_HEAT</Ammo_88mmRPzB_HEAT>
 			<Ammo_88mmRPzB_Frag>Bullet_88mmRPzB_Frag</Ammo_88mmRPzB_Frag>
 			<Ammo_8cmRVW_HE>Bullet_8cmRVW_HE</Ammo_8cmRVW_HE>
 		</ammoTypes>

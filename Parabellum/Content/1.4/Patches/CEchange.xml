@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+	<!-- ================== 25x59mm Airburst ================== -->
+	<!--<Operation Class="PatchOperationAdd">	
+	<xpath>Defs/ThingDef[defName="Bullet_25x59mmGrenade_HEAB"]/projectile[@Class="CombatExtended.ProjectilePropertiesCE"]</xpath>
+		<value>
+			<aimHeightOffset>1.4</aimHeightOffset>
+			<armingDelay>1</armingDelay>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">	
+	<xpath>Defs/ThingDef[defName="Bullet_25x59mmGrenade_HEAB"]/comps/li[@Class="CombatExtended.CompProperties_Fragments"]</xpath>
+		<value>
+			<fragAngleRange>-89~-1</fragAngleRange>
+		</value>
+	</Operation>-->
+	
+	<!-- ================== Turrets ================== -->
+	<!-- ================== Sub 300m/s ================== -->
+	<Operation Class="PatchOperationAdd">	
+	<xpath>Defs/ThingDef[defName="Pa_8cmGrW" 
+					  or defName="Pa_Kz8cmGrW"
+					  or defName="Pa_NbW32cm"
+					  or defName="Pa_NbW"
+					  or defName="Pa_RVW"]/comps</xpath>
+		<value>
+			<li Class="CombatExtended.CompProperties_Charges">
+				<chargeSpeeds>
+					<li>30</li>
+					<li>50</li>
+					<li>70</li>
+					<li>90</li>
+				</chargeSpeeds>
+			</li>
+		</value>
+	</Operation>
+	
+	<!-- ================== Around 300m/s ================== -->
+	<Operation Class="PatchOperationAdd">	
+	<xpath>Defs/ThingDef[defName="Pa_Type63MRL"
+					  or defName="Pa_Morser16HSA"
+					  or defName="Pa_NbW21cm"]/comps</xpath>
+		<value>
+			<li Class="CombatExtended.CompProperties_Charges">
+				<chargeSpeeds>
+					<li>50</li>
+					<li>70</li>
+					<li>90</li>
+					<li>110</li>
+				</chargeSpeeds>
+			</li>
+		</value>
+	</Operation>
+	
+	<!-- ================== Around 600m/s ================== -->
+	<Operation Class="PatchOperationAdd">	
+	<xpath>Defs/ThingDef[defName="Pa_Morser18HSA"]/comps</xpath>
+		<value>
+			<li Class="CombatExtended.CompProperties_Charges">
+				<chargeSpeeds>
+					<li>65</li>
+					<li>90</li>
+					<li>115</li>
+					<li>140</li>
+				</chargeSpeeds>
+			</li>
+		</value>
+	</Operation>
+	
+	<!-- ================== Ammo ================== -->
+	<!-- ================== 8cm rocket ================== -->
+	<Operation Class="PatchOperationAdd">
+	<xpath>Defs/ThingDef[defName="Bullet_88mmRPzB_Frag"]/projectile[@Class="CombatExtended.ProjectilePropertiesCE"]</xpath>
+		<value>
+			<speed>0</speed>
+			<shellingProps>
+				<iconPath>Things/WorldObjects/Munitions/Rocket</iconPath>
+				<damage>0.12</damage>
+				<tilesPerTick>0.13</tilesPerTick>
+				<range>21</range>
+			</shellingProps>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">	
+	<xpath>Defs/ThingDef[defName="Bullet_8cmRVW_HE"]/projectile[@Class="CombatExtended.ProjectilePropertiesCE"]/speed</xpath>
+		<value>
+			<speed>0</speed>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">	
+	<xpath>Defs/ThingDef[defName="Bullet_8cmRVW_HE"]/projectile[@Class="CombatExtended.ProjectilePropertiesCE"]</xpath>
+		<value>
+			<shellingProps>
+				<iconPath>Things/WorldObjects/Munitions/Rocket</iconPath>
+				<damage>0.17</damage>
+				<tilesPerTick>0.13</tilesPerTick>
+				<range>21</range>
+			</shellingProps>
+		</value>
+	</Operation>
+	
+	<!-- ================== 130mm rocket ================== -->
+	<Operation Class="PatchOperationReplace">	
+	<xpath>Defs/ThingDef[@Name="Base130mmRocketMissilePlus"]/projectile[@Class="CombatExtended.ProjectilePropertiesCE"]/speed</xpath>
+		<value>
+			<speed>0</speed>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">	
+	<xpath>Defs/ThingDef[@Name="Base130mmRocketMissilePlus"]/projectile[@Class="CombatExtended.ProjectilePropertiesCE"]</xpath>
+		<value>
+			<shellingProps>
+				<iconPath>Things/WorldObjects/Munitions/Rocket</iconPath>
+				<damage>0.28</damage>
+				<tilesPerTick>0.13</tilesPerTick>
+				<range>54</range>
+			</shellingProps>
+		</value>
+	</Operation>
+	
+	<!-- ================== 210mm shell ================== -->
+	<Operation Class="PatchOperationReplace">	
+	<xpath>Defs/ThingDef[defName="Bullet_21cmHowitzerShell_ACD" or defName="Bullet_21cmHowitzerShell_AC" or defName="Bullet_21cmHowitzerShell_HE" or defName="Bullet_21cmHowitzerShell_APHE"]/projectile[@Class="CombatExtended.ProjectilePropertiesCE"]/speed</xpath>
+		<value>
+			<speed>0</speed>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">	
+	<xpath>Defs/ThingDef[defName="Bullet_21cmHowitzerShell_HE"]/projectile[@Class="CombatExtended.ProjectilePropertiesCE"]</xpath>
+		<value>
+			<shellingProps>
+				<damage>0.45</damage>
+				<tilesPerTick>0.14</tilesPerTick>
+				<range>65</range>
+			</shellingProps>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">	
+	<xpath>Defs/ThingDef[defName="Bullet_21cmHowitzerShell_ACD" or defName="Bullet_21cmHowitzerShell_AC" or defName="Bullet_21cmHowitzerShell_APHE"]/projectile[@Class="CombatExtended.ProjectilePropertiesCE"]</xpath>
+		<value>
+			<shellingProps>
+				<damage>0.55</damage>
+				<tilesPerTick>0.15</tilesPerTick>
+				<range>68</range>
+			</shellingProps>
+		</value>
+	</Operation>
+	
+	<!-- ================== 15cm/21cm NbW Rocket ================== -->
+	<Operation Class="PatchOperationReplace">	
+	<xpath>Defs/ThingDef[@Name="BaseNbW21Rocket" or defName="Bullet_21cmNbWRocket"]/projectile[@Class="CombatExtended.ProjectilePropertiesCE"]/speed</xpath>
+		<value>
+			<speed>0</speed>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">	
+	<xpath>Defs/ThingDef[defName="Bullet_21cmNbWRocket"]/projectile[@Class="CombatExtended.ProjectilePropertiesCE"]</xpath>
+		<value>
+			<shellingProps>
+				<iconPath>Things/WorldObjects/Munitions/Rocket</iconPath>
+				<damage>0.45</damage>
+				<tilesPerTick>0.13</tilesPerTick>
+				<range>32</range>
+			</shellingProps>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">	
+	<xpath>Defs/ThingDef[defName="Bullet_15cmNbWRocket" or defName="Bullet_15cmDNbWRocket" or defName="Bullet_15cmSNbWRocket"]/projectile[@Class="CombatExtended.ProjectilePropertiesCE"]</xpath>
+		<value>
+			<shellingProps>
+				<iconPath>Things/WorldObjects/Munitions/Rocket</iconPath>
+				<damage>0.33</damage>
+				<tilesPerTick>0.14</tilesPerTick>
+				<range>28</range>
+			</shellingProps>
+		</value>
+	</Operation>
+	
+	<!-- ================== 28cm/30cm/32cm NbW Rocket ================== -->
+	<Operation Class="PatchOperationReplace">	
+	<xpath>Defs/ThingDef[@Name="BaseNbW32Rocket" or defName="Bullet_30cmNbWRocket"]/projectile[@Class="CombatExtended.ProjectilePropertiesCE"]/speed</xpath>
+		<value>
+			<speed>0</speed>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">	
+	<xpath>Defs/ThingDef[defName="Bullet_30cmNbWRocket"]/projectile[@Class="CombatExtended.ProjectilePropertiesCE"]</xpath>
+		<value>
+			<shellingProps>
+				<iconPath>Things/WorldObjects/Munitions/Rocket</iconPath>
+				<damage>0.64</damage>
+				<tilesPerTick>0.13</tilesPerTick>
+				<range>19</range>
+			</shellingProps>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">	
+	<xpath>Defs/ThingDef[defName="Bullet_28cmNbWRocket" or defName="Bullet_32cmNbWRocket"]/projectile[@Class="CombatExtended.ProjectilePropertiesCE"]</xpath>
+		<value>
+			<shellingProps>
+				<iconPath>Things/WorldObjects/Munitions/Rocket</iconPath>
+				<damage>0.6</damage>
+				<tilesPerTick>0.12</tilesPerTick>
+				<range>9</range>
+			</shellingProps>
+		</value>
+	</Operation>
+	
+</Patch>

@@ -120,4 +120,12 @@
 		</value>
 	</Operation>
 	
+	<!-- Tactical Helmet -->
+	<Operation Class="PatchOperationReplace">	
+		<xpath>Defs/ThingDef[defName="Tactical_Helmet"]/statBases/ArmorRating_Blunt</xpath>
+		<value>
+			<ArmorRating_Blunt>60</ArmorRating_Blunt>
+		</value>
+	</Operation>
+	
 </Patch>

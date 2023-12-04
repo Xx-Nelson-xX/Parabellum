@@ -46,5 +46,33 @@
       </li>
     </additionalHediffs>
   </DamageDef>
+  
+  <DamageDef ParentName="Bullet">
+    <defName>ACP</defName>
+    <label>shell</label>
+    <deathMessage>{0} has been shredded to death.</deathMessage>
+    <hediff>Shredded</hediff>
+    <hediffSolid>Crack</hediffSolid>
+    <minDamageToFragment>5</minDamageToFragment>
+    <buildingDamageFactor>6</buildingDamageFactor>
+    <plantDamageFactor>14</plantDamageFactor>
+  </DamageDef>
+  
+  <DamageDef Name="ACExp" ParentName="Bomb" Abstract="true">
+    <label>bomb</label>
+    <minDamageToFragment>99999</minDamageToFragment>
+    <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+	<buildingDamageFactor>7</buildingDamageFactor>
+    <plantDamageFactor>8</plantDamageFactor>
+  </DamageDef>
+  
+  <DamageDef ParentName="ACExp">
+    <defName>ACB</defName>
+  </DamageDef>
+  
+  <DamageDef ParentName="ACExp">
+    <defName>NuclearB</defName>
+	<explosionCenterMote>Mote_NukeCloud</explosionCenterMote>
+  </DamageDef>
 
 </Defs>

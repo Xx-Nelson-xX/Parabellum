@@ -314,7 +314,7 @@
 		<comps>
 			<li Class="CombatExtended.CompProperties_Fragments">
 				<fragments>
-					<Fragment_Large>56</Fragment_Large>
+					<Fragment_LargeProjectileFrag>56</Fragment_LargeProjectileFrag>
 					<Fragment_Small>42</Fragment_Small>
 				</fragments>
 			</li>

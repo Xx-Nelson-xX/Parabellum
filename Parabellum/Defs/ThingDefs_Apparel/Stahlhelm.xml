@@ -112,7 +112,7 @@
 			<Insulation_Cold>1</Insulation_Cold>
 			<StuffEffectMultiplierInsulation_Cold>0.25</StuffEffectMultiplierInsulation_Cold>
 			<StuffEffectMultiplierInsulation_Heat>0.25</StuffEffectMultiplierInsulation_Heat>
-			<StuffEffectMultiplierArmor>3</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierArmor>2.6</StuffEffectMultiplierArmor>
 			<ArmorRating_Sharp>9.6</ArmorRating_Sharp>
 			<ArmorRating_Blunt>16</ArmorRating_Blunt>
 			<ArmorRating_Heat>0</ArmorRating_Heat>

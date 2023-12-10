@@ -42,11 +42,4 @@
   <Pa_RPzB.label>Raketenpanzerbüchse 54/1</Pa_RPzB.label>
   <Pa_RPzB.description>One of the first Anti-Tank Rocket Launcher and also the most effective one during its war time in terms of anti-tank capability, the downside is is really bulky and heavy.</Pa_RPzB.description>
 
-
-  <!-- M320(K) Grenade Launcher -->
-
-  <Pa_M320K.label>M320(K) Grenade Launcher</Pa_M320K.label>
-  <Pa_M320K.description>An ancient compact launcher, safe, light, compact and very easy to use compared to any launcher of its age, it does have a downside, its effective range suffer way more than any conventional grenade launcher.</Pa_M320K.description>
-
-
 </LanguageData>

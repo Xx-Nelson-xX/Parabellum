@@ -91,7 +91,7 @@
 						<name>convertion</name>
 						<UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Receiver_Component</UITexPath>
 						<!--<compPropertiesObjectPatchByChildPart  Default="false" />-->
-						<postion>(0,0.1,0)</postion>
+						<postion>(0,-0.1,0)</postion>
 						<scale>(0.8,0,0.8)</scale>
 						<defultThing>Module_12GK</defultThing>
 						<allowEmpty>false</allowEmpty>
@@ -126,7 +126,6 @@
 							<thingDefs>
 								<li>Module_UBGL</li>
 								<li>Module_MasterKey</li>
-								<li>Pa_M320K</li>
 							</thingDefs>
 						</filter>
 					</li>

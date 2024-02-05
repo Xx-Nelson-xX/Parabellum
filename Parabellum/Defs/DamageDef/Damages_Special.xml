@@ -25,28 +25,6 @@
     <makesAnimalsFlee>true</makesAnimalsFlee>
   </DamageDef>
   
-  <DamageDef ParentName="Flame">
-    <defName>WP</defName>
-    <label>White Phosphorus</label>
-    <minDamageToFragment>20</minDamageToFragment>
-    <defaultDamage>15</defaultDamage>
-    <explosionHeatEnergyPerCell>30</explosionHeatEnergyPerCell>
-    <explosionCellFleck>BlastDry</explosionCellFleck>
-    <explosionColorEdge>(1, 1, 1, 0.05)</explosionColorEdge>
-    <soundExplosion>Explosion_Smoke</soundExplosion>
-	<harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
-	<additionalHediffs>
-      <li>
-        <hediff>WP_Inhalation</hediff>
-        <severityPerDamageDealt>0.04</severityPerDamageDealt>
-      </li>
-	  <li>
-        <hediff>PrometheumSoaked</hediff>
-        <severityPerDamageDealt>0.05</severityPerDamageDealt>
-      </li>
-    </additionalHediffs>
-  </DamageDef>
-  
   <DamageDef ParentName="Bullet">
     <defName>ACP</defName>
     <label>shell</label>

@@ -29,9 +29,4 @@
   <BuildRPzB.description>Builds a Raketenpanzerbüchse 54/1, the trade off is, heavier and weaker, but it has more range and can be reloaded easily.\nCaliber: 88mm RPzB HEAT Rocket</BuildRPzB.description>
   <BuildRPzB.jobString>Building RPzB 54/1.</BuildRPzB.jobString>
 
-  <Build_M320K.label>Build M320(K) Grenade Launcher</Build_M320K.label>
-  <Build_M320K.description>Builds the M320(K) Grenade Launcher,good for CQC, keep a safe distance, you won't like 40mm grenade blast your face off.\nCaliber: 40x46mm Grenade</Build_M320K.description>
-  <Build_M320K.jobString>Building M320(K) GL.</Build_M320K.jobString>
-
-
 </LanguageData>

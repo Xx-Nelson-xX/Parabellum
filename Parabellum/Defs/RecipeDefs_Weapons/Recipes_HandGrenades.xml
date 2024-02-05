@@ -439,62 +439,6 @@
         <researchPrerequisite>Grenade_C2</researchPrerequisite>
     </RecipeDef>
 	
-	<!-- M34 White Phosphorus Grenade-->
-	<RecipeDef ParentName="RangedWeaponRecipeBase">
-        <defName>MakeWPG</defName>
-        <label>make 5 M34 White Phosphorus Grenades</label>
-        <description>Willie Peter grenade, is not a war crime if the victim doesn't survive to court martial you.</description>
-        <jobString>Making 5 M34 White Phosphorus Grenades.</jobString>
-        <workAmount>4000</workAmount>
-        <soundWorking>Recipe_Machining</soundWorking>
-        <skillRequirements>
-            <Crafting>12</Crafting>
-        </skillRequirements>
-        <ingredients>
-            <li>
-                <filter>
-                    <thingDefs>
-                        <li>Weapon_Parts</li>
-                    </thingDefs>
-                </filter>
-                <count>5</count>
-            </li>
-            <li>
-                <filter>
-                    <thingDefs>
-                        <li>Chemfuel</li>
-                    </thingDefs>
-                </filter>
-                <count>50</count>
-            </li>
-            <li>
-                <filter>
-                    <categories>
-                        <li>Metallic</li>
-                    </categories>
-                </filter>
-                <count>30</count>
-            </li>
-        </ingredients>
-        <products>
-            <Pa_WPG>5</Pa_WPG>
-        </products>
-        <fixedIngredientFilter>
-            <thingDefs>
-                <li>Chemfuel</li>
-				<li>Weapon_Parts</li>
-            </thingDefs>
-            <categories>
-                <li>SLDBar</li>
-                <li>USLDBar</li>
-            </categories>
-        </fixedIngredientFilter>
-        <recipeUsers>
-            <li>WeaponCraftingWorkTable</li>
-        </recipeUsers>
-        <researchPrerequisite>Parabellum_I</researchPrerequisite>
-    </RecipeDef>
-	
 	<!-- Dirty Bomb -->
 	<RecipeDef MayRequire="Dubwise.Rimatomics" ParentName="RangedWeaponRecipeBase">
         <defName>MakeDB</defName>

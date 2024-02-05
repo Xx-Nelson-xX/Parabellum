@@ -53,7 +53,7 @@
 			<Mass>2.06</Mass>
 			<Bulk>5.6</Bulk>
 		</statBases>
-		<ammoClass>50mmAPHE</ammoClass>
+		<ammoClass>Pa_50mmAPHE</ammoClass>
 		<cookOffProjectile>Bullet_50mmCannonShell_APHE</cookOffProjectile>
 	</ThingDef>
 
@@ -69,7 +69,7 @@
 			<Mass>1.82</Mass>
 			<Bulk>6.2</Bulk>
 		</statBases>
-		<ammoClass>50mmHE</ammoClass>
+		<ammoClass>Pa_50mmHE</ammoClass>
 		<generateAllowChance>0.5</generateAllowChance>
 		<cookOffProjectile>Bullet_50mmCannonShell_HE</cookOffProjectile>
 	</ThingDef>
@@ -86,7 +86,7 @@
 			<Mass>0.925</Mass>
 			<Bulk>4.1</Bulk>
 		</statBases>
-		<ammoClass>50mmAPCR</ammoClass>
+		<ammoClass>Pa_50mmAPCR</ammoClass>
 		<generateAllowChance>0.15</generateAllowChance>
 		<cookOffProjectile>Bullet_50mmCannonShell_APCR</cookOffProjectile>
 	</ThingDef>

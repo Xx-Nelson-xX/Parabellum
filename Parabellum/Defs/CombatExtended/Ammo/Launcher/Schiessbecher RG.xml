@@ -52,7 +52,7 @@
 			<Bulk>0.9</Bulk>
 			<MarketValue>10</MarketValue>
 		</statBases>
-		<ammoClass>SchiessbecherHEAT</ammoClass>
+		<ammoClass>Pa_SchiessbecherHEAT</ammoClass>
 		<detonateProjectile>Bullet_61mmGPG_HEAT</detonateProjectile>
 	</ThingDef>
 	
@@ -85,7 +85,7 @@
 			<SightsEfficiency>0.65</SightsEfficiency>
 			<RangedWeapon_Cooldown>0.5</RangedWeapon_Cooldown>
 		</statBases>
-		<ammoClass>SchiessbecherHE</ammoClass>
+		<ammoClass>Pa_SchiessbecherHE</ammoClass>
 		<detonateProjectile>Proj_Grenade30mmGSG</detonateProjectile>
 		<generateCommonality>0.5</generateCommonality>
 		<weaponTags>

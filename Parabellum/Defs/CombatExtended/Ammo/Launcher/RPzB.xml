@@ -61,7 +61,7 @@
 			<Bulk>4.1</Bulk>
 			<MarketValue>52</MarketValue>
 		</statBases>
-		<ammoClass>RPzBHEAT</ammoClass>
+		<ammoClass>Pa_RPzBHEAT</ammoClass>
 		<detonateProjectile>Bullet_88mmRPzB_HEAT</detonateProjectile>
 	</ThingDef>
 	
@@ -77,7 +77,7 @@
 			<Bulk>4.8</Bulk>
 			<MarketValue>67</MarketValue>
 		</statBases>
-		<ammoClass>RPzBFrag</ammoClass>
+		<ammoClass>Pa_RPzBFrag</ammoClass>
 		<generateAllowChance>0.35</generateAllowChance>
 		<detonateProjectile>Bullet_88mmRPzB_Frag</detonateProjectile>
 	</ThingDef>
@@ -94,7 +94,7 @@
 			<Bulk>7.29</Bulk>
 			<MarketValue>72</MarketValue>
 		</statBases>
-		<ammoClass>8cmRVWHE</ammoClass>
+		<ammoClass>Pa_8cmRVWHE</ammoClass>
 		<detonateProjectile>Bullet_8cmRVW_HE</detonateProjectile>
 	</ThingDef>
 

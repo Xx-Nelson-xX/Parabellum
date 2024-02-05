@@ -14,7 +14,7 @@
 		<statBases>
 			<MarketValue>0.95</MarketValue>
 		</statBases>
-		<ammoClass>9mmJHP</ammoClass>
+		<ammoClass>Pa_9mmJHP</ammoClass>
 		<cookOffProjectile>Bullet_9x19mmPara_JHP</cookOffProjectile>
 		<generateAllowChance>0.2</generateAllowChance>
 	</ThingDef>
@@ -95,7 +95,7 @@
 		<statBases>
 			<MarketValue>1</MarketValue>
 		</statBases>
-		<ammoClass>45Super</ammoClass>
+		<ammoClass>Pa_45Super</ammoClass>
 		<cookOffProjectile>Bullet_45ACP_Super</cookOffProjectile>
 		<generateAllowChance>0.2</generateAllowChance>
 	</ThingDef>
@@ -179,7 +179,7 @@
 		<statBases>
 			<MarketValue>1.9</MarketValue>
 		</statBases>
-		<ammoClass>556x45mmD</ammoClass>
+		<ammoClass>Pa_556x45mmD</ammoClass>
 		<cookOffProjectile>Bullet_556x45mmNATO_D</cookOffProjectile>
 		<generateAllowChance>0.1</generateAllowChance>
 	</ThingDef>
@@ -262,7 +262,7 @@
 		<statBases>
 			<MarketValue>2.4</MarketValue>
 		</statBases>
-		<ammoClass>762x39mmI</ammoClass>
+		<ammoClass>Pa_762x39mmI</ammoClass>
 		<cookOffProjectile>Bullet_762x39mmSoviet_I</cookOffProjectile>
 		<generateAllowChance>0.2</generateAllowChance>
 	</ThingDef>
@@ -358,7 +358,7 @@
 		<statBases>
 			<MarketValue>2.85</MarketValue>
 		</statBases>
-		<ammoClass>303BritishI</ammoClass>
+		<ammoClass>Pa_303BritishI</ammoClass>
 		<cookOffProjectile>Bullet_303British_I</cookOffProjectile>
 		<generateAllowChance>0.2</generateAllowChance>
 	</ThingDef>
@@ -454,7 +454,7 @@
 		<statBases>
 			<MarketValue>3.1</MarketValue>
 		</statBases>
-		<ammoClass>762x51mmT</ammoClass>
+		<ammoClass>Pa_762x51mmT</ammoClass>
 		<cookOffProjectile>Bullet_762x51mmNATO_T</cookOffProjectile>
 		<generateAllowChance>0.1</generateAllowChance>
 	</ThingDef>

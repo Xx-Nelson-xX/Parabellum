@@ -32,7 +32,7 @@
 			<Bulk>0.08</Bulk>
 			<MarketValue>1.2</MarketValue>
 		</statBases>
-		<ammoClass>10GBS</ammoClass>
+		<ammoClass>Pa_10GBS</ammoClass>
 		<cookOffProjectile>Bullet_10Gauge_Buck</cookOffProjectile>
 		<generateAllowChance>0.5</generateAllowChance>
 	</ThingDef>
@@ -47,7 +47,7 @@
 		<statBases>
 			<MarketValue>0.05</MarketValue>
 		</statBases>
-		<ammoClass>SSalt</ammoClass>
+		<ammoClass>Pa_SSalt</ammoClass>
 		<cookOffProjectile>Bullet_Gauge_Salt</cookOffProjectile>
 		<generateAllowChance>0.1</generateAllowChance>
 	</ThingDef>
@@ -63,7 +63,7 @@
 			<Mass>0.08</Mass>
 			<MarketValue>1.25</MarketValue>
 		</statBases>
-		<ammoClass>Magnum</ammoClass>
+		<ammoClass>Pa_Magnum</ammoClass>
 		<cookOffProjectile>Bullet_12Gauge_Magnum</cookOffProjectile>
 		<generateAllowChance>0.2</generateAllowChance>
 	</ThingDef>

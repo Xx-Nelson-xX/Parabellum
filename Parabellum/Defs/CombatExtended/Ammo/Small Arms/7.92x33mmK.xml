@@ -47,7 +47,7 @@
 			<Mass>0.0144</Mass>
 			<MarketValue>1.4</MarketValue>
 		</statBases>
-		<ammoClass>792mmKFMJ</ammoClass>
+		<ammoClass>Pa_792mmKFMJ</ammoClass>
 		<cookOffProjectile>Bullet_792x33mmK_FMJ</cookOffProjectile>
 	</ThingDef>
 	
@@ -62,7 +62,7 @@
 			<Mass>0.016</Mass>
 			<MarketValue>1.8</MarketValue>
 		</statBases>
-		<ammoClass>792mmKAP</ammoClass>
+		<ammoClass>Pa_792mmKAP</ammoClass>
 		<generateAllowChance>0.6</generateAllowChance>
 		<cookOffProjectile>Bullet_792x33mmK_AP</cookOffProjectile>
 	</ThingDef>
@@ -78,7 +78,7 @@
 			<Mass>0.0152</Mass>
 			<MarketValue>2.0</MarketValue>
 		</statBases>
-		<ammoClass>792mmKJ</ammoClass>
+		<ammoClass>Pa_792mmKJ</ammoClass>
 		<generateAllowChance>0.2</generateAllowChance>
 		<cookOffProjectile>Bullet_792x33mmK_J</cookOffProjectile>
 	</ThingDef>

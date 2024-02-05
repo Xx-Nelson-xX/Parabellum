@@ -11,6 +11,7 @@ Turrets:
 Ammo:
 - 30mm Flak ammo, Small Special Explosive shell filled with fragments, made with special fuze that detonate the warhead under specific condition and create airbust effect to maximize its effective blast range and area of effect, usually used against aircraft.
 - 30mm APCR ammo, Armor Piercing, Composed Rigid ammunition ammunition for 3cm/30mm cannon, High velocity solid slug design purely for armor penetration with concentrated kinetic energy through a small impact area.
+- 7.5cm Kt. Kw. K., Canister ammo, Canister ammunition for 75mm howitzer, large size buckshot for light howitzer at close range for anti-personel defense.
 - 130mm HE-FRAG rocket, High Explosive - Fragmentation, Large size rocket filled with TNT explosive and fragments, though more fragments than TNT explosive.
 - 130mm HEI rocket, High Explosive Incendiary, Large size rocket filled with incendiary agent and small amount of TNT explosive and some fragments.
 
@@ -25,11 +26,17 @@ Tweaks:
 +Buffed Tactical Helmet blunt protection up to 60 as baseline with steel, now can fully tank 7.62x51mm NATO non AP ammo
 *Removed Muzzle Flas from De Lisle Carbine
 *Chnaged Bunker Storage Texture still WIP though
+-Removed M34 WP grenade and anything related to it, the feature got shafted with Rimworld Gas overhaul, which in the end I decided to remove it an probably start from scratch
++Fixes for Mote to Fleck changes which cause some old weapons/turret waste all their ammo in single attack
+*Remove M320 GL residual codes from the mod
++Changed all AmmoCategories/AmmoClass defName to be more unified and Localization friendly
++Fix for Smine despawn issue, supposedly
+*Removed unused Flamethrower fuel
 *Added Off map artillery ability to following turrets:
  - Nebelwerfer(All variants)
  - Raketen-Vielfachwerfer(8cm rocket)
  - 8cm GrW(8cm Mortars)
- - Type 63 MRL
+ - Type 63 MRL(130mm rocket)
  - Morser 16 and 18(21cm shell)
 
 <--------------------------------------- 1.8(RW 1.4 Alpha) -------------------------------------------->

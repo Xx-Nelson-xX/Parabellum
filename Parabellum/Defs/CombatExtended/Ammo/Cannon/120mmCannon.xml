@@ -15,7 +15,7 @@
 		<statBases>
 			<MarketValue>160</MarketValue>
 		</statBases>
-		<ammoClass>120mmCanister</ammoClass>
+		<ammoClass>Pa_120mmCanister</ammoClass>
 		<generateAllowChance>0.4</generateAllowChance>
 		<detonateProjectile>Bullet_120mmCannonShell_Canister</detonateProjectile>
 	</ThingDef>
@@ -33,7 +33,7 @@
 			<MarketValue>158</MarketValue>
 			<Mass>27.2</Mass>
 		</statBases>
-		<ammoClass>120mmHESH</ammoClass>
+		<ammoClass>Pa_120mmHESH</ammoClass>
 		<detonateProjectile>Bullet_120mmCannonShell_HESH</detonateProjectile>
 	</ThingDef>
 
@@ -50,7 +50,7 @@
 			<MarketValue>156</MarketValue>
 			<Mass>13.5</Mass>
 		</statBases>
-		<ammoClass>120mmStun</ammoClass>
+		<ammoClass>Pa_120mmStun</ammoClass>
 		<generateAllowChance>0</generateAllowChance>
 		<detonateProjectile>Bullet_120mmCannonShell_Stun</detonateProjectile>
 	</ThingDef>
@@ -69,9 +69,9 @@
 			<damageDef>Bullet</damageDef>
 			<damageAmountBase>12</damageAmountBase>
 			<pelletCount>550</pelletCount><!-- 1100 OG-->
-			<spreadMult>31.8</spreadMult>
+			<spreadMult>28.6</spreadMult>
 			<armorPenetrationSharp>14</armorPenetrationSharp>
-			<armorPenetrationBlunt>32.5</armorPenetrationBlunt>
+			<armorPenetrationBlunt>72.5</armorPenetrationBlunt>
 		</projectile>
 	</ThingDef>
 

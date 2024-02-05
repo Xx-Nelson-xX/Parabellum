@@ -27,7 +27,7 @@
 			<Mass>1.7</Mass>
 			<Bulk>8</Bulk>
 		</statBases>
-		<ammoClass>TEA</ammoClass>
+		<ammoClass>Pa_TEA</ammoClass>
 		<cookOffProjectile>Bullet_FLASH</cookOffProjectile>
 	</ThingDef>
 

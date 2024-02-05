@@ -53,6 +53,13 @@
 	</Operation>
 	
 	<Operation Class="PatchOperationReplace">	
+	<xpath>Defs/ThingDef/projectile[@Class="CombatExtended.ProjectilePropertiesCE"]/casingMoteDefname[text()="Mote_ShotgunShell"]</xpath>
+		<value>
+			<casingMoteDefname>Fleck_ShotgunShell</casingMoteDefname>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">	
 	<xpath>Defs/ThingDef[defName="Pa_DB"]/modExtensions</xpath>
 		<value>
 			<modExtensions>

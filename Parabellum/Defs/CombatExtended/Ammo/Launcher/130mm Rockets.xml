@@ -16,7 +16,7 @@
 			<Bulk>9.2</Bulk>
 			<MarketValue>120</MarketValue>
 		</statBases>
-		<ammoClass>130mmHEFR</ammoClass>
+		<ammoClass>Pa_130mmHEFR</ammoClass>
 		<cookOffProjectile>Bullet_130mmRocketMissileHEFRAG</cookOffProjectile>
 	</ThingDef>
 	
@@ -33,7 +33,7 @@
 			<Bulk>10</Bulk>
 			<MarketValue>150</MarketValue>
 		</statBases>
-		<ammoClass>130mmHEIR</ammoClass>
+		<ammoClass>Pa_130mmHEIR</ammoClass>
 		<cookOffProjectile>Bullet_130mmRocketMissileHEI</cookOffProjectile>
 	</ThingDef>
 

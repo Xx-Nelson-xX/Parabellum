@@ -55,7 +55,7 @@
 			<Mass>109.55</Mass>
 			<Bulk>151.3</Bulk>
 		</statBases>
-		<ammoClass>21cmHER</ammoClass>
+		<ammoClass>Pa_21cmHER</ammoClass>
 		<generateAllowChance>0.85</generateAllowChance>
 		<cookOffProjectile>Bullet_21cmNbWRocket</cookOffProjectile>
 	</ThingDef>
@@ -71,7 +71,7 @@
 		<statBases>
 			<MarketValue>180</MarketValue>
 		</statBases>
-		<ammoClass>15cmHER</ammoClass>
+		<ammoClass>Pa_15cmHER</ammoClass>
 		<cookOffProjectile>Bullet_15cmNbWRocket</cookOffProjectile>
 	</ThingDef>
 	
@@ -86,7 +86,7 @@
 		<statBases>
 			<MarketValue>195</MarketValue>
 		</statBases>
-		<ammoClass>15cmDHER</ammoClass>
+		<ammoClass>Pa_15cmDHER</ammoClass>
 		<generateAllowChance>0.15</generateAllowChance>
 		<cookOffProjectile>Bullet_15cmDNbWRocket</cookOffProjectile>
 	</ThingDef>
@@ -104,7 +104,7 @@
 			<Mass>35.9</Mass>
 			<Bulk>76.3</Bulk>
 		</statBases>
-		<ammoClass>15cmSR</ammoClass>
+		<ammoClass>Pa_15cmSR</ammoClass>
 		<generateAllowChance>0.15</generateAllowChance>
 		<cookOffProjectile>Bullet_15cmSNbWRocket</cookOffProjectile>
 	</ThingDef>

@@ -58,7 +58,7 @@
 			<Mass>82</Mass>
 			<Bulk>132.6</Bulk>
 		</statBases>
-		<ammoClass>28cmHER</ammoClass>
+		<ammoClass>Pa_28cmHER</ammoClass>
 		<generateAllowChance>0.6</generateAllowChance>
 		<cookOffProjectile>Bullet_28cmNbWRocket</cookOffProjectile>
 	</ThingDef>
@@ -76,7 +76,7 @@
 			<Mass>127</Mass>
 			<Bulk>161.4</Bulk>
 		</statBases>
-		<ammoClass>30cmHER</ammoClass>
+		<ammoClass>Pa_30cmHER</ammoClass>
 		<generateAllowChance>0.3</generateAllowChance>
 		<cookOffProjectile>Bullet_30cmNbWRocket</cookOffProjectile>
 	</ThingDef>
@@ -95,7 +95,7 @@
 			<Bulk>147.4</Bulk>
 			<Flammability>1.5</Flammability>
 		</statBases>
-		<ammoClass>32cmIncendiaryR</ammoClass>
+		<ammoClass>Pa_32cmIncendiaryR</ammoClass>
 		<cookOffProjectile>Bullet_32cmNbWRocket</cookOffProjectile>
 	</ThingDef>
 	

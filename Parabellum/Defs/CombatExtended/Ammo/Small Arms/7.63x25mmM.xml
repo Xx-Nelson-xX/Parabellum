@@ -55,7 +55,7 @@
 		<statBases>
 			<MarketValue>0.5</MarketValue>
 		</statBases>
-		<ammoClass>763mmMFMJ</ammoClass>
+		<ammoClass>Pa_763mmMFMJ</ammoClass>
 		<cookOffProjectile>Bullet_763x25mmM_FMJ</cookOffProjectile>
 	</ThingDef>
 	
@@ -69,7 +69,7 @@
 		<statBases>
 			<MarketValue>0.6</MarketValue>
 		</statBases>
-		<ammoClass>763mmMHP</ammoClass>
+		<ammoClass>Pa_763mmMHP</ammoClass>
 		<generateAllowChance>0.4</generateAllowChance>
 		<cookOffProjectile>Bullet_763x25mmM_HP</cookOffProjectile>
 	</ThingDef>

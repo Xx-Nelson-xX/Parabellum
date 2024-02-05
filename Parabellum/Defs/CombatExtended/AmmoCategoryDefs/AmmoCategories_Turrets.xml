@@ -3,21 +3,21 @@
 
   <!-- ==================== Nebelwerfer(28cm/30cm/32cm) ========================== -->
   <CombatExtended.AmmoCategoryDef>
-    <defName>28cmHER</defName>
-    <label>28cm High Explosive Rocket</label>
+    <defName>Pa_28cmHER</defName>
+    <label>Pa_28cm High Explosive Rocket</label>
     <labelShort>28cm HE Rocket</labelShort>
     <description>Large size rocket filled with TNT explosive and fragments.</description>
   </CombatExtended.AmmoCategoryDef>
   
   <CombatExtended.AmmoCategoryDef>
-    <defName>30cmHER</defName>
+    <defName>Pa_30cmHER</defName>
     <label>30cm High Explosive Rocket</label>
     <labelShort>30cm HE Rocket</labelShort>
     <description>Improved large size rocket filled with TNT explosive and fragments.</description>
   </CombatExtended.AmmoCategoryDef>
   
   <CombatExtended.AmmoCategoryDef>
-    <defName>32cmIncendiaryR</defName>
+    <defName>Pa_32cmIncendiaryR</defName>
     <label>32cm Incendiary Rocket</label>
     <labelShort>32cm Incendiary Rocket</labelShort>
     <description>Large size rocket filled with incendiary agent.</description>
@@ -25,28 +25,28 @@
   
   <!-- ==================== Nebelwerfer (15cm/21cm) ========================== -->
   <CombatExtended.AmmoCategoryDef>
-    <defName>21cmHER</defName>
+    <defName>Pa_21cmHER</defName>
     <label>21cm High Explosive Rocket</label>
     <labelShort>21cm HE Rocket</labelShort>
     <description>Large size rocket filled with TNT explosive and fragments.</description>
   </CombatExtended.AmmoCategoryDef>
   
   <CombatExtended.AmmoCategoryDef>
-    <defName>15cmHER</defName>
+    <defName>Pa_15cmHER</defName>
     <label>15cm High Explosive Rocket</label>
     <labelShort>15cm HE Rocket</labelShort>
     <description>Large size rocket filled with TNT explosive and fragments.</description>
   </CombatExtended.AmmoCategoryDef>
   
   <CombatExtended.AmmoCategoryDef>
-    <defName>15cmDHER</defName>
+    <defName>Pa_15cmDHER</defName>
     <label>15cm High Explosive Rocket(D)</label>
     <labelShort>15cm DHE Rocket</labelShort>
     <description>Large size rocket filled with TNT explosive and fragments.</description>
   </CombatExtended.AmmoCategoryDef>
   
   <CombatExtended.AmmoCategoryDef>
-    <defName>15cmSR</defName>
+    <defName>Pa_15cmSR</defName>
     <label>15cm Smoke Rocket</label>
     <labelShort>15cm Smoke Rocket</labelShort>
     <description>Large size rocket filled with chemical to produce huge smoke screen.</description>
@@ -55,14 +55,14 @@
   <!-- ==================== Type 63 130mm rocket ========================== -->
   
   <CombatExtended.AmmoCategoryDef>
-    <defName>130mmHEFR</defName>
+    <defName>Pa_130mmHEFR</defName>
     <label>130mm rocket(HE-FRAG)</label>
     <labelShort>130mm HE-FRAG Rocket</labelShort>
     <description>Large size rocket filled with TNT explosive and fragments, though more fragments than TNT explosive.</description>
   </CombatExtended.AmmoCategoryDef>
   
   <CombatExtended.AmmoCategoryDef>
-    <defName>130mmHEIR</defName>
+    <defName>Pa_130mmHEIR</defName>
     <label>130mm rocket(HEI)</label>
     <labelShort>130mm HEI Rocket</labelShort>
     <description>Large size rocket filled with incendiary agent and small amount of TNT explosive and some fragments.</description>
@@ -70,21 +70,21 @@
   
   <!-- ==================== Mörser 16/18 (21cm) ========================== -->
   <CombatExtended.AmmoCategoryDef>
-    <defName>21cmAC</defName>
+    <defName>Pa_21cmAC</defName>
     <label>21cm Anti-Concrete Howitzer Shell</label>
     <labelShort>21cm AC</labelShort>
     <description>Primitive bunker buster shell, when grenades and demolition charge is not powerful enough for the job.</description>
   </CombatExtended.AmmoCategoryDef>
   
   <CombatExtended.AmmoCategoryDef>
-    <defName>21cmHE</defName>
+    <defName>Pa_21cmHE</defName>
     <label>21cm High Explosive Howitzer Shell</label>
     <labelShort>21cm HE</labelShort>
     <description>A 113kg shell filled with TNT and fragments, powerful enough to smack large buildings and fortification.</description>
   </CombatExtended.AmmoCategoryDef>
   
   <CombatExtended.AmmoCategoryDef>
-    <defName>21cmAPHE</defName>
+    <defName>Pa_21cmAPHE</defName>
     <label>21cm High Explosive Anti-Concrete Howitzer Shell</label>
     <labelShort>21cm APHE</labelShort>
     <description>Improved version of the previous one, with larger explosive payload and fragment but it reduce the direct impact damage.</description>
@@ -92,21 +92,21 @@
   
   <!-- ==================== 120mm Cannon Shell ========================== -->
   <CombatExtended.AmmoCategoryDef>
-    <defName>120mmCanister</defName>
+    <defName>Pa_120mmCanister</defName>
     <label>120mm Canister Shell</label>
     <labelShort>120mm Canister</labelShort>
     <description>Equivalent of shotgun's buckshot but for 120mm cannons.</description>
   </CombatExtended.AmmoCategoryDef>
   
   <CombatExtended.AmmoCategoryDef>
-    <defName>120mmHESH</defName>
+    <defName>Pa_120mmHESH</defName>
     <label>120mm HESH Shell</label>
     <labelShort>120mm HESH</labelShort>
     <description>High-Explosive Squash Head ammunition for 120mm cannons.</description>
   </CombatExtended.AmmoCategoryDef>
   
   <CombatExtended.AmmoCategoryDef>
-    <defName>120mmStun</defName>
+    <defName>Pa_120mmStun</defName>
     <label>120mm Stun Shell</label>
     <labelShort>120mm Stun</labelShort>
     <description>Non-Lethal Stun ammunition for 120mm cannon.</description>
@@ -114,7 +114,7 @@
   
   <!-- ==================== 3cm Cannon Shells ========================== -->
   <CombatExtended.AmmoCategoryDef>
-    <defName>30mmAPCR</defName>
+    <defName>Pa_30mmAPCR</defName>
     <label>30mm APCR</label>
     <labelShort>30mm(APCR)</labelShort>
     <description>Armor Piercing, Composed Rigid ammunition ammunition for 3cm/30mm cannon, High velocity solid slug design purely for armor penetration with concentrated kinetic energy through a small impact area.</description>
@@ -122,28 +122,28 @@
   
   <!-- ==================== 3.7cm Cannon Shells ========================== -->
   <CombatExtended.AmmoCategoryDef>
-    <defName>37mmAPHE</defName>
+    <defName>Pa_37mmAPHE</defName>
     <label>3.7cm Pzgr.Patr.mit Bdz. 5103º(APHE)</label>
     <labelShort>3.7cm APHE</labelShort>
     <description>Armor Piercing High Explosive ammunition for 3.7cm cannon, actually more metal slug than explosive payload so don't expect too much blast radius and fragmentation from it.</description>
   </CombatExtended.AmmoCategoryDef>
   
   <CombatExtended.AmmoCategoryDef>
-    <defName>37mmHE</defName>
+    <defName>Pa_37mmHE</defName>
     <label>3.7cm Gr.Sprgr 40 mit A.Z.39(HE)</label>
     <labelShort>3.7cm HE</labelShort>
     <description>High Explosive ammunition for 3.7cmm cannon, standard AA shells, very effective counter light armored/soft target.</description>
   </CombatExtended.AmmoCategoryDef>
   
   <CombatExtended.AmmoCategoryDef>
-    <defName>37mmAPCR</defName>
+    <defName>Pa_37mmAPCR</defName>
     <label>3.7cm Pzgr. 40/37(APCR)</label>
     <labelShort>3.7cm APCR</labelShort>
     <description>Armor Piercing, Composed Rigid ammunition for 3.7cm cannon, High velocity solid slug design purely for armor penetration with concentrated kinetic energy through a small impact area.</description>
   </CombatExtended.AmmoCategoryDef>
   
   <CombatExtended.AmmoCategoryDef>
-    <defName>37mmCanister</defName>
+    <defName>Pa_37mmCanister</defName>
     <label>3.7cm Ktgr 169(f)(Canister)</label>
     <labelShort>3.7cm Canister</labelShort>
     <description>Canister ammunition for 3.7cm cannon, large size buckshot for light cannon and tank gun at close range anti-personel defense.</description>
@@ -151,21 +151,21 @@
   
   <!-- ==================== 5cm Cannon Shells ========================== -->
   <CombatExtended.AmmoCategoryDef>
-    <defName>50mmAPHE</defName>
+    <defName>Pa_50mmAPHE</defName>
     <label>5cm Pzgr. 39(APHE)</label>
     <labelShort>5cm APHE</labelShort>
     <description>Armor Piercing High Explosive ammunition for 50mm cannon, actually more metal slug than explosive payload so don't expect too much blast radius and fragmentation from it.</description>
   </CombatExtended.AmmoCategoryDef>
   
   <CombatExtended.AmmoCategoryDef>
-    <defName>50mmHE</defName>
+    <defName>Pa_50mmHE</defName>
     <label>5cm Sprgr. 38(HE)</label>
     <labelShort>5cm HE</labelShort>
     <description>High Explosive ammunition for 50mm cannon, not that powerful but it gets the job done.</description>
   </CombatExtended.AmmoCategoryDef>
   
   <CombatExtended.AmmoCategoryDef>
-    <defName>50mmAPCR</defName>
+    <defName>Pa_50mmAPCR</defName>
     <label>5cm Pzgr. 40(APCR)</label>
     <labelShort>5cm APCR</labelShort>
     <description>Armor Piercing, Composed Rigid ammunition for 50mm cannon, High velocity solid slug design purely for armor penetration with concentrated kinetic energy through a small impact area.</description>
@@ -173,28 +173,35 @@
   
   <!-- ==================== 7.5cm Cannon Shells ========================== -->
   <CombatExtended.AmmoCategoryDef>
-    <defName>75mmAPCBCHE</defName>
+    <defName>Pa_75mmAPCBCHE</defName>
     <label>7.5cm Pzgr 39(APCBC-HE)</label>
     <labelShort>7.5cm APCBC-HE</labelShort>
     <description>Armor Piercing Capped Ballistic Cap - High Explosive ammunition for 75mm AT gun, still more metal slug than explosive charge so don't expect too much blast radius and fragmentation from it, the Ballistic Cap increase the stability of the projectile but it add extra weight for the projectile which reduce the travel speed slightly.</description>
   </CombatExtended.AmmoCategoryDef>
   
   <CombatExtended.AmmoCategoryDef>
-    <defName>75mmHE</defName>
+    <defName>Pa_75mmHE</defName>
     <label>7.5cm Sprgr.Patr.34(HE)</label>
     <labelShort>7.5cm HE</labelShort>
     <description>Standard 7.5cm High Explosive ammunition for light artillery, relatively low velocity projectile loaded with explosive payload.</description>
   </CombatExtended.AmmoCategoryDef>
   
   <CombatExtended.AmmoCategoryDef>
-    <defName>75mmAPCR</defName>
+    <defName>Pa_75mmAPCR</defName>
     <label>7.5cm Pzgr 40(APCR)</label>
     <labelShort>7.5cm APCR</labelShort>
     <description>Armor Piercing Composite Rigid ammunition for 75mm cannon, designed to take out Armored Target with purely concentrated kinetic energy in high speed, rather expensive to produce due the usage of Tungsten.</description>
   </CombatExtended.AmmoCategoryDef>
   
   <CombatExtended.AmmoCategoryDef>
-    <defName>75mmHEAT</defName>
+    <defName>Pa_75mmCanister</defName>
+    <label>7.5cm Kt. Kw. K.(Canister)</label>
+    <labelShort>7.5cm Canister</labelShort>
+    <description>Kt. Kw. Kartätschenpatrone - Canister ammunition for 75mm howitzer, large size buckshot for light howitzer at close range for anti-personel defense.</description>
+  </CombatExtended.AmmoCategoryDef>
+  
+  <CombatExtended.AmmoCategoryDef>
+    <defName>Pa_75mmHEAT</defName>
     <label>7.5cm Gr.Patr.38 HL/B(HEAT)</label>
     <labelShort>7.5cm HEAT</labelShort>
     <description>Standard 7.5cm High Explosive Anti-Tank ammunition for light artillery and assault gun, usually short barrel cannon, to give them anti-tank capability during unexpected encounter with armored target.</description>
@@ -202,7 +209,7 @@
   
   <!-- ==================== 90mm Cannon Shells ========================== -->
   <CombatExtended.AmmoCategoryDef>
-    <defName>90mmFlechette</defName>
+    <defName>Pa_90mmFlechette</defName>
     <label>90mm M580 APERS-T(Flechette)</label>
     <labelShort>90mm APERS-T</labelShort>
     <description>Equivalent of shotgun's flechette but for 90mm cannons.</description>
@@ -210,42 +217,42 @@
   
   <!-- ==================== 12.8cm Cannon Shells ========================== -->
   <CombatExtended.AmmoCategoryDef>
-    <defName>128mmAPC</defName>
+    <defName>Pa_128mmAPC</defName>
     <label>128mm Pzgr. 40/43(APC)</label>
     <labelShort>12.8cm APC</labelShort>
     <description>Armor Piercing Capped ammunition for 128mm cannon, actually more metal slug than explosive charge so don't expect too much blast radius and fragmentation from it.</description>
   </CombatExtended.AmmoCategoryDef>
   
   <CombatExtended.AmmoCategoryDef>
-    <defName>128mmAPCBCHE</defName>
+    <defName>Pa_128mmAPCBCHE</defName>
     <label>12.8cm Pzgr. 39/43(APCBC-HE)</label>
     <labelShort>12.8cm APCBC-HE</labelShort>
     <description>Armor Piercing Capped Ballistic Cap - High Explosive ammunition for 128mm cannon, still more metal slug than explosive charge so don't expect too much blast radius and fragmentation from it, the Ballistic Cap increase the stability of the projectile but it add extra weight for the projectile which reduce the travel speed slightly.</description>
   </CombatExtended.AmmoCategoryDef>
   
   <CombatExtended.AmmoCategoryDef>
-    <defName>128mmHE</defName>
+    <defName>Pa_128mmHE</defName>
     <label>12.8cm Sprgr. L/5(HE)</label>
     <labelShort>12.8cm HE</labelShort>
     <description>Standard 128mm High Explosive ammunition for AA purpose, devastating explosive and fragmentation effect, and thanks to the size of the projectile, is powerful enough to knockout medium vehicle without any anti-explosive defense with a direct hit.</description>
   </CombatExtended.AmmoCategoryDef>
   
   <CombatExtended.AmmoCategoryDef>
-    <defName>128mmAPCR</defName>
+    <defName>Pa_128mmAPCR</defName>
     <label>12.8/8.8cm Pzgr. Ts(APCR)</label>
     <labelShort>12.8cm APCR</labelShort>
     <description>Armor Piercing Composite Rigid ammunition for 128mm cannon, designed to take out Armored Target with purely concentrated kinetic energy in high speed, the ammunition is compose of a single piece of 88mm slug fixed with 2 rings for stabilization, supercharged by 128mm case, not entirely an APFSDS but close.</description>
   </CombatExtended.AmmoCategoryDef>
   
   <CombatExtended.AmmoCategoryDef>
-    <defName>155mmNuke</defName>
+    <defName>Pa_155mmNuke</defName>
     <label>155mm W48 AFAP shell</label>
     <labelShort>155mm AFAP</labelShort>
     <description>W48 Artillery Fired Atomic Projectile(AFAP) for 6.1" artillery, it's not powerful as any conventional Nuclaer warheads but still, careful with where you are aiming with it.</description>
   </CombatExtended.AmmoCategoryDef>
   
   <CombatExtended.AmmoCategoryDef>
-    <defName>155mmADAM</defName>
+    <defName>Pa_155mmADAM</defName>
     <label>155mm ADAM shell(AP)</label>
     <labelShort>155mm ADAM</labelShort>
     <description>Area Denial Artillery Munition(ADAM) for 6.1" artillery, drops 36 M67 Anti-Personnel mines after the shell is opened, don't walk over them.</description>

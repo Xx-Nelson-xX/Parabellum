@@ -29,9 +29,4 @@
   <BuildRPzB.description>Собирает Raketenpanzerbüchse 54/1, компромисс, тяжелее и слабее, но он имеет большую дальность и легко перезаряжается. \ Калибр: 88 мм RPzB HEAT Rocket</BuildRPzB.description>
   <BuildRPzB.jobString>Собрана RPzB 54/1.</BuildRPzB.jobString>
 
-  <Build_M320K.label>Собрать Гранатомет M320(K)</Build_M320K.label>
-  <Build_M320K.description>Собирает гранатомет M320 (K), хорош для CQC, держитесь на безопасном расстоянии, вам не понравится 40-мм граната, разорвавшая ваше лицо. \ Калибр: 40x46 мм граната</Build_M320K.description>
-  <Build_M320K.jobString>Собран M320(K) GL.</Build_M320K.jobString>
-
-
 </LanguageData>

@@ -27,6 +27,7 @@
 		<ammoTypes>
 			<Ammo_75mmCannonShell_HE>Bullet_75mmCannonShell_HEID</Ammo_75mmCannonShell_HE>
 			<Ammo_75mmCannonShell_HEAT>Bullet_75mmCannonShell_HEAT</Ammo_75mmCannonShell_HEAT>
+			<Ammo_75mmCannonShell_Canister>Bullet_75mmCannonShell_Canister</Ammo_75mmCannonShell_Canister>
 		</ammoTypes>
 	</CombatExtended.AmmoSetDef>
 	
@@ -36,6 +37,7 @@
 		<ammoTypes>
 			<Ammo_75mmCannonShell_HE>Bullet_75mmCannonShell_HEID</Ammo_75mmCannonShell_HE>
 			<Ammo_75mmCannonShell_HEAT>Bullet_75mmCannonShell_HEATID</Ammo_75mmCannonShell_HEAT>
+			<Ammo_75mmCannonShell_Canister>Bullet_75mmCannonShell_Canister</Ammo_75mmCannonShell_Canister>
 		</ammoTypes>
 	</CombatExtended.AmmoSetDef>
 	
@@ -72,7 +74,7 @@
 			<Mass>11.52</Mass>
 			<Bulk>10.47</Bulk>
 		</statBases>
-		<ammoClass>75mmAPCBCHE</ammoClass>
+		<ammoClass>Pa_75mmAPCBCHE</ammoClass>
 		<cookOffProjectile>Bullet_75mmCannonShell_APCBCHE</cookOffProjectile>
 	</ThingDef>
 
@@ -88,7 +90,7 @@
 			<Mass>8.71</Mass>
 			<Bulk>11</Bulk>
 		</statBases>
-		<ammoClass>75mmHE</ammoClass>
+		<ammoClass>Pa_75mmHE</ammoClass>
 		<generateAllowChance>0.5</generateAllowChance>
 		<cookOffProjectile>Bullet_75mmCannonShell_HE</cookOffProjectile>
 	</ThingDef>
@@ -105,7 +107,7 @@
 			<Mass>8.61</Mass>
 			<Bulk>9.94</Bulk>
 		</statBases>
-		<ammoClass>75mmAPCR</ammoClass>
+		<ammoClass>Pa_75mmAPCR</ammoClass>
 		<generateAllowChance>0.15</generateAllowChance>
 		<cookOffProjectile>Bullet_75mmCannonShell_APCR</cookOffProjectile>
 	</ThingDef>
@@ -122,9 +124,25 @@
 			<Mass>8.71</Mass>
 			<Bulk>10.4</Bulk>
 		</statBases>
-		<ammoClass>75mmHEAT</ammoClass>
+		<ammoClass>Pa_75mmHEAT</ammoClass>
 		<generateAllowChance>0.25</generateAllowChance>
 		<cookOffProjectile>Bullet_75mmCannonShell_HEAT</cookOffProjectile>
+	</ThingDef>
+	
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="75mmCannonShellBase">
+		<defName>Ammo_75mmCannonShell_Canister</defName>
+		<label>7.5cm Kt. Kw. K.(Canister)</label>
+		<graphicData>
+			<texPath>Things/Ammo/75mm/Canister</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>68.3</MarketValue>
+			<Mass>4.82</Mass>
+			<Bulk>8.62</Bulk>
+		</statBases>
+		<ammoClass>Pa_75mmCanister</ammoClass>
+		<cookOffProjectile>Bullet_75mmCannonShell_Canister</cookOffProjectile>
 	</ThingDef>
 	
 	<!-- ================== Projectiles ================== -->
@@ -231,6 +249,24 @@
 				<explosiveRadius>0.5</explosiveRadius>
 			</li>
 		</comps>
+	</ThingDef>
+	
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="Base75mmCannonShell">
+		<defName>Bullet_75mmCannonShell_Canister</defName>
+		<label>7.5cm Kt. Kw. K.(Canister)</label>
+		<graphicData>
+			<texPath>Things/Projectile/Bullet_big</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<speed>158</speed> <!-- 790m/s -->
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>15</damageAmountBase>
+			<pelletCount>480</pelletCount> <!-- 960 OG -->
+			<spreadMult>26.5</spreadMult>
+			<armorPenetrationSharp>13.6</armorPenetrationSharp>
+			<armorPenetrationBlunt>64.55</armorPenetrationBlunt>
+		</projectile>
 	</ThingDef>
 	
 	<ThingDef Class="CombatExtended.AmmoDef" ParentName="Base75mmCannonShell">
@@ -527,6 +563,71 @@
 		</skillRequirements>
 		<workSkill>Crafting</workSkill>
 		<researchPrerequisite>Turrets_31</researchPrerequisite>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="AmmoRecipeBase">
+		<defName>MakeAmmo_75mmCannonShell_Canister</defName>
+		<label>make 7.5cm Kt. Kw. K.(Canister) shells x3</label>
+		<description>Craft 3 7.5cm Kt. Kw. K.(Canister) shells.</description>
+		<jobString>Making 3 7.5cm Kt. Kw. K.(Canister) shells.</jobString>
+		<workAmount>900</workAmount>
+		<targetCountAdjustment>3</targetCountAdjustment>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>SLDBar</li>
+						<li>USLDBar</li>
+					</categories>
+				</filter>
+				<count>30</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>HeavyBar</li>
+					</categories>
+				</filter>
+				<count>11</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Powder</li>
+						<li>FSX</li>
+					</thingDefs>
+				</filter>
+				<count>12</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>6</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>SLDBar</li>
+				<li>USLDBar</li>
+				<li>HeavyBar</li>
+			</categories>
+			<thingDefs>
+				<li>Powder</li>
+				<li>FSX</li>
+				<li>ComponentIndustrial</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Ammo_75mmCannonShell_Canister>3</Ammo_75mmCannonShell_Canister>
+		</products>
+		<skillRequirements>
+			<Crafting>8</Crafting>
+		</skillRequirements>
+		<workSkill>Crafting</workSkill>
+		<researchPrerequisite>Parabellum_Gamma</researchPrerequisite>
 	</RecipeDef>
 
 	<RecipeDef ParentName="AmmoRecipeBase">

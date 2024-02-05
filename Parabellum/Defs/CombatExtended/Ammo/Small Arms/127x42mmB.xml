@@ -49,7 +49,7 @@
 			<Mass>0.0326</Mass>
 			<MarketValue>3.2</MarketValue>
 		</statBases>
-		<ammoClass>BeowulFMJ</ammoClass>
+		<ammoClass>Pa_BeowulFMJ</ammoClass>
 		<cookOffProjectile>Bullet_127x42mmB_FMJ</cookOffProjectile>
 	</ThingDef>
 
@@ -63,7 +63,7 @@
 		<statBases>
 			<MarketValue>3.6</MarketValue>
 		</statBases>
-		<ammoClass>BeowulAPI</ammoClass>
+		<ammoClass>Pa_BeowulAPI</ammoClass>
 		<generateAllowChance>0.5</generateAllowChance>
 		<cookOffProjectile>Bullet_127x42mmB_API</cookOffProjectile>
 	</ThingDef>
@@ -78,7 +78,7 @@
 		<statBases>
 			<MarketValue>3.4</MarketValue>
 		</statBases>
-		<ammoClass>BeowulHP</ammoClass>
+		<ammoClass>Pa_BeowulHP</ammoClass>
 		<generateAllowChance>0.35</generateAllowChance>
 		<cookOffProjectile>Bullet_127x42mmB_HP</cookOffProjectile>
 	</ThingDef>
@@ -93,7 +93,7 @@
 		<statBases>
 			<MarketValue>4.3</MarketValue>
 		</statBases>
-		<ammoClass>BeowulEMP</ammoClass>
+		<ammoClass>Pa_BeowulEMP</ammoClass>
 		<generateAllowChance>0.2</generateAllowChance>
 		<cookOffProjectile>Bullet_127x42mmB_EMP</cookOffProjectile>
 	</ThingDef>

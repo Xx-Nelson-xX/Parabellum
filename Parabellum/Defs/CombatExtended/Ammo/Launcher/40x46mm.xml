@@ -13,7 +13,7 @@
 		<statBases>
 			<MarketValue>6</MarketValue>
 		</statBases>
-		<ammoClass>GrenadeBB</ammoClass>
+		<ammoClass>Pa_GrenadeBB</ammoClass>
 		<generateAllowChance>0.35</generateAllowChance>
 	</ThingDef>
 
@@ -29,7 +29,7 @@
 			<Bulk>0.27</Bulk>
 			<MarketValue>10</MarketValue>
 		</statBases>
-		<ammoClass>GrenadeF</ammoClass>
+		<ammoClass>Pa_GrenadeF</ammoClass>
 		<generateAllowChance>0.15</generateAllowChance>
 	</ThingDef>
 	
@@ -43,7 +43,7 @@
 		<statBases>
 			<MarketValue>8</MarketValue>
 		</statBases>
-		<ammoClass>GrenadeStun</ammoClass>
+		<ammoClass>Pa_GrenadeStun</ammoClass>
 		<generateAllowChance>0.25</generateAllowChance>
 	</ThingDef>
 	
@@ -57,7 +57,7 @@
 		<statBases>
 			<MarketValue>5</MarketValue>
 		</statBases>
-		<ammoClass>GrenadeFoam</ammoClass>
+		<ammoClass>Pa_GrenadeFoam</ammoClass>
 		<generateAllowChance>0.05</generateAllowChance>
 	</ThingDef>
 

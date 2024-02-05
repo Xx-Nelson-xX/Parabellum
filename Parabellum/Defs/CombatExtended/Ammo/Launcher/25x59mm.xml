@@ -50,7 +50,7 @@
 		<statBases>
 			<MarketValue>6.4</MarketValue>
 		</statBases>
-		<ammoClass>25x59mmHEAB</ammoClass>
+		<ammoClass>Pa_25x59mmHEAB</ammoClass>
 		<generateAllowChance>0.35</generateAllowChance>
 		<detonateProjectile>Bullet_25x59mmGrenade_HEAB</detonateProjectile>
 	</ThingDef>
@@ -66,7 +66,7 @@
 			<Mass>0.141</Mass>
 			<MarketValue>5.8</MarketValue>
 		</statBases>
-		<ammoClass>25x59mmHEDP</ammoClass>
+		<ammoClass>Pa_25x59mmHEDP</ammoClass>
 		<detonateProjectile>Bullet_25x59mmGrenade_HEDP</detonateProjectile>
 	</ThingDef>
 	
@@ -80,7 +80,7 @@
 		<statBases>
 			<MarketValue>5.6</MarketValue>
 		</statBases>
-		<ammoClass>25x59mmHEI</ammoClass>
+		<ammoClass>Pa_25x59mmHEI</ammoClass>
 		<generateAllowChance>0.5</generateAllowChance>
 		<detonateProjectile>Bullet_25x59mmGrenade_HEI</detonateProjectile>
 	</ThingDef>
@@ -95,7 +95,7 @@
 		<statBases>
 			<MarketValue>6</MarketValue>
 		</statBases>
-		<ammoClass>25x59mmHEEMP</ammoClass>
+		<ammoClass>Pa_25x59mmHEEMP</ammoClass>
 		<generateAllowChance>0.15</generateAllowChance>
 		<detonateProjectile>Bullet_25x59mmGrenade_HEEMP</detonateProjectile>
 	</ThingDef>

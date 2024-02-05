@@ -57,7 +57,7 @@
 			<Mass>26.35</Mass>
 			<Bulk>81.2</Bulk>
 		</statBases>
-		<ammoClass>128mmAPC</ammoClass>
+		<ammoClass>Pa_128mmAPC</ammoClass>
 		<generateAllowChance>0.25</generateAllowChance>
 		<cookOffProjectile>Bullet_128mmCannonShell_APC</cookOffProjectile>
 	</ThingDef>
@@ -74,7 +74,7 @@
 			<Mass>28.3</Mass>
 			<Bulk>82.6</Bulk>
 		</statBases>
-		<ammoClass>128mmAPCBCHE</ammoClass>
+		<ammoClass>Pa_128mmAPCBCHE</ammoClass>
 		<cookOffProjectile>Bullet_128mmCannonShell_APCBCHE</cookOffProjectile>
 	</ThingDef>
 
@@ -90,7 +90,7 @@
 			<Mass>28</Mass>
 			<Bulk>85.6</Bulk>
 		</statBases>
-		<ammoClass>128mmHE</ammoClass>
+		<ammoClass>Pa_128mmHE</ammoClass>
 		<generateAllowChance>0.6</generateAllowChance>
 		<cookOffProjectile>Bullet_128mmCannonShell_HE</cookOffProjectile>
 	</ThingDef>
@@ -107,7 +107,7 @@
 			<Mass>9.85</Mass>
 			<Bulk>78.3</Bulk>
 		</statBases>
-		<ammoClass>128mmAPCR</ammoClass>
+		<ammoClass>Pa_128mmAPCR</ammoClass>
 		<generateAllowChance>0.15</generateAllowChance>
 		<cookOffProjectile>Bullet_128mmCannonShell_APCR</cookOffProjectile>
 	</ThingDef>

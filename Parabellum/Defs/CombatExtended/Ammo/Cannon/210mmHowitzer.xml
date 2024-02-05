@@ -67,7 +67,7 @@
 			<MarketValue>200</MarketValue>
 			<Mass>131</Mass>
 		</statBases>
-		<ammoClass>21cmAC</ammoClass>
+		<ammoClass>Pa_21cmAC</ammoClass>
 		<generateAllowChance>0.5</generateAllowChance>
 		<cookOffProjectile>Bullet_21cmHowitzerShell_AC</cookOffProjectile>
 	</ThingDef>
@@ -83,7 +83,7 @@
 			<MarketValue>272</MarketValue>
 			<Mass>113</Mass>
 		</statBases>
-		<ammoClass>21cmHE</ammoClass>
+		<ammoClass>Pa_21cmHE</ammoClass>
 		<cookOffProjectile>Bullet_21cmHowitzerShell_HE</cookOffProjectile>
 	</ThingDef>
 	
@@ -99,7 +99,7 @@
 			<Mass>121.4</Mass>
 			<Bulk>151</Bulk>
 		</statBases>
-		<ammoClass>21cmAPHE</ammoClass>
+		<ammoClass>Pa_21cmAPHE</ammoClass>
 		<generateAllowChance>0.25</generateAllowChance>
 		<cookOffProjectile>Bullet_21cmHowitzerShell_APHE</cookOffProjectile>
 	</ThingDef>

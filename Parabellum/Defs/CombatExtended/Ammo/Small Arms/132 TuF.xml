@@ -57,7 +57,7 @@
 		<statBases>
 			<MarketValue>3.2</MarketValue>
 		</statBases>
-		<ammoClass>TuFAP</ammoClass>
+		<ammoClass>Pa_TuFAP</ammoClass>
 		<cookOffProjectile>Bullet_TuF_AP</cookOffProjectile>
 	</ThingDef>
 	
@@ -71,7 +71,7 @@
 		<statBases>
 			<MarketValue>3.8</MarketValue>
 		</statBases>
-		<ammoClass>TuFAPHE</ammoClass>
+		<ammoClass>Pa_TuFAPHE</ammoClass>
 		<generateAllowChance>0.5</generateAllowChance>
 		<cookOffProjectile>Bullet_TuF_APHE</cookOffProjectile>
 	</ThingDef>
@@ -86,7 +86,7 @@
 		<statBases>
 			<MarketValue>3.4</MarketValue>
 		</statBases>
-		<ammoClass>13mmHET</ammoClass>
+		<ammoClass>Pa_13mmHET</ammoClass>
 		<cookOffProjectile>Bullet_MG131_HET</cookOffProjectile>
 	</ThingDef>
 	

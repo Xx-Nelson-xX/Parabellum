@@ -43,7 +43,7 @@
 		</thingCategories>
 		<stackLimit>50</stackLimit>
 		<cookOffFlashScale>20</cookOffFlashScale>
-		<ammoClass>Smine</ammoClass>
+		<ammoClass>Pa_SmineM</ammoClass>
 		<generateAllowChance>0</generateAllowChance>
 		<detonateProjectile>Bullet_Smine</detonateProjectile>
 	</ThingDef>
@@ -135,7 +135,7 @@
 	
 	<!-- ==================== Recipes ========================== -->
 
-	<RecipeDef ParentName="AmmoRecipeRifle">
+	<RecipeDef ParentName="RangedWeaponRecipeBase">
 		<defName>MakePa_Smine</defName>
 		<label>make S-mine x5</label>
 		<description>Craft 5 S-mine.</description>
@@ -187,7 +187,7 @@
 		</skillRequirements>
 		<workSkill>Crafting</workSkill>
 		<recipeUsers>
-			<li>FabricationBench</li>
+			<li>WeaponCraftingWorkTable</li>
 		</recipeUsers>
 		<researchPrerequisite>IED_C1</researchPrerequisite>
 	</RecipeDef>

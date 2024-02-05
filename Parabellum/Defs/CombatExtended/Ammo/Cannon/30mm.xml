@@ -13,7 +13,7 @@
 		<statBases>
 			<MarketValue>9.2</MarketValue>
 		</statBases>
-		<ammoClass>30mmAPCR</ammoClass>
+		<ammoClass>Pa_30mmAPCR</ammoClass>
 		<cookOffProjectile>Bullet_30mm_APCR</cookOffProjectile>
 	</ThingDef>
 	

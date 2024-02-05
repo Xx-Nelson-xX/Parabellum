@@ -15,7 +15,7 @@
 			<MarketValue>90</MarketValue>
 			<Mass>18.7</Mass>
 		</statBases>
-		<ammoClass>90mmFlechette</ammoClass>
+		<ammoClass>Pa_90mmFlechette</ammoClass>
 		<detonateProjectile>Bullet_90mmCannonShell_F</detonateProjectile>
 	</ThingDef>
 	

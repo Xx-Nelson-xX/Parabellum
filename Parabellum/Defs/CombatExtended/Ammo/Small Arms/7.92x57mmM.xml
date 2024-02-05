@@ -57,7 +57,7 @@
 			<Mass>0.03</Mass>
 			<MarketValue>2.1</MarketValue>
 		</statBases>
-		<ammoClass>8mmP88M</ammoClass>
+		<ammoClass>Pa_8mmP88M</ammoClass>
 		<cookOffProjectile>Bullet_8mmM_P88M</cookOffProjectile>
 	</ThingDef>
 	
@@ -72,7 +72,7 @@
 			<Mass>0.0246</Mass>
 			<MarketValue>2.5</MarketValue>
 		</statBases>
-		<ammoClass>8mmSP</ammoClass>
+		<ammoClass>Pa_8mmSP</ammoClass>
 		<cookOffProjectile>Bullet_8mmM_SP</cookOffProjectile>
 	</ThingDef>
 	
@@ -87,7 +87,7 @@
 			<Mass>0.026</Mass>
 			<MarketValue>3.2</MarketValue>
 		</statBases>
-		<ammoClass>8mmKP</ammoClass>
+		<ammoClass>Pa_8mmKP</ammoClass>
 		<generateAllowChance>0.4</generateAllowChance>
 		<cookOffProjectile>Bullet_8mmM_KP</cookOffProjectile>
 	</ThingDef>
@@ -103,7 +103,7 @@
 			<Mass>0.025</Mass>
 			<MarketValue>3.1</MarketValue>
 		</statBases>
-		<ammoClass>8mmBP</ammoClass>
+		<ammoClass>Pa_8mmBP</ammoClass>
 		<generateAllowChance>0.1</generateAllowChance>
 		<cookOffProjectile>Bullet_8mmM_BP</cookOffProjectile>
 	</ThingDef>

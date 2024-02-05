@@ -36,7 +36,7 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>1.65</drawSize>
 		</graphicData>
-		<ammoClass>155mmNuke</ammoClass>
+		<ammoClass>Pa_155mmNuke</ammoClass>
 		<techLevel>Spacer</techLevel>
 		<generateAllowChance>0.05</generateAllowChance>
 		<detonateProjectile>Bullet_155mmHowitzerShell_Nuke</detonateProjectile>
@@ -54,7 +54,7 @@
 		<statBases>
 			<MarketValue>860</MarketValue>
 		</statBases>
-		<ammoClass>155mmADAM</ammoClass>
+		<ammoClass>Pa_155mmADAM</ammoClass>
 		<techLevel>Spacer</techLevel>
 		<generateAllowChance>0</generateAllowChance>
 		<detonateProjectile>Bullet_155mmHowitzerShell_ADAM</detonateProjectile>

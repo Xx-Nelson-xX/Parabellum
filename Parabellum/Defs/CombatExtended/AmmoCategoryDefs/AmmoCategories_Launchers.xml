@@ -3,21 +3,21 @@
 	
 	<!-- =============== Carl Gustav Shell =============== -->
    <CombatExtended.AmmoCategoryDef>
-    <defName>CGHE</defName>
+    <defName>Pa_CGHE</defName>
     <label>CG High Explosive</label>
     <labelShort>CG HE</labelShort>
     <description>Explosive round Filled with fragments</description>
   </CombatExtended.AmmoCategoryDef>
 
    <CombatExtended.AmmoCategoryDef>
-    <defName>CGHEAT</defName>
+    <defName>Pa_CGHEAT</defName>
     <label>CG High Explosive Anti-Tank</label>
     <labelShort>CG HEAT</labelShort>
     <description>Shape charge explosive capable to penetrate armored target.</description>
   </CombatExtended.AmmoCategoryDef>
 
    <CombatExtended.AmmoCategoryDef>
-    <defName>CGADM</defName>
+    <defName>Pa_CGADM</defName>
     <label>CG Area Defense Munition</label>
     <labelShort>CG ADM</labelShort>
     <description>Flechette round for close range defense.</description>
@@ -25,28 +25,28 @@
   
   <!-- =============== 40x29mm Grenades =============== -->
   <CombatExtended.AmmoCategoryDef>
-    <defName>GrenadeBB</defName>
+    <defName>Pa_GrenadeBB</defName>
     <label>40mm Bean Bag Grenade</label>
     <labelShort>40mm BB</labelShort>
     <description>Painful but non-lethal round.</description>
   </CombatExtended.AmmoCategoryDef>
 
    <CombatExtended.AmmoCategoryDef>
-    <defName>GrenadeF</defName>
+    <defName>Pa_GrenadeF</defName>
     <label>40mm Flechette</label>
     <labelShort>40mm F</labelShort>
     <description>Flechette round for close range defense.</description>
   </CombatExtended.AmmoCategoryDef>
   
   <CombatExtended.AmmoCategoryDef>
-    <defName>GrenadeStun</defName>
+    <defName>Pa_GrenadeStun</defName>
     <label>40mm Stun Grenade</label>
     <labelShort>40mm Stun</labelShort>
     <description>Non-Lethal Concussion Round.</description>
   </CombatExtended.AmmoCategoryDef>
   
   <CombatExtended.AmmoCategoryDef>
-    <defName>GrenadeFoam</defName>
+    <defName>Pa_GrenadeFoam</defName>
     <label>40mm Foam Grenade</label>
     <labelShort>40mm Foam</labelShort>
     <description>Non-Lethal Foam Round, capable to extinghish fire.</description>
@@ -54,7 +54,7 @@
   
   <!-- =============== 66mm LAW Rockets =============== -->
   <CombatExtended.AmmoCategoryDef>
-    <defName>TEA</defName>
+    <defName>Pa_TEA</defName>
     <label>66mm Incendiary</label>
     <labelShort>TEA</labelShort>
     <description>Incendiary round to scorch an area with flames.</description>
@@ -62,28 +62,28 @@
   
   <!-- =============== 25x59mm grenades =============== -->
   <CombatExtended.AmmoCategoryDef>
-    <defName>25x59mmHEAB</defName>
+    <defName>Pa_25x59mmHEAB</defName>
     <label>25x59mm HEAB</label>
     <labelShort>25x59mm HEAB</labelShort>
     <description>Tactical anti-personnel explosive munition capable detonate in midair, causing airburst effect fragment damage to an enemy.</description>
   </CombatExtended.AmmoCategoryDef>
   
    <CombatExtended.AmmoCategoryDef>
-    <defName>25x59mmHEDP</defName>
+    <defName>Pa_25x59mmHEDP</defName>
     <label>25x59mm HEDP</label>
     <labelShort>25x59mm HEDP</labelShort>
     <description>Explosive munition capable of penetrating armor while also do fragmentation damage.</description>
   </CombatExtended.AmmoCategoryDef>
   
   <CombatExtended.AmmoCategoryDef>
-    <defName>25x59mmHEI</defName>
+    <defName>Pa_25x59mmHEI</defName>
     <label>25x59mm HEI</label>
     <labelShort>25x59mm HEI</labelShort>
     <description>Explosive munition with both fragmentation and incendiary damage.</description>
   </CombatExtended.AmmoCategoryDef>
   
   <CombatExtended.AmmoCategoryDef>
-    <defName>25x59mmHEEMP</defName>
+    <defName>Pa_25x59mmHEEMP</defName>
     <label>25x59mm HE-EMP</label>
     <labelShort>25x59mm HE-EMP</labelShort>
     <description>Explosive munition with both fragmentation and electromagnetic pulse damage.</description>
@@ -91,21 +91,21 @@
   
   <!-- =============== RPzB Rockets =============== -->
   <CombatExtended.AmmoCategoryDef>
-    <defName>RPzBHEAT</defName>
+    <defName>Pa_RPzBHEAT</defName>
     <label>88mm RPzB HEAT</label>
     <labelShort>RPzB HEAT</labelShort>
     <description>Mass produced Shape Charge Anti-Tank Rocket, excellent counter armored target, only work with direct hit since it doesn't has enough fragmentation effects for area damage.</description>
   </CombatExtended.AmmoCategoryDef>
   
   <CombatExtended.AmmoCategoryDef>
-    <defName>RPzBFrag</defName>
+    <defName>Pa_RPzBFrag</defName>
     <label>88mm RPzB Frag</label>
     <labelShort>RPzB Frag</labelShort>
     <description>Modified Shape Charge Anti-Personnel Rocket, excellent counter soft target, not designed for direct hit since the fragment covers are on the side of the warhead.</description>
   </CombatExtended.AmmoCategoryDef>
   
   <CombatExtended.AmmoCategoryDef>
-    <defName>8cmRVWHE</defName>
+    <defName>Pa_8cmRVWHE</defName>
     <label>8cm Raketen Sprgr(HE-ID)</label>
     <labelShort>8cm HE Rocket</labelShort>
     <description>Modified High Explosive Rocket, Good counter light/medium armored target, not designed for direct hit since its purpose is cover an large area with explosive.</description>
@@ -113,14 +113,14 @@
   
   <!-- =============== Minenabwurfvorrichtung/Nahverteidigungswaffe grenade =============== -->
   <CombatExtended.AmmoCategoryDef>
-    <defName>Smine</defName>
+    <defName>Pa_SmineM</defName>
     <label>S-mine(Frag)</label>
     <labelShort>S-mine</labelShort>
     <description>The S-mine was an anti-personnel mine, designed to be used in open areas against unshielded infantry, when triggered, the explosion projects a lethal spray of shrapnel in all directions.</description>
   </CombatExtended.AmmoCategoryDef>
   
   <CombatExtended.AmmoCategoryDef>
-    <defName>Schnellnebelkerze39Nb</defName>
+    <defName>Pa_Schnellnebelkerze39Nb</defName>
     <label>Schnellnebelkerze 39</label>
     <labelShort>SchNbKz 39</labelShort>
     <description>Modified smoke grenade to fit in the tank launcher, the charge provide temporal smoke screen cover for the vehicle or its surrounding.</description>

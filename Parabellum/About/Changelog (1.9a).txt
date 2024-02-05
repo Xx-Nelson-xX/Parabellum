@@ -1,0 +1,14 @@
+<--------------------------------------- 1.9a(RW 1.4 Dev) -------------------------------------------->
+
+1.9a - 1 new ammo, Tweaks and Fixes
+
+Ammo:
+- 7.5cm Kt. Kw. K., Canister ammo, Canister ammunition for 75mm howitzer, large size buckshot for light howitzer at close range for anti-personel defense.
+
+Tweaks:
+-Removed M34 WP grenade and anything related to it, the feature got shafted with Rimworld Gas overhaul, which in the end I decided to remove it an probably start from scratch
++Fixes for Mote to Fleck changes which cause some old weapons/turret waste all their ammo in single attack
+*Remove M320 GL residual codes from the mod
++Changed all AmmoCategories/AmmoClass defName to be more unified and Localization friendly
++Fix for Smine despawn issue, supposedly
+*Removed unused Flamethrower fuel

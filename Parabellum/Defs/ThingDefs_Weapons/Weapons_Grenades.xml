@@ -196,7 +196,7 @@
 		<thingCategories>
 			<li>Grenades</li>
 		</thingCategories>
-		<ammoClass>Schnellnebelkerze39Nb</ammoClass>
+		<ammoClass>Pa_Schnellnebelkerze39Nb</ammoClass>
 		<verbs>
 			<li Class="CombatExtended.VerbPropertiesCE">
 				<label>throw M24 Nebelgranate</label>
@@ -533,86 +533,6 @@
 		</smeltProducts>
 	</ThingDef>
 	
-	<!-- White Phosphorus grenade -->
-	<ThingDef ParentName="SK_BaseGrenadeProjectile">
-		<defName>Pa_WP</defName>
-		<label>White Phosphorus</label>
-		<graphicData>
-			<texPath>Things/Projectile/Grenades/Smoke</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-		</graphicData>
-		<projectile Class="CombatExtended.ProjectilePropertiesCE">
-			<explosionRadius>3.2</explosionRadius>
-			<damageDef>Flame</damageDef>
-			<damageAmountBase>100</damageAmountBase>
-			<explosionDelay>120</explosionDelay>
-			<postExplosionSpawnThingDef>WP_Smoke</postExplosionSpawnThingDef>
-			<postExplosionSpawnChance>1</postExplosionSpawnChance>
-			<dropsCasings>true</dropsCasings>
-			<casingMoteDefname>Mote_GrenadePin</casingMoteDefname>
-		</projectile>
-		<comps>
-			<li Class="CombatExtended.CompProperties_ExplosiveCE">
-				<damageAmountBase>6</damageAmountBase>
-				<explosiveDamageType>WP</explosiveDamageType>
-				<explosiveRadius>3.6</explosiveRadius>
-				<preExplosionSpawnThingDef>WP_Smoke</preExplosionSpawnThingDef>
-				<preExplosionSpawnChance>1</preExplosionSpawnChance>
-			</li>
-		</comps>
-	</ThingDef>
-	<ThingDef Class="CombatExtended.AmmoDef" ParentName="BaseGrenadeEquipment">
-		<defName>Pa_WPG</defName>
-		<equipmentType>Primary</equipmentType>
-		<label>M34 WP grenade</label>
-		<description>White Phosphorus grenade, releases a large cloud of volatile chemical that burns when contact with oxygen, it works for assault and defense, great for area denial and against closed space structure and fortification.</description>
-		<graphicData>
-			<texPath>Things/Ammo/HandGrenades/Smoke</texPath>
-			<graphicClass>Graphic_StackCount</graphicClass>
-		</graphicData>
-		<soundInteract>Interact_Grenade</soundInteract>
-		<techLevel>Spacer</techLevel>
-		<statBases>
-			<Mass>0.7</Mass>
-			<Bulk>1.1</Bulk>
-			<MarketValue>44</MarketValue>
-			<SightsEfficiency>0.5</SightsEfficiency>
-			<RangedWeapon_Cooldown>0.9</RangedWeapon_Cooldown>
-		</statBases>
-		<weaponTags>
-			<li>GrenadeTierThree</li>
-			<li>CE_AI_Grenade</li>
-		</weaponTags>
-		<thingCategories>
-			<li>Grenades</li>
-		</thingCategories>
-		<verbs>
-			<li Class="CombatExtended.VerbPropertiesCE">
-				<label>throw WP grenade</label>
-				<verbClass>CombatExtended.Verb_ShootCEOneUse</verbClass>
-				<hasStandardCommand>true</hasStandardCommand>
-				<range>12</range>
-				<warmupTime>1.2</warmupTime>
-				<noiseRadius>4</noiseRadius>
-				<ai_AvoidFriendlyFireRadius>5</ai_AvoidFriendlyFireRadius>
-				<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
-				<soundCast>ThrowGrenade</soundCast>
-				<targetParams>
-					<canTargetLocations>true</canTargetLocations>
-				</targetParams>
-				<defaultProjectile>Pa_WP</defaultProjectile>
-				<onlyManualCast>true</onlyManualCast>
-				<ignorePartialLoSBlocker>true</ignorePartialLoSBlocker>
-			</li>
-		</verbs>
-		<detonateProjectile>Pa_WP</detonateProjectile>
-		<smeltProducts>
-			<Plasteel>5</Plasteel>
-			<Chemfuel>8</Chemfuel>
-			<Weapon_Parts>1</Weapon_Parts>
-		</smeltProducts>
-	</ThingDef>
-	
 	<!-- Dirty Bomb -->
 	<ThingDef MayRequire="Dubwise.Rimatomics" ParentName="SK_BaseGrenadeProjectile">
 		<defName>Pa_DB</defName>
@@ -680,7 +600,7 @@
 		</thingCategories>
 		<verbs>
 			<li Class="CombatExtended.VerbPropertiesCE">
-				<label>throw WP grenade</label>
+				<label>throw Dirty Bomb</label>
 				<verbClass>CombatExtended.Verb_ShootCEOneUse</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<range>10</range>

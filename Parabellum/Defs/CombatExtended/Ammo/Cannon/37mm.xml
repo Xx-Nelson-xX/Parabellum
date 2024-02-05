@@ -54,7 +54,7 @@
 			<Mass>1.315</Mass>
 			<Bulk>3.6</Bulk>
 		</statBases>
-		<ammoClass>37mmAPHE</ammoClass>
+		<ammoClass>Pa_37mmAPHE</ammoClass>
 		<cookOffProjectile>Bullet_37mmCannonShell_APHE</cookOffProjectile>
 	</ThingDef>
 
@@ -70,7 +70,7 @@
 			<Mass>1.287</Mass>
 			<Bulk>3.8</Bulk>
 		</statBases>
-		<ammoClass>37mmHE</ammoClass>
+		<ammoClass>Pa_37mmHE</ammoClass>
 		<generateAllowChance>0.5</generateAllowChance>
 		<cookOffProjectile>Bullet_37mmCannonShell_HE</cookOffProjectile>
 	</ThingDef>
@@ -87,7 +87,7 @@
 			<Mass>0.952</Mass>
 			<Bulk>3.4</Bulk>
 		</statBases>
-		<ammoClass>37mmAPCR</ammoClass>
+		<ammoClass>Pa_37mmAPCR</ammoClass>
 		<generateAllowChance>0.15</generateAllowChance>
 		<cookOffProjectile>Bullet_37mmCannonShell_APCR</cookOffProjectile>
 	</ThingDef>
@@ -104,7 +104,7 @@
 			<Mass>0.55</Mass>
 			<Bulk>1.9</Bulk>
 		</statBases>
-		<ammoClass>37mmCanister</ammoClass>
+		<ammoClass>Pa_37mmCanister</ammoClass>
 		<generateAllowChance>0.05</generateAllowChance>
 		<cookOffProjectile>Bullet_37mmCannonShell_Canister</cookOffProjectile>
 	</ThingDef>
@@ -214,9 +214,9 @@
 			<damageDef>Bullet</damageDef>
 			<damageAmountBase>22</damageAmountBase>
 			<pelletCount>32</pelletCount>
-			<spreadMult>28.7</spreadMult>
+			<spreadMult>25.8</spreadMult>
 			<armorPenetrationSharp>12.4</armorPenetrationSharp>
-			<armorPenetrationBlunt>66.64</armorPenetrationBlunt>
+			<armorPenetrationBlunt>60.64</armorPenetrationBlunt>
 		</projectile>
 	</ThingDef>
 	

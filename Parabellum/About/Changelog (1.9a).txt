@@ -3,7 +3,7 @@
 1.9a - 1 new ammo, Tweaks and Fixes
 
 Ammo:
-- 7.5cm Kt. Kw. K., Canister ammo, Canister ammunition for 75mm howitzer, large size buckshot for light howitzer at close range for anti-personel defense.
+- 7.5cm Kt. Kw. K., Canister ammo, Canister ammunition for 75mm howitzer, large size buckshot for light howitzer for anti-personel defense at close range.
 
 Tweaks:
 -Removed M34 WP grenade and anything related to it, the feature got shafted with Rimworld Gas overhaul, which in the end I decided to remove it an probably start from scratch

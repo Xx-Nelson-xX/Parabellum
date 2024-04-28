@@ -10,7 +10,7 @@
 				<li Class="PatchOperationAdd">	
 				<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_SP"]/ammoTypes</xpath>
 					<value>
-						<Ammo_556x45mmNATO_HE>Bullet_556x45mmNATO_HE</Ammo_556x45mmNATO_HE>
+						<Ammo_556x45mmNATO_HE_HMC>Bullet_556x45mmNATO_HE_HMC</Ammo_556x45mmNATO_HE_HMC>
 						<Ammo_127x55mmAR_FMJ>Bullet_127x55mmAR_FMJ</Ammo_127x55mmAR_FMJ>
 						<Ammo_127x55mmAR_API>Bullet_127x55mmAR_API</Ammo_127x55mmAR_API>
 						<Ammo_127x55mmAR_Sabot>Bullet_127x55mmAR_Sabot</Ammo_127x55mmAR_Sabot>

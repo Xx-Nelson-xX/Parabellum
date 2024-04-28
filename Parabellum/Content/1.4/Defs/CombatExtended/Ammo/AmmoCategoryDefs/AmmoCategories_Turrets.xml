@@ -3,7 +3,7 @@
   
   <!-- =============== 3cm =============== -->
   <CombatExtended.AmmoCategoryDef>
-    <defName>30mmFlak</defName>
+    <defName>Pa_30mmFlak</defName>
     <label>30mm Flak</label>
     <labelShort>30mm(Flak)</labelShort>
     <description>Small Special Explosive shell filled with fragments, made with special fuze that detonate the warhead under specific condition and create airbust effect to maximize its effective blast range and area of effect, usually used against aircraft.</description>

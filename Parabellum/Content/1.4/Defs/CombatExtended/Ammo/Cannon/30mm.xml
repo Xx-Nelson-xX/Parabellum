@@ -13,7 +13,7 @@
 		<statBases>
 			<MarketValue>8.4</MarketValue>
 		</statBases>
-		<ammoClass>30mmFlak</ammoClass>
+		<ammoClass>Pa_30mmFlak</ammoClass>
 		<cookOffProjectile>Bullet_30mm_Flak</cookOffProjectile>
 	</ThingDef>
 	

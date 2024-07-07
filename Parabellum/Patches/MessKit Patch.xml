@@ -1,0 +1,17 @@
+<Patch>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/WorkGiverDef[defName="DoBillsCook"]/fixedBillGiverDefs</xpath>
+		<value>
+			<li>Pa_MessKit</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ArchitectSense.DesignationSubCategoryDef[defName="SubCategory_Stove"]/defNames</xpath>
+		<value>
+			<li>Pa_MessKit</li>
+		</value>
+	</Operation>
+
+</Patch>

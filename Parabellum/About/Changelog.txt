@@ -1,6 +1,6 @@
 <--------------------------------------- 1.9(RW 1.4 Dev) -------------------------------------------->
 
-1.9 - 4 new turret, 4 new ammo, Tweaks and Fixes
+1.9 - 4 new turret, 4 new ammo, 5 new items Tweaks and Fixes
 
 Turrets:
 - Improvised 3cm Flak 103/38 autocannon: 30mm, Automatic(1/4/10), an ancient Mid War dual purpose autocannon, decent rate of fire and rather high performance againt planes and tanks, specially with the proper ammo for the role.
@@ -14,6 +14,25 @@ Ammo:
 - 7.5cm Kt. Kw. K., Canister ammo, Canister ammunition for 75mm howitzer, large size buckshot for light howitzer for anti-personel defense at close range.
 - 130mm HE-FRAG rocket, High Explosive - Fragmentation, Large size rocket filled with TNT explosive and fragments, though more fragments than TNT explosive.
 - 130mm HEI rocket, High Explosive Incendiary, Large size rocket filled with incendiary agent and small amount of TNT explosive and some fragments.
+
+New features:
+- Mess Kit, a simple utility kit for cooking food and warming, not as efficient as standard cooking tools but is very handy for outdoor and camping, cost 12 unit of alluminium to make one in the Hand assembly bench
+
+Food:
+- Cooked Meat: Roasted meat but divided in smaller portions(like kibble), instead of 1 piece is 4 piece per bill
+- Onigiri, simple salted riceball made with salt(duh), rice(duh) and algae, 2 unit per bill, pretty much Makiroll without hediff boost
+- Foodcube(Mix), a mixed nutrition cube, made with mixed ingredients, can be meat or vegetables, whatever you have available
+- Foodcube, a cube shaped bread stuffed with vegetables, 2 unit per bill and require Bakery research
+
+
+Scenario tweak: Rifleman start
+	-Removed both shotgun and shotgun ammo as starting items
+	+Increase the ammount of money for weapon
+	+Increase the primary magazine each starting member carry
+	+Added 2 Mess Kit as starting item
+	+Added 80 piece of Scho-Ka-Kola as starting item
+	+Added 50 unit of Pervitin as starting item
+	+Added Cooking I as additional starting research
 
 Tweaks:
 *Simplified Anti-Concrete/AC damage
@@ -32,6 +51,9 @@ Tweaks:
 +Changed all AmmoCategories/AmmoClass defName to be more unified and Localization friendly
 +Fix for Smine despawn issue, supposedly
 *Removed unused Flamethrower fuel
++Added few missing ammo type to existing weapon
++Fixed S-Mine despawn after crafting issue
+*Also added work amount to making S-Mines
 *Added Off map artillery ability to following turrets:
  - Nebelwerfer(All variants)
  - Raketen-Vielfachwerfer(8cm rocket)

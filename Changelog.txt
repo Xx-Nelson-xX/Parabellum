@@ -1,6 +1,6 @@
 <--------------------------------------- 1.9(RW 1.4 Dev) -------------------------------------------->
 
-1.9 - 4 new turret, 4 new ammo, Tweaks and Fixes
+1.9 - 4 new turret, 4 new ammo, 5 new items Tweaks and Fixes
 
 Turrets:
 - Improvised 3cm Flak 103/38 autocannon: 30mm, Automatic(1/4/10), an ancient Mid War dual purpose autocannon, decent rate of fire and rather high performance againt planes and tanks, specially with the proper ammo for the role.
@@ -11,8 +11,28 @@ Turrets:
 Ammo:
 - 30mm Flak ammo, Small Special Explosive shell filled with fragments, made with special fuze that detonate the warhead under specific condition and create airbust effect to maximize its effective blast range and area of effect, usually used against aircraft.
 - 30mm APCR ammo, Armor Piercing, Composed Rigid ammunition ammunition for 3cm/30mm cannon, High velocity solid slug design purely for armor penetration with concentrated kinetic energy through a small impact area.
+- 7.5cm Kt. Kw. K., Canister ammo, Canister ammunition for 75mm howitzer, large size buckshot for light howitzer for anti-personel defense at close range.
 - 130mm HE-FRAG rocket, High Explosive - Fragmentation, Large size rocket filled with TNT explosive and fragments, though more fragments than TNT explosive.
 - 130mm HEI rocket, High Explosive Incendiary, Large size rocket filled with incendiary agent and small amount of TNT explosive and some fragments.
+
+New features:
+- Mess Kit, a simple utility kit for cooking food and warming, not as efficient as standard cooking tools but is very handy for outdoor and camping, cost 12 unit of alluminium to make one in the Hand assembly bench
+
+Food:
+- Cooked Meat: Roasted meat but divided in smaller portions(like kibble), instead of 1 piece is 4 piece per bill
+- Onigiri, simple salted riceball made with salt(duh), rice(duh) and algae, 2 unit per bill, pretty much Makiroll without hediff boost
+- Foodcube(Mix), a mixed nutrition cube, made with mixed ingredients, can be meat or vegetables, whatever you have available
+- Foodcube, a cube shaped bread stuffed with vegetables, 2 unit per bill and require Bakery research
+
+
+Scenario tweak: Rifleman start
+	-Removed both shotgun and shotgun ammo as starting items
+	+Increase the ammount of money for weapon
+	+Increase the primary magazine each starting member carry
+	+Added 2 Mess Kit as starting item
+	+Added 80 piece of Scho-Ka-Kola as starting item
+	+Added 50 unit of Pervitin as starting item
+	+Added Cooking I as additional starting research
 
 Tweaks:
 *Simplified Anti-Concrete/AC damage
@@ -25,11 +45,20 @@ Tweaks:
 +Buffed Tactical Helmet blunt protection up to 60 as baseline with steel, now can fully tank 7.62x51mm NATO non AP ammo
 *Removed Muzzle Flas from De Lisle Carbine
 *Chnaged Bunker Storage Texture still WIP though
+-Removed M34 WP grenade and anything related to it, the feature got shafted with Rimworld Gas overhaul, which in the end I decided to remove it an probably start from scratch
++Fixes for Mote to Fleck changes which cause some old weapons/turret waste all their ammo in single attack
+*Remove M320 GL residual codes from the mod
++Changed all AmmoCategories/AmmoClass defName to be more unified and Localization friendly
++Fix for Smine despawn issue, supposedly
+*Removed unused Flamethrower fuel
++Added few missing ammo type to existing weapon
++Fixed S-Mine despawn after crafting issue
+*Also added work amount to making S-Mines
 *Added Off map artillery ability to following turrets:
  - Nebelwerfer(All variants)
  - Raketen-Vielfachwerfer(8cm rocket)
  - 8cm GrW(8cm Mortars)
- - Type 63 MRL
+ - Type 63 MRL(130mm rocket)
  - Morser 16 and 18(21cm shell)
 
 <--------------------------------------- 1.8(RW 1.4 Alpha) -------------------------------------------->

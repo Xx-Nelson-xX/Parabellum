@@ -55,8 +55,8 @@
 			<li>BrotherhoodLight</li>
 		</apparelTags>
 		<weaponMoney>
-			<min>1200</min>
-			<max>3000</max>
+			<min>1500</min>
+			<max>3500</max>
 		</weaponMoney>
 		<weaponTags>
 			<li>RF2Pa</li>
@@ -84,8 +84,8 @@
 		<modExtensions>
 			<li Class="CombatExtended.LoadoutPropertiesExtension">
 				<primaryMagazineCount>
-					<min>10</min>
-					<max>20</max>
+					<min>12</min>
+					<max>24</max>
 				</primaryMagazineCount>
 				<sidearms>
 					<li>

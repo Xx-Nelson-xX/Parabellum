@@ -40,13 +40,18 @@
 				<!-- Player pawns Weapons & Tools -->
 				<li Class="ScenPart_StartingThing_Defined">
 					<def>StartingThing_Defined</def>
-					<thingDef>Pa_W1897T</thingDef>
+					<thingDef>Pa_MessKitP</thingDef>
 					<count>2</count>
 				</li>
 				<li Class="ScenPart_StartingThing_Defined">
 					<def>StartingThing_Defined</def>
-					<thingDef>Ammo_12Gauge_Buck</thingDef>
-					<count>200</count>
+					<thingDef>Pa_SKK</thingDef>
+					<count>80</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>Pa_Pervitin</thingDef>
+					<count>50</count>
 				</li>
 				<li Class="ScenPart_StartingThing_Defined">
 				<def>StartingThing_Defined</def>
@@ -87,11 +92,11 @@
 				</li>
 
 				<!-- Starting research -->
-				<!--<li Class="ScenPart_StartingResearch">
+				<li Class="ScenPart_StartingResearch">
 					<def>StartingResearch</def>
 					<visible>false</visible>
-					<project>Cultivation_C3</project>
-				</li>-->
+					<project>Food_B3</project>
+				</li>
 				
 				<!-- Forced Incident -->
 				<li Class="ScenPart_CreateIncident">

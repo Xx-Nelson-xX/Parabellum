@@ -38,6 +38,7 @@
 			<li>CE_AutoEnableTrade</li>
 			<li>CE_AutoEnableCrafting_TableMachining</li>
 		</tradeTags>
+		<destroyOnDrop>false</destroyOnDrop>
 		<thingCategories>
 			<li>Grenades</li>
 		</thingCategories>
@@ -140,7 +141,8 @@
 		<label>make S-mine x5</label>
 		<description>Craft 5 S-mine.</description>
 		<jobString>Making S-mine.</jobString>
-		<targetCountAdjustment>1</targetCountAdjustment>
+		<targetCountAdjustment>5</targetCountAdjustment>
+		<workAmount>3000</workAmount>
 		<ingredients>
 			<li>
 				<filter>

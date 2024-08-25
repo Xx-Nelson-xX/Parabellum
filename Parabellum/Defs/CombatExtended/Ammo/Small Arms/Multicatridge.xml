@@ -53,6 +53,21 @@
 	</CombatExtended.AmmoSetDef>
 	
 	<CombatExtended.AmmoSetDef>
+		<defName>AmmoSet_DC</defName>
+		<label>9x19mm/.45 ACP</label>
+		<ammoTypes>
+			<Ammo_45ACP_FMJ>Bullet_45ACP_FMJ</Ammo_45ACP_FMJ>
+			<Ammo_45ACP_AP>Bullet_45ACP_AP</Ammo_45ACP_AP>
+			<Ammo_45ACP_HP>Bullet_45ACP_HP</Ammo_45ACP_HP>
+			<Ammo_45ACP_Super>Bullet_45ACP_Super</Ammo_45ACP_Super>
+			<Ammo_9x19mmPara_FMJ>Bullet_9x19mmPara_FMJ</Ammo_9x19mmPara_FMJ>
+			<Ammo_9x19mmPara_AP>Bullet_9x19mmPara_AP</Ammo_9x19mmPara_AP>
+			<Ammo_9x19mmPara_HP>Bullet_9x19mmPara_HP</Ammo_9x19mmPara_HP>
+			<Ammo_9x19mmPara_JHP>Bullet_9x19mmPara_JHP</Ammo_9x19mmPara_JHP>
+		</ammoTypes>
+	</CombatExtended.AmmoSetDef>
+	
+	<CombatExtended.AmmoSetDef>
 		<defName>AmmoSet_K98k</defName>
 		<label>8mm Mauser / 7.62x51mm NATO</label>
 		<ammoTypes>

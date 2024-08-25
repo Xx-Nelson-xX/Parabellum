@@ -5,7 +5,7 @@
 	<RecipeDef ParentName="RangedWeaponRecipeBase">
 		<defName>BuildDelisle</defName>
 		<label>Build De Lisle Commando Carabine</label>
-		<description>Build a De lisle Commando Carabine, happy hunting.\nCaliber: .45 ACP</description>
+		<description>Build a De lisle Commando Carabine, happy hunting.\nCaliber: 9x19mm/.45 ACP</description>
 		<jobString>Building De Lisle Commando Carabine.</jobString>
 		<workAmount>10200</workAmount>
 		<skillRequirements>
@@ -60,9 +60,9 @@
 			</categories>
 		</fixedIngredientFilter>
 		<recipeUsers>
-			<li>WeaponCraftingWorkTable</li>
+			<li>FabricationBench</li>
 		</recipeUsers>
-		<researchPrerequisite>Machining</researchPrerequisite>
+		<researchPrerequisite>Parabellum_Alpha</researchPrerequisite>
 	</RecipeDef>
 	
 	<!-- =============== M4.50 Beowulf Special Carabine =============== -->
@@ -71,7 +71,7 @@
 		<label>Build M4.50 Beowulf SC</label>
 		<description>Builds the M4.50 Beowulf SC,changing the standard AR barrel to the heavier .50 Beowulf barrel to deal with light armored target and bear size animals. High damage, average range, good rate of fire and accuracy, but not really controllable in burst.\nCaliber: .50 Beowulf(12,7x42mm)</description>
 		<jobString>Building M4.50 Beowulf SC.</jobString>
-		<workAmount>18000</workAmount>
+		<workAmount>12800</workAmount>
 		<skillRequirements>
 			<Crafting>8</Crafting>
 		</skillRequirements>
@@ -98,7 +98,7 @@
 						<li>Weapon_Parts</li>
 					</thingDefs>
 				</filter>
-				<count>10</count>
+				<count>8</count>
 			</li>
 			<li>
 				<filter>

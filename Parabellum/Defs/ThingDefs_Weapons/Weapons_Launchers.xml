@@ -238,6 +238,7 @@
         <graphicData>
             <texPath>Things/Weapons/Launchers/CGR</texPath>
             <graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.1</drawSize>
         </graphicData>
         <soundInteract>Artillery_ShellLoaded</soundInteract>
         <statBases>
@@ -247,7 +248,7 @@
             <SwayFactor>1.4</SwayFactor>
             <RangedWeapon_Cooldown>2.2</RangedWeapon_Cooldown>
             <Bulk>9</Bulk>
-            <Mass>7</Mass>
+            <Mass>6.6</Mass>
         </statBases>
         <weaponTags>
             <li>RKT3</li>
@@ -297,6 +298,11 @@
                 <ammoSet>AmmoSet_CGRMU</ammoSet>
             </li>
         </comps>
+		<modExtensions>
+		  <li Class="CombatExtended.GunDrawExtension">
+			<DrawSize>1.1</DrawSize>
+		  </li>
+		</modExtensions>
         <smeltProducts>
             <Heavy_Component>1</Heavy_Component>
             <Weapon_Parts>8</Weapon_Parts>

@@ -128,4 +128,22 @@
 		</value>
 	</Operation>
 	
+	<!-- Mending -->
+	<Operation Class="PatchOperationAdd">	
+		<xpath>Defs/RecipeDef[defName="MendRepairArmor"]/ingredients/li/filter/categories</xpath>
+		<value>
+			<li>SetParabellumH</li>
+			<li>SetParabellumSA</li>
+			<li>SetParabellumIPB</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">	
+		<xpath>Defs/RecipeDef[defName="MendRepairArmor"]/fixedIngredientFilter/categories</xpath>
+		<value>
+			<li>SetParabellumH</li>
+			<li>SetParabellumSA</li>
+			<li>SetParabellumIPB</li>
+		</value>
+	</Operation>
+	
 </Patch>

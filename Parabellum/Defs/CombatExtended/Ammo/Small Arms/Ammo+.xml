@@ -85,7 +85,7 @@
 	
 	<!-- ==================== .45 ACP ========================== -->
 	
-	<ThingDef Class="CombatExtended.AmmoDef" ParentName="9x19mmParaBase">
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="45ACPBase">
 		<defName>Ammo_45ACP_Super</defName>
 		<label>.45 ACP cartridge (Super)</label>
 		<graphicData>
@@ -100,7 +100,7 @@
 		<generateAllowChance>0.2</generateAllowChance>
 	</ThingDef>
 	
-	<ThingDef Class="CombatExtended.AmmoDef" ParentName="Base9x19mmParaBullet">
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="Base45ACPBullet">
 		<defName>Bullet_45ACP_Super</defName>
 		<label>.45 ACP bullet (Super)</label>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">

@@ -21,6 +21,11 @@
 		<parent>SetParabellum</parent>
 	</ThingCategoryDef>
 	<ThingCategoryDef>
+		<defName>SetParabellumSA</defName>
+		<label>Parabellum Steel Armor</label>
+		<parent>SetParabellum</parent>
+	</ThingCategoryDef>
+	<ThingCategoryDef>
 		<defName>SetParabellumH</defName>
 		<label>Parabellum Helmet</label>
 		<parent>SetParabellum</parent>
@@ -35,6 +40,11 @@
 	<ThingCategoryDef>
 		<defName>SetParabellumIP</defName>
 		<label>Armor Insert Plate</label>
+		<parent>SetParabellumExt</parent>
+	</ThingCategoryDef>
+	<ThingCategoryDef>
+		<defName>SetParabellumIPB</defName>
+		<label>Armor Insert Plate(Basic)</label>
 		<parent>SetParabellumExt</parent>
 	</ThingCategoryDef>
 	

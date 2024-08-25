@@ -7,6 +7,8 @@
 	</mods>
 		<match Class="PatchOperationSequence">
 			<operations>
+			
+				<!-- Parabellum weapons-->
 				<li Class="PatchOperationAdd">	
 				<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_SP"]/ammoTypes</xpath>
 					<value>
@@ -84,6 +86,49 @@
 						<Ammo_762x54mmR_FMJ>Bullet_762x54mmR_FMJ</Ammo_762x54mmR_FMJ>
 						<Ammo_762x54mmR_AP>Bullet_762x54mmR_AP</Ammo_762x54mmR_AP>
 						<Ammo_762x54mmR_HP>Bullet_762x54mmR_HP</Ammo_762x54mmR_HP>
+					</value>
+				</li>
+				
+				<!-- HMC weapons-->
+				<li Class="PatchOperationAdd">	
+				<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_MicroTurret_HMC"]/ammoTypes</xpath>
+					<value>
+						<Ammo_763x25mmM_FMJ>Bullet_763x25mmM_FMJ</Ammo_763x25mmM_FMJ>
+						<Ammo_763x25mmM_HP>Bullet_763x25mmM_HP</Ammo_763x25mmM_HP>
+						<Ammo_9x19mmPara_JHP>Bullet_9x19mmPara_JHP</Ammo_9x19mmPara_JHP>
+						<Ammo_45ACP_Super>Bullet_45ACP_Super</Ammo_45ACP_Super>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">	
+				<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_MicroTurretSniper_HMC"]/label</xpath>
+					<value>
+						<label>.303 British / 7.62 mm rifle / 8mm Mauser</label>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">	
+				<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_MicroTurretSniper_HMC"]/ammoTypes</xpath>
+					<value>
+						<Ammo_303British_I>Bullet_303British_I</Ammo_303British_I>
+						<Ammo_762x51mmNATO_T>Bullet_762x51mmNATO_T</Ammo_762x51mmNATO_T>
+						<Ammo_8mmM_P88M>Bullet_8mmM_P88M</Ammo_8mmM_P88M>
+						<Ammo_8mmM_SP>Bullet_8mmM_SP</Ammo_8mmM_SP>
+						<Ammo_8mmM_KP>Bullet_8mmM_KP</Ammo_8mmM_KP>
+						<Ammo_8mmM_BP>Bullet_8mmM_BP</Ammo_8mmM_BP>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">	
+				<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_5mmVersatile"]/ammoTypes</xpath>
+					<value>
+						<Ammo_556x45mmNATO_D>Bullet_556x45mmNATO_D</Ammo_556x45mmNATO_D>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">	
+				<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_9mmVersatile"]/ammoTypes</xpath>
+					<value>
+						<Ammo_9x19mmPara_JHP>Bullet_9x19mmPara_JHP</Ammo_9x19mmPara_JHP>
 					</value>
 				</li>
 				

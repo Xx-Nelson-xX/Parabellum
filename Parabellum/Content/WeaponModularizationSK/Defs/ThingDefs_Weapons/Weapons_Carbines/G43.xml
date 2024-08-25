@@ -126,12 +126,12 @@
 						<postion>(0,0.1,0)</postion>
 						<scale>(1.2,0,1.2)</scale>
 						<defultThing>Module_G43Default</defultThing>
-						<allowEmpty>true</allowEmpty>
+						<allowEmpty>false</allowEmpty>
 						<filter>
 							<thingDefs>
 								<li>Module_G43Default</li>
 								<li>Module_G4320rnd</li>
-								<li>Module_G43Kurz</li>
+								<!--<li>Module_G43Kurz</li>-->
 							</thingDefs>
 						</filter>
 					</li>

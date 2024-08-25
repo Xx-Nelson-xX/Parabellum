@@ -9,6 +9,7 @@
         <graphicData>
             <texPath>Things/Weapons/Shotguns/DP12</texPath>
             <graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.8</drawSize>
         </graphicData>
         <soundInteract>Interact_Shotgun</soundInteract>
         <statBases>
@@ -39,9 +40,9 @@
                 <hasStandardCommand>true</hasStandardCommand>
                 <defaultProjectile>Bullet_12Gauge_Buck</defaultProjectile>
 				<burstShotCount>2</burstShotCount>
-                <ticksBetweenBurstShots>3</ticksBetweenBurstShots>
+                <ticksBetweenBurstShots>4</ticksBetweenBurstShots>
                 <warmupTime>0.7</warmupTime>
-                <range>18</range>
+                <range>22</range>
 				<targetParams>
                     <canTargetLocations>true</canTargetLocations>
                 </targetParams>
@@ -54,7 +55,7 @@
             <li Class="CombatExtended.CompProperties_FireModes">
                 <aiUseBurstMode>true</aiUseBurstMode>
                 <aiAimMode>AimedShot</aiAimMode>
-				<noSingleShot>FALSE</noSingleShot>
+				<noSingleShot>false</noSingleShot>
             </li>
             <li Class="CombatExtended.CompProperties_AmmoUser">
                 <magazineSize>16</magazineSize>
@@ -63,6 +64,11 @@
                 <ammoSet>AmmoSet_12Gauge</ammoSet>
             </li>
         </comps>
+		<modExtensions>
+		  <li Class="CombatExtended.GunDrawExtension">
+			<DrawSize>0.8</DrawSize>
+		  </li>
+		</modExtensions>
         <smeltProducts>
             <Shotgun_Component>1</Shotgun_Component>
             <Weapon_Parts>8</Weapon_Parts>
@@ -73,7 +79,7 @@
     <ThingDef ParentName="BaseGun_LongBarreled">
         <defName>Pa_CAWS</defName>
         <label>HK CAWS</label>
-        <description>The CAWS, as know as Close Assault Weapon System, was a prototype bullpup automatic shotgun from an ancient military project, even though the project and production was cancelled for its time, the new era find it a perfect weapon for assault mission and restarted its production with new modifications: long barrel to increase its effective range and a low power hybrid scope for easy targeting, both modification make the weapon exceptionally accurate, but not so good for mass control.</description>
+        <description>The CAWS, as know as Close Assault Weapon System, was a prototype bullpup automatic shotgun from an ancient military project, even though the project and production was cancelled for its time, the new era find it a perfect weapon for assault mission and restarted its production with new modifications: long barrel to increase its effective range and a low power scope for easy targeting, both modification make the weapon exceptionally accurate, but not so good for mass control.</description>
         <graphicData>
             <texPath>Things/Weapons/Shotguns/CAWS</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -82,8 +88,8 @@
         <statBases>
             <MarketValue>2200</MarketValue>
             <SightsEfficiency>1.2</SightsEfficiency>
-            <ShotSpread>0.07</ShotSpread>
-            <SwayFactor>1.55</SwayFactor>
+            <ShotSpread>0.056</ShotSpread>
+            <SwayFactor>1.35</SwayFactor>
             <RangedWeapon_Cooldown>1.2</RangedWeapon_Cooldown>
             <Bulk>7.2</Bulk>
             <Mass>3.7</Mass>
@@ -103,20 +109,20 @@
         </thingCategories>
         <verbs>
             <li Class="CombatExtended.VerbPropertiesCE">
-                <recoilAmount>1.55</recoilAmount>
+                <recoilAmount>1.4</recoilAmount>
                 <verbClass>CombatExtended.Verb_ShootCE</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
                 <defaultProjectile>Bullet_12Gauge_Buck</defaultProjectile>
                 <burstShotCount>5</burstShotCount>
                 <ticksBetweenBurstShots>12</ticksBetweenBurstShots>
-                <warmupTime>0.95</warmupTime>
-                <range>20</range>
+                <warmupTime>0.82</warmupTime>
+                <range>32</range>
 				<targetParams>
                     <canTargetLocations>true</canTargetLocations>
                 </targetParams>
                 <soundCast>Shot_CAWS</soundCast>
                 <soundCastTail>GunTail_Heavy</soundCastTail>
-                <muzzleFlashScale>9</muzzleFlashScale>
+                <muzzleFlashScale>7</muzzleFlashScale>
             </li>
         </verbs>
         <comps>
@@ -127,7 +133,7 @@
             </li>
             <li Class="CombatExtended.CompProperties_AmmoUser">
                 <magazineSize>10</magazineSize>
-                <reloadTime>2.8</reloadTime>
+                <reloadTime>2.2</reloadTime>
                 <ammoSet>AmmoSet_12Gauge</ammoSet>
             </li>
         </comps>

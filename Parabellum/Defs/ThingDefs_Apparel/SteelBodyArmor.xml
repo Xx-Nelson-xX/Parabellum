@@ -83,6 +83,7 @@
 		</colorGenerator>
 		<thingCategories>
 			<li>SetParabellumA</li>
+			<li>SetParabellumSA</li>
 			<li>SetCombatarmor</li>
 			<li>HeavyUpperArmorCat</li>
 		</thingCategories>
@@ -173,6 +174,7 @@
 		</colorGenerator>
 		<thingCategories>
 			<li>SetParabellumA</li>
+			<li>SetParabellumSA</li>
 			<li>SetCombatarmor</li>
 			<li>HeavyUpperArmorCat</li>
 		</thingCategories>

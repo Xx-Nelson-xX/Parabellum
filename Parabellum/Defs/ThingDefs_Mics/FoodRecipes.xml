@@ -351,6 +351,7 @@
 		<workSpeedStat>CookSpeed</workSpeedStat>
 		<effectWorking>Cook</effectWorking>
 		<workAmount>400</workAmount>
+		<targetCountAdjustment>2</targetCountAdjustment>
 		<soundWorking>Recipe_CookMeal</soundWorking>
 		<requiredGiverWorkType>Cooking</requiredGiverWorkType>
 		<allowMixingIngredients>true</allowMixingIngredients>

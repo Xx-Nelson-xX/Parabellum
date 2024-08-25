@@ -627,7 +627,7 @@
 			<Crafting>8</Crafting>
 		</skillRequirements>
 		<workSkill>Crafting</workSkill>
-		<researchPrerequisite>Parabellum_Gamma</researchPrerequisite>
+		<researchPrerequisite>Turrets_31</researchPrerequisite>
 	</RecipeDef>
 
 	<RecipeDef ParentName="AmmoRecipeBase">

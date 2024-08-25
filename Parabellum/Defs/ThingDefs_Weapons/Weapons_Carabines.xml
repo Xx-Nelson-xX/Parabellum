@@ -53,9 +53,9 @@
                 <aiAimMode>AimedShot</aiAimMode>
             </li>
             <li Class="CombatExtended.CompProperties_AmmoUser">
-                <magazineSize>7</magazineSize>
+                <magazineSize>11</magazineSize>
                 <reloadTime>2.1</reloadTime>
-                <ammoSet>AmmoSet_45ACP</ammoSet>
+                <ammoSet>AmmoSet_DC</ammoSet>
             </li>
         </comps>
         <smeltProducts>
@@ -67,21 +67,22 @@
 	<!-- M4.50 Beowulf -->
     <ThingDef ParentName="BaseGun_LongBarreled">
         <defName>Pa_M4Beowulf</defName>
-        <label>M4.50 Beowulf SC</label>
-        <description>The M4.50 Beowulf Special Carabine, changing the standard AR barrel to the heavier .50 Beowulf barrel to deal with light armored target and bear size animals. High damage, average range, good rate of fire and accuracy, but not really controllable in burst.</description>
+        <label>M4.50 Beowulf SBR</label>
+        <description>The M4.50 Beowulf Short Barrel Rifle, convertion of the standard M4 carbine into Big Game Hunting SBR, increase stopping power and somewhat penetration. High damage, low range, good rate of fire and somewhat accurate, but not really controllable in burst.</description>
         <graphicData>
             <texPath>Things/Weapons/Carabines/M4Beowulf</texPath>
             <graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.75</drawSize>
         </graphicData>
         <soundInteract>Interact_Rifle</soundInteract>
         <statBases>
-            <MarketValue>1700</MarketValue>
-            <SightsEfficiency>1.12</SightsEfficiency>
-            <ShotSpread>0.058</ShotSpread>
-            <SwayFactor>1.08</SwayFactor>
-            <RangedWeapon_Cooldown>0.95</RangedWeapon_Cooldown>
-            <Bulk>9.2</Bulk>
-            <Mass>3.8</Mass>
+            <MarketValue>1380</MarketValue>
+            <SightsEfficiency>1.1</SightsEfficiency>
+            <ShotSpread>0.068</ShotSpread>
+            <SwayFactor>1.2</SwayFactor>
+            <RangedWeapon_Cooldown>0.62</RangedWeapon_Cooldown>
+            <Bulk>6.8</Bulk>
+            <Mass>2.4</Mass>
         </statBases>
 		<generateCommonality>0.3</generateCommonality>
         <weaponTags>
@@ -89,23 +90,25 @@
             <li>AdvancedGun</li>
             <li>TierThreeRifle</li>
             <li>CE_AI_Rifle</li>
+			<li>CE_Sidearm</li>
+			<li>CE_OneHandedWeapon</li>
         </weaponTags>
         <thingCategories>
             <li>Rifles</li>
         </thingCategories>
         <verbs>
             <li Class="CombatExtended.VerbPropertiesCE">
-                <recoilAmount>1.68</recoilAmount>
+                <recoilAmount>1.74</recoilAmount>
                 <verbClass>CombatExtended.Verb_ShootCE</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
                 <defaultProjectile>Bullet_127x42mmB_FMJ</defaultProjectile>
-                <warmupTime>0.8</warmupTime>
-                <range>42</range>
+                <warmupTime>0.5</warmupTime>
+                <range>38</range>
                 <burstShotCount>4</burstShotCount>
                 <ticksBetweenBurstShots>5</ticksBetweenBurstShots>
                 <soundCast>Shot_Beowulf</soundCast>
                 <soundCastTail>GunTail_Heavy</soundCastTail>
-                <muzzleFlashScale>14</muzzleFlashScale>
+                <muzzleFlashScale>16</muzzleFlashScale>
             </li>
         </verbs>
         <comps>
@@ -116,13 +119,18 @@
             </li>
             <li Class="CombatExtended.CompProperties_AmmoUser">
                 <magazineSize>12</magazineSize>
-                <reloadTime>1.8</reloadTime>
+                <reloadTime>1.68</reloadTime>
                 <ammoSet>AmmoSet_127x42mmB</ammoSet>
             </li>
         </comps>
+		<modExtensions>
+		  <li Class="CombatExtended.GunDrawExtension">
+			<DrawSize>0.75</DrawSize>
+		  </li>
+		</modExtensions>
         <smeltProducts>
             <AdvRifle_Component>1</AdvRifle_Component>
-            <Weapon_Parts>8</Weapon_Parts>
+            <Weapon_Parts>6</Weapon_Parts>
             <Plastic>10</Plastic>
         </smeltProducts>
     </ThingDef>

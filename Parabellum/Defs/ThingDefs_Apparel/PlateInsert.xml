@@ -66,6 +66,7 @@
 		<thingCategories>
 			<li>ApparelUtility</li>
 			<li>SetParabellumIP</li>
+			<li>SetParabellumIPB</li>
 		</thingCategories>
 		<generateAllowChance>0.6</generateAllowChance>
         <recipeMaker>
@@ -136,6 +137,7 @@
 		<thingCategories>
 			<li>ApparelUtility</li>
 			<li>SetParabellumIP</li>
+			<li>SetParabellumIPB</li>
 		</thingCategories>
 		<generateAllowChance>0.3</generateAllowChance>
         <recipeMaker>

@@ -443,7 +443,7 @@
 			<Crafting>6</Crafting>
 		</skillRequirements>
 		<workSkill>Crafting</workSkill>
-		<researchPrerequisite>Mortars</researchPrerequisite>
+		<researchPrerequisite>Parabellum_Gamma</researchPrerequisite>
 	</RecipeDef>
 
 </Defs>

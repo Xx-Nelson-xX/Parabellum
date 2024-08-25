@@ -3,7 +3,7 @@
 	
 	<Operation Class="PatchOperationFindMod">
 	<mods>
-		<li>Modularization Vanilla Weapon</li>
+		<li>Modularization Vanilla Weapon SK</li>
 	</mods>
 		<match Class="PatchOperationSequence">
 			<operations>

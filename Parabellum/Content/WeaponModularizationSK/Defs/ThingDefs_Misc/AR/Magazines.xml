@@ -155,7 +155,7 @@
 		</comps>
 	</ThingDef>
 	
-	<ThingDef ParentName="GunPartBase">
+	<!--<ThingDef ParentName="GunPartBase">
 		<defName>Module_G43Kurz</defName>
 		<label>G43 30rnd StG magazine convertion</label>
 		<description>G43 with assault rifle magazine convertion, it has 30rnd of capacity(7.92x33mm Kurz).</description>
@@ -232,6 +232,6 @@
 				</attachmentProperties>
 			</li>
 		</comps>
-	</ThingDef>
+	</ThingDef>-->
 	
 </Defs>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+	
+	<Operation Class="PatchOperationFindMod">
+	<mods>
+		<li>HMC Vile's Pre-Industrial Overhaul</li>
+	</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+			
+				<li Class="PatchOperationReplace">	
+					<xpath>Defs/ResearchProjectDef[defName="Parabellum_Alpha"]/prerequisites</xpath> <!-- Gun_I -->
+					<value>
+						<prerequisites>
+							<li>Muskets_B3</li>
+						</prerequisites>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">	
+					<xpath>Defs/ResearchProjectDef[defName="Machining"]/prerequisites</xpath> <!-- industrial guns -->
+					<value>
+						<prerequisites>
+							<li>Metals_C1</li>
+							<li>Parabellum_Alpha</li>
+						</prerequisites>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">	
+					<xpath>Defs/ResearchProjectDef[defName="Parabellum_Beta"]/prerequisites</xpath> <!-- Gun_I -->
+					<value>
+						<prerequisites>
+							<li>Machining</li>
+							<li>Siege_Artillery</li>
+						</prerequisites>
+					</value>
+				</li>
+				
+				<!-- ==================== Recipes(W1887) ========================== -->
+				<li Class="PatchOperationReplace">	
+				<xpath>Defs/RecipeDef[defName="BuildPa_W1887L"]/researchPrerequisite</xpath>
+					<value>
+						  <researchPrerequisite>Muskets_B3</researchPrerequisite>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">	
+				<xpath>Defs/RecipeDef[defName="MakeAmmo_10Gauge_Buck"]/researchPrerequisite</xpath>
+					<value>
+						  <researchPrerequisite>Muskets_B3</researchPrerequisite>
+					</value>
+				</li>
+				
+				<!-- ==================== Black Powder Catridge ========================== -->
+				<li Class="PatchOperationAdd">	
+				<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_SR"]/ammoTypes</xpath>
+					<value>
+						<Ammo_44Rimfire>Bullet_44Rimfire</Ammo_44Rimfire>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">	
+				<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_SP"]/ammoTypes</xpath>
+					<value>
+						<Ammo_5070Govt>Bullet_5070Govt</Ammo_5070Govt>
+					</value>
+				</li>
+				
+				<!-- ==================== Recipes(21cm Mörser 16) ========================== -->
+				<li Class="PatchOperationReplace">	
+				<xpath>Defs/ThingDef[defName="Turret_Morser16HSA"]/costList</xpath>
+					<value>
+						<costList>
+							<CannonParts>8</CannonParts>
+							<Pa_SimpleCannon_Crate>4</Pa_SimpleCannon_Crate>
+						</costList>
+					</value>
+				</li>
+				
+			</operations>
+		</match>
+    </Operation>
+	
+</Patch>

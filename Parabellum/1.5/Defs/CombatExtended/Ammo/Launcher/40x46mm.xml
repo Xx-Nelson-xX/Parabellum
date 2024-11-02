@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- ==================== Ammo ========================== -->
+
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="40x46mmGrenadeBase">
+		<defName>Ammo_40x46mmGrenade_BB</defName>
+		<label>40x46mm grenade (Bean Bag)</label>
+		<graphicData>
+			<texPath>Things/Ammo/GrenadeLauncher/BB</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>6</MarketValue>
+		</statBases>
+		<ammoClass>Pa_GrenadeBB</ammoClass>
+		<generateAllowChance>0.35</generateAllowChance>
+	</ThingDef>
+
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="40x46mmGrenadeBase">
+		<defName>Ammo_40x46mmGrenade_F</defName>
+		<label>40x46mm grenade (Flechette)</label>
+		<graphicData>
+			<texPath>Things/Ammo/GrenadeLauncher/Flechette</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<Mass>0.24</Mass>
+			<Bulk>0.27</Bulk>
+			<MarketValue>10</MarketValue>
+		</statBases>
+		<ammoClass>Pa_GrenadeF</ammoClass>
+		<generateAllowChance>0.15</generateAllowChance>
+	</ThingDef>
+	
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="40x46mmGrenadeBase">
+		<defName>Ammo_40x46mmGrenade_Stun</defName>
+		<label>40x46mm grenade (Stun)</label>
+		<graphicData>
+			<texPath>Things/Ammo/GrenadeLauncher/Stun</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>8</MarketValue>
+		</statBases>
+		<ammoClass>Pa_GrenadeStun</ammoClass>
+		<generateAllowChance>0.25</generateAllowChance>
+	</ThingDef>
+	
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="40x46mmGrenadeBase">
+		<defName>Ammo_40x46mmGrenade_Foam</defName>
+		<label>40x46mm grenade (Foam)</label>
+		<graphicData>
+			<texPath>Things/Ammo/GrenadeLauncher/Foam</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>5</MarketValue>
+		</statBases>
+		<ammoClass>Pa_GrenadeFoam</ammoClass>
+		<generateAllowChance>0.05</generateAllowChance>
+	</ThingDef>
+
+	<!-- ================== Projectiles ================== -->
+	
+	<ThingDef Class="CombatExtended.AmmoDef" Name="Base40x46mmGrenadeBulletP" ParentName="SK_BaseBullet" Abstract="true">
+		<graphicData>
+			<texPath>Things/Projectile/Bullet_Big</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<speed>30</speed>
+			<alwaysFreeIntercept>false</alwaysFreeIntercept>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="Base40x46mmGrenadeBulletP">
+		<defName>Bullet_40x46mmGrenade_BB</defName>
+		<label>40x46mm grenade (Bean Bag)</label>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<speed>42</speed>
+			<damageDef>Beanbag</damageDef>
+			<damageAmountBase>34</damageAmountBase>
+			<armorPenetrationSharp>4</armorPenetrationSharp>
+			<armorPenetrationBlunt>60</armorPenetrationBlunt>
+			<spreadMult>0.5</spreadMult>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="Base40x46mmGrenadeBulletP">
+		<defName>Bullet_40x46mmGrenade_F</defName>
+		<label>40x46mm XM576E2 grenade (Flechette)</label>
+		<graphicData>
+			<texPath>Things/Projectile/CGR/Dart</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<speed>54</speed><!--268m/s-->
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>10</damageAmountBase>
+			<pelletCount>27</pelletCount>
+			<spreadMult>40.5</spreadMult>
+			<armorPenetrationSharp>12</armorPenetrationSharp>
+			<armorPenetrationBlunt>4.2</armorPenetrationBlunt>
+		</projectile>
+	</ThingDef>
+	
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="Base40x46mmGrenadeBulletP">
+		<defName>Bullet_40x46mmGrenade_Stun</defName>
+		<label>40x46mm grenade (Stun)</label>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageDef>Beanbag</damageDef>
+			<damageAmountBase>22</damageAmountBase>
+			<armorPenetrationSharp>2</armorPenetrationSharp>
+			<armorPenetrationBlunt>24</armorPenetrationBlunt>
+			<spreadMult>0.6</spreadMult>
+		</projectile>
+		<comps>
+			<li Class="CombatExtended.CompProperties_ExplosiveCE">
+				<explosiveRadius>3.1</explosiveRadius>
+				<explosiveDamageType>Stun</explosiveDamageType>
+				<damageAmountBase>44</damageAmountBase>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="Base40x46mmGrenadeBulletP">
+		<defName>Bullet_40x46mmGrenade_Foam</defName>
+		<label>40x46mm grenade (Foam)</label>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageDef>Beanbag</damageDef>
+			<damageAmountBase>16</damageAmountBase>
+			<armorPenetrationSharp>2</armorPenetrationSharp>
+			<armorPenetrationBlunt>32</armorPenetrationBlunt>
+			<spreadMult>0.65</spreadMult>
+		</projectile>
+		<comps>
+			<li Class="CombatExtended.CompProperties_ExplosiveCE">
+				<explosiveRadius>5.5</explosiveRadius>
+				<explosiveDamageType>Extinguish</explosiveDamageType>	
+				<postExplosionSpawnThingDef>Filth_FireFoam</postExplosionSpawnThingDef>
+				<postExplosionSpawnChance>1</postExplosionSpawnChance>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<!-- ==================== Recipes ========================== -->
+
+	<RecipeDef ParentName="AmmoRecipeBase">
+		<defName>MakeAmmo_40x46mmGrenade_BB</defName>
+		<label>make 40x46mm Bean Bag grenades x20</label>
+		<description>Craft 20 40x46mm BB grenades.</description>
+		<jobString>Making 40x46mm BB grenades.</jobString>
+		<targetCountAdjustment>20</targetCountAdjustment>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>SLDBar</li>
+						<li>USLDBar</li>
+					</categories>
+				</filter>
+				<count>36</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Cloth</li>
+					</thingDefs>
+				</filter>
+				<count>24</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Powder</li>
+					</thingDefs>
+				</filter>
+				<count>4</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>SLDBar</li>
+				<li>USLDBar</li>
+			</categories>
+			<thingDefs>
+				<li>Powder</li>
+				<li>Cloth</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Ammo_40x46mmGrenade_BB>20</Ammo_40x46mmGrenade_BB>
+		</products>
+	</RecipeDef>
+
+	<RecipeDef ParentName="AmmoRecipeBase">
+		<defName>MakeAmmo_40x46mmGrenade_F</defName>
+		<label>make 40x46mm Flechette grenades x20</label>
+		<description>Craft 20 40x46mm Flechette grenades.</description>
+		<jobString>Making 40x46mm Flechette grenades.</jobString>
+		<targetCountAdjustment>20</targetCountAdjustment>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>SLDBar</li>
+						<li>USLDBar</li>
+					</categories>
+				</filter>
+				<count>64</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Powder</li>
+						<li>FSX</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>4</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>SLDBar</li>
+				<li>USLDBar</li>
+			</categories>
+			<thingDefs>
+				<li>FSX</li>
+				<li>Powder</li>
+				<li>ComponentIndustrial</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Ammo_40x46mmGrenade_F>20</Ammo_40x46mmGrenade_F>
+		</products>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="AmmoRecipeBase">
+		<defName>MakeAmmo_40x46mmGrenade_Stun</defName>
+		<label>make 40x46mm Stun grenades x20</label>
+		<description>Craft 20 40x46mm Stun grenades.</description>
+		<jobString>Making 40x46mm Stun grenades.</jobString>
+		<targetCountAdjustment>20</targetCountAdjustment>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>SLDBar</li>
+						<li>USLDBar</li>
+					</categories>
+				</filter>
+				<count>48</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Powder</li>
+						<li>FSX</li>
+					</thingDefs>
+				</filter>
+				<count>6</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>4</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>SLDBar</li>
+				<li>USLDBar</li>
+			</categories>
+			<thingDefs>
+				<li>FSX</li>
+				<li>Powder</li>
+				<li>ComponentIndustrial</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Ammo_40x46mmGrenade_Stun>20</Ammo_40x46mmGrenade_Stun>
+		</products>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="AmmoRecipeBase">
+		<defName>MakeAmmo_40x46mmGrenade_Foam</defName>
+		<label>make 40x46mm Foam grenades x20</label>
+		<description>Craft 20 40x46mm Foam grenades.</description>
+		<jobString>Making 40x46mm Foam grenades.</jobString>
+		<targetCountAdjustment>20</targetCountAdjustment>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>SLDBar</li>
+						<li>USLDBar</li>
+					</categories>
+				</filter>
+				<count>32</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Powder</li>
+						<li>FSX</li>
+					</thingDefs>
+				</filter>
+				<count>4</count>
+			</li>
+			<li>
+                <filter>
+                    <thingDefs>
+                        <li>Plastic</li>
+                    </thingDefs>
+                </filter>
+                <count>80</count>
+            </li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>4</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>SLDBar</li>
+				<li>USLDBar</li>
+			</categories>
+			<thingDefs>
+				<li>FSX</li>
+				<li>Powder</li>
+				<li>Plastic</li>
+				<li>ComponentIndustrial</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Ammo_40x46mmGrenade_Foam>20</Ammo_40x46mmGrenade_Foam>
+		</products>
+	</RecipeDef>
+
+</Defs>

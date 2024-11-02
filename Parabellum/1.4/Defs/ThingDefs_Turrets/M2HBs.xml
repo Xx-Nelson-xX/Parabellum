@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<!-- ================ Dual M2HB ============== -->
+
+	<ThingDef ParentName="BaseGun_Turret">
+		<defName>Pa_M2BrowningD</defName>
+		<label>Dual M2HB Browning HMG</label>
+		<description>2 M2 Browning MG gun attached to a solid platform.</description>
+		<tradeability>None</tradeability>
+		<graphicData>
+			<texPath>Things/Building/Security/CMMT/M2BrowningD_Top</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>4000</MarketValue>
+			<SightsEfficiency>1.65</SightsEfficiency>
+			<ShotSpread>0.085</ShotSpread>
+			<SwayFactor>0.7</SwayFactor>
+			<RangedWeapon_Cooldown>1.8</RangedWeapon_Cooldown>
+		</statBases>
+		<verbs>
+			<li Class="CombatExtended.VerbPropertiesCE">
+				<recoilPattern>Mounted</recoilPattern>
+				<recoilAmount>0.86</recoilAmount>
+				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_50BMG_FMJ</defaultProjectile>
+				<warmupTime>1.4</warmupTime>
+				<range>60</range>
+				<minRange>3</minRange>
+				<ticksBetweenBurstShots>3</ticksBetweenBurstShots>
+				<burstShotCount>20</burstShotCount>
+				<!--<forcedMissRadius>1.9</forcedMissRadius>-->
+				<soundCast>HeavyMG</soundCast>
+				<muzzleFlashScale>11</muzzleFlashScale>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="CombatExtended.CompProperties_AmmoUser">
+				<magazineSize>400</magazineSize>
+				<reloadTime>10.2</reloadTime>
+				<!-- <spawnUnloaded>true</spawnUnloaded> -->
+				<ammoSet>AmmoSet_50BMG</ammoSet>
+			</li>
+			<li Class="CombatExtended.CompProperties_FireModes">
+				<aimedBurstShotCount>6</aimedBurstShotCount>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<!-- ================ M45 Quadmount ============== -->
+
+	<ThingDef ParentName="BaseGun_Turret">
+		<defName>Pa_M2BrowningQ</defName>
+		<label>M45 Quadmount</label>
+		<description>4 M2 Browning MG gun attached to a solid AA platform.</description>
+		<tradeability>None</tradeability>
+		<graphicData>
+			<texPath>Things/Building/Security/CMMT/M2BrowningQ_Top</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>6400</MarketValue>
+			<SightsEfficiency>1.8</SightsEfficiency>
+			<ShotSpread>0.065</ShotSpread>
+			<SwayFactor>0.5</SwayFactor>
+			<RangedWeapon_Cooldown>2.2</RangedWeapon_Cooldown>
+		</statBases>
+		<verbs>
+			<li Class="CombatExtended.VerbPropertiesCE">
+				<recoilPattern>Mounted</recoilPattern>
+				<recoilAmount>0.64</recoilAmount>
+				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_50BMG_FMJ</defaultProjectile>
+				<warmupTime>1.8</warmupTime>
+				<range>64</range>
+				<minRange>3</minRange>
+				<ticksBetweenBurstShots>2</ticksBetweenBurstShots>
+				<burstShotCount>40</burstShotCount>
+				<!--<forcedMissRadius>1.9</forcedMissRadius>-->
+				<soundCast>HeavyMG</soundCast>
+				<muzzleFlashScale>11</muzzleFlashScale>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="CombatExtended.CompProperties_AmmoUser">
+				<magazineSize>800</magazineSize>
+				<reloadTime>19.8</reloadTime>
+				<!-- <spawnUnloaded>true</spawnUnloaded> -->
+				<ammoSet>AmmoSet_50BMG</ammoSet>
+			</li>
+			<li Class="CombatExtended.CompProperties_FireModes">
+				<aimedBurstShotCount>12</aimedBurstShotCount>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<!-- =============== Turret Base(Dual M2HB) =============== -->
+	
+	<ThingDef ParentName="TurretMannedBase">
+		<defName>Turret_M2BrowningD</defName>
+		<label>Dual M2HB Browning HMG</label>
+		<graphicData>
+			<texPath>Things/Building/Security/Base/P_Base</texPath>
+			<drawSize>(1.6,1.6)</drawSize>
+			<shadowData>
+				<volume>(0.3, 0.6, 0.3)</volume>
+			</shadowData>
+		</graphicData>
+		<uiIconPath>Things/Building/Security/CMMT/M2BrowningD_icon</uiIconPath>
+		<statBases>
+			<MaxHitPoints>200</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+			<WorkToBuild>1800</WorkToBuild>
+			<Mass>75</Mass>
+			<Bulk>80</Bulk>
+		</statBases>
+		<techLevel>Spacer</techLevel>
+		<description>A manned, mounted Dual M2HB Browning Heavy Machine Gun. It uses .50 BMG Bullets for ammo.</description>
+		<size>(1,1)</size>
+		<stuffCategories>
+			<li>RuggedMetallic</li>
+		</stuffCategories>
+		<costStuffCount>100</costStuffCount>
+		<costList>
+			<MGTurret_Crate>2</MGTurret_Crate>
+		</costList>
+		<researchPrerequisites>
+			<li>Heavy_turrets_C2</li>
+		</researchPrerequisites>
+		<specialDisplayRadius>3</specialDisplayRadius>
+		<designationCategory>Security</designationCategory>
+		<building>
+			<turretGunDef>Pa_M2BrowningD</turretGunDef>
+			<turretTopDrawSize>1.6</turretTopDrawSize>
+			<buildingTags>
+				<li>MachineGun</li>
+			</buildingTags>
+		</building>
+		<minifiedDef>MinifiedTurret_M2BrowningD</minifiedDef>
+		<thingCategories>
+			<li>BuildingsSecurity</li>
+		</thingCategories>
+		<constructionSkillPrerequisite>10</constructionSkillPrerequisite>
+	</ThingDef>
+	
+	<!-- =============== Turret Base(Dual M2HB) =============== -->
+	
+	<ThingDef ParentName="TurretMannedBase">
+		<defName>Turret_M2BrowningQ</defName>
+		<label>M45 Quadmount</label>
+		<graphicData>
+			<texPath>Things/Building/Security/Base/P_Base</texPath>
+			<drawSize>(2.4,2.4)</drawSize>
+			<shadowData>
+				<volume>(0.3, 0.6, 0.3)</volume>
+			</shadowData>
+		</graphicData>
+		<uiIconPath>Things/Building/Security/CMMT/M2BrowningQ_icon</uiIconPath>
+		<interactionCellOffset>(0,0,0)</interactionCellOffset>
+		<statBases>
+			<MaxHitPoints>350</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+			<WorkToBuild>2000</WorkToBuild>
+			<Mass>1087</Mass>
+			<Bulk>1087</Bulk>
+		</statBases>
+		<techLevel>Spacer</techLevel>
+		<description>A manned, mounted Quad M2HB Browning AA Turret. It uses .50 BMG Bullets for ammo.</description>
+		<size>(1,1)</size>
+		<stuffCategories>
+			<li>RuggedMetallic</li>
+		</stuffCategories>
+		<costStuffCount>150</costStuffCount>
+		<costList>
+			<MGTurret_Crate>4</MGTurret_Crate>
+			<Sniper_Component>1</Sniper_Component>
+		</costList>
+		<researchPrerequisites>
+			<li>Heavy_turrets_C3</li>
+		</researchPrerequisites>
+		<specialDisplayRadius>3</specialDisplayRadius>
+		<designationCategory>Security</designationCategory>
+		<building>
+			<turretGunDef>Pa_M2BrowningQ</turretGunDef>
+			<turretTopDrawSize>2.4</turretTopDrawSize>
+			<buildingTags>
+				<li>MachineGun</li>
+			</buildingTags>
+		</building>
+		<minifiedDef>MinifiedTurret_M2BrowningQ</minifiedDef>
+		<thingCategories>
+			<li>BuildingsSecurity</li>
+		</thingCategories>
+		<constructionSkillPrerequisite>12</constructionSkillPrerequisite>
+	</ThingDef>
+	
+	<!-- ================== Minified ================== -->
+	
+	<ThingDef ParentName="MinifiedTurretBase">
+		<defName>MinifiedTurret_M2BrowningD</defName>
+		<label>Dual M2HB Browning HMG turret</label>
+		<statBases>
+			<Mass>50</Mass>
+			<Bulk>60</Bulk>
+		</statBases>
+	</ThingDef>
+	
+	<ThingDef ParentName="MinifiedTurretBase">
+		<defName>MinifiedTurret_M2BrowningQ</defName>
+		<label>M45 Quadmount turret</label>
+		<statBases>
+			<Mass>500</Mass>
+			<Bulk>500</Bulk>
+		</statBases>
+	</ThingDef>
+
+</Defs>

@@ -1,3 +1,12 @@
+<--------------------------------------- 2.0a(RW 1.5 Dev) -------------------------------------------->
+
+2.0a - 1.5 compatibility
+
+	
+Tweaks:
++Compatibility for RW HSK 1.5
+-Moved StG 45(M) to Parabellum WT
+
 <--------------------------------------- 1.9(RW 1.4 Dev) -------------------------------------------->
 
 1.9 - 4 new turret, 4 new ammo, 5 new items Tweaks and Fixes

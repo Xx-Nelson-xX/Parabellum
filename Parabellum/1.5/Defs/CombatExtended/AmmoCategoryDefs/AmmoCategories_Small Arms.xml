@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+   <!-- ==================== .50 Beowulf ========================== -->
+   <CombatExtended.AmmoCategoryDef>
+    <defName>Pa_BeowulFMJ</defName>
+    <label>.50 Beowulf FMJ</label>
+    <labelShort>B FMJ</labelShort>
+    <description>Standard .50 Beowulf Full Metal Jacket, jack in all trade, master of none</description>
+  </CombatExtended.AmmoCategoryDef>
+
+   <CombatExtended.AmmoCategoryDef>
+    <defName>Pa_BeowulAPI</defName>
+    <label>.50 Beowulf API</label>
+    <labelShort>B API</labelShort>
+    <description>.50 Beowulf Armor Piercing Incendiary ammo, good counter medium armored target</description>
+  </CombatExtended.AmmoCategoryDef>
+  
+  <CombatExtended.AmmoCategoryDef>
+    <defName>Pa_BeowulHP</defName>
+    <label>.50 Beowulf HP</label>
+    <labelShort>B HP</labelShort>
+    <description>.50 Beowulf Hollow Point ammo, good counter light or non-armored target</description>
+  </CombatExtended.AmmoCategoryDef>
+  
+ <CombatExtended.AmmoCategoryDef>
+    <defName>Pa_BeowulEMP</defName>
+    <label>.50 Beowulf EMP</label>
+    <labelShort>B EMP</labelShort>
+    <description>.50 Beowulf ElectroMagnetic Pulse ammo, can stun/paralize machine and cause electric burn</description>
+  </CombatExtended.AmmoCategoryDef>
+  
+  <!-- ==================== 8mm Mauser Rifle Catridge ========================== -->
+  <CombatExtended.AmmoCategoryDef>
+    <defName>Pa_8mmP88M</defName>
+    <label>8x57mm Patrone 88 (FMJ)</label>
+    <labelShort>8mm P88 FMJ</labelShort>
+    <description>First generation smokeless propellant cartridge, doesn't has the best ballistic compared to modern catridge, but is lot better than slow speed catridge made with black gun powder.</description>
+  </CombatExtended.AmmoCategoryDef>
+  
+  <CombatExtended.AmmoCategoryDef>
+    <defName>Pa_8mmSP</defName>
+    <label>7.92x57mm S Patrone (FMJ)</label>
+    <labelShort>7.92mm SP FMJ</labelShort>
+    <description>Improve version of the Patrone 88 and the catridge became the official adoption to the army, improved in ballistic, weight, stopping power, accuracy and effective range, basically everything.</description>
+  </CombatExtended.AmmoCategoryDef>
+  
+  <CombatExtended.AmmoCategoryDef>
+    <defName>Pa_8mmKP</defName>
+    <label>7.92x57mm K Patrone (AP)</label>
+    <labelShort>7.92mm KP AP</labelShort>
+    <description>Aka. S.m.K.H.(Spitzgeschoss mit Kern, Hart), Spitzer bullet/Heavy pointed with hardened core, it use Tungsten to increase its effectiveness as penetration projectile.</description>
+  </CombatExtended.AmmoCategoryDef>
+  
+  <CombatExtended.AmmoCategoryDef>
+    <defName>Pa_8mmBP</defName>
+    <label>7.92x57mm B Patrone (HE-T)</label>
+    <labelShort>7.92mm BP HE-T</labelShort>
+    <description>B(Beobachtung)/High Explosive - Tracer, an "Observation" bullet for Luftwaffen and sharpshooters, the bullet explode after impact to indicate where it landed for the shooter, can cause temporal concussion and blast damage when hit at soft target.</description>
+  </CombatExtended.AmmoCategoryDef>
+  
+  <!-- ==================== 7.92x33mm Kurz Intermediate Catridge ========================== -->
+  <CombatExtended.AmmoCategoryDef>
+    <defName>Pa_792mmKFMJ</defName>
+    <label>7.92x33mm K (FMJ)</label>
+    <labelShort>7.92K FMJ</labelShort>
+    <description>Full Metal Jacket, more powerful than pistol round but weaker than rifle round, relatively cheap to produce.</description>
+  </CombatExtended.AmmoCategoryDef>
+  
+  <CombatExtended.AmmoCategoryDef>
+    <defName>Pa_792mmKAP</defName>
+    <label>7.92x33mm K (AP)</label>
+    <labelShort>7.92K AP</labelShort>
+    <description>Armor Piercing round, use hardened Tungsten core bullet and increased projectile speed to increase its armor penetration.</description>
+  </CombatExtended.AmmoCategoryDef>
+  
+  <CombatExtended.AmmoCategoryDef>
+    <defName>Pa_792mmKJ</defName>
+    <label>7.92x33mm K (J)</label>
+    <labelShort>7.92K J</labelShort>
+    <description>Jaggerpatrone 43, overpressure sharpshooter round, increase its overall performance.</description>
+  </CombatExtended.AmmoCategoryDef>
+  
+  <!-- ==================== 8mm Mauser Pistol Catridge ========================== -->
+  <CombatExtended.AmmoCategoryDef>
+    <defName>Pa_763mmMFMJ</defName>
+    <label>7.63x25mm Mauser (FMJ)</label>
+    <labelShort>7.63mm Mauser FMJ</labelShort>
+    <description>Full Metal Jacket, high velocity bullet, doesn't have as much stopping power as most of the pistol caliber but thanks to its projectile velocity, it has better penetration than most pistol's FMJ round.</description>
+  </CombatExtended.AmmoCategoryDef>
+  
+  <CombatExtended.AmmoCategoryDef>
+    <defName>Pa_763mmMHP</defName>
+    <label>7.63x25mm Mauser (HP)</label>
+    <labelShort>7.63mm Mauser HP</labelShort>
+    <description>Hollow Point, custom bullet, increased stopping power the trade off is reducing the penetration and slightly the projectile velocity.</description>
+  </CombatExtended.AmmoCategoryDef>
+  
+  <!-- ==================== 13,2x92mmSR Anti-Tank Catridge ========================== -->
+  <CombatExtended.AmmoCategoryDef>
+    <defName>Pa_TuFAP</defName>
+    <label>13.2x92mm SR TuF (AP)</label>
+    <labelShort>13.2mm TuF AP</labelShort>
+    <description>The Mauser 13.2mm TuF (German: Tank und Flieger; lit. "tank and aircraft", known also as 13.2×92mmSR) cartridge, was a major step in the development of anti-tank cartridges, being the first one designed for the sole purpose of destroying armored targets.</description>
+  </CombatExtended.AmmoCategoryDef>
+  
+  <CombatExtended.AmmoCategoryDef>
+    <defName>Pa_TuFAPHE</defName>
+    <label>13.2x92mm SR TuF (APHE)</label>
+    <labelShort>13.2mm TuF APHE</labelShort>
+    <description>Due the catridge became obsolete after the war, the surplus ammo are filled with small amount explosive payload to increase its damage counter light armored vehicle and soft target, the modification reduce its penetration capability quite bit.</description>
+  </CombatExtended.AmmoCategoryDef>
+  
+  <CombatExtended.AmmoCategoryDef>
+    <defName>Pa_13mmHET</defName>
+    <label>13x64mmB (HE-T)</label>
+    <labelShort>13x64mmB (HE-T)</labelShort>
+    <description>High Explosive - Tracer round, generally used for AA purpose, due its increased explosive payload for the bullets, is very effective counter light armored and soft target, but it reduce a lots of its penetration for exchange.</description>
+  </CombatExtended.AmmoCategoryDef>
+  
+  <!-- ==================== .10 Gauge BuckShot ========================== -->
+  <CombatExtended.AmmoCategoryDef>
+    <defName>Pa_10GBS</defName>
+    <label>10 Gauge Buckshot</label>
+    <labelShort>10 Gauge BS</labelShort>
+    <description>Filled with several buckshot pellets which spread in a tight pattern, bigger pellets than 12 Gauges Buckshot, but with less pellets due increase pellet size.</description>
+  </CombatExtended.AmmoCategoryDef>
+  
+  <!-- ==================== HSK+ ========================== -->
+  
+  <!-- ==================== Shotgun Shell ========================== -->
+  <CombatExtended.AmmoCategoryDef>
+    <defName>Pa_SSalt</defName>
+    <label>Shotgun SaltShot</label>
+    <labelShort>Salt Shot</labelShort>
+    <description>Custom made shotgun shell filled with rock salt, cause lots of pain when the salt fragments manage to encrusted in living body part but very ineffective counter armored target and thick skin creatures.</description>
+  </CombatExtended.AmmoCategoryDef>
+  
+  <CombatExtended.AmmoCategoryDef>
+    <defName>Pa_Magnum</defName>
+    <label>000 Magnum Buckshot</label>
+    <labelShort>000 MB</labelShort>
+    <description>Magnum load 000 buck shotgun shell, increase pellet size and lower the pellet count, which also reduce spread and increase tissue damage and penetration.</description>
+  </CombatExtended.AmmoCategoryDef>
+  
+  <!-- ==================== Pistol ========================== -->
+  <CombatExtended.AmmoCategoryDef>
+    <defName>Pa_9mmJHP</defName>
+    <label>9x19mm Para JHP +p+</label>
+    <labelShort>JHP +p+</labelShort>
+    <description>Overpressure Jacked Hollow Point round, increase overall bullet performance + Jacket Hollow Point for increase tissue damage after impact.</description>
+  </CombatExtended.AmmoCategoryDef>
+  
+  <CombatExtended.AmmoCategoryDef>
+    <defName>Pa_45Super</defName>
+    <label>.45 Super</label>
+    <labelShort>Super</labelShort>
+    <description>Overpressure pistol round, increase overall bullet performance compared to standard .45 ACP.</description>
+  </CombatExtended.AmmoCategoryDef>
+  
+  <!-- ==================== Rifle ========================== -->
+  <CombatExtended.AmmoCategoryDef>
+    <defName>Pa_556x45mmD</defName>
+    <label>5.56x45mm NATO Duplex</label>
+    <labelShort>Duplex</labelShort>
+    <description>Just like normal FMJ round but with extra bullet per shot, the addition of extra bullet alter the ballistic of the projectile a bit, not enough to achive the original goal.</description>
+  </CombatExtended.AmmoCategoryDef>
+  
+  <CombatExtended.AmmoCategoryDef>
+    <defName>Pa_762x39mmI</defName>
+    <label>7.62x39mm Incendiary</label>
+    <labelShort>Incendiary</labelShort>
+    <description>Special Intermediate round with incendiary tip, designed as observation round, cause burning uppon impact.</description>
+  </CombatExtended.AmmoCategoryDef>
+  
+  <CombatExtended.AmmoCategoryDef>
+    <defName>Pa_303BritishI</defName>
+    <label>.303 British Incendiary</label>
+    <labelShort>Incendiary</labelShort>
+    <description>Special Rifle round with incendiary tip, designed as observation round or countermeasure against Zeppelins, cause burning uppon impact.</description>
+  </CombatExtended.AmmoCategoryDef>
+  
+  <CombatExtended.AmmoCategoryDef>
+    <defName>Pa_762x51mmT</defName>
+    <label>7.62x51mm NATO Triplex</label>
+    <labelShort>Triplex</labelShort>
+    <description>Just like normal FMJ round but with extra 2 bullet per shot, the addition of 2 more bullets alter the ballistic of the projectile even more, maybe using a shotgun instead?</description>
+  </CombatExtended.AmmoCategoryDef>
+
+</Defs>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+   <DamageDef ParentName="LocalInjuryBase">
+    <defName>SaltF</defName>
+    <label>rock salt</label>
+    <externalViolence>true</externalViolence>
+    <deathMessage>{0} has been shot to death.</deathMessage>
+    <hediff>GunshotSalt</hediff>
+	<harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+	<canUseDeflectMetalEffect>false</canUseDeflectMetalEffect>
+	<additionalHediffs>
+		<li>
+			<hediff>Salt_Blindness</hediff>
+			<severityPerDamageDealt>0.1</severityPerDamageDealt>
+			<victimSeverityScalingByInvBodySize>true</victimSeverityScalingByInvBodySize>
+		</li>
+	</additionalHediffs>
+    <impactSoundType>Blunt</impactSoundType>
+    <armorCategory>Sharp</armorCategory>
+    <overkillPctToDestroyPart>0.8~1</overkillPctToDestroyPart>
+	<buildingDamageFactor>0</buildingDamageFactor>
+	<plantDamageFactor>0.1</plantDamageFactor>
+    <isRanged>true</isRanged>
+    <makesAnimalsFlee>true</makesAnimalsFlee>
+  </DamageDef>
+  
+  <DamageDef ParentName="Bullet">
+    <defName>ACP</defName>
+    <label>shell</label>
+    <deathMessage>{0} has been shredded to death.</deathMessage>
+    <hediff>Shredded</hediff>
+    <hediffSolid>Crack</hediffSolid>
+    <minDamageToFragment>5</minDamageToFragment>
+    <buildingDamageFactor>6</buildingDamageFactor>
+    <plantDamageFactor>14</plantDamageFactor>
+	<buildingDamageFactorImpassable>5</buildingDamageFactorImpassable>
+	<buildingDamageFactorPassable>4</buildingDamageFactorPassable>
+  </DamageDef>
+  
+  <DamageDef Name="ACExp" ParentName="Bomb" Abstract="true">
+    <label>bomb</label>
+    <minDamageToFragment>99999</minDamageToFragment>
+    <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+	<buildingDamageFactor>7</buildingDamageFactor>
+    <plantDamageFactor>8</plantDamageFactor>
+	<buildingDamageFactorImpassable>6</buildingDamageFactorImpassable>
+	<buildingDamageFactorPassable>5</buildingDamageFactorPassable>
+  </DamageDef>
+  
+  <DamageDef ParentName="ACExp">
+    <defName>ACB</defName>
+  </DamageDef>
+  
+  <DamageDef ParentName="ACExp">
+    <defName>NuclearB</defName>
+	<explosionCenterMote>Mote_NukeCloud</explosionCenterMote>
+  </DamageDef>
+
+</Defs>

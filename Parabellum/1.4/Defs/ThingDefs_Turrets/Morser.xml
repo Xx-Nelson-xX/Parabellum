@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<!-- ================ 21cm Mörser 16 ============== -->
+
+	<ThingDef ParentName="BaseGun_Turret">
+		<defName>Pa_Morser16HSA</defName>
+		<label>21cm Mörser 16</label>
+		<description>21cm Heavy siege artillery.</description>
+		<graphicData>
+			<texPath>Things/Building/Security/CMHT/Morser16_Top</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Artillery_ShellLoaded</soundInteract>
+		<techLevel>Industrial</techLevel>
+		<tradeability>None</tradeability>
+		<statBases>
+			<MarketValue>3000</MarketValue>
+			<SightsEfficiency>2.2</SightsEfficiency>
+			<ShotSpread>0.16</ShotSpread>
+			<SwayFactor>1.2</SwayFactor>
+			<RangedWeapon_Cooldown>8</RangedWeapon_Cooldown>
+		</statBases>
+		<weaponTags>
+			<li>Artillery</li>
+			<li>Artillery_BaseDestroyer</li>
+		</weaponTags>
+		<verbs>
+			<li Class="CombatExtended.VerbPropertiesCE">
+				<verbClass>CombatExtended.Verb_ShootMortarCE</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_21cmHowitzerShell_HE</defaultProjectile>
+				<!--<forcedMissRadius>5</forcedMissRadius>-->
+				<circularError>1.5</circularError>
+				<minRange>38</minRange>
+				<range>245</range>
+				<warmupTime>4.2</warmupTime>
+				<soundCast>Shot_21cm</soundCast>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>26</muzzleFlashScale>
+				<indirectFirePenalty>0.15</indirectFirePenalty>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="CombatExtended.CompProperties_AmmoUser">
+				<magazineSize>1</magazineSize>
+				<reloadTime>36</reloadTime>
+				<!-- <spawnUnloaded>true</spawnUnloaded> -->
+				<ammoSet>AmmoSet_21cmM16HowitzerShell</ammoSet>
+			</li>
+			<li Class="CombatExtended.CompProperties_FireModes" />
+		</comps>
+	</ThingDef>
+	
+	<!-- ================ 21cm Mörser 18 ============== -->
+
+	<ThingDef ParentName="BaseGun_Turret">
+		<defName>Pa_Morser18HSA</defName>
+		<label>21cm Mörser 18</label>
+		<description>21cm Heavy siege artillery, improved/updated version.</description>
+		<graphicData>
+			<texPath>Things/Building/Security/CMHT/Morser18_Top</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Artillery_ShellLoaded</soundInteract>
+		<techLevel>Spacer</techLevel>
+		<tradeability>None</tradeability>
+		<statBases>
+			<MarketValue>5000</MarketValue>
+			<SightsEfficiency>3.2</SightsEfficiency>
+			<ShotSpread>0.1</ShotSpread>
+			<SwayFactor>1</SwayFactor>
+			<RangedWeapon_Cooldown>4</RangedWeapon_Cooldown>
+		</statBases>
+		<weaponTags>
+			<li>Artillery</li>
+			<li>Artillery_BaseDestroyer</li>
+		</weaponTags>
+		<verbs>
+			<li Class="CombatExtended.VerbPropertiesCE">
+				<verbClass>CombatExtended.Verb_ShootMortarCE</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_21cmHowitzerShell_HE</defaultProjectile>
+				<!--<forcedMissRadius>5</forcedMissRadius>-->
+				<circularError>1</circularError>
+				<minRange>38</minRange>
+				<range>380</range>
+				<warmupTime>3.1</warmupTime>
+				<soundCast>Shot_21cm</soundCast>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>26</muzzleFlashScale>
+				<indirectFirePenalty>0.05</indirectFirePenalty>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="CombatExtended.CompProperties_AmmoUser">
+				<magazineSize>1</magazineSize>
+				<reloadTime>22</reloadTime>
+				<!-- <spawnUnloaded>true</spawnUnloaded> -->
+				<ammoSet>AmmoSet_21cmM18HowitzerShell</ammoSet>
+			</li>
+			<li Class="CombatExtended.CompProperties_FireModes" />
+		</comps>
+	</ThingDef>
+	
+	<!--=============== Turret Base(21cm Mörser 16) ===============-->
+
+	<ThingDef ParentName="TurretMannedBase">
+		<defName>Turret_Morser16HSA</defName>
+		<label>21cm Mörser 16 HSA</label>
+		<graphicData>
+			<texPath>Things/Building/Security/Base/Morser_Base</texPath>
+			<drawSize>(2.6,2.6)</drawSize>
+			<shadowData>
+				<volume>(0.3, 0.6, 0.3)</volume>
+			</shadowData>
+		</graphicData>
+		<uiIconPath>Things/Building/Security/CMHT/Morser16_icon</uiIconPath>
+		<hasInteractionCell>True</hasInteractionCell>
+		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		<statBases>
+			<MaxHitPoints>400</MaxHitPoints>
+			<WorkToBuild>3200</WorkToBuild>
+			<Mass>6680</Mass>
+			<Bulk>6680</Bulk>
+		</statBases>
+		<placeWorkers>
+			<li>PlaceWorker_NotUnderRoof</li>
+		</placeWorkers>
+		<techLevel>Industrial</techLevel>
+		<description>21cm Lange Mörser M 16/L14.5, an ancient Heavy Siege Artillery, designed to destroy heavy fortification and cities from long range, very powerful but also very heavy, slow and expensive, consider having multiple of them to rain enough shells over your enemies, or having a good spotter to do the job.</description>
+		<size>(3,3)</size>
+		<stuffCategories>
+			<li>RuggedMetallic</li>
+		</stuffCategories>
+		<costStuffCount>160</costStuffCount>
+		<costList>
+			<Pa_SimpleCannon_Crate>6</Pa_SimpleCannon_Crate>
+		</costList>
+		<specialDisplayRadius>38</specialDisplayRadius>
+		<designationCategory>Security</designationCategory>
+		<building>
+			<turretGunDef>Pa_Morser16HSA</turretGunDef>
+			<turretTopDrawSize>8</turretTopDrawSize>
+			<buildingTags>
+				<li>Artillery</li>
+				<li>Artillery_BaseDestroyer</li>
+			</buildingTags>
+		</building>
+		<minifiedDef>MinifiedTurret_Pa_Morser16HSA</minifiedDef>
+		<thingCategories>
+			<li>BuildingsSecurity</li>
+		</thingCategories>
+		<researchPrerequisites>
+			<li>Parabellum_Beta</li>
+		</researchPrerequisites>
+		<constructionSkillPrerequisite>10</constructionSkillPrerequisite>
+	</ThingDef>
+	
+	<!--=============== Turret Base(21cm Mörser 18) ===============-->
+
+	<ThingDef ParentName="TurretMannedBase">
+		<defName>Turret_Morser18HSA</defName>
+		<label>21cm Mörser 18 HSA</label>
+		<graphicData>
+			<texPath>Things/Building/Security/Base/Morser_Base</texPath>
+			<drawSize>(10,10)</drawSize>
+			<shadowData>
+				<volume>(0.3, 0.6, 0.3)</volume>
+			</shadowData>
+		</graphicData>
+		<uiIconPath>Things/Building/Security/CMHT/Morser18_icon</uiIconPath>
+		<hasInteractionCell>True</hasInteractionCell>
+		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		<statBases>
+			<MaxHitPoints>600</MaxHitPoints>
+			<WorkToBuild>3600</WorkToBuild>
+			<Mass>16700</Mass>
+			<Bulk>16700</Bulk>
+		</statBases>
+		<placeWorkers>
+			<li>PlaceWorker_NotUnderRoof</li>
+		</placeWorkers>
+		<techLevel>Spacer</techLevel>
+		<description>21cm Lange Mörser M 18/L31, Improved/Updated version of the previous one, improved reload speed, range, and accuracy, except the weight, the size and the cost.</description>
+		<size>(3,3)</size>
+		<stuffCategories>
+			<li>RuggedMetallic</li>
+		</stuffCategories>
+		<costStuffCount>220</costStuffCount>
+		<costList>
+			<Rubber>50</Rubber>
+			<Pa_complexcannon_Crate>2</Pa_complexcannon_Crate>
+		</costList>
+		<specialDisplayRadius>38</specialDisplayRadius>
+		<designationCategory>Security</designationCategory>
+		<building>
+			<turretGunDef>Pa_Morser18HSA</turretGunDef>
+			<turretTopDrawSize>8.7</turretTopDrawSize>
+			<buildingTags>
+				<li>Artillery</li>
+				<li>Artillery_BaseDestroyer</li>
+			</buildingTags>
+		</building>
+		<minifiedDef>MinifiedTurret_Pa_Morser18HSA</minifiedDef>
+		<thingCategories>
+			<li>BuildingsSecurity</li>
+		</thingCategories>
+		<researchPrerequisites>
+			<li>Parabellum_I</li>
+		</researchPrerequisites>
+		<constructionSkillPrerequisite>14</constructionSkillPrerequisite>
+	</ThingDef>
+	
+	<!-- ================== Minified ================== -->
+	
+	<ThingDef ParentName="MinifiedTurretBase">
+		<defName>MinifiedTurret_Pa_Morser16HSA</defName>
+		<label>Undeployed 21cm Mörser 16</label>
+		<statBases>
+			<Mass>3800</Mass>
+			<Bulk>3800</Bulk>
+		</statBases>
+	</ThingDef>
+	
+	<ThingDef ParentName="MinifiedTurretBase">
+		<defName>MinifiedTurret_Pa_Morser18HSA</defName>
+		<label>Undeployed 21cm Mörser 18</label>
+		<statBases>
+			<Mass>9000</Mass>
+			<Bulk>9000</Bulk>
+		</statBases>
+	</ThingDef>
+
+</Defs>

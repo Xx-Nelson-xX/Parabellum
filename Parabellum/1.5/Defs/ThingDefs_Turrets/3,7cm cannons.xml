@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<!-- ================== 3.7cm PaK36/L45 Anti-Tank Gun ================== -->
+
+	<ThingDef ParentName="BaseGun_Turret">
+		<defName>Pa_PaK36ATG</defName>
+		<label>3.7cm Pak 36/L45 Anti-Tank Gun</label>
+		<graphicData>
+			<texPath>Things/Building/Security/CMLT/PaK36_Top</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Artillery_ShellLoaded</soundInteract>
+		<description>PaK 36/L45 3.7cm Anti-Tank Gun.</description>
+		<techLevel>Industrial</techLevel>
+		<tradeability>None</tradeability>
+		<statBases>
+			<MarketValue>1050</MarketValue>
+			<SightsEfficiency>1.6</SightsEfficiency>
+			<ShotSpread>0.08</ShotSpread>
+			<SwayFactor>1</SwayFactor>
+			<RangedWeapon_Cooldown>1.2</RangedWeapon_Cooldown>
+		</statBases>
+		<generateCommonality>0</generateCommonality>
+		<verbs>
+			<li Class="CombatExtended.VerbPropertiesCE">
+				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_37mmCannonShell_APHE</defaultProjectile>
+				<circularError>0.5</circularError>
+				<warmupTime>1.2</warmupTime>
+				<minRange>5</minRange>
+				<!-- <forcedMissRadius>1.4</forcedMissRadius> -->
+				<range>96</range>
+				<soundCast>Shot_37mm</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>14</muzzleFlashScale>
+				<targetParams>
+				  <canTargetLocations>true</canTargetLocations>
+				</targetParams>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="CombatExtended.CompProperties_AmmoUser">
+				<magazineSize>1</magazineSize>
+                <reloadTime>2.6</reloadTime>
+				<!-- <spawnUnloaded>true</spawnUnloaded> -->
+				<ammoSet>AmmoSet_37mmCannonShell</ammoSet>
+			</li>
+			<li Class="CombatExtended.CompProperties_FireModes"/>
+		</comps>
+	</ThingDef>
+	
+	<!-- ================== 3.7cm Flak 37/L89 Anti-Aircraft Gun ================== -->
+
+	<ThingDef ParentName="BaseGun_Turret">
+		<defName>Pa_Flak37AA</defName>
+		<label>3.7cm Flak 37/L89 Anti-Aircraft Gun Gun</label>
+		<graphicData>
+			<texPath>Things/Building/Security/CMMT/Flak37_Top</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Artillery_ShellLoaded</soundInteract>
+		<description>Flak 37/L89 3.7cm Anti-Aircraft Gun.</description>
+		<techLevel>Industrial</techLevel>
+		<tradeability>None</tradeability>
+		<statBases>
+			<MarketValue>3800</MarketValue>
+			<SightsEfficiency>1.6</SightsEfficiency>
+			<ShotSpread>0.07</ShotSpread>
+			<SwayFactor>1.02</SwayFactor>
+			<RangedWeapon_Cooldown>1.8</RangedWeapon_Cooldown>
+		</statBases>
+		<generateCommonality>0</generateCommonality>
+		<verbs>
+			<li Class="CombatExtended.VerbPropertiesCE">
+				<recoilPattern>Mounted</recoilPattern>
+				<recoilAmount>1.05</recoilAmount>
+				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_37mmCannonShell_APHE</defaultProjectile>
+				<circularError>0.7</circularError>
+				<warmupTime>1.6</warmupTime>
+				<minRange>5</minRange>
+				<!-- <forcedMissRadius>1.4</forcedMissRadius> -->
+				<ticksBetweenBurstShots>22</ticksBetweenBurstShots>
+				<burstShotCount>6</burstShotCount>
+				<range>115</range>
+				<soundCast>Shot_37mm</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>14</muzzleFlashScale>
+				<targetParams>
+				  <canTargetLocations>true</canTargetLocations>
+				</targetParams>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="CombatExtended.CompProperties_AmmoUser">
+				<magazineSize>18</magazineSize>
+                <reloadTime>10.4</reloadTime>
+				<!-- <spawnUnloaded>true</spawnUnloaded> -->
+				<ammoSet>AmmoSet_37mmCannonShell</ammoSet>
+			</li>
+			<li Class="CombatExtended.CompProperties_FireModes">
+				<aimedBurstShotCount>3</aimedBurstShotCount>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<!--=============== Turret Base(3.7cm PaK38/L60) ===============-->
+
+	<ThingDef ParentName="TurretMannedBase">
+		<defName>Turret_PaK36ATG</defName>
+		<label>3.7cm PaK 36 ATG</label>
+		<graphicData>
+			<texPath>Things/Building/Security/Base/NbW32_Base</texPath>
+			<drawSize>(2,2)</drawSize>
+			<shadowData>
+				<volume>(0.3, 0.6, 0.3)</volume>
+			</shadowData>
+		</graphicData>
+		<uiIconPath>Things/Building/Security/CMLT/PaK36_icon</uiIconPath>
+		<hasInteractionCell>True</hasInteractionCell>
+		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		<statBases>
+			<MaxHitPoints>180</MaxHitPoints>
+			<WorkToBuild>1000</WorkToBuild>
+			<Mass>450</Mass>
+			<Bulk>450</Bulk>
+		</statBases>
+		<techLevel>Industrial</techLevel>
+		<description>PaK 36/L45 3.7cm Anti-Tank Gun, an ancient Early War Light Anti-Tank gun, versatile and relatively light to positioning, kind of obsolete but still can punch a hole on light armored target.</description>
+		<size>(2,2)</size>
+		<stuffCategories>
+			<li>RuggedMetallic</li>
+		</stuffCategories>
+		<costStuffCount>40</costStuffCount>
+		<costList>
+			<Pa_SimpleCannon_Crate>1</Pa_SimpleCannon_Crate>
+		</costList>
+		<specialDisplayRadius>5</specialDisplayRadius>
+		<designationCategory>Security</designationCategory>
+		<building>
+			<turretGunDef>Pa_PaK36ATG</turretGunDef>
+			<turretTopDrawSize>3.8</turretTopDrawSize>
+			<buildingTags>
+				<li>Artillery</li>
+				<li>Artillery_BaseDestroyer</li>
+			</buildingTags>
+			<uninstallWork>200</uninstallWork>
+		</building>
+		<minifiedDef>MinifiedTurret_Pa_PaK36ATG</minifiedDef>
+		<researchPrerequisites>
+			<li>Parabellum_Beta</li>
+		</researchPrerequisites>
+		<constructionSkillPrerequisite>4</constructionSkillPrerequisite>
+	</ThingDef>
+	
+	<!--=============== Turret Base(3.7cm Flak 37/L89) ===============-->
+
+	<ThingDef ParentName="TurretMannedBase">
+		<defName>Turret_Flak37AA</defName>
+		<label>3.7cm Flak 37 AA</label>
+		<graphicData>
+			<texPath>Things/Building/Security/Base/Flak41_Base</texPath>
+			<drawSize>(2.2,2.2)</drawSize>
+			<shadowData>
+				<volume>(0.3, 0.6, 0.3)</volume>
+			</shadowData>
+		</graphicData>
+		<uiIconPath>Things/Building/Security/CMMT/Flak37_icon</uiIconPath>
+		<hasInteractionCell>True</hasInteractionCell>
+		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		<statBases>
+			<MaxHitPoints>220</MaxHitPoints>
+			<WorkToBuild>2100</WorkToBuild>
+			<Mass>1550</Mass>
+			<Bulk>1550</Bulk>
+		</statBases>
+		<fillPercent>0.98</fillPercent>
+		<techLevel>Industrial</techLevel>
+		<description>Flak 37/L89 3.7cm Anti-Aircraft Gun, an ancient Early War Anti-Aircraft gun, relatively low rate of fire and small size to move around, the 3.7cm shell pack enough firepower to deal with most light armored target.</description>
+		<size>(2,2)</size>
+		<stuffCategories>
+			<li>RuggedMetallic</li>
+		</stuffCategories>
+		<costStuffCount>150</costStuffCount>
+		<costList>
+			<Pa_SimpleCannon_Crate>3</Pa_SimpleCannon_Crate>
+		</costList>
+		<specialDisplayRadius>5</specialDisplayRadius>
+		<designationCategory>Security</designationCategory>
+		<building>
+			<turretGunDef>Pa_Flak37AA</turretGunDef>
+			<turretTopDrawSize>3.4</turretTopDrawSize>
+			<buildingTags>
+				<li>SiegeGun</li>
+			</buildingTags>
+			<uninstallWork>500</uninstallWork>
+		</building>
+		<minifiedDef>MinifiedTurret_Pa_Flak37AA</minifiedDef>
+		<researchPrerequisites>
+			<li>Heavy_turrets_C3</li>
+		</researchPrerequisites>
+		<constructionSkillPrerequisite>10</constructionSkillPrerequisite>
+	</ThingDef>
+	
+	<!-- ================== Minified ================== -->
+	
+	<ThingDef ParentName="MinifiedTurretBase">
+		<defName>MinifiedTurret_Pa_PaK36ATG</defName>
+		<label>PaK 36/L45 3.7cm ATG</label>
+		<statBases>
+			<Mass>200</Mass>
+			<Bulk>200</Bulk>
+		</statBases>
+	</ThingDef>
+	
+	<ThingDef ParentName="MinifiedTurretBase">
+		<defName>MinifiedTurret_Pa_Flak37AA</defName>
+		<label>PaK 37/L89 3.7cm AA</label>
+		<statBases>
+			<Mass>900</Mass>
+			<Bulk>900</Bulk>
+		</statBases>
+	</ThingDef>
+	
+</Defs>

@@ -1,3 +1,12 @@
+<--------------------------------------- 2.0a(RW 1.5 Dev) -------------------------------------------->
+
+2.0a - 1.5 compatibility
+
+	
+Tweaks:
++Compatibility for RW HSK 1.5
+-Moved StG 45(M) to Parabellum WT
+
 <--------------------------------------- 1.9(RW 1.4 Dev) -------------------------------------------->
 
 1.9 - 4 new turret, 4 new ammo, 5 new items Tweaks and Fixes
@@ -54,6 +63,61 @@ Tweaks:
 +Added few missing ammo type to existing weapon
 +Fixed S-Mine despawn after crafting issue
 *Also added work amount to making S-Mines
+*Fixed issue with some weapon not appearing in the modification screen due WM name change
+-Removed 7.92 Kurz convertion for G43 due WM change making it having weird behavior
+*removed remant patch from weapon moved to Parabellum WT
++Added Parabellum Metal armor into Mending list for the early mending/repair bench
+*Fixed ParentName for 9x19mm +P+ and .45 ACP Super, they should inherit their HSK ParentName properly
++Rebalanced De Lisle Carbine to more early Industrial unlock, same for the recipe and work cost, the weapon is too niche after early Industrial
++Added new AmmoSet for De Lisle Commando Carbine, now it can use 9x19mm ammo too
++Added All new late Industrial ammo to some weapon from HSK More Content
+*Readjust research for following ammo recipe:
+ - 37mm canister shell are moved from Parabellum I to Turret I
+ - 75mm Canister shell are moved from Turret I to Artillery I
+*Weapon rebalance:
+ - Carbines:
+	*De Lisle Commando Carbine: More niche
+		+Magazine size increased from 7 to 11
+		+Now the weapon can use both .45 ACP and 9x19mm
+		*Updated Texture
+	
+	*M4.50 Beowulf: Carbine to Heavy SMG like
+		*Market Price decreased from 1700 to 1380
+		-ShotSpread increased from 0.058 to 0.068
+		-SwayFactor from increased 1.08 to 1.2
+		+RangeWeapon_Cooldown decreased from 0.95 to 0.62
+		+Bulk decreased from 9.2 to 6.8
+		+Mass decreased from 3.8 to 2.4
+		+Can be used one handed
+		-Recoil increased from 1.68 to 1.74
+		+WarmUp decreased from 0.8 to 0.5
+		-Range decreased from 42 to 38
+		-MuzzleFlashScale increased from 14 to 16
+		+ReloadTime decreased from 1.8 to 1.68
+		*Reduced the Weapon part ammount require to make the weapon, so the ammount you get recycling it
+		*Updated Texture
+		
+ - Launchers:
+	*Carl Gustav Recoiless Rifle(Model Universal): Match the weight of the weapon to the IRL counter part, just that
+		+Mass decreased from 7 to 6.6
+		*Updated Texture
+		
+ - Shotguns:
+	*DP-12 double barrel shotgun: Bullpup benefit
+		-TicksBetweenBurstShots decreased from 3 to 4(1200rpm to 900rpm basically)
+		+Range increased from 18 to 22
+		*Updated Texture
+		
+	*HK CAWS: Bullpup benefit with extra long barrel
+		+ShotSpread decreased from 0.07 to 0.056
+		+SwayFactor decreased from 1.55 to 1.35
+		+Recoil decreased from 1.55 to 1.4
+		+WarmUp decreased from 0.95 to 0.82
+		+Range increased from 20 to 32
+		+MuzzleFlashScale decreased from 9 to 7
+		+ReloadTime decreased from 2.8 to 2.2
+		*Updated Texture
+		
 *Added Off map artillery ability to following turrets:
  - Nebelwerfer(All variants)
  - Raketen-Vielfachwerfer(8cm rocket)

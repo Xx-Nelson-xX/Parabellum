@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<!-- M1928A1 Thompson -->
+	<RecipeDef ParentName="RangedWeaponRecipeBase">
+		<defName>BuildM1928A1</defName>
+		<label>Build the Thompson M1928A1 SMG</label>
+		<description>The Thompson M1928A1 is a fullsize submachineg gun, cops and mobs favorites.\nCaliber: .45 ACP</description>
+		<jobString>Building a Thompson M1928A1.</jobString>
+		<workAmount>16000</workAmount>
+		<skillRequirements>
+			<Crafting>5</Crafting>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SMG_Component</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Weapon_Parts</li>
+					</thingDefs>
+				</filter>
+				<count>12</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>15</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>Metallic</li>
+					</categories>
+				</filter>
+				<count>50</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>Woody</li>
+					</categories>
+				</filter>
+				<count>32</count>
+			</li>
+		</ingredients>
+		<products>
+			<Pa_Tommy>1</Pa_Tommy>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>SMG_Component</li>
+				<li>Weapon_Parts</li>
+				<li>ComponentIndustrial</li>
+			</thingDefs>
+			<categories>
+				<li>SLDBar</li>
+				<li>USLDBar</li>
+				<li>HCMBar</li>
+				<li>Woody</li>
+			</categories>
+		</fixedIngredientFilter>
+		<recipeUsers>
+			<li>WeaponCraftingWorkTable</li>
+		</recipeUsers>
+		<researchPrerequisite>BlowbackOperation</researchPrerequisite>
+	</RecipeDef>
+	
+	<!-- Suomi KP-31 -->
+	<RecipeDef ParentName="RangedWeaponRecipeBase">
+		<defName>BuildSuomi</defName>
+		<label>Build Suomi KP-31 SMG</label>
+		<description>Builds a Suomi KP-31 SMG, careful with the ammo consumption.\nCaliber: 9x19mm Para</description>
+		<jobString>Building Suomi KP-31.</jobString>
+		<workAmount>15200</workAmount>
+		<skillRequirements>
+			<Crafting>5</Crafting>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SMG_Component</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Weapon_Parts</li>
+					</thingDefs>
+				</filter>
+				<count>8</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>Metallic</li>
+					</categories>
+				</filter>
+				<count>40</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>Woody</li>
+					</categories>
+				</filter>
+				<count>25</count>
+			</li>
+		</ingredients>
+		<products>
+			<Pa_Suomi>1</Pa_Suomi>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>SMG_Component</li>
+				<li>Weapon_Parts</li>
+				<li>ComponentIndustrial</li>
+			</thingDefs>
+			<categories>
+				<li>SLDBar</li>
+				<li>USLDBar</li>
+				<li>Woody</li>
+			</categories>
+		</fixedIngredientFilter>
+		<recipeUsers>
+			<li>WeaponCraftingWorkTable</li>
+		</recipeUsers>
+		<researchPrerequisite>BlowbackOperation</researchPrerequisite>
+	</RecipeDef>
+	
+	<!-- Bergmann Maschinenpistole 18 -->
+	<RecipeDef ParentName="RangedWeaponRecipeBase">
+		<defName>BuildMP18B</defName>
+		<label>Build MP 18 SMG</label>
+		<description>Builds a MP 18 SMG, the father of most SMGs.\nCaliber: 7.63x25mm Mauser / 9x19mm Parabellum / .45 ACP</description>
+		<jobString>Building MP 18.</jobString>
+		<workAmount>13200</workAmount>
+		<skillRequirements>
+			<Crafting>5</Crafting>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Weapon_Parts</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>Metallic</li>
+					</categories>
+				</filter>
+				<count>38</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>Woody</li>
+					</categories>
+				</filter>
+				<count>28</count>
+			</li>
+		</ingredients>
+		<products>
+			<Pa_MP18B>1</Pa_MP18B>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Weapon_Parts</li>
+				<li>ComponentIndustrial</li>
+			</thingDefs>
+			<categories>
+				<li>SLDBar</li>
+				<li>USLDBar</li>
+				<li>Woody</li>
+			</categories>
+		</fixedIngredientFilter>
+		<recipeUsers>
+			<li>WeaponCraftingWorkTable</li>
+		</recipeUsers>
+		<researchPrerequisite>Machining</researchPrerequisite>
+	</RecipeDef>
+	
+	<!-- MP717r -->
+	<RecipeDef ParentName="RangedWeaponRecipeBase">
+		<defName>BuildMP717r</defName>
+		<label>Build MP717(r) SMG</label>
+		<description>Builds a MP717(r) SMG, you know how bad was that time to start using enemies weapon for your own soldiers.\nCaliber: 7.63x25mm Mauser / 7.62x25mm Tokarev</description>
+		<jobString>Building MP717(r).</jobString>
+		<workAmount>14400</workAmount>
+		<skillRequirements>
+			<Crafting>4</Crafting>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SMG_Component</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Weapon_Parts</li>
+					</thingDefs>
+				</filter>
+				<count>9</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>9</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>Metallic</li>
+					</categories>
+				</filter>
+				<count>36</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>Woody</li>
+					</categories>
+				</filter>
+				<count>32</count>
+			</li>
+		</ingredients>
+		<products>
+			<Pa_MP717r>1</Pa_MP717r>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>SMG_Component</li>
+				<li>Weapon_Parts</li>
+				<li>ComponentIndustrial</li>
+			</thingDefs>
+			<categories>
+				<li>SLDBar</li>
+				<li>USLDBar</li>
+				<li>Woody</li>
+			</categories>
+		</fixedIngredientFilter>
+		<recipeUsers>
+			<li>WeaponCraftingWorkTable</li>
+		</recipeUsers>
+		<researchPrerequisite>BlowbackOperation</researchPrerequisite>
+	</RecipeDef>
+	
+</Defs>

@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<!--=============== Crate Base ===============-->
+		
+	<ThingDef Name="Pa_CrateBase" ParentName="CrateBase" Abstract="True">
+		<drawGUIOverlay>true</drawGUIOverlay>
+	</ThingDef>
+	
+	<!-- =============== MG Crate Base =============== -->
+
+	<ThingDef ParentName="Pa_CrateBase">
+		<defName>Pa_Machinegun_Crate</defName>
+		<label>Machinegun Crate</label>
+		<description>This crate contain stuff that you need to build most Ancient Machineguns, some might need an extra crate.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/WeaponCrate</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Standard_Drop</soundInteract>
+		<soundDrop>Standard_Drop</soundDrop>
+		<tickerType>Normal</tickerType>
+		<stackLimit>50</stackLimit>
+		<techLevel>Industrial</techLevel>
+		<statBases>
+			<MarketValue>700</MarketValue>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Flammability>1</Flammability>
+			<DeteriorationRate>0</DeteriorationRate>
+			<Mass>20</Mass>
+			<Bulk>18</Bulk>
+		</statBases>
+		<tradeTags>
+			<li>SimpleCrate</li>
+		</tradeTags>
+	</ThingDef>
+	
+	<!--=============== RPzB Crate Base ===============-->
+
+	<ThingDef ParentName="Pa_CrateBase">
+		<defName>Pa_RPzB_Crate</defName>
+		<label>RPzB crate</label>
+		<description>Use this to build a RPzB related turret.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/WeaponCrate</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Standard_Drop</soundInteract>
+		<soundDrop>Standard_Drop</soundDrop>
+		<tickerType>Normal</tickerType>
+		<stackLimit>25</stackLimit>
+		<techLevel>Industrial</techLevel>
+		<statBases>
+			<MarketValue>700</MarketValue>
+			<MaxHitPoints>40</MaxHitPoints>
+			<Flammability>1</Flammability>
+			<DeteriorationRate>0</DeteriorationRate>
+			<Mass>8</Mass>
+			<Bulk>12.2</Bulk>
+		</statBases>
+		<tradeTags>
+			<li>SimpleCrate</li>
+		</tradeTags>
+	</ThingDef>
+	
+	<!--=============== NbW Crate Base ===============-->
+
+	<ThingDef ParentName="Pa_CrateBase">
+		<defName>Pa_NbW_Crate</defName>
+		<label>Nebelwerfer crate</label>
+		<description>Use this to build a Nebelwerfer turret.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/WeaponCrate</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Standard_Drop</soundInteract>
+		<soundDrop>Standard_Drop</soundDrop>
+		<tickerType>Normal</tickerType>
+		<stackLimit>6</stackLimit>
+		<techLevel>Spacer</techLevel>
+		<statBases>
+			<MarketValue>900</MarketValue>
+			<MaxHitPoints>180</MaxHitPoints>
+			<Flammability>1</Flammability>
+			<DeteriorationRate>0</DeteriorationRate>
+			<Mass>165</Mass>
+			<Bulk>165</Bulk>
+		</statBases>
+		<tradeTags>
+			<li>NormalCrate</li>
+		</tradeTags>
+	</ThingDef>
+	
+	<!--=============== Crate Base(Simple Cannon Crate) ===============-->
+
+	<ThingDef ParentName="Pa_CrateBase">
+		<defName>Pa_SimpleCannon_Crate</defName>
+		<label>Simple Cannon Crate</label>
+		<description>Use this to build any ancient light and medium cannon/AT gun.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/WeaponCrate</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Standard_Drop</soundInteract>
+		<soundDrop>Standard_Drop</soundDrop>
+		<tickerType>Normal</tickerType>
+		<stackLimit>25</stackLimit>
+		<techLevel>Industrial</techLevel>
+		<statBases>
+			<MarketValue>1000</MarketValue>
+			<MaxHitPoints>120</MaxHitPoints>
+			<Flammability>1</Flammability>
+			<DeteriorationRate>0</DeteriorationRate>
+			<Mass>200</Mass>
+			<Bulk>200</Bulk>
+		</statBases>
+		<tradeTags>
+			<li>SimpleCrate</li>
+		</tradeTags>
+	</ThingDef>
+	
+	<!--=============== Crate Base(Complex Cannon Crate) ===============-->
+
+	<ThingDef ParentName="Pa_CrateBase">
+		<defName>Pa_complexcannon_Crate</defName>
+		<label>Complex Cannon Crate</label>
+		<description>Use this to build complex cannon piece, depends the complexity, it might use multiple crates.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/WeaponCrate</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Standard_Drop</soundInteract>
+		<soundDrop>Standard_Drop</soundDrop>
+		<tickerType>Normal</tickerType>
+		<stackLimit>25</stackLimit>
+		<techLevel>Spacer</techLevel>
+		<statBases>
+			<MarketValue>3200</MarketValue>
+			<MaxHitPoints>400</MaxHitPoints>
+			<Flammability>1</Flammability>
+			<DeteriorationRate>0</DeteriorationRate>
+			<Mass>500</Mass>
+			<Bulk>500</Bulk>
+		</statBases>
+		<tradeTags>
+			<li>RareCrate</li>
+		</tradeTags>
+	</ThingDef>
+	
+	<!-- ================== Crate Recipe ================== -->
+	
+	<!-- ================== MG Crate ================== -->
+
+	<RecipeDef ParentName="cratecraftbase">
+		<defName>BuildMachinegun_Crate</defName>
+		<label>Build a Machinegun crate</label>
+		<description>Use this carte to build most Ancient Machineguns, a type of stationary manned turret, the caliber can vary.</description>
+		<jobString>Building Machinegun crate.</jobString>
+		<workAmount>9000</workAmount>
+		<skillRequirements>
+			<Crafting>5</Crafting>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Mechanism</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Weapon_Parts</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>20</count>
+			</li>
+			<li>
+				<filter>
+				<categories>
+				<li>Metallic</li>
+                  </categories>
+				</filter>
+				<count>28</count>
+			</li>
+		</ingredients>
+		<products>
+			<Pa_Machinegun_Crate>1</Pa_Machinegun_Crate>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Mechanism</li>
+				<li>Weapon_Parts</li>
+				<li>ComponentIndustrial</li>
+			</thingDefs>
+			<categories>
+				<li>SLDBar</li>
+				<li>USLDBar</li>
+             </categories>
+		</fixedIngredientFilter>
+		<workSkill>Crafting</workSkill>
+		<recipeUsers>
+			<li>FabricationBench</li>
+		</recipeUsers>
+		<researchPrerequisite>Parabellum_Beta</researchPrerequisite>
+	</RecipeDef>
+	
+	<!-- ================== RPzB Crate ================== -->
+
+	<RecipeDef ParentName="cratecraftbase">
+		<defName>BuilRPzB_Crate</defName>
+		<label>Build RPzB crate</label>
+		<description>Use this to build a RPzB related weapon, a type of stationary manned turret. It uses 88mm RPzB Gr. or 8cm modified rocket for ammo.</description>
+		<jobString>Build RPzB crate.</jobString>
+		<workAmount>9800</workAmount>
+		<skillRequirements>
+			<Crafting>8</Crafting>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Weapon_Parts</li>
+					</thingDefs>
+				</filter>
+				<count>4</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Heavy_Component</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+				<categories>
+				<li>Metallic</li>
+                  </categories>
+				</filter>
+				<count>10</count>
+			</li>
+		</ingredients>
+		<products>
+			<Pa_RPzB_Crate>1</Pa_RPzB_Crate>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Weapon_Parts</li>
+				<li>Heavy_Component</li>
+			</thingDefs>
+			<categories>
+				<li>SLDBar</li>
+				<li>USLDBar</li>
+             </categories>
+		</fixedIngredientFilter>
+		<recipeUsers>
+			<li>FabricationBench</li>
+		</recipeUsers>
+		<researchPrerequisite>Parabellum_Gamma</researchPrerequisite>
+	</RecipeDef>
+	
+	<!-- ================== Craft Crate ================== -->
+
+	<RecipeDef ParentName="cratecraftbase">
+		<defName>BuildNbW_Crate</defName>
+		<label>Build Nebelwerfer crate</label>
+		<description>Use this to build a Nebelwefer, a type of stationary manned turret, depends the variant, it can uses 15cm, 28cm, 30cm and 32cm rockets for ammo.</description>
+		<jobString>Building a Nebelwerfer crate.</jobString>
+		<workAmount>11000</workAmount>
+		<skillRequirements>
+			<Crafting>8</Crafting>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Weapon_Parts</li>
+					</thingDefs>
+				</filter>
+				<count>16</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Heavy_Component</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+				<categories>
+				<li>Metallic</li>
+                  </categories>
+				</filter>
+				<count>20</count>
+			</li>
+		</ingredients>
+		<products>
+			<Pa_NbW_Crate>1</Pa_NbW_Crate>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Weapon_Parts</li>
+				<li>Heavy_Component</li>
+			</thingDefs>
+			<categories>
+			<li>SLDBar</li>
+			<li>USLDBar</li>
+             </categories>
+		</fixedIngredientFilter>
+		<researchPrerequisite>Rockets_C1</researchPrerequisite>
+	</RecipeDef>
+	
+	<!-- ================== Simple Cannon Crate ================== -->
+
+	<RecipeDef ParentName="cratecraftbase">
+		<defName>Buildsimplecannon_Crate</defName>
+		<label>Build simple cannon Crate</label>
+		<description>The crate contain parts to build any ancient light and medium cannon/gun, depend how complex is the cannon/gun, might require multiple crates.</description>
+		<jobString>Building a simple cannon crate.</jobString>
+		<workAmount>6000</workAmount>
+		<skillRequirements>
+			<Crafting>6</Crafting>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Weapon_Parts</li>
+					</thingDefs>
+				</filter>
+				<count>8</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Heavy_Component</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+				<categories>
+				<li>Metallic</li>
+                  </categories>
+				</filter>
+				<count>25</count>
+			</li>
+		</ingredients>
+		<products>
+			<Pa_SimpleCannon_Crate>1</Pa_SimpleCannon_Crate>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Weapon_Parts</li>
+				<li>Heavy_Component</li>
+			</thingDefs>
+			<categories>
+				<li>SLDBar</li>
+				<li>USLDBar</li>
+             </categories>
+		</fixedIngredientFilter>
+		<recipeUsers>
+			<li>FabricationBench</li>
+		</recipeUsers>
+		<researchPrerequisite>Parabellum_Beta</researchPrerequisite>
+	</RecipeDef>
+
+	<!-- ================== Complex Cannon Crate ================== -->
+
+	<RecipeDef ParentName="cratecraftbase">
+		<defName>Buildcomplexcannon_Crate</defName>
+		<label>Build complex cannon crate</label>
+		<description>Use this to build a high caliber cannon, either for tanks or stationary turrets.</description>
+		<jobString>Building a complex cannon crate.</jobString>
+		<workAmount>16000</workAmount>
+		<skillRequirements>
+			<Crafting>14</Crafting>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Weapon_Parts</li>
+					</thingDefs>
+				</filter>
+				<count>18</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Glass</li>
+					</thingDefs>
+				</filter>
+				<count>6</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Cannon_Component</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+				<categories>
+				<li>Metallic</li>
+                  </categories>
+				</filter>
+				<count>55</count>
+			</li>
+		</ingredients>
+		<products>
+			<Pa_complexcannon_Crate>1</Pa_complexcannon_Crate>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Glass</li>
+				<li>Weapon_Parts</li>
+				<li>Cannon_Component</li>
+			</thingDefs>
+			<categories>
+				<li>SLDBar</li>
+				<li>USLDBar</li>
+             </categories>
+		</fixedIngredientFilter>
+		<researchPrerequisite>Turrets_31</researchPrerequisite>
+	</RecipeDef>
+	
+</Defs>

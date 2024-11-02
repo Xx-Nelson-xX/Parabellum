@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <CombatExtended.BipodCategoryDef>
+        <!--Same as in other defs -->
+        <defName>Pa_bipodMG</defName>
+        <!--Same as in other defs -->
+        <label>MG</label>
+        <!--The tag that is required for this bipod -->
+        <bipod_id>Bipod_PaMG</bipod_id>
+        <!--additional range with bipod set up -->
+        <ad_Range>4</ad_Range>
+         <!--ticks to set up -->
+        <setuptime>100</setuptime>
+         <!--recoil mult with bipod set up-->
+        <recoil_mult_setup>0.55</recoil_mult_setup>
+         <!-- recoil mult without the bipod set up -->
+        <recoil_mult_NOT_setup>1</recoil_mult_NOT_setup>
+         <!--warmup mult with the bipod set up -->
+        <warmup_mult_setup>0.75</warmup_mult_setup>
+         <!--warmup mult without the bipod set up -->
+        <warmup_mult_NOT_setup>1</warmup_mult_NOT_setup>
+         <!--when not specified just goes with blue, I just like making colorful logs tbh -->
+        <logColor>(0, 0, 255)</logColor>
+         <!--sway mult with the bipod set up -->
+        <swayMult>0.65</swayMult>
+         <!--sway mult without the bipod set up -->
+        <swayPenalty>1.2</swayPenalty>
+		<autosetMode>AimedShot</autosetMode>
+		<!--<autosetMode>SuppressFire</autosetMode>-->
+        <useAutoSetMode>false</useAutoSetMode>
+    </CombatExtended.BipodCategoryDef>
+	
+</Defs>

@@ -1,0 +1,641 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <!-- DP-12 -->
+    <ThingDef ParentName="BaseGun_LongBarreled">
+        <defName>Pa_DP</defName>
+        <label>DP-12 Double-barreled Pumpshotgun</label>
+        <description>The DP-12, a bullpup double-barreled pump action shotgun with double magazine tubes, the bullpup system slightly increase the effective range of the weapon but also decrease its pellets spread, making it less effective dealing with mass in short range but really deadly counter single pawn.</description>
+        <graphicData>
+            <texPath>Things/Weapons/Shotguns/DP12</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.8</drawSize>
+        </graphicData>
+        <soundInteract>Interact_Shotgun</soundInteract>
+        <statBases>
+            <MarketValue>1300</MarketValue>
+            <SightsEfficiency>0.95</SightsEfficiency>
+            <ShotSpread>0.085</ShotSpread>
+            <SwayFactor>1.7</SwayFactor>
+            <RangedWeapon_Cooldown>0.85</RangedWeapon_Cooldown>
+            <Bulk>10</Bulk>
+            <Mass>4.2</Mass>
+        </statBases>
+		<generateCommonality>0.4</generateCommonality>
+		<tradeTags>
+            <li>Exotic</li>
+        </tradeTags>
+        <weaponTags>
+            <li>ST2</li>
+            <li>Gun</li>
+            <li>TierTwoSMG</li>
+			<li>CE_AI_AssaultWeapon</li>
+        </weaponTags>
+        <thingCategories>
+            <li>Shotguns</li>
+        </thingCategories>
+        <verbs>
+            <li Class="CombatExtended.VerbPropertiesCE">
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>Bullet_12Gauge_Buck</defaultProjectile>
+				<burstShotCount>2</burstShotCount>
+                <ticksBetweenBurstShots>4</ticksBetweenBurstShots>
+                <warmupTime>0.7</warmupTime>
+                <range>22</range>
+				<targetParams>
+                    <canTargetLocations>true</canTargetLocations>
+                </targetParams>
+                <soundCast>Shot_Shotgun</soundCast>
+                <soundCastTail>GunTail_Heavy</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+            </li>
+        </verbs>
+        <comps>
+            <li Class="CombatExtended.CompProperties_FireModes">
+                <aiUseBurstMode>true</aiUseBurstMode>
+                <aiAimMode>AimedShot</aiAimMode>
+				<noSingleShot>false</noSingleShot>
+            </li>
+            <li Class="CombatExtended.CompProperties_AmmoUser">
+                <magazineSize>16</magazineSize>
+				<reloadOneAtATime>true</reloadOneAtATime>
+                <reloadTime>0.8</reloadTime>
+                <ammoSet>AmmoSet_12Gauge</ammoSet>
+            </li>
+        </comps>
+		<modExtensions>
+		  <li Class="CombatExtended.GunDrawExtension">
+			<DrawSize>0.8</DrawSize>
+		  </li>
+		</modExtensions>
+        <smeltProducts>
+            <Shotgun_Component>1</Shotgun_Component>
+            <Weapon_Parts>8</Weapon_Parts>
+        </smeltProducts>
+    </ThingDef>
+	
+	<!-- HK CAWS -->
+    <ThingDef ParentName="BaseGun_LongBarreled">
+        <defName>Pa_CAWS</defName>
+        <label>HK CAWS</label>
+        <description>The CAWS, as know as Close Assault Weapon System, was a prototype bullpup automatic shotgun from an ancient military project, even though the project and production was cancelled for its time, the new era find it a perfect weapon for assault mission and restarted its production with new modifications: long barrel to increase its effective range and a low power scope for easy targeting, both modification make the weapon exceptionally accurate, but not so good for mass control.</description>
+        <graphicData>
+            <texPath>Things/Weapons/Shotguns/CAWS</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>Interact_Shotgun</soundInteract>
+        <statBases>
+            <MarketValue>2200</MarketValue>
+            <SightsEfficiency>1.2</SightsEfficiency>
+            <ShotSpread>0.056</ShotSpread>
+            <SwayFactor>1.35</SwayFactor>
+            <RangedWeapon_Cooldown>1.2</RangedWeapon_Cooldown>
+            <Bulk>7.2</Bulk>
+            <Mass>3.7</Mass>
+        </statBases>
+		<generateCommonality>0.2</generateCommonality>
+        <tradeTags>
+            <li>Exotic</li>
+        </tradeTags>
+        <weaponTags>
+            <li>ST3</li>
+            <li>Gun</li>
+            <li>TierTwoSMG</li>
+			<li>CE_AI_AssaultWeapon</li>
+        </weaponTags>
+        <thingCategories>
+            <li>Shotguns</li>
+        </thingCategories>
+        <verbs>
+            <li Class="CombatExtended.VerbPropertiesCE">
+                <recoilAmount>1.4</recoilAmount>
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>Bullet_12Gauge_Buck</defaultProjectile>
+                <burstShotCount>5</burstShotCount>
+                <ticksBetweenBurstShots>12</ticksBetweenBurstShots>
+                <warmupTime>0.82</warmupTime>
+                <range>32</range>
+				<targetParams>
+                    <canTargetLocations>true</canTargetLocations>
+                </targetParams>
+                <soundCast>Shot_CAWS</soundCast>
+                <soundCastTail>GunTail_Heavy</soundCastTail>
+                <muzzleFlashScale>7</muzzleFlashScale>
+            </li>
+        </verbs>
+        <comps>
+            <li Class="CombatExtended.CompProperties_FireModes">
+                <aiUseBurstMode>true</aiUseBurstMode>
+                <aiAimMode>AimedShot</aiAimMode>
+                <aimedBurstShotCount>2</aimedBurstShotCount>
+            </li>
+            <li Class="CombatExtended.CompProperties_AmmoUser">
+                <magazineSize>10</magazineSize>
+                <reloadTime>2.2</reloadTime>
+                <ammoSet>AmmoSet_12Gauge</ammoSet>
+            </li>
+        </comps>
+        <smeltProducts>
+            <Shotgun_Component>1</Shotgun_Component>
+            <Weapon_Parts>12</Weapon_Parts>
+			<Plastic>8</Plastic>
+        </smeltProducts>
+    </ThingDef>
+	
+	<!-- Serbu Super Shorty -->
+    <ThingDef ParentName="BaseGun_LongBarreled">
+        <defName>Pa_SSS</defName>
+        <label>Serbu Super Shorty</label>
+        <description>A super compacted pump action shotgun, a perfect weapon for self defense in CQC situation, very concealable and light to carry around.</description>
+        <graphicData>
+            <texPath>Things/Weapons/Shotguns/SSS</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.6</drawSize>
+        </graphicData>
+        <soundInteract>Interact_Shotgun</soundInteract>
+        <statBases>
+            <MarketValue>300</MarketValue>
+            <SightsEfficiency>0.75</SightsEfficiency>
+            <ShotSpread>0.26</ShotSpread>
+            <SwayFactor>1.7</SwayFactor>
+            <RangedWeapon_Cooldown>0.45</RangedWeapon_Cooldown>
+            <Bulk>3.1</Bulk>
+            <Mass>1.8</Mass>
+        </statBases>
+		<generateCommonality>0.6</generateCommonality>
+		<tradeTags>
+            <li>Exotic</li>
+        </tradeTags>
+        <weaponTags>
+            <li>ST1</li>
+            <li>Gun</li>
+            <li>TierOnePistol</li>
+			<li>CE_AI_AssaultWeapon</li>
+			<li>CE_Sidearm</li>
+			<li>CE_OneHandedWeapon</li>
+        </weaponTags>
+        <thingCategories>
+            <li>Shotguns</li>
+        </thingCategories>
+        <verbs>
+            <li Class="CombatExtended.VerbPropertiesCE">
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>Bullet_12Gauge_Buck</defaultProjectile>
+                <warmupTime>0.4</warmupTime>
+                <range>11</range>
+				<targetParams>
+                    <canTargetLocations>true</canTargetLocations>
+                </targetParams>
+                <soundCast>Shot_Shotgun</soundCast>
+                <soundCastTail>GunTail_Heavy</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+            </li>
+        </verbs>
+        <comps>
+            <li Class="CombatExtended.CompProperties_FireModes">
+                <aiAimMode>AimedShot</aiAimMode>
+            </li>
+            <li Class="CombatExtended.CompProperties_AmmoUser">
+                <magazineSize>3</magazineSize>
+				<reloadOneAtATime>true</reloadOneAtATime>
+                <reloadTime>0.5</reloadTime>
+                <ammoSet>AmmoSet_12Gauge</ammoSet>
+            </li>
+        </comps>
+		<modExtensions>
+		  <li Class="CombatExtended.GunDrawExtension">
+			<DrawSize>0.6</DrawSize>
+		  </li>
+		</modExtensions>
+        <smeltProducts>
+            <Shotgun_Component>1</Shotgun_Component>
+            <Weapon_Parts>1</Weapon_Parts>
+			<Plastic>2</Plastic>
+        </smeltProducts>
+    </ThingDef>
+	
+	<!-- Winchester Model 1887 -->
+    <ThingDef ParentName="BaseGun_LongBarreled">
+        <defName>Pa_W1887L</defName>
+        <label>Winchester Model 1887</label>
+        <description>An Ancient Level Action Shotgun, Model 1887 was one of the first successful repeating shotguns, even though is not what John Browning suggested for a repeating action shotgun, but since he is working for "Winchester Repeating Arms Company", the shotgun was designed with breech-loading, rolling block lever-action mechanism for brand recognition.</description>
+        <graphicData>
+            <texPath>Things/Weapons/Shotguns/W1887</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.2</drawSize>
+        </graphicData>
+        <soundInteract>Interact_Rifle</soundInteract>
+		<generateCommonality>0.8</generateCommonality>
+		<equippedAngleOffset>45</equippedAngleOffset>
+        <statBases>
+            <MarketValue>540</MarketValue>
+            <SightsEfficiency>0.7</SightsEfficiency>
+            <ShotSpread>0.16</ShotSpread>
+            <SwayFactor>1.68</SwayFactor>
+            <RangedWeapon_Cooldown>0.9</RangedWeapon_Cooldown>
+            <Bulk>8.6</Bulk>
+            <Mass>3.6</Mass>
+        </statBases>
+        <weaponTags>
+            <li>ST1</li>
+            <li>Gun</li>
+            <li>TierOnePistol</li>
+			<li>CE_AI_AssaultWeapon</li>
+        </weaponTags>
+        <thingCategories>
+            <li>Shotguns</li>
+        </thingCategories>
+        <verbs>
+            <li Class="CombatExtended.VerbPropertiesCE">
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>Bullet_10Gauge_Buck</defaultProjectile>
+                <warmupTime>0.86</warmupTime>
+                <range>17</range>
+                <soundCast>Shot_Shotgun</soundCast>
+                <soundCastTail>GunTail_Heavy</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+            </li>
+        </verbs>
+        <comps>
+            <li Class="CombatExtended.CompProperties_FireModes">
+                <aiUseBurstMode>FALSE</aiUseBurstMode>
+                <aiAimMode>AimedShot</aiAimMode>
+                <noSingleShot>FALSE</noSingleShot>
+            </li>
+            <li Class="CombatExtended.CompProperties_AmmoUser">
+                <magazineSize>7</magazineSize>
+				<reloadOneAtATime>true</reloadOneAtATime>
+                <reloadTime>0.8</reloadTime>
+                <ammoSet>AmmoSet_Winchester</ammoSet>
+            </li>
+        </comps>
+		<modExtensions>
+		  <li Class="CombatExtended.GunDrawExtension">
+			<DrawSize>1.2</DrawSize>
+		  </li>
+		</modExtensions>
+        <smeltProducts>
+            <Plasteel>6</Plasteel>
+            <ComponentIndustrial>4</ComponentIndustrial>
+        </smeltProducts>
+    </ThingDef>
+	
+	<!-- Winchester Model 1887 "Mare's Leg" -->
+    <ThingDef ParentName="BaseGun_LongBarreled">
+        <defName>Pa_W1887S</defName>
+        <label>Winchester Model 1887(S)</label>
+        <description>The Winchester Model 1887 "Mare's Leg", with 18 inches short barreled version of Winchester 1887 and shorten the stock to make it even more portable, the downside is its effective range is reduced.</description>
+        <graphicData>
+            <texPath>Things/Weapons/Shotguns/W1887S</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.9</drawSize>
+        </graphicData>
+        <soundInteract>Interact_Rifle</soundInteract>
+        <statBases>
+            <MarketValue>480</MarketValue>
+            <SightsEfficiency>0.56</SightsEfficiency>
+            <ShotSpread>0.24</ShotSpread>
+            <SwayFactor>1.82</SwayFactor>
+            <RangedWeapon_Cooldown>0.6</RangedWeapon_Cooldown>
+            <Bulk>4.89</Bulk>
+            <Mass>3.1</Mass>
+        </statBases>
+		<generateCommonality>0.2</generateCommonality>
+        <weaponTags>
+            <li>ST1</li>
+			<li>PT2</li>
+            <li>Gun</li>
+            <li>TierOnePistol</li>
+			<li>CE_AI_AssaultWeapon</li>
+			<li>CE_Sidearm</li>
+			<li>CE_OneHandedWeapon</li>
+        </weaponTags>
+        <thingCategories>
+            <li>Shotguns</li>
+        </thingCategories>
+        <verbs>
+            <li Class="CombatExtended.VerbPropertiesCE">
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>Bullet_10Gauge_Buck</defaultProjectile>
+                <warmupTime>0.48</warmupTime>
+                <range>10</range>
+                <soundCast>Shot_Shotgun</soundCast>
+                <soundCastTail>GunTail_Heavy</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+            </li>
+        </verbs>
+        <comps>
+            <li Class="CombatExtended.CompProperties_FireModes">
+                <aiUseBurstMode>FALSE</aiUseBurstMode>
+                <aiAimMode>AimedShot</aiAimMode>
+                <noSingleShot>FALSE</noSingleShot>
+            </li>
+            <li Class="CombatExtended.CompProperties_AmmoUser">
+                <magazineSize>7</magazineSize>
+				<reloadOneAtATime>true</reloadOneAtATime>
+                <reloadTime>0.7</reloadTime>
+                <ammoSet>AmmoSet_Winchester</ammoSet>
+            </li>
+        </comps>
+		<modExtensions>
+		  <li Class="CombatExtended.GunDrawExtension">
+			<DrawSize>0.9</DrawSize>
+		  </li>
+		</modExtensions>
+        <smeltProducts>
+            <Plasteel>4</Plasteel>
+            <ComponentIndustrial>2</ComponentIndustrial>
+        </smeltProducts>
+    </ThingDef>
+	
+	<!-- Winchester Model 1897(Trench Gun) -->
+    <ThingDef ParentName="Pa_WwBayonetA">
+        <defName>Pa_W1897T</defName>
+        <label>Winchester Model 1897(T)</label>
+        <description>An Ancient Pump Action Shotgun, Trench Grade, modified specifically for urban combat and trench cleaning/assault, with 20 in barrel, heat shield and M1917 Bayonet, entire CQC package in one.</description>
+        <graphicData>
+            <texPath>Things/Weapons/Shotguns/W1897T</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.2</drawSize>
+        </graphicData>
+        <soundInteract>Interact_Rifle</soundInteract>
+		<generateCommonality>0.6</generateCommonality>
+		<equippedAngleOffset>45</equippedAngleOffset>
+        <statBases>
+            <MarketValue>580</MarketValue>
+            <SightsEfficiency>0.85</SightsEfficiency>
+            <ShotSpread>0.18</ShotSpread>
+            <SwayFactor>1.58</SwayFactor>
+            <RangedWeapon_Cooldown>0.87</RangedWeapon_Cooldown>
+            <Bulk>10.1</Bulk>
+            <Mass>4.1</Mass>
+        </statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>+0.1</MoveSpeed>
+			<MeleeHitChance>1.2</MeleeHitChance>
+			<MeleeCritChance>0.75</MeleeCritChance>
+			<Suppressability>-0.45</Suppressability>
+			<PlantWorkSpeed>0.15</PlantWorkSpeed>
+		</equippedStatOffsets>
+        <weaponTags>
+            <li>ST1</li>
+			<li>ST2</li>
+            <li>Gun</li>
+            <li>TierOnePistol</li>
+			<li>TierTwoPistol</li>
+			<li>CE_AI_AssaultWeapon</li>
+        </weaponTags>
+        <thingCategories>
+            <li>Shotguns</li>
+        </thingCategories>
+        <verbs>
+            <li Class="CombatExtended.VerbPropertiesCE">
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>Bullet_12Gauge_Buck</defaultProjectile>
+                <warmupTime>0.78</warmupTime>
+                <range>16</range>
+                <soundCast>Shot_Shotgun</soundCast>
+                <soundCastTail>GunTail_Heavy</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+            </li>
+        </verbs>
+        <comps>
+            <li Class="CombatExtended.CompProperties_FireModes">
+                <aiUseBurstMode>FALSE</aiUseBurstMode>
+                <aiAimMode>AimedShot</aiAimMode>
+                <noSingleShot>FALSE</noSingleShot>
+            </li>
+            <li Class="CombatExtended.CompProperties_AmmoUser">
+                <magazineSize>5</magazineSize>
+				<reloadOneAtATime>true</reloadOneAtATime>
+                <reloadTime>0.8</reloadTime>
+                <ammoSet>AmmoSet_12Gauge</ammoSet>
+            </li>
+        </comps>
+		<modExtensions>
+		  <li Class="CombatExtended.GunDrawExtension">
+			<DrawSize>1.2</DrawSize>
+		  </li>
+		</modExtensions>
+        <smeltProducts>
+            <Plasteel>6</Plasteel>
+            <ComponentIndustrial>4</ComponentIndustrial>
+        </smeltProducts>
+    </ThingDef>
+	
+	<!-- Winchester Model 1897(Standard 30 in) -->
+    <ThingDef ParentName="BaseGun_LongBarreled">
+        <defName>Pa_W1897L</defName>
+        <label>Winchester Model 1897(L)</label>
+        <description>An Ancient Pump Action Shotgun, Standard Grade, the grade before trench war was a thing, with 30 in barrel, better pellet concentration and longer effective range, for people who like trap shooting and hunters.</description>
+        <graphicData>
+            <texPath>Things/Weapons/Shotguns/W1897L</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.3</drawSize>
+        </graphicData>
+        <soundInteract>Interact_Rifle</soundInteract>
+		<generateCommonality>0.4</generateCommonality>
+		<equippedAngleOffset>45</equippedAngleOffset>
+        <statBases>
+            <MarketValue>640</MarketValue>
+            <SightsEfficiency>1</SightsEfficiency>
+            <ShotSpread>0.1</ShotSpread>
+            <SwayFactor>1.48</SwayFactor>
+            <RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
+            <Bulk>10.8</Bulk>
+            <Mass>4.6</Mass>
+        </statBases>
+        <weaponTags>
+            <li>ST1</li>
+			<li>ST2</li>
+            <li>Gun</li>
+            <li>TierOnePistol</li>
+			<li>TierTwoPistol</li>
+			<li>CE_AI_AssaultWeapon</li>
+        </weaponTags>
+        <thingCategories>
+            <li>Shotguns</li>
+        </thingCategories>
+        <verbs>
+            <li Class="CombatExtended.VerbPropertiesCE">
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>Bullet_12Gauge_Buck</defaultProjectile>
+                <warmupTime>0.86</warmupTime>
+                <range>22</range>
+                <soundCast>Shot_Shotgun</soundCast>
+                <soundCastTail>GunTail_Heavy</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+            </li>
+        </verbs>
+        <comps>
+            <li Class="CombatExtended.CompProperties_FireModes">
+                <aiUseBurstMode>FALSE</aiUseBurstMode>
+                <aiAimMode>AimedShot</aiAimMode>
+                <noSingleShot>FALSE</noSingleShot>
+            </li>
+            <li Class="CombatExtended.CompProperties_AmmoUser">
+                <magazineSize>5</magazineSize>
+				<reloadOneAtATime>true</reloadOneAtATime>
+                <reloadTime>0.8</reloadTime>
+                <ammoSet>AmmoSet_12Gauge</ammoSet>
+            </li>
+        </comps>
+		<modExtensions>
+		  <li Class="CombatExtended.GunDrawExtension">
+			<DrawSize>1.3</DrawSize>
+		  </li>
+		</modExtensions>
+        <smeltProducts>
+            <Plasteel>7</Plasteel>
+            <ComponentIndustrial>4</ComponentIndustrial>
+        </smeltProducts>
+    </ThingDef>
+	
+	<!-- Browning Automatic 5 -->
+    <ThingDef ParentName="BaseGun_LongBarreled">
+        <defName>Pa_BA5L</defName>
+        <label>Browning Auto-5</label>
+        <description>An ancient recoil-operated semi-automatic shotgun. The Browning Auto-5 was the first mass-produced semi-automatic shotgun. Designed by John Browning. Shells are stored in a tubular magazine under the barrel. When a chambered shell is fired, the barrel and bolt recoil together and re-cock the hammer. As the barrel returns forward to its initial position the bolt remains behind and thus the spent shell is ejected through a port on the right-hand side of the receiver. Then the bolt returns forward and feeds another shell from the magazine into the action. This type of long recoil action was the first of its kind and patented in 1900 by John Browning.</description>
+        <graphicData>
+            <texPath>Things/Weapons/Shotguns/BA5L</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.1</drawSize>
+        </graphicData>
+        <soundInteract>Interact_Rifle</soundInteract>
+		<generateCommonality>0.6</generateCommonality>
+		<equippedAngleOffset>45</equippedAngleOffset>
+        <statBases>
+            <MarketValue>650</MarketValue>
+            <SightsEfficiency>0.9</SightsEfficiency>
+            <ShotSpread>0.14</ShotSpread>
+            <SwayFactor>1.52</SwayFactor>
+            <RangedWeapon_Cooldown>0.9</RangedWeapon_Cooldown>
+            <Bulk>8</Bulk>
+            <Mass>4.1</Mass>
+        </statBases>
+        <weaponTags>
+            <li>ST2</li>
+            <li>Gun</li>
+			<li>TierOnePistol</li>
+            <li>TierTwoPistol</li>
+			<li>CE_AI_AssaultWeapon</li>
+        </weaponTags>
+        <thingCategories>
+            <li>Shotguns</li>
+        </thingCategories>
+        <verbs>
+            <li Class="CombatExtended.VerbPropertiesCE">
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>Bullet_12Gauge_Buck</defaultProjectile>
+                <warmupTime>0.38</warmupTime>
+                <range>16</range>
+				<ticksBetweenBurstShots>20</ticksBetweenBurstShots>
+                <soundCast>Shot_CAWS</soundCast>
+                <soundCastTail>GunTail_Heavy</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+            </li>
+        </verbs>
+        <comps>
+            <li Class="CombatExtended.CompProperties_FireModes">
+                <aiAimMode>AimedShot</aiAimMode>
+				<noSingleShot>FALSE</noSingleShot>
+            </li>
+            <li Class="CombatExtended.CompProperties_AmmoUser">
+                <magazineSize>5</magazineSize>
+				<reloadOneAtATime>true</reloadOneAtATime>
+                <reloadTime>0.8</reloadTime>
+                <ammoSet>AmmoSet_12Gauge</ammoSet>
+            </li>
+        </comps>
+		<modExtensions>
+		  <li Class="CombatExtended.GunDrawExtension">
+			<DrawSize>1.1</DrawSize>
+		  </li>
+		</modExtensions>
+        <smeltProducts>
+			<Heavy_Component>1</Heavy_Component>
+			<ComponentIndustrial>1</ComponentIndustrial>
+            <Weapon_Parts>1</Weapon_Parts>
+			<Plasteel>6</Plasteel>
+        </smeltProducts>
+    </ThingDef>
+	
+	<!-- Browning Automatic 5(Sawoff with 10 inch barrel) -->
+    <ThingDef ParentName="BaseGun_LongBarreled">
+        <defName>Pa_BA5S</defName>
+        <label>Sawed-off Browning Auto-5</label>
+        <description>An ancient recoil-operated semi-automatic shotgun. The Browning Auto-5 was the first mass-produced semi-automatic shotgun. Designed by John Browning. Shells are stored in a tubular magazine under the barrel. When a chambered shell is fired, the barrel and bolt recoil together and re-cock the hammer. As the barrel returns forward to its initial position the bolt remains behind and thus the spent shell is ejected through a port on the right-hand side of the receiver. Then the bolt returns forward and feeds another shell from the magazine into the action. This type of long recoil action was the first of its kind and patented in 1900 by John Browning.</description>
+        <graphicData>
+            <texPath>Things/Weapons/Shotguns/BA5S</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.7</drawSize>
+        </graphicData>
+        <soundInteract>Interact_Rifle</soundInteract>
+		<generateCommonality>0.4</generateCommonality>
+        <statBases>
+            <MarketValue>580</MarketValue>
+            <SightsEfficiency>0.78</SightsEfficiency>
+            <ShotSpread>0.2</ShotSpread>
+            <SwayFactor>1.52</SwayFactor>
+            <RangedWeapon_Cooldown>0.75</RangedWeapon_Cooldown>
+            <Bulk>4</Bulk>
+            <Mass>3.2</Mass>
+        </statBases>
+        <weaponTags>
+            <li>ST2</li>
+            <li>Gun</li>
+			<li>TierOnePistol</li>
+            <li>TierTwoPistol</li>
+			<li>CE_Sidearm</li>
+			<li>CE_OneHandedWeapon</li>
+			<li>CE_AI_AssaultWeapon</li>
+        </weaponTags>
+        <thingCategories>
+            <li>Shotguns</li>
+        </thingCategories>
+        <verbs>
+            <li Class="CombatExtended.VerbPropertiesCE">
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>Bullet_12Gauge_Buck</defaultProjectile>
+                <warmupTime>0.3</warmupTime>
+                <range>10</range>
+				<ticksBetweenBurstShots>15</ticksBetweenBurstShots>
+                <soundCast>Shot_CAWS</soundCast>
+                <soundCastTail>GunTail_Heavy</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+            </li>
+        </verbs>
+        <comps>
+            <li Class="CombatExtended.CompProperties_FireModes">
+                <aiAimMode>AimedShot</aiAimMode>
+				<noSingleShot>FALSE</noSingleShot>
+            </li>
+            <li Class="CombatExtended.CompProperties_AmmoUser">
+                <magazineSize>5</magazineSize>
+				<reloadOneAtATime>true</reloadOneAtATime>
+                <reloadTime>0.6</reloadTime>
+                <ammoSet>AmmoSet_12Gauge</ammoSet>
+            </li>
+        </comps>
+		<modExtensions>
+		  <li Class="CombatExtended.GunDrawExtension">
+			<DrawSize>0.7</DrawSize>
+		  </li>
+		</modExtensions>
+        <smeltProducts>
+            <Heavy_Component>1</Heavy_Component>
+			<Plasteel>12</Plasteel>
+        </smeltProducts>
+    </ThingDef>
+
+</Defs>
+	

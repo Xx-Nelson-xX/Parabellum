@@ -1,0 +1,652 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<!-- De Lisle Commando Carbine -->
+	<ThingDef ParentName="BaseGun_LongBarreled">
+        <defName>Pa_Delisle</defName>
+        <label>De Lisle Commando Carabine</label>
+        <description>An integrated suppressed pistol caliber carbine for ancient special force. Mediocre damage, low fire rate, highly accurate and decent effective range.</description>
+        <graphicData>
+            <texPath>Things/Weapons/Carabines/Delisle</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>Interact_Rifle</soundInteract>
+        <statBases>
+            <MarketValue>380</MarketValue>
+            <SightsEfficiency>1.15</SightsEfficiency>
+            <ShotSpread>0.02</ShotSpread>
+            <SwayFactor>1</SwayFactor>
+            <RangedWeapon_Cooldown>0.5</RangedWeapon_Cooldown>
+            <Bulk>7.5</Bulk>
+            <Mass>3.74</Mass>
+        </statBases>
+		<generateCommonality>0.4</generateCommonality>
+		<equippedStatOffsets>
+			<HuntingStealth>0.95</HuntingStealth>
+		</equippedStatOffsets>
+        <weaponTags>
+            <li>RF1</li>
+            <li>Gun</li>
+            <li>SniperRifle</li>
+            <li>TierOneRifle</li>
+            <li>TierOneSniper</li>
+            <li>CE_AI_Rifle</li>
+        </weaponTags>
+        <thingCategories>
+            <li>Rifles</li>
+        </thingCategories>
+        <verbs>
+            <li Class="CombatExtended.VerbPropertiesCE">
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>Bullet_45ACP_FMJ</defaultProjectile>
+                <ticksBetweenBurstShots>16</ticksBetweenBurstShots>
+                <warmupTime>0.5</warmupTime>
+                <range>42</range>
+                <soundCast>Shot_Delisle</soundCast>
+                <soundCastTail>GunTail_Light</soundCastTail>
+                <muzzleFlashScale>0</muzzleFlashScale>
+            </li>
+        </verbs>
+        <comps>
+            <li Class="CombatExtended.CompProperties_FireModes">
+                <aiAimMode>AimedShot</aiAimMode>
+            </li>
+            <li Class="CombatExtended.CompProperties_AmmoUser">
+                <magazineSize>11</magazineSize>
+                <reloadTime>2.1</reloadTime>
+                <ammoSet>AmmoSet_DC</ammoSet>
+            </li>
+        </comps>
+        <smeltProducts>
+            <ComponentIndustrial>1</ComponentIndustrial>
+            <Weapon_Parts>1</Weapon_Parts>
+        </smeltProducts>
+    </ThingDef>
+	
+	<!-- M4.50 Beowulf -->
+    <ThingDef ParentName="BaseGun_LongBarreled">
+        <defName>Pa_M4Beowulf</defName>
+        <label>M4.50 Beowulf SBR</label>
+        <description>The M4.50 Beowulf Short Barrel Rifle, convertion of the standard M4 carbine into Big Game Hunting SBR, increase stopping power and somewhat penetration. High damage, low range, good rate of fire and somewhat accurate, but not really controllable in burst.</description>
+        <graphicData>
+            <texPath>Things/Weapons/Carabines/M4Beowulf</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.75</drawSize>
+        </graphicData>
+        <soundInteract>Interact_Rifle</soundInteract>
+        <statBases>
+            <MarketValue>1380</MarketValue>
+            <SightsEfficiency>1.1</SightsEfficiency>
+            <ShotSpread>0.068</ShotSpread>
+            <SwayFactor>1.2</SwayFactor>
+            <RangedWeapon_Cooldown>0.62</RangedWeapon_Cooldown>
+            <Bulk>6.8</Bulk>
+            <Mass>2.4</Mass>
+        </statBases>
+		<generateCommonality>0.3</generateCommonality>
+        <weaponTags>
+            <li>RF4</li>
+            <li>AdvancedGun</li>
+            <li>TierThreeRifle</li>
+            <li>CE_AI_Rifle</li>
+			<li>CE_Sidearm</li>
+			<li>CE_OneHandedWeapon</li>
+        </weaponTags>
+        <thingCategories>
+            <li>Rifles</li>
+        </thingCategories>
+        <verbs>
+            <li Class="CombatExtended.VerbPropertiesCE">
+                <recoilAmount>1.74</recoilAmount>
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>Bullet_127x42mmB_FMJ</defaultProjectile>
+                <warmupTime>0.5</warmupTime>
+                <range>38</range>
+                <burstShotCount>4</burstShotCount>
+                <ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+                <soundCast>Shot_Beowulf</soundCast>
+                <soundCastTail>GunTail_Heavy</soundCastTail>
+                <muzzleFlashScale>16</muzzleFlashScale>
+            </li>
+        </verbs>
+        <comps>
+            <li Class="CombatExtended.CompProperties_FireModes">
+                <aiUseBurstMode>true</aiUseBurstMode>
+                <aiAimMode>AimedShot</aiAimMode>
+                <aimedBurstShotCount>2</aimedBurstShotCount>
+            </li>
+            <li Class="CombatExtended.CompProperties_AmmoUser">
+                <magazineSize>12</magazineSize>
+                <reloadTime>1.68</reloadTime>
+                <ammoSet>AmmoSet_127x42mmB</ammoSet>
+            </li>
+        </comps>
+		<modExtensions>
+		  <li Class="CombatExtended.GunDrawExtension">
+			<DrawSize>0.75</DrawSize>
+		  </li>
+		</modExtensions>
+        <smeltProducts>
+            <AdvRifle_Component>1</AdvRifle_Component>
+            <Weapon_Parts>6</Weapon_Parts>
+            <Plastic>10</Plastic>
+        </smeltProducts>
+    </ThingDef>
+	
+	<!-- M960(M) Calico Carbine -->
+    <ThingDef ParentName="BaseGun_LongBarreled">
+        <defName>Pa_Calico</defName>
+        <label>M960(M) Calico Carabine</label>
+        <description>The Calico M960 Military Model 9mm Carbine is a Light Weight Carbine with high capacity, cylindrical, helical-feed magazine in a compact design, designed as backup weapon for vehicle crew.</description>
+        <graphicData>
+            <texPath>Things/Weapons/Carabines/Calico</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>Interact_Rifle</soundInteract>
+        <statBases>
+            <MarketValue>1200</MarketValue>
+            <SightsEfficiency>1.1</SightsEfficiency>
+            <ShotSpread>0.054</ShotSpread>
+            <SwayFactor>1.05</SwayFactor>
+            <RangedWeapon_Cooldown>0.6</RangedWeapon_Cooldown>
+            <Bulk>7.8</Bulk>
+            <Mass>2.17</Mass>
+        </statBases>
+		<generateCommonality>0.5</generateCommonality>
+        <weaponTags>
+            <li>RF3</li>
+            <li>Gun</li>
+            <li>TierOneRifle</li>
+			<li>TierTwoRifle</li>
+			<li>AdvancedGun</li>
+            <li>CE_AI_Rifle</li>
+        </weaponTags>
+        <thingCategories>
+            <li>Rifles</li>
+        </thingCategories>
+        <verbs>
+            <li Class="CombatExtended.VerbPropertiesCE">
+                <recoilAmount>1.08</recoilAmount>
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>Bullet_9x19mmPara_FMJ</defaultProjectile>
+                <burstShotCount>25</burstShotCount>
+                <ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+                <warmupTime>0.5</warmupTime>
+                <range>34</range>
+                <soundCast>Shot_MachinePistol</soundCast>
+                <soundCastTail>GunTail_Light</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+            </li>
+        </verbs>
+        <comps>
+            <li Class="CombatExtended.CompProperties_FireModes">
+                <aiUseBurstMode>true</aiUseBurstMode>
+                <aiAimMode>AimedShot</aiAimMode>
+                <aimedBurstShotCount>5</aimedBurstShotCount>
+            </li>
+            <li Class="CombatExtended.CompProperties_AmmoUser">
+                <magazineSize>100</magazineSize>
+                <reloadTime>4.1</reloadTime>
+                <ammoSet>AmmoSet_9x19mmPara</ammoSet>
+            </li>
+        </comps>
+        <smeltProducts>
+            <Rifle_Component>1</Rifle_Component>
+            <Weapon_Parts>2</Weapon_Parts>
+            <Plastic>5</Plastic>
+        </smeltProducts>
+    </ThingDef>
+	
+	<!-- Karabiner Model 1890 Bolt Action Carabine -->
+    <ThingDef ParentName="BaseGun_LongBarreled">
+        <defName>Pa_K90M</defName>
+        <label>Karabiner Model 1890</label>
+        <description>A shorter version of the Gewehr Model 1888 for Cavary, to improve its mobility, the trade off is reduced effective range and Accuracy.</description>
+        <graphicData>
+            <texPath>Things/Weapons/Carabines/K90</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.3</drawSize>
+        </graphicData>
+        <soundInteract>Interact_Rifle</soundInteract>
+        <statBases>
+            <MarketValue>450</MarketValue>
+            <SightsEfficiency>1.05</SightsEfficiency>
+            <ShotSpread>0.3</ShotSpread>
+            <SwayFactor>1.3</SwayFactor>
+            <RangedWeapon_Cooldown>1.2</RangedWeapon_Cooldown>
+            <Bulk>8.36</Bulk>
+            <Mass>3</Mass>
+        </statBases>
+		<generateCommonality>0.4</generateCommonality>
+        <weaponTags>
+            <li>RF1</li>
+            <li>Gun</li>
+            <li>SniperRifle</li>
+            <li>TierOneRifle</li>
+            <li>TierOneSniper</li>
+            <li>CE_AI_Rifle</li>
+        </weaponTags>
+        <thingCategories>
+            <li>Rifles</li>
+        </thingCategories>
+        <verbs>
+            <li Class="CombatExtended.VerbPropertiesCE">
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>Bullet_8mmM_P88M</defaultProjectile>
+                <warmupTime>1</warmupTime>
+                <range>42</range>
+                <soundCast>Shot_G88M</soundCast>
+                <soundCastTail>GunTail_Medium</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+            </li>
+        </verbs>
+        <comps>
+            <li Class="CombatExtended.CompProperties_FireModes">
+                <aiAimMode>AimedShot</aiAimMode>
+            </li>
+            <li Class="CombatExtended.CompProperties_AmmoUser">
+                <magazineSize>5</magazineSize>
+                <reloadTime>2.2</reloadTime>
+                <ammoSet>AmmoSet_8mmM</ammoSet>
+            </li>
+        </comps>
+		<modExtensions>
+		  <li Class="CombatExtended.GunDrawExtension">
+			<DrawSize>1.3</DrawSize>
+		  </li>
+		</modExtensions>
+        <smeltProducts>
+            <Plasteel>6</Plasteel>
+			<ComponentIndustrial>4</ComponentIndustrial>
+        </smeltProducts>
+    </ThingDef>
+	
+	<!-- Mauser Karabiner 98 Kurz(Replica) -->
+    <ThingDef ParentName="Pa_WwBayonetB">
+        <defName>Pa_K98k</defName>
+        <label>Mauser Karabiner 98k(R)</label>
+        <description>One of the latest version of Mauser Bolt Action Rifle Family, the culmination of the Mauser family and one of the best old school rifle for its time,the replica made it capable to fit modern rifle rounds.</description>
+        <graphicData>
+            <texPath>Things/Weapons/Carabines/98k</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.2</drawSize>
+        </graphicData>
+        <soundInteract>Interact_Rifle</soundInteract>
+        <statBases>
+            <MarketValue>800</MarketValue>
+            <SightsEfficiency>1.25</SightsEfficiency>
+            <ShotSpread>0.02</ShotSpread>
+            <SwayFactor>1.15</SwayFactor>
+            <RangedWeapon_Cooldown>1.6</RangedWeapon_Cooldown>
+            <Bulk>12.6</Bulk>
+            <Mass>5.5</Mass>
+        </statBases>
+		<generateCommonality>0.3</generateCommonality>
+		<equippedAngleOffset>45</equippedAngleOffset>
+        <weaponTags>
+            <li>RF1</li>
+            <li>Gun</li>
+            <li>SniperRifle</li>
+            <li>TierOneRifle</li>
+            <li>TierOneSniper</li>
+            <li>CE_AI_Rifle</li>
+        </weaponTags>
+        <thingCategories>
+            <li>Rifles</li>
+        </thingCategories>
+        <verbs>
+            <li Class="CombatExtended.VerbPropertiesCE">
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>Bullet_8mmM_SP</defaultProjectile>
+                <warmupTime>0.9</warmupTime>
+                <range>57</range>
+                <soundCast>Shot_G88M</soundCast>
+                <soundCastTail>GunTail_Medium</soundCastTail>
+                <muzzleFlashScale>10</muzzleFlashScale>
+            </li>
+        </verbs>
+        <comps>
+            <li Class="CombatExtended.CompProperties_FireModes">
+                <aiAimMode>AimedShot</aiAimMode>
+            </li>
+            <li Class="CombatExtended.CompProperties_AmmoUser">
+                <magazineSize>20</magazineSize>
+                <reloadTime>7.6</reloadTime>
+                <ammoSet>AmmoSet_K98k</ammoSet>
+            </li>
+        </comps>
+		<modExtensions>
+		  <li Class="CombatExtended.GunDrawExtension">
+			<DrawSize>1.2</DrawSize>
+		  </li>
+		</modExtensions>
+        <smeltProducts>
+			<ComponentIndustrial>6</ComponentIndustrial>
+            <Weapon_Parts>1</Weapon_Parts>
+        </smeltProducts>
+    </ThingDef>
+	
+	<!-- Gewehr 41(Walther) -->
+    <ThingDef ParentName="Pa_WwBayonetB">
+        <defName>Pa_G41W</defName>
+        <label>Gewehr 41(W)</label>
+        <description>One of the early attemp to create a semi-automatic rifle by Walther, to increase firepower of rifleman squad, the other one was from Mauser, due the weapon complexity and reliability, the project was superseeded by Gewehr 43, but still, Walther achieved better result than Mauser's G41(M) did.</description>
+        <graphicData>
+            <texPath>Things/Weapons/Carabines/G41W</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.2</drawSize>
+        </graphicData>
+        <soundInteract>Interact_Rifle</soundInteract>
+        <statBases>
+            <MarketValue>950</MarketValue>
+            <SightsEfficiency>1.2</SightsEfficiency>
+            <ShotSpread>0.028</ShotSpread>
+            <SwayFactor>1.3</SwayFactor>
+            <RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
+            <Bulk>10.9</Bulk>
+            <Mass>5.7</Mass>
+        </statBases>
+		<generateCommonality>0.25</generateCommonality>
+		<equippedAngleOffset>45</equippedAngleOffset>
+        <weaponTags>
+			<li>RF1</li>
+			<li>RF2</li>
+			<li>RF2Pa</li>
+            <li>Gun</li>
+            <li>SniperRifle</li>
+            <li>TierOneRifle</li>
+			<li>TierTwoRifle</li>
+            <li>TierOneSniper</li>
+            <li>CE_AI_Rifle</li>
+        </weaponTags>
+        <thingCategories>
+            <li>Rifles</li>
+        </thingCategories>
+        <verbs>
+            <li Class="CombatExtended.VerbPropertiesCE">
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>Bullet_8mmM_SP</defaultProjectile>
+                <warmupTime>0.62</warmupTime>
+                <range>52</range>
+                <soundCast>Shot_G43K</soundCast>
+                <soundCastTail>GunTail_Medium</soundCastTail>
+                <muzzleFlashScale>10</muzzleFlashScale>
+            </li>
+        </verbs>
+        <comps>
+            <li Class="CombatExtended.CompProperties_FireModes">
+                <aiAimMode>AimedShot</aiAimMode>
+            </li>
+            <li Class="CombatExtended.CompProperties_AmmoUser">
+                <magazineSize>10</magazineSize>
+                <reloadOneAtATime>true</reloadOneAtATime>
+                <reloadTime>0.5</reloadTime>
+                <ammoSet>AmmoSet_8mmM</ammoSet>
+            </li>
+        </comps>
+		<modExtensions>
+		  <li Class="CombatExtended.GunDrawExtension">
+			<DrawSize>1.2</DrawSize>
+		  </li>
+		</modExtensions>
+        <smeltProducts>
+			<Rifle_Component>1</Rifle_Component>
+            <Weapon_Parts>1</Weapon_Parts>
+        </smeltProducts>
+    </ThingDef>
+	
+	<!-- Gewehr/Karabiner 43 -->
+    <ThingDef ParentName="BaseGun_LongBarreled">
+        <defName>Pa_G43K</defName>
+        <label>Gewehr 43</label>
+        <description>The succesor of both G41(W) and G41(M), included improved short-stroke piston gas system which solved the reliability issue, and detachable 10 rounds magazine box to speed up its reaload.</description>
+        <graphicData>
+            <texPath>Things/Weapons/Carabines/G43</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.1</drawSize>
+        </graphicData>
+        <soundInteract>Interact_Rifle</soundInteract>
+        <statBases>
+            <MarketValue>1400</MarketValue>
+            <SightsEfficiency>1.55</SightsEfficiency>
+            <ShotSpread>0.014</ShotSpread>
+            <SwayFactor>1.1</SwayFactor>
+            <RangedWeapon_Cooldown>1.6</RangedWeapon_Cooldown>
+            <Bulk>10.3</Bulk>
+            <Mass>4.8</Mass>
+        </statBases>
+		<generateCommonality>0.4</generateCommonality>
+        <weaponTags>
+			<li>RF2</li>
+			<li>RF3</li>
+            <li>Gun</li>
+            <li>SniperRifle</li>
+			<li>AdvancedGun</li>
+			<li>TierTwoRifle</li>
+            <li>TierOneSniper</li>
+            <li>CE_AI_Rifle</li>
+        </weaponTags>
+        <thingCategories>
+            <li>Rifles</li>
+        </thingCategories>
+        <verbs>
+            <li Class="CombatExtended.VerbPropertiesCE">
+				<recoilAmount>1.15</recoilAmount>
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>Bullet_8mmM_SP</defaultProjectile>
+                <warmupTime>0.54</warmupTime>
+				<burstShotCount>3</burstShotCount>
+                <ticksBetweenBurstShots>80</ticksBetweenBurstShots>
+                <range>62</range>
+                <soundCast>Shot_G43K</soundCast>
+                <soundCastTail>GunTail_Medium</soundCastTail>
+                <muzzleFlashScale>10</muzzleFlashScale>
+            </li>
+        </verbs>
+        <comps>
+            <li Class="CombatExtended.CompProperties_FireModes">
+                <aiUseBurstMode>true</aiUseBurstMode>
+                <aiAimMode>AimedShot</aiAimMode>
+				<aimedBurstShotCount>2</aimedBurstShotCount>
+            </li>
+            <li Class="CombatExtended.CompProperties_AmmoUser">
+                <magazineSize>10</magazineSize>
+                <reloadTime>2.1</reloadTime>
+                <ammoSet>AmmoSet_8mmM</ammoSet>
+            </li>
+			<li Class="CombatExtended.CompProperties_UnderBarrel">
+				<propsUnderBarrel>
+					<magazineSize>1</magazineSize>
+					<reloadTime>2.4</reloadTime>
+					<reloadOneAtATime>true</reloadOneAtATime>
+					<ammoSet>AmmoSet_Schiessbecher</ammoSet>
+				</propsUnderBarrel>
+				<verbPropsUnderBarrel>
+					<recoilAmount>2.84</recoilAmount>
+					<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+					<hasStandardCommand>true</hasStandardCommand>
+					<defaultProjectile>Bullet_30mmGSG_HE</defaultProjectile>
+					<warmupTime>1.1</warmupTime>
+					<range>40</range>
+					<soundCast>Shot_IncendiaryLauncher</soundCast>
+					<soundCastTail>GunTail_Medium</soundCastTail>
+					<muzzleFlashScale>5</muzzleFlashScale>
+					<targetParams>
+						<canTargetLocations>true</canTargetLocations>
+					</targetParams>
+				</verbPropsUnderBarrel>
+				<propsFireModesUnderBarrel>
+					<aiAimMode>AimedShot</aiAimMode>
+				</propsFireModesUnderBarrel>
+			</li>
+        </comps>
+		<modExtensions>
+		  <li Class="CombatExtended.GunDrawExtension">
+			<DrawSize>1.1</DrawSize>
+		  </li>
+		</modExtensions>
+        <smeltProducts>
+			<Sniper_Component>1</Sniper_Component>
+            <Weapon_Parts>1</Weapon_Parts>
+        </smeltProducts>
+    </ThingDef>
+	
+	<!-- Gustloff Volkssturmgewehr VG 1-5 -->
+    <ThingDef ParentName="BaseGun_LongBarreled">
+        <defName>Pa_VG</defName>
+        <label>Gustloff VG 1-5</label>
+        <description>Gustloff Volkssturmgewehr VG 1-5, the "People's Storm - Rifle", the last effort to increase weapon production almost in the end of the war, a very robust and cheap semi-automatic carabine, generally used by Volkssturm, to fight for the fatherland counter the inevitable for one last time.</description>
+        <graphicData>
+            <texPath>Things/Weapons/Carabines/VG</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.2</drawSize>
+        </graphicData>
+        <soundInteract>Interact_Rifle</soundInteract>
+        <statBases>
+            <MarketValue>800</MarketValue>
+            <SightsEfficiency>1</SightsEfficiency>
+            <ShotSpread>0.08</ShotSpread>
+            <SwayFactor>1.25</SwayFactor>
+            <RangedWeapon_Cooldown>0.7</RangedWeapon_Cooldown>
+            <Bulk>9.4</Bulk>
+            <Mass>4.6</Mass>
+        </statBases>
+		<generateCommonality>0.7</generateCommonality>
+        <weaponTags>
+			<li>RF1</li>
+			<li>RF2</li>
+            <li>Gun</li>
+            <li>TierOneRifle</li>
+			<li>TierTwoRifle</li>
+            <li>CE_AI_Rifle</li>
+        </weaponTags>
+        <thingCategories>
+            <li>Rifles</li>
+        </thingCategories>
+        <verbs>
+            <li Class="CombatExtended.VerbPropertiesCE">
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>Bullet_792x33mmK_FMJ</defaultProjectile>
+                <warmupTime>0.42</warmupTime>
+                <range>40</range>
+                <soundCast>Shot_Madsen</soundCast>
+                <soundCastTail>GunTail_Medium</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+            </li>
+        </verbs>
+		<comps>
+            <li Class="CombatExtended.CompProperties_FireModes">
+                <aiAimMode>AimedShot</aiAimMode>
+            </li>
+            <li Class="CombatExtended.CompProperties_AmmoUser">
+                <magazineSize>30</magazineSize>
+                <reloadTime>2.4</reloadTime>
+                <ammoSet>AmmoSet_792x33mmK</ammoSet>
+            </li>
+        </comps>
+		<modExtensions>
+		  <li Class="CombatExtended.GunDrawExtension">
+			<DrawSize>1.2</DrawSize>
+		  </li>
+		</modExtensions>
+        <smeltProducts>
+			<Weapon_Parts>2</Weapon_Parts>
+        </smeltProducts>
+    </ThingDef>
+	
+	<!-- Gustloff Volkssturmgewehr VG 3/45k -->
+    <ThingDef ParentName="BaseGun_LongBarreled">
+        <defName>Pa_VG45k</defName>
+        <label>Gustloff VG 3/45k</label>
+        <description>Gustloff Volkssturmgewehr VG 3/45k, the "People's Storm - Rifle", the last effort to increase weapon production almost in the end of the war, a very robust and cheap bolt action carabine chambered in 7.92x33mm Kurz, generally used by Volkssturm, to fight for the fatherland counter the inevitable for one last time.</description>
+        <graphicData>
+            <texPath>Things/Weapons/Carabines/VG3</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.2</drawSize>
+        </graphicData>
+        <soundInteract>Interact_Rifle</soundInteract>
+        <statBases>
+            <MarketValue>700</MarketValue>
+            <SightsEfficiency>1.1</SightsEfficiency>
+            <ShotSpread>0.024</ShotSpread>
+            <SwayFactor>1.2</SwayFactor>
+            <RangedWeapon_Cooldown>1.2</RangedWeapon_Cooldown>
+            <Bulk>8.6</Bulk>
+            <Mass>3.1</Mass>
+        </statBases>
+		<generateCommonality>0.6</generateCommonality>
+        <weaponTags>
+			<li>RF1</li>
+            <li>Gun</li>
+            <li>TierOneRifle</li>
+            <li>CE_AI_Rifle</li>
+        </weaponTags>
+        <thingCategories>
+            <li>Rifles</li>
+        </thingCategories>
+        <verbs>
+            <li Class="CombatExtended.VerbPropertiesCE">
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>Bullet_792x33mmK_FMJ</defaultProjectile>
+                <warmupTime>0.74</warmupTime>
+                <range>45</range>
+                <soundCast>Shot_Madsen</soundCast>
+                <soundCastTail>GunTail_Medium</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+            </li>
+        </verbs>
+		<comps>
+            <li Class="CombatExtended.CompProperties_FireModes">
+                <aiAimMode>AimedShot</aiAimMode>
+            </li>
+            <li Class="CombatExtended.CompProperties_AmmoUser">
+                <magazineSize>30</magazineSize>
+                <reloadTime>2.4</reloadTime>
+                <ammoSet>AmmoSet_792x33mmK</ammoSet>
+            </li>
+			<li Class="CombatExtended.CompProperties_UnderBarrel">
+				<propsUnderBarrel>
+					<magazineSize>1</magazineSize>
+					<reloadTime>2.4</reloadTime>
+					<reloadOneAtATime>true</reloadOneAtATime>
+					<ammoSet>AmmoSet_Schiessbecher</ammoSet>
+				</propsUnderBarrel>
+				<verbPropsUnderBarrel>
+					<recoilAmount>2.84</recoilAmount>
+					<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+					<hasStandardCommand>true</hasStandardCommand>
+					<defaultProjectile>Bullet_30mmGSG_HE</defaultProjectile>
+					<warmupTime>1.1</warmupTime>
+					<range>40</range>
+					<soundCast>Shot_IncendiaryLauncher</soundCast>
+					<soundCastTail>GunTail_Medium</soundCastTail>
+					<muzzleFlashScale>5</muzzleFlashScale>
+					<targetParams>
+						<canTargetLocations>true</canTargetLocations>
+					</targetParams>
+				</verbPropsUnderBarrel>
+				<propsFireModesUnderBarrel>
+					<aiAimMode>AimedShot</aiAimMode>
+				</propsFireModesUnderBarrel>
+			</li>
+        </comps>
+		<modExtensions>
+		  <li Class="CombatExtended.GunDrawExtension">
+			<DrawSize>1.2</DrawSize>
+		  </li>
+		</modExtensions>
+        <smeltProducts>
+			<Weapon_Parts>2</Weapon_Parts>
+        </smeltProducts>
+    </ThingDef>
+	
+</Defs>

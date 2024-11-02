@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<!-- ================== 128mm PaK44/L55 Heavy Anti-Tank Gun ================== -->
+
+	<ThingDef ParentName="BaseGun_Turret">
+		<defName>Pa_PaK44ATG</defName>
+		<label>128mm Pak 44/L55 Anti-Tank Gun</label>
+		<graphicData>
+			<texPath>Things/Building/Security/CMHT/PaK44_Top</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Artillery_ShellLoaded</soundInteract>
+		<description>PaK 44/L55 128mm Anti-Tank Gun.</description>
+		<techLevel>Spacer</techLevel>
+		<tradeability>None</tradeability>
+		<statBases>
+			<MarketValue>4800</MarketValue>
+			<SightsEfficiency>2.8</SightsEfficiency>
+			<ShotSpread>0.14</ShotSpread>
+			<SwayFactor>1</SwayFactor>
+			<RangedWeapon_Cooldown>2.8</RangedWeapon_Cooldown>
+		</statBases>
+		<weaponTags>
+			<li>TurretGun</li>
+			<li>Artillery_BaseDestroyer</li>
+		</weaponTags>
+		<generateCommonality>0</generateCommonality>
+		<verbs>
+			<li Class="CombatExtended.VerbPropertiesCE">
+				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_128mmCannonShell_APCBCHE</defaultProjectile>
+				<circularError>1.28</circularError>
+				<warmupTime>2.2</warmupTime>
+				<minRange>16</minRange>
+				<!--<forcedMissRadius>4</forcedMissRadius>-->
+				<range>214</range>
+				<soundCast>Shot_128mm</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>21</muzzleFlashScale>
+				<indirectFirePenalty>0.2</indirectFirePenalty>
+				<targetParams>
+				  <canTargetLocations>true</canTargetLocations>
+				</targetParams>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="CombatExtended.CompProperties_AmmoUser">
+				<magazineSize>1</magazineSize>
+                <reloadTime>12.4</reloadTime>
+				<!-- <spawnUnloaded>true</spawnUnloaded> -->
+				<ammoSet>AmmoSet_128mmCannonShell</ammoSet>
+			</li>
+			<li Class="CombatExtended.CompProperties_FireModes"/>
+		</comps>
+	</ThingDef>
+	
+	<!-- ================== 12,8cm FlaK 40/L61 Heavy Anti-Aircraft Gun ================== -->
+
+	<ThingDef ParentName="BaseGun_Turret">
+		<defName>Pa_FlaK40AA</defName>
+		<label>Dual 12,8cm FlaK 40/L61 Heavy Anti-Aircraft Gun</label>
+		<graphicData>
+			<texPath>Things/Building/Security/CMHT/FlaK40Z_Top</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Artillery_ShellLoaded</soundInteract>
+		<description>Dual 12,8cm FlaK 40/L61 Heavy Anti-Aircraft Gun.</description>
+		<techLevel>Ultra</techLevel>
+		<tradeability>None</tradeability>
+		<statBases>
+			<MarketValue>13600</MarketValue>
+			<SightsEfficiency>2.6</SightsEfficiency>
+			<ShotSpread>0.18</ShotSpread>
+			<SwayFactor>1.2</SwayFactor>
+			<RangedWeapon_Cooldown>3.2</RangedWeapon_Cooldown>
+		</statBases>
+		<weaponTags>
+			<li>TurretGun</li>
+			<li>Artillery_BaseDestroyer</li>
+		</weaponTags>
+		<generateCommonality>0</generateCommonality>
+		<verbs>
+			<li Class="CombatExtended.VerbPropertiesCE">
+				<recoilPattern>Mounted</recoilPattern>
+				<recoilAmount>1.26</recoilAmount>
+				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_128mmCannonShell_APCBCHE</defaultProjectile>
+				<circularError>1.4</circularError>
+				<warmupTime>2.6</warmupTime>
+				<minRange>16</minRange>
+				<!--<forcedMissRadius>4</forcedMissRadius>-->
+				<ticksBetweenBurstShots>60</ticksBetweenBurstShots>
+				<burstShotCount>4</burstShotCount>
+				<range>260</range>
+				<soundCast>Shot_128mm</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>21</muzzleFlashScale>
+				<indirectFirePenalty>0.2</indirectFirePenalty>
+				<targetParams>
+				  <canTargetLocations>true</canTargetLocations>
+				</targetParams>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="CombatExtended.CompProperties_AmmoUser">
+				<magazineSize>6</magazineSize>
+                <reloadTime>11.6</reloadTime>
+				<reloadOneAtATime>true</reloadOneAtATime>
+				<!-- <spawnUnloaded>true</spawnUnloaded> -->
+				<ammoSet>AmmoSet_128mmCannonShell</ammoSet>
+			</li>
+			<li Class="CombatExtended.CompProperties_FireModes">
+				<aimedBurstShotCount>2</aimedBurstShotCount>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<!--=============== Turret Base(128mm PaK44/L55) ===============-->
+
+	<ThingDef ParentName="TurretMannedBase">
+		<defName>Turret_PaK44HATGP</defName>
+		<label>12,8cm PaK 44 HATGP</label>
+		<graphicData>
+			<texPath>Things/Building/Security/Base/Flak41_Base</texPath>
+			<drawSize>(2.4,2.4)</drawSize>
+			<shadowData>
+				<volume>(0.3, 0.6, 0.3)</volume>
+			</shadowData>
+		</graphicData>
+		<uiIconPath>Things/Building/Security/CMHT/PaK44_icon</uiIconPath>
+		<hasInteractionCell>True</hasInteractionCell>
+		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		<statBases>
+			<MaxHitPoints>420</MaxHitPoints>
+			<WorkToBuild>3200</WorkToBuild>
+			<Mass>10160</Mass>
+			<Bulk>10160</Bulk>
+		</statBases>
+		<techLevel>Spacer</techLevel>
+		<description>PaK 44/L55 12,8cm Heavy Anti-Tank Gun(Platform), an ancient Late War Anti-Tank gun, extremely powerful, heavy and expensive old world technology, capable to penetrate and cause serious damage for all the ground armored vehicle of its era, to the point of consider it excessive or overkill.</description>
+		<size>(2,2)</size>
+		<stuffCategories>
+			<li>RuggedMetallic</li>
+		</stuffCategories>
+		<costStuffCount>200</costStuffCount>
+		<costList>
+			<ReinforcedConcrete>20</ReinforcedConcrete>
+			<Pa_complexcannon_Crate>2</Pa_complexcannon_Crate>
+		</costList>
+		<specialDisplayRadius>16</specialDisplayRadius>
+		<designationCategory>Security</designationCategory>
+		<building>
+			<turretGunDef>Pa_PaK44ATG</turretGunDef>
+			<turretTopDrawSize>6.4</turretTopDrawSize>
+			<buildingTags>
+				<li>Artillery</li>
+				<li>Artillery_BaseDestroyer</li>
+			</buildingTags>
+		</building>
+		<minifiedDef>MinifiedTurret_Pa_PaK44ATG</minifiedDef>
+		<researchPrerequisites>
+			<li>Artillery_C2</li>
+		</researchPrerequisites>
+		<constructionSkillPrerequisite>14</constructionSkillPrerequisite>
+	</ThingDef>
+	
+	<!--=============== Turret Base(12,8cm FlaK 40/L61) ===============-->
+
+	<ThingDef ParentName="TurretMannedBase">
+		<defName>Turret_FlaK40ZHAAP</defName>
+		<label>12,8cm FlaK 40z HAAP</label>
+		<graphicData>
+			<texPath>Things/Building/Security/Base/H_Base</texPath>
+			<drawSize>(3.4,3.4)</drawSize>
+			<shadowData>
+				<volume>(0.3, 0.6, 0.3)</volume>
+			</shadowData>
+		</graphicData>
+		<uiIconPath>Things/Building/Security/CMHT/FlaK40Z_icon</uiIconPath>
+		<hasInteractionCell>True</hasInteractionCell>
+		<interactionCellOffset>(-2,0,-1)</interactionCellOffset>
+		<statBases>
+			<MaxHitPoints>860</MaxHitPoints>
+			<WorkToBuild>4600</WorkToBuild>
+			<Mass>26000</Mass>
+			<Bulk>26000</Bulk>
+		</statBases>
+		<techLevel>Ultra</techLevel>
+		<description>FlaK 40/L61 12,8cm Heavy Anti-Aircraft Gun(Platform), an ancient Mid-Late War Anti-Aircraft gun, extremely powerful, heavy and insanely expensive piece of old world technology, with dual 12,8cm heavy barrel and a Semi-Autoloading system to improve its combat effectiveness, designed to deal with flying fortress of its era, mostly placed in heavily defended area, specially over Flakturms, although is an AA gun, it can effectively destroy any land vehicle of its era from long range without sweat.</description>
+		<size>(3,3)</size>
+		<stuffCategories>
+			<li>RuggedMetallic</li>
+		</stuffCategories>
+		<costStuffCount>360</costStuffCount>
+		<costList>
+			<ReinforcedConcrete>150</ReinforcedConcrete>
+			<Pa_complexcannon_Crate>4</Pa_complexcannon_Crate>
+		</costList>
+		<specialDisplayRadius>16</specialDisplayRadius>
+		<designationCategory>Security</designationCategory>
+		<building>
+			<turretGunDef>Pa_FlaK40AA</turretGunDef>
+			<turretTopDrawSize>8.2</turretTopDrawSize>
+			<buildingTags>
+				<li>Artillery</li>
+				<li>Artillery_BaseDestroyer</li>
+			</buildingTags>
+		</building>
+		<minifiedDef>MinifiedTurret_Pa_FlaK40ZAA</minifiedDef>
+		<researchPrerequisites>
+			<li>Parabellum_I</li>
+		</researchPrerequisites>
+		<constructionSkillPrerequisite>16</constructionSkillPrerequisite>
+	</ThingDef>
+
+	<!-- ================== Minified ================== -->
+	
+	<ThingDef ParentName="MinifiedTurretBase">
+		<defName>MinifiedTurret_Pa_PaK44ATG</defName>
+		<label>12,8cm PaK 44 HATGP</label>
+		<statBases>
+			<Mass>8000</Mass>
+			<Bulk>8000</Bulk>
+		</statBases>
+	</ThingDef>
+	
+	<ThingDef ParentName="MinifiedTurretBase">
+		<defName>MinifiedTurret_Pa_FlaK40ZAA</defName>
+		<label>12,8cm FlaK 40z HAAP</label>
+		<statBases>
+			<Mass>20000</Mass>
+			<Bulk>20000</Bulk>
+		</statBases>
+	</ThingDef>
+	
+</Defs>

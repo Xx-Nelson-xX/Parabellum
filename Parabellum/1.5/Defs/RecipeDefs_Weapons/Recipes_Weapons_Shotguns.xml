@@ -1,0 +1,590 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<!-- DP-12 Double-barreled Pumpshotgun -->
+	<RecipeDef ParentName="RangedWeaponRecipeBase">
+		<defName>BuildDP12</defName>
+		<label>Build DP-12 Double-barreled Pumpshotgun</label>
+		<description>Build the DP-12 Double-barreled Pumpshotgun for double the fun... And double the cost.\nCaliber: 12 Gauge</description>
+		<jobString>Building DP-12.</jobString>
+		<workAmount>20000</workAmount>
+		<skillRequirements>
+			<Crafting>12</Crafting>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Shotgun_Component</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Weapon_Parts</li>
+					</thingDefs>
+				</filter>
+				<count>30</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>22</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>Metallic</li>
+					</categories>
+				</filter>
+				<count>80</count>
+			</li>
+		</ingredients>
+		<products>
+			<Pa_DP>1</Pa_DP>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Shotgun_Component</li>
+				<li>Weapon_Parts</li>
+				<li>ComponentIndustrial</li>
+			</thingDefs>
+			<categories>
+				<li>SLDBar</li>
+				<li>USLDBar</li>
+				<li>HCMBar</li>
+			</categories>
+		</fixedIngredientFilter>
+		<recipeUsers>
+			<li>WeaponCraftingWorkTable</li>
+		</recipeUsers>
+		<researchPrerequisite>GasOperation</researchPrerequisite>
+	</RecipeDef>
+	
+	<!-- HK CAWS -->
+	<RecipeDef ParentName="RangedWeaponRecipeBase">
+		<defName>BuildCAWS</defName>
+		<label>Build CAWS</label>
+		<description>Build the CAWS, no longer a prototype.\nCaliber: 12 Gauge</description>
+		<jobString>Building CAWS.</jobString>
+		<workAmount>22000</workAmount>
+		<skillRequirements>
+			<Crafting>16</Crafting>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Sniper_Component</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Shotgun_Component</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Weapon_Parts</li>
+					</thingDefs>
+				</filter>
+				<count>20</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>14</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>Metallic</li>
+					</categories>
+				</filter>
+				<count>45</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Plastic</li>
+					</thingDefs>
+				</filter>
+				<count>45</count>
+			</li>
+		</ingredients>
+		<products>
+			<Pa_CAWS>1</Pa_CAWS>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Shotgun_Component</li>
+				<li>Sniper_Component</li>
+				<li>Weapon_Parts</li>
+				<li>ComponentIndustrial</li>
+				<li>Plastic</li>
+			</thingDefs>
+			<categories>
+				<li>SLDBar</li>
+				<li>USLDBar</li>
+				<li>HCMBar</li>
+			</categories>
+		</fixedIngredientFilter>
+		<recipeUsers>
+			<li>AdvWeaponCraftingWorkTable</li>
+		</recipeUsers>
+		<researchPrerequisite>Shotgun_C2</researchPrerequisite>
+	</RecipeDef>
+	
+	<!-- Serbu Super Shorty -->
+	<RecipeDef ParentName="RangedWeaponRecipeBase">
+		<defName>BuildSSS</defName>
+		<label>Build Serbu Super Shorty</label>
+		<description>Build the Serbu Super Shorty, something between a common pistol and a pocket handcannon.\nCaliber: 12 Gauge</description>
+		<jobString>Building Serbu Super Shorty.</jobString>
+		<workAmount>6800</workAmount>
+		<skillRequirements>
+			<Crafting>6</Crafting>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Shotgun_Component</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Weapon_Parts</li>
+					</thingDefs>
+				</filter>
+				<count>3</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>6</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>Metallic</li>
+					</categories>
+				</filter>
+				<count>20</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Plastic</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+		</ingredients>
+		<products>
+			<Pa_SSS>1</Pa_SSS>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Shotgun_Component</li>
+				<li>Weapon_Parts</li>
+				<li>ComponentIndustrial</li>
+				<li>Plastic</li>
+			</thingDefs>
+			<categories>
+				<li>SLDBar</li>
+				<li>USLDBar</li>
+				<li>HCMBar</li>
+			</categories>
+		</fixedIngredientFilter>
+		<recipeUsers>
+			<li>WeaponCraftingWorkTable</li>
+		</recipeUsers>
+		<researchPrerequisite>GasOperation</researchPrerequisite>
+	</RecipeDef>
+	
+	
+	<!-- Winchester Model 1887 -->
+	<RecipeDef ParentName="RangedWeaponRecipeBase">
+		<defName>BuildPa_W1887L</defName>
+		<label>Build Winchester Model 1887</label>
+		<description>Build the Winchester Model 1887 lever-action shotgun, live your cowboy action shooting dream.\nCaliber: 12 Gauge</description>
+		<jobString>Building Winchester Model 1887.</jobString>
+		<workAmount>10000</workAmount>
+		<skillRequirements>
+			<Crafting>5</Crafting>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>14</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>Metallic</li>
+					</categories>
+				</filter>
+				<count>38</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>Woody</li>
+					</categories>
+				</filter>
+				<count>18</count>
+			</li>
+		</ingredients>
+		<products>
+			<Pa_W1887L>1</Pa_W1887L>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>ComponentIndustrial</li>
+			</thingDefs>
+			<categories>
+				<li>SLDBar</li>
+				<li>USLDBar</li>
+				<li>HCMBar</li>
+				<li>Woody</li>
+			</categories>
+		</fixedIngredientFilter>
+		<recipeUsers>
+			<li>FabricationBench</li>
+		</recipeUsers>
+		<researchPrerequisite>Parabellum_Alpha</researchPrerequisite>
+	</RecipeDef>
+	
+	<!-- Winchester Model 1887 "Mare's Leg" -->
+	<RecipeDef ParentName="RangedWeaponRecipeBase">
+		<defName>BuildPa_W1887S</defName>
+		<label>Build Winchester Model 1887 "Mare's Leg"</label>
+		<description>Build the Winchester Model 1887 "Mare's Leg" lever-action shotgun, "Hasta la vista, Baby".\nCaliber: 12 Gauge</description>
+		<jobString>Building Winchester Model 1887 "Mare's Leg".</jobString>
+		<workAmount>8400</workAmount>
+		<skillRequirements>
+			<Crafting>5</Crafting>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>12</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>Metallic</li>
+					</categories>
+				</filter>
+				<count>28</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>Woody</li>
+					</categories>
+				</filter>
+				<count>8</count>
+			</li>
+		</ingredients>
+		<products>
+			<Pa_W1887S>1</Pa_W1887S>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>ComponentIndustrial</li>
+			</thingDefs>
+			<categories>
+				<li>SLDBar</li>
+				<li>USLDBar</li>
+				<li>HCMBar</li>
+				<li>Woody</li>
+			</categories>
+		</fixedIngredientFilter>
+		<recipeUsers>
+			<li>FabricationBench</li>
+		</recipeUsers>
+		<researchPrerequisite>Parabellum_Alpha</researchPrerequisite>
+	</RecipeDef>
+	
+	<!-- Winchester Model 1897/Trench Gun-->
+	<RecipeDef ParentName="RangedWeaponRecipeBase">
+		<defName>BuildPa_W1897T</defName>
+		<label>Build Winchester Model 1897(T)</label>
+		<description>Build Winchester Model 1897, Trench Grade pump-action shotgun, the usage of this weapon was almost consider a warcrime during its time.\nCaliber: 12 Gauge</description>
+		<jobString>Building Winchester Model 1897(T).</jobString>
+		<workAmount>10000</workAmount>
+		<skillRequirements>
+			<Crafting>6</Crafting>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>15</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>Metallic</li>
+					</categories>
+				</filter>
+				<count>42</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>Woody</li>
+					</categories>
+				</filter>
+				<count>14</count>
+			</li>
+		</ingredients>
+		<products>
+			<Pa_W1897T>1</Pa_W1897T>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>ComponentIndustrial</li>
+			</thingDefs>
+			<categories>
+				<li>SLDBar</li>
+				<li>USLDBar</li>
+				<li>HCMBar</li>
+				<li>Woody</li>
+			</categories>
+		</fixedIngredientFilter>
+		<recipeUsers>
+			<li>FabricationBench</li>
+		</recipeUsers>
+		<researchPrerequisite>Parabellum_Alpha</researchPrerequisite>
+	</RecipeDef>
+	
+	<!-- Winchester Model 1897/Trench Gun-->
+	<RecipeDef ParentName="RangedWeaponRecipeBase">
+		<defName>BuildPa_W1897L</defName>
+		<label>Build Winchester Model 1897(L)</label>
+		<description>Build Winchester Model 1897, Standard Grade pump-action shotgun with 30 in barrel, perfect weapon for trap shooting and hunters.\nCaliber: 12 Gauge</description>
+		<jobString>Building Winchester Model 1897(T).</jobString>
+		<workAmount>11000</workAmount>
+		<skillRequirements>
+			<Crafting>6</Crafting>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>15</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>Metallic</li>
+					</categories>
+				</filter>
+				<count>58</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>Woody</li>
+					</categories>
+				</filter>
+				<count>14</count>
+			</li>
+		</ingredients>
+		<products>
+			<Pa_W1897L>1</Pa_W1897L>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>ComponentIndustrial</li>
+			</thingDefs>
+			<categories>
+				<li>SLDBar</li>
+				<li>USLDBar</li>
+				<li>HCMBar</li>
+				<li>Woody</li>
+			</categories>
+		</fixedIngredientFilter>
+		<recipeUsers>
+			<li>FabricationBench</li>
+		</recipeUsers>
+		<researchPrerequisite>Parabellum_Alpha</researchPrerequisite>
+	</RecipeDef>
+	
+	<!-- Browning Automatic 5-->
+	<RecipeDef ParentName="RangedWeaponRecipeBase">
+		<defName>BuildPa_BA5L</defName>
+		<label>Build Browning Auto-5</label>
+		<description>Build Browning Automatic 5, claimed by John Browning, his best achievement, sucks that Winchester didn't wanted it.\nCaliber: 12 Gauge</description>
+		<jobString>Building Browning Auto-5.</jobString>
+		<workAmount>12800</workAmount>
+		<skillRequirements>
+			<Crafting>6</Crafting>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Heavy_Component</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Weapon_Parts</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>6</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>Metallic</li>
+					</categories>
+				</filter>
+				<count>40</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>Woody</li>
+					</categories>
+				</filter>
+				<count>18</count>
+			</li>
+		</ingredients>
+		<products>
+			<Pa_BA5L>1</Pa_BA5L>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>ComponentIndustrial</li>
+				<li>Heavy_Component</li>
+				<li>Weapon_Parts</li>
+			</thingDefs>
+			<categories>
+				<li>SLDBar</li>
+				<li>USLDBar</li>
+				<li>HCMBar</li>
+				<li>Woody</li>
+			</categories>
+		</fixedIngredientFilter>
+		<recipeUsers>
+			<li>WeaponCraftingWorkTable</li>
+		</recipeUsers>
+		<researchPrerequisite>Machining</researchPrerequisite>
+	</RecipeDef>
+	
+	<!-- Browning Automatic 5(Sawoff with 10 inch barrel) -->
+	<RecipeDef ParentName="RangedWeaponRecipeBase">
+		<defName>BuildPa_BA5S</defName>
+		<label>Build Browning Automatic 5(Sawed off)</label>
+		<description>Build Browning Automatic 5(Sawed off), the standard one for the Riot an police force, this one goes in the Mob's arsenal.\nCaliber: 12 Gauge</description>
+		<jobString>Building Browning Auto-5(Sawed off).</jobString>
+		<workAmount>10500</workAmount>
+		<skillRequirements>
+			<Crafting>6</Crafting>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Heavy_Component</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>Metallic</li>
+					</categories>
+				</filter>
+				<count>22</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>Woody</li>
+					</categories>
+				</filter>
+				<count>10</count>
+			</li>
+		</ingredients>
+		<products>
+			<Pa_BA5S>1</Pa_BA5S>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>ComponentIndustrial</li>
+				<li>Heavy_Component</li>
+			</thingDefs>
+			<categories>
+				<li>SLDBar</li>
+				<li>USLDBar</li>
+				<li>HCMBar</li>
+				<li>Woody</li>
+			</categories>
+		</fixedIngredientFilter>
+		<recipeUsers>
+			<li>WeaponCraftingWorkTable</li>
+		</recipeUsers>
+		<researchPrerequisite>GasOperation</researchPrerequisite>
+	</RecipeDef>
+	
+</Defs>

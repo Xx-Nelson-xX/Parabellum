@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+ <!-- ========== Mess Kit ========== -->
+  <ThingDef ParentName="WorkTableFueled">
+    <defName>Pa_MessKit</defName>
+    <label>Mess Kit</label>
+    <description>An Old trusty Mess Kit, an essential part of an old world soldier or camper loadout, very easy to use and portable.</description>
+    <graphicData>
+      <texPath>Things/Special/MessKit/MKa</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>0.6</drawSize>
+	  <drawRotated>false</drawRotated>
+    </graphicData>
+    <socialPropernessMatters>true</socialPropernessMatters>
+	<useStuffTerrainAffordance>false</useStuffTerrainAffordance>
+	<passability>Standable</passability>
+    <statBases>
+      <MaxHitPoints>20</MaxHitPoints>
+      <Mass>0.39</Mass>
+	  <Bulk>0.4</Bulk>
+      <Flammability>0</Flammability>
+	  <WorkTableWorkSpeedFactor>0.65</WorkTableWorkSpeedFactor>
+	  <OutdoorWorkRateFactor>1</OutdoorWorkRateFactor>
+    </statBases>
+	<size>(1,1)</size>
+	<fillPercent>0.1</fillPercent>
+	<!--<minifiedDef>Minified_MessKit</minifiedDef>-->
+	<costList>
+		<Pa_MessKitP>1</Pa_MessKitP>
+	</costList>
+	<designationCategory>Production</designationCategory>
+	<comps>
+		<li Class="CompProperties_Flickable"/>
+		<li Class="CompProperties_AffectedByFacilities">
+			<linkableFacilities>
+				<li>CookingTools</li>
+			</linkableFacilities>
+		</li>
+		<li Class="SK.CompProperties_HeatPusherAdvanced">
+			<compClass>SK.CompHeatPusherAdvanced</compClass>
+			<heatPerSecond>15</heatPerSecond>
+			<heatPushMaxTemperature>24</heatPushMaxTemperature>
+		</li>
+		<li Class="CompProperties_Glower">
+			<glowRadius>2</glowRadius>
+			<glowColor>(217,112,33,0)</glowColor>
+		</li>
+		<li Class="SK.CompFueled_Properties">
+			<operatingTemp>300</operatingTemp>
+			<fireDrawOffset>(0,0,0)</fireDrawOffset>
+			<smokeDrawOffset>(0,0,0.1)</smokeDrawOffset>
+			<fuelDrawOffset>(0,0,0.01)</fuelDrawOffset>
+			<fuelDrawScale>0.5</fuelDrawScale>
+			<fuelCapacity>10</fuelCapacity>
+			<burnFuelMultiplier>1.1</burnFuelMultiplier>
+			<effectOnWeather>true</effectOnWeather>
+			<smokeEnabled>true</smokeEnabled>
+			<smokeDensity>0.8</smokeDensity>
+			<fuelFilter>
+				<thingDefs>
+					<li>Charcoal</li>
+					<li>Coal</li>
+					<li>Kindling</li>
+				</thingDefs>
+				<categories>
+					<li>Wooden</li>
+				</categories>
+			</fuelFilter>
+		</li>
+		<li>
+			<compClass>CompReportWorkSpeed</compClass>
+		</li>
+	</comps>
+	<placeWorkers>
+		<li>PlaceWorker_ShowFacilitiesConnections</li>
+		<li>PlaceWorker_ReportWorkSpeedPenalties</li>
+	</placeWorkers>
+	<building>
+		<isMealSource>true</isMealSource>
+		<uninstallWork>50</uninstallWork>
+	</building>
+	<recipes>
+		<li>CookScrambledEggs</li>
+		<li>CookScrambledEggsBulk</li>
+		<li>MakeBread</li>
+		<li>BrewCoffeeSingle</li>
+		<li>BrewCoffee</li>
+		<li>BrewPsychiteTeaBulk</li>
+		<li>BrewTea</li>
+		<li>BrewTeaBulk</li>
+		<li>MakeChocoMilk</li>
+		<li>CookMeatSoup</li>
+		<li>MakeMisoSoup</li>
+	</recipes>
+	<researchPrerequisites>
+		<li>Food_B3</li>
+	</researchPrerequisites>
+	<resourcesFractionWhenDeconstructed>1</resourcesFractionWhenDeconstructed>
+	<constructionSkillPrerequisite>0</constructionSkillPrerequisite>
+  </ThingDef>
+  
+  <!-- ================== Mess Kit as item ================== -->
+  <ThingDef ParentName="SK_ResourceBase">
+		<defName>Pa_MessKitP</defName>
+		<label>Mess Kit</label>
+		<description>An Old trusty Mess Kit, an essential part of an old world soldier or camper loadout, very easy to use and portable, you need to set it up to use though.</description>
+		<graphicData>
+			<texPath>Things/Special/MessKit/MKb</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.6</drawSize>
+			<drawRotated>false</drawRotated>
+		</graphicData>
+		<soundInteract>Metal_Drop</soundInteract>
+		<soundDrop>Metal_Drop</soundDrop>
+		<stackLimit>10</stackLimit>
+		<techLevel>Industrial</techLevel>
+		<statBases>
+			<MarketValue>60</MarketValue>
+			<DeteriorationRate>0</DeteriorationRate>
+			<Flammability>0</Flammability>
+			<Mass>0.39</Mass>
+			<Bulk>0.4</Bulk>
+		</statBases>
+		<thingCategories>
+			<li>BuildingsProduction</li>
+		</thingCategories>
+	</ThingDef>
+  
+  <!-- ================== Minified ================== -->
+	
+	<!--<ThingDef ParentName="MinifiedThing">
+		<defName>Minified_MessKit</defName>
+		<label>Mess Kit</label>
+		<graphicData>
+		  <texPath>Things/Special/MessKit/MKb</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		  <drawSize>0.6</drawSize>
+		  <drawRotated>false</drawRotated>
+		</graphicData>
+		<drawGUIOverlay>true</drawGUIOverlay>
+		<stackLimit>10</stackLimit>
+		<thingCategories>
+			<li>BuildingsProduction</li>
+		</thingCategories>
+		<statBases>
+			<Mass>0.39</Mass>
+			<Bulk>0.4</Bulk>
+		</statBases>
+	</ThingDef>-->
+	
+	<!-- ==================== Recipes ========================== -->
+
+	<RecipeDef ParentName="RangedWeaponRecipeBase">
+		<defName>MakePa_MessKit</defName>
+		<label>make a Mess Kit</label>
+		<description>Make a Mess Kit, an army marches on its stomach.</description>
+		<jobString>Making Mess Kit.</jobString>
+		<targetCountAdjustment>1</targetCountAdjustment>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>AluminiumBar</li>
+					</thingDefs>
+				</filter>
+				<count>12</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>AluminiumBar</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Pa_MessKitP>1</Pa_MessKitP>
+		</products>
+		<skillRequirements>
+			<Crafting>3</Crafting>
+		</skillRequirements>
+		<workSkill>Crafting</workSkill>
+		<recipeUsers>
+			<li>FabricationBench</li>
+		</recipeUsers>
+		<researchPrerequisite>Food_B3</researchPrerequisite>
+	</RecipeDef>
+ 
+</Defs>

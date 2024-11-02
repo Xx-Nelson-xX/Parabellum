@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="LWM_DeepStorage">
+		<defName>bunkerstorage_1size</defName>
+		<label>single bunker storage</label>
+		<description>A bunker storage, specially made to store very special item. Up to 1 item.</description>
+		<graphicData>
+			<texPath>Things/Building/BunkerS</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawRotated>false</drawRotated>
+			<shaderType>CutoutComplex</shaderType>
+			<shadowData>
+				<volume>(0.7, 0.3, 0.7)</volume>
+			</shadowData>
+			<linkType>CornerFiller</linkType>
+			<linkFlags>
+				<li>Wall</li>
+				<li>Rock</li>
+			</linkFlags>
+		</graphicData>
+		<uiIconPath>Things/Building/BunkerS_icon</uiIconPath>
+		<rotatable>false</rotatable>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>Impassable</passability>
+		<holdsRoof>true</holdsRoof>
+		<fillPercent>1</fillPercent>
+		<costStuffCount>10</costStuffCount>
+		<stuffCategories>
+			<li>Stony</li>
+			<li>Bricks</li>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costList>
+			<ComponentIndustrial>1</ComponentIndustrial>
+			<ReinforcedConcrete>10</ReinforcedConcrete>
+		</costList>
+		<statBases>
+			<MarketValue>150</MarketValue>
+			<MaxHitPoints>1000</MaxHitPoints>
+			<WorkToBuild>900</WorkToBuild>
+			<Bulk>25</Bulk>
+			<Mass>20</Mass>
+		</statBases>
+		<damageMultipliers Inherit="False">
+			<li>
+				<damageDef>Bullet</damageDef>
+				<multiplier>0.25</multiplier>
+			</li>
+			<li>
+				<damageDef>Arrow</damageDef>
+				<multiplier>0.1</multiplier>
+			</li>
+			<li>
+				<damageDef>Beanbag</damageDef>
+				<multiplier>0.05</multiplier>
+			</li>
+			<li>
+				<damageDef>Optic</damageDef>
+				<multiplier>0.35</multiplier>
+			</li>
+			<li>
+				<damageDef>Microwave</damageDef>
+				<multiplier>0.4</multiplier>
+			</li>
+			<li>
+				<damageDef>Blunt</damageDef>
+				<multiplier>0.6</multiplier>
+			</li>
+			<li>
+				<damageDef>Cut</damageDef>
+				<multiplier>0.35</multiplier>
+			</li>
+			<li>
+				<damageDef>Bite</damageDef>
+				<multiplier>0.275</multiplier>
+			</li>
+			<li>
+				<damageDef>KineticPulse</damageDef>
+				<multiplier>0.6</multiplier>
+			</li>
+		</damageMultipliers>
+		<size>(1,1)</size>
+		<defaultPlacingRot>South</defaultPlacingRot>
+		<!--<placeWorkers>
+			<li>SK.PlaceWorker_OnlyOnThing</li>
+		</placeWorkers>-->
+		<building Inherit="False">
+			<isEdifice>true</isEdifice>
+			<preventDeteriorationInside>true</preventDeteriorationInside>
+			<preventDeteriorationOnTop>true</preventDeteriorationOnTop>
+			<ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
+			<defaultStorageSettings>
+				<priority>Important</priority>
+				<filter>
+				</filter>
+			</defaultStorageSettings>
+			<fixedStorageSettings>
+				<filter>
+					<categories>
+						<li>Root</li>
+					</categories>
+					<disallowedCategories>
+						<li>Corpses</li>
+						<li>Chunks</li>
+						<li>StoneBlocks</li>
+					</disallowedCategories>
+				</filter>
+			</fixedStorageSettings>
+		</building>
+		<comps>
+			<li Class="LWM.DeepStorage.Properties">
+				<maxNumberStacks>1</maxNumberStacks>
+				<minTimeStoringTakes>15</minTimeStoringTakes>
+				<additionalTimeEachStack>15</additionalTimeEachStack>
+				<showContents>true</showContents>
+				<overlayType>SumOfItemsPerCell</overlayType>
+			</li>
+		</comps>
+		<researchPrerequisites>
+			<li>Parabellum_Gamma</li>
+		</researchPrerequisites>
+		<constructionSkillPrerequisite>4</constructionSkillPrerequisite>
+	</ThingDef>
+	
+</Defs>

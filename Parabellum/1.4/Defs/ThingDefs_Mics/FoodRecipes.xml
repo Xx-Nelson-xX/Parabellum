@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+  <!-- ========== Item ========== -->
+  
+  <!-- ========== Cooked meat ========== -->
+  <ThingDef ParentName="SK_MealBase">
+		<defName>Pa_CookedMeat</defName>
+		<label>Cooked Meat</label>
+		<description>Freshly cooked meat, 300g per portion.</description>
+		<graphicData>
+			<texPath>Things/Item/Meal128/SmokedFishMeat</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<DeteriorationRate>17</DeteriorationRate>
+			<MarketValue>3</MarketValue>
+			<WorkToMake>40</WorkToMake>
+			<Bulk>0.2</Bulk>
+			<Mass>0.3</Mass>
+			<Nutrition>0.2</Nutrition>
+		</statBases>
+		<stackLimit>80</stackLimit>
+		<ingestible>
+			<preferability>MealSimple</preferability>
+			<maxNumToIngestAtOnce>5</maxNumToIngestAtOnce>
+			<ingestEffect>EatMeat</ingestEffect>
+			<ingestSound>Meal_Eat</ingestSound>
+		</ingestible>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>4</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<!-- ========== Rice ball ========== -->
+	<ThingDef ParentName="SK_MealBase">
+		<defName>Pa_Onigiri</defName>
+		<label>Onigiri</label>
+		<description>A simple salted rice ball, also quite large too.</description>
+		<graphicData>
+			<texPath>Things/Special/Onigiri</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+			<drawSize>0.6</drawSize>
+		</graphicData>
+		<statBases>
+			<DeteriorationRate>8</DeteriorationRate>
+			<MarketValue>8</MarketValue>
+			<WorkToMake>100</WorkToMake>
+			<Bulk>0.3</Bulk>
+			<Mass>0.2</Mass>
+			<Nutrition>0.45</Nutrition>
+		</statBases>
+		<stackLimit>20</stackLimit>
+		<ingestible>
+			<preferability>MealSimple</preferability>
+			<ingestEffect>EatVegetarian</ingestEffect>
+			<maxNumToIngestAtOnce>2</maxNumToIngestAtOnce>
+			<ingestSound>Meal_Eat</ingestSound>
+		</ingestible>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>8</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<!-- ========== Foodcube(Mix) ========== -->
+	<ThingDef ParentName="SK_MealBase">
+		<defName>Pa_FoodcubeMix</defName>
+		<label>Foodcube(Mix)</label>
+		<description>A foodcube, a cube shaped nutritious block made with mixed ingredient, very cost efficient food but the taste might vary.</description>
+		<graphicData>
+			<texPath>Things/Special/FoodcubeM</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.8</drawSize>
+		</graphicData>
+		<statBases>
+			<DeteriorationRate>8</DeteriorationRate>
+			<MarketValue>16</MarketValue>
+			<WorkToMake>500</WorkToMake>
+			<Bulk>0.8</Bulk>
+			<Mass>0.8</Mass>
+			<Nutrition>0.9</Nutrition>
+		</statBases>
+		<stackLimit>10</stackLimit>
+		<ingestible>
+			<preferability>MealSimple</preferability>
+			<ingestEffect>EatMeat</ingestEffect>
+			<ingestSound>Meal_Eat</ingestSound>
+		</ingestible>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>4</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<!-- ========== Foodcube ========== -->
+	<ThingDef ParentName="SK_MealBase">
+		<defName>Pa_Foodcube</defName>
+		<label>Foodcube</label>
+		<description>A foodcube, a simple combination of bread with vegetables, in cube shape.</description>
+		<graphicData>
+			<texPath>Things/Special/Foodcube</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.8</drawSize>
+		</graphicData>
+		<statBases>
+			<DeteriorationRate>8</DeteriorationRate>
+			<MarketValue>10</MarketValue>
+			<WorkToMake>500</WorkToMake>
+			<Bulk>0.8</Bulk>
+			<Mass>0.5</Mass>
+			<Nutrition>0.6</Nutrition>
+		</statBases>
+		<stackLimit>20</stackLimit>
+		<ingestible>
+			<preferability>MealSimple</preferability>
+			<ingestEffect>EatVegetarian</ingestEffect>
+			<ingestSound>Meal_Eat</ingestSound>
+		</ingestible>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>6</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+	</ThingDef>
+  
+  <!-- ========== Recipe ========== -->
+  
+  <!-- ========== Cooked meat ========== -->
+  <RecipeDef>
+		<defName>CookMeat</defName>
+		<label>cook meat x4</label>
+		<description>Prepares cooked meat. Produces 4 portion.</description>
+		<jobString>Cooking meat.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+		<workAmount>400</workAmount>
+		<targetCountAdjustment>4</targetCountAdjustment>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<requiredGiverWorkType>Cooking</requiredGiverWorkType>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>MeatRaw</li>
+					</categories>
+				</filter>
+				<count>0.4</count>
+			</li>
+		</ingredients>
+		<products>
+			<Pa_CookedMeat>4</Pa_CookedMeat>
+		</products>
+		<fixedIngredientFilter>
+			<categories>
+				<li>MeatRaw</li>
+			</categories>
+			<specialFiltersToDisallow>
+				<li>AllowPlantFood</li>
+			</specialFiltersToDisallow>
+		</fixedIngredientFilter>
+		<defaultIngredientFilter>
+			<categories>
+				<li>MeatRaw</li>
+			</categories>
+			<disallowedThingDefs>
+				<li>Meat_Megaspider</li>
+				<li>Meat_Human</li>
+				<li>InsectJelly</li>
+			</disallowedThingDefs>
+		</defaultIngredientFilter>
+		<skillRequirements>
+			<Cooking>1</Cooking>
+		</skillRequirements>
+		<workSkill>Cooking</workSkill>
+		<recipeUsers>
+			<li>FueledStove</li>
+			<li>ElectricStove</li>
+			<li>Pa_MessKit</li>
+		</recipeUsers>
+		<researchPrerequisite>Food_00</researchPrerequisite>
+	</RecipeDef>
+	
+	<!-- ========== Onigiri/Rice ball ========== -->
+	<RecipeDef>
+		<defName>MakeOnigiri</defName>
+		<label>Make Onigiri x2</label>
+		<description>Make 2 Onigiri.</description>
+		<jobString>Making Onigiri.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+		<workAmount>200</workAmount>
+		<targetCountAdjustment>2</targetCountAdjustment>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<requiredGiverWorkType>Cooking</requiredGiverWorkType>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RawRice</li>
+					</thingDefs>
+				</filter>
+				<count>0.3</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RawAlgae</li>
+					</thingDefs>
+				</filter>
+				<count>0.07</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Salt</li>
+					</thingDefs>
+				</filter>
+				<count>0.02</count>
+			</li>
+		</ingredients>
+		<products>
+			<Pa_Onigiri>2</Pa_Onigiri>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Salt</li>
+				<li>RawAlgae</li>
+				<li>RawRice</li>
+			</thingDefs>
+			<specialFiltersToDisallow>
+				<li>AllowPlantFood</li>
+			</specialFiltersToDisallow>
+		</fixedIngredientFilter>
+		<defaultIngredientFilter>
+			<thingDefs>
+				<li>Salt</li>
+				<li>RawAlgae</li>
+				<li>RawRice</li>
+			</thingDefs>
+		</defaultIngredientFilter>
+		<skillRequirements>
+			<Cooking>4</Cooking>
+		</skillRequirements>
+		<workSkill>Cooking</workSkill>
+		<recipeUsers>
+			<li>FueledStove</li>
+			<li>ElectricStove</li>
+			<li>Pa_MessKit</li>
+		</recipeUsers>
+		<researchPrerequisite>Food_00</researchPrerequisite>
+	</RecipeDef>
+	
+	<!-- ========== Foodcube(Mix) ========== -->
+	<RecipeDef>
+		<defName>MakeFoodcubeM</defName>
+		<label>Make foodcube(Mix) x1</label>
+		<description>Prepares a Foodcube with mixed ingredients.</description>
+		<jobString>Making Foodcube(Mix).</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+		<workAmount>500</workAmount>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<requiredGiverWorkType>Cooking</requiredGiverWorkType>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+		<ingredients>
+			<li>
+				<filter>
+					<customSummary>protein</customSummary>
+					<categories>
+						<li>MeatRaw</li>
+						<li>EggsUnfertilized</li>
+						<li>EggsFertilized</li>
+						<li>MeatSubRaw</li>
+						<li>BasicPlantFoodRaw</li>
+						<li>FruitFoodRaw</li>
+						<li>ExtraPlantFoodRaw</li>
+						<li>FungusPlantRaw</li>
+					</categories>
+				</filter>
+				<count>0.5</count>
+			</li>
+		</ingredients>
+		<products>
+			<Pa_FoodcubeMix>1</Pa_FoodcubeMix>
+		</products>
+		<fixedIngredientFilter>
+			<categories>
+				<li>MeatRaw</li>
+				<li>MeatSubRaw</li>
+				<li>EggsUnfertilized</li>
+				<li>EggsFertilized</li>
+				<li>BasicPlantFoodRaw</li>
+				<li>FruitFoodRaw</li>
+				<li>ExtraPlantFoodRaw</li>
+				<li>FungusPlantRaw</li>
+			</categories>
+			<specialFiltersToDisallow>
+				<li>AllowPlantFood</li>
+			</specialFiltersToDisallow>
+		</fixedIngredientFilter>
+		<defaultIngredientFilter>
+			<categories>
+				<li>MeatRaw</li>
+				<li>MeatSubRaw</li>
+				<li>EggsUnfertilized</li>
+				<li>BasicPlantFoodRaw</li>
+				<li>FruitFoodRaw</li>
+				<li>ExtraPlantFoodRaw</li>
+				<li>FungusPlantRaw</li>
+			</categories>
+			<disallowedThingDefs>
+				<li>Meat_Megaspider</li>
+				<li>Meat_Human</li>
+			</disallowedThingDefs>
+			<disallowedCategories>
+				<li>EggsFertilized</li>
+			</disallowedCategories>
+		</defaultIngredientFilter>
+		<skillRequirements>
+			<Cooking>2</Cooking>
+		</skillRequirements>
+		<workSkill>Cooking</workSkill>
+		<recipeUsers>
+			<li>FueledStove</li>
+			<li>ElectricStove</li>
+			<li>Pa_MessKit</li>
+		</recipeUsers>
+		<researchPrerequisite>Food_00</researchPrerequisite>
+	</RecipeDef>
+	
+	<!-- ========== Foodcube ========== -->
+	<RecipeDef>
+		<defName>MakeFoodcube</defName>
+		<label>Make foodcube x2</label>
+		<description>Prepares 2 Foodcube.</description>
+		<jobString>Making Foodcube.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+		<workAmount>400</workAmount>
+		<targetCountAdjustment>2</targetCountAdjustment>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<requiredGiverWorkType>Cooking</requiredGiverWorkType>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>bread</li>
+					</thingDefs>
+				</filter>
+				<count>0.6</count>
+			</li>
+			<li>
+				<filter>
+					<customSummary>protein</customSummary>
+					<categories>
+						<li>BasicPlantFoodRaw</li>
+						<li>FruitFoodRaw</li>
+						<li>ExtraPlantFoodRaw</li>
+						<li>FungusPlantRaw</li>
+					</categories>
+					<thingDefs>
+						<li>Tofu</li>
+					</thingDefs>
+				</filter>
+				<count>0.2</count>
+			</li>
+		</ingredients>
+		<products>
+			<Pa_Foodcube>2</Pa_Foodcube>
+		</products>
+		<fixedIngredientFilter>
+			<categories>
+				<li>BasicPlantFoodRaw</li>
+				<li>FruitFoodRaw</li>
+				<li>ExtraPlantFoodRaw</li>
+				<li>FungusPlantRaw</li>
+			</categories>
+			<thingDefs>
+				<li>Tofu</li>
+			</thingDefs>
+			<specialFiltersToDisallow>
+				<li>AllowPlantFood</li>
+			</specialFiltersToDisallow>
+		</fixedIngredientFilter>
+		<defaultIngredientFilter>
+			<categories>
+				<li>BasicPlantFoodRaw</li>
+				<li>FruitFoodRaw</li>
+				<li>ExtraPlantFoodRaw</li>
+				<li>FungusPlantRaw</li>
+			</categories>
+			<thingDefs>
+				<li>Tofu</li>
+			</thingDefs>
+		</defaultIngredientFilter>
+		<skillRequirements>
+			<Cooking>2</Cooking>
+		</skillRequirements>
+		<workSkill>Cooking</workSkill>
+		<recipeUsers>
+			<li>TableOven</li>
+			<li>ElectricOven</li>
+			<li>Pa_MessKit</li>
+		</recipeUsers>
+		<researchPrerequisite>Bakery_B1</researchPrerequisite>
+	</RecipeDef>
+
+</Defs>

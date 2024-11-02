@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+	
+	<Operation Class="PatchOperationFindMod">
+	<mods>
+		<li>Parabellum War Trophy</li>
+	</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+			
+				<li Class="PatchOperationAdd">	
+				<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_SP"]/ammoTypes</xpath>
+					<value>
+						<Ammo_556x45mmNATO_D>Bullet_556x45mmNATO_D</Ammo_556x45mmNATO_D>
+						<Ammo_762x39mmSoviet_I>Bullet_762x39mmSoviet_I</Ammo_762x39mmSoviet_I>
+					</value>
+				</li>
+				
+			</operations>
+		</match>
+    </Operation>
+	
+</Patch>

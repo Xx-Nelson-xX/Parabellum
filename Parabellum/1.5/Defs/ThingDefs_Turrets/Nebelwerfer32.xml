@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<!-- ================== Nebelwerfer 28/30/32cm ================== -->
+
+	<ThingDef ParentName="BaseGun_Turret">
+		<defName>Pa_NbW32cm</defName>
+		<label>Nebelwerfer</label>
+		<graphicData>
+			<texPath>Things/Building/Security/Artillery/NbW32_Top</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Artillery_ShellLoaded</soundInteract>
+		<description>Nebelwefer attached to a Mobile platform.</description>
+		<techLevel>Ultra</techLevel>
+		<tradeability>None</tradeability>
+		<statBases>
+			<MarketValue>6000</MarketValue>
+			<SightsEfficiency>2.2</SightsEfficiency>
+			<ShotSpread>0.24</ShotSpread>
+			<SwayFactor>1.2</SwayFactor>
+			<RangedWeapon_Cooldown>6.2</RangedWeapon_Cooldown>
+		</statBases>
+		<generateCommonality>0</generateCommonality>
+		<verbs>
+			<li Class="CombatExtended.VerbPropertiesCE">
+				<recoilPattern>Mounted</recoilPattern>
+				<recoilAmount>0.4</recoilAmount>
+				<verbClass>CombatExtended.Verb_ShootMortarCE</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_28cmNbWRocket</defaultProjectile>
+				<warmupTime>2.8</warmupTime>
+				<minRange>22</minRange>
+				<!--<forcedMissRadius>6</forcedMissRadius>-->
+				<circularError>1.8</circularError>
+				<range>100</range>
+				<ticksBetweenBurstShots>40</ticksBetweenBurstShots>
+				<burstShotCount>6</burstShotCount>
+				<soundCast>Shot_NbW</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>26</muzzleFlashScale>
+				<targetParams>
+				  <canTargetLocations>true</canTargetLocations>
+				</targetParams>
+				<indirectFirePenalty>0.15</indirectFirePenalty>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="CombatExtended.CompProperties_AmmoUser">
+				<magazineSize>6</magazineSize>
+                <reloadTime>42</reloadTime>
+				<!-- <spawnUnloaded>true</spawnUnloaded> -->
+				<ammoSet>AmmoSet_NbW32rockets</ammoSet>
+			</li>
+			<li Class="CombatExtended.CompProperties_FireModes">
+				<aimedBurstShotCount>3</aimedBurstShotCount>
+			</li>
+			<li Class="CombatExtended.CompProperties_Charges">
+				<chargeSpeeds>
+					<li>30</li>
+					<li>50</li>
+					<li>70</li>
+					<li>90</li>
+				</chargeSpeeds>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<!-- ================== Wurfrahmen ================== -->
+
+	<ThingDef ParentName="BaseGun_Turret">
+		<defName>Pa_NbW</defName>
+		<label>Nebelwerfer</label>
+		<graphicData>
+			<texPath>Things/Building/Security/Artillery/NbW_Top</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Artillery_ShellLoaded</soundInteract>
+		<description>Nebelwefer attached to a Skeleton platform.</description>
+		<techLevel>Spacer</techLevel>
+		<tradeability>None</tradeability>
+		<statBases>
+			<MarketValue>1000</MarketValue>
+			<SightsEfficiency>2.2</SightsEfficiency>
+			<ShotSpread>0.12</ShotSpread>
+			<SwayFactor>1.15</SwayFactor>
+			<RangedWeapon_Cooldown>5.8</RangedWeapon_Cooldown>
+		</statBases>
+		<generateCommonality>0</generateCommonality>
+		<verbs>
+			<li Class="CombatExtended.VerbPropertiesCE">
+				<verbClass>CombatExtended.Verb_ShootMortarCE</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_28cmNbWRocket</defaultProjectile>
+				<warmupTime>2.6</warmupTime>
+				<minRange>18</minRange>
+				<!--<forcedMissRadius>6</forcedMissRadius>-->
+				<circularError>1.5</circularError>
+				<range>100</range>
+				<soundCast>Shot_NbW</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>20</muzzleFlashScale>
+				<targetParams>
+				  <canTargetLocations>true</canTargetLocations>
+				</targetParams>
+				<indirectFirePenalty>0.15</indirectFirePenalty>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="CombatExtended.CompProperties_AmmoUser">
+				<magazineSize>1</magazineSize>
+                <reloadTime>7.6</reloadTime>
+				<!-- <spawnUnloaded>true</spawnUnloaded> -->
+				<ammoSet>AmmoSet_NbW32rockets</ammoSet>
+			</li>
+			<li Class="CombatExtended.CompProperties_FireModes"/>
+			<li Class="CombatExtended.CompProperties_Charges">
+				<chargeSpeeds>
+					<li>30</li>
+					<li>50</li>
+					<li>70</li>
+					<li>90</li>
+				</chargeSpeeds>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<!--=============== Turret Base(NbW 28/30/32cm) ===============-->
+
+	<ThingDef ParentName="TurretMortarBase">
+		<defName>Turret_NbW32cm</defName>
+		<label>Nebelwerfer(28cm/30cm/32cm)</label>
+		<graphicData>
+			<texPath>Things/Building/Security/Base/NbW32_Base</texPath>
+			<drawSize>(2.2,2.2)</drawSize>
+			<shadowData>
+				<volume>(0.3, 0.6, 0.3)</volume>
+			</shadowData>
+		</graphicData>
+		<uiIconPath>Things/Building/Security/Artillery/NbW32_icon</uiIconPath>
+		<hasInteractionCell>True</hasInteractionCell>
+		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		<statBases>
+			<MaxHitPoints>160</MaxHitPoints>
+			<WorkToBuild>2000</WorkToBuild>
+			<Mass>1130</Mass>
+			<Bulk>1130</Bulk>
+		</statBases>
+		<techLevel>Ultra</techLevel>
+		<description>An ancient Multi-barrel Heavy Rocket Launcher, robust and simple, feared by many, one of the few cost-efficient weapon from the Wunderwaffen Project, but the rocket projectile is too heavy and highly decrease its effective range.</description>
+		<size>(2,2)</size>
+		<stuffCategories>
+			<li>RuggedMetallic</li>
+		</stuffCategories>
+		<costStuffCount>140</costStuffCount>
+		<costList>
+			<Pa_NbW_Crate>6</Pa_NbW_Crate>
+		</costList>
+		<specialDisplayRadius>22</specialDisplayRadius>
+		<designationCategory>Security</designationCategory>
+		<building>
+			<turretGunDef>Pa_NbW32cm</turretGunDef>
+			<turretTopDrawSize>2.2</turretTopDrawSize>
+			<buildingTags>
+				<li>Artillery</li>
+				<li>Artillery_BaseDestroyer</li>
+				<li>Artillery_MannedMortar</li>
+			</buildingTags>
+		</building>
+		<minifiedDef>MinifiedTurret_Pa_NbW32cm</minifiedDef>
+		<researchPrerequisites>
+			<li>Rockets_D1</li>
+		</researchPrerequisites>
+		<constructionSkillPrerequisite>10</constructionSkillPrerequisite>
+	</ThingDef>
+	
+	<!--=============== Turret Base(Wurfrahmen) ===============-->
+
+	<ThingDef ParentName="TurretMortarBase">
+		<defName>Turret_NbW</defName>
+		<label>Wurfrahmen</label>
+		<graphicData>
+			<texPath>Things/Building/Security/Base/NbW32_Base</texPath>
+			<drawSize>(1.5,1.5)</drawSize>
+			<shadowData>
+				<volume>(0.3, 0.6, 0.3)</volume>
+			</shadowData>
+		</graphicData>
+		<uiIconPath>Things/Building/Security/Artillery/NbW_icon</uiIconPath>
+		<statBases>
+			<MaxHitPoints>40</MaxHitPoints>
+			<WorkToBuild>300</WorkToBuild>
+			<Mass>200</Mass>
+			<Bulk>180</Bulk>
+		</statBases>
+		<techLevel>Spacer</techLevel>
+		<description>Single Wurfrahmen launcher frame that can place in any open field with its support/platform.</description>
+		<size>(1,1)</size>
+		<stuffCategories>
+			<li>Woody</li>
+		</stuffCategories>
+		<costStuffCount>30</costStuffCount>
+		<costList>
+			<Pa_NbW_Crate>1</Pa_NbW_Crate>
+		</costList>
+		<specialDisplayRadius>18</specialDisplayRadius>
+		<designationCategory>Security</designationCategory>
+		<building>
+			<turretGunDef>Pa_NbW</turretGunDef>
+			<turretTopDrawSize>1.5</turretTopDrawSize>
+			<buildingTags>
+				<li>Artillery</li>
+				<li>Artillery_BaseDestroyer</li>
+				<li>Artillery_MannedMortar</li>
+			</buildingTags>
+		</building>
+		<minifiedDef>MinifiedTurret_Pa_NbW</minifiedDef>
+		<researchPrerequisites>
+			<li>Rockets_C1</li>
+		</researchPrerequisites>
+		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+	</ThingDef>
+
+	<!-- ================== Minified ================== -->
+	
+	<ThingDef ParentName="MinifiedTurretBase">
+		<defName>MinifiedTurret_Pa_NbW32cm</defName>
+		<label>Nebelwefer turret</label>
+		<statBases>
+			<Mass>850</Mass>
+			<Bulk>850</Bulk>
+		</statBases>
+	</ThingDef>
+	
+	<ThingDef ParentName="MinifiedTurretBase">
+		<defName>MinifiedTurret_Pa_NbW</defName>
+		<label>Wurfrahmen turret</label>
+		<statBases>
+			<Mass>180</Mass>
+			<Bulk>120</Bulk>
+		</statBases>
+	</ThingDef>
+	
+</Defs>

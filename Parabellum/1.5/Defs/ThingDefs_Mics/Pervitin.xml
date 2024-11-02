@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="DrugBase">
+    <defName>Pa_Pervitin</defName>
+    <label>Pervitin/D-IX</label>
+    <description>A war-time non-prescription drug, Methamphetamine to be exact, used as combat enhancement drug and pressure relief, prolong usage can cause severe health damage, irritation and confusion to the consumer.</description>
+    <descriptionHyperlinks>
+      <HediffDef>PervitinHigh</HediffDef>
+      <HediffDef>PervitinTolerance</HediffDef>
+      <HediffDef>PsychiteAddiction</HediffDef>
+      <HediffDef>ChemicalDamageSevere</HediffDef>
+    </descriptionHyperlinks>
+    <graphicData>
+      <texPath>Things/Special/Pervitin</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+      <drawSize>0.5</drawSize>
+    </graphicData>
+    <rotatable>true</rotatable>
+	<stackLimit>50</stackLimit>
+    <statBases>
+      <WorkToMake>500</WorkToMake>
+      <MarketValue>35</MarketValue>
+      <Mass>0.005</Mass>
+	  <Bulk>0.02</Bulk>
+    </statBases>
+    <techLevel>Industrial</techLevel>
+    <minRewardCount>10</minRewardCount>
+    <ingestible>
+      <foodType>Processed</foodType>
+      <joyKind>Chemical</joyKind>
+      <joy>0.85</joy>
+      <drugCategory>Hard</drugCategory>
+      <baseIngestTicks>60</baseIngestTicks>
+      <ingestSound>Meal_Eat</ingestSound>
+      <ingestHoldOffsetStanding>
+        <northDefault>
+          <offset>(0.21,0,0.05)</offset>
+        </northDefault>
+      </ingestHoldOffsetStanding>
+      <ingestHoldUsesTable>false</ingestHoldUsesTable>
+      <ingestCommandString>Take {0}</ingestCommandString>
+      <ingestReportString>Taking {0}.</ingestReportString>
+      <useEatingSpeedStat>false</useEatingSpeedStat>
+      <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>PervitinHigh</hediffDef>
+          <severity>0.8</severity>
+          <toleranceChemical>Pervitin</toleranceChemical>
+        </li>
+        <li Class="IngestionOutcomeDoer_OffsetNeed">
+          <need>Rest</need>
+          <offset>0.8</offset>
+          <toleranceChemical>Pervitin</toleranceChemical>
+        </li>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>PervitinTolerance</hediffDef>
+          <severity>0.15</severity>
+          <divideByBodySize>true</divideByBodySize>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+    <comps>
+      <li Class="CompProperties_Drug">
+        <chemical>Pervitin</chemical>
+        <addictiveness>0.01</addictiveness>
+        <existingAddictionSeverityOffset>0.25</existingAddictionSeverityOffset>
+        <needLevelOffset>0.9</needLevelOffset>
+        <isCombatEnhancingDrug>true</isCombatEnhancingDrug>
+        <listOrder>100</listOrder>
+        <overdoseSeverityOffset>0.18~0.35</overdoseSeverityOffset>
+        <largeOverdoseChance>0.005</largeOverdoseChance>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <!-- ========== Effect ========== -->
+  <ChemicalDef>
+    <defName>Pervitin</defName>
+    <label>Pervitin/D-IX</label>
+	<addictionHediff>PsychiteAddiction</addictionHediff>
+    <toleranceHediff>PervitinTolerance</toleranceHediff>
+    <onGeneratedAddictedToleranceChance>0.6</onGeneratedAddictedToleranceChance>
+    <onGeneratedAddictedEvents>
+      <li>
+        <hediff>ChemicalDamageSevere</hediff>
+        <chance>0.25</chance>
+        <partsToAffect>
+          <li>Brain</li>
+        </partsToAffect>
+      </li>
+    </onGeneratedAddictedEvents>
+  </ChemicalDef>
+
+  <HediffDef>
+    <defName>PervitinTolerance</defName>
+    <label>Pervitin tolerance</label>
+	<defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+    <description>A built-up tolerance to Pervitin/D-IX. The more severe this tolerance is, the more dangerous it become.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+	<comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-0.01</severityPerDay>
+      </li>
+      <li Class="HediffCompProperties_DrugEffectFactor">
+        <chemical>Pervitin</chemical>
+      </li>
+    </comps>
+    <hediffGivers>
+      <li Class="HediffGiver_RandomDrugEffect">
+        <hediff>ChemicalDamageSevere</hediff>
+        <severityToMtbDaysCurve>
+          <points>
+			<li>(0.15, 99999)</li>
+            <li>(0.35, 300)</li>
+            <li>(0.5, 140)</li>
+			<li>(0.75, 75)</li>
+            <li>(1, 40)</li>
+			<li>(1.2, 15)</li>
+			<li>(1.5, 2)</li>
+          </points>
+        </severityToMtbDaysCurve>
+        <partsToAffect>
+          <li>Brain</li>
+        </partsToAffect>
+      </li>
+    </hediffGivers>
+  </HediffDef>
+  
+  <ThoughtDef>
+    <defName>PervitinHigh</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>PervitinHigh</hediff>
+    <validWhileDespawned>true</validWhileDespawned>
+    <stages>
+      <li>
+        <label>Withdrawal</label>
+        <description>Please, someone end my suffering!</description>
+        <baseMoodEffect>-15</baseMoodEffect>
+      </li>
+	  <li>
+        <label>Confusion</label>
+        <description>Why everything is upsidedown?</description>
+        <baseMoodEffect>-5</baseMoodEffect>
+      </li>
+	  <li>
+        <label>Jacked</label>
+        <description>I feels it kicking in.</description>
+        <baseMoodEffect>5</baseMoodEffect>
+      </li>
+	  <li>
+        <label>Euphoria</label>
+        <description>I am very confident and happy.</description>
+        <baseMoodEffect>15</baseMoodEffect>
+      </li>
+	  <li>
+        <label>Unstoppable</label>
+        <description>I can do anything and nothing can stop me!</description>
+        <baseMoodEffect>35</baseMoodEffect>
+      </li>
+	  <li>
+        <label>Overdose</label>
+        <description>This isn't right, why the world is against me?!</description>
+        <baseMoodEffect>-30</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  
+  
+  <HediffDef>
+		<defName>PervitinHigh</defName>
+		<label>High on Pervitin/D-IX</label>
+		<description>On a trip to the wonderland.</description>
+		<hediffClass>Hediff_High</hediffClass>
+		<defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+		<maxSeverity>2.0</maxSeverity>
+		<isBad>false</isBad>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-0.5</severityPerDay>
+				<showHoursToRecover>true</showHoursToRecover>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<minSeverity>0</minSeverity>
+				<label>Whitdrawal</label>
+				<painFactor>1.5</painFactor>
+				<restFallFactor>1.5</restFallFactor>
+				<hungerRateFactor>1.1</hungerRateFactor>
+				<socialFightChanceFactor>5.0</socialFightChanceFactor>
+				<statOffsets>
+					<MentalBreakThreshold>0.25</MentalBreakThreshold>
+				</statOffsets>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>-0.1</offset>
+					</li>
+					<li>
+						<capacity>Sight</capacity>
+						<offset>-0.25</offset>
+					</li>
+				</capMods>
+				<mentalStateGivers>
+					<li>
+						<mentalState>Berserk</mentalState>
+						<mtbDays>2</mtbDays>
+					</li>
+					<li>
+						<mentalState>Wander_Psychotic</mentalState>
+						<mtbDays>8</mtbDays>
+					</li>
+				</mentalStateGivers>
+			</li>
+			<li>
+				<minSeverity>0.15</minSeverity>
+				<label>Confusion</label>
+				<painFactor>1.1</painFactor>
+				<restFallFactor>1.2</restFallFactor>
+				<statOffsets>
+					<MentalBreakThreshold>0.1</MentalBreakThreshold>
+				</statOffsets>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>-0.02</offset>
+					</li>
+					<li>
+						<capacity>Sight</capacity>
+						<offset>-0.05</offset>
+					</li>
+				</capMods>
+			</li>
+			<li>
+				<minSeverity>0.25</minSeverity>
+				<label>Jacked</label>
+				<painFactor>0.5</painFactor>
+				<restFallFactor>0.5</restFallFactor>
+				<hungerRateFactor>0.5</hungerRateFactor>
+				<statOffsets>
+					<Suppressability>-0.25</Suppressability>
+					<MentalBreakThreshold>-0.02</MentalBreakThreshold>
+					<CarryBulk>10</CarryBulk>
+					<CarryWeight>10</CarryWeight>
+				</statOffsets>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>0.1</offset>
+					</li>
+					<li>
+						<capacity>BloodFiltration</capacity>
+						<offset>0.05</offset>
+					</li>
+					<li>
+						<capacity>BloodPumping</capacity>
+						<offset>0.05</offset>
+					</li>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>0.02</offset>
+					</li>
+					<li>
+						<capacity>Manipulation</capacity>
+						<offset>0.02</offset>
+					</li>
+				</capMods>
+			</li>
+			<li>
+				<minSeverity>0.4</minSeverity>
+				<label>Euphoria</label>
+				<painFactor>0.3</painFactor>
+				<restFallFactor>0.33</restFallFactor>
+				<statOffsets>
+					<Suppressability>-0.4</Suppressability>
+					<MentalBreakThreshold>-0.05</MentalBreakThreshold>
+					<CarryBulk>16</CarryBulk>
+					<CarryWeight>16</CarryWeight>
+				</statOffsets>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>0.3</offset>
+					</li>
+					<li>
+						<capacity>BloodFiltration</capacity>
+						<offset>0.25</offset>
+					</li>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>0.05</offset>
+					</li>
+					<li>
+						<capacity>Manipulation</capacity>
+						<offset>0.05</offset>
+					</li>
+				</capMods>
+			</li>
+			<li>
+				<minSeverity>0.7</minSeverity>
+				<label>Unstoppable</label>
+				<painFactor>0.15</painFactor>
+				<restFallFactor>0.25</restFallFactor>
+				<hungerRateFactor>0.4</hungerRateFactor>
+				<socialFightChanceFactor>1.5</socialFightChanceFactor>
+				<statOffsets>
+					<Suppressability>-0.65</Suppressability>
+					<MentalBreakThreshold>-0.1</MentalBreakThreshold>
+					<CarryBulk>20</CarryBulk>
+					<CarryWeight>20</CarryWeight>
+				</statOffsets>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>0.3</offset>
+					</li>
+					<li>
+						<capacity>BloodFiltration</capacity>
+						<offset>0.25</offset>
+					</li>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>0.1</offset>
+					</li>
+					<li>
+						<capacity>Manipulation</capacity>
+						<offset>0.1</offset>
+					</li>
+				</capMods>
+			</li>
+			<li>
+				<minSeverity>1.8</minSeverity>
+				<label>Overdose</label>
+				<painFactor>0.1</painFactor>
+				<restFallFactor>0.1</restFallFactor>
+				<hungerRateFactor>0.2</hungerRateFactor>
+				<totalBleedFactor>1.2</totalBleedFactor>
+				<socialFightChanceFactor>3.0</socialFightChanceFactor>
+				<statOffsets>
+					<Suppressability>-0.8</Suppressability>
+					<MentalBreakThreshold>-0.2</MentalBreakThreshold>
+					<CarryBulk>30</CarryBulk>
+					<CarryWeight>30</CarryWeight>
+				</statOffsets>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>0.1</offset>
+					</li>
+					<li>
+						<capacity>BloodFiltration</capacity>
+						<offset>0.05</offset>
+					</li>
+					<li>
+						<capacity>BloodPumping</capacity>
+						<offset>0.05</offset>
+					</li>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>0.2</offset>
+					</li>
+					<li>
+						<capacity>Manipulation</capacity>
+						<offset>0.2</offset>
+					</li>
+				</capMods>
+				<mentalStateGivers>
+					<li>
+						<mentalState>Berserk</mentalState>
+						<mtbDays>0.5</mtbDays>
+					</li>
+					<li>
+						<mentalState>Binging_DrugExtreme</mentalState>
+						<mtbDays>4</mtbDays>
+					</li>
+				</mentalStateGivers>
+			</li>
+		</stages>
+  </HediffDef>
+  
+  <!-- ========== Recipe ========== -->
+  <RecipeDef>
+		<defName>MakePervitin</defName>
+		<label>Make 10 Pervitin/D-IX pills</label>
+		<description>Making Pervitin/D-IX pills, fancy name for meth. Produces 10.</description>
+		<jobString>Making 10 Pervitin/D-IX pills.</jobString>
+		<workSpeedStat>DrugCookingSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_Drug</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<workAmount>1500</workAmount>
+		<targetCountAdjustment>10</targetCountAdjustment>
+		<recipeUsers>
+			<li>DrugLab</li>
+		</recipeUsers>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Yayo</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Neutroamine</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Yayo</li>
+				<li>Neutroamine</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Pa_Pervitin>10</Pa_Pervitin>
+		</products>
+		<skillRequirements>
+			<Medicine>10</Medicine>
+		</skillRequirements>
+		<workSkill>Medicine</workSkill>
+		<researchPrerequisite>PsychiteRefining</researchPrerequisite>
+	</RecipeDef>
+  
+ </Defs>

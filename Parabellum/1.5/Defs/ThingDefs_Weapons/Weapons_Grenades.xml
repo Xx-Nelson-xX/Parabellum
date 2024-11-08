@@ -393,7 +393,7 @@
 			<explosionDelay>5</explosionDelay>
 			<soundExplode>Explosion_Bomb</soundExplode>
 			<dropsCasings>true</dropsCasings>
-			<casingMoteDefname>Mote_GrenadePin</casingMoteDefname>
+			<casingMoteDefname>Fleck_GrenadePin</casingMoteDefname>
 		</projectile>
 		<comps>
 			<li Class="CombatExtended.CompProperties_Fragments">
@@ -552,7 +552,7 @@
 			<postExplosionSpawnChance>0.9</postExplosionSpawnChance>
 			<ai_IsIncendiary>true</ai_IsIncendiary>
 			<dropsCasings>true</dropsCasings>
-			<casingMoteDefname>Mote_GrenadePin</casingMoteDefname>
+			<casingMoteDefname>Fleck_GrenadePin</casingMoteDefname>
 		</projectile>
 		<modExtensions>
 			<li Class="ProjectileImpactFX.EffectProjectileExtension">

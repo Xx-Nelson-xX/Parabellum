@@ -3,8 +3,11 @@
 
 	<!--=============== Crate Base ===============-->
 		
-	<ThingDef Name="Pa_CrateBase" ParentName="CrateBase" Abstract="True">
-		<drawGUIOverlay>true</drawGUIOverlay>
+	<ThingDef Name="Pa_CrateBase" ParentName="ItemCrateBase" Abstract="True">
+		<stackLimit>25</stackLimit>
+		<thingCategories>
+			<li>WeaponCrate</li>
+		</thingCategories> 
 	</ThingDef>
 	
 	<!-- =============== MG Crate Base =============== -->
@@ -48,7 +51,6 @@
 		<soundInteract>Standard_Drop</soundInteract>
 		<soundDrop>Standard_Drop</soundDrop>
 		<tickerType>Normal</tickerType>
-		<stackLimit>25</stackLimit>
 		<techLevel>Industrial</techLevel>
 		<statBases>
 			<MarketValue>700</MarketValue>
@@ -104,7 +106,6 @@
 		<soundInteract>Standard_Drop</soundInteract>
 		<soundDrop>Standard_Drop</soundDrop>
 		<tickerType>Normal</tickerType>
-		<stackLimit>25</stackLimit>
 		<techLevel>Industrial</techLevel>
 		<statBases>
 			<MarketValue>1000</MarketValue>
@@ -132,7 +133,7 @@
 		<soundInteract>Standard_Drop</soundInteract>
 		<soundDrop>Standard_Drop</soundDrop>
 		<tickerType>Normal</tickerType>
-		<stackLimit>25</stackLimit>
+		<stackLimit>10</stackLimit>
 		<techLevel>Spacer</techLevel>
 		<statBases>
 			<MarketValue>3200</MarketValue>

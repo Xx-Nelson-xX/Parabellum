@@ -6,3 +6,4 @@
 Tweaks:
 +Compatibility for RW HSK 1.5
 -Moved StG 45(M) to Parabellum WT
+*Fix for Turret crates dissapearing due ParentName change in 1.5
